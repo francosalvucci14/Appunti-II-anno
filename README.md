@@ -1,4 +1,4 @@
-# Appunti-II-anno ciao
+# Appunti-II-anno
 * appunti ASD
 * appunti LMP
 * appunti SOR
