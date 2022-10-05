@@ -57,3 +57,4 @@ P($\bigcup_{n\geq1} A_n$) = $\sum_{n\geq1}P{(A_n)}$
 **Terminologia**: la terna ($\Omega$,A,P) è detta <u>spazio di probabilità</u>
 
 
+
