@@ -143,3 +143,48 @@ Allora, per ogni $A\ni A$, si ha $P(A) = P(\bigcup_{\omega \ni A}\omega) = \sum_
 2) Questa situazione esce fuori quando si compiono "estrazioni a caso da un insieme di n oggetti"
 3) Questa costruzione non può essere fatta nel caso di cui $\Omega$ è definito numerabile perchè si avrebbe infinito a denominatore e quindi si avrebbe sempre P(A) = 0. In altri termini non si riesce a modellare il caso di estrazioni a caso da un insieme infinito numerabile di oggetti
 4) Questo modello si può usare nel caso del lancio di un dado equo con n =6 e $\Omega={1,2,3,4,5,6}$
+
+_Def :_
+Sia ($\Omega,A,P$) uno spazio di probabilità. Siano A,B$\ni A$ con P(B)$\neq0$
+Allora si definisce "Probabilità condizionata di A in B"(oppure sapendo che si è verificato l'evento B) la seguente quantità:
+>$P(A|B)=P(A\cap B)/P(B)$
+
+**Motivazione**
+
+Nel voler definire P(A|B) è naturale considerare una quantità che dipende da P(A$\cap B$) proporzionalmente, con una costante di proporzionalità che non dipende da A(e che dipende da B):
+$P(A|B)=c_b\cdot P(A\cap B)$
+Inoltre si vule fare in modo che $(\Omega,A,P(.|B))$ sia uno spazio di probabilità. Quindi per $A=\Omega$ si ha:
+$P(\Omega|B) = c_b\cdot P(\Omega\cap B) \implies c_b = 1/P(B) \implies P(A|B)=P(A\cap B)/P(B)$
+
+- $P(\Omega|B) = 1$
+- $P(\Omega\cap B) = P(B)$
+
+**Commento**
+
+Supponiamo che P(B) = 1. Allora $P(A|B)=P(A\cap B)/P(B) = P(A\cap B)/1 = P(A\cap B)$
+Inoltre P(A) = $P(A\cap B)+P(A\cap B^c)$ dove $0\leq P(A\cap B^c)\leq P(B^c) = 0$
+quindi P(A) = P($A\cap B$), e sostituendo nell'eguaglianza precedente si ha 
+>$P(A|B)=P(A)$
+
+Questa conclusione si può spiegare come segue. Il verificarsi di un evento di probabilità 1 è una informazione "banale" e quindi la probabilità condizionata conclude con quella che si ha senza il condizionamento.
+
+**Commento (PROB. CONDIZIONATA IN UNO SPAZIO DI PROBABILITà UNIFORME DISCRETO)**
+
+Sia $B\ni A$ t.c $P(B)\neq0; B\neq0$. Allora:
+$P(A|B)=P(A\cap B)/P(B)=|((A\cap B)|/n)/(|B|/n) = |(A\cap B)|/|B|$ $\forall A\ni A$
+
+**Esempio**
+
+Un'urna ha 10 paline numerate da 1 a 10
+si estrae una pallina a caso
+1) calcolare la probabilità di estrarre in numero maggiore di 5 sapendo che è stato estratto un numero pari
+2) Calcolare la stessa probabilità nel caso in cui vengano aggiunte due palline, una con il numero 1 e l'altra con il numero 10
+
+Risposta:
+Abbiamo $A={(6,7,8,9,10)}$ $B={(2,4,6,8,10)}$
+quindi $A\cap B = (6,8,10)$
+nel primo caso abbiamo uno spazio di prob. uniforme discreto e quindi $P(A|B)=|(A\cap B)|/|B| = 3/5$
+
+Nel secondo caso abbiamo:
+$P(A|B)=P(A\cap B)/P(B) = P(6,8,10)/P(2,4,6,8,10) = (1+1+2/12)/(1+1+1+1+2/12) = 4/6=2/3$
+
