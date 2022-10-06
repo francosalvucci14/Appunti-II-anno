@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Appunti CPS/Lezione 1.md",
+            "file": "Appunti ASD/Lezione 1.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti CPS/Lezione 1.md",
+                "file": "Appunti ASD/Lezione 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti CPS/Lezione 1.md",
+                "file": "Appunti ASD/Lezione 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti CPS/Lezione 1.md"
+                "file": "Appunti ASD/Lezione 1.md"
               }
             }
           },
@@ -140,10 +140,10 @@
   },
   "active": "53032a9f0aa80f52",
   "lastOpenFiles": [
+    "Appunti ASD/Indice degli appunti.md",
     "Appunti CPS/Indice delle lezioni.md",
-    "README.md",
     "Appunti CPS/Lezione 1.md",
-    "Appunti ASD/Appunti.md",
+    "README.md",
     "Appunti SOR/Appunti.md"
   ]
 }
