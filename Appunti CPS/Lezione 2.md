@@ -118,3 +118,19 @@ Quindi tipicamente si avrà:
 
 **Esempio**
 Consideriamo ancora l'esempio che abbiamo visto per la formula della prob. totali
+
+![[Appunti CPS/Immagini/Pasted image 20221007155511.png]]
+
+Supponiamo che venga chiesto di calcolare la seguente prob. cond.
+
+Calcolare la prob. che sia uscito 2 o 3 nel lancio del dado sapendo di aver estratto una pallina bianca
+
+Con riferimento alle notazioni viste precedentemente viene chiesto di calcolare $P(E_2|B)$
+Si calcola facilmente dal testo $P(B|E_2)$ e viene chiesto di calcolare $P(E_2|B)$. Allora si usa la formula di Bayes
+
+>$P(E_2|B)=P(B|E_2)P(E_2)/P(B)$=
+>$P(B|E_2)P(E_2)/P(B|E_1)\cdot P(E_1)+P(B|E_2)\cdot P(E_2)+P(B|E_3)P\cdot P(E_3)=$
+>$(3/5\cdot 2/6)/4/5\cdot 1/6+3/5\cdot 2/6+2/5\cdot 3/6 = 3/8$
+
+
+
