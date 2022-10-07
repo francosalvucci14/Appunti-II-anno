@@ -56,8 +56,15 @@ Ora per ciascun addendo per cui $P(E_i)\neq0$ si ha $P(A\cap E_i)=P(A|E_i)\cdot 
 
 >In conclusione $P(A)=\sum_{i\ni I}P(A|E_i)\cdot P(E_i)$
 
+Un caso particolare è quello in cui la partizione è costituita da due eventi:
+$$\begin{cases}
+E_1=E\\
+E_2=E^c
+\end{cases}$$
+Allora:
+$P(A)=P(A|E)\cdot P(E)+P(A|E^c)\cdot P(E^c)$
 
-
-
+## Diagramma ad albero associato alla formula delle prob. totali
+Si può costruire un diagramma ad albero associato dove ogni diramazione fa riferimento ad una partizione(ogni diramazione considera tutti i casi possibili.) Ad ogni arco si associa uno probabilità. Per fissare le idee consideriamo $I=(1,2,3)$
 
 ## Formula di Bayes
