@@ -64,7 +64,57 @@ E_2=E^c
 Allora:
 $P(A)=P(A|E)\cdot P(E)+P(A|E^c)\cdot P(E^c)$
 
-## Diagramma ad albero associato alla formula delle prob. totali
+### Diagramma ad albero associato alla formula delle prob. totali
 Si può costruire un diagramma ad albero associato dove ogni diramazione fa riferimento ad una partizione(ogni diramazione considera tutti i casi possibili.) Ad ogni arco si associa uno probabilità. Per fissare le idee consideriamo $I=(1,2,3)$
 
+![[Pasted image 20221007151209.png]]
+
+Siamo interessati a tutte le foglie che finiscono con A indicate da un asterisco *
+Si deve considerare la somma dei pesi dei cammini che finiscono con A ottenuti con i prodotti dei pesi dei rami
+
+$P(A)=P(A|E_1)\cdot P(E_1)+P(A|E_2)\cdot P(E_2)+P(A|E_3)P\cdot P(E_3)$
+
+**Esempio**
+Un'urna ha 2 palline bianche e 1 nera
+Si lancia un dado equo:
+- se esce il numero 1 si mettono 2 palline bianche nell'urna
+- se escono i numeri 2 e 3 si mettono nell'urna 1 pallina bianca e 1 nera
+- se escono i numeri 4,5, e 6 si mettono 2 palline nere nell'urna
+
+Poi si estrae una pallina a caso dall'urna
+Calcolare la probabilità di estrarre una pallina bianca
+
+**Risposta**
+Siamo interessati all'evento B=(estratta pallina bianca)
+Possiamo calcolare la probabilità di B se conoscaimo quale dei 3 casi si è verificato. I tre "casi" costituiscono una partizione
+
+>$E_1$=(esce 1) $E_2$=(esce 2 e 3) $E_3$=(esce 4 o 5 o 6)
+>e si ha $$\begin{cases}
+P(E_1)=1/6 & P(E_2)=2/6 & P(E_3)=3/6
+\\ P(B|E_1)=4/5 & P(B|E_2)=3/5 & P(B|E_3)=2/5
+\end{cases}$$
+
+In conclusione : $P(B)=P(B|E_1)\cdot P(E_1)+P(B|E_2)\cdot P(E_2)+P(B|E_3)\cdot P(E_3)$
+$=4/5\cdot 1/6+3/5\cdot 2/6+2/5\cdot 3/6=4+6+6/30=16/30=8/15$
+
+**Oss** Supponiamo che la prob. di estrarre nera è $P(B^c)=1-P(B)=1-8/15=7/15$
+Questo risultato si ottiene ancora con la formula delle prob. totali:
+>$P(B^c)=P(B^c|E_1)P(E_1)+P(B^c|E_2)P(E_2)+P(B^c|E_3)P(E_3)$
+>$=1/5\cdot 1/6+2/5\cdot 2/6+3/5\cdot 3/6=1+4+9/30=14/30=7/15$
+
 ## Formula di Bayes
+Supponiamo che $P(A|B)=P(A\cap B)/P(B)$ con l'ipotesi $P(B)\neq0$
+Inoltre $A\cap B$ e $B\cap A$ sono lo stesso evento; quindi $P(A\cap B)=P(B\cap A)=P(B|A)P(A)$
+
+Quindi sostituendo nella formula inziale si ha:
+>$P(A|B)=P(B|A)P(A)/P(B)$
+
+>Questa formula si usa quando viene chiesta una probabilità condizionata $P(A|B)$ e la prob. condizionata $P(B|A)$ si calcola facilmente, e comunque questo è più agevole rispetto a valutare l'evento intersezione $A\cap B$
+
+In alcuni eserciz si potrà fare riferimento ad una partizione $(E_n)_{n\ni I}$, e verrà cjiesto di calcolare prob. condizionate del tipo:
+$P(E_n|B)$
+Quindi tipicamente si avrà:
+>$P(E_n|B)=P(B|E_n)P(E_n)/\sum_{i\ni I}P(B|E_i)P(E_i)$ per $n\ni I$
+
+**Esempio**
+Consideriamo ancora l'esempio che abbiamo visto per la formula della prob. totali

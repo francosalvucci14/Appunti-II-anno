@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "53032a9f0aa80f52",
+        "id": "0b3f5cfe195733ed",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -138,10 +138,12 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "53032a9f0aa80f52",
+  "active": "0b3f5cfe195733ed",
   "lastOpenFiles": [
-    "Appunti CPS/Indice delle lezioni.md",
+    "Appunti CPS/Immagini/Pasted image 20221007151209.png.md",
     "Appunti CPS/Lezione 2.md",
+    "Appunti CPS/Immagini/Pasted image 20221007151209.png",
+    "Appunti CPS/Indice delle lezioni.md",
     "Appunti ASD/Indice degli appunti.md",
     "Appunti ASD/Lezione 1.md",
     "Appunti CPS/Lezione 1.md",
