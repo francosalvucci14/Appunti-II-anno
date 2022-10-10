@@ -29,5 +29,13 @@ IMMAGINE QUI
 Dato che la Java VM è disponibile su vari Sistemi Operativi, lo stesso file .class può essere lanciato su windows, linux, solaris so,macos
 # La piattaforma Java
 
-Una <u>piattaforma</u>
+Una <u>piattaforma</u> è l'ambiente hardware o software in cui un programma viene eseguito.
+Molte piattaforme possono essere descritte come una combinazione di sistema operativo e hardware prioritario.
+La piattaforma Java differisce dalle altre piattaforme in quanto è una piattaforma solo software che funziona su piattaforme basate su hardware.
+La piattaforma Java ha 2 componenti:
+- La Java VIrtual Machine
+- La Java Application Programming Interface (API)
+
+_Def:_
+L'API è una vasta collezione di componenti software già pronti che forniscono molte funzionalità
 # Cosa posso fare con la tecnologia Java?
