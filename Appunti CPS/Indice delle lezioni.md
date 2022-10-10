@@ -1,5 +1,6 @@
 # Indice delle lezioni
 
 - [[Lezione 1|Introduzione]]
-- [[Lezione 2]]
+- [[Appunti CPS/Lezione 2 | Lezione 2]]
+
 
