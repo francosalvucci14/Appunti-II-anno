@@ -37,5 +37,5 @@ La piattaforma Java ha 2 componenti:
 - La Java Application Programming Interface (API)
 
 _Def:_
-L'API è una vasta collezione di componenti software già pronti che forniscono molte funzionalità
+L'API è una vasta collezione di componenti software già pronti che forniscono molte funzionalità.
 # Cosa posso fare con la tecnologia Java?

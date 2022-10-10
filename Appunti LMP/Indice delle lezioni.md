@@ -2,4 +2,5 @@
 # Indice delle lezioni
 
 - [[Introduzione]]
-- Lezione 2
+- [[Appunti LMP/Lezione 2|Lezione 2]]
+
