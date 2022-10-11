@@ -106,3 +106,13 @@ Abbiamo $n_1\choose k$ scelte per $(i_1,...,i_k)$ e $n_2\choose {n-k}$ scelte pe
 In conclusione il numero di casi favorevoli è dato dal prodotto dei due binomiali e quindi :
 >$$p_k=\frac{{n_1\choose k}{n_2\choose {n-k}}}{{n_1+n_2}\choose n}$$
 
+**Esempio**
+$n_1=3,n_2=2,n=3$
+
+${n_1+n_2}\choose n$ = ${3+2}\choose 3$=10
+
+Convenzione $\begin{cases}1 & 1,2,3\\2 & 4,5\end{cases}$
+In quel che segue scrivo i 10 sottoinsiemi e indico accanto il numero di elementi di tipo 1
+Quindi $p_0=0,p_1=\frac{3}{10},p_2=\frac{6}{10},p_3=\frac{1}{10}$
+Questi valori sono in accordo con la formula:
+$$p_k=\frac{{3\choose k}{2\choose{3-k}}}{5\choose3}=\frac{{3\choose k}{2\choose{3-k}}}{10}=\begin{cases}k=0 & 0\\k=1 & \frac{3}{10}\\k=2 & \frac{6}{10}\\k=3 & \frac{1}{10}\end{cases}$$
