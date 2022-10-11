@@ -67,4 +67,42 @@ Si ha $C_{n,0} = (\emptyset)\implies |C_{n,0}| = 1$ e $C_{n,n} = (1,..,n) \impli
 Allora:
 preso un sottoinsieme $(i_1,...,i_k)$, considerando tutte le permutazioni di $(i_1,...,i_k)$ danno origine a particolari sequenze ordinate in $D_{n,k}$; tutti gli elementi di $D_n,k$ possono essere visti come una particolare permutazioni di elementi di un certo insieme
 
+![[Appunti CPS/Immagini/Pasted image 20221011164449.png]]
+
+A partire da questo esempio possiamo dire che $|C_{n,k}|\cdot k!=D_{n,k}$
+da cui segue
+>$$|C_{n,k}|=\frac {|D_{n,k}|}{k!}=\frac {n!}{k!(n-k)!}$$
+
+L'espressione ottenuta è il _coefficente binomiale_ e si usa la notazione $n\choose k$=$\frac{n!}{k!(n-k)!}$ 
+**Alcuni esempi**
+
+In generale si ha $n\choose k$=$n\choose{n-k}$ (ad ogni sottoinsieme di K elementi corrisponde il suo complemento di n-k elementi; quindi #$C_{n,k}$=$C_{n,n-k}$)
+In particolare per k=0 e k=1 si ha:
+- $n\choose0$=$n\choose n$=1
+- $n\choose1$=$n\choose{n-1}$=n
+
+## Spiegazione del termine "coefficente binomiale"
+Possiamo dire che il nome coefficente binomiale segue dalla formula del binomio di Newton:
+$$(a+b)^n=\sum_{k=0}^{n}{n\choose k}a^kb^{n-k}$$
+Infatti:
+$$(a+b)^n=\underbrace{(a+b)...(a+b)}_{n\:volte}$$
+e $\forall k\ni(0,1,...,n)$ abbiamo termini del tipo $a^kb^{n-k}$; se vogliamo contare quanti ce ne sono si vede che appare il coefficente binomiale
+
+# Applicazioni di formule di calcolo combinatorio
+## Estrazioni casuali in blocco
+Abbiamo oggetti di due tipi: $n_1$ di tipo 1 e $n_2$ di tipo 2
+Si estraggono a caso contemporaneamente n oggetti, dove $n<n_1+n_2$
+Quanto vale la prob. di estrarre k oggetti di tipo 1? (quindi contemporaneamente si estraggono n-k oggetti di tipo 2)
+Indichiamo questa probabilità con $p_k$ e si ha:
+>$$p_k=\begin{cases}
+0 & se\:k>n_1\: oppure\: se\: n-k>n_2\\
+"da\: calcolare" & se\begin{cases}0\leq k\leq n_1\\
+0\leq n-k\leq n_2\end{cases}
+\end{cases}$$
+
+Bisogna osservare che in generale abbiamo ${n_1+n_2}\choose n$ casi possibili e tutti equiparabili dati da tutti i sottoinsiemi di n elementi a partire da $n_1+n_2$ elementi.
+I casi favorevoli all'evento "estrarre k oggetti 1 e n-k oggetti 2" devono essere pensati come sottoinsiemi del tipo {$i_1,...,i_k,j_1,...,j_{n-k}$}
+Abbiamo $n_1\choose k$ scelte per $(i_1,...,i_k)$ e $n_2\choose {n-k}$ scelte per $(j_1,...,j_{n-k})$
+In conclusione il numero di casi favorevoli è dato dal prodotto dei due binomiali e quindi :
+>$$p_k=\frac{{n_1\choose k}{n_2\choose {n-k}}}{{n_1+n_2}\choose n}$$
 
