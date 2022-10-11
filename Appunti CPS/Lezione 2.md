@@ -196,3 +196,49 @@ In conclusione $P(D|B)=P(F_1|B)+P(F_3|B)+P(F_5|B)=\frac {1}{4}+\frac {3}{16}+\fr
 **Oss** la prob. che esca un numero pari sapendo che è uscita una pallina bianca è $P(D^c|B) = 1-P(D|B)=1-\frac {9}{16}=\frac {7}{16}$
 
 
+
+# Indipendenza tra eventi
+
+Iniziamo con il caso di due eventi
+Siamo interessati al caso in cui 
+- $P(A|B)=P(A)$ se $P(B)\neq0$ (e si potrebbe dire "A indipendente da B")
+- $P(B|A) = P(B)$ se $P(A)\neq0$ (e si potrebbe dire "B indipendete da A")
+
+In questo senso abbiamo due conceti apparentemente diversi. Inoltre sembra che si debbano escludere in qualche caso gli eventi di prob. zero
+In realtà la trattativa è più semplice se consideriamo la seguente definizione dove gli eventi di prob. zero sono consentiti
+
+_Def (Indipendenza tra eventi)_
+$A,B\ni \mathcal{A}$ sono indipendenti se $P(A\cap B)=P(A)P(B)$
+**Oss**
+Se A,B sono indipendeti allora lo sono anche B e A
+Infatti $A\cap B=B\cap A$ e il prodotto tra due numeri è commutativo
+
+_Proposizione_
+Siano $A,B\ni \mathcal{A}$ con $P(B)\neq0$ 
+Allora:
+A e B sono indipendenti $\iff$ $P(A|B)=P(A)$
+_Dimostrazione_
+si ha 
+A e B sono indipendenti $\iff$ $P(A\cap B)=P(A)P(B)\iff \frac {P(A\cap B)}{P(B)}\frac {P(A)P(B)}{P(B)}\iff P(A|B) = P(A)$
+
+Vale lo stesso per $P(B|A)=P(B)$
+
+**Conseguenze**
+
+1) Se un evento ha prob. zero, allora è indipendente da qualunque altro. Infatti, se prendiamo $A,B\ni \mathcal{A}$ con $P(A)=0$, si ha:
+$$\begin{cases}
+0\leq P(A\cap B)\leq P(A)=0 \implies P(A\cap B)=0\\
+P(A)P(B)=0\cdot P(B)=0
+\end{cases}$$
+e quindi $P(A\cap B)=P(A)P(B)=0$
+2) Supponiamo che A e B siano indipendenti. Allora, se uno dei due eventi, o entrambi, vengono complementati, allroa abbiamo ancora eventi indipendenti:
+	- $A^c,B$ sono indipendenti
+	- $A,B^c$ sono indipendenti
+	- $A^c,B^c$ sono indipendenti
+Iniziamo verificando la prima relazione:
+	- Si ha $P(A\cap B)=P(A)P(B)$, allora $P(A^c\cap B)=P(B)-P(A\cap B)=P(B)-P(A)P(B)=P(B)(1-P(A))=P(B)P(A^c)=P(A^c)P(B)$
+	- L'uguaglianza $P(A\cap B^c)=P(A)P(B^c)$ si dimostra in maniera analoga
+	- Infine A e B sono indipendenti $\implies$ $A\:e\:B^c$ sono indipendenti
+														$\implies$ $A^c\:e\:B^c$ sono indipendenti
+
+3) Mettendo insieme 1) e 2) si ha che se un evento ha prob. 1, allora è indipendente da qualunque altro. Del resto abbiamo già visto che $P(B)=1\implies P(A|B)=P(A)$
