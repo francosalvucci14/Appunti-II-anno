@@ -3,7 +3,7 @@
 Analizazre la complessità nel caso medio del primo algoritmo di pesatura (Alg1) visto nella prima lezione. Rispetto alla distribuzione di probabilità sulle istanza, si assuma che la moneta falsa possa trovarsi in modo equiprobabile in una delle qualsiasi delle n posizioni.
 
 ## Svolgimento
-Data la parola chiave "equiprobabile" possiamo dedurre che la probabilità sulle istanze, quindi $P(\mathcal{I})$=$\frac{1}{n}$
+Data la parola chiave "equiprobabile" possiamo dedurre che la probabilità sulle istanze, quindi $P(\mathcal{I})$è uguale a $\frac{1}{n}$
 
 Il tempo tempo($\mathcal{I}$) su ogni istanza di dimesione n è n-1
 
