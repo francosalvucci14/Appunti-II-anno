@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "0b3f5cfe195733ed",
+        "id": "90fe890bef2bffd6",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Appunti CPS/Lezione 2.md",
+            "file": "Appunti CPS/Lezione 3.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti CPS/Lezione 2.md",
+                "file": "Appunti CPS/Lezione 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti CPS/Lezione 2.md",
+                "file": "Appunti CPS/Lezione 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti CPS/Lezione 2.md"
+                "file": "Appunti CPS/Lezione 3.md"
               }
             }
           },
@@ -133,16 +133,30 @@
           }
         ],
         "currentTab": 4
+      },
+      {
+        "id": "55a9fd2141be2520",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b3f5cfe195733ed",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "0b3f5cfe195733ed",
+  "active": "90fe890bef2bffd6",
   "lastOpenFiles": [
     "Appunti CPS/Lezione 3.md",
-    "Appunti CPS/Indice delle lezioni.md",
     "Appunti CPS/Lezione 2.md",
+    "Appunti CPS/Indice delle lezioni.md",
     "Appunti LMP/Lezione 2.md",
     "Appunti LMP/Immagini/Untitled.md",
     "Appunti ASD/Indice degli appunti.md",
