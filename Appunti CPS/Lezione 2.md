@@ -219,7 +219,8 @@ Allora:
 A e B sono indipendenti $\iff$ $P(A|B)=P(A)$
 _Dimostrazione_
 si ha 
-A e B sono indipendenti $\iff$ $P(A\cap B)=P(A)P(B)\iff \frac {P(A\cap B)}{P(B)}\frac {P(A)P(B)}{P(B)}\iff P(A|B) = P(A)$
+A e B sono indipendenti $\iff$ $P(A\cap B)=P(A)P(B)\iff \frac {P(A\cap B)}{P(B)}\frac {P(A)\cancel{P(B)}}{\cancel{P(B)}}\iff P(A|B) = P(A)$
+
 
 Vale lo stesso per $P(B|A)=P(B)$
 
