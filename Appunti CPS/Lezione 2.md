@@ -132,5 +132,27 @@ Si calcola facilmente dal testo $P(B|E_2)$ e viene chiesto di calcolare $P(E_2|B
 >$P(B|E_2)P(E_2)/P(B|E_1)\cdot P(E_1)+P(B|E_2)\cdot P(E_2)+P(B|E_3)P\cdot P(E_3)=$
 >$(3/5\cdot 2/6)/4/5\cdot 1/6+3/5\cdot 2/6+2/5\cdot 3/6 = 3/8$
 
+Altre domande possibili sono le seguenti:
+- Calcolare la prob. che sia uscito 1 sapendo di aver estratto una pallina bianca
+- Calcolare la prob che sia uscito 4 o 5 o 6 sapendo di aver estratto una pallina bianca
+In questi due casi le prob richieste sono $P(E_1|B)$ e $P(E_3|B)$
+In corrispondenza si ha:
+$$P(E_1|B) = \frac {P(B|E_1)P(E_1)}{P(B)} = \frac {\frac {4}{5}\cdot \frac{1}{6}}{\frac {4}{5}\frac {1}{6}+\frac {3}{5}\frac {2}{6}+\frac {2}{5}\frac {3}{6}}=...=\frac {2}{8}=\frac {1}{4}$$
+$$P(E_3|B)=\frac {P(B|E_3)P(E_3)}{P(B)}=...=\frac {3}{8}$$
+
+**Oss**
+Abbiamo ottenuto che 
+$$P(E_i|B)=\begin{cases}
+2/8 & i=1\\
+3/8 & i=2\\
+3/8 & i=3
+\end{cases}$$
+Quindi $P(E_1|B)+P(E_2|B)+P(E_3|B) = 1$
+Questo è in accordo con il fatto che _la somma delle probabilità degli eventi di una partizione è sempre uguale a 1, e che $P(.|B)$ è una misura di probabilità_
+
+Consideriamo altre possibili domande.
+- Calcolare la prob. che sia uscito 2 o 3 sapendo di aver estratto una pallina nera
+- Calcolare la prob. che esca un numero dispari nel lancio del dado sapendo di aver estratto un apallina bianca
 
 
+In generale non è vero che $P(E_i|B)+P(E_i|B^c) = 1$
