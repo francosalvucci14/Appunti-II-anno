@@ -152,7 +152,47 @@ Questo è in accordo con il fatto che _la somma delle probabilità degli eventi 
 
 Consideriamo altre possibili domande.
 - Calcolare la prob. che sia uscito 2 o 3 sapendo di aver estratto una pallina nera
-- Calcolare la prob. che esca un numero dispari nel lancio del dado sapendo di aver estratto un apallina bianca
+- Calcolare la prob. che esca un numero dispari nel lancio del dado sapendo di aver estratto una pallina bianca
 
+Nel primo caso si chiede di calcolare $P(E_2|B^c)$
+Si ha:
+$$P(E_2|B^c)=\frac {P(B^c|E_2)P(E_2)}{P(B^c)}$$
+Sotto $E_2$ l'urna è cosi composta : 3B,2N
+Quindi si ha che $P(B^c|E_2)=\frac {2}{5}$
+$P(B^c)$ è stata calcolata precedentemente
+Quindi $P(E_2|B^c) = \frac {2}{7}$
 
 In generale non è vero che $P(E_i|B)+P(E_i|B^c) = 1$
+
+Nel secondo caso la partizione $E_1=(1),E_2=(2,3),E_3=(4,5,6)$ non ci è di aiuto per risolvere il problema.
+è più opportuno considerare la seguente partizione: {$F_1,...,F_6$} dove $F_k$={esce k nel lancio del dado}
+Allora $P(F_1)=...=P(F_6)=\frac {1}{6}$
+Inoltre $$P(B|F_k)=\begin{cases}
+P(B|E_1)=\frac {4}{5} & k=1\\
+P(B|E_2)=\frac {3}{5} & k=2,3 & (\cdot)\\
+P(B|E_3)=\frac {2}{5} & k=4,5,6
+\end{cases}$$
+La prob. richiesta è $P(D|B)$ dove $D=F_1\cup F_3\cup F_5$
+**Commento** 
+questa uguaglianza è versa ma poco utile:
+
+$P(D|B)=\frac {P(B|D)P(D)}{P(B)}$
+
+Allora procediamo cosi:
+
+$P(D|B)=P(F_1\cup F_3\cup F_5)=P(F_1|B)+P(F_3|B)+P(F5|B)$
+Poi calcoliamo $P(F_k|B)$ per k=1,...,6
+Si ha:
+
+$P(F_k|B)=\frac {P(B|F_k)P(F_k)}{P(B)} = \frac {1}{6}$
+$P(B|F_k)=(\cdot)$
+
+Allora $$P(F_k|B)=\frac {P(B|F_k)\frac {1}{6}}{\frac {8}{15}}=P(B|F_k)\frac {1}{6}\frac {15}{8}=P(B|F_k)\frac {5}{15} = \begin{cases}\frac {1}{4} & k=1\\
+\frac {3}{16} & k=2,3\\
+\frac {1}{8} & k=4,5,6
+\end{cases}$$
+In conclusione $P(D|B)=P(F_1|B)+P(F_3|B)+P(F_5|B)=\frac {1}{4}+\frac {3}{16}+\frac {1}{8} = \frac {9}{16}$
+
+**Oss** la prob. che esca un numero pari sapendo che è uscita una pallina bianca è $P(D^c|B) = 1-P(D|B)=1-\frac {9}{16}=\frac {7}{16}$
+
+
