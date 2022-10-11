@@ -24,7 +24,7 @@ Nel linguaggio java tutto il codice sorgente viene scritto in file di testo con 
 Questi file sorgente vengono poi compilati in file .class dal compiler java chiamat <b>JAVAC</b>
 Un file .class <u>non</u> contiene codice nativo del processore; al contrario contiene <b>Bytecodes</b> (Il linguaggio macchina della Java Virtual Machine)
 
-IMMAGINE QUI![[Appunti LMP/Immagini/getStarted-compiler.gif]]
+![[Appunti LMP/Immagini/getStarted-compiler.gif]]
 
 Dato che la Java VM è disponibile su vari Sistemi Operativi, lo stesso file .class può essere lanciato su windows, linux, solaris so,macos
 # La piattaforma Java

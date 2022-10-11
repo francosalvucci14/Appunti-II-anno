@@ -62,6 +62,9 @@ Ora consideriamo il seguente insieme:
 $C_{n,k} = (i_1,..,i_k)$ sottoinsiemi di (1,...,n) di k elementi (ovviamente tutti distinti) (COMBINAZIONI SEMPLICI) 
 Ci si chiede quanto vale #$C_{n,k}$
 
+Si ha $C_{n,0} = (\emptyset)\implies |C_{n,0}| = 1$ e $C_{n,n} = (1,..,n) \implies |C_{n,n}| = 1$
 
+Allora:
+preso un sottoinsieme $(i_1,...,i_k)$, considerando tutte le permutazioni di $(i_1,...,i_k)$ danno origine a particolari sequenze ordinate in $D_{n,k}$; tutti gli elementi di $D_n,k$ possono essere visti come una particolare permutazioni di elementi di un certo insieme
 
 
