@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Appunti CPS/Lezione 3.md",
+            "file": "Appunti CPS/Lezione 2.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti CPS/Lezione 3.md",
+                "file": "Appunti CPS/Lezione 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti CPS/Lezione 3.md",
+                "file": "Appunti CPS/Lezione 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti CPS/Lezione 3.md"
+                "file": "Appunti CPS/Lezione 2.md"
               }
             }
           },
@@ -154,11 +154,11 @@
   },
   "active": "90fe890bef2bffd6",
   "lastOpenFiles": [
+    "Appunti CPS/Lezione 3.md",
     "Appunti LMP/Lezione 2.md",
     "getStarted-compiler.gif",
     "Appunti LMP/Introduzione.md",
     "Appunti LMP/Indice delle lezioni.md",
-    "Appunti CPS/Lezione 3.md",
     "Appunti CPS/Lezione 2.md",
     "Appunti CPS/Indice delle lezioni.md",
     "Appunti LMP/Immagini/Untitled.md",

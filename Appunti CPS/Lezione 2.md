@@ -67,7 +67,7 @@ $P(A)=P(A|E)\cdot P(E)+P(A|E^c)\cdot P(E^c)$
 ### Diagramma ad albero associato alla formula delle prob. totali
 Si può costruire un diagramma ad albero associato dove ogni diramazione fa riferimento ad una partizione(ogni diramazione considera tutti i casi possibili.) Ad ogni arco si associa uno probabilità. Per fissare le idee consideriamo $I=(1,2,3)$
 
-![[Pasted image 20221007151209.png]]
+![[Pasted image 20221007151209.png|center]]
 
 Siamo interessati a tutte le foglie che finiscono con A indicate da un asterisco *
 Si deve considerare la somma dei pesi dei cammini che finiscono con A ottenuti con i prodotti dei pesi dei rami
@@ -119,7 +119,8 @@ Quindi tipicamente si avrà:
 **Esempio**
 Consideriamo ancora l'esempio che abbiamo visto per la formula della prob. totali
 
-![[Appunti CPS/Immagini/Pasted image 20221007155511.png]]
+![[Appunti CPS/Immagini/Pasted image 20221007155511.png|center]]
+
 
 Supponiamo che venga chiesto di calcolare la seguente prob. cond.
 
