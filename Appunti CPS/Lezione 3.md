@@ -20,3 +20,48 @@ $P(A_1) = P(A_2) = P(A_3) = \frac {2}{4}=\frac {1}{2}$
 $P(A_1\cap A_2) = P(A_1\cap A_3) = P(A_2\cap A_3) = \frac {1}{4}$
 $P(A_1\cap A_2\cap A_3)=\frac {1}{4}$
 
+Quindi $P(A_1\cap A_2)=P(A_1)P(A_2),P(A_1\cap A_3)=P(A_1)P(A_3),P(A_2\cap A_3)=P(A_2)P(A_3)$
+e $P(A_1\cap A_2\cap A_3)\neq P(A_1)P(A_2)P(A_3)$
+
+Conclusione: Eventi <u>non</u> indipendenti  ma indipendenti a due a due
+
+_Proposizione_
+Se $(A_i)_{i\ni I}$ è una famiglia di eventi indipendenti. allora lo à anche qualsiasi altra famiglia ottenuta considerando il complementare di alcuni(o tutti) gli eventi
+
+**Commento** l'ipotesi di indipendenza spesso segue dal modello in esame. Ad esempio si hanno eventi indipendenti nel caso di un evento legato a diversi lanci di moneta, diversi lanci di un dado, diverse estrazioni da un insieme di elementi <u>con</u> reinserimento
+In altri casi gli eventi indipendenti escono fuori in maniera soprendente perchè i valori si combinano in maniera opportuna
+
+Consideriamo il seguente esempio:
+Si lanciano 3 monete eque e consideriamo i seguenti eventi :
+$A=(\text{esce testa al primo lancio})$
+$B=(\text{esceono esattamente 2 teste consecutive})$
+L'insieme di riferimento è :
+$\Omega = ((T,T,T,),(T,T,C),(T,C,T),(T,C,C,),(C,T,T,),(C,T,C),(C,C,T),(C,C,C))$
+Ognuno di questi 8 el. ha prob. $\frac {1}{2}\frac {1}{2}\frac {1}{2}=\frac {1}{8}$ perchè i lanci di moneta sono indipendenti (Quindi spazio di prob. uniforme definito)
+
+Si ha $P(A) = P((T,T,T),(T,T,C),(T,C,T),(T,C,C)) = \frac {4}{8}=\frac {1}{2}$ e $P(B)=P((T,T,C),(C,T,T,)) = \frac {2}{8}=\frac {1}{4}$
+Inoltre $P(A\cap B) = P((T,T,C))=\frac {1}{8}\:e\:P(A)P(B)=\frac{1}{2}\frac{1}{4}=\frac{1}{8}$
+Quindi A e B sono indipendenti, ma la cosa non era prevedibile a priori
+
+# Cenni di calcolo combinatorio
+Consideriamo un insieme di $n\geq1$  elementi; senza perdere di qualità supponiamo che sia l'insieme (1,...,n) 
+
+Siamo interessati al seguente insieme:
+
+>$D_{n,k}=(i_1,...,i_k)$ sequenze ordinate di elementi in {1,...,n}, senza ripetizioni, di lunghezza k con $k\ni (1,...,n)$ (DISPOSIZIONI SEMPLICI)
+
+Ci si chiede quanto vale #$D_{n,k}$
+Risposta : Si hanno n scelte per $i_1$, n-1 scelte per $i_2$,...,fino ad avere n-(k-1) scelte per $i_k$
+Quindi:
+#$D_{n,k} = n(n-1)...(n-(n-k))=n(n-1)...(n-k+1)$
+
+Se si vuole far riferimento al fattoriale si ha #$D_{n,k} = \frac {n!}{(n-k)!}$
+Nel caso k=n si ha #$D_{n,k} = \frac {n!}{(n-n)!} = \frac {n!}{0!}=n!$
+
+Ora consideriamo il seguente insieme:
+$C_{n,k} = (i_1,..,i_k)$ sottoinsiemi di (1,...,n) di k elementi (ovviamente tutti distinti) (COMBINAZIONI SEMPLICI) 
+Ci si chiede quanto vale #$C_{n,k}$
+
+
+
+
