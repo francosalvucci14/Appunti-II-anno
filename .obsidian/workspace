@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Appunti BSD/Lezione 1.md",
+            "file": "Appunti BSD/Indice delle lezioni.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/Lezione 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +93,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/Lezione 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,9 +114,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Appunti BSD/Lezione 1.md"
-              }
+              "state": {}
             }
           },
           {
@@ -152,17 +148,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "c8c6bc5167ba4538",
+  "active": "90fe890bef2bffd6",
   "lastOpenFiles": [
+    "Appunti CPS/Lezione 1.md",
+    "Appunti CPS/Indice delle lezioni.md",
     "Appunti BSD/Indice delle lezioni.md",
+    "Appunti BSD/Lezione 1.md",
     "Appunti ASD/Esercizi/Esercizio 1.md",
     "Appunti ASD/Esercizi/Esercizio 2.md",
     "Appunti ASD/Lezione 1.md",
     "Appunti ASD/Indice degli appunti.md",
     "Appunti CPS/Lezione 2.md",
-    "Appunti CPS/Lezione 3.md",
-    "Appunti LMP/Lezione 2.md",
-    "Appunti CPS/Indice delle lezioni.md",
-    "Appunti CPS/Lezione 1.md"
+    "Appunti CPS/Lezione 3.md"
   ]
 }
