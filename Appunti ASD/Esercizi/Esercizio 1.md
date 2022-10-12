@@ -16,5 +16,4 @@ A questo punto, per cuocere n frittelle, io impiego n minuti, ottendendo così u
 NO
 ## Dimostrazione
  
-Dimostriamo per assurdo che io riesca a cuocere n frittelle in n-1 minuti, questo implica che all'interno della padella io possa mettere più di 2 frittelle (es. 3) e quindi risparmiarmi 1 minuto, ma questo è assurdo perchè nel modello di calcolo utilizzato (la padella) mi viene imposto che al max. ci possono stare 2 frittelle, e di conseguenza la mia ipotesi è falsa) $\square$ 
-
+Dimostriamo per assurdo che io riesca a cuocere n frittelle in n-1 minuti, questo implica che all'interno della padella io possa mettere più di 2 frittelle (es. 3) e quindi risparmiarmi 1 minuto, ma questo è assurdo perchè nel modello di calcolo utilizzato (la padella) mi viene imposto che al max. ci possono stare 2 frittelle, e di conseguenza la mia ipotesi è falsa $\square$ 
