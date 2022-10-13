@@ -54,7 +54,7 @@ $p(0,0)=0, p(0,1)=1, p(1,0)=2, etc..$
 ![[appunti fi/immagini/Pasted image 20221013163248.png|center]]
 
 I numeri razionali corrispondono alle classi d'equivalenza della relazione bianria $R$ definita sull'insieme $\mathbb Zx\mathbb Z^+$ :
-$$R((<a,b>),(<c,d>)) \iff ad=bc$$
+$$R((\langle a,b\rangle),(\langle c,d\rangle)) \iff ad=bc$$
 L'insieme $\mathbb Q$ è dunque equinumeroso all'insieme $\mathbb Zx(\mathbb Z^+)/R$ 
 D'altronde poichè $\mathbb Z$ è contabile, anche $\mathbb Z^2$ lo è così come anche l'insieme $\mathbb Zx(\mathbb Z^+)/R$ che è equinumeroso ad un sottoinsieme proprio di $\mathbb Z^2$.
 Quindi $\mathbb Q$ è contabile.
@@ -67,3 +67,20 @@ L'insieme $\mathbb R$ dei reali non è numerabile
 L'insieme aperto (0,1) e l'insieme $\mathbb R$ sono equinumerosi(una possibile biezione è $\frac{1}{(2^x+1)}$, con dominio $\mathbb R$ e codominio (0,1)).
 
 Basta dunque mostrare che l'insieme dei reali in (0,1) non è numerabile. A tal fine, consideriamo l'insieme delle sequenze infinite di cifre decimali che i reali in (0,1) e mostriamo che tale insieme non è numerabile
+
+_Dim per assurdo_
+Si supponga per assurdo di aver trovato una qualsiasi corrispondenza tra i naturali e le sequenze: questa corrispondenza definirebbe una enumerazione $\Phi =\: \langle\phi_0,\phi_1,...\rangle$ delle sequenze
+
+Introduciamo ora la sequenza $\phi$ avente come i-esima cifra, per $i=0,1,2,,,$ il valore ottenuto sommando 1(mod 10) alla i-esima cifra di $\phi_i$ 
+$$\phi[i]=(\phi_i[i]+1)mod\:10$$
+**Esempio**
+$\phi[0]=(\phi_0[0]+1)mod\:10$, se $\phi_0[0]=4\implies \phi[0]=5\:mod\:10$ 
+
+![[appunti fi/immagini/Pasted image 20221013165610.png|center]]
+
+Si considera la prima cifra della prima sequenza(0+1), la seconda cifra della seconda sequenza(1+1), la terza cifra della terza sequenza(3+1) e cosi via, e otteniamo, in questo caso, una sequenza del tipo 
+$$\langle1,2,4,...,\rangle$$
+Ci si muove lungo la diagonale della tabella, e la sequenza sarà diversa da ogni cifra della diagonale
+Per ogni sequenza(nelle righe) ci sarà un numero nella diagonale, ma quel numero sarà diverso dalla sequenza che stiamo costruendo e quindi la sequenza sarà diversa da ogni altra sequenza
+
+(**Dimostrazione per Diagonalizzazione**)
