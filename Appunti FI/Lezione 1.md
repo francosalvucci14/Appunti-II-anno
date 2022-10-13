@@ -28,3 +28,5 @@ data una proposizione $P(n)$ definita per un generico numero naturale $n\geq n_0
 - $P(n_0)$ è vera (passo base dell'induzione)
 - per ogni naturale $k\geq n_0,P(i)$ è vera per ogni $i,n_0\leq i\leq k$ (ipotesi induttiva) implica $P(k+1)$ vera (passo induttivo)
 $$(P(0)\wedge \forall k'(P(0)\wedge...\wedge P(k')\implies P(k'+1)))\implies \forall\:nP(n)$$
+## Insiemi Infiniti
+
