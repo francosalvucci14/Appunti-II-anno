@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Appunti ASD/Indice degli appunti.md",
+            "file": "Appunti FI/Lezione 1.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Indice degli appunti.md",
+                "file": "Appunti FI/Lezione 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Indice degli appunti.md",
+                "file": "Appunti FI/Lezione 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Indice degli appunti.md"
+                "file": "Appunti FI/Lezione 1.md"
               }
             }
           },
@@ -154,8 +154,8 @@
   },
   "active": "c8c6bc5167ba4538",
   "lastOpenFiles": [
-    "Appunti ASD/Lezione 2.md",
     "Appunti ASD/Indice degli appunti.md",
+    "Appunti ASD/Lezione 2.md",
     "Appunti ASD/Lezione 1.md",
     "Appunti BSD/Lezione 1.md",
     "Appunti BSD/Indice delle lezioni.md",
