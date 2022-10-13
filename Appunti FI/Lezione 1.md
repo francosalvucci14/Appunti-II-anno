@@ -30,3 +30,11 @@ data una proposizione $P(n)$ definita per un generico numero naturale $n\geq n_0
 $$(P(0)\wedge \forall k'(P(0)\wedge...\wedge P(k')\implies P(k'+1)))\implies \forall\:nP(n)$$
 ## Insiemi Infiniti
 
+Due insiemi A e B si dicono **equinumerosi** se esiste una biezione tra di essi
+Dato un insieme finito A, la sua cardinalità |A| è definita come :
+$$|A|=\begin{cases}0 & se\: A=\emptyset\\
+n & se\: è\: equinumeroso\:a\: (0,1,...,n-1),con\: n\geq1\end{cases}$$
+- Un insieme di dice numerabile se esso è **equinumeroso** a $\mathbb N$ 
+- Un insieme si dice **contabile** se esso è finito o numerabile
+- Per indicare la cardinalità degli insiemi infiniti equinumerosi ad $\mathbb N$ si utilizza il simbolo $\aleph_0$ 
+- Se un insieme A è equinumeroso a un insieme B, con $B \subseteq C$, dove C è un insieme contabile, allora anche A è contabile
