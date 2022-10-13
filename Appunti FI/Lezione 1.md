@@ -36,5 +36,17 @@ $$|A|=\begin{cases}0 & se\: A=\emptyset\\
 n & se\: è\: equinumeroso\:a\: (0,1,...,n-1),con\: n\geq1\end{cases}$$
 - Un insieme di dice numerabile se esso è **equinumeroso** a $\mathbb N$ 
 - Un insieme si dice **contabile** se esso è finito o numerabile
-- Per indicare la cardinalità degli insiemi infiniti equinumerosi ad $\mathbb N$ si utilizza il simbolo $\aleph_0$ 
+- Per indicare la cardinalità degli insiemi infiniti equinumerosi ad $\mathbb N$ si utilizza il simbolo $\aleph_0$ (ALEPH) 
 - Se un insieme A è equinumeroso a un insieme B, con $B \subseteq C$, dove C è un insieme contabile, allora anche A è contabile
+
+L'insieme $\mathbb Z$ degli interi relativi risulta essere numerabile (cioè $|\mathbb Z|=\aleph_0$) poichè i suoi elementi possono essere posti in corrispondenza biunivoca con $\mathbb N$ tramite biezione $f:\mathbb Z \rightarrow \mathbb N$ definita nel seguente modo:$$f(i)=\begin{cases}-2i & se\: i\leq0\\
+2i-1 & se\: i>0\end{cases}$$ **Esempio**
+$\mathbb Z$={-5,-4,-3,-2,-1,0,1,2,3,4,5}
+L'insieme $\mathbb N$ associato a $\mathbb Z$ è ={10,8,6,4,2,0,1,3,5,7,9}
+(-5=10 {-2i},-4=8 {-2i}, 3=5 {2i-1}, etc...)
+
+L'insieme $\mathbb N^2$ delle coppie di numeri naturali risulta essere numerabile. La corrispondenza biunivoca può essere stabilita con la seguente biezione, frequentemente chiamata **funzione coppia di Cantor**
+>$$p(i,j)=\frac{(i+j)(i+j+1)}{2}+i$$
+
+ES : $p(3,4)=\frac{(3+4)(3+4+1)}{2}+3 = \frac{7\cdot 8}{2}+3 = \frac{56}{2}+3 =28+3=31$
+$p(0,0)=0, p(0,1)=1, p(1,0)=2, etc..$ 
