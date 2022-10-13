@@ -95,4 +95,6 @@ L'insieme delle aprti di $\mathbb N,\mathcal P(\mathbb N)$ non è numerabile
 Supponiamo per assurdo che $\mathcal P(\mathbb N)$ sia numerabile e sia $P_o,P_1,...$ una sua enumerazione. A ciascun $P_i, con\: i=0,1,2,...$ associamo una sequenza $b_{i0},b_{i1},b_{i2},...$ dove 
 $$b_{i,j}=\begin{cases}0 & se\: j\notin P_i \\
 1 & se\: j\in P_i\end{cases}$$
-L'insieme diagonale $P=p_o,p_1,...$ è definito come $p_i=1-b_{i,j}$ e differisce da ciascuno degli insiemi $P_i$ poichè, per costruzione, $i\in P\iff i\notin P_i$. Avendo dunque supposto che sia possibile enumerare gli elementi di $\mathcal P(\mathbb N)$, si è riusciti a costruire un insieme $P\in \mathcal P(\mathbb N)$ che non fa parte della enumerazione, il che falsifica tale ipotesi 
+**Oss** $b_{i,j}$ è la **funzione caratteristica dell'insieme**
+
+L'insieme diagonale $P=p_o,p_1,...$ è definito come $p_i=1-b_{i,j}$ e differisce da ciascuno degli insiemi $P_i$ poichè, per costruzione, $i\in P\iff i\notin P_i$. Avendo dunque supposto che sia possibile enumerare gli elementi di $\mathcal P(\mathbb N)$, si è riusciti a costruire un insieme $P\in \mathcal P(\mathbb N)$ che non fa parte della enumerazione, il che falsifica tale ipotesi. 
