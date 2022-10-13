@@ -55,8 +55,8 @@ $p(0,0)=0, p(0,1)=1, p(1,0)=2, etc..$
 
 I numeri razionali corrispondono alle classi d'equivalenza della relazione bianria $R$ definita sull'insieme $\mathbb Zx\mathbb Z^+$ :
 $$R((\langle a,b\rangle),(\langle c,d\rangle)) \iff ad=bc$$
-L'insieme $\mathbb Q$ è dunque equinumeroso all'insieme $\mathbb Zx(\mathbb Z^+)/R$ 
-D'altronde poichè $\mathbb Z$ è contabile, anche $\mathbb Z^2$ lo è così come anche l'insieme $\mathbb Zx(\mathbb Z^+)/R$ che è equinumeroso ad un sottoinsieme proprio di $\mathbb Z^2$.
+L'insieme $\mathbb Q$ è dunque equinumeroso all'insieme $\mathbb Z\cdot(\mathbb Z^+)/R$ 
+D'altronde poichè $\mathbb Z$ è contabile, anche $\mathbb Z^2$ lo è così come anche l'insieme $\mathbb Z\cdot(\mathbb Z^+)/R$ che è equinumeroso ad un sottoinsieme proprio di $\mathbb Z^2$.
 Quindi $\mathbb Q$ è contabile.
 
 L'unione di una quantità contabile di insiemi contabili è ancora un insieme contabile. L'enumerazione può essere effettuata applicando ancora il metodo di Cantor, dove si suppone che la riga i-esima contenga gli elementi dell'i-esimo insieme.
@@ -84,3 +84,9 @@ Ci si muove lungo la diagonale della tabella, e la sequenza sarà diversa da ogn
 Per ogni sequenza(nelle righe) ci sarà un numero nella diagonale, ma quel numero sarà diverso dalla sequenza che stiamo costruendo e quindi la sequenza sarà diversa da ogni altra sequenza
 
 (**Dimostrazione per Diagonalizzazione**)
+
+La sequenza $\phi$ viene a costituire elemento diagonale dell'enumerazione $\phi_0,\phi_1,...$ in quanto differisce da ogni altra sequenza $\phi_i$ nella posizione i
+
+Quindi, dopo aver supposto per assurdo di poter enumerare tutte le rappresentazioni decimali di reali nell'intervallo (0,1), è stato possibile costruire per diagonalizzazione un'ulteriore rappresentazione che, seppure relativa ad un reale in (0,1), non appartiene all'enumerazione, il che contrasta con l'ipotesi che l'insieme delle rappresentazioni dei reali sia numerabile.
+La non numerabilità dei reali in (0,1) deriva da quanto detto ed osservando inoltre che ogni numero reale ha al più due rappresentazioni distinte (ad esempio, 0.01000 ... e 0.00999....)
+
