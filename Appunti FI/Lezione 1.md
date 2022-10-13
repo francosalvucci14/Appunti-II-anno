@@ -90,3 +90,9 @@ La sequenza $\phi$ viene a costituire elemento diagonale dell'enumerazione $\phi
 Quindi, dopo aver supposto per assurdo di poter enumerare tutte le rappresentazioni decimali di reali nell'intervallo (0,1), è stato possibile costruire per diagonalizzazione un'ulteriore rappresentazione che, seppure relativa ad un reale in (0,1), non appartiene all'enumerazione, il che contrasta con l'ipotesi che l'insieme delle rappresentazioni dei reali sia numerabile.
 La non numerabilità dei reali in (0,1) deriva da quanto detto ed osservando inoltre che ogni numero reale ha al più due rappresentazioni distinte (ad esempio, 0.01000 ... e 0.00999....)
 
+L'insieme delle aprti di $\mathbb N,\mathcal P(\mathbb N)$ non è numerabile
+
+Supponiamo per assurdo che $\mathcal P(\mathbb N)$ sia numerabile e sia $P_o,P_1,...$ una sua enumerazione. A ciascun $P_i, con\: i=0,1,2,...$ associamo una sequenza $b_{i0},b_{i1},b_{i2},...$ dove 
+$$b_{i,j}=\begin{cases}0 & se\: j\notin P_i \\
+1 & se\: j\in P_i\end{cases}$$
+L'insieme diagonale $P=p_o,p_1,...$ è definito come $p_i=1-b_{i,j}$ e differisce da ciascuno degli insiemi $P_i$ poichè, per costruzione, $i\in P\iff i\notin P_i$. Avendo dunque supposto che sia possibile enumerare gli elementi di $\mathcal P(\mathbb N)$, si è riusciti a costruire un insieme $P\in \mathcal P(\mathbb N)$ che non fa parte della enumerazione, il che falsifica tale ipotesi 
