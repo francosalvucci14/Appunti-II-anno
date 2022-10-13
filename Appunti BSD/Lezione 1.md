@@ -46,3 +46,33 @@ Nelle attività standadrizzate dei sistemi informativi complessi, sono state int
 Nei sistemi informatici, le informazioni vengono rappresentate in modo essenziale attraverso i dati
 
 ## Informazioni e dati
+Nei sistemi informatici, le informazioni vengono rappresentate in modo essenziale, attraverso i **dati**
+Dal Vocabolario della lingua italiana:
+- **Informazione**: notizia, dato o elemento che consente di avere conoscenza più o meno esatta di fatti, situazioni, etc...
+- **Dato**: ciò che è immediatamente presente alla conoscenza, prima di ogni elaborazione;
+
+I dati costituiscono spesso una risorsa strategica, perchè più stabili nel tempo di altre componenti
+**Esempio**
+- I dati bancari hanno una struttura invariata da decenni. Le applicazioni che operano su essi invece cambiano di frequente. La nuova procedure "eredità" i dati dalla vecchia con opportune trasformazioni
+- I dati vista la loro stabilità costituiscono una risorsa per l'organizzazione, un patrimonio da sfruttare e proteggere
+
+All'interno del sistema informativo, la collezione di dati è chiamata **Basi di dati** o **Database**
+- Compito della base di dati è non solo di memorizzare ma di rappresentare le relazioni tra essi
+All'interno del sistema informativo il software atto specificatamente a gestire i dati è detto Sistema di Gestione della base di dati o **Database Management System**
+
+## Basi di dati
+
+_Def metodologica:_ Insieme organizzato di dati utilizzati per il supporto allo svolgimento delle attività
+_Def metodologica e tecnologica:_ insieme di dati gestito dal DBMS
+
+**Data Independence:** La struttura di un DB deve dare garanzia che modifiche dei dati non richiedano modifiche ai programmi applicativi e/o alle tecniche di accesso ai dati stessi
+
+**Basi di dati o Database**
+Collezione di informazioni registrate in formato leggibile dell'elaboratore elettronico e relativa ad un preciso dominio di conoscenze, organizzata allo scopo di poter essere consultata dai suoi utilizzatori
+
+### DMBS
+Sistema (**prodotto software**) in grado di gestire **collezione di dati** che siano:
+- **grandi**: di dimensioni molto maggiori della memoria centrale dei sistemi di calcolo
+- **persistenti**: con un periodo di vita indipendente dalle singole esecuzioni dei programmi
+- **condivise**: utilizzate da applicazioni e utenti diversi
+garantendo **affidabilità** (resistenza a malfunzionamenti hardware e software) e **privatezza**(con una disciplina e un controllo degli accessi). Come ogni prodotto informatico, un DBMS deve essere **efficente**(utilizzando al meglio le risorse di spazio e tempo) ed **efficace**(rendendo produttive le attività dei suoi utilizzatori)
