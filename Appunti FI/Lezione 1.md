@@ -50,3 +50,20 @@ L'insieme $\mathbb N^2$ delle coppie di numeri naturali risulta essere numerabil
 
 ES : $p(3,4)=\frac{(3+4)(3+4+1)}{2}+3 = \frac{7\cdot 8}{2}+3 = \frac{56}{2}+3 =28+3=31$
 $p(0,0)=0, p(0,1)=1, p(1,0)=2, etc..$ 
+
+![[appunti fi/immagini/Pasted image 20221013163248.png|center]]
+
+I numeri razionali corrispondono alle classi d'equivalenza della relazione bianria $R$ definita sull'insieme $\mathbb Zx\mathbb Z^+$ :
+$$R((<a,b>),(<c,d>)) \iff ad=bc$$
+L'insieme $\mathbb Q$ è dunque equinumeroso all'insieme $\mathbb Zx(\mathbb Z^+)/R$ 
+D'altronde poichè $\mathbb Z$ è contabile, anche $\mathbb Z^2$ lo è così come anche l'insieme $\mathbb Zx(\mathbb Z^+)/R$ che è equinumeroso ad un sottoinsieme proprio di $\mathbb Z^2$.
+Quindi $\mathbb Q$ è contabile.
+
+L'unione di una quantità contabile di insiemi contabili è ancora un insieme contabile. L'enumerazione può essere effettuata applicando ancora il metodo di Cantor, dove si suppone che la riga i-esima contenga gli elementi dell'i-esimo insieme.
+
+![[appunti fi/immagini/Pasted image 20221013163946.png|center]]
+
+L'insieme $\mathbb R$ dei reali non è numerabile
+L'insieme aperto (0,1) e l'insieme $\mathbb R$ sono equinumerosi(una possibile biezione è $\frac{1}{(2^x+1)}$, con dominio $\mathbb R$ e codominio (0,1)).
+
+Basta dunque mostrare che l'insieme dei reali in (0,1) non è numerabile. A tal fine, consideriamo l'insieme delle sequenze infinite di cifre decimali che i reali in (0,1) e mostriamo che tale insieme non è numerabile
