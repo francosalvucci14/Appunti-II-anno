@@ -100,3 +100,5 @@ $$b_{i,j}=\begin{cases}0 & se\: j\notin P_i \\
 L'insieme diagonale $P=p_o,p_1,...$ è definito come $p_i=1-b_{i,j}$ e differisce da ciascuno degli insiemi $P_i$ poichè, per costruzione, $i\in P\iff i\notin P_i$. Avendo dunque supposto che sia possibile enumerare gli elementi di $\mathcal P(\mathbb N)$, si è riusciti a costruire un insieme $P\in \mathcal P(\mathbb N)$ che non fa parte della enumerazione, il che falsifica tale ipotesi. 
 
 L'insieme delle funzioni caratteristiche {$f | f:\mathbb N\rightarrow (0,1)$} non è numerabile
+
+**MANCANO 2 MINUTI DI UNITà 1**
