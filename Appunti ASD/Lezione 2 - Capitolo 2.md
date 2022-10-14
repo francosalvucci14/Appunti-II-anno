@@ -101,3 +101,47 @@ Sia $f(n)=2n^2-3n$ allora:
 
 In generale
 $$f(n)=\Omega(g(n))\implies lim_{n\to\infty}\frac{f(n)}{g(n)}\gt0$$
+
+### Notazione asintotica $\Theta$
+
+$f(n)=\Theta(g(n))$ se $\exists c_1,c_2\gt0,n_0\geq0|c_1\cdot g(n)\leq f(n)\leq c_2\cdot g(n)$
+
+![[appunti asd/immagini/Pasted image 20221014161512.png|center]]
+
+**Esempi**
+
+Sia $f(n)=2n^2-3n$ allora
+- $f(n)=\Theta(n^2)$
+- $f(n)\neq\Theta(n)$
+- $f(n)\neq\Theta(n^3)$
+
+In generale
+$$\begin{cases}f(n)=\Theta(g(n))& \implies f(n)=O(g(n))\\
+f(n)=O(g(n))& \centernot\implies f(n)=\Theta(g(n))\\
+f(n)=\Theta(g(n))& \implies f(n)=\Omega(g(n))\\
+f(n)=\Omega(g(n))& \centernot\implies f(n)=\Theta(g(n))\end{cases}$$
+
+>$f(n)=\Theta(g(n))\iff f(n)=\Omega(g(n))\wedge f(n)=O(g(n))$
+
+#### Notazione asintotica o
+
+simile a O(g(n)) ma con $f(n)\lt c\cdot g(n)$
+defizione alternativa:
+$$f(n)=o(g(n))\iff lim_{n\to\infty}\frac{f(n)}{g(n)}=0$$
+#### Notazione asintotica $\omega$
+
+Simile a $\Omega(g(n))$ ma con $f(n)\gt c\cdot g(n)$
+definizione alternativa:
+$$f(n)=\omega(g(n))\iff lim_{n\to\infty}\frac{f(n)}{g(n)}=\infty$$
+### Analogie
+
+$$\begin{cases}O & \leq\\
+\Omega & \geq\\
+\Theta & =\\
+o & \lt\\
+\omega & \gt\end{cases}$$
+
+## Usare la notazione asintotica nelle analisi
+### Upped Bound
+
+
