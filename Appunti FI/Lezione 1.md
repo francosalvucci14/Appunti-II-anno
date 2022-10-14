@@ -130,3 +130,18 @@ Con la notazione |x| indichiamo la **lunghezza** di una parola x, ovvero il nume
 $$x\:o\:y\neq y\:o\:x$$
 
 Un caso particolare di concatenazione è quello in cui la stringa viene concatenata con se stesa: con $x^h$ si denota la concatenazione di x con se stessa iterata h volte, Per convenzione con $x^0$ si intende la stringa vuota. 
+
+_Def_
+Dato un alfabeto $\Sigma$, si definisce **linguaggio** un qualsivoglia sottoinsieme di $\Sigma^*$. Si noti che poichè $\Sigma\subseteq\Sigma^*$, un alfabeto è a sua volta un linguaggio.
+
+Si chiama **linguaggio vuoto**, e lo si indica con $\Lambda$, il linguaggio che non contiene stringa alcuna. Si noti che $\Lambda\neq (\epsilon)$ 
+
+**Oss** $\Sigma$ è un linguaggio finito, $\Sigma^*$ è un linguaggio infinito
+
+**Esempio**
+$L\subseteq (a,b)^*$ $L=(x\in (a,b)^*|x=ay,y\in (a,b)^*)$ 
+$(a,b)^*=\Sigma^*$ 
+
+x è una sequenza di simboli tra a e b, lunghezza arbitraria, che ha la caratteristica di poter essere divisa in due parti: la prima parte è composta dal carattere a, la seconda è qualunque stringa in (a,b)
+
+L è l'insieme di tutte le stringhe che iniziano in questo mod.
