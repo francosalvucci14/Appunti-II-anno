@@ -107,3 +107,25 @@ L'insieme delle funzioni da interi a interi è continuo:
 $|f|f:\mathbb N\rightarrow \mathbb N|=2^{\aleph_0}$ 
 L'insieme delle funzioni da reali a reali ha cardinalità:
 $|f|f:\mathbb R\rightarrow \mathbb R|=2^{2^{\aleph_0}}$ 
+
+## Linguaggi
+
+_Def_
+Un insieme finito non vuoto $\Sigma$ di simboli (detti **caratteri**)  prende il nome di **alfabeto**
+
+Dato un alfabeto $\Sigma$ denotiamo come $\langle\Sigma^*,o,\epsilon\rangle$ il **monoide libero definito su $\Sigma$**
+Gli elementi di $\Sigma^*$ vengono detti **parole** o **stringhe**
+L'elemento $\epsilon$ viene detto **parola vuota**. L'operazione $o:\Sigma^*x\Sigma^*\rightarrow \Sigma^*$ definita sul monoide è chiamata **concatenazione** e consiste nel giustapporre due parole di $\Sigma^*$:
+$$x_{i_1},...,x_{i_n}\:o\:y_{j_1},...,y_{j_m}=x_{i_1}...x_{i_n}y_{j_1}...y_{j_m},con\: x_{i_1},...,x_{i_n},y_{j_1},...,y_{j_m}\in \Sigma$$
+**Esempio**
+
+Un esempio di concatenazione dei caratteri $x_1,x_2,x_3,y_1,y_2,z_1$
+$(x_1,x_2,x_3\:o\:y_1,y_2)o\:z_1$ 
+
+Dato un alfabeto $\Sigma$ ed il monoide sintattico definito su di esso vale la proprietà:
+$$\forall x\:x\:o\:\epsilon = \epsilon\:o\:x=x$$
+La concatenazione di due stringhe x e y è frequentemente indicata omettendo il simbolo o, cioè scrivendo xy anzichè x o y
+
+Con la notazione |x| indichiamo la **lunghezza** di una parola x, ovvero il numero di caratteri che la costituiscono. Chiaramente $|\epsilon|=0$ Si osservi inoltre che la concatenazione non gode della proprietà commutativa e quindi in generale:
+$$x\:o\:y\neq y\:o\:x$$
+
