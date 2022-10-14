@@ -1,5 +1,11 @@
 # Introduzione
 
+- [[#Induzione matematica semplice]]
+- [[#Induzione completa]]
+- [[#Insiemi Infiniti]]
+- [[#Linguaggi]]
+
+
 ## Induzione matematica semplice
 
 Data una proposizione $P(n)$ definita per un generico numero naturale n, si a che essa è vera per tutti i num naturali se:
