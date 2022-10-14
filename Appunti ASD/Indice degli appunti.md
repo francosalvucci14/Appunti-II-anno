@@ -1,5 +1,5 @@
 # Indice
 
-- [[Appunti ASD/Lezione 1|Lezione 1]]
-- [[Lezione 2]] 
+- [[Lezione 1- Capitolo 1]]
+- [[Lezione 2 - Capitolo 2]] 
 
