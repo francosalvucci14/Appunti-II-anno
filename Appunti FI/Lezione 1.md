@@ -158,3 +158,11 @@ La **potenza** $L^h$ di un linguaggio è definita come:
 $$L^h=L\:o\:L^{h-1},h\geq1$$
 con la convenzione secondo cui $L^0=(\epsilon)$. Si noti che,in basde alla suddetta convenzione, $\Lambda^0=(\epsilon)$
 
+_Def_
+Il linguaggio $L^*$ definito da:
+$$L^*=\bigcup_{h=0}^\infty L^h$$
+prende il nome di **chiusura riflessiva del linguaggio** L rispetto all'operazione di concatenazione, mentre l'operatore '$*$' prende il nome di **iterazione o stella di Kleene**. Si noti che, dato un qualunque linguaggio $L,\epsilon\in L^*$, e che $\Lambda^*=(\epsilon)$ 
+
+_Def_
+Si indica con $L^+$ la **chiusura(non riflessiva)** definita da $$L^+=\bigcup_{h=1}^\infty L^h$$
+Risulta ovviamente $L^*=L^+\cup (\epsilon)$ 
