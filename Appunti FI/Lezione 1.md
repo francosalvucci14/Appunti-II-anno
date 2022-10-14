@@ -129,3 +129,4 @@ La concatenazione di due stringhe x e y è frequentemente indicata omettendo il 
 Con la notazione |x| indichiamo la **lunghezza** di una parola x, ovvero il numero di caratteri che la costituiscono. Chiaramente $|\epsilon|=0$ Si osservi inoltre che la concatenazione non gode della proprietà commutativa e quindi in generale:
 $$x\:o\:y\neq y\:o\:x$$
 
+Un caso particolare di concatenazione è quello in cui la stringa viene concatenata con se stesa: con $x^h$ si denota la concatenazione di x con se stessa iterata h volte, Per convenzione con $x^0$ si intende la stringa vuota. 
