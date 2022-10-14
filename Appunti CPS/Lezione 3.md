@@ -116,3 +116,19 @@ In quel che segue scrivo i 10 sottoinsiemi e indico accanto il numero di element
 Quindi $p_0=0,p_1=\frac{3}{10},p_2=\frac{6}{10},p_3=\frac{1}{10}$
 Questi valori sono in accordo con la formula:
 $$p_k=\frac{{3\choose k}{2\choose{3-k}}}{5\choose3}=\frac{{3\choose k}{2\choose{3-k}}}{10}=\begin{cases}k=0 & 0\\k=1 & \frac{3}{10}\\k=2 & \frac{6}{10}\\k=3 & \frac{1}{10}\end{cases}$$
+
+**Esercizi di riepilogo**
+
+Un'urna ha 3 palline bianche e 4 nere. Si estraggono 2 palline a caso, una alla votla a con reinserimento
+1) calcolare la prob. di estrarre due colori uguali
+2) calcolare la prob. di estrarre almeno una pallina nera
+
+Svolgimento
+segniamo questi due insiemi
+$B_k=(\text{k-esima estratta bianca})$  
+$N_k=(\text{k-esima estratta nera})$ 
+-  la rob. richiesta è $P((B_1\cap B_2)\cup(N_1\cap N_2))$ = $P(B_1\cap B_2)+P(N_1\cap N_2)= P(B_1)P(B_2)+P(N_1)P(N_2)=\frac{3}{7}\frac{3}{7}+\frac{4}{7}\frac{4}{7}=\frac{25}{49}$
+-  La prob. richiesta è $P(N_1\cup N_2)$: 
+	- 1 modo: $P(N_1\cup N_2)=P(N_1)+P(N_2)-\underbrace{P(N_1\cap N_2)}_{=P(N_1)P(N_2)}=\frac{4}{7}+\frac{4}{7}-\frac{3}{6}\frac{4}{7}=\frac{6}{7}$
+	- 2 modo $P(N_1\cup N_2)=1-P((N_1\cup N_2)^c)=1-P(N_1^c\cap N_2^c)=1-P(B_1\cap B_2)=1-P(B_1|B_2)P(B_1)=$$1-\frac{\cancel{2}}{\cancel{6}}\frac{\cancel{3}}{7}=1-\frac{1}{7}=\frac{6}{7}$  
+
