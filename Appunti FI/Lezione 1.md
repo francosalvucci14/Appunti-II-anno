@@ -143,5 +143,18 @@ $L\subseteq (a,b)^*$ $L=(x\in (a,b)^*|x=ay,y\in (a,b)^*)$
 $(a,b)^*=\Sigma^*$ 
 
 x è una sequenza di simboli tra a e b, lunghezza arbitraria, che ha la caratteristica di poter essere divisa in due parti: la prima parte è composta dal carattere a, la seconda è qualunque stringa in (a,b)
+L è l'insieme di tutte le stringhe che iniziano in questo modo
 
-L è l'insieme di tutte le stringhe che iniziano in questo mod.
+L'**intersezione** di due linguaggi $L_1\:e\:L_2$ il linguaggio $L_1\cap L_2$ costituito dalle parole di $L_1$ e di $L_2$, cioè $L_1\cap L_2=(x\in\Sigma^*|x\in L_1\wedge x\in L_2)$ 
+L'**unione** di due linguaggi è il linguaggio $L_1\cap L_2$ costituito dalle parole appartententi ad almeno uno fra $L_1\:ed\:L_2$, cioè $L_1\cup L_2=(x\in\Sigma^*|x\in L_1\vee x\in L_2)$.
+Si noti che $L_1\cap\Lambda=\Lambda$ e $L_1\cup\Lambda=L_1$
+Il **complemento** di un linguaggio L_1 è il linguaggio $\neg L_1=\Sigma^*-L_1$ costituito dalle parole appartenenti a $\Sigma^*$ ma non a $L_1$, cioè $\neg L_1=(x\in\Sigma^*|x\notin L_1)$ 
+
+La **concatenazione**(o prodotto) di due linguaggi è il linguaggio $L_1\:o\:L_2$ delle parole costituite dalla concatenazione di una stringa di $L_1$ e di una stringa di $L_2$, cioè:
+$$L_1\:o\:L_2 = (x\in\Sigma^*|\exists y_1 \in L_1\:\exists y_2\in L_2(x=y_1\:o\:y_2))$$
+Si noti che $L\:o\:(\epsilon)=L$ e $L\:o\:\Lambda=\Lambda$ 
+
+La **potenza** $L^h$ di un linguaggio è definita come:
+$$L^h=L\:o\:L^{h-1},h\geq1$$
+con la convenzione secondo cui $L^0=(\epsilon)$. Si noti che,in basde alla suddetta convenzione, $\Lambda^0=(\epsilon)$
+
