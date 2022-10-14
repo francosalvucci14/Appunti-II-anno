@@ -143,5 +143,38 @@ o & \lt\\
 
 ## Usare la notazione asintotica nelle analisi
 ### Upped Bound
+>algoritmo fibonacci3(intero n)$\rightarrow$ intero
+>1. sia Fib un array di n interi
+>2. $Fib[1]=Fib[2]=1$
+>3. for i = 3 to n do
+>	4. $Fib[i]=Fib[i-1]+Fib[i-2]$
+>5. return $Fib[n]$
 
+T(n): complessità computazionale nel caso peggiore con input n
+$c_j$:#passi elementari eseguiti su una RAM quando è eseguita la linea di codice j
+- linea 1,2,5 eseguite una volta
+- linee 3 e 4 eseguite aò più n volte
+$T(n)\leq c_1+c_2+c_5+(c_3+c_4)n=\Theta(n)\implies T(n)=O(n)$
+
+### Lower Bound
+
+>algoritmo fibonacci3(intero n)$\rightarrow$ intero
+>1. sia Fib un array di n interi
+>2. $Fib[1]=Fib[2]=1$
+>3. for i = 3 to n do
+>	4. $Fib[i]=Fib[i-1]+Fib[i-2]$
+>5. return $Fib[n]$
+
+T(n): complessità computazionale nel caso peggiore con input n
+$c_j$:#passi elementari eseguiti su una RAM quando è eseguita la linea di codice j
+- linea 4 eseguita almeno n-3 volte
+$T(n)\geq c_4(n-3)=c_4n-3c_4=\Theta(n)\implies T(n)=\Omega(n)$
+
+Quindi tra upper bound e lower bound possimao dedurre che $$T(n)=\Theta(n)$$
+## Notazione asintotica: perchè è una grande idea
+
+- **misura indipendente** dall'implementazione dell'algoritmo e dalla macchina reale su cui è eseguito
+- i "dettagli" nascosti sono **poco rilevanti** quando n è grande per funzioni asintoticamente diverse
+- **analisi dettagliata** del numero di passi realmente eseguiti sarebbe difficile, noiosa e **non direbbe molto di più**
+- si è visto come descrive bene **in pratica** la velocità degli algoritmi
 
