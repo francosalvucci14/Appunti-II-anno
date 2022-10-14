@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti CPS/Lezione 3.md",
+                "file": "Appunti FI/Lezione 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,6 +78,7 @@
       {
         "id": "f47b9a65a61662c6",
         "type": "tabs",
+        "dimension": 50.61274509803921,
         "children": [
           {
             "id": "14aae099f69e26e1",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti CPS/Lezione 3.md",
+                "file": "Appunti FI/Lezione 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti CPS/Lezione 3.md",
+                "file": "Appunti FI/Lezione 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti CPS/Lezione 3.md"
+                "file": "Appunti FI/Lezione 1.md"
               }
             }
           },
@@ -145,6 +146,7 @@
       {
         "id": "55a9fd2141be2520",
         "type": "tabs",
+        "dimension": 49.38725490196079,
         "children": [
           {
             "id": "90fe890bef2bffd6",
@@ -165,6 +167,7 @@
   },
   "active": "c8c6bc5167ba4538",
   "lastOpenFiles": [
+    "Appunti CPS/Lezione 3.md",
     "Appunti FI/Lezione 1.md",
     "Appunti CPS/Lezione 1.md",
     "Appunti CPS/Lezione 2.md",
@@ -173,7 +176,6 @@
     "Appunti BSD/Lezione 1.md",
     "Appunti FI/Indice delle lezioni.md",
     "Appunti ASD/Indice degli appunti.md",
-    "Appunti BSD/Indice delle lezioni.md",
-    "Appunti CPS/Indice delle lezioni.md"
+    "Appunti BSD/Indice delle lezioni.md"
   ]
 }

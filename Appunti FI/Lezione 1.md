@@ -101,4 +101,9 @@ L'insieme diagonale $P=p_o,p_1,...$ è definito come $p_i=1-b_{i,j}$ e differisc
 
 L'insieme delle funzioni caratteristiche {$f | f:\mathbb N\rightarrow (0,1)$} non è numerabile
 
-**MANCANO 2 MINUTI DI UNITà 1**
+Dato un insieme numerabile A, e quindi di cardinalità $\aleph_0$, si dice che l'insieme $\mathcal P(A)$ ha cardinalità $2^{\aleph_0}$ 
+Gli insiemi aventi cardinalità $2^{\aleph_0}$ vengono detti insiemi **continui**
+L'insieme delle funzioni da interi a interi è continuo:
+$|f|f:\mathbb N\rightarrow \mathbb N|=2^{\aleph_0}$ 
+L'insieme delle funzioni da reali a reali ha cardinalità:
+$|f|f:\mathbb R\rightarrow \mathbb R|=2^{2^{\aleph_0}}$ 
