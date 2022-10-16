@@ -41,7 +41,7 @@ _Idea_: "Srotolare" la ricorsione, ottenendo una sommatoria dipendente solo dall
 
 **Esempio**
 $T(n)=c+T(n/2)$$T(n)=c+T(n/2)\implies T(n/2)=2c+T(n/4)\implies T(n/4)=3c+T(n/8)...T(n/i)=ic+T(n/2^i)$
-Continuo a srotolare finquando non trovo il caso base,in questo caso quando $i=log_2(n)$, infatti:
+Continuo a srotolare fin quando non trovo il caso base,in questo caso quando $i=log_2(n)$, infatti:
 $T(n)=c\cdot log_2n+T(\frac{n}{2^{log_2n}})\implies c\cdot log_2n+T(\frac{\cancel{n}}{\cancel{n}})\implies c\cdot log_2n+T(1)=\Theta(log(n))$ 
 
 **Esempio**
