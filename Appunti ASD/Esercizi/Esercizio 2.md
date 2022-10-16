@@ -8,5 +8,8 @@ Data la parola chiave "equiprobabile" possiamo dedurre che la probabilità sulle
 Il tempo tempo($\mathcal{I}$) su ogni istanza di dimesione n è 1 se la la pos della moneta è uguale a 1,j-1 altrimenti
 
 Di conseguenza possiamo utilizzare la formula e il costo nel caso medio è pari a:
-$$T_{avg}(n)=\sum_{i=1}^n \frac{1}{n}\cdot tempo(I)=(1/n)(1+\sum_{j=2}^n(j-1))=(1/n)(1+\sum_{j=1}^{n-1}j)=(1/n)(1+(n-1)n/2)=\frac{1}{n}+\frac{n-1}{2}\implies \frac{n-1}{2}$$
+
+$T_{avg}(n)=\sum_{j=1}^n \frac{1}{n}\cdot tempo(I)=(1/n)(1+\sum_{j=2}^n(j-1))$
+$=(1/n)(1+\sum_{j=1}^{n-1}j)=(1/n)(1+(n-1)n/2)=\frac{1}{n}+\frac{n-1}{2}\implies \frac{n-1}{2}$
+
 Quindi : $T_{avg}(n)=\frac{n-1}{2}$ 
