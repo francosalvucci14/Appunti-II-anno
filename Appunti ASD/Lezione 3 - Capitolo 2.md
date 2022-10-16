@@ -99,8 +99,50 @@ Di conseguenza dato che T(n) è sia $O(n^2)(upper\:bound)\:che\:\Omega(n^2)(lowe
 
 #### Albero binario completo
 
-I nodi di un albero binario completo di altezza h sono dati dalla seguente formula $\sum_{i=0}^h 2^i=2^{h-1}-1$ 
+I nodi di un albero binario completo di altezza h sono dati dalla seguente formula $\sum_{i=0}^h 2^i=2^{h+1}-1$ 
+
 **Esempio**
 
 ![[appunti asd/immagini/Pasted image 20221016161633.png|center]]
 
+Quanto mi costa ogni nodo? ...uno!
+Quanto è alto l'albero? ...n-1
+Quanti nodi ha l'albero? si usa la formula appena scritta e quindi $2^{h+1}-1$
+
+Quindi possiamo dire che $T(n)=2^n-1=\Theta(2^n)$
+
+**Esempio**
+
+![[appunti asd/immagini/Pasted image 20221016161952.png|center]]
+
+Quanto costa ogni nodo? ...al più n
+Quanto è alto l'albero? n-1
+Quanti nodi ha? $2^{h+1}-1$
+
+Quindi possiamo dire che l'upper bound è $T(n)\leq n2^n=\Theta(n2^n)$ 
+$T(n)=O(n2^n)$
+**Oss** $n2^n\:viene\:da\:n\cdot(2^n-1)\implies n2^n-n,con\:n\to\infty = n2^n$ 
+
+**Un esempio un pò più complesso**
+
+![[appunti asd/immagini/Pasted image 20221016162503.png|center]]
+
+In questo esempio possiamo verificare che a sinistra l'albero scende ogni volta di n/3, mentre a destra scende di 3n/2; da questo possiamo dedurre che da sinistra l'albero sarà alto $log_3n$ mentre da destra $log_{3/2}n$
+
+Studiamo upper bound e lower bound
+
+**Upper bound**
+Quanti costa ogni livello? $\leq n$ 
+Quanti livelli ha l'albero? $O(log_{3/2}n)$
+
+Quindi possiamo dire che $T(n)=O(nlog(n))$.(Upper Bound)
+Perchè però $n_log_{3/2}n$? perchè ci sono $log_{3/2}n$ livelli, ognuno di costo al più n
+Ma vale che $T(n)=\Theta(nlog(n))$?
+
+**Lower bound**
+Quanto costa ogni nodo? $\leq n$
+Quanti livelli ha l'albero? $log_3n$
+$T(n)\geq nlog_3n\implies T(n)=\Omega(nlog(n))$ 
+Perchè però $nlog_3n$? perchè ci sono $log_3n$ livelli nell'albero, ognuno di costo al più n
+
+La risposta alla domanda è si, $T(n)\:vale\:\Theta(nlog(n))$ 
