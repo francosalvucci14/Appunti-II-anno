@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f3b42c3937532083",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/Esercizi/Esercizi sul metodo della ricorsione.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Lezione 3 - Capitolo 2.md",
+                "file": "Appunti ASD/Esercizi/Esercizi sul metodo della ricorsione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Lezione 3 - Capitolo 2.md",
+                "file": "Appunti ASD/Esercizi/Esercizi sul metodo della ricorsione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Lezione 3 - Capitolo 2.md"
+                "file": "Appunti ASD/Esercizi/Esercizi sul metodo della ricorsione.md"
               }
             }
           },
@@ -165,17 +178,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "c8c6bc5167ba4538",
+  "active": "f3b42c3937532083",
   "lastOpenFiles": [
-    "Appunti ASD/Esercizi/Esercizio 2.md",
     "Appunti ASD/Lezione 3 - Capitolo 2.md",
+    "Appunti CPS/Lezione 1.md",
+    "Appunti ASD/Esercizi/Esercizio 2.md",
     "Appunti ASD/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/Esercizi/Esercizio 1.md",
     "Appunti ASD/Indice degli appunti.md",
     "Appunti ASD/Lezione 1 - Capitolo 1.md",
     "Appunti FI/Lezione 1.md",
     "Appunti CPS/Lezione 2.md",
-    "Appunti CPS/Lezione 3.md",
-    "Appunti CPS/Lezione 1.md"
+    "Appunti CPS/Lezione 3.md"
   ]
 }
