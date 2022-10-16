@@ -119,9 +119,9 @@ $|f|f:\mathbb R\rightarrow \mathbb R|=2^{2^{\aleph_0}}$
 _Def_
 Un insieme finito non vuoto $\Sigma$ di simboli (detti **caratteri**)  prende il nome di **alfabeto**
 
-Dato un alfabeto $\Sigma$ denotiamo come $\langle\Sigma^*,o,\epsilon\rangle$ il **monoide libero definito su $\Sigma$**
-Gli elementi di $\Sigma^*$ vengono detti **parole** o **stringhe**
-L'elemento $\epsilon$ viene detto **parola vuota**. L'operazione $o:\Sigma^*x\Sigma^*\rightarrow \Sigma^*$ definita sul monoide è chiamata **concatenazione** e consiste nel giustapporre due parole di $\Sigma^*$:
+Dato un alfabeto $\Sigma$ denotiamo come $\langle\Sigma^\star,\circ ,\epsilon\rangle$ il **monoide libero definito su $\Sigma$**
+Gli elementi di $\Sigma^\star$ vengono detti **parole** o **stringhe**
+L'elemento $\epsilon$ viene detto **parola vuota**. L'operazione $o:\Sigma^\star x\Sigma^\star\rightarrow \Sigma^\star$ definita sul monoide è chiamata **concatenazione** e consiste nel giustapporre due parole di $\Sigma^\star$:
 $$x_{i_1},...,x_{i_n}\:o\:y_{j_1},...,y_{j_m}=x_{i_1}...x_{i_n}y_{j_1}...y_{j_m},con\: x_{i_1},...,x_{i_n},y_{j_1},...,y_{j_m}\in \Sigma$$
 **Esempio**
 
@@ -129,46 +129,47 @@ Un esempio di concatenazione dei caratteri $x_1,x_2,x_3,y_1,y_2,z_1$
 $(x_1,x_2,x_3\:o\:y_1,y_2)o\:z_1$ 
 
 Dato un alfabeto $\Sigma$ ed il monoide sintattico definito su di esso vale la proprietà:
-$$\forall x\:x\:o\:\epsilon = \epsilon\:o\:x=x$$
-La concatenazione di due stringhe x e y è frequentemente indicata omettendo il simbolo o, cioè scrivendo xy anzichè x o y
+$$\forall x,x\circ \epsilon = \epsilon\circ x=x$$
+La concatenazione di due stringhe x e y è frequentemente indicata omettendo il simbolo $\circ$, cioè scrivendo xy anzichè x o y
 
 Con la notazione |x| indichiamo la **lunghezza** di una parola x, ovvero il numero di caratteri che la costituiscono. Chiaramente $|\epsilon|=0$ Si osservi inoltre che la concatenazione non gode della proprietà commutativa e quindi in generale:
-$$x\:o\:y\neq y\:o\:x$$
+$$x\circ y\neq y\circ x$$
 
 Un caso particolare di concatenazione è quello in cui la stringa viene concatenata con se stesa: con $x^h$ si denota la concatenazione di x con se stessa iterata h volte, Per convenzione con $x^0$ si intende la stringa vuota. 
 
 _Def_
-Dato un alfabeto $\Sigma$, si definisce **linguaggio** un qualsivoglia sottoinsieme di $\Sigma^*$. Si noti che poichè $\Sigma\subseteq\Sigma^*$, un alfabeto è a sua volta un linguaggio.
+Dato un alfabeto $\Sigma$, si definisce **linguaggio** un qualsivoglia sottoinsieme di $\Sigma^\star$. Si noti che poichè $\Sigma\subseteq\Sigma^\star$, un alfabeto è a sua volta un linguaggio.
 
 Si chiama **linguaggio vuoto**, e lo si indica con $\Lambda$, il linguaggio che non contiene stringa alcuna. Si noti che $\Lambda\neq (\epsilon)$ 
 
-**Oss** $\Sigma$ è un linguaggio finito, $\Sigma^*$ è un linguaggio infinito
+**Oss** $\Sigma$ è un linguaggio finito, $\Sigma^\star$ è un linguaggio infinito
 
 **Esempio**
-$L\subseteq (a,b)^*$ $L=(x\in (a,b)^*|x=ay,y\in (a,b)^*)$ 
-$(a,b)^*=\Sigma^*$ 
+$L\subseteq (a,b)^\star$ $L=(x\in (a,b)^\star|x=ay,y\in (a,b)^\star)$ 
+$(a,b)^\star=\Sigma^\star$ 
 
 x è una sequenza di simboli tra a e b, lunghezza arbitraria, che ha la caratteristica di poter essere divisa in due parti: la prima parte è composta dal carattere a, la seconda è qualunque stringa in (a,b)
 L è l'insieme di tutte le stringhe che iniziano in questo modo
 
-L'**intersezione** di due linguaggi $L_1\:e\:L_2$ il linguaggio $L_1\cap L_2$ costituito dalle parole di $L_1$ e di $L_2$, cioè $L_1\cap L_2=(x\in\Sigma^*|x\in L_1\wedge x\in L_2)$ 
-L'**unione** di due linguaggi è il linguaggio $L_1\cap L_2$ costituito dalle parole appartententi ad almeno uno fra $L_1\:ed\:L_2$, cioè $L_1\cup L_2=(x\in\Sigma^*|x\in L_1\vee x\in L_2)$.
+L'**intersezione** di due linguaggi $L_1\:e\:L_2$ il linguaggio $L_1\cap L_2$ costituito dalle parole di $L_1$ e di $L_2$, cioè $L_1\cap L_2=(x\in\Sigma^\star|x\in L_1\wedge x\in L_2)$ 
+L'**unione** di due linguaggi è il linguaggio $L_1\cap L_2$ costituito dalle parole appartententi ad almeno uno fra $L_1\:ed\:L_2$, cioè $L_1\cup L_2=(x\in\Sigma^\star|x\in L_1\vee x\in L_2)$.
 Si noti che $L_1\cap\Lambda=\Lambda$ e $L_1\cup\Lambda=L_1$
-Il **complemento** di un linguaggio L_1 è il linguaggio $\neg L_1=\Sigma^*-L_1$ costituito dalle parole appartenenti a $\Sigma^*$ ma non a $L_1$, cioè $\neg L_1=(x\in\Sigma^*|x\notin L_1)$ 
+Il **complemento** di un linguaggio L_1 è il linguaggio $\neg L_1=\Sigma^\star-L_1$ costituito dalle parole appartenenti a $\Sigma^\star$ ma non a $L_1$, cioè $\neg L_1=(x\in\Sigma^\star|x\notin L_1)$ 
 
-La **concatenazione**(o prodotto) di due linguaggi è il linguaggio $L_1\:o\:L_2$ delle parole costituite dalla concatenazione di una stringa di $L_1$ e di una stringa di $L_2$, cioè:
-$$L_1\:o\:L_2 = (x\in\Sigma^*|\exists y_1 \in L_1\:\exists y_2\in L_2(x=y_1\:o\:y_2))$$
-Si noti che $L\:o\:(\epsilon)=L$ e $L\:o\:\Lambda=\Lambda$ 
+La **concatenazione**(o prodotto) di due linguaggi è il linguaggio $L_1\circ L_2$ delle parole costituite dalla concatenazione di una stringa di $L_1$ e di una stringa di $L_2$, cioè:
+$$L_1\circ L_2 = (x\in\Sigma^\star|\exists y_1 \in L_1\:\exists y_2\in L_2(x=y_1\circ y_2))$$
+
+Si noti che $L\circ (\epsilon)=L$ e $L\circ \Lambda=\Lambda$ 
 
 La **potenza** $L^h$ di un linguaggio è definita come:
-$$L^h=L\:o\:L^{h-1},h\geq1$$
+$$L^h=L\circ L^{h-1},h\geq1$$
 con la convenzione secondo cui $L^0=(\epsilon)$. Si noti che,in basde alla suddetta convenzione, $\Lambda^0=(\epsilon)$
 
 _Def_
-Il linguaggio $L^*$ definito da:
-$$L^*=\bigcup_{h=0}^\infty L^h$$
-prende il nome di **chiusura riflessiva del linguaggio** L rispetto all'operazione di concatenazione, mentre l'operatore '$*$' prende il nome di **iterazione o stella di Kleene**. Si noti che, dato un qualunque linguaggio $L,\epsilon\in L^*$, e che $\Lambda^*=(\epsilon)$ 
+Il linguaggio $L^\star$ definito da:
+$$L^\star=\bigcup_{h=0}^\infty L^h$$
+prende il nome di **chiusura riflessiva del linguaggio** L rispetto all'operazione di concatenazione, mentre l'operatore '$\star$' prende il nome di **iterazione o stella di Kleene**. Si noti che, dato un qualunque linguaggio $L,\epsilon\in L^\star$, e che $\Lambda^\star=(\epsilon)$ 
 
 _Def_
 Si indica con $L^+$ la **chiusura(non riflessiva)** definita da $$L^+=\bigcup_{h=1}^\infty L^h$$
-Risulta ovviamente $L^*=L^+\cup (\epsilon)$ 
+Risulta ovviamente $L^\star=L^+\cup (\epsilon)$ 
