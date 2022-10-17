@@ -149,5 +149,34 @@ class MultiDimArrayDemo {
 ```
 
 ## Operatori
+Gli operatori nella tabella seguente sono elencati in base all'ordine di precedenza. Più un operatore appare vicino alla parte superiore della tabella, maggiore è la sua precedenza. Gli operatori con una precedenza più alta vengono valutati prima degli operatori con una precedenza relativamente più bassa. Gli operatori sulla stessa linea hanno la stessa precedenza. Quando nella stessa espressione compaiono operatori di uguale precedenza, deve governare una regola che viene valutata per prima. Tutti gli operatori binari, ad eccezione degli operatori di assegnazione, vengono valutati da sinistra a destra; gli operatori di assegnazione vengono valutati da destra a sinistra.
+
+| Operatori            | Precendeza                            |
+| -------------------- | ------------------------------------- |
+| postfix              | _expr_++ _expr_--                     |
+| unary                | ++_expr_ --_expr_ +_expr_ -_expr_ ~ ! |
+| multiplicative       | * / %                                 |
+| additive             | + -                                   |
+| shift                | << >> >>>                             |
+| relational           | < > <= >= instanceof                  |
+| equality             | == !=                                 |
+| bitwise AND          | &                                     |
+| bitwise exclusive OR | ^                                     |
+| bitwise inclusive OR | pipe                                |
+| logical AND          | &&                                    |
+| logical OR           | double Pipe                                       |
+| ternary              | ? :                                   |
+| assignment           | = += -= *= /= %= &= ^= |= <<= >>= >>>=                                      |
+
+### Operatori aritmetici
+Il linguaggio di programmazione Java fornisce operatori che eseguono addizioni, sottrazioni, moltiplicazioni e divisioni. Ci sono buone probabilità che li riconoscerai dalle loro controparti in matematica di base. L'unico simbolo che potrebbe sembrare nuovo per te è "%", che divide un operando per un altro e restituisce il resto come risultato.
+| Operatore | Descrizione             |
+| --------- | ----------------------- |
+| +         | Additive operator       |
+| -         | Substraction operator   |
+| $\star$   | Multiplication operator |
+| /         | Division operator       |
+| %         | Remainder operator      |
+
 ## Espressioni,Blocchi e Statement
 ## Control Flow Statements
