@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md",
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md",
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md",
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md"
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md"
               }
             }
           },
@@ -179,9 +179,9 @@
   },
   "active": "c7365e2f275cb2ea",
   "lastOpenFiles": [
-    "Appunti FI/Lezione 2 - Espressioni regolari.md",
-    "Appunti FI/Indice delle lezioni.md",
     "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md",
+    "Appunti FI/Indice delle lezioni.md",
+    "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
     "Appunti ASD/Lezione 3 - Capitolo 2.md",
     "Appunti LMP/Lezione 3.md",
     "Appunti ASD/Esercizi/Esercizi sul metodo della ricorsione.md",
