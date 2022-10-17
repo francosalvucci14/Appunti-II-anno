@@ -19,8 +19,8 @@ Le espressioni regolari consentono di rappresentare linguaggi mediante una oppor
 **Esempio**
 
 L'espressione regolare $r=((a+b)^\star a)$ rappresenta il linguaggio
-$$L=((a+b)^\star a)\implies L((a+b)^\star)\circ L(a)=L((a+b))^\star\circ L(a)=(L(a)\cup L(b))^\star \circ \left\{a\right\}=$$
-$$=(\left\{a\right\}\cup\left\{b\right\})^\star\circ\left\{a\right\}=\left\{a,b\right\}^\star\circ\left\{a\right\}\implies \left \{x|x\in\left\{a,b\right\}^+,\text{x termina con a}\right\}$$
+$$L=((a+b)^\star a)\implies L((a+b)^\star)\circ L(a)=L((a+b))^\star\circ L(a)=(L(a)\cup L(b))^\star \circ \lbrace{a}\rbrace=$$
+$$=(\lbrace{a}\rbrace\cup\lbrace{b}\rbrace)^\star\circ\lbrace{a}\rbrace=\lbrace{a,b}\rbrace^\star\circ\lbrace{a}\rbrace\implies \lbrace x|x\in\lbrace{a,b}\rbrace^+,\text{x termina con a}\rbrace$$
 
 **Esercizi** 
 
@@ -86,6 +86,7 @@ Consideriamo le descrizioni utilizzando un alfabeto dato, ad esempio, ancora $\l
 Quanto detto vale nel caso di descrizioni/algoritmi più generali possibili. Che succede se consideriamo delle restizioni nelle modalità di descrizione?
 Perchè dovremmo porci la questione?
 Descrizioni più limitate possono corrispondere ad algoritmi di decisione più efficenti
+
 
 
 
