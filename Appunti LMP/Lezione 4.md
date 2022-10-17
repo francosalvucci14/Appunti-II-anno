@@ -37,6 +37,23 @@ Il tipo di dati di una variabile determina i valori che può contenere, oltre al
 - **double**: il tipo di dati double è una virgola mobile IEEE 754 a doppia precisione a 64 bit. Per i valori decimali, questo tipo di dati è generalmente la scelta predefinita.
 - **boolean**: il tipo di dati booleano ha solo due valori possibili: true e false. Utilizzare questo tipo di dati per semplici flag che tengono traccia delle condizioni vero/falso. Questo tipo di dati rappresenta un bit di informazione, ma la sua "dimensione" non è qualcosa che è definito con precisione.
 - **char**: il tipo di dati char è un singolo carattere Unicode a 16 bit. Ha un valore minimo di `'\u0000'` (o 0) e un valore massimo di `'\uffff'` (o 65.535 inclusi).
+### Valori di default
+| Data Type             | Default Value |
+| --------------------- | ------------- |
+| byte                  | 0             |
+| short                 | 0             |
+| int                   | 0             |
+| long                  | 0L            |
+| float                 | 0.0f          |
+| double                | 0.0d          |
+| char                  | `\u0000`      |
+| String(or any object) | null          |
+| boolean               | false         |
+
+### Array
+_Def_
+Un array è un oggetto contenitore che contiene un numero fisso di valori di un singolo tipo. La lunghezza di un array viene stabilita al momento della creazione dell'array. Dopo la creazione, la sua lunghezza è fissata. Hai già visto un esempio di array, nel metodo principale di "Hello World!" applicazione.
+![[appunti lmp/immagini/objects-tenElementArray.gif|center]]
 
 ## Operatori
 ## Espressioni,Blocchi e Statement
