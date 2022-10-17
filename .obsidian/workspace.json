@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f3b42c3937532083",
+            "id": "c7365e2f275cb2ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/Lezione 3.md",
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/Lezione 3.md",
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/Lezione 3.md",
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/Lezione 3.md"
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari.md"
               }
             }
           },
@@ -177,17 +177,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "f3b42c3937532083",
+  "active": "c7365e2f275cb2ea",
   "lastOpenFiles": [
-    "concepts-object.gif",
-    "Appunti LMP/Lezione 3.md",
-    "Appunti ASD/Lezione 3 - Capitolo 2.md",
-    "Appunti FI/Lezione 1.md",
     "Appunti FI/Indice delle lezioni.md",
+    "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md",
+    "Appunti FI/Lezione 2 - Espressioni regolari.md",
+    "Appunti ASD/Lezione 3 - Capitolo 2.md",
+    "Appunti LMP/Lezione 3.md",
+    "Appunti ASD/Esercizi/Esercizi sul metodo della ricorsione.md",
+    "Appunti ASD/Esercizi/Esercizio 2.md",
+    "concepts-object.gif",
     "Appunti BSD/Indice delle lezioni.md",
-    "Appunti BSD/Lezione 1.md",
-    "Appunti LMP/Lezione 2.md",
-    "Appunti LMP/Indice delle lezioni.md",
-    "Appunti ASD/Esercizi/Esercizi sul metodo della ricorsione.md"
+    "Appunti BSD/Lezione 1.md"
   ]
 }
