@@ -18,10 +18,10 @@ Quindi $T_{avg}(n)=\frac{n-1}{2}$
 - Una tecnica di progettazione algoritmica: **divide et impera**
 - Metodi per risolvere equazioni di ricorrenza:
 	- [[Lezione 3 - Capitolo 2#Metodo dell'iterazione|Iterazione]]
-	- [[Lezione 3 - Capitolo 2#Albero della ricorsione(un modo grafico per pensare il metodo dell'iterazione)|Albero della RIcorsione]]
-	- **sostituzione**
-	- **teorema Master**
-	- **cambiamento di variabile**
+	- [[Lezione 3 - Capitolo 2#Albero della ricorsione(un modo grafico per pensare il metodo dell'iterazione)|Albero della Ricorsione]]
+	- [[Lezione 4 - Capitolo 2#Metodo della sostituzione|Metodo della sostituzione]]
+	- [[Lezione 4 - Capitolo 2#Teorema Master|Teorema Master]]
+	- [[Lezione 4 - Capitolo 2#Cambiamento di variabile|Cambiamento di variabile]]
 
 ## Equazioni di ricorrenza
 
