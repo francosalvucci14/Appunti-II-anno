@@ -105,7 +105,48 @@ class ArrayDemo {
 ```
 
 
+Il programma precedente dichiara un array (denominato anArray) con la seguente riga di codice:
+```java
+// declares an array of integers
+int[] anArray;
+```
 
+Come le dichiarazioni per variabili di altri tipi, una dichiarazione di array ha due componenti: il tipo dell'array e il nome dell'array. Il tipo di un array viene scritto come type[], dove type è il tipo di dati degli elementi contenuti; le parentesi sono simboli speciali che indicano che questa variabile contiene una matrice. La dimensione dell'array non fa parte del suo tipo (motivo per cui le parentesi sono vuote).
+Allo stesso modo, puoi dichiarare array di altri tipi:
+```java
+byte[] anArrayOfBytes;
+short[] anArrayOfShorts;
+long[] anArrayOfLongs;
+float[] anArrayOfFloats;
+double[] anArrayOfDoubles;
+boolean[] anArrayOfBooleans;
+char[] anArrayOfChars;
+String[] anArrayOfStrings;
+```
+
+>**Oss**
+>La parola chiave _new_ non c'è quando si crea un array perchè in Java la new è sempre associata ad un allocazione di memoria per la creazione di un oggetto
+>Infatt, la parola chiave new, si usa dopo la dichiarazione di un array per indicare la grandezza dell'array
+>Es: `int[] anArray; anArray = new int[10]`
+
+Puoi anche dichiarare un array di array (nota anche come array multidimensionale) utilizzando due o più insiemi di parentesi. Ad ogni elemento, quindi, deve accedere un numero corrispondente di valori di indice.
+
+Nel linguaggio di programmazione Java, un array multidimensionale è un array i cui componenti sono essi stessi array. Questo è diverso dagli array in C o Fortran. Una conseguenza di ciò è che le righe possono variare in lunghezza, come mostrato nel seguente programma MultiDimArrayDemo:
+
+```java
+class MultiDimArrayDemo {
+    public static void main(String[] args) {
+        String[][] names = {
+            {"Mr. ", "Mrs. ", "Ms. "},
+            {"Smith", "Jones"}
+        };
+        // Mr. Smith
+        System.out.println(names[0][0] + names[1][0]);
+        // Ms. Jones
+        System.out.println(names[0][2] + names[1][1]);
+    }
+}
+```
 
 ## Operatori
 ## Espressioni,Blocchi e Statement
