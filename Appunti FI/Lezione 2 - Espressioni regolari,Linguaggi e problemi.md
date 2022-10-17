@@ -24,7 +24,7 @@ $$=(\lbrace{a}\rbrace\cup\lbrace{b}\rbrace)^\star\circ\lbrace{a}\rbrace=\lbrace{
 
 **Esercizi** 
 
-1) determinare l'espressione regolare che, sull'alfabeto $\left\{a,b\right\}$, definisce l'insieme delle stringhe il cui terzultimo carattere è una b
+1) determinare l'espressione regolare che, sull'alfabeto $\lbrace a,b\rbrace$, definisce l'insieme delle stringhe il cui terzultimo carattere è una b
 2) determinare il linguaggio definito dall'espressione regolare $a^\star((aa)^\star b+(bb)^\star a)b^\star$ 
 
 ## Linguaggi e problemi
