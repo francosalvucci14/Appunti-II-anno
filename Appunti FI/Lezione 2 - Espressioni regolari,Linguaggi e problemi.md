@@ -31,8 +31,35 @@ $$=(\left\{a\right\}\cup\left\{b\right\})^\star\circ\left\{a\right\}=\left\{a,b\
 
 L'insieme dei linguaggi è in stretto rapporto con quello dei **problemi di decisione**
 
+### Problemi di decisione
 _Def (**Problema di decisione**)_
 Un problema di decisione è definito su un insieme di possibili **istanze** e associa ad ognuna di esse un valore Vero/Falso
 
 L'insieme delle istanze è partizionato in istanze **positive e negative**: il problema, per ogni istanza, è riconoscere se è un istanza positiva
 
+
+**Esempi**
+1) una data sequenza i interi è ordinata crescente?
+2) è possibile viaggiare tra tutti i capoluoghi di provincia italiani senza passare due volte per nessuno di essi?
+3) dato un programma contenente una determinata funzione e un input del programma stesso, la funzione viene eseguita?
+4) dati due capoluoghi di provinvia A e B, è possibile andare da uno all'altro percorrendo meno di x km?
+
+1. risolubile da un algoritmo che opera in tempo lineare
+2. risolubile da un algoritmo in tempo esponenziale(polinomiale?)
+3. non risolubile da nessun algoritmo
+4. risolubile da un algoritmo che opera in tempo polinomiale
+
+
+I problemi di decisione rappresentano la tipologia "più semplice" di problemi:
+- problemi di ricerca: restituzione di una soluzione, **se esiste**
+- problemi di enumerazione: restituzione di tutte le soluzioni, se esistono
+- problemi di ottimizzazione: restituzione della "migliore" soluzione possibile
+
+### Relazione tra linguaggi e problemi
+Dato un linguaggio L e una stringa x, determinare se $x\in L$ è un problema di decisione
+Istanze: tutte le possibili stringhe; L: istanze positive
+
+Dato un problema di decisione P, l'insieme delle sue istanze è codificato per mezzo di uno **schema di codifica**: ad ogni istanza corrisponde una stringa
+Una stringa può corrispondere a una istanza positiva, una istanza negativa o nessuna istanza
+L insieme delle stringhe corrispondenti a codifiche di istanze positive
+In generale, si assume che sia possibile distinguere facilmente(efficentemente) tra le stringhe che rappresentano istanze e le altre
