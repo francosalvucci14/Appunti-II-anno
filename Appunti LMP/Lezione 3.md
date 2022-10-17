@@ -36,3 +36,9 @@ Identificare lo stato e il comportamento di un oggetto nella vita reale è una g
 
 Gli oggetti software sono concettualmente simili agli oggetti nella vita reale: anche loro sono cpomposti da stati e comportamenti. Un oggetto software salva i suoi stati nei _fields_(campi)(variabili in qualche linguaggio di programmazione) ed espone i suoi comportamenti tramite i _methods_(metodi)(funzioni in qualche linguaggio di programmazione). I metodi operano sullo stato interno di un oggetto e servono come il meccanismo primario per la comunicazione object-to-object.
 Nascondere lo stato interno e richiedere che tutte le interazioni vengano eseguite attraverso i metodi di un oggetto è noto come incapsulamento dei dati(**data encapsulation**), un principio fondamentale della programmazione orientata agli oggetti
+
+Raggruppare il codice in oggetti software individuali fornisce un numero di benefits, inclusi:
+- **Modularità**: il codice sorgente per un oggeto può essere scritto e mantenuto indipendentemente dal codice sorgente di altri oggetti
+- **Informatio-hiding**: interaggendo solo con i metodi dell'oggetto, i dettagli delle implementazioni interne rimane nascosto al mondo esterno
+- **Riutilizzo del codice**: se un oggetto già esiste, puoi usare quell'oggetto nel tuo programma
+- **Collegabilità e debugging facili**: Se un particolare oggetto risulta essere problematico, puoi semplicemente rimuoverlo dall'applicazione e collegare un oggetto diverso come sostituto.
