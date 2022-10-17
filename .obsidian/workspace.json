@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Lezione 4 - Capitolo 2.md",
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -86,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Lezione 4 - Capitolo 2.md",
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Lezione 4 - Capitolo 2.md",
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Lezione 4 - Capitolo 2.md"
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md"
               }
             }
           },
@@ -175,9 +176,9 @@
   },
   "active": "b5081d6d2959227f",
   "lastOpenFiles": [
+    "Appunti ASD/Lezione 4 - Capitolo 2.md",
     "Appunti ASD/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/Lezione 3 - Capitolo 2.md",
-    "Appunti ASD/Lezione 4 - Capitolo 2.md",
     "Appunti LMP/Lezione 3.md",
     "Appunti LMP/Lezione 4.md",
     "Appunti LMP/Indice delle lezioni.md",
