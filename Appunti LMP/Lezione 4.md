@@ -55,6 +55,58 @@ _Def_
 Un array è un oggetto contenitore che contiene un numero fisso di valori di un singolo tipo. La lunghezza di un array viene stabilita al momento della creazione dell'array. Dopo la creazione, la sua lunghezza è fissata. Hai già visto un esempio di array, nel metodo principale di "Hello World!" applicazione.
 ![[appunti lmp/immagini/objects-tenElementArray.gif|center]]
 
+Ogni elemento in un array è chiamato elemento e ogni elemento è accessibile dal suo indice numerico.
+Il programma seguente, ArrayDemo, crea una matrice di numeri interi, inserisce alcuni valori nella matrice e stampa ogni valore sull'output standard.
+```java
+class ArrayDemo {
+    public static void main(String[] args) {
+        // declares an array of integers
+        int[] anArray;
+
+        // allocates memory for 10 integers
+        anArray = new int[10];
+           
+        // initialize first element
+        anArray[0] = 100;
+        // initialize second element
+        anArray[1] = 200;
+        // and so forth
+        anArray[2] = 300;
+        anArray[3] = 400;
+        anArray[4] = 500;
+        anArray[5] = 600;
+        anArray[6] = 700;
+        anArray[7] = 800;
+        anArray[8] = 900;
+        anArray[9] = 1000;
+
+        System.out.println("Element at index 0: "
+                           + anArray[0]);
+        System.out.println("Element at index 1: "
+                           + anArray[1]);
+        System.out.println("Element at index 2: "
+                           + anArray[2]);
+        System.out.println("Element at index 3: "
+                           + anArray[3]);
+        System.out.println("Element at index 4: "
+                           + anArray[4]);
+        System.out.println("Element at index 5: "
+                           + anArray[5]);
+        System.out.println("Element at index 6: "
+                           + anArray[6]);
+        System.out.println("Element at index 7: "
+                           + anArray[7]);
+        System.out.println("Element at index 8: "
+                           + anArray[8]);
+        System.out.println("Element at index 9: "
+                           + anArray[9]);
+    }
+}
+```
+
+
+
+
 ## Operatori
 ## Espressioni,Blocchi e Statement
 ## Control Flow Statements
