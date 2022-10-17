@@ -154,7 +154,7 @@ L è l'insieme di tutte le stringhe che iniziano in questo modo
 L'**intersezione** di due linguaggi $L_1\:e\:L_2$ il linguaggio $L_1\cap L_2$ costituito dalle parole di $L_1$ e di $L_2$, cioè $L_1\cap L_2=(x\in\Sigma^\star|x\in L_1\wedge x\in L_2)$ 
 L'**unione** di due linguaggi è il linguaggio $L_1\cap L_2$ costituito dalle parole appartententi ad almeno uno fra $L_1\:ed\:L_2$, cioè $L_1\cup L_2=(x\in\Sigma^\star|x\in L_1\vee x\in L_2)$.
 Si noti che $L_1\cap\Lambda=\Lambda$ e $L_1\cup\Lambda=L_1$
-Il **complemento** di un linguaggio L_1 è il linguaggio $\neg L_1=\Sigma^\star-L_1$ costituito dalle parole appartenenti a $\Sigma^\star$ ma non a $L_1$, cioè $\neg L_1=(x\in\Sigma^\star|x\notin L_1)$ 
+Il **complemento** di un linguaggio L_1 è il linguaggio $\overline L_1=\Sigma^\star-L_1$ costituito dalle parole appartenenti a $\Sigma^\star$ ma non a $L_1$, cioè $\overline L_1=(x\in\Sigma^\star|x\notin L_1)$ 
 
 La **concatenazione**(o prodotto) di due linguaggi è il linguaggio $L_1\circ L_2$ delle parole costituite dalla concatenazione di una stringa di $L_1$ e di una stringa di $L_2$, cioè:
 $$L_1\circ L_2 = (x\in\Sigma^\star|\exists y_1 \in L_1\:\exists y_2\in L_2(x=y_1\circ y_2))$$
