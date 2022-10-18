@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -111,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md"
+                "file": "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md"
               }
             }
           },
@@ -198,8 +198,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "9b425770ccd36b9f",
+  "active": "92d73c0e1fd65445",
   "lastOpenFiles": [
+    "Appunti FI/Esercizi/Esercizi unità 3-4.md",
     "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
     "Appunti SOR/Indice degli appunti.md",
     "Appunti SOR/Lezione 4 - Operazioni dei processi.md",
@@ -208,7 +209,6 @@
     "Appunti SOR/Lezione 1 - Introduzione sui sistemi operativi.md",
     "Secondo anno/SOR/img/img0.png.md",
     "Appunti SOR/Capitolo 0 - Sistemi operativi e reti.md",
-    "Appunti LMP/Lezione 4.md",
-    "Appunti CPS/Lezione 4.md"
+    "Appunti LMP/Lezione 4.md"
   ]
 }
