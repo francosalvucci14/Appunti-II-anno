@@ -6,14 +6,16 @@ Un sistema operativo è un software che gestisce l'hardware di un computer  forn
 Un sistema operativo è un software molto complesso e quindi è realizzato in moduli, ciascuno dei quali svolge un compito ben preciso.  
 Un sistema di elaborazione può essere seguito nel seguente modo: 
 
-![[Secondo anno/SOR/img/img0.png|center|500]]  
+![[appunti SOR/img/img0.png|center|500]]
+
 
 - L'hardware, costituito dai componenti fisici del computer, fornisce le risorse di calcolo di base al sistema.  
 Il sistema operativo gestisce e controlla le risorse hardware, necessarie per l'esecuzione di un programma, coordinando il suo utilizzo tra le varie applicazioni degli utenti.
 ## Funzionamento di un computer
 Un moderno computer è costituito da uno o più processori e da un numero di controller di dispositivi (in celeste nella foto) connessi mediante bus di sistema comune che forniscono l’accesso alla memoria condivisa.
 
-![[Secondo anno/SOR/img/img1.png|center|500]]  
+![[appunti SOR/img/img1.png|center|500]]
+
 
 - Un controller è un modulo elettronico programmabile. Ogni controller gestisce un particolare dispositivo.  
 - I processori e i controller dei dispositivi sono in grado di eseguire istruzioni in parallelo, competendo tra loro per accedere alla memoria. Per garantire un accesso ordinato alla memoria, nell'hardware del computer è presente un dispositivo che sincronizza l'accesso ad essa.
