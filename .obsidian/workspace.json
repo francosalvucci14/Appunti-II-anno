@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
+                "file": "Appunti SOR/Indice degli appunti.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "92d73c0e1fd65445",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti SOR/Indice degli appunti.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
+                "file": "Appunti SOR/Indice degli appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
+                "file": "Appunti SOR/Indice degli appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md"
+                "file": "Appunti SOR/Indice degli appunti.md"
               }
             }
           },
@@ -173,17 +186,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "a7fe06152bebfed7",
+  "active": "92d73c0e1fd65445",
   "lastOpenFiles": [
+    "Appunti SOR/Lezione 4 - Operazioni dei processi.md",
+    "Appunti SOR/Indice degli appunti.md",
+    "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
     "Appunti SOR/Lezione 2 - Tipologie di sistemi.md",
     "Appunti SOR/Lezione 1 - Introduzione sui sistemi operativi.md",
-    "Appunti SOR/Indice degli appunti.md",
     "Secondo anno/SOR/img/img0.png.md",
-    "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
     "Appunti SOR/Capitolo 0 - Sistemi operativi e reti.md",
     "Appunti LMP/Lezione 4.md",
     "Appunti CPS/Lezione 4.md",
-    "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
-    "Appunti ASD/Lezione 4 - Capitolo 2.md"
+    "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md"
   ]
 }
