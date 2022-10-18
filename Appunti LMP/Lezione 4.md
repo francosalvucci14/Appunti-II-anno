@@ -1,9 +1,9 @@
 # Basi del linguaggio
 
-- [[Lezione 4#Variabili|Variabili]]
-- [[Lezione 4#Operatori|Operatori]]
-- [[Lezione 4#Espressioni,Blocchi e Statement|Espressioni,Blocchi e Statement]]
-- [[Lezione 4#Control Flow Statements|Control Flow Statements]]
+- [[Appunti LMP/Lezione 4#Variabili|Variabili]]
+- [[Appunti LMP/Lezione 4#Operatori|Operatori]]
+- [[Appunti LMP/Lezione 4#Espressioni,Blocchi e Statement|Espressioni,Blocchi e Statement]]
+- [[Appunti LMP/Lezione 4#Control Flow Statements|Control Flow Statements]]
 
 ## Variabili
 Come hai appreso nella lezione precedente, un oggetto memorizza il suo stato nei campi.
