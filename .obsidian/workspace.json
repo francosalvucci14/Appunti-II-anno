@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/Lezione 4.md",
+                "file": "Appunti SOR/Indice degli appunti.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/Lezione 4.md",
+                "file": "Appunti SOR/Indice degli appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/Lezione 4.md",
+                "file": "Appunti SOR/Indice degli appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/Lezione 4.md"
+                "file": "Appunti SOR/Indice degli appunti.md"
               }
             }
           },
@@ -175,8 +175,8 @@
   },
   "active": "a7fe06152bebfed7",
   "lastOpenFiles": [
-    "Appunti CPS/Lezione 4.md",
     "Appunti LMP/Lezione 4.md",
+    "Appunti CPS/Lezione 4.md",
     "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
     "Appunti ASD/Lezione 4 - Capitolo 2.md",
     "Appunti ASD/Lezione 2 - Capitolo 2.md",
