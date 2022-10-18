@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/Lezione 1.md",
+                "file": "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/Lezione 1.md",
+                "file": "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/Lezione 1.md",
+                "file": "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/Lezione 1.md"
+                "file": "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md"
               }
             }
           },
@@ -188,6 +188,7 @@
   },
   "active": "5718681aa1428b07",
   "lastOpenFiles": [
+    "Appunti SOR/Capitolo 0 - Sistemi operativi e reti.md",
     "Appunti SOR/Indice degli appunti.md",
     "Appunti LMP/Lezione 4.md",
     "Appunti CPS/Lezione 4.md",
@@ -196,7 +197,6 @@
     "Appunti ASD/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/Lezione 3 - Capitolo 2.md",
     "Appunti LMP/Lezione 3.md",
-    "Appunti LMP/Indice delle lezioni.md",
-    "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md"
+    "Appunti LMP/Indice delle lezioni.md"
   ]
 }

@@ -1,5 +1,5 @@
-- Lezione 1
-- Lezione 2
-- Lezione 3
+- [[Lezione 1 - Introduzione sui sistemi operativi]]
+- [[Lezione 2 - Tipologie di sistemi]]
+- [[Lezione 3 - Operazioni del sistema operativo]]
 - Lezione 4
 
