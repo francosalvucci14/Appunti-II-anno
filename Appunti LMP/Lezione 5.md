@@ -324,3 +324,52 @@ public class StringSwitchDemo {
     }
 }
 ```
+
+## While e Do-While
+### While
+L'istruzione while esegue continuamente un blocco di istruzioni mentre una particolare condizione è vera. La sua sintassi può essere espressa come:
+```java
+while (expression) {
+     statement(s)
+}
+```
+L'istruzione while valuta l'espressione, che deve restituire un valore booleano. Se l'espressione restituisce true, l'istruzione while esegue le istruzioni nel blocco while. L'istruzione while continua a testare l'espressione ed eseguire il relativo blocco finché l'espressione non restituisce false. L'utilizzo dell'istruzione while per stampare i valori da 1 a 10 può essere eseguito come nel seguente programma WhileDemo:
+```java
+class WhileDemo {
+    public static void main(String[] args){
+        int count = 1;
+        while (count < 11) {
+            System.out.println("Count is: " + count);
+            count++;
+        }
+    }
+}
+```
+
+Puoi implementare un ciclo infinito usando l'istruzione while come segue:
+```java
+while (true){
+    // your code goes here
+}
+```
+
+### Do-While
+Il linguaggio di programmazione Java fornisce anche un'istruzione do-while, che può essere espressa come segue:
+```java
+do {
+     statement(s)
+} while (expression);
+```
+La differenza tra do-while e while è che do-while valuta la sua espressione nella parte inferiore del ciclo anziché nella parte superiore. Pertanto, le istruzioni all'interno del blocco do vengono sempre eseguite almeno una volta, come mostrato nel seguente programma DoWhileDemo:
+```java
+class DoWhileDemo {
+    public static void main(String[] args){
+        int count = 1;
+        do {
+            System.out.println("Count is: " + count);
+            count++;
+        } while (count < 11);
+    }
+}
+```
+
