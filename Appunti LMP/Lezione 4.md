@@ -2,8 +2,8 @@
 
 - [[Appunti LMP/Lezione 4#Variabili|Variabili]]
 - [[Appunti LMP/Lezione 4#Operatori|Operatori]]
-- [[Appunti LMP/Lezione 4#Espressioni,Blocchi e Statement|Espressioni,Blocchi e Statement]]
-- [[Appunti LMP/Lezione 4#Control Flow Statements|Control Flow Statements]]
+- [[Lezione 5#Espressioni,Blocchi e Statements|Espressioni,Blocchi e Statements]]
+- [[Lezione 5#Control Flow Statements|Control Flow Statements]]
 
 ## Variabili
 Come hai appreso nella lezione precedente, un oggetto memorizza il suo stato nei campi.
@@ -178,5 +178,3 @@ Il linguaggio di programmazione Java fornisce operatori che eseguono addizioni, 
 | /         | Division operator       |
 | %         | Remainder operator      |
 
-## Espressioni,Blocchi e Statement
-## Control Flow Statements

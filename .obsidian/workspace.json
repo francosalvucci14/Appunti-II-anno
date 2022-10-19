@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+                "file": "Appunti LMP/Lezione 4.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d1b7c72e3daafa96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti LMP/Lezione 5.md",
                 "mode": "source",
                 "source": false
               }
@@ -111,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+                "file": "Appunti LMP/Lezione 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+                "file": "Appunti LMP/Lezione 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md"
+                "file": "Appunti LMP/Lezione 4.md"
               }
             }
           },
@@ -200,15 +212,15 @@
   },
   "active": "92d73c0e1fd65445",
   "lastOpenFiles": [
-    "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
+    "Appunti LMP/Lezione 5.md",
+    "Appunti LMP/Lezione 4.md",
     "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+    "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
     "Appunti SOR/Indice degli appunti.md",
     "Appunti SOR/Lezione 4 - Operazioni dei processi.md",
     "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
     "Appunti SOR/Lezione 2 - Tipologie di sistemi.md",
     "Appunti SOR/Lezione 1 - Introduzione sui sistemi operativi.md",
-    "Secondo anno/SOR/img/img0.png.md",
-    "Appunti SOR/Capitolo 0 - Sistemi operativi e reti.md",
-    "Appunti LMP/Lezione 4.md"
+    "Secondo anno/SOR/img/img0.png.md"
   ]
 }
