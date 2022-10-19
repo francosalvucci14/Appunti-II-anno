@@ -373,3 +373,57 @@ class DoWhileDemo {
 }
 ```
 
+## For
+L'istruzione for fornisce un modo compatto per eseguire l'iterazione su un intervallo di valori. I programmatori spesso lo chiamano "ciclo for" a causa del modo in cui viene ripetuto ripetutamente fino a quando una particolare condizione non è soddisfatta. La forma generale dell'istruzione for può essere espressa come segue:
+
+```java
+for (_initialization_; _termination_;
+     _increment_) {
+    _statement(s)_
+}
+```
+Quando si utilizza questa versione dell'istruzione for, tenere presente che:
+- L'espressione di inizializzazione inizializza il ciclo; viene eseguito una volta, all'inizio del ciclo.
+- Quando l'espressione di terminazione restituisce false, il ciclo termina.
+- L'espressione di incremento viene richiamata dopo ogni iterazione del ciclo; è perfettamente accettabile che questa espressione incrementi o decrementi un valore.
+
+Il seguente programma, ForDemo, utilizza la forma generale dell'istruzione for per stampare i numeri da 1 a 10 sullo standard output:
+```java
+class ForDemo {
+    public static void main(String[] args){
+         for(int i=1; i<11; i++){
+              System.out.println("Count is: " + i);
+         }
+    }
+}
+```
+
+Nota come il codice dichiara una variabile all'interno dell'espressione di inizializzazione. L'ambito di questa variabile si estende dalla sua dichiarazione alla fine del blocco governato dall'istruzione for, quindi può essere utilizzata anche nelle espressioni di terminazione e incremento. Se la variabile che controlla un'istruzione for non è necessaria al di fuori del ciclo, è meglio dichiarare la variabile nell'espressione di inizializzazione. I nomi i, j e k sono spesso usati per controllare i cicli for; dichiararli all'interno dell'espressione di inizializzazione ne limita la durata e riduce gli errori.
+
+Le tre espressioni del ciclo for sono facoltative; un ciclo infinito può essere creato come segue:
+```java
+// infinite loop
+for ( ; ; ) {
+    
+    // your code goes here
+}
+```
+
+L'istruzione for ha anche un altro modulo progettato per l'iterazione attraverso raccolte e matrici. Questo modulo viene talvolta definito come l'istruzione for avanzata e può essere utilizzato per rendere i cicli più compatti e di facile lettura. Per dimostrare, considera la seguente matrice, che contiene i numeri da 1 a 10:
+```java
+int[] numbers = {1,2,3,4,5,6,7,8,9,10};
+```
+
+Il seguente programma, EnhancedForDemo, usa il for migliorato per scorrere l'array:
+```java
+class EnhancedForDemo {
+    public static void main(String[] args){
+         int[] numbers = 
+             {1,2,3,4,5,6,7,8,9,10};
+         for (int item : numbers) {
+             System.out.println("Count is: " + item);
+         }
+    }
+}
+```
+
