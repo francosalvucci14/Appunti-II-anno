@@ -11,6 +11,13 @@ $$\lbrace a\rbrace^\star\circ[[\lbrace aa\rbrace^\star\circ\lbrace b\rbrace]\cup
 Da rivedere
 
 ## Esercizio 1
+determinare l'espressione regolare che, sull'alfabeto $\lbrace a,b\rbrace$, definisce l'insieme delle stringhe il cui terzultimo carattere è una b
+
+$$r=(\underbrace{\lbrace ab\rbrace^\star}_{s_1}\circ\underbrace{\lbrace b\rbrace}_{s_2}\circ\underbrace{[(a+b)\circ(a+b)]}_{s_3})$$
+$s_1=\text{Una sequenza(potenzialmente infinita) della coppia ab}$
+$s_2=\text{il carattere b}$
+$s_3=\text{la stringa finisce o con 2 "a" o con 2 "b" o con la coppia ab}$
+
 
 
 

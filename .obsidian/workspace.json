@@ -13,18 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/Lezione 5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9b425770ccd36b9f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
                 "mode": "source",
                 "source": false
@@ -93,35 +81,6 @@
         "dimension": 50.61274509803921,
         "children": [
           {
-            "id": "14aae099f69e26e1",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Appunti LMP/Lezione 5.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "668a4683e07cc197",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Appunti LMP/Lezione 5.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
             "id": "2daf07ef62b62e86",
             "type": "leaf",
             "state": {
@@ -138,30 +97,49 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/Lezione 5.md"
+                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md"
               }
             }
           },
           {
             "id": "7931714fcd03803f",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "git-view",
-              "state": {},
-              "pinned": true
+              "state": {}
             }
           },
           {
-            "id": "2bdbdfaa71bb5efa",
+            "id": "78cdb967a8d55a19",
             "type": "leaf",
             "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
+              "type": "backlink",
+              "state": {
+                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ab95ed1612d26458",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -187,14 +165,14 @@
   },
   "active": "92d73c0e1fd65445",
   "lastOpenFiles": [
+    "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
+    "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+    "Appunti LMP/Lezione 4.md",
+    "Appunti LMP/Lezione 5.md",
     "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
     "Appunti SOR/Lezione 4 - Operazioni dei processi.md",
-    "Appunti LMP/Lezione 5.md",
-    "Appunti FI/Esercizi/Esercizi unità 3-4.md",
     "README.md",
     "Appunti LMP/Introduzione.md",
-    "Appunti LMP/Lezione 4.md",
-    "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
     "Appunti SOR/Indice degli appunti.md",
     "Appunti SOR/Lezione 2 - Tipologie di sistemi.md"
   ]
