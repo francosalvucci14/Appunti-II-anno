@@ -98,3 +98,24 @@ Si interpone fra le applicazioni e la memoria di massa
 ![[appunti bsd/immagini/Pasted image 20221013152000.png|center]]
 
 ### ...Ritornando al DBMS
+
+- **Grandi quantità di dati**: I dati gestiti da una base di dati sono:
+	- DI solito più della memoria centrale:vanno gestiti in memoria secondaria
+	- L'unico limite deve essere la dimensione della memoria secondaria, e nelle basi di dati distribuite nenche questo rappresenta un problema
+- **Persistenza**: i dati hanno un **ciclo di vita** che dura nel tempo, un'altra ragione per la gestione in memoria secondaria
+- **Condivisione**: 
+	- Ogni organizzazione è divisa in settori o comunque svolge attività diverse
+	- A ciascun settore o attività corrisponde un sistema informativo
+	- Possono esistere sovrapposizioni fra i dati di interesse dei vari settori
+	- Una base di dati è una risorsa **integrata**, condivisa fra i vari settori
+	- Ridurre la **ridondanza**: una base di dati centralizzata permette di ridurre la replica della stessa informazione che si avrebbe se le diverse applicazioni gestissero i dati tramite file locali
+	- Ridurre **l'inconsistenza**: l'eliminazione della presenza di varie copie dello stesso dato elimina la possibilità di inconsistenze, la gestione attraverso una componente specializzata permette di introdurre controlli sui dati per garantirne la consistenza
+
+I DMBS sono componenti software specializzati nel gesire grandi quantità di dati e implementano procedure basate sulle best-practices per la gestione di:
+- **Efficacia e efficienza**: le tecniche di memorizzazione adottate permettono di migliorare le prestazioni di memorizzazione e accesso alle informazioni
+- **Affidabilità**: tecniche di salvaguardia e verifica dell'integrità dei dati in caso di malfunzionamento hardware e software (crash recovery) sono solitamente implementate
+- **Concorrenza**: i sistemi DBMS implementano delle metodologie per garantire un accesso concorrente ai dati minimizzandone l'impatto sulle prestazioni di accesso
+- **Privatezza**: tecniche di sicurezza per garantire accesso ristretto sono implementate in modo da garantire a ciascun utente accesso solo al sottoinsieme dei dati a cue è autorizzato
+- **Riduzione del tempo di sviluppo**: invece di implementare le funzionalità di gestione dei dati ogni applicazione si appoggia su quelle fornite dal DBMS
+- **Semplificazione e standardizzazione dello sviluppo**: il processo di realizzazione delle applicazioni viene semplificato dato che la memorizzazione e la gestione dei dati è demandato ad una componente con la quale l'applicazione interagisce tramite un'interfaccia standard
+
