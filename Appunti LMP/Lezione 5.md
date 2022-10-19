@@ -427,3 +427,137 @@ class EnhancedForDemo {
 }
 ```
 
+## Branching Statements
+### Break
+L'istruzione break ha due forme: etichettata e non etichettata. Hai visto il modulo senza etichetta nella discussione precedente dell'istruzione switch. Puoi anche utilizzare un'interruzione senza etichetta per terminare un ciclo for, while o do-while, come mostrato nel seguente programma BreakDemo:
+```java
+class BreakDemo {
+    public static void main(String[] args) {
+
+        int[] arrayOfInts = 
+            { 32, 87, 3, 589,
+              12, 1076, 2000,
+              8, 622, 127 };
+        int searchfor = 12;
+
+        int i;
+        boolean foundIt = false;
+
+        for (i = 0; i < arrayOfInts.length; i++) {
+            if (arrayOfInts[i] == searchfor) {
+                foundIt = true;
+                **break;**
+            }
+        }
+
+        if (foundIt) {
+            System.out.println("Found " + searchfor + " at index " + i);
+        } else {
+            System.out.println(searchfor + " not in the array");
+        }
+    }
+}
+```
+
+Un'istruzione break senza etichetta termina l'istruzione switch più interna, for, while o do-while, ma un'interruzione con etichetta termina un'istruzione esterna. Il programma seguente, BreakWithLabelDemo, è simile al programma precedente, ma usa i cicli for nidificati per cercare un valore in una matrice bidimensionale. Quando il valore viene trovato, un'interruzione etichettata termina il ciclo for esterno (etichettato "ricerca"):
+
+```java
+class BreakWithLabelDemo {
+    public static void main(String[] args) {
+
+        int[][] arrayOfInts = { 
+            { 32, 87, 3, 589 },
+            { 12, 1076, 2000, 8 },
+            { 622, 127, 77, 955 }
+        };
+        int searchfor = 12;
+
+        int i;
+        int j = 0;
+        boolean foundIt = false;
+
+    search:
+        for (i = 0; i < arrayOfInts.length; i++) {
+            for (j = 0; j < arrayOfInts[i].length;
+                 j++) {
+                if (arrayOfInts[i][j] == searchfor) {
+                    foundIt = true;
+                    break search;
+                }
+            }
+        }
+
+        if (foundIt) {
+            System.out.println("Found " + searchfor + " at " + i + ", " + j);
+        } else {
+            System.out.println(searchfor + " not in the array");
+        }
+    }
+}
+```
+
+L'istruzione break termina l'istruzione etichettata; non trasferisce il flusso di controllo all'etichetta. Il flusso di controllo viene trasferito all'istruzione immediatamente dopo l'istruzione etichettata (terminata).
+
+### Continue
+L'istruzione continue salta l'iterazione corrente di un ciclo for, while o do-while. Il modulo senza etichetta salta alla fine del corpo del ciclo più interno e valuta l'espressione booleana che controlla il ciclo. Il seguente programma, ContinueDemo , scorre una stringa, contando le occorrenze della lettera "p". Se il carattere corrente non è una p, l'istruzione continue salta il resto del ciclo e passa al carattere successivo. Se è una "p", il programma incrementa il conteggio delle lettere.
+```java
+class ContinueDemo {
+    public static void main(String[] args) {
+
+        String searchMe = "peter piper picked a " + "peck of pickled peppers";
+        int max = searchMe.length();
+        int numPs = 0;
+
+        for (int i = 0; i < max; i++) {
+            // interested only in p's
+            if (searchMe.charAt(i) != 'p')
+                continue;
+
+            // process p's
+            numPs++;
+        }
+        System.out.println("Found " + numPs + " p's in the string.");
+    }
+}
+```
+
+Un'istruzione continue con etichetta salta l'iterazione corrente di un ciclo esterno contrassegnato con l'etichetta data. Il seguente programma di esempio, ContinueWithLabelDemo, utilizza cicli nidificati per cercare una sottostringa all'interno di un'altra stringa. Sono necessari due cicli nidificati: uno per scorrere la sottostringa e uno per scorrere la stringa cercata. Il programma seguente, ContinueWithLabelDemo, usa la forma etichettata di continue per saltare un'iterazione nel ciclo esterno.
+```java
+class ContinueWithLabelDemo {
+    public static void main(String[] args) {
+
+        String searchMe = "Look for a substring in me";
+        String substring = "sub";
+        boolean foundIt = false;
+
+        int max = searchMe.length() - 
+                  substring.length();
+
+    test:
+        for (int i = 0; i <= max; i++) {
+            int n = substring.length();
+            int j = i;
+            int k = 0;
+            while (n-- != 0) {
+                if (searchMe.charAt(j++) != substring.charAt(k++)) {
+                    continue test;
+                }
+            }
+            foundIt = true;
+                break test;
+        }
+        System.out.println(foundIt ? "Found it" : "Didn't find it");
+    }
+}
+```
+
+### Return
+L'ultima delle istruzioni di ramificazione è la dichiarazione di ritorno(**return**). L'istruzione return esce dal metodo corrente e il flusso di controllo torna al punto in cui è stato richiamato il metodo. L'istruzione return ha due forme: una che restituisce un valore e una che non lo fa. Per restituire un valore, metti semplicemente il valore (o un'espressione che calcola il valore) dopo la parola chiave return.
+```java
+return ++count;
+```
+
+Il tipo di dati del valore restituito deve corrispondere al tipo del valore restituito dichiarato del metodo. Quando un metodo viene dichiarato void, utilizzare il modulo di ritorno che non restituisce un valore.
+```java
+return;
+```
