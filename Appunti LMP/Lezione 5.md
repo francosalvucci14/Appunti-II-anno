@@ -73,3 +73,254 @@ class BlockDemo {
 ```
 
 # Control Flow Statements
+
+Le istruzioni all'interno dei file di origine vengono generalmente eseguite dall'alto verso il basso, nell'ordine in cui appaiono. Le istruzioni di flusso di controllo, tuttavia, interrompono il flusso di esecuzione impiegando processi decisionali, cicli e ramificazioni, consentendo al programma di eseguire condizionalmente particolari blocchi di codice. Questa sezione descrive le istruzioni decisionali (if-then, if-then-else, switch), le istruzioni di looping (for, while, do-while) e le istruzioni branching (break, continue, return) supportate da Java linguaggio di programmazione.
+
+## If-then e If-then-else
+### If-then
+L'istruzione if-then è la più elementare di tutte le istruzioni di flusso di controllo. Dice al tuo programma di eseguire una determinata sezione di codice solo se un particolare test restituisce true. Ad esempio, la classe Bicicletta potrebbe consentire ai freni di ridurre la velocità della bicicletta solo se la bicicletta è già in movimento. Una possibile implementazione del metodo applyBrakes potrebbe essere la seguente:
+```java
+void applyBrakes() {
+    // the "if" clause: bicycle must be moving
+    if (isMoving){ 
+        // the "then" clause: decrease current speed
+        currentSpeed--;
+    }
+}
+```
+Se questo test restituisce false (il che significa che la bicicletta non è in movimento), il controllo salta alla fine dell'istruzione if-then.
+
+Inoltre, le parentesi graffe di apertura e chiusura sono facoltative, a condizione che la clausola "then" contenga una sola affermazione:
+```java
+void applyBrakes() {
+    // same as above, but without braces 
+    if (isMoving)
+        currentSpeed--;
+}
+```
+### If-then-else
+L'istruzione if-then-else fornisce un percorso di esecuzione secondario quando una clausola "if" restituisce false. È possibile utilizzare un'istruzione if-then-else nel metodo applyBrakes per eseguire alcune azioni se i freni vengono applicati quando la bicicletta non è in movimento. In questo caso, l'azione è semplicemente stampare un messaggio di errore che indica che la bicicletta si è già fermata.
+```java
+void applyBrakes() {
+    if (isMoving) {
+        currentSpeed--;
+    } else {
+        System.err.println("The bicycle has already stopped!");
+    } 
+}
+```
+Il seguente programma, IfElseDemo, assegna un voto in base al valore di un punteggio del test: una A per un punteggio pari o superiore al 90%, una B per un punteggio pari o superiore all'80% e così via.
+```java
+class IfElseDemo {
+    public static void main(String[] args) {
+
+        int testscore = 76;
+        char grade;
+
+        if (testscore >= 90) {
+            grade = 'A';
+        } else if (testscore >= 80) {
+            grade = 'B';
+        } else if (testscore >= 70) {
+            grade = 'C';
+        } else if (testscore >= 60) {
+            grade = 'D';
+        } else {
+            grade = 'F';
+        }
+        System.out.println("Grade = " + grade);
+    }
+}
+```
+
+## Switch
+A differenza delle istruzioni if-then e if-then-else, l'istruzione switch può avere un numero di possibili percorsi di esecuzione. Uno switch funziona con i tipi di dati primitivi byte, short, char e int.
+Nell'esempio di codice seguente, SwitchDemo, viene dichiarato un int denominato month il cui valore rappresenta un mese. Il codice visualizza il nome del mese, in base al valore del mese, utilizzando l'istruzione switch.
+```java
+public class SwitchDemo {
+    public static void main(String[] args) {
+
+        int month = 8;
+        String monthString;
+        switch (month) {
+            case 1:  monthString = "January";
+                     break;
+            case 2:  monthString = "February";
+                     break;
+            case 3:  monthString = "March";
+                     break;
+            case 4:  monthString = "April";
+                     break;
+            case 5:  monthString = "May";
+                     break;
+            case 6:  monthString = "June";
+                     break;
+            case 7:  monthString = "July";
+                     break;
+            case 8:  monthString = "August";
+                     break;
+            case 9:  monthString = "September";
+                     break;
+            case 10: monthString = "October";
+                     break;
+            case 11: monthString = "November";
+                     break;
+            case 12: monthString = "December";
+                     break;
+            default: monthString = "Invalid month";
+                     break;
+        }
+        System.out.println(monthString);
+    }
+}
+```
+
+Un altro punto di interesse è lao statement `break`. Ogni istruzione break termina l'istruzione switch che la racchiude. Il flusso di controllo continua con la prima istruzione che segue il blocco switch. Le istruzioni break sono necessarie perché senza di esse, le istruzioni nei blocchi switch falliscono: tutte le istruzioni dopo l'etichetta case corrispondente vengono eseguite in sequenza, indipendentemente dall'espressione delle etichette case successive, fino a quando non viene incontrata un'istruzione break. Il programma SwitchDemoFallThrough mostra le istruzioni in un blocco switch che non funziona. Il programma visualizza il mese corrispondente al mese intero e i mesi che seguono nell'anno:
+```java
+public class SwitchDemoFallThrough {
+
+    public static void main(String[] args) {
+        java.util.ArrayList<String> futureMonths =
+            new java.util.ArrayList<String>();
+
+        int month = 8;
+
+        switch (month) {
+            case 1:  futureMonths.add("January");
+            case 2:  futureMonths.add("February");
+            case 3:  futureMonths.add("March");
+            case 4:  futureMonths.add("April");
+            case 5:  futureMonths.add("May");
+            case 6:  futureMonths.add("June");
+            case 7:  futureMonths.add("July");
+            case 8:  futureMonths.add("August");
+            case 9:  futureMonths.add("September");
+            case 10: futureMonths.add("October");
+            case 11: futureMonths.add("November");
+            case 12: futureMonths.add("December");
+                     break;
+            default: break;
+        }
+
+        if (futureMonths.isEmpty()) {
+            System.out.println("Invalid month number");
+        } else {
+            for (String monthName : futureMonths) {
+               System.out.println(monthName);
+            }
+        }
+    }
+}
+```
+
+Tecnicamente, l'interruzione finale non è richiesta perché il flusso esce dall'istruzione switch. Si consiglia di utilizzare un'interruzione in modo che la modifica del codice sia più semplice e meno soggetta a errori. La sezione predefinita gestisce tutti i valori che non sono gestiti in modo esplicito da una delle sezioni del caso.
+
+Nell'esempio di codice seguente, SwitchDemo2, viene illustrato come un'istruzione può avere più etichette maiuscole. L'esempio di codice calcola il numero di giorni in un mese particolare:
+```java
+class SwitchDemo2 {
+    public static void main(String[] args) {
+
+        int month = 2;
+        int year = 2000;
+        int numDays = 0;
+
+        switch (month) {
+            case 1: case 3: case 5:
+            case 7: case 8: case 10:
+            case 12:
+                numDays = 31;
+                break;
+            case 4: case 6:
+            case 9: case 11:
+                numDays = 30;
+                break;
+            case 2:
+                if (((year % 4 == 0) && 
+                     !(year % 100 == 0))
+                     || (year % 400 == 0))
+                    numDays = 29;
+                else
+                    numDays = 28;
+                break;
+            default:
+                System.out.println("Invalid month.");
+                break;
+        }
+        System.out.println("Number of Days = "
+                           + numDays);
+    }
+}
+```
+### Usare stringhe nello switch
+In Java SE 7 e versioni successive, è possibile utilizzare un oggetto String nell'espressione dell'istruzione switch. Nell'esempio di codice seguente, StringSwitchDemo, viene visualizzato il numero del mese in base al valore della stringa denominata month:
+```java
+public class StringSwitchDemo {
+
+    public static int getMonthNumber(String month) {
+
+        int monthNumber = 0;
+
+        if (month == null) {
+            return monthNumber;
+        }
+
+        switch (month.toLowerCase()) {
+            case "january":
+                monthNumber = 1;
+                break;
+            case "february":
+                monthNumber = 2;
+                break;
+            case "march":
+                monthNumber = 3;
+                break;
+            case "april":
+                monthNumber = 4;
+                break;
+            case "may":
+                monthNumber = 5;
+                break;
+            case "june":
+                monthNumber = 6;
+                break;
+            case "july":
+                monthNumber = 7;
+                break;
+            case "august":
+                monthNumber = 8;
+                break;
+            case "september":
+                monthNumber = 9;
+                break;
+            case "october":
+                monthNumber = 10;
+                break;
+            case "november":
+                monthNumber = 11;
+                break;
+            case "december":
+                monthNumber = 12;
+                break;
+            default: 
+                monthNumber = 0;
+                break;
+        }
+
+        return monthNumber;
+    }
+
+    public static void main(String[] args) {
+
+        String month = "August";
+
+        int returnedMonthNumber =
+            StringSwitchDemo.getMonthNumber(month);
+
+        if (returnedMonthNumber == 0) {
+            System.out.println("Invalid month");
+        } else {
+            System.out.println(returnedMonthNumber);
+        }
+    }
+}
+```
