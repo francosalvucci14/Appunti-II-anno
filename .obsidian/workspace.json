@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/Lezione 4.md",
+                "file": "Appunti LMP/Lezione 5.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/Lezione 4.md",
+                "file": "Appunti LMP/Lezione 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/Lezione 4.md",
+                "file": "Appunti LMP/Lezione 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/Lezione 4.md"
+                "file": "Appunti LMP/Lezione 5.md"
               }
             }
           },
@@ -212,6 +212,7 @@
   },
   "active": "92d73c0e1fd65445",
   "lastOpenFiles": [
+    "Appunti LMP/Introduzione.md",
     "Appunti LMP/Lezione 5.md",
     "Appunti LMP/Lezione 4.md",
     "Appunti FI/Esercizi/Esercizi unità 3-4.md",
@@ -220,7 +221,6 @@
     "Appunti SOR/Lezione 4 - Operazioni dei processi.md",
     "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
     "Appunti SOR/Lezione 2 - Tipologie di sistemi.md",
-    "Appunti SOR/Lezione 1 - Introduzione sui sistemi operativi.md",
-    "Secondo anno/SOR/img/img0.png.md"
+    "Appunti SOR/Lezione 1 - Introduzione sui sistemi operativi.md"
   ]
 }
