@@ -20,7 +20,7 @@ Inoltre, rappresentiamo l'operatore $\cdot$ con la concatenazione degli operandi
 
 **Proprietà derivate**
 1. $\emptyset^\star\equiv\epsilon^\star\equiv\epsilon$
-2. $r^\star\equiv rr^\star\equiv (r^\star)^\star\equiv r+r^\star$
+2. $r^\star\equiv r^\star r^\star\equiv (r^\star)^\star\equiv r+r^\star$
 3. $r^\star\equiv\epsilon+r^\star\equiv\epsilon+rr^\star\equiv (\epsilon+r)^\star\equiv (\epsilon+r)r^\star$
 4. $r^\star\equiv (r+r^2+...+r^k)^\star\equiv\epsilon+r+r^2+...+r^{k-1}+r^kr^\star\:\forall k\geq1$
 5. $r^\star r\equiv rr^\star$
@@ -28,4 +28,13 @@ Inoltre, rappresentiamo l'operatore $\cdot$ con la concatenazione degli operandi
 7. $r(sr)^\star\equiv (rs)^\star r$
 8. $(r^\star s)^\star\equiv\epsilon+(r+s)^\star s$
 9. $(rs^\star)\equiv\epsilon+r(r+s)^\star$
+
+**Esempio**
+
+Dimostrare che $(a+aa)(a+b)^\star\equiv a(a+b)^\star$
+
+$(a+aa)(a+b)^\star\equiv (a+aa)a^\star(ba^\star)^\star$ in quanto $(r+s)^\star\equiv r^\star(sr^\star)^\star(\text{proprietà 6})$ 
+$(a+aa)(a+b)^\star\equiv a(\epsilon+a)a^\star(ba^\star)^\star$ in quanto $r\equiv r\epsilon$ (proprietà 2 di $"\cdot"$)
+$(a+aa)(a+b)^\star\equiv aa^\star(ba^\star)^\star$ in quanto $(\epsilon+r)r^\star\equiv r^\star$
+$(a+aa)(a+b)^\star\equiv a(a+b)^\star$ in quanto $(r+s)^\star\equiv r^\star(sr^\star)^\star$
 
