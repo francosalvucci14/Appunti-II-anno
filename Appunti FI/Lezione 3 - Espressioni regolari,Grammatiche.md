@@ -94,7 +94,7 @@ $\alpha\to\beta_n$
 viene convenzionalmente indicato come: $$\alpha\to\beta_1|\beta_2|...|\beta_n$$
 Inoltre, l'unione $V_t\cup V_n$ viene indicata con V
 
-## $\epsilon-produzioni$
+## $\epsilon$-produzioni
 Una regola del tipo $\alpha\to\epsilon$, dove $\alpha\in V^\star\circ V_n\circ V^\star$, prende il nome di $\epsilon-produzione$ o $\epsilon-regola$
 
 **esempio**
@@ -108,3 +108,11 @@ Data una grammatica $\mathcal G=\langle V_t,V_n,P,S\rangle$, la **derivazione di
 La coppia $\langle\phi,\psi\rangle$ appartiene alla relazione se e solo se esistono $\alpha\in V^\star\circ V_n\circ V^\star\:e\:\beta,\gamma,\delta\in V^\star$ tali che :
 $$\begin{cases}\phi=\gamma\alpha\delta\\\psi=\gamma\beta\delta\\\alpha\to\beta\in P\end{cases}$$
 In questo caso, scriviamo $\phi\xRightarrow[\mathcal G]{}\psi$ 
+Sostanzialmente possiamo dire che $\phi\:e\:\psi$ sono in relazione di derivazione diretta se all'interno di $\phi$ esiste una sottostringa, chiamata$\alpha$, che è parte sinistra di una produzione e $\psi$ non è altro che la stringa che noi otteniamo inserendo al posto di $\alpha$ la stringa $\beta$
+
+Tornando alla stringa di esempio $BBaBCaC$ 
+
+$$\phi=\underbrace{BB}_{\gamma}\underbrace{aBC}_{\alpha}\underbrace{aC}_{\delta}$$
+$$\psi=\underbrace{BB}_{\gamma}\underbrace{aC}_{\delta}$$
+in $\psi$ la stringa $\alpha$ è uguale a $\epsilon$ 
+e lo indichiamo formalmente in questo modo $$\underbrace{BBaBCaC}_{\phi}\xRightarrow[\mathcal G]{}\underbrace{BBaC}_{\psi}$$
