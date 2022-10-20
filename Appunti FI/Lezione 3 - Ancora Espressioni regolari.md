@@ -38,3 +38,22 @@ $(a+aa)(a+b)^\star\equiv a(\epsilon+a)a^\star(ba^\star)^\star$ in quanto $r\equi
 $(a+aa)(a+b)^\star\equiv aa^\star(ba^\star)^\star$ in quanto $(\epsilon+r)r^\star\equiv r^\star$
 $(a+aa)(a+b)^\star\equiv a(a+b)^\star$ in quanto $(r+s)^\star\equiv r^\star(sr^\star)^\star$
 
+**Esempio**
+
+Dimostrare che $a^\star(b+ab^\star)\equiv b+aa^\star b^\star$
+
+$a^\star(b+ab^\star)\equiv (\epsilon+aa^\star)(b+ab^\star)$ in quanto $r^\star\equiv\epsilon+rr^\star$
+$a^\star(b+ab^\star)\equiv b+ab^\star+aa^\star b+aa^\star ab^\star$ per distributiva
+$a^\star(b+ab^\star)\equiv b+(ab^\star + aa^\star ab^\star)+aa^\star b$ per associativa e commutativa di +
+$a^\star(b+ab^\star)\equiv b+(\epsilon+aa^\star)ab^\star + aa^\star b$ in quanto $r\equiv r\epsilon$
+$a^\star(b+ab^\star)\equiv b+a^\star ab^\star + aa^\star b$ in quanto $r^\star\equiv\epsilon+rr^\star$
+$a^\star(b+ab^\star)\equiv b+aa^\star b^\star+aa^\star b$ in quanto $r^\star r\equiv rr^\star$
+$a^\star(b+ab^\star)\equiv b+aa^\star(b^\star+b)$ per distributiva
+$a^\star(b+ab^\star)\equiv b+aa^\star b^\star$ in quanto $r^\star\equiv r^\star+r$
+
+**Esempio**
+Dimostrare che $(a+b)^\star\not\equiv a^\star+b^\star$
+Basta osservare che $ab\in L((a+b)^\star - L(a^\star+b^\star))$
+
+
+
