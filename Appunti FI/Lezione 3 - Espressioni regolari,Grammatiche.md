@@ -116,3 +116,34 @@ $$\phi=\underbrace{BB}_{\gamma}\underbrace{aBC}_{\alpha}\underbrace{aC}_{\delta}
 $$\psi=\underbrace{BB}_{\gamma}\underbrace{aC}_{\delta}$$
 in $\psi$ la stringa $\alpha$ è uguale a $\epsilon$ 
 e lo indichiamo formalmente in questo modo $$\underbrace{BBaBCaC}_{\phi}\xRightarrow[\mathcal G]{}\underbrace{BBaC}_{\psi}$$
+
+Data una grammatica $G$, una **derivazione** è una sequenza di stringhe $\phi_1,...,\phi_n\in V^\star$ tali che
+$$\forall i\in \lbrace1,...,n-1\rbrace:\phi_i\xRightarrow[\mathcal G]{}\phi_{i+1}$$
+La relazione di derivabilità è la chiusira transitiva e riflessiva della derivazione diretta: essa si rappresenta con la notazione $\xRightarrow[\mathcal G]{\star}$ 
+Scrivendo $\phi\xRightarrow[\mathcal G]{\star}\psi$ indichiamo l'esistenza di (almeno) una derivazione da $\phi\:a\:\psi$
+
+**Esempio**
+Il linguaggio$$L=\lbrace a^nb^nc^n|n\geq1\rbrace$$
+può essere generato dalla grammatica $G$ in cui $V_t=\lbrace a,b,c\rbrace$ e $V_n=\lbrace S,B,C,F,G\rbrace$ e le regole $P$ sono le seguenti:
+1. $S\to aSBC$
+2. $CB\to BC$
+3. $SB\to bF$
+4. $FB\to bF$
+5. $FC\to cG$
+6. $GC\to cG$
+7. $G\to\epsilon$
+
+la stringa $\phi_0\:è\:aSCBbaG$ 
+la stringa $\phi_1\:è\:aSBCbaG$
+
+possiamo dire che $\phi_0\xRightarrow[\mathcal G]{}\phi_1$ perchè in $\phi_0$ c'è la sottostringa CB che corrisponde con la parte sinistra della produzione e $\phi_1$ è derivato dalla sostituzione di questa sottostringa con la corrispondente parte destra della produzione, ovvero BC
+
+Allo stesso modo possiamo costruire $\phi_2$, infatti $\phi_2=aSBCba$
+La parte sinistra G di $\phi_1$ viene sostituita con $\epsilon$, parte destra di $\phi_2$ 
+E quindi possiamo dire che $\phi_0\xRightarrow[\mathcal G]{}\phi_1\xRightarrow[\mathcal G]{}\phi_2$ e cosi via...
+A partire da $\phi_0$ posso ottenere altre derivazioni, prendendo in considerazione altre sottostringhe che corrispondono a parti sinistre diverse
+
+Per esempio, se avessimo avuto la stringa $aCCa$, essa non poteva essere derivata secondo queste regole di produzione perchè non c'è nessuna sottostringa che compare nelle parti sinistre delle produzioni
+
+### Forme di frase
+Data una grammatica $G$, si definisce **forma di frase** una qualunque stringa $\phi\in V^\star$ tale che $S\xRightarrow[\mathcal G]{\star}\phi$ 
