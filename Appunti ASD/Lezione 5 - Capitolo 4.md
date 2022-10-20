@@ -204,3 +204,33 @@ La complessità in questo caso è:
 $$T(n)=T(n-1)+T(0)+O(n)=T(n-1)+O(1)+O(n)=T(n-1)+O(n)\implies T(n)=O(n^2)$$
 #### Analisi caso migliore
 $O(nlog(n))$, partizionamento sempre bilanciato = albero della ricorsione bilanciato
+
+![[appunti asd/immagini/Pasted image 20221020103857.png|center|600]]
+
+#### Analisi caso medio
+
+- **Problema**: la partizione può essere sbilanciata
+	- La probabilità che ad ogni passo si presenti la partizione peggiore è molto bassa
+	- Per partizione che non sono "troppo sbilanciate" l'algoritmo è veloce
+- **Domanda**: quale è la complessità dell'algoritmo suppondendo che l'algoritmo di partizionamento produca sempre una partizione proporzionale 9-a-1?
+	- E se la partizione fosse sempre proporzionale a 99-a-1?
+- **Nota**: sembrano partizioni piuttosto sbilanciate
+
+La complessità è ancora $O(nlog(n))$
+
+![[appunti asd/immagini/Pasted image 20221020104253.png|center|620]]
+
+
+... e se le istanze non sono equiprobabili?
+### Versione Randomizzata
+Si sceglie il perno x a caso fra gli elementi da ordinare
+
+**Teorema** L'algoritmo quickSort randomizzato ordina in loco un array di lunghezza n in tempo $O(n^2)$ nel caso peggiore $O(nlog(n))$ con alta probabilità, overo con probabilità almeno 1-1/n
+
+#### Randomizzazione $\neq$ caso medio
+- nessuna assunzione sulla distribuzione di prbabilità delle istanze
+- nessun input specifico per il quale si verifica il caso peggiore
+- il caso peggiore determinato solo dal generatore di numeri casuali
+
+
+
