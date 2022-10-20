@@ -53,7 +53,8 @@ $a^\star(b+ab^\star)\equiv b+aa^\star b^\star$ in quanto $r^\star\equiv r^\star+
 
 **Esempio**
 Dimostrare che $(a+b)^\star\not\equiv a^\star+b^\star$
-Basta osservare che $ab\in L((a+b)^\star - L(a^\star+b^\star))$
+Basta osservare che $ab\in L((a+b)^\star) - L(a^\star+b^\star)$
+
 
 
 
