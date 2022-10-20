@@ -107,4 +107,4 @@ Data una grammatica $\mathcal G=\langle V_t,V_n,P,S\rangle$, la **derivazione di
 
 La coppia $\langle\phi,\psi\rangle$ appartiene alla relazione se e solo se esistono $\alpha\in V^\star\circ V_n\circ V^\star\:e\:\beta,\gamma,\delta\in V^\star$ tali che :
 $$\begin{cases}\phi=\gamma\alpha\delta\\\psi=\gamma\beta\delta\\\alpha\to\beta\in P\end{cases}$$
-In questo caso, scriviamo $\phi\implies_{\mathcal G}\psi$ 
+In questo caso, scriviamo $\phi\xRightarrow[\mathcal G]{}\psi$ 
