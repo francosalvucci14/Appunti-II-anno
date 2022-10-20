@@ -122,9 +122,10 @@ $$\forall i\in \lbrace1,...,n-1\rbrace:\phi_i\xRightarrow[\mathcal G]{}\phi_{i+1
 La relazione di derivabilità è la chiusira transitiva e riflessiva della derivazione diretta: essa si rappresenta con la notazione $\xRightarrow[\mathcal G]{\star}$ 
 Scrivendo $\phi\xRightarrow[\mathcal G]{\star}\psi$ indichiamo l'esistenza di (almeno) una derivazione da $\phi\:a\:\psi$
 
-**Esempio**
+**Esempio**(2)
 Il linguaggio$$L=\lbrace a^nb^nc^n|n\geq1\rbrace$$
 può essere generato dalla grammatica $G$ in cui $V_t=\lbrace a,b,c\rbrace$ e $V_n=\lbrace S,B,C,F,G\rbrace$ e le regole $P$ sono le seguenti:
+
 1. $S\to aSBC$
 2. $CB\to BC$
 3. $SB\to bF$
@@ -147,3 +148,13 @@ Per esempio, se avessimo avuto la stringa $aCCa$, essa non poteva essere derivat
 
 ### Forme di frase
 Data una grammatica $G$, si definisce **forma di frase** una qualunque stringa $\phi\in V^\star$ tale che $S\xRightarrow[\mathcal G]{\star}\phi$ 
+Supponendo di partire da una stringa che contiene il solo simbolo $S$ 
+Utilizzando la grammatica dell'esempio 2, partendo da $S$ possiamo trovare la stringa $aabbcc$, utilizzando una sequenza di 8 $\psi$ (!!!VEDI FOTO)
+
+![[appunti fi/immagini/Pasted image 20221020163646.png|center|500]]
+
+Infatti come si può notare, $S\xRightarrow{\star}\psi_1\xRightarrow{\star}\psi_2....\xRightarrow{\star}\psi_8$
+tutte le $\psi$ sono forme di frase, che possiamo derivare partendo dall'assioma $S$
+**Oss** la $\psi_8$ è una sequenza di soli simboli terminali,e quindi da qui in poi non si può continuare la derivazione
+
+### Linguaggio generato da una grammatica
