@@ -70,11 +70,12 @@ Una **grammatica formale** $\mathcal G$ è una quadrupla $\mathcal G=\langle V_t
 3. $P$ è una relazione binaria di cardinalità finita su $$(V_t\cup V_n)^\star\circ V_n\circ (V_t\cup V_n)^\star\times(V_t\cup V_n)^\star$$ $P$ è detta insieme delle **produzioni**. Una coppia $\langle\alpha,\beta\rangle\in P$, si indica generalemtne con la notazione $\alpha\rightarrow\beta$;
 4. $S\in V_n$ è detto **assioma**
 
-La prima componete di una produzione $P$ è una qualunque stringa di caratteri **terminali** e **non terminali** mescolati, in cui deve esserci almeno un simbolo non terminale
-La seconda componente è una sequenza (pot. nulla) di simboli terminali e non 
+La prima componete di una produzione $P$ (ovvero $\alpha$) è una qualunque stringa di caratteri **terminali** e **non terminali** mescolati, in cui deve esserci almeno un simbolo non terminale
+La seconda componente (ovvero $\beta$) è una sequenza (pot. nulla) di simboli terminali e non 
 
 **Esempio**
 Si consideri la grammatica $G=\langle\lbrace a,b\rbrace,\lbrace S,B,C\rbrace,P,S\rbrace$, avente le seguenti regole di produzione:
+
 1. $S\rightarrow aS$
 2. $S\rightarrow B$
 3. $B\rightarrow bB$
@@ -83,3 +84,27 @@ Si consideri la grammatica $G=\langle\lbrace a,b\rbrace,\lbrace S,B,C\rbrace,P,S
 6. $C\rightarrow c$
 
 Con questa grammatica si possono generalizzare le stringhe del linguaggio $$L(\mathcal G)=\lbrace a^nb^mc^h|n\geq0,m,h\geq1\rbrace$$
+**Notazione**
+Un insieme di produzioni aventi stessa parte sinistra
+
+$\alpha\to\beta_1$
+$\alpha\to\beta_2$
+...
+$\alpha\to\beta_n$
+viene convenzionalmente indicato come: $$\alpha\to\beta_1|\beta_2|...|\beta_n$$
+Inoltre, l'unione $V_t\cup V_n$ viene indicata con V
+
+## $\epsilon-produzioni$
+Una regola del tipo $\alpha\to\epsilon$, dove $\alpha\in V^\star\circ V_n\circ V^\star$, prende il nome di $\epsilon-produzione$ o $\epsilon-regola$
+
+**esempio**
+regola di produzione: $aBC\to\epsilon$
+stringa: $BBaBCaC$ diventa $BBaC$
+
+## Derivazioni dirette
+
+Data una grammatica $\mathcal G=\langle V_t,V_n,P,S\rangle$, la **derivazione diretta** è una relazione su $(V^\star\circ V_n\circ V^\star)\times V^\star$ così definita:
+
+La coppia $\langle\phi,\psi\rangle$ appartiene alla relazione se e solo se esistono $\alpha\in V^\star\circ V_n\circ V^\star\:e\:\beta,\gamma,\delta\in V^\star$ tali che :
+$$\begin{cases}\phi=\gamma\alpha\delta\\\psi=\gamma\beta\delta\\\alpha\to\beta\in P\end{cases}$$
+In questo caso, scriviamo $\phi\implies_{\mathcal G}\psi$ 
