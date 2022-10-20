@@ -47,7 +47,7 @@ T(n)=#operazioni elementari sul modello RAM a costi uniformi eseguiita dall'algo
 Ogni linea di codice costa O(1)
 $T(n)\leq 5n^2O(1)=\Theta(n^2)\implies T(n)=O(n^2)$
 
-### Lower Bound
+#### Lower Bound
 
 >SelectionSort(A)
 >1. for k=0 to n-2 do
@@ -86,10 +86,10 @@ Usa la tecnica del divide et impera.
 **Pseudo-codice**
 > MergeSort(A,i,f)
 > 1. if(i<f) then
-> 2. m=(i+f)/2
-> 3. MergeSort(A,i,m)
-> 4. MergeSort(A,m+1,f)
-> 5. Merge(A,i,m,f) $\implies\:fonde\:A[i;m]\:e\:A[m+1;f]\:output\:A[i;f]$
+> 	1. m=(i+f)/2
+> 	2. MergeSort(A,i,m)
+> 	3. MergeSort(A,m+1,f)
+> 	4. Merge(A,i,m,f) $\implies\:fonde\:A[i;m]\:e\:A[m+1;f]\:output\:A[i;f]$
 
 **Notazione**: dato un array A e due indici $x\leq y$,denotiamo con $A[x;y]$ la porzione di A costituita da $A[x],A[x+1],...,A[y]$
 
@@ -152,3 +152,55 @@ Rispetto al MergeSort, divide complesso ed impera semplice
 	- da sinistra verso destro, ci si ferma su un elemento maggiore del perno
 	- da destra verso sinistra, ci si ferma su un elemento minore del perno
 - Scambia gli elementi e riprendi la scansione
+
+**Esempio**
+
+![[appunti asd/immagini/Pasted image 20221020101754.png|center|600]]
+
+**Pseudo-codice Partition**
+
+>Partition(A,i,f)
+>1. $x=A[i]$
+>2. inf=i
+>3. sup=f+1
+>4. while(true) do
+>	1. do (inf=inf+1) while ($inf\leq f\:e\:A[inf]\leq x$)
+>	2. do (sup=sup-1) while ($A[sup\gt x]$)
+>	3. if ($inf\lt sup$) then scambia $A[inf]\:e\:A[sup]$
+>	4. else **break**
+>5. scambia $A[i]\:e\:A[sup]$
+>6. return sup
+
+Partiziona $A[i;f]\:rispetto\:a\:A[i]$
+- penultima linea: mette il perno "al centro"
+- ultima linea: restituisce l'indice del "centro"
+
+**Proprietà(invariante)**: 
+In ogni istante, gli elementi $A[i],...,A[inf-1]$ sono $\leq$ del perno, mentre gli elementi $A[sup+1],...,A[f]$ sono $\gt$ del perno
+
+**Pseudo-codice QuickSort**
+
+>QuickSort(A,i,f)
+>1. if($i\lt f$) then
+>	1. m=Partition(A,i,f)
+>	2. QuickSort(A,i,m-1)
+>	3. QuickSort(A,m+1,f)
+
+**Esempio di esecuzione**
+
+![[appunti asd/immagini/Pasted image 20221020102641.png|center|500]]
+
+L'albero delle chiamate corsive può essere sbilanciato
+
+**Corretto?** si
+
+### Complessità: 
+#### Analisi nel caso peggiore
+Ogni invocazione di Partition posiziona almeno un elemento in modo corretto (il perno)
+Quindi dopo n invocazioni di Partition, ognuna di costo $O(n)$ ho il vettore ordinato. Il costo complessivo è quindi $O(n^2)$
+
+Il caso peggiore si verifica quando il perno scelto ad ogni passo è il minimo o il massimo degli elementi nell'array
+La complessità in questo caso è:
+$$T(n)=T(n-1)+T(0)+O(n)=T(n-1)+O(1)+O(n)=T(n-1)+O(n)\implies T(n)=O(n^2)$$
+#### Analisi caso migliore
+$O(nlog(n))$, partizionamento sempre bilanciato = albero della ricorsione bilanciato
