@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "26bcded7b00a4223",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/Esercizi/Esercizio RegEx.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md"
+                "file": "Appunti FI/Esercizi/Esercizio RegEx.md"
               }
             }
           },
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
+                "file": "Appunti FI/Esercizi/Esercizio RegEx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
+                "file": "Appunti FI/Esercizi/Esercizio RegEx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,11 +176,11 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "a5a7a2dcc3c9857b",
+  "active": "26bcded7b00a4223",
   "lastOpenFiles": [
+    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
     "Appunti BSD/Lezione 2.md",
     "Appunti SOR/Lezione 2 - Tipologie di sistemi.md",
-    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
     "Appunti FI/Indice delle lezioni.md",
     "Appunti ASD/Indice degli appunti.md",
     "Appunti FI/Esercizi/Esercizi unità 3-4.md",
