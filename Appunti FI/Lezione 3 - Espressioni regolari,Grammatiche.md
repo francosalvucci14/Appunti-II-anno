@@ -67,7 +67,7 @@ Una **grammatica formale** $\mathcal G$ è una quadrupla $\mathcal G=\langle V_t
 
 1. $V_t$ è un insieme finito e non vuoto di simboli **terminali**
 2. $V_n$ è un insieme finito e non vuoto di simboli **non terminali**
-3. $P$ è una relazione binaria di cardinalità finita su $$\underbrace{(V_t\cup V_n)^\star\circ V_n\circ (V_t\cup V_n)^\star}_{\text{parte sinistra dell'insieme di produzioni}}\times\underbrace{(V_t\cup V_n)^\star}_\text{parte destra dell'insieme di produzio}$$ $P$ è detta insieme delle **produzioni**. Una coppia $\langle\alpha,\beta\rangle\in P$, si indica generalemtne con la notazione $\alpha\rightarrow\beta$;
+3. $P$ è una relazione binaria di cardinalità finita su $$\underbrace{(V_t\cup V_n)^\star\circ V_n\circ (V_t\cup V_n)^\star}_{\text{parte sinistra dell'insieme di produzioni}}\times\underbrace{(V_t\cup V_n)^\star}_\text{parte destra dell'insieme di produzioni}$$ $P$ è detta insieme delle **produzioni**. Una coppia $\langle\alpha,\beta\rangle\in P$, si indica generalemtne con la notazione $\alpha\rightarrow\beta$;
 4. $S\in V_n$ è detto **assioma**
 
 La prima componete di una produzione $P$ (ovvero $\alpha$) è una qualunque stringa di caratteri **terminali** e **non terminali** mescolati, in cui deve esserci almeno un simbolo non terminale
