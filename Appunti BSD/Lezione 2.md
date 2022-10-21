@@ -154,7 +154,7 @@ I DBMS dispongono di vari linguaggi e interfacce diverse:
 	- utenti **finali**(terminalisti): eseguono applicazioni predefinite (transizioni)
 	- utenti **casuali**: eseguono operazioni non previste a priori, usando linguaggi interattivi
 ### DBA
-Persona o gruppo di persoine responsabile del controllo centralizzato e della gestione del sistema, delle prestazioni, dell'affidabilità,delle autorizzazioni
+Persona o gruppo di persone responsabile del controllo centralizzato e della gestione del sistema, delle prestazioni, dell'affidabilità,delle autorizzazioni
 Le funzioni del DBA includono quelle di progettazione, anche se in progetti complessi ci possono essere distinzioni
 ### Transizioni
 Programmi che realizzano attivitò frequenti e predefinite, con poche eccezzioni, previste a priori
