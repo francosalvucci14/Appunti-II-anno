@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "871e8119b615f4c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizio RegEx.md"
+                "file": "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md"
               }
             }
           },
@@ -128,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizio RegEx.md",
+                "file": "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizio RegEx.md",
+                "file": "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,8 +188,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "26bcded7b00a4223",
+  "active": "871e8119b615f4c4",
   "lastOpenFiles": [
+    "Appunti FI/Esercizi/Esercizio RegEx.md",
     "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
     "Appunti BSD/Lezione 2.md",
     "Appunti SOR/Lezione 2 - Tipologie di sistemi.md",
@@ -186,7 +199,6 @@
     "Appunti FI/Esercizi/Esercizi unità 3-4.md",
     "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
     "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md",
-    "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md",
-    "Appunti SOR/Lezione 4 - Operazioni dei processi.md"
+    "Appunti SOR/Lezione 3 - Operazioni del sistema operativo.md"
   ]
 }
