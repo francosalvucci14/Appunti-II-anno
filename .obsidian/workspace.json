@@ -150,6 +150,18 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "e9d3637ee5486fa9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
           }
         ],
         "currentTab": 2

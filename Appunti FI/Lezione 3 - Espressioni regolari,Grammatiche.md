@@ -158,3 +158,7 @@ tutte le $\psi$ sono forme di frase, che possiamo derivare partendo dall'assioma
 **Oss** la $\psi_8$ è una sequenza di soli simboli terminali,e quindi da qui in poi non si può continuare la derivazione
 
 ### Linguaggio generato da una grammatica
+
+Il **linguaggio generato da una grammatica** $G$ è l'insieme $L(G)\subset\Sigma^\star$ tale che
+$$L(G)=\lbrace x|x\in V_T^\star \wedge S\xRightarrow[\mathcal G]{\star}x\rbrace$$
+$L(G$) è l'insieme delle stringhe di caratteri terminali che si possono ottenere a partire dall'assioma mediante l'applicazione di un numero finito di passi di derivazione diretta
