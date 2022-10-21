@@ -49,6 +49,6 @@ $$T(n)\leq c_1+nc_2+n(n-2)(c_3+c_4+c_5)\implies T(n)=O(n^2)\implies T(n)=\Theta(
 - linee 6,7 costo costante, eseguite al più n-2 volte (In realtà sarebbe $\sum_{j=2}^n t_j$)
 - linea 8 costo costante
 $t_j$ è il numero di volte che la linea 5 viene eseguita
-$T(n)\leq n((c_2+c_3+c_4+c_8+c_6+c_7)+(n-2))=nc+n^2-2n\implies T(n)=O(n^2)\implies T(n)=\Theta(n^2)$ 
+$T(n)\leq n((c_2+c_3+c_4+c_8+c_6+c_7)+(n-2))=nc+n^2\implies T(n)=O(n^2)\implies T(n)=\Theta(n^2)$ 
 
 
