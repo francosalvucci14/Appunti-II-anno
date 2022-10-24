@@ -127,3 +127,26 @@ _Def_
 Dette anche **non contestuali** o **contex free** (CF), ammettono solo produzioni del tipo:
 $$A\to\beta,A\in V_n,\beta\in V^+$$
 cioè produzioni in cui ogni non terminale A piò essere riscritto in una stringa $\beta$ indipendentemente dal contesto in cui esso si trova
+
+**Esempio**
+Grammatica che genera espressioni aritmetiche di somme e moltiplicazioni in una variabile i:
+
+1. $E\to E+T|T$
+2. $T\to T\cdot F|F$
+3. $F\to i|(E)$
+
+Generare la stringa $(i+i)\cdot i$ utilizando la gramamtica dell'esempio precedente
+
+**Oss** il linguaggio visto prima $L=\lbrace a^nb^n|n\geq1\rbrace$ può essere generato dalla grammatica di tipo 2 con produzioni 
+
+1. $S\to aSb|ab$
+
+Dunque il linguaggio in questione è context free
+
+## Grammatiche di tipo 3
+
+Dette anche **lineari destre o regolari**, ammettono solo produzioni del tipo:
+$$A\to\delta,A\in V_n,\delta\in (V_T\circ V_N)\cup V_T$$
+il termine "regolare" deriva dal fatto che i corrispondendi linguaggi sono rappresentabili per mezzo di espressioni regolari
+
+I linguaggi generabili da queste gramamtiche vengono detti **linguaggi di tipo 3 o regolari**
