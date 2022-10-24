@@ -397,3 +397,161 @@ Sia invocato il metodo con questi argomenti:
 moveCircle(myCircle, 23, 56)
 ```
 All'interno del metodo, circle inizialmente si riferisce a myCircle. Il metodo cambia le coordinate xey dell'oggetto a cui fa riferimento il cerchio (ovvero myCircle) rispettivamente di 23 e 56. Queste modifiche persisteranno quando il metodo ritorna. Quindi al cerchio viene assegnato un riferimento a un nuovo oggetto Cerchio con x = y = 0. Questa riassegnazione non ha però alcuna permanenza, perché il riferimento è stato passato per valore e non può cambiare. All'interno del metodo, l'oggetto puntato da circle è cambiato, ma, quando il metodo ritorna, myCircle fa ancora riferimento allo stesso oggetto Circle di prima che il metodo fosse chiamato.
+
+## Oggetti
+Un tipico programma Java crea molti oggetti che, come sapete, interagiscono invocando metodi. Attraverso queste interazioni tra oggetti, un programma può svolgere varie attività, come implementare una GUI, eseguire un'animazione o inviare e ricevere informazioni su una rete. Una volta che un oggetto ha completato il lavoro per il quale è stato creato, le sue risorse vengono riciclate per essere utilizzate da altri oggetti.
+
+Ecco un piccolo programma, chiamato CreateObjectDemo, che crea tre oggetti: un oggetto Point e due oggetti Rectangle. Avrai bisogno di tutti e tre i file sorgente per compilare questo programma.
+```java
+public class CreateObjectDemo {
+
+    public static void main(String[] args) {
+		
+        // Declare and create a point object and two rectangle objects.
+        Point originOne = new Point(23, 94);
+        Rectangle rectOne = new Rectangle(originOne, 100, 200);
+        Rectangle rectTwo = new Rectangle(50, 100);
+		
+        // display rectOne's width, height, and area
+        System.out.println("Width of rectOne: " + rectOne.width);
+        System.out.println("Height of rectOne: " + rectOne.height);
+        System.out.println("Area of rectOne: " + rectOne.getArea());
+		
+        // set rectTwo's position
+        rectTwo.origin = originOne;
+		
+        // display rectTwo's position
+        System.out.println("X Position of rectTwo: " + rectTwo.origin.x);
+        System.out.println("Y Position of rectTwo: " + rectTwo.origin.y);
+		
+        // move rectTwo and display its new position
+        rectTwo.move(40, 72);
+        System.out.println("X Position of rectTwo: " + rectTwo.origin.x);
+        System.out.println("Y Position of rectTwo: " + rectTwo.origin.y);
+    }
+}
+```
+
+### Creare oggetti
+Come sapete, una classe fornisce il progetto per gli oggetti; crei un oggetto da una classe. Ciascuna delle seguenti istruzioni tratte dal programma CreateObjectDemo crea un oggetto e lo assegna a una variabile:
+```java
+**Point originOne** = new Point(23, 94);
+**Rectangle rectOne** = new Rectangle(originOne, 100, 200);
+**Rectangle rectTwo** = new Rectangle(50, 100);
+```
+
+La prima riga crea un oggetto della classe Point e la seconda e la terza riga creano ciascuna un oggetto della classe Rectangle.
+
+Ognuna di queste affermazioni ha tre parti (discusse in dettaglio di seguito):
+
+- **Dichiarazione**: Il codice impostato in grassetto sono tutte dichiarazioni di variabili che associano un nome di variabile a un tipo di oggetto.
+- **Istanza**: la nuova parola chiave è un operatore Java che crea l'oggetto.
+- **Inizializzazione**: l'operatore new è seguito da una chiamata a un costruttore, che inizializza il nuovo oggetto.
+
+### Dichiarare una variabile
+
+In precedenza, hai imparato che per dichiarare una variabile, scrivi:
+```java
+type name;
+```
+Questo notifica al compilatore che utilizzerai name per fare riferimento ai dati il cui tipo è type. Con una variabile primitiva, questa dichiarazione riserva anche la giusta quantità di memoria per la variabile.
+Puoi anche dichiarare una variabile di riferimento su una propria riga. Per esempio:
+```java
+Point originOne;
+```
+
+Se dichiari originOne in questo modo, il suo valore sarà indeterminato fino a quando non verrà effettivamente creato e assegnato un oggetto. La semplice dichiarazione di una variabile di riferimento non crea un oggetto. Per questo, è necessario utilizzare il nuovo operatore, come descritto nella sezione successiva. Devi assegnare un oggetto a originOne prima di usarlo nel tuo codice. Altrimenti, otterrai un errore del compilatore.
+
+Una variabile in questo stato, che attualmente non fa riferimento a nessun oggetto, può essere illustrata come segue (il nome della variabile, originOne, più un riferimento che non punta a nulla):
+![[appunti lmp/immagini/objects-null.gif|center|300]]
+### Istanziare una classe
+L'operatore new crea un'istanza di una classe allocando memoria per un nuovo oggetto e restituendo un riferimento a quella memoria. L'operatore new richiama anche il costruttore di oggetti.
+L'operatore new richiede un singolo argomento suffisso: una chiamata a un costruttore. Il nome del costruttore fornisce il nome della classe di cui creare un'istanza.
+
+L'operatore new restituisce un riferimento all'oggetto che ha creato. Questo riferimento è solitamente assegnato a una variabile del tipo appropriato, come:
+
+```java
+Point originOne = new Point(23, 94);
+```
+Il riferimento restituito dall'operatore new non deve essere assegnato a una variabile. Può anche essere utilizzato direttamente in un'espressione. Per esempio:
+```java
+int height = new Rectangle().height;
+```
+
+### Inizializzare un oggetto
+Ecco il codice per la classe Point:
+```java
+public class Point {
+    public int x = 0;
+    public int y = 0;
+    **//constructor
+    public Point(int a, int b) {
+        x = a;
+        y = b;
+    }**
+}
+```
+
+Questa classe contiene un singolo costruttore. Puoi riconoscere un costruttore perché la sua dichiarazione usa lo stesso nome della classe e non ha un tipo restituito. Il costruttore nella classe Point accetta due argomenti interi, come dichiarato dal codice (int a, int b). La seguente istruzione fornisce 23 e 94 come valori per quegli argomenti:
+
+```java
+Point originOne = new Point(23, 94);
+```
+Il risultato dell'esecuzione di questa affermazione può essere illustrato nella figura seguente:
+![[appunti lmp/immagini/objects-oneRef.gif|center|500]]
+Ecco il codice per la classe Rectangle, che contiene quattro costruttori:
+```java
+public class Rectangle {
+    public int width = 0;
+    public int height = 0;
+    public Point origin;
+
+    // four constructors
+    public Rectangle() {
+        origin = new Point(0, 0);
+    }
+    public Rectangle(Point p) {
+        origin = p;
+    }
+    public Rectangle(int w, int h) {
+        origin = new Point(0, 0);
+        width = w;
+        height = h;
+    }
+    public Rectangle(Point p, int w, int h) {
+        origin = p;
+        width = w;
+        height = h;
+    }
+
+    // a method for moving the rectangle
+    public void move(int x, int y) {
+        origin.x = x;
+        origin.y = y;
+    }
+
+    // a method for computing the area of the rectangle
+    public int getArea() {
+        return width * height;
+    }
+}
+```
+Ciascun costruttore consente di fornire i valori iniziali per l'origine, la larghezza e l'altezza del rettangolo, utilizzando sia i tipi primitivi che quelli di riferimento. Se una classe ha più costruttori, devono avere firme diverse. Il compilatore Java differenzia i costruttori in base al numero e al tipo degli argomenti. Quando il compilatore Java incontra il codice seguente, sa chiamare il costruttore nella classe Rectangle che richiede un argomento Point seguito da due argomenti interi:
+```java
+Rectangle rectOne = new Rectangle(originOne, 100, 200);
+```
+Questo chiama uno dei costruttori di Rectangle che inizializza origin su originOne. Inoltre, il costruttore imposta la larghezza su 100 e l'altezza su 200. Ora ci sono due riferimenti allo stesso oggetto Punto: un oggetto può avere più riferimenti ad esso, come mostrato nella figura seguente:
+
+
+![[appunti lmp/immagini/objects-multipleRefs.gif|center|500]]
+
+La riga di codice seguente chiama il costruttore Rectangle che richiede due argomenti interi, che forniscono i valori iniziali per larghezza e altezza. Se ispezioni il codice all'interno del costruttore, vedrai che crea un nuovo oggetto Point i cui valori xey sono inizializzati su 0:
+```java
+Rectangle rectTwo = new Rectangle(50, 100);
+```
+Il costruttore Rectangle utilizzato nella seguente istruzione non accetta argomenti, quindi è chiamato costruttore senza argomenti:
+```java
+Rectangle rect = new Rectangle();
+```
+Tutte le classi hanno almeno un costruttore. Se una classe non ne dichiara alcuna esplicitamente, il compilatore Java fornisce automaticamente un costruttore senza argomenti, chiamato costruttore predefinito. Questo costruttore predefinito chiama il costruttore no-argument del genitore della classe o il costruttore Object se la classe non ha altro genitore. Se il genitore non ha un costruttore (Object ne ha uno), il compilatore rifiuterà il programma.
+
