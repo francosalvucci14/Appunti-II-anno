@@ -18,7 +18,7 @@ Vedi soluzione sotto l'esempio di [[Lezione 3 - Espressioni regolari,Grammatiche
 Come dimostrare che $L(G)=\lbrace a^nb^nc^n|n\geq1\rbrace$?
 
 - Dimostrare che ogni x del tipo $a^nb^nc^n$ è derivabile in $\mathcal G$ 
-- Dimostrare che ogni $z\in V_t^\star=\lbrace a^nb^nc^n\rbrace^\star$ derivabile in $\mathcal G$ ha la forma $a^nb^nc^n$
+- Dimostrare che ogni $z\in V_T^\star=\lbrace a^nb^nc^n\rbrace^\star$ derivabile in $\mathcal G$ ha la forma $a^nb^nc^n$
 
 **Esempio/Esercizio**
 
@@ -73,7 +73,7 @@ dimostrare che la grammatica con produzioni $S\to aS|b$ e la grammatica con prod
 _Def_
 Le grammatiche di tipo 0, dette anche **non limitate**, definiscono la classe dei linguaggi più ampia possibile.
 In esse le produzioni sono del tipo generale 
-$$\alpha\to\beta,\alpha\in V^\star\circ V_n\circ V^\star,\beta\in V^\star$$
+$$\alpha\to\beta,\alpha\in V^\star\circ V_N\circ V^\star,\beta\in V^\star$$
 
 Queste grammatiche ammettono anche derivazioni che "accorciano" le forme di frase, come ad esempio quelle che si ottengono applicando le $\epsilon$-produzioni
 
@@ -93,7 +93,7 @@ $$S=aAb=aaAbb=aabb\to(a^2b^2)$$
 ## Grammatiche di tipo 1
 _Def_
 Dette anche **contestuali** o **context sensitive** (CS), ammettono qualunque regola di produzione che non riduca la lunghezza delle stringhe, cioè tutte le produzioni del tipo:
-$$\alpha\to\gamma,\alpha\in V^\star\circ V_n\circ V^\star,\gamma\in V^+,|\alpha|\leq|\gamma|$$
+$$\alpha\to\gamma,\alpha\in V^\star\circ V_N\circ V^\star,\gamma\in V^+,|\alpha|\leq|\gamma|$$
 I linguaggi generabili da grammativche di tipo 1 si dicono **linguaggi di tipo1, contestuali, o context sensitive**
 
 **Oss** Nell'esempio di prima, la grammatica è di tipo 0 ma non di tipo 1 perchè la produzione $A\to\epsilon$ accorcia(infatti |A|=1 mentre |$\epsilon$|=0), e quindi non vale la regola per le grammatiche di tipo 1
@@ -118,14 +118,14 @@ dunque il linguaggio è contestuale
 
 ### Definizione alternativa
 
-Il termine "linguaggio contestuale" deriva dal fatto che sono generabili da gramamtiche aventi produzioni "contestuali" del tipo $$\beta_1A\beta_2\to \beta_1\gamma\beta_2,A\in V_n,\beta_1\beta_2\in V^\star,\gamma\in V^+$$
+Il termine "linguaggio contestuale" deriva dal fatto che sono generabili da gramamtiche aventi produzioni "contestuali" del tipo $$\beta_1A\beta_2\to \beta_1\gamma\beta_2,A\in V_N,\beta_1\beta_2\in V^\star,\gamma\in V^+$$
 in cui si esprime il fatto che A può essere sostituito da $\gamma$ in una forma di frase solo se si trova nel contesto $\langle beta_1,\beta_2\rangle$ 
 
 ## Grammatiche di tipo 2
 _Def_
 
 Dette anche **non contestuali** o **contex free** (CF), ammettono solo produzioni del tipo:
-$$A\to\beta,A\in V_n,\beta\in V^+$$
+$$A\to\beta,A\in V_N,\beta\in V^+$$
 cioè produzioni in cui ogni non terminale A piò essere riscritto in una stringa $\beta$ indipendentemente dal contesto in cui esso si trova
 
 **Esempio**
@@ -146,7 +146,29 @@ Dunque il linguaggio in questione è context free
 ## Grammatiche di tipo 3
 
 Dette anche **lineari destre o regolari**, ammettono solo produzioni del tipo:
-$$A\to\delta,A\in V_n,\delta\in (V_T\circ V_N)\cup V_T$$
+$$A\to\delta,A\in V_N,\delta\in (V_T\circ V_N)\cup V_T$$
 il termine "regolare" deriva dal fatto che i corrispondendi linguaggi sono rappresentabili per mezzo di espressioni regolari
 
 I linguaggi generabili da queste gramamtiche vengono detti **linguaggi di tipo 3 o regolari**
+
+**Esempio**
+la grammatica $\mathcal G=\langle\lbrace a,b\rbrace,\lbrace S\rbrace,P,S\rangle$
+in cui P contiene le produzioni 
+1. $S\to aS|b$
+è una grammatica di tipo 3 e genera il linguaggio regolare $L=\lbrace a^nb|n\geq0\rbrace$
+
+**Esercizio**
+Definire una grammatica regolare per il linguaggio delle stringhe sull'alfabeto $\lbrace a,b\rbrace$ che contengono un numero dispari di a
+
+#### Grammatiche lineari sinistre
+
+Sono caratterizzate da regole del tipo:
+$$A\to\delta,A\in V_N,\delta\in (V_N\circ V_T)\cup V_T$$
+le grammatiche sinistre differiscono dalle grammatiche destre lineari destre in quanto l'unico simbolo non terminale che può comparire nella parte destra $\delta$ della produzione appare come primo simbolo
+
+# Gerarchia di Chomsky
+
+Per ogni $0\leq n\leq 2$, ogni grammatica di tipo n+1 è anche di tipo n: pertanto l'insieme dei linguaggi di tipo n contiene tutti i linguaggi di tipo n+1, formando quindi una gerarchai, detta **Gerarchia di Chomsky**
+
+![[appunti fi/immagini/Pasted image 20221024124024.png|center|500]]
+
