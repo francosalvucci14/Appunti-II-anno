@@ -107,3 +107,11 @@ le produzioni
 3. $Ab\to aab$
 
 appartengono ad una grammatica di tipo 1 (perchè nessuna delle produzioni accorcia, al più mantengono tutte la stessa lunghezza)
+
+**Esempio**
+Il linguaggio $L=\lbrace a^nb^n|n\geq1\rbrace$ visto prima, può essere generato da una gramamtica di tipo 1 avente le seguenti produzioni:
+1. $S\to aBS|ab$
+2. $Ba\to aB$
+3. $Bb\to bb$
+
+dunque il linguaggio è contestuale
