@@ -20,43 +20,19 @@
             }
           },
           {
-            "id": "26bcded7b00a4223",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/Esercizi/Esercizio RegEx.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "871e8119b615f4c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "3d222b348f8cf220",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Indice delle lezioni.md",
+                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Indice delle lezioni.md"
+                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md"
               }
             }
           },
@@ -152,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Indice delle lezioni.md",
+                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Indice delle lezioni.md",
+                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -203,8 +179,8 @@
   "active": "3d222b348f8cf220",
   "lastOpenFiles": [
     "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
+    "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
     "Appunti FI/Indice delle lezioni.md",
-    "Appunti FI/Lezione 4.md",
     "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md",
     "Appunti FI/Esercizi/Esercizio RegEx.md",
     "Appunti BSD/Lezione 2.md",
