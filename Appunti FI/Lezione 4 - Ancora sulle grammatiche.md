@@ -115,3 +115,15 @@ Il linguaggio $L=\lbrace a^nb^n|n\geq1\rbrace$ visto prima, può essere generato
 3. $Bb\to bb$
 
 dunque il linguaggio è contestuale
+
+### Definizione alternativa
+
+Il termine "linguaggio contestuale" deriva dal fatto che sono generabili da gramamtiche aventi produzioni "contestuali" del tipo $$\beta_1A\beta_2\to \beta_1\gamma\beta_2,A\in V_n,\beta_1\beta_2\in V^\star,\gamma\in V^+$$
+in cui si esprime il fatto che A può essere sostituito da $\gamma$ in una forma di frase solo se si trova nel contesto $\langle beta_1,\beta_2\rangle$ 
+
+## Grammatiche di tipo 2
+_Def_
+
+Dette anche **non contestuali** o **contex free** (CF), ammettono solo produzioni del tipo:
+$$A\to\beta,A\in V_n,\beta\in V^+$$
+cioè produzioni in cui ogni non terminale A piò essere riscritto in una stringa $\beta$ indipendentemente dal contesto in cui esso si trova
