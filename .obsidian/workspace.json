@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a5a7a2dcc3c9857b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "3d222b348f8cf220",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -178,10 +165,10 @@
   },
   "active": "3d222b348f8cf220",
   "lastOpenFiles": [
+    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
+    "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
     "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md",
     "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
-    "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
-    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
     "Appunti FI/Indice delle lezioni.md",
     "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md",
     "Appunti FI/Esercizi/Esercizio RegEx.md",
