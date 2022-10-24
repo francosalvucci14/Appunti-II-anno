@@ -268,3 +268,132 @@ Non devi fornire alcun costruttore per la tua classe, ma devi stare attento quan
 Puoi usare tu stesso un costruttore di superclassi. La lezione di MountainBike all'inizio di questa lezione ha fatto proprio questo. Questo sarà discusso più avanti, nella lezione sulle interfacce e l'ereditarietà.
 
 È possibile utilizzare i modificatori di accesso nella dichiarazione di un costruttore per controllare quali altre classi possono chiamare il costruttore.
+
+## Passare informazioni a un metodo oa un costruttore
+
+La dichiarazione per un metodo o un costruttore dichiara il numero e il tipo degli argomenti per quel metodo o costruttore. Ad esempio, il seguente è un metodo che calcola le rate mensili di un mutuo per la casa, in base all'importo del prestito, al tasso di interesse, alla durata del prestito (il numero di periodi) e al valore futuro del prestito:
+```java
+public double computePayment(
+                  double **loanAmt**,
+                  double **rate**,
+                  double **futureValue**,
+                  int **numPeriods**) {
+    double interest = **rate** / 100.0;
+    double partial1 = Math.pow((1 + interest), 
+                    - **numPeriods**);
+    double denominator = (1 - partial1) / interest;
+    double answer = (-**loanAmt** / denominator)
+                    - ((**futureValue** * partial1) / denominator);
+    return answer;
+}
+```
+
+Questo metodo ha quattro parametri: l'importo del prestito, il tasso di interesse, il valore futuro e il numero di periodi. I primi tre sono numeri in virgola mobile a precisione doppia e il quarto è un numero intero. I parametri vengono utilizzati nel corpo del metodo e in fase di esecuzione assumeranno i valori degli argomenti passati.
+
+### Tipi di parametri
+
+È possibile utilizzare qualsiasi tipo di dati per un parametro di un metodo o un costruttore. Ciò include tipi di dati primitivi, come double, float e interi, come hai visto nel metodo computePayment, e tipi di dati di riferimento, come oggetti e matrici.
+
+Ecco un esempio di metodo che accetta un array come argomento. In questo esempio, il metodo crea un nuovo oggetto Polygon e lo inizializza da una matrice di oggetti Point (supponiamo che Point sia una classe che rappresenta una coordinata x, y):
+
+```java
+public Polygon polygonFrom(Point[] corners) {
+    // method body goes here
+}
+```
+
+### Numero arbitrario di argomenti
+È possibile utilizzare un costrutto chiamato varargs per passare un numero arbitrario di valori a un metodo. Usi varargs quando non sai quanti argomenti di un particolare tipo verranno passati al metodo. È una scorciatoia per creare manualmente un array (il metodo precedente avrebbe potuto utilizzare varags anziché un array).
+
+Per utilizzare varargs, segui il tipo dell'ultimo parametro con i puntini di sospensione (tre punti, ...), quindi uno spazio e il nome del parametro. Il metodo può quindi essere chiamato con qualsiasi numero di quel parametro, incluso nessuno.
+```java
+public Polygon polygonFrom(Point... corners) {
+    int numberOfSides = corners.length;
+    double squareOfSide1, lengthOfSide1;
+    squareOfSide1 = (corners[1].x - corners[0].x)
+                     * (corners[1].x - corners[0].x) 
+                     + (corners[1].y - corners[0].y)
+                     * (corners[1].y - corners[0].y);
+    lengthOfSide1 = Math.sqrt(squareOfSide1);
+
+    // more method body code follows that creates and returns a 
+    // polygon connecting the Points
+}
+```
+
+Puoi vedere che, all'interno del metodo, gli angoli sono trattati come un array. Il metodo può essere chiamato con un array o con una sequenza di argomenti. Il codice nel corpo del metodo tratterà il parametro come una matrice in entrambi i casi.
+
+Vedrai più comunemente varag con i metodi di stampa; ad esempio, questo metodo printf:
+```java
+public PrintStream printf(String format, Object... args)
+```
+consente di stampare un numero arbitrario di oggetti. Può essere chiamato così:
+```java
+System.out.printf("%s: %d, %s%n", name, idnum, address);
+```
+o così
+```java
+System.out.printf("%s: %d, %s, %s, %s%n", name, idnum, address, phone, email);
+```
+### Nomi dei parametri
+
+Quando dichiari un parametro a un metodo oa un costruttore, fornisci un nome per quel parametro. Questo nome viene utilizzato all'interno del corpo del metodo per fare riferimento all'argomento passato.
+
+Il nome di un parametro deve essere univoco nel suo ambito. Non può essere uguale al nome di un altro parametro per lo stesso metodo o costruttore e non può essere il nome di una variabile locale all'interno del metodo o del costruttore.
+
+Un parametro può avere lo stesso nome di uno dei campi della classe. Se questo è il caso, si dice che il parametro ombreggia il campo. L'ombreggiatura dei campi può rendere difficile la lettura del codice e viene convenzionalmente utilizzato solo all'interno di costruttori e metodi che impostano un campo particolare. Ad esempio, considera la seguente classe Circle e il relativo metodo setOrigin:
+```java
+public class Circle {
+    private int x, y, radius;
+    public void setOrigin(int x, int y) {
+        ...
+    }
+}
+```
+La classe Circle ha tre campi: x, y e raggio. Il metodo setOrigin ha due parametri, ognuno dei quali ha lo stesso nome di uno dei campi. Ciascun parametro del metodo oscura il campo che ne condivide il nome. Quindi l'uso dei nomi semplici x o y all'interno del corpo del metodo si riferisce al parametro, non al campo. Per accedere al campo è necessario utilizzare un nome qualificato. Questo sarà discusso più avanti in questa lezione nella sezione intitolata "Uso di questa parola chiave".
+
+### Passaggio di argomenti di tipo di dati primitivi
+Gli argomenti primitivi, come un int o un double, vengono passati ai metodi in base al valore. Ciò significa che eventuali modifiche ai valori dei parametri esistono solo nell'ambito del metodo. Quando il metodo ritorna, i parametri sono spariti e qualsiasi modifica ad essi viene persa. Ecco un esempio:
+```java
+public class PassPrimitiveByValue {
+
+    public static void main(String[] args) {
+           
+        int x = 3;
+           
+        // invoke passMethod() with 
+        // x as argument
+        passMethod(x);
+           
+        // print x to see if its 
+        // value has changed
+        System.out.println("After invoking passMethod, x = " + x);
+           
+    }
+        
+    // change parameter in passMethod()
+    public static void passMethod(int p) {
+        p = 10;
+    }
+}
+```
+
+### Passaggio di argomenti del tipo di dati di riferimento
+Anche i parametri del tipo di dati eference, come gli oggetti, vengono passati ai metodi in base al valore. Ciò significa che quando il metodo ritorna, il riferimento passato fa ancora riferimento allo stesso oggetto di prima. Tuttavia, i valori dei campi dell'oggetto possono essere modificati nel metodo, se dispongono del livello di accesso appropriato.
+
+Ad esempio, considera un metodo in una classe arbitraria che sposta gli oggetti Circle:
+```java
+public void moveCircle(Circle circle, int deltaX, int deltaY) {
+    // code to move origin of circle to x+deltaX, y+deltaY
+    circle.setX(circle.getX() + deltaX);
+    circle.setY(circle.getY() + deltaY);
+        
+    // code to assign a new reference to circle
+    circle = new Circle(0, 0);
+}
+```
+Sia invocato il metodo con questi argomenti:
+```java
+moveCircle(myCircle, 23, 56)
+```
+All'interno del metodo, circle inizialmente si riferisce a myCircle. Il metodo cambia le coordinate xey dell'oggetto a cui fa riferimento il cerchio (ovvero myCircle) rispettivamente di 23 e 56. Queste modifiche persisteranno quando il metodo ritorna. Quindi al cerchio viene assegnato un riferimento a un nuovo oggetto Cerchio con x = y = 0. Questa riassegnazione non ha però alcuna permanenza, perché il riferimento è stato passato per valore e non può cambiare. All'interno del metodo, l'oggetto puntato da circle è cambiato, ma, quando il metodo ritorna, myCircle fa ancora riferimento allo stesso oggetto Circle di prima che il metodo fosse chiamato.
