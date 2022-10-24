@@ -12,10 +12,21 @@ Il linguaggio $L=\lbrace a^nb^nc^n|n\geq1\rbrace$ può essere generato dalla gra
 
 Vedi soluzione sotto l'esempio di [[Lezione 3 - Espressioni regolari,Grammatiche#Forme di frase|Lezione 3 (Forma di Frase)]]
 
-**Esempio**
+**Esempio/Esercizio**
 Come dimostrare che $L(G)=\lbrace a^nb^nc^n|n\geq1\rbrace$?
 
 - Dimostrare che ogni x del tipo $a^nb^nc^n$ è derivabile in $\mathcal G$ 
 - Dimostrare che ogni $z\in V_t^\star=\lbrace a^nb^nc^n\rbrace^\star$ derivabile in $\mathcal G$ ha la forma $a^nb^nc^n$
 
+**Esempio/Esercizio**
 
+La grammatica $\mathcal G=\langle\lbrace a,b\rbrace,\lbrace S,A\rbrace,P,S\rangle$ con pruduzioni $P$
+
+1. $S\to Ab$
+2. $A\to Sa$
+
+genera il linguaggio vuoto $\Lambda$  
+
+**Esempio**
+
+Dimostriamo che la grammatica $\mathcal G=\langle\lbrace a,b,c\rbrace,\lbrace S,A\rbrace,P,S\rangle$ con produzioni $P$
