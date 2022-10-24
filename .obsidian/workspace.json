@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
+                "file": "Appunti LMP/Indice delle lezioni.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4cdc2f95f3d6336f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti LMP/Indice delle lezioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md"
+                "file": "Appunti LMP/Indice delle lezioni.md"
               }
             }
           },
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
+                "file": "Appunti LMP/Indice delle lezioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
+                "file": "Appunti LMP/Indice delle lezioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,17 +176,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "3d222b348f8cf220",
+  "active": "4cdc2f95f3d6336f",
   "lastOpenFiles": [
-    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
+    "Appunti LMP/Lezione 6.md",
+    "Appunti LMP/Indice delle lezioni.md",
+    "Appunti FI/Indice delle lezioni.md",
     "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
+    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
     "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md",
     "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
-    "Appunti FI/Indice delle lezioni.md",
     "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md",
     "Appunti FI/Esercizi/Esercizio RegEx.md",
-    "Appunti BSD/Lezione 2.md",
-    "Appunti SOR/Lezione 2 - Tipologie di sistemi.md",
-    "Appunti ASD/Indice degli appunti.md"
+    "Appunti BSD/Lezione 2.md"
   ]
 }
