@@ -249,3 +249,8 @@ Notazione per grammatiche context free resa più espressiva e succinta:
 4. Parentesi quadre $[...]$ utilizzate per indicare l'opzionalità (possibile assenza di una parte di stringa)
 5. Parentesi tonde $(...)$ utilizzate per indicare la fattorizzazione, vale a dire la messa in comune di una sottoespressione
 
+Identificatore:
+1. $<id>::=<alfa>\lbrace <alfanum>\rbrace^{n-1}$
+2. $<alfanum>::=<alfa>|<cifra>$
+3. $<alfa>::=A|B|...|Z|a|b|...|z$
+4. $<cifra>::=0|1|...|9$
