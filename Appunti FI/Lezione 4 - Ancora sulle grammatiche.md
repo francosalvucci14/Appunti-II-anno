@@ -90,7 +90,7 @@ in cui P è
 Infatti, per esempio una derivazione è:
 $$S=aAb=aaAbb=aabb\to(a^2b^2)$$
 
-## Grammatiche di tipo 1
+## Grammatiche di tipo 1 (Contex Sensitive)
 _Def_
 Dette anche **contestuali** o **context sensitive** (CS), ammettono qualunque regola di produzione che non riduca la lunghezza delle stringhe, cioè tutte le produzioni del tipo:
 $$\alpha\to\gamma,\alpha\in V^\star\circ V_N\circ V^\star,\gamma\in V^+,|\alpha|\leq|\gamma|$$
@@ -121,7 +121,7 @@ dunque il linguaggio è contestuale
 Il termine "linguaggio contestuale" deriva dal fatto che sono generabili da gramamtiche aventi produzioni "contestuali" del tipo $$\beta_1A\beta_2\to \beta_1\gamma\beta_2,A\in V_N,\beta_1\beta_2\in V^\star,\gamma\in V^+$$
 in cui si esprime il fatto che A può essere sostituito da $\gamma$ in una forma di frase solo se si trova nel contesto $\langle beta_1,\beta_2\rangle$ 
 
-## Grammatiche di tipo 2
+## Grammatiche di tipo 2 (Context Free)
 _Def_
 
 Dette anche **non contestuali** o **contex free** (CF), ammettono solo produzioni del tipo:
@@ -217,10 +217,17 @@ $$\phi\to\psi\underbrace {X...X}_{|\phi|-|\psi|}$$
 **Esempio**
 1. $AB\to A$
 nella nuova grammatica abbiamo $AB\to AX$ e $X\to\epsilon$
+Avremo una forma di frase del tipo $CaABBC$, applicando la produzione 1 avremo $CaABC$.
+Mentre se applichiamo la produzione con X avremo la stringa $CaABBC\to CaAXBC\to CaABC$ 
+Esattamente lo stesso risultato
 
+Questo ci dice che introdurre le $\epsilon$-produzioni in una grammatica CS è qualcosa che in realtà ci porta fuori dalla classe delle grammatiche, e quindi otterremo l'effetto delle grammatiche di tipo 0
+Sostanzialmente possiamo dire che se aggiungiamo una $\epsilon$-produzione in una grammatica di tipo 1 (CS), allora poi otterremo una grammatica di tipo 0
 
+## Grammatiche di tipo 2 o 3 con $\epsilon$-produzioni
 
-
+L'aggiunta indiscriminata di $\epsilon$-produzioni non altera il potere generativo delle grammatiche
+Si può dimostrare che data una gramamtica di tipo 2 o 3 estesa con $\epsilon$-produzioni, ne possiamo sempre costruire una qeuivalente, dello stesso tipo, che usa $\epsilon$-produzioni solo a partire dalll'assioma (nel caso in cui $\epsilon$ appartenga al linguaggio da generare) o non ne usa affatto (in caso contrario)
 
 
 
