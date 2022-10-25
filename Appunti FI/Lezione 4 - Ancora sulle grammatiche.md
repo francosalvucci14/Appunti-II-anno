@@ -176,11 +176,11 @@ Per ogni $0\leq n\leq 2$, ogni grammatica di tipo n+1 è anche di tipo n: pertan
 Dalle definizioni, non è possibile generare la stringa vuota con grammatiche di tipo 1,2,3
 Linguaggi contenenti $\epsilon$ possono però essere generati apportando lievi modifiche (aggiunta di opportune $\epsilon$-produzioni) alle grammatiche non contestuali e regolari
 
-Se una grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ di tipo 1,2 o 3 geenra un linguaggio L, per poter generare il linguaggio $L\cup\epsilon$ è sufficente utilizzare la gramamtica
+Se una grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ di tipo 1,2 o 3 genera un linguaggio L, per poter generare il linguaggio $L\cup\epsilon$ è sufficente utilizzare la gramamtica
 $$\mathcal G'=\langle V_T,V_N\cup\lbrace S'\rbrace,P',S'\rangle$$
 dove $$P'=P\cup\lbrace S'\to\epsilon\rbrace\cup\lbrace S'\to S\rbrace$$
 **Esempio**
-Datsa la grammatica CS $\mathcal G$, con assioma S e produzioni:
+Data la grammatica CS $\mathcal G$, con assioma S e produzioni:
 1. $S\to aBSc|abc$
 2. $Ba\to aB$
 3. $Bb\to bb$
@@ -229,7 +229,10 @@ Sostanzialmente possiamo dire che se aggiungiamo una $\epsilon$-produzione in un
 L'aggiunta indiscriminata di $\epsilon$-produzioni non altera il potere generativo delle grammatiche
 Si può dimostrare che data una gramamtica di tipo 2 o 3 estesa con $\epsilon$-produzioni, ne possiamo sempre costruire una qeuivalente, dello stesso tipo, che usa $\epsilon$-produzioni solo a partire dalll'assioma (nel caso in cui $\epsilon$ appartenga al linguaggio da generare) o non ne usa affatto (in caso contrario)
 
+>**Teorema**
+>Data una grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ il cui insieme di produzioni P comprende soltanto produzioni di tipo non contestuale e produzioni vuote, esiste una grammatica non contestuale $\mathcal G'$ tale che $L(\mathcal G')=L(\mathcal G)-\lbrace\epsilon\rbrace$
 
-
-
+Derivazione di $\mathcal G'\:da\:\mathcal G$
+1. determinazione dei simboli che si annulalno, cioè i non terminali da cui è possibile derivare $\epsilon$
+2. per ogni produzione $A\to\alpha$ di P, con l'esclusione delle $\epsilon$-produzioni, se nessun simbolo di $\alpha$ si annula $A\to\alpha$ va in in $P'$; altrimenti a $P'$ si aggiungono tutte le possibili produzioni ottenute da $A\to\alpha$ eliminando da un $\alpha$ un sottoinsieme dei simboli che si annullano, considerati con la propria molteplicità
 
