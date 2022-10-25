@@ -179,5 +179,50 @@ Linguaggi contenenti $\epsilon$ possono però essere generati apportando lievi m
 Se una grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ di tipo 1,2 o 3 geenra un linguaggio L, per poter generare il linguaggio $L\cup\epsilon$ è sufficente utilizzare la gramamtica
 $$\mathcal G'=\langle V_T,V_N\cup\lbrace S'\rbrace,P',S'\rangle$$
 dove $$P'=P\cup\lbrace S'\to\epsilon\rbrace\cup\lbrace S'\to S\rbrace$$
+**Esempio**
+Datsa la grammatica CS $\mathcal G$, con assioma S e produzioni:
+1. $S\to aBSc|abc$
+2. $Ba\to aB$
+3. $Bb\to bb$
+
+risulta $L(\mathcal G)=\lbrace a^nb^nc^n|n\geq1\rbrace$
+Il linguaggio $L(\mathcal G)\cup\epsilon=\lbrace a^nb^nc^n|n\geq0\rbrace$ è derivato dalla grammatica $\mathcal G'$ con assioma $S'$ e produzioni:
+1. $S'\to S|\epsilon$
+2. $S\to aBSc|abc$
+3. $Ba\to aB$
+4. $Bb\to bb$
+
+**Oss**
+Aggiungere la $\epsilon$-produzione direttamente come produzione dell'assioma può avere effetti indesiderati
+
+Infatti:
+1. $S\to Ub$
+2. $U\to ab|S$
+genera $ab^\star bb$, Ma:
+1. $S\to Ub|\epsilon$
+2. $U\to ab|S$
+genera $ab^\star bb\cup\lbrace\epsilon\rbrace\cup b^\star b$ 
+
+## Grammatiche di tipo 1 e $\epsilon$-produzioni
+
+L'aggiunta non controllata di $\epsilon$-produzioni può aumentare in modo sostanziale il potere generativo della grammatica
+
+>**Teorema** 
+>Data una grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ di tipo 0, esiste una grammatica di tipo $\mathcal G'$ equivalente a $\mathcal G$, ottenuta estendendo una grammatica di tipo 1 con opportune $\epsilon$-produzioni
+
+La grammatica $\mathcal G'=\langle V_T',V_N',P',S'\rangle$ è caratterizzata da: $V_T'=V_T,V_N'=V_N\cup\lbrace X\rbrace$,con $X\not\in V_N,S'=S\:e\:P'$ ottenuto da $P$ aggiungendo la produzione $X\to\epsilon$ e sostituendo ad ogni produzione $\phi\to\psi$ con $|\phi|\gt|\psi|\gt 0$ la produzione:
+$$\phi\to\psi\underbrace {X...X}_{|\phi|-|\psi|}$$
+è semplice verificare che con la grammatica $\mathcal G'$ sono derivabili tutte e sole le stringhe di $V_T^\star$ derivabili con la grammatica $\mathcal G$
+
+**Esempio**
+1. $AB\to A$
+nella nuova grammatica abbiamo $AB\to AX$ e $X\to\epsilon$
+
+
+
+
+
+
+
 
 
