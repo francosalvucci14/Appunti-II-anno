@@ -172,3 +172,12 @@ Per ogni $0\leq n\leq 2$, ogni grammatica di tipo n+1 è anche di tipo n: pertan
 
 ![[appunti fi/immagini/Pasted image 20221024124024.png|center|500]]
 
+# Grammatiche con $\epsilon$-produzioni
+Dalle definizioni, non è possibile generare la stringa vuota con grammatiche di tipo 1,2,3
+Linguaggi contenenti $\epsilon$ possono però essere generati apportando lievi modifiche (aggiunta di opportune $\epsilon$-produzioni) alle grammatiche non contestuali e regolari
+
+Se una grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ di tipo 1,2 o 3 geenra un linguaggio L, per poter generare il linguaggio $L\cup\epsilon$ è sufficente utilizzare la gramamtica
+$$\mathcal G'=\langle V_T,V_N\cup\lbrace S'\rbrace,P',S'\rangle$$
+dove $$P'=P\cup\lbrace S'\to\epsilon\rbrace\cup\lbrace S'\to S\rbrace$$
+
+
