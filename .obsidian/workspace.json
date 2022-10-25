@@ -96,9 +96,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md"
-              }
+              "state": {}
             }
           },
           {
@@ -115,7 +113,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +129,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,10 +159,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "3d222b348f8cf220",
+  "active": "90fe890bef2bffd6",
   "lastOpenFiles": [
-    "Appunti LMP/Lezione 6.md",
     "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
+    "Appunti LMP/Lezione 6.md",
     "Appunti CPS/Lezione 4.md",
     "Appunti ASD/Lezione 5 - Capitolo 4.md",
     "Appunti LMP/Indice delle lezioni.md",

@@ -236,3 +236,16 @@ Derivazione di $\mathcal G'\:da\:\mathcal G$
 1. determinazione dei simboli che si annulalno, cioè i non terminali da cui è possibile derivare $\epsilon$
 2. per ogni produzione $A\to\alpha$ di P, con l'esclusione delle $\epsilon$-produzioni, se nessun simbolo di $\alpha$ si annula $A\to\alpha$ va in in $P'$; altrimenti a $P'$ si aggiungono tutte le possibili produzioni ottenute da $A\to\alpha$ eliminando da un $\alpha$ un sottoinsieme dei simboli che si annullano, considerati con la propria molteplicità
 
+# Forma normale di Backus
+
+Le gramamtiche formali sono utilizzate per la definizione di linguaggi di programmazione, caratterizzati come l'insieme di tutte le stringhe (programmi) derivabili dalla grammatica
+
+Per la definizione sintattica dei linguaggi di programmazione vengono adottate grammatiche non contestuali, tradizionalmente rappresentate mediante una notazione specifica, particolarmente suggestiva, denominata **Forma Normale di Backus (Backus Normal Form**,BNF,detta anche **Backus-Naur Form)**
+
+Notazione per grammatiche context free resa più espressiva e succinta:
+1. I simboli non terminali costituiti da stringhe (ad es.: $<espressione>$);
+2. $\to$ sostituito da $\coloneqq$   
+3. Parentesi graffe $\lbrace...\rbrace$ impiegate per indicare lìiterazione illimitata. Con $\lbrace...\rbrace^n$ si indica l'iterazione per un numero di volte pari al più ad n
+4. Parentesi quadre $[...]$ utilizzate per indicare l'opzionalità (possibile assenza di una parte di stringa)
+5. Parentesi tonde $(...)$ utilizzate per indicare la fattorizzazione, vale a dire la messa in comune di una sottoespressione
+
