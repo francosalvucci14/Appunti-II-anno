@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "142c83bfedb45ea6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/Lezione 5 - Automi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti FI/Lezione 5 - Automi.md"
+              }
             }
           },
           {
@@ -113,6 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti FI/Lezione 5 - Automi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,6 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti FI/Lezione 5 - Automi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,9 +176,10 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "90fe890bef2bffd6",
+  "active": "142c83bfedb45ea6",
   "lastOpenFiles": [
     "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
+    "Appunti BSD/Lezione 2.md",
     "Appunti LMP/Lezione 6.md",
     "Appunti CPS/Lezione 4.md",
     "Appunti ASD/Lezione 5 - Capitolo 4.md",
@@ -169,7 +187,6 @@
     "Appunti CPS/Lezione 1.md",
     "Appunti FI/Indice delle lezioni.md",
     "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
-    "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md",
-    "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md"
+    "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md"
   ]
 }
