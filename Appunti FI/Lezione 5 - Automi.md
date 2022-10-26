@@ -81,14 +81,14 @@ la computazione **termina**
 - $c_n$ non esiste, la computazione non termina
 
 
-# Automi deterministici
+## Automi deterministici
 Ad ogni stringa di input associa una sola computazione, e quindi una singola sequenza di configurazioni
 
 ![[appunti fi/immagini/Pasted image 20221026162346.png|center|600]]
 
 Un automa deterministico, data una stringa in input, può eseguire una sola computazione: se la computazione termina in una configurazione di accettazione, allora la stringa viene accettata
 
-## Stringhe e linguaggio accettato
+### Stringhe e linguaggio accettato
 
 1. Automa deterministico $\mathcal A$
 2. Stringa x in input
@@ -96,3 +96,26 @@ Un automa deterministico, data una stringa in input, può eseguire una sola comp
 
 $\mathcal A$ accetta x se e solo se esiste una configurazione di accettazione c di $\mathcal A$ per la quale $$c_0(x)\yields_{\mathcal A}^\star c$$
 Il linguaggio **accettato** da $\mathcal A$ è l'insieme $L(\mathcal A)$ di tutte le stringhe x accettate da $\mathcal A$
+
+#### Linguaggio riconosciuto
+
+Se la computazione eseguita dall'automa $\mathcal A$ *termina per ogni stringa*, e quindi se ogni stringa viene o accettata o rifiutata, allora diciamo che il linguaggio $L(\mathcal A)$ è **riconosciuto** (o **deciso**) da $\mathcal A$ 
+
+## Automa non deterministico
+
+Generalizzazione dell'automa deterministico
+Associa ad ogni stringa in input un numero qualunque, in generale maggiore di uno, di computazioni.
+La funzione di transizione associa ad almeno una configurazione c più di una configurazione successiva
+Per ogni computazione che conduce a $c$ sono definite continuazioni diverse, che definiscono diverse computazioni
+
+![[appunti fi/immagini/Pasted image 20221026164927.png|center|600]]
+
+Nell'immagine possiamo vedere nel dettaglio questo discorso dell'associare ad una configurazione $c$ più di una configurazione.
+
+Il **grado di non determinismo** di un automa è il massimo numero di configurazioni che la funzione di transizione associa ad una configurazione
+
+## $\epsilon$-transizioni
+
+Transizioni che un automa può eseguire senza leggere alcun carattere in input
+**Oss** La presenza di $\epsilon$-transizioni introfuce non determinismo
+Se da una configurazione $c$ un automa può passare o meno in un'altra configurazione $c'$ senza leggere caratteri in input, sono possibili due diverse continuazioni della computazione attuale, l'una da $c$ e l'altra $c'$
