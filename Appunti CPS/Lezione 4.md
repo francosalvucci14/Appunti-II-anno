@@ -153,3 +153,17 @@ Avremo due diverse misure di probabilità per i casi 1 e 2
 - Per n=1 abbiamo ovviamente una distribuzione Bernoulliana
 - In generale si dovrà avere $S_x=\lbrace 0,1,...,n\rbrace$ e questo è quel che accadrà
 
+Noi siamo interessati a contare quanti successi ci sono nella stringa di risultati. allora è opportuno considerare la v.a così definita
+$$X(\omega)=\omega_1+...+\omega_n$$ per ogni $\omega=(\omega_1,..,\omega_n)\in\Omega$
+
+**Oss**
+Ad esempio la v.a Y che conta il numero di fallimenti è Y così definita
+$$Y(\omega)=n-X(\omega)$$
+Del resto $$Y(\omega)=(1+..+1)-(\omega_1+...+\omega_n)=1-\omega_1+...+1-\omega_n$$
+Nella prossima lezione vedremo come definire le misure di probabilità P su $(\Omega,\mathcal A)=(\Omega,\mathcal P(\Omega))$ a partire dagli insieme costituiti dai singoli punti, cioè a partire dalle seguenti quantità:
+$$P(\lbrace\omega\rbrace)=P(\lbrace \omega_1,...,\omega_n\rbrace)$$
+Due diverse situazioni per i casi 1 e 2
+
+Dopo aver fatto questo troveremo la densità discreta di X:
+per $k\in\lbrace 0,1,...,n\rbrace$
+$P_x(k)=P(X=k)=P(\lbrace\omega\in\Omega:X(\omega)=k\rbrace)=\sum_{\omega:X(\omega)=k}P(\lbrace\omega\rbrace)$
