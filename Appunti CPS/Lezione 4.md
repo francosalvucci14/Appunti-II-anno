@@ -36,5 +36,28 @@ B unione finita o numeraabile di insiemi dei tipi indicati sopra
 
 ## Notazioni che useremo
 $\lbrace w\in\Omega:X(w)\in B\rbrace\text{useremo la notazione}\implies \lbrace X\in B\rbrace$ 
-$$
+$P(\lbrace\omega\in\Omega:X(\omega)\in B\rbrace)$ useremo la notazione $P(\lbrace X\in B\rbrace)$, o anche $P(X\in B)$
 
+## Distribuzione o Legge di una v.a reale
+è la corrispondente tra "gli insiemi della retta B per cui $\lbrace X\in B\rbrace\in A$" e i valori $P(\lbrace X\in B\rbrace)$ relativi
+
+## Funzione di distribuzione di una v.a reale
+è la funzione $F_x:\mathbb R\to [0,1]$ così definita: $F_x(t)=P(X\leq t)$
+
+### Commento
+La conoscenza di $F_x$ consete di individuare la distribuzione di una v.a. X
+Quindi, se uno conosce i valori di $P(X\in B)$ per $B=(-\infty,t]$ (al variare di tutti i valori $t\in\mathbb R$), è possibile conosceere tutti i valori di $P(X\in B)$ al variare di $B\subset\mathbb R$
+
+## Proprietà della funzione di distribuzione $F_x$
+1. $F_x$ non è decrescente, cioè $F_x(t_1)\leq F_x(t_2)$ $\forall t_1,t_2\in\mathbb R|t_1\leq t_2$. Questo si verifica facilemente osservando che $$t_1\leq t_2\implies (-\infty,t_1]\subset(-\infty,t_2]\implies P(X\leq t_1)\leq P(X\leq t_2)\implies F_x(t_1)\leq F_x(t_2)$$
+2. $lim_{t\to-\infty} F_x(t)=0$ e $lim_{t\to\infty} F_x(t)=1$
+3. $F_x$ è continua a destra, cioè $\forall t_0\in\mathbb R F_x(t)=F_x(t_0)$
+
+![[appunti cps/immagini/Pasted image 20221027135649.png|center|600]]
+
+## Variabili aleatorie discrete
+
+
+
+
+ 
