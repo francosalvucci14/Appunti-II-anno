@@ -142,3 +142,20 @@ L'automa accetta la stringa di input se, tra tutte le computazioni possibili, ne
 L'automa esegue una sola **computazione non deterministica**, per la quale, ad ogni passo, assume non una sola, ma un insieme di configurazioni, transitando, ad ogni passo, non da configurazione a configurazione ma da un insieme di configurazioni ad un insieme di configurazioni
 
 Un insieme di configurazioni è di accettazione se include almeno una configurazione di accettazione
+
+## Albero di computazione
+
+![[appunti fi/immagini/Pasted image 20221027112708.png|center|600]]
+
+$c_0$ è il primo insieme
+$c_1,c_2,c_3$ è il secondo insieme
+$c_8,c_9,c_7,c_4,c_5,c_6$ è il terzo insieme
+
+> La stringa viene rifiutata se per ogni config., la configurazione è di rifiuto
+
+## Accettazione
+
+Asimmetria tra accettazione e rifiuto di una stringa, introdotto dal non determinismo
+- Nel caso deterministico la stringa viene accettata se la singola computazione definita è di accettazione, e rifiutata se essa termina in una configurazione non di accettazione
+- Nel caso non deterministio la stringa viene accettata se **una qualunque** delle computazioni definite è di accettazione, mentre non lo viene se **tutte** le possibili computazioni che terminano non sono di accettazione
+
