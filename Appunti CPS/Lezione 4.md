@@ -137,8 +137,8 @@ Quindi
 
 ### Schemi successo-fallimento su un numero finito di prove
 Si tratta di una premessa comune per due casi che vedremo nella prossima lezione:
-- Distribuzione Binomiale (caso di n prove indipendenti, tutte con la stessa probabilità di successo P)
-- Distribuzione Ipergeometrica (caso di n estrazioni casuali di un oggetto alla volta, senza reinserimento (un caso particolare senza avere prove indipendenti))
+- [[Appunti CPS/Lezione 5#Il caso 1: Distribuzione Binomiale|Distribuzione Binomiale]] (caso di n prove indipendenti, tutte con la stessa probabilità di successo P)
+- [[Appunti CPS/Lezione 5#Il caso 2: Distribuzione Ipergeometrica|Distribuzione Ipergeometrica]] (caso di n estrazioni casuali di un oggetto alla volta, senza reinserimento (un caso particolare senza avere prove indipendenti))
 
 In entrambi i casi si vuole studiare la v.a X che conta il numero di successi
 Nel caso 2 gli oggetti sono di due tipi, e si ha successo con l'estrazione di oggetti di un certo tipo. Ad esempio: oggetti colorati con un certo colore, oggetti numerati con un certo numero,ecc...
@@ -167,3 +167,18 @@ Due diverse situazioni per i casi 1 e 2
 Dopo aver fatto questo troveremo la densità discreta di X:
 per $k\in\lbrace 0,1,...,n\rbrace$
 $P_x(k)=P(X=k)=P(\lbrace\omega\in\Omega:X(\omega)=k\rbrace)=\sum_{\omega:X(\omega)=k}P(\lbrace\omega\rbrace)$
+
+**esempio**
+Per fissare le idee consideriamo il caso n=3. Abbiamo 
+$$\Omega=\lbrace 0,1\rbrace\times\lbrace 0,1\rbrace\times\lbrace 0,1\rbrace=\lbrace\omega=(\omega_1,\omega_2,\omega_3):\omega_1,\omega_2,\omega_3\in\lbrace 0,1\rbrace\rbrace$$
+Allora "le sequenze $\omega$ per cui $X(\omega=k)$" sono:
+- per k=0 (0,0,0)
+- per k=1 (0,0,1),(0,1,0),(1,0,0)
+- per k=2 (0,1,1),(1,0,1),(1,1,0)
+- per k=3 (1,1,1)
+
+Quindi 
+- $P_x(0)=P(\lbrace (0,0,0)\rbrace)$
+- $P_x(1)=P(\lbrace (0,0,1)\rbrace)+P(\lbrace (0,1,0)\rbrace)+P(\lbrace (1,0,0)\rbrace)$
+- $P_x(2)=P(\lbrace (0,1,1)\rbrace)+P(\lbrace (1,0,1)\rbrace)+P(\lbrace (1,1,0)\rbrace)$
+- $P_x(3)=P(\lbrace (1,1,1)\rbrace)$
