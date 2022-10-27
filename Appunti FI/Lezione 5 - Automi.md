@@ -117,5 +117,28 @@ Il **grado di non determinismo** di un automa è il massimo numero di configuraz
 ## $\epsilon$-transizioni
 
 Transizioni che un automa può eseguire senza leggere alcun carattere in input
-**Oss** La presenza di $\epsilon$-transizioni introfuce non determinismo
+**Oss** La presenza di $\epsilon$-transizioni introduce non determinismo
 Se da una configurazione $c$ un automa può passare o meno in un'altra configurazione $c'$ senza leggere caratteri in input, sono possibili due diverse continuazioni della computazione attuale, l'una da $c$ e l'altra $c'$
+
+![[appunti fi/immagini/Pasted image 20221027095622.png|center|600]]
+
+- Computazione 1: $...c_0c_1c_2...$
+- Computazione 2: $...c_0c_3...$
+
+## Computazioni non deterministiche
+
+- Automa deterministico: associa alla stringa di input una sequenza di configurazioni (computazione lineare), con la prima uguale alla configurazione iniziale della stringa
+
+- Automa non deterministico: associa alla stringa di input un albero di configurazioni (**albero di computazione**), con la radice uguale alla configurazione iniziale della stringa. Ogni computazione corrisponde ad un cammino avente origine dalla radice stessa
+
+### Interpretazione 1
+
+L'automa non deterministico può eseguire una qualunque computazione, associata ad una sequenza di "scelte" su quale transizione applicare in corrispondenza ad ogni applicazione della funzione di transizione
+
+L'automa accetta la stringa di input se, tra tutte le computazioni possibili, ne esiste almeno una di accettazione (se esiste, nell'albero di computazione, un cammino dalla radice ad un nodo rappresentante una config. di accettazione)
+
+### Interpretazione 2
+
+L'automa esegue una sola **computazione non deterministica**, per la quale, ad ogni passo, assume non una sola, ma un insieme di configurazioni, transitando, ad ogni passo, non da configurazione a configurazione ma da un insieme di configurazioni ad un insieme di configurazioni
+
+Un insieme di configurazioni è di accettazione se include almeno una configurazione di accettazione
