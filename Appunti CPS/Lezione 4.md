@@ -57,7 +57,37 @@ Quindi, se uno conosce i valori di $P(X\in B)$ per $B=(-\infty,t]$ (al variare d
 
 ## Variabili aleatorie discrete
 
+Sia $X:\Omega\to\mathbb R$ una v.a reale definita su uno spazio di probabilità ($\Omega\mathcal A,P$).
+Indichiamo con $S_x$ l'insieme dei valori assunti da X, cioè l'immagine di X vista come funzione
+La definizione di questo insieme in termini matematici è la seguente:
+$$S_x=\lbrace x\in\mathbb R:\exists \omega\in\Omega |X(\omega)=x\rbrace$$
+_Def_
+Una v.a reale X è una v.a discreta se l'insieme $S_x$ è discreto (cioè $S_x$ è finito o numerabile)
 
+**Oss**
+Se $\Omega$ è discreto (cioè finito o numerabile), allora X è una v.a discreta.
+In generale non vali il viceversa: ad esempio si pensi al caso in cui, per qualche $c\in\mathbb R$, si ha
+$$X(\omega)=c\:\:\:\forall\omega\in\Omega$$
+(quindi $S_x=\lbrace c\rbrace$) e X non è un insieme discreto
 
+----
+Quando X è una v.a discreta, allora possiamo pensare di avere
+$$S_x=\lbrace x_i\rbrace_{i\in I}$$
+dove I è un insieme discreto
+In corrispondenza, per ogni $B\in\mathbb R$, si ha
+$$P(X\in B)=P(X\in B\cap S_X)=P(X\in B\cap (\bigcup_{i\in I}\lbrace x \rbrace))=\sum_{i\in I}P(X\in B\cap\lbrace x_i\rbrace)=\sum_{x_i\in S_x\cap B}P(X=x_i)$$
+Quindi la distribuzione di una v.a discreta X, cioè la conoscenza dei valori di $P(X\in B)$ al variare di $B\subset\mathbb R$, è individuata dalla conoscenza di $S_x=\lbrace x_i\rbrace_{i\in I}$ e delle probabilità $\lbrace P(X=x_i)\rbrace_{i\in I}$
 
- 
+Si osservi anche che, per $B=\mathbb R$, si ha
+$$\underbrace{P(X\in\mathbb R)}_{=1}=\sum_{x_i\cap\underbrace{S_x\cap\mathbb R}_{= S_x}}P(X=x_i)$$
+da cui segue $$\sum_{x_i\cap S_x}P(X=x_i)=1$$
+Più in generale si può considerare la funzione $P_x:\mathbb R\to[0,1]$ così definita:
+$$P_x(x)=P(X=x)\:\:\:\forall x\in\mathbb R$$
+tale funzione è detta **densità discreta** della v.a X
+
+**Proposizione**
+$x\not\in S_x\implies P_x(x)=0$
+
+**Dim**
+Si ha che:
+$$P_x(x)=P(\underbrace{\lbrace\omega\in\Omega:X(\omega)=x\rbrace}_{=\emptyset\:perchè\:x\not\in S_X})=P(\emptyset)=0.$$
