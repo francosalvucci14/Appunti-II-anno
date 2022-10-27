@@ -91,3 +91,65 @@ $x\not\in S_x\implies P_x(x)=0$
 **Dim**
 Si ha che:
 $$P_x(x)=P(\underbrace{\lbrace\omega\in\Omega:X(\omega)=x\rbrace}_{=\emptyset\:perchè\:x\not\in S_X})=P(\emptyset)=0.$$
+
+Come vedremo successivamente la funzione di distribuzione ha maggiore interesse quando la v.a X è continua
+In ogni caso vedremo come è fatta $F_x$ nel caso di v.a discrete. Iniziamo con il caso in cui $S_x$ è un insieme finito; ad esempio $S_x=\lbrace x_1,x_2,...x_n\rbrace$ con $x_1\lt....\lt x_n$
+In questo grafico si ha n=3
+
+![[appunti cps/immagini/Pasted image 20221027150631.png|center|700]]
+
+**Oss** dal grafico (relativo al caso n=3) si vede che $\sum_{i=1}^n P_x(x_i)=1\implies P_x(x_1)+P_x(x_2)+P_x(x_3)$
+Nel caso in cui $S_x$ è infinito numerabile la casisitca è più varai e ci possono essere casi molto complicati. Qui faccio riferimento a due casi (sopratutto il primo ci interessa in vista di quel che vedremo con le distribuzioni di Poisson e geometriche)
+
+1. $S_x=\lbrace x_0,x_0+1,x_0+2,...\rbrace$
+
+![[appunti cps/immagini/Pasted image 20221027151413.png|center|500]]
+
+2. $S_x=\lbrace 1,1/2,1/3,...,1/n,..\rbrace_{n\in\mathbb N}$
+
+![[appunti cps/immagini/Pasted image 20221027151612.png|center|500]]
+
+
+### Introduzione alle distribuzioni notevoli
+
+Si palra di "distribuzioni notevoli" quando queste hanno una certa espressione, un pò come accade per i prodotto notevoli nel calcolo attuale
+Per le v.a discrete tipicamente ci si riferisce alla espressione della densità discreta. Talvolta si fa riferimento ad alcune situazioni pratiche
+Per la v.a continua tipicamente ci si riferisce alla espressione delle funzioni di distribuzioni o, equivalente (più o meno) alla densità continua
+
+### Distribuzione Bernoulliana
+Si ha questo termine quando $S_x=\lbrace 0,1\rbrace$
+talvolta è utile pensare ad un evento $B\in\mathcal A$ tale che:
+1. X=1 $\iff$ l'evento B si verifica
+2. X=0 $\iff$ l'evento B non si verifica
+
+Talvolra si usa anche la notazione $X=1_B$
+In questo caso si ha 
+$$\begin{cases} P_x(1)=P(X=1)=P(B)\\ P_x(0)=P(X=0)=P(B^c)\end{cases}$$
+Quindi 
+- se $0\lt P(B)\lt 1$ (e quindi $0\lt P(B^c)\lt 1$)
+![[appunti cps/immagini/Pasted image 20221027152335.png|center|600]]
+
+- se $P(B)=1$ (e quindi $P(B^c)=0$)
+![[appunti cps/immagini/Pasted image 20221027152438.png|center|600]]
+
+- se $P(B)=0$ (e quindi $P(B^c)=1$)
+![[appunti cps/immagini/Pasted image 20221027152531.png|center|600]]
+
+### Schemi successo-fallimento su un numero finito di prove
+Si tratta di una premessa comune per due casi che vedremo nella prossima lezione:
+- Distribuzione Binomiale (caso di n prove indipendenti, tutte con la stessa probabilità di successo P)
+- Distribuzione Ipergeometrica (caso di n estrazioni casuali di un oggetto alla volta, senza reinserimento (un caso particolare senza avere prove indipendenti))
+
+In entrambi i casi si vuole studiare la v.a X che conta il numero di successi
+Nel caso 2 gli oggetti sono di due tipi, e si ha successo con l'estrazione di oggetti di un certo tipo. Ad esempio: oggetti colorati con un certo colore, oggetti numerati con un certo numero,ecc...
+
+In entrambi i casi conviene fare riferimento all'insieme $\Omega$ così definito:
+$$\Omega=\underbrace{\lbrace 0,1\rbrace....\lbrace 0,1\rbrace}_{n\:volte}=\lbrace\omega=(\omega_1,...,\omega_n):\omega_1,..,\omega_n\in\lbrace 0,1\rbrace\rbrace$$
+Ogni $\omega\in\Omega$ descrive i possibili risultati (successi e fallimenti) nelle n prove.
+Scegliamo $\mathcal A=\mathcal P(\Omega)$
+Avremo due diverse misure di probabilità per i casi 1 e 2
+
+**Oss**
+- Per n=1 abbiamo ovviamente una distribuzione Bernoulliana
+- In generale si dovrà avere $S_x=\lbrace 0,1,...,n\rbrace$ e questo è quel che accadrà
+
