@@ -82,5 +82,64 @@ Complessità $O(log(n))$
 
 ## Estrazione del massimo
 
+![[appunti asd/immagini/Pasted image 20221028112747.png|center|500]]
+![[appunti asd/immagini/Pasted image 20221028112821.png|center|500]]
+![[appunti asd/immagini/Pasted image 20221028112857.png|center|500]]
+
 ## Costruzione dell'heap
 
+Algoritmo ricorsivo basato sulla tecnica del divide et impera
+>**heapify**(heap H)
+>if (H non è vuoto) then
+>	heapify (sottoalbero sinistro di H)
+>	heapify (sottoalbero destro di H)
+>	fixHeap (radice di H,H)
+
+![[appunti asd/immagini/Pasted image 20221028113058.png|center|500]]
+![[appunti asd/immagini/Pasted image 20221028113117.png|center|500]]
+![[appunti asd/immagini/Pasted image 20221028113132.png|center|500]]
+![[appunti asd/immagini/Pasted image 20221028113150.png|center|500]]
+
+#### Complessità heapify
+
+Sia h l'altezza di un heap con n elementi
+Sia $n'\geq n$ l'intero talche he un heap con $n'$ elementi ha
+1. altezza h
+2. è completo fino all'ultimo livello
+Vale $T(n)\leq T(n')$ e $n'\geq 2n$
+
+Tempo di esecuzione: $T(n')=2T((n'-1)/2)+O(log(n'))\leq 2T(n'/2)+O(log(n'))\implies T(n')=O(n')$ dal Teorema Master
+Quindi: $T(n)\leq T(n')=O(n')=O(2n)=O(n)$
+
+**Esercizio**
+Scrivere lo pseudocodice dettagliato di heapify assumendo che l'heap è mantenuto con un vettore posizionale
+
+## Max-Heap e Min-Heap
+
+e se volessi una struttura dati che mi permette di estrarre il **minimo** velocemente invece del **massimo**?
+
+**Semplice**: costruisco un **min-heap** invertendo la proprietà di ordinamento delle chiavi. Cioè richiedo che $chiave(padre(v))\leq chiave(v)$ per ogni v (diverso dalla radice)
+
+E come mai noi abbiamo progettato un max-heap e non un min-heap?
+Risposta qua $\to$ [[Lezione 6 - HeapSort#Ritornado a max-heap e min-heap|Ritornado a max-heap e min-heap]]
+
+## Algoritmo HeapSort
+
+Costruisce un heap tramite heapify
+Estrare ripetutamente il massimo per n-1 volte
+- asd ogni estrazione memorizza il massimo nella posizione dell'array che si è appena liberata
+
+### Pseudocodice
+![[appunti asd/immagini/Pasted image 20221028114925.png|center|500]]
+
+- linea 1 ha costo $O(n)$
+- linee 3-6 eseguono n-1 estrazioni di costo $O(log(n))$
+$\implies$ ordina in loco in tempo $O(nlog(n))$
+
+#### Esempio concreto
+
+![[appunti asd/immagini/Pasted image 20221028115135.png|center|500]]
+
+
+
+## Ritornado a max-heap e min-heap
