@@ -1,4 +1,4 @@
-# Progettare algoritmi veolic usando strutture dati efficienti
+# Progettare algoritmi veloci usando strutture dati efficienti
 
 ## HeapSort
 Stesso approccio incrementale del SelectionSort
@@ -69,5 +69,18 @@ Tempo di esecuzione: $O(log(n))$
 **Esempio**
 ![[appunti asd/immagini/Pasted image 20221028101608.png|center|500]]
 Scambio 4 con 16 (quindi chiave(i=1)<chiave(i=2))
+![[appunti asd/immagini/Pasted image 20221028103052.png|center|500]]
+scambio 4 con 14 (quindi chiave(i=2)<chiave(i=4))
+![[appunti asd/immagini/Pasted image 20221028103151.png|center|500]]
+scambio 4 con 8 (quindi chiave(i=4)<chiave(i=9))
+![[appunti asd/immagini/Pasted image 20221028103253.png|center|500]]
 
+Complessità $O(log(n))$
+### Pseudocodice più dettagliato
+(l'heap è mantenuto attraverso un vettore posizionale)
+![[appunti asd/immagini/Pasted image 20221028103423.png|center]]
+
+## Estrazione del massimo
+
+## Costruzione dell'heap
 
