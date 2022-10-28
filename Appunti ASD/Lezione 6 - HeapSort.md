@@ -139,7 +139,21 @@ $\implies$ ordina in loco in tempo $O(nlog(n))$
 #### Esempio concreto
 
 ![[appunti asd/immagini/Pasted image 20221028115135.png|center|500]]
+![[appunti asd/immagini/Pasted image 20221028121520.png|center|500]]
+![[appunti asd/immagini/Pasted image 20221028121604.png|center|500]]
+![[appunti asd/immagini/Pasted image 20221028121647.png|center|500]]
+![[appunti asd/immagini/Pasted image 20221028121727.png|center|500]]
+![[appunti asd/immagini/Pasted image 20221028121801.png|center|500]]
 
-
+e così via, fin quando non ottengo il seguente risultato:
+![[appunti asd/immagini/Pasted image 20221028121859.png|center|600]]
 
 ## Ritornado a max-heap e min-heap
+
+Quindi: come mai abbiamo usato un max-heap e non un min-heap? Potevamo usare anche un min-heap?
+
+...l'uso del max.heap (implementato con un vettore posizionale) ci permette di usare solo memoria ausiliare costante!
+
+>**Teorema**
+>L'algoritmo HeapSort ordina in loco un array di lunghezza n in tempo $O(n log(n))$ nel caso peggiore
+
