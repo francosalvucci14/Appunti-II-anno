@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASFD.md",
+                "file": "Appunti FI/Lezione 6 - ASF.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2bbd78985fa06ed1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti BSD/Indice delle lezioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASFD.md"
+                "file": "Appunti BSD/Indice delle lezioni.md"
               }
             }
           },
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASFD.md",
+                "file": "Appunti BSD/Indice delle lezioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASFD.md",
+                "file": "Appunti BSD/Indice delle lezioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,8 +175,8 @@
   },
   "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti FI/Lezione 6 - ASF.md",
     "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
-    "Appunti FI/Lezione 6 - ASFD.md",
     "Appunti FI/Lezione 5 - Automi.md",
     "Appunti FI/Immagini/Pasted image 20221031115455.png",
     "Appunti FI/Immagini/Pasted image 20221031115341.png",
