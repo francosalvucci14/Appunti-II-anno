@@ -101,3 +101,13 @@ Insieme $\mathcal R$ dei linguaggi decisi da automi a stati finiti deterministic
 $$\mathcal R=\lbrace L\subseteq\Sigma^\star|\exists\:ASFD\:\mathcal A\:tale\:che\:L=L(\mathcal A)\rbrace$$
 Questa classe di linguaggi coincide con quella dei linguaggi generati dalle grammatiche di tipo 3 e con quella dei linguaggi definiti da espressione regolari.
 
+## Automi a Stati Finiti Non Deterministici
+
+_Def_
+Un **automa a stati non deterministico** è una quintupla $\mathcal A_N=\langle\Sigma,Q,\delta_N,q_0,F\rangle$, in cui:
+- $\Sigma=\lbrace a_1,...,a_n\rbrace$ è l'**alfabeto** di input (corrisponde all'insieme dei simboli terminali nelle grammatiche)
+- $Q=\lbrace q_0,...,q_m\rbrace$ è un insieme finito e non vuoto di **stati**
+- $q_0\in Q$ è lo **stato iniziale**
+- $F\subseteq Q$ è un insieme di **stati finali**
+- $\delta_N:Q\times\Sigma\to\mathcal P(Q)$ è una funzione (parziale), detta **funzione di transizione**, che ad ogni coppia $\langle stato,carattere\rangle$ su cui è definita associa un sottoinsieme di $Q$ (eventualmente vuoto)
+
