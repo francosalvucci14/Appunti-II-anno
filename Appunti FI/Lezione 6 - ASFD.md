@@ -60,5 +60,17 @@ $$L(\mathcal A)=\lbrace x\in\Sigma^\star|(q_0,x)\vdash_{\mathcal A}^\star(q,\eps
 
 **Esempio**
 
+La stringa aab è accettata dall'automa a stati finiti deterministico
+![[appunti fi/immagini/Pasted image 20221031130503.png|center|500]]
 
+Infatti, a partire dalla configurazione iniziale $(q_0,aab)$ l'automa raggiunge la configurazione di accettazione $(q_1,\epsilon)$ per mezzo della computazione 
+$$(q_0,aab)\vdash(1_0,ab)\vdash(q_0,b)\vdash(q_1,\epsilon)$$
 
+### Funzione di transizione estesa
+Dato un automa a stati finiti deterministico $\mathcal A=\langle\Sigma,Q,\delta,q_0,F\rangle$, la sua **funzione di transizione estesa**
+$$\overline\delta:Q\times\Sigma^\star\to Q$$
+è definita come la chiusura transitiva della $\delta$:
+$$\overline\delta(q,\epsilon)=q$$
+$$\overline\delta(q,xa)=\delta(\overline\delta(q,x),a)$$
+dove $a\in\Sigma,x\in\Sigma^\star$
+Una stringa $x\in\Sigma^\star$ è accettata da $\mathcal A=\langle\Sigma,Q,\delta,q_0,F\rangle$ se e solo se $\overline\delta(q_0,x)\in F$
