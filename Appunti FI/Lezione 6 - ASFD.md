@@ -64,7 +64,7 @@ La stringa aab è accettata dall'automa a stati finiti deterministico
 ![[appunti fi/immagini/Pasted image 20221031130503.png|center|500]]
 
 Infatti, a partire dalla configurazione iniziale $(q_0,aab)$ l'automa raggiunge la configurazione di accettazione $(q_1,\epsilon)$ per mezzo della computazione 
-$$(q_0,aab)\vdash(1_0,ab)\vdash(q_0,b)\vdash(q_1,\epsilon)$$
+$$(q_0,aab)\vdash(q_0,ab)\vdash(q_0,b)\vdash(q_1,\epsilon)$$
 
 #### Funzione di transizione estesa
 Dato un automa a stati finiti deterministico $\mathcal A=\langle\Sigma,Q,\delta,q_0,F\rangle$, la sua **funzione di transizione estesa**
@@ -83,3 +83,21 @@ $\overline\delta(q,aab)$
 
 Il **linguaggio riconosciuto** da un automa a stati finiti deterministico $\mathcal A$ è l'insieme
 $$L(\mathcal A)=\lbrace x\in\Sigma^\star|\delta(q_0,x)\in F\rbrace$$
+**esempio 1**
+vedi file su notability.
+
+### Funzione di transizione parziale
+
+La funzione di transizione $\delta$ è stata definita come totale
+Ogni ASFD $\mathcal A=\langle\Sigma,Q,\delta,q_0,F\rangle$ con funzione di transizione $\delta$ non totale può essere trasformato in un ASFD $\mathcal A'=\langle\Sigma,Q',\delta',q_0,F\rangle$ con funzione di transizione totale ed equivalente, ponendo $Q'=Q\cup\lbrace \overline q\rbrace$ e $\overline\delta$ tale che:
+
+1. Se $\delta(q,a),q\in Q$ è definito allora $\delta'(q,a)=\delta(q,a)$
+2. Se $\delta(q,a),\in Q$ non è definito allora $\delta'(q,a)=\overline q$
+3. $\delta'(\overline q,a)=\overline q$ per ogni $a\in\Sigma$
+
+### Linguaggi decisi da un ASFD
+
+Insieme $\mathcal R$ dei linguaggi decisi da automi a stati finiti deterministici:
+$$\mathcal R=\lbrace L\subseteq\Sigma^\star|\exists\:ASFD\:\mathcal A\:tale\:che\:L=L(\mathcal A)\rbrace$$
+Questa classe di linguaggi coincide con quella dei linguaggi generati dalle grammatiche di tipo 3 e con quella dei linguaggi definiti da espressione regolari.
+
