@@ -136,9 +136,9 @@ In questo caso la stringa bbab non viene accettata dall'ASFND perchè l'insieme 
 
 **Esempio**
 L'automa precedente definisce, in corrispondenza alla stringa in input bba, le tre computazioni:
-- $(q_0,bba)\vdash(q_0,ba)\vdash(q_0,a)\vdash(q_0,\epsilon)$
-- $(q_0,bba)\vdash(q_0,ba)\vdash(q_1,a)\vdash(q_2,\epsilon)$
-- $(q_0,bba)\vdash(q_0,ba)\vdash(q_1,a)\vdash(q_3,\epsilon)$
+- $(q_0,bba)\vdash(q_0,ba)\vdash(q_0,a)\vdash(q_0,\epsilon)$ (computazione di accettazione)
+- $(q_0,bba)\vdash(q_0,ba)\vdash(q_1,a)\vdash(q_2,\epsilon)$ (computazione _non_ di accettazione)
+- $(q_0,bba)\vdash(q_0,ba)\vdash(q_1,a)\vdash(q_3,\epsilon)$ (computazione di accettazione)
 
 Il prefisso bb della stringa di input da luogo anche alla computazione:
 - $(q_0,bb)\vdash(q_1,b)\vdash(q_3,\epsilon)$
