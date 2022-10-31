@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "2bbd78985fa06ed1",
+            "id": "99caca0288205bdd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/Indice delle lezioni.md",
+                "file": "Appunti FI/Lezione 6 - ASF.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/Indice delle lezioni.md"
+                "file": "Appunti FI/Lezione 6 - ASF.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/Indice delle lezioni.md",
+                "file": "Appunti FI/Lezione 6 - ASF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/Indice delle lezioni.md",
+                "file": "Appunti FI/Lezione 6 - ASF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,15 +175,15 @@
   },
   "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti FI/Esercizi/Indice degli esercizi.md",
     "Appunti FI/Lezione 6 - ASF.md",
+    "Appunti BSD/Indice delle lezioni.md",
     "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
     "Appunti FI/Lezione 5 - Automi.md",
     "Appunti FI/Immagini/Pasted image 20221031115455.png",
     "Appunti FI/Immagini/Pasted image 20221031115341.png",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti CPS/Lezione 4.md",
-    "Appunti FI/Indice delle lezioni.md",
-    "Appunti ASD/Lezione 5 - Capitolo 4.md",
-    "Appunti ASD/Lezione 4 - Capitolo 2.md"
+    "Appunti FI/Indice delle lezioni.md"
   ]
 }

@@ -111,3 +111,63 @@ Un **automa a stati non deterministico** è una quintupla $\mathcal A_N=\langle\
 - $F\subseteq Q$ è un insieme di **stati finali**
 - $\delta_N:Q\times\Sigma\to\mathcal P(Q)$ è una funzione (parziale), detta **funzione di transizione**, che ad ogni coppia $\langle stato,carattere\rangle$ su cui è definita associa un sottoinsieme di $Q$ (eventualmente vuoto)
 
+**Esempio funzione di transizione ASFND**
+
+![[appunti fi/immagini/Pasted image 20221031172410.png|center|400]]
+
+**Esempio**
+
+Un ASFND può essere descritto, così come un ASFD, tramite un grafo di transizione
+
+![[appunti fi/immagini/Pasted image 20221031172800.png|center|500]]
+
+### Computazioni di un ASFND
+
+Un automa a stati finiti non deterministico definisce, data una stringa in input, un insieme di computazioni
+
+Alternativamente, possiamo considerare che l'automa esegue una sola **computazione non deterministica** nel corso della quale, per ogni carattere letto, assume non uno solo, ma un insieme di stati attuali e transita, ad ogni nuovo carattere, non da stato a stato ma da un insieme di stati ad un insieme di stati
+
+**Esempio**
+Usando la stringa bbab e il grafo dell'esempio precedente abbiamo che
+$$\lbrace q_0\rbrace\underbrace{\to}_{\text{leggiamo una b}}\lbrace q_0,q_1\rbrace\underbrace{\to}_{\text{leggiamo un'altra b}}\lbrace q_0,q_1,q_3\rbrace$$
+che corrisponde alla tabella di prima
+In questo caso la stringa bbab non viene accettata dall'ASFND perchè l'insieme di stati $\lbrace q_0,q_1\rbrace$ non comprende stati finali
+**fine esempio**
+
+**Esempio**
+L'automa precedente definisce, in corrispondenza alla stringa in input bba, le tre computazioni:
+- $(q_0,bba)\vdash(q_0,ba)\vdash(q_0,a)\vdash(q_0,\epsilon)$
+- $(q_0,bba)\vdash(q_0,ba)\vdash(q_1,a)\vdash(q_2,\epsilon)$
+- $(q_0,bba)\vdash(q_0,ba)\vdash(q_1,a)\vdash(q_3,\epsilon)$
+
+Il prefisso bb della stringa di input da luogo anche alla computazione:
+- $(q_0,bb)\vdash(q_1,b)\vdash(q_3,\epsilon)$
+la quale però non presenta continuazioni possibili
+
+Albero delle computazioni corrispondente
+![[appunti fi/immagini/Pasted image 20221031174530.png|center|500]]
+
+Alternativamente, possiamo considerare che l'automa definisca la computazione non deterministica:
+$$(\lbrace q_0\rbrace,bba)\vdash(\lbrace q_0,q_1\rbrace,ba)\vdash(\lbrace q_0,q_1,q_3\rbrace,a)\vdash(\lbrace q_0,q_1,q_3\rbrace,\epsilon)$$
+
+### Accettazione ad ASFND
+
+Una stringa x viene accettata da un automa a stati finiti non deterministico se almeno una delle computazioni definite per la stringa stessa è di accettazione, quindi se:
+$$(\lbrace q_0\rbrace,x)\vdash^\star(\mathcal Q,\epsilon)$$
+con $\mathcal Q\subseteq Q$ e $$\mathcal Q\cap F \neq\emptyset$$
+### Funzione di transizione estesa di un ASFND
+Dato un ASFND, la **funzione di transizione estesa** è la funzione $\overline\delta_N:Q\times\Sigma^\star\to\mathcal P(Q)$, definita nel seguente modo
+$$\overline\delta_N(q,\epsilon)=\lbrace q\rbrace$$
+$$\overline\delta_N(q,xa)=\bigcup_{p\in\overline\delta_N(q,x)}\delta_N(p,a)$$
+dove $a\in\Sigma,x\in\Sigma^\star,p\in Q$
+
+Dato uno stato q ed una striga x in input, $q'\in\overline\delta_N(q,x)$ se e solo se esiste una computazione dell'automa la quale, a partire da q ed in conseguenza della lettura della stringa x, conduce allo stato $q'$
+
+### Linguaggio accettato da un ASFND
+
+Il linguaggio $L(\mathcal A)$ accettato da un ASFND $\mathcal A$ è definito come:
+$$L(\mathcal A)=\lbrace x\in\Sigma^\star|(\lbrace q_0,x\rbrace)\vdash^\star(Q,\epsilon),Q\cap F\neq\emptyset\rbrace$$
+o anche come:
+$$L(\mathcal A_N)=\lbrace x\in\Sigma^\star|\overline\delta_N(q_0,x)\cap F\neq\emptyset\rbrace$$
+
+
