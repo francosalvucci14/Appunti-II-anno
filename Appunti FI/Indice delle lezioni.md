@@ -5,5 +5,5 @@
 - [[Lezione 3 - Espressioni regolari,Grammatiche]]
 - [[Lezione 4 - Ancora sulle grammatiche]]
 - [[Lezione 5 - Automi]]
-- [[Lezione 6 - ASFD]]
+- [[Lezione 6 - ASF]]
 - 
