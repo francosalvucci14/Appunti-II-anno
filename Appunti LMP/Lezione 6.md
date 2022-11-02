@@ -555,3 +555,4 @@ Rectangle rect = new Rectangle();
 ```
 Tutte le classi hanno almeno un costruttore. Se una classe non ne dichiara alcuna esplicitamente, il compilatore Java fornisce automaticamente un costruttore senza argomenti, chiamato costruttore predefinito. Questo costruttore predefinito chiama il costruttore no-argument del genitore della classe o il costruttore Object se la classe non ha altro genitore. Se il genitore non ha un costruttore (Object ne ha uno), il compilatore rifiuterà il programma.
 
+MANCA PARTE USING OBJECTS E GARBAGE COLLECTOR
