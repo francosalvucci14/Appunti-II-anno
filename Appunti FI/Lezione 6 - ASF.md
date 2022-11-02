@@ -170,4 +170,11 @@ $$L(\mathcal A)=\lbrace x\in\Sigma^\star|(\lbrace q_0,x\rbrace)\vdash^\star(Q,\e
 o anche come:
 $$L(\mathcal A_N)=\lbrace x\in\Sigma^\star|\overline\delta_N(q_0,x)\cap F\neq\emptyset\rbrace$$
 
+### $\epsilon$-ASFND
 
+Un **$\epsilon$-ASFND** è un ASFND con $\delta_N:Q\times(\Sigma\cup\lbrace\epsilon\rbrace)\to \mathcal P(Q)$, nella quale sono quindi ammesse $\epsilon$-transizioni
+
+![[appunti fi/immagini/Pasted image 20221102135847.png|center|400]]
+
+**Oss** 
+$$L(ASFND)\subseteq L(\epsilon-ASFND)$$

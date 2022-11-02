@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/Lezione 6.md",
+                "file": "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "93606caf0799d41a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/Lezione 6 - ASF.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/Esercitazioni/LMP 0.md",
+                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/Esercitazioni/LMP 0.md"
+                "file": "Appunti FI/Lezione 6 - ASF.md"
               }
             }
           },
@@ -128,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/Esercitazioni/LMP 0.md",
+                "file": "Appunti FI/Lezione 6 - ASF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/Esercitazioni/LMP 0.md",
+                "file": "Appunti FI/Lezione 6 - ASF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,17 +185,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "91caf0ae42a98033",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti LMP/Lezione 6.md",
-    "Appunti LMP/Indice delle lezioni.md",
-    "Appunti LMP/Esercitazioni/LMP 0.md",
-    "Appunti LMP/Lezione 7.md",
+    "Appunti FI/Esercizi/Esercizi Grammatiche.md",
+    "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
+    "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
+    "Appunti FI/Lezione 5 - Automi.md",
+    "Appunti FI/Indice delle lezioni.md",
     "Appunti FI/Lezione 6 - ASF.md",
-    "Appunti ASD/Lezione 6 - HeapSort.md",
-    "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
-    "Appunti CPS/Lezione 5.md",
-    "Appunti CPS/Lezione 4.md",
-    "Appunti CPS/Lezione 2.md"
+    "Appunti LMP/Lezione 6.md",
+    "Appunti FI/Esercizi/Indice degli esercizi FI.md",
+    "Appunti FI/Immagini/Pasted image 20221017111656.png"
   ]
 }
