@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASF.md",
+                "file": "Appunti FI/Esercizi/Esercizi Grammatiche.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e4b332f1c16f99ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASF.md"
+                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md"
               }
             }
           },
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASF.md",
+                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,14 +145,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASF.md",
+                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -160,17 +173,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "acd002c7f705cc3c",
+  "active": "e4b332f1c16f99ad",
   "lastOpenFiles": [
+    "Appunti FI/Esercizi/Esercizi ASF.md",
+    "Appunti FI/Esercizi/Esercizi Grammatiche.md",
+    "Appunti FI/Lezione 6 - ASF.md",
+    "Appunti LMP/Lezione 6.md",
+    "Appunti LMP/Lezione 7.md",
+    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
     "Appunti LMP/Lezione 4.md",
     "Appunti LMP/Introduzione.md",
     "Appunti LMP/Lezione 2.md",
-    "Appunti LMP/Lezione 3.md",
-    "Appunti FI/Lezione 6 - ASF.md",
-    "Appunti CPS/Lezione 3.md",
-    "Appunti CPS/Lezione 2.md",
-    "Appunti FI/Esercizi/Indice degli esercizi FI.md",
-    "Appunti FI/Esercizi/Esercizi Grammatiche.md",
-    "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md"
+    "Appunti LMP/Lezione 3.md"
   ]
 }

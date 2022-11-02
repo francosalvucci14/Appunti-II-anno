@@ -213,3 +213,10 @@ La **funzione di transizione estesa** $\hat\delta$ è definita come:
 2. Per ogni $x\in\Sigma^\star$ e per ogni $a\in\Sigma,\hat\delta(q,xa)=\bigcup_{p\in P}\epsilon(p)$, dove $P=\lbrace p|\exists r\in\hat\delta(q,x):p\in\delta(r,a)\rbrace$; vale a dire l'unione delle $\epsilon$-chiusure di tutti gli stati raggiungibili da un qualche stato $\hat\delta(q,x)$, avendo in input il carattere $a$
 
 Dato $P\subseteq Q,\epsilon(P)$ è l'unione delle $\epsilon$-chiusure di tutti gli stati in $P:\epsilon(P))=\bigcup_{p\in P}\epsilon(P)$
+
+**Esempio**
+Per l'automa precedente,
+$\hat\delta(q_0,\epsilon)=\epsilon(q_0)=\lbrace q_0,q_2\rbrace$, e quindi $\hat\delta(q_0,a)=\epsilon(P)$, dove $P=\delta(q_0,a)\cup\delta(q_2,a)=\lbrace q_0\rbrace$, per cui $\hat\delta(q_0,a)=\epsilon(q_0)=\lbrace q_0,q_2\rbrace$
+
+$\hat\delta(q_0,ab)=\epsilon(P)$, con $P=\delta(q_0,b)\cup\delta(q_2,b)=\lbrace q_1,q_3\rbrace$, per cui $\hat\delta(q_0,ab)=\epsilon(q_1)\cup\epsilon(q_3)=\lbrace q_1,q_2,q_3\rbrace$
+
