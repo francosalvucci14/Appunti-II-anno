@@ -66,7 +66,7 @@ La stringa aab è accettata dall'automa a stati finiti deterministico
 Infatti, a partire dalla configurazione iniziale $(q_0,aab)$ l'automa raggiunge la configurazione di accettazione $(q_1,\epsilon)$ per mezzo della computazione 
 $$(q_0,aab)\vdash(q_0,ab)\vdash(q_0,b)\vdash(q_1,\epsilon)$$
 
-#### Funzione di transizione estesa
+#### Funzione di transizione estesa $\overline\delta$
 Dato un automa a stati finiti deterministico $\mathcal A=\langle\Sigma,Q,\delta,q_0,F\rangle$, la sua **funzione di transizione estesa**
 $$\overline\delta:Q\times\Sigma^\star\to Q$$
 è definita come la chiusura transitiva della $\delta$:
@@ -155,7 +155,7 @@ $$(\lbrace q_0\rbrace,bba)\vdash(\lbrace q_0,q_1\rbrace,ba)\vdash(\lbrace q_0,q_
 Una stringa x viene accettata da un automa a stati finiti non deterministico se almeno una delle computazioni definite per la stringa stessa è di accettazione, quindi se:
 $$(\lbrace q_0\rbrace,x)\vdash^\star(\mathcal Q,\epsilon)$$
 con $\mathcal Q\subseteq Q$ e $$\mathcal Q\cap F \neq\emptyset$$
-### Funzione di transizione estesa di un ASFND
+### Funzione di transizione estesa di un ASFND $\overline\delta_N$ 
 Dato un ASFND, la **funzione di transizione estesa** è la funzione $\overline\delta_N:Q\times\Sigma^\star\to\mathcal P(Q)$, definita nel seguente modo
 $$\overline\delta_N(q,\epsilon)=\lbrace q\rbrace$$
 $$\overline\delta_N(q,xa)=\bigcup_{p\in\overline\delta_N(q,x)}\delta_N(p,a)$$
@@ -199,3 +199,17 @@ Con riferimento all'automa precedente:
 | $q_2$ | $\lbrace q_2\rbrace$         |
 | $q_3$ | $\lbrace q_2,q_3\rbrace$     |
 
+Facendo riferimento all'automa precedente abbiamo che:
+- $\epsilon(q_0)=\lbrace q_0,q_2\rbrace$ (insieme degli stati che posso raggiungere,partendo da $q_0$, senza leggere nulla)
+- $\epsilon(q_1)=\lbrace q_1,q_3,q_2\rbrace$ (insieme degli stati che posso raggiungere,partendo da $q_1$, senza leggere nulla)
+- $\epsilon(q_2)=\lbrace q_2\rbrace$ (insieme degli stati che posso raggiungere,partendo da $q_2$, senza leggere nulla)
+- $\epsilon(q_3)=\lbrace q_3,q_2\rbrace$ (insieme degli stati che posso raggiungere,partendo da $q_3$, senza leggere nulla)
+
+#### Funzione di transizione estesa $\hat\delta$ 
+
+La **funzione di transizione estesa** $\hat\delta$ è definita come:
+
+1. $\hat\delta(q,\epsilon)=\epsilon(q)$
+2. Per ogni $x\in\Sigma^\star$ e per ogni $a\in\Sigma,\hat\delta(q,xa)=\bigcup_{p\in P}\epsilon(p)$, dove $P=\lbrace p|\exists r\in\hat\delta(q,x):p\in\delta(r,a)\rbrace$; vale a dire l'unione delle $\epsilon$-chiusure di tutti gli stati raggiungibili da un qualche stato $\hat\delta(q,x)$, avendo in input il carattere $a$
+
+Dato $P\subseteq Q,\epsilon(P)$ è l'unione delle $\epsilon$-chiusure di tutti gli stati in $P:\epsilon(P))=\bigcup_{p\in P}\epsilon(P)$
