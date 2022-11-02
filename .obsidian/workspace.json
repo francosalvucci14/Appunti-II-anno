@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md",
+                "file": "Appunti FI/Esercizi/Esercizi ASF.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md"
+                "file": "Appunti FI/Esercizi/Esercizi ASF.md"
               }
             }
           },
@@ -120,35 +120,6 @@
             "state": {
               "type": "git-view",
               "state": {}
-            }
-          },
-          {
-            "id": "78cdb967a8d55a19",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "e9d3637ee5486fa9",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
             }
           }
         ],
@@ -173,17 +144,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "e4b332f1c16f99ad",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti FI/Esercizi/Esercizi_ASF_2_nov_2022.pdf",
     "Appunti FI/Esercizi/Esercizi ASF.md",
     "Appunti FI/Esercizi/Esercizi Grammatiche.md",
+    "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+    "Appunti FI/Esercizi/Esercizio RegEx.md",
+    "Appunti FI/Esercizi/Indice degli esercizi FI.md",
+    "Pasted image 20221102191608.png",
     "Appunti FI/Lezione 6 - ASF.md",
     "Appunti LMP/Lezione 6.md",
-    "Appunti LMP/Lezione 7.md",
-    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
-    "Appunti LMP/Lezione 4.md",
-    "Appunti LMP/Introduzione.md",
-    "Appunti LMP/Lezione 2.md",
-    "Appunti LMP/Lezione 3.md"
+    "Appunti LMP/Lezione 7.md"
   ]
 }

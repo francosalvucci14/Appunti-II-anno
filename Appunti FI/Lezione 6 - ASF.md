@@ -220,3 +220,25 @@ $\hat\delta(q_0,\epsilon)=\epsilon(q_0)=\lbrace q_0,q_2\rbrace$, e quindi $\hat\
 
 $\hat\delta(q_0,ab)=\epsilon(P)$, con $P=\delta(q_0,b)\cup\delta(q_2,b)=\lbrace q_1,q_3\rbrace$, per cui $\hat\delta(q_0,ab)=\epsilon(q_1)\cup\epsilon(q_3)=\lbrace q_1,q_2,q_3\rbrace$
 
+### Equivalenza ASFND e $\epsilon$-ASFND
+
+>Dato un ASFND che riconosce il linguaggio $L$, esiste corrispondentemente un $\epsilon$-ASFND che riconosce lo stesso linguaggio $L$; viceversa, dato un $\epsilon$-ASFND che riconosce un linguaggio $L'$, esiste un ASFND che riconosce lo stesso linguaggio $L'$
+
+La prima implicazione è evidente, in quanto un ASFND è un caso particolare di $\epsilon$-ASFND
+
+Per l'implicazione inversa, definiamo una procedura algoritmica che deriva un ASFND equivalente da un $\epsilon$-ASFND dato.
+
+1. per ogni $q\in Q$ e per ogni $a\in\Sigma,\delta_N(q,a)=\hat\delta(q,a)$
+2. $q_0'=q_0$
+3. $F'=\lbrace q\in Q|\epsilon(q)\cap F\neq\emptyset\rbrace$
+
+Problema: mostrare che i due automi sono equivalenti
+
+Per l'automa precedente, si ottiene:
+
+![[appunti fi/immagini/Pasted image 20221102190751.png|center|500]]
+
+**Esercizio**
+
+Definiamo come $\epsilon$-ASFD un automa a stati finiti deterministico esteso da un insieme di $\epsilon$-transizioni
+Mostrare l'equivalenza tra $\epsilon$-ASFD e ASFND

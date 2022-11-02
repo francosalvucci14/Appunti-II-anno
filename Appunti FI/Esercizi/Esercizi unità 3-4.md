@@ -1,5 +1,5 @@
 
-## Esercizio 2
+# Esercizio 2
 determinare il linguaggio definito dall'espressione regolare $a^\star((aa)^\star b+(bb)^\star a)b^\star$ 
 
 $$L=a^\star((aa)^\star b+(bb)^\star a)b^\star\implies L(a)^\star\circ [[(L(a)\circ L(a))^\star\circ L(b)] + [(L(b)\circ L(b))^\star\circ L(a)]]\circ L(b)^\star\implies$$
@@ -11,7 +11,7 @@ Il linguaggio definito da questa espressione regolare sarà dato dall'unione di 
 $\text{perchè (aa) dice che la sequenza è composta da coppie di a pari,}$
 $\text{mentre (a) dice che la sequenza è di tutte a, sia pari che dispari}$ 
 
-## Esercizio 1
+# Esercizio 1
 determinare l'espressione regolare che, sull'alfabeto $\lbrace a,b\rbrace$, definisce l'insieme delle stringhe il cui terzultimo carattere è una b
 
 $$r=(\underbrace{\lbrace ab\rbrace^\star}_{s_1}\circ\underbrace{\lbrace b\rbrace}_{s_2}\circ\underbrace{[(a+b)\circ(a+b)]}_{s_3})$$
