@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/Indice delle lezioni.md",
+                "file": "Appunti LMP/Esercitazioni/LMP 0.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/Indice delle lezioni.md"
+                "file": "Appunti LMP/Esercitazioni/LMP 0.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/Indice delle lezioni.md",
+                "file": "Appunti LMP/Esercitazioni/LMP 0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/Indice delle lezioni.md",
+                "file": "Appunti LMP/Esercitazioni/LMP 0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,15 +175,15 @@
   },
   "active": "91caf0ae42a98033",
   "lastOpenFiles": [
-    "Appunti LMP/Esercitazioni/LMP 0.md",
     "Appunti LMP/Lezione 6.md",
+    "Appunti LMP/Indice delle lezioni.md",
+    "Appunti LMP/Esercitazioni/LMP 0.md",
     "Appunti LMP/Lezione 7.md",
     "Appunti FI/Lezione 6 - ASF.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
     "Appunti CPS/Lezione 5.md",
     "Appunti CPS/Lezione 4.md",
-    "Appunti CPS/Lezione 2.md",
-    "Appunti CPS/Lezione 3.md"
+    "Appunti CPS/Lezione 2.md"
   ]
 }
