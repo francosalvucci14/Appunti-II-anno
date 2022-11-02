@@ -178,3 +178,24 @@ Un **$\epsilon$-ASFND** è un ASFND con $\delta_N:Q\times(\Sigma\cup\lbrace\epsi
 
 **Oss** 
 $$L(ASFND)\subseteq L(\epsilon-ASFND)$$
+**Oss**  vale anche l'opposto.
+
+#### Non determinismo e $\epsilon$-transizioni
+
+La presenza di $\epsilon$-transizioni in un ASF rende di per se l'automa non deterministico
+
+La singola $\epsilon$-transizione, potendo aver luogo o meno, è inerentemente non deterministica
+
+#### $\epsilon$-chiusura
+
+Dato uno stato $q$ dell'automa, la sua **$\epsilon$-chiusura** è l'insieme $\epsilon(q)$ degli stati raggiungibili da $q$ mediante una sequenza (anche nulla) di $\epsilon$-transizioni
+
+Con riferimento all'automa precedente:
+
+| $q$   | $\epsilon(q)$                |
+| ----- | ---------------------------- |
+| $q_0$ | $\lbrace q_0,q_2\rbrace$     |
+| $q_1$ | $\lbrace q_1,q_2,q_3\rbrace$ |
+| $q_2$ | $\lbrace q_2\rbrace$         |
+| $q_3$ | $\lbrace q_2,q_3\rbrace$     |
+
