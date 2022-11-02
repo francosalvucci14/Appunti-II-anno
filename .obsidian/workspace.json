@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASF.md",
+                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASF.md"
+                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASF.md",
+                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Lezione 6 - ASF.md",
+                "file": "Appunti FI/Esercizi/Indice degli esercizi FI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,15 +185,15 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "93606caf0799d41a",
   "lastOpenFiles": [
+    "Appunti FI/Lezione 6 - ASF.md",
     "Appunti FI/Esercizi/Esercizi Grammatiche.md",
     "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
     "Appunti FI/Esercizi/Esercizi unità 3-4.md",
     "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
     "Appunti FI/Lezione 5 - Automi.md",
     "Appunti FI/Indice delle lezioni.md",
-    "Appunti FI/Lezione 6 - ASF.md",
     "Appunti LMP/Lezione 6.md",
     "Appunti FI/Esercizi/Indice degli esercizi FI.md",
     "Appunti FI/Immagini/Pasted image 20221017111656.png"
