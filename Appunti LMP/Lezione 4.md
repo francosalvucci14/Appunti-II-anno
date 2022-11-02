@@ -170,6 +170,7 @@ Gli operatori nella tabella seguente sono elencati in base all'ordine di precede
 
 ### Operatori aritmetici
 Il linguaggio di programmazione Java fornisce operatori che eseguono addizioni, sottrazioni, moltiplicazioni e divisioni. Ci sono buone probabilità che li riconoscerai dalle loro controparti in matematica di base. L'unico simbolo che potrebbe sembrare nuovo per te è "%", che divide un operando per un altro e restituisce il resto come risultato.
+
 | Operatore | Descrizione             |
 | --------- | ----------------------- |
 | +         | Additive operator       |
@@ -177,4 +178,5 @@ Il linguaggio di programmazione Java fornisce operatori che eseguono addizioni, 
 | $\star$   | Multiplication operator |
 | /         | Division operator       |
 | %         | Remainder operator      |
+
 
