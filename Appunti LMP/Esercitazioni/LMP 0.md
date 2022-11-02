@@ -14,7 +14,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Person franco=new Person("Franco","Salvucci","0306609");
+		Person franco=new PersonImpl("Franco","Salvucci","0306609");
 		
 		//System.out.println(franco.getNome());
 		//System.out.println(franco.toString());
@@ -22,22 +22,20 @@ public class Main {
 		franco.saluta();
 		
 	}
-
 }
-
 ```
 
-Classe Person.java
+Classe PersonImpl.java (questa classe utilizza un interfaccia, vedi sotto)
 ```java
 package it.uniroma2.art.lmp.ex.model;
 
-public class Person {
+public class PersonImpl implements Person {
 	
 	private String nome;
 	private String cognome;
 	private String codiceFiscale;
 	
-	public Person(String nome, String cognome, String codiceFiscale) {
+	public PersonImpl(String nome, String cognome, String codiceFiscale) {
 		//super();
 		this.nome = nome;
 		this.cognome = cognome;
@@ -61,10 +59,26 @@ public class Person {
 	}
 	
 	public String toString() {
-		return nome+ " " +cognome + ":" + codiceFiscale;
+		return nome+ " " +cognome + ": " + codiceFiscale;
 	}
 	
 }
 
 ```
 
+Interfaccia di Person.java
+```java
+package it.uniroma2.art.lmp.ex.model;
+
+public interface Person {
+
+	String getNome();
+
+	String getCognome();
+
+	String getCodiceFiscale();
+
+	void saluta();
+
+}
+```
