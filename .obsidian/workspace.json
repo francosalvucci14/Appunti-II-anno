@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9851793d0f156fe7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Lezione 7 - Capitolo 4.md"
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
               }
             }
           },
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Lezione 7 - Capitolo 4.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Lezione 7 - Capitolo 4.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,11 +173,11 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "9851793d0f156fe7",
   "lastOpenFiles": [
+    "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti FI/Lezione 6 - ASF.md",
     "Appunti BSD/Lezione 2.md",
-    "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti FI/Lezione 5 - Automi.md",
     "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
