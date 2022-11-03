@@ -555,4 +555,107 @@ Rectangle rect = new Rectangle();
 ```
 Tutte le classi hanno almeno un costruttore. Se una classe non ne dichiara alcuna esplicitamente, il compilatore Java fornisce automaticamente un costruttore senza argomenti, chiamato costruttore predefinito. Questo costruttore predefinito chiama il costruttore no-argument del genitore della classe o il costruttore Object se la classe non ha altro genitore. Se il genitore non ha un costruttore (Object ne ha uno), il compilatore rifiuterà il programma.
 
+### Usare gli oggetti
+Dopo aver creato un oggetto, probabilmente vorrai usarlo per qualcosa. Potrebbe essere necessario utilizzare il valore di uno dei suoi campi, modificare uno dei suoi campi o chiamare uno dei suoi metodi per eseguire un'azione.
+
+#### Fare riferimento ai campi di un oggetto
+I campi oggetto sono accessibili tramite il loro nome. È necessario utilizzare un nome non ambiguo.
+
+Puoi usare un nome semplice per un campo all'interno della sua stessa classe. Ad esempio, possiamo aggiungere un'istruzione all'interno della classe Rectangle che stampa la larghezza e l'altezza:
+```java
+System.out.println("Width and height are: " + width + ", " + height);
+```
+In questo caso, larghezza e altezza sono nomi semplici.
+
+Il codice che si trova al di fuori della classe dell'oggetto deve utilizzare un riferimento o un'espressione a un oggetto, seguito dall'operatore punto (.), seguito da un semplice nome di campo, come in:
+```java
+objectReference.fieldName
+```
+Ad esempio, il codice nella classe CreateObjectDemo è esterno al codice per la classe Rectangle. Quindi, per fare riferimento ai campi di origine, larghezza e altezza all'interno dell'oggetto Rectangle denominato rectOne, la classe CreateObjectDemo deve utilizzare rispettivamente i nomi rectOne.origin, rectOne.width e rectOne.height. Il programma utilizza due di questi nomi per visualizzare la larghezza e l'altezza di rectOne:
+```java
+System.out.println("Width of rectOne: "  + rectOne.width);
+System.out.println("Height of rectOne: " + rectOne.height);
+```
+Il tentativo di utilizzare i nomi semplici larghezza e altezza dal codice nella classe CreateObjectDemo non ha senso — quei campi esistono solo all'interno di un oggetto — e provoca un errore del compilatore.
+
+Successivamente, il programma utilizza un codice simile per visualizzare informazioni su rectTwo. Gli oggetti dello stesso tipo hanno la propria copia degli stessi campi di istanza. Pertanto, ogni oggetto Rectangle ha campi denominati origine, larghezza e altezza. Quando accedi a un campo di istanza tramite un riferimento a un oggetto, fai riferimento al campo di quel particolare oggetto. I due oggetti rectOne e rectTwo nel programma CreateObjectDemo hanno campi di origine, larghezza e altezza diversi.
+
+Per accedere a un campo, puoi utilizzare un riferimento denominato a un oggetto, come negli esempi precedenti, oppure puoi utilizzare qualsiasi espressione che restituisca un riferimento a un oggetto. Ricordiamo che l'operatore new restituisce un riferimento a un oggetto. Quindi potresti usare il valore restituito da new per accedere ai campi di un nuovo oggetto:
+```java
+int height = new Rectangle().height;
+```
+Questa istruzione crea un nuovo oggetto Rectangle e ottiene immediatamente la sua altezza. In sostanza, l'istruzione calcola l'altezza predefinita di un rettangolo. Si noti che dopo che questa istruzione è stata eseguita, il programma non ha più un riferimento al Rectangle creato, perché il programma non ha mai memorizzato il riferimento da nessuna parte. L'oggetto non è referenziato e le sue risorse possono essere riciclate dalla Java Virtual Machine
+
+#### Chiamare i metodi di un oggetto
+È inoltre possibile utilizzare un riferimento a un oggetto per richiamare il metodo di un oggetto. Aggiungi il nome semplice del metodo al riferimento all'oggetto, con un operatore punto intermedio (.). Inoltre, fornisci, tra parentesi, tutti gli argomenti del metodo. Se il metodo non richiede alcun argomento, utilizzare parentesi vuote.
+```java
+objectReference.methodName(argumentList);
+```
+oppure
+```java
+objectReference.methodName();
+```
+La classe Rectangle ha due metodi: getArea() per calcolare l'area del rettangolo e move() per cambiare l'origine del rettangolo. Ecco il codice CreateObjectDemo che invoca questi due metodi:
+```java
+System.out.println("Area of rectOne: " + rectOne.getArea());
+...
+rectTwo.move(40, 72);
+```
+La prima istruzione richiama il metodo getArea() di rectOne e visualizza i risultati. La seconda riga si sposta rectTwo perché il metodo move() assegna nuovi valori all'oggetto origin.x e origin.y.
+
+Come per i campi di istanza, objectReference deve essere un riferimento a un oggetto. È possibile utilizzare un nome di variabile, ma è anche possibile utilizzare qualsiasi espressione che restituisce un riferimento a un oggetto. L'operatore new restituisce un riferimento a un oggetto, quindi puoi utilizzare il valore restituito da new per richiamare i metodi di un nuovo oggetto:
+```java
+new Rectangle(100, 50).getArea()
+```
+L'espressione new Rectangle(100, 50) restituisce un riferimento a un oggetto che fa riferimento a un oggetto Rectangle. Come mostrato, puoi usare la notazione del punto per invocare il metodo getArea() del nuovo Rectangle per calcolare l'area del nuovo rettangolo.
+
+Alcuni metodi, come getArea(), restituiscono un valore. Per i metodi che restituiscono un valore, puoi usare la chiamata al metodo nelle espressioni. Puoi assegnare il valore di ritorno a una variabile, usarlo per prendere decisioni o controllare un ciclo. Questo codice assegna il valore restituito da getArea() alla variabile areaOfRectangle:
+```java
+int areaOfRectangle = new Rectangle(100, 50).getArea();
+```
+Ricorda, invocare un metodo su un particolare oggetto equivale a inviare un messaggio a quell'oggetto. In questo caso, l'oggetto su cui viene invocato getArea() è il rettangolo restituito dal costruttore.
+
+### Garbage Collector
+Alcuni linguaggi orientati agli oggetti richiedono che tu tenga traccia di tutti gli oggetti che crei e che tu li distrugga esplicitamente quando non sono più necessari. Gestire la memoria in modo esplicito è noioso e soggetto a errori. La piattaforma Java ti consente di creare tutti gli oggetti che desideri (limitato, ovviamente, da ciò che il tuo sistema può gestire) e non devi preoccuparti di distruggerli. L'ambiente di runtime Java elimina gli oggetti quando determina che non vengono più utilizzati. Questo processo è chiamato Garbage Collection.
+
+Un oggetto è idoneo per la Garbage Collection quando non ci sono più riferimenti a quell'oggetto. I riferimenti contenuti in una variabile vengono in genere eliminati quando la variabile esce dall'ambito. In alternativa, puoi eliminare in modo esplicito un riferimento a un oggetto impostando la variabile sul valore speciale null. Ricorda che un programma può avere più riferimenti allo stesso oggetto; tutti i riferimenti a un oggetto devono essere eliminati prima che l'oggetto sia idoneo per la Garbage Collection.
+
+L'ambiente di runtime Java dispone di un Garbage Collector che libera periodicamente la memoria utilizzata dagli oggetti a cui non viene più fatto riferimento. Il Garbage Collector fa il suo lavoro automaticamente quando determina che è il momento giusto.
+
+## Ritornare un valore da un metodo
+
+Un metodo ritorna al codice che lo ha invocato quando è stato
+- completa tutte le affermazioni nel metodo,
+- raggiunge una dichiarazione di ritorno, oppure
+- genera un'eccezione (trattata più avanti),
+quello che si verifica per primo.
+
+Dichiari il tipo restituito di un metodo nella relativa dichiarazione del metodo. All'interno del corpo del metodo, si utilizza l'istruzione return per restituire il valore.
+
+Qualsiasi metodo dichiarato void non restituisce un valore. Non è necessario che contenga una dichiarazione di ritorno, ma potrebbe farlo. In tal caso, un'istruzione return può essere utilizzata per uscire da un blocco del flusso di controllo e uscire dal metodo e viene semplicemente utilizzata in questo modo:
+```java
+return;
+```
+Se si tenta di restituire un valore da un metodo dichiarato void, verrà visualizzato un errore del compilatore.
+
+Qualsiasi metodo che non è dichiarato void deve contenere un'istruzione return con un valore restituito corrispondente, come questo:
+```java
+return returnValue;
+```
+Il tipo di dati del valore restituito deve corrispondere al tipo restituito dichiarato del metodo; non puoi restituire un valore intero da un metodo dichiarato per restituire un valore booleano.
+
+Il metodo getArea() nella classe Rectangle Rectangle discusso nelle sezioni sugli oggetti restituisce un numero intero:
+```java
+// a method for computing the area of the rectangle
+    public int getArea() {
+        return width * height;
+    }
+```
+
+
+
+
+
+
+
 MANCA PARTE USING OBJECTS E GARBAGE COLLECTOR

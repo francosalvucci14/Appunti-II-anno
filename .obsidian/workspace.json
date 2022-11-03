@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+                "file": "Appunti LMP/Lezione 6.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md"
+                "file": "Appunti LMP/Lezione 6.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+                "file": "Appunti LMP/Lezione 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,14 +157,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+                "file": "Appunti LMP/Lezione 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -185,17 +185,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "42b63ddd8a26a617",
+  "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
-    "Appunti ASD/Lezione 7 - Capitolo 4.md",
+    "Appunti LMP/Lezione 7.md",
+    "Appunti LMP/Lezione 6.md",
+    "Appunti LMP/Esercitazioni/LMP 0.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+    "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti FI/Lezione 6 - ASF.md",
     "Appunti BSD/Lezione 2.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
-    "Appunti FI/Lezione 5 - Automi.md",
-    "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
-    "Appunti FI/Lezione 2 - Espressioni regolari,Linguaggi e problemi.md",
-    "Appunti FI/Lezione 1 - Insiemi infiniti, Linguaggi.md"
+    "Appunti FI/Lezione 5 - Automi.md"
   ]
 }
