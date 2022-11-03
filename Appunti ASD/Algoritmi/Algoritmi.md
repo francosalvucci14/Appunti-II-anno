@@ -8,6 +8,7 @@
 	- SelectionSort
 	- QuickSort
 	- HeapSort
+
 - Algoritmi non basati su confronto
 	- IntegerSort
 	- BucketSort
