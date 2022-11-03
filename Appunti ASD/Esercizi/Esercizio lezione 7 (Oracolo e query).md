@@ -8,6 +8,7 @@ Y array di dimensione k
 for i=1 to k do Y[i]=0
 for i=1 to n do incremento Y[X[i]]
 for i=2 to k do Y[i]=Y[i]+Y[i-1]
+return Y
 ```
 Codice ChiamaOracolo
 ```pseudo
