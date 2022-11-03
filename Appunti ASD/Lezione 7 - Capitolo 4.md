@@ -123,5 +123,57 @@ L'altezza h dell'albero di decisione è almeno $log_2(n!)$
 **Formula di Stirling**: $n!\approx (2\pi n)^{1/2}\cdot(n/e)^n$
 
 ![[appunti asd/immagini/Pasted image 20221103100605.png|center|500]]
-$$\lceil a\rceil$$
+
+**Esercizio**
+Dimostrare usando la tecnica dell'albero di decisione che l'algoritmo di pesatura che esegue (nel caso peggiore) $\lceil log_3n\rceil$ pesate per trovare la moneta falsa fra n monete è ottimo
+
+>Può un algoritmo basato su confronti ordinare n interi piccoli, diciamo compresi fra 1 e k=$O(n)$, in (asintoticamente) meno di $nlog(n)$
+
+...no, la dimostrazione funziona anche sotto questa ipotesi
+
+## IntegerSort
+### IntegerSort: fase 1
+
+Per ordinare n interi con valori in $[1,k]$
+Mantiene un array Y di k contatori tale che $Y[x]=$numero di volte che il valore x compare nell'array di input X
+
+![[appunti asd/immagini/Pasted image 20221103102304.png|center|700]]
+
+### IntegerSort: fase 2
+Scorre Y da sinistra a destrae, se $Y[x]=k$, scrive in X il valore x per k volte
+
+![[appunti asd/immagini/Pasted image 20221103102511.png|center|700]]
+
+### PseudoCodice
+
+![[appunti asd/immagini/Pasted image 20221103102620.png|center|400]]
+
+- linee 1.4 costo $O(1)$- tempo costante
+- linea 2 costo $O(k)$
+- linea 3 costo $O(n)$
+- linea 5 costo $O(k)$
+- linee 6-9 costo: per i fissato num. volte che le istruzioni vengono eseguite è al più $1+Y[i]\implies O(k+n)$
+
+Quindi possiamo dire che
+$$\sum_{i=1}^k(1+Y[i])=\sum_{i=1}^k1+\sum_{i=1}^kY[i]=k+n$$
+### Analisi
+
+- Tempo $O(1)+O(k)=O(k)$ per inizializzare Y a 0
+- Tempo $O(1)+O(n)=O(n)$ per calcolare i valori dei contatori
+- Tempo $O(n+k)$ per ricostruire X
+$\implies O(n+k)$
+Tempo lineare se $k=O(n)$
+Contraddice il lower bound di $\Omega(nlog(n))$? **No** perchè l'**IntegerSort** non è un algoritmo basato su confronti!!
+
+**Una domanda**
+Che complessità temporale ha l'IntegerSort quando $k=\omega(n)$, per esempio $k=\Theta(n^c)$, con c costante?
+$$...T(n)=\Theta(n^c)...=\omega(nlog(n))$$
+per $c\gt1$
+
+
+**Esercizio Importante**
+Dato un vettore X di n interi in $[1,k]$, costruire in tempo $O(n+k)$ una struttura dati (**oracolo**) che sappia rispondere a domande (**query**) in tempo $O(1)$ del tipo : "quanti interi in X cadono nell'intervallo $[a,b]$?", per ogni a e b
+
+![[appunti asd/immagini/Pasted image 20221103104429.png|center|500]]
+![[appunti asd/immagini/Pasted image 20221103104448.png|center|500]]
 
