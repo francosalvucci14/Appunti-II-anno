@@ -711,3 +711,301 @@ public class Point {
 }
 ```
 
+ma si poteva scrivere così:
+```java
+public class Point {
+    public int x = 0;
+    public int y = 0;
+        **
+    //constructor
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }**
+}
+```
+Ogni argomento del costruttore oscura uno dei campi dell'oggetto: all'interno del costruttore x c'è una copia locale del primo argomento del costruttore. Per fare riferimento al campo Punto x, il costruttore deve utilizzare this.x.
+### Usando this con un costruttore
+Dall'interno di un costruttore, puoi anche usare la parola chiave this per chiamare un altro costruttore nella stessa classe. In questo modo viene chiamata una chiamata esplicita del costruttore. Ecco un'altra classe Rectangle, con un'implementazione diversa da quella nella sezione Oggetti.
+
+```java
+public class Rectangle {
+    private int x, y;
+    private int width, height;
+        
+    public Rectangle() {
+        **this(0, 0, 1, 1);**
+    }
+    public Rectangle(int width, int height) {
+        **this(0, 0, width, height);**
+    }
+    public Rectangle(int x, int y, int width, int height) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+    }
+    ...
+}
+```
+Questa classe contiene un set di costruttori. Ogni costruttore inizializza alcune o tutte le variabili membro del rettangolo. I costruttori forniscono un valore predefinito per qualsiasi variabile membro il cui valore iniziale non è fornito da un argomento. Ad esempio, il costruttore senza argomenti crea un rettangolo 1x1 alle coordinate 0,0. Il costruttore a due argomenti chiama il costruttore a quattro argomenti, passando la larghezza e l'altezza ma usando sempre le coordinate 0,0. Come prima, il compilatore determina quale costruttore chiamare, in base al numero e al tipo di argomenti.
+
+Se presente, l'invocazione di un altro costruttore deve essere la prima riga nel costruttore.
+
+## Controllo dell'accesso ai membri di una classe
+
+I modificatori del livello di accesso determinano se altre classi possono utilizzare un campo particolare o richiamare un metodo particolare. Esistono due livelli di controllo degli accessi:
+
+- Al livello superiore: pubblico o pacchetto privato (nessun modificatore esplicito).
+- A livello di membro: pubblico, privato, protetto o privato di pacchetto (nessun modificatore esplicito).
+Una classe può essere dichiarata con il modificatore public, nel qual caso quella classe è visibile a tutte le classi ovunque. Se una classe non ha modificatore (l'impostazione predefinita, nota anche come pacchetto-privato), è visibile solo all'interno del proprio pacchetto (i pacchetti sono denominati gruppi di classi correlate: ne parlerai in una lezione successiva).
+
+A livello di membro, puoi anche utilizzare il modificatore public o nessun modificatore (pacchetto-privato) proprio come con le classi di livello superiore e con lo stesso significato. Per i membri, sono disponibili due modificatori di accesso aggiuntivi: privato e protetto. Il modificatore private specifica che è possibile accedere al membro solo nella propria classe. Il modificatore protected specifica che è possibile accedere al membro solo all'interno del proprio pacchetto (come con package-private) e, inoltre, da una sottoclasse della sua classe in un altro pacchetto.
+
+La tabella seguente mostra l'accesso ai membri consentito da ciascun modificatore.
+
+**Livelli di Acceso**
+| Modificatori    | Class | Package | Subclass | World |
+| --------------- | ----- | ------- | -------- | ----- |
+| public          | Y     | Y       | Y        | Y     |
+| private         | Y     | N       | N        | N     |
+| protected       | Y     | Y       | Y        | N     |
+| no modificatori | Y     | Y       | N        | N     |
+
+La prima colonna di dati indica se la classe stessa ha accesso al membro definito dal livello di accesso. Come puoi vedere, una classe ha sempre accesso ai propri membri. La seconda colonna indica se le classi nello stesso pacchetto della classe (indipendentemente dalla loro parentela) hanno accesso al membro. La terza colonna indica se le sottoclassi della classe dichiarata all'esterno di questo pacchetto hanno accesso al membro. La quarta colonna indica se tutte le classi hanno accesso al membro.
+
+I livelli di accesso ti influenzano in due modi. In primo luogo, quando si utilizzano classi che provengono da un'altra fonte, come le classi nella piattaforma Java, i livelli di accesso determinano quali membri di tali classi possono utilizzare le proprie classi. In secondo luogo, quando scrivi una classe, devi decidere quale livello di accesso dovrebbe avere ogni variabile membro e ogni metodo nella tua classe.
+
+Diamo un'occhiata a una raccolta di classi e vediamo come i livelli di accesso influiscono sulla visibilità. La figura seguente mostra le quattro classi in questo esempio e come sono correlate.
+
+![[appunti lmp/immagini/classes-access.gif|center|500]]
+
+La tabella seguente mostra dove sono visibili i membri della classe Alpha per ciascuno dei modificatori di accesso che possono essere applicati.
+
+**Visibilità**
+| Modificatori    | Alpha | Beta | Alphasub | Gamma |
+| --------------- | ----- | ---- | -------- | ----- |
+| public          | Y     | Y    | Y        | Y     |
+| protected       | Y     | Y    | Y        | N     |
+| no modificatori | Y     | Y    | N        | N     |
+| private         | Y     | N    | N        | N     |
+
+**Suggerimenti per la scelta di un livello di accesso:**
+Se altri programmatori usano la tua classe, vuoi assicurarti che non si verifichino errori da uso improprio. I livelli di accesso possono aiutarti a farlo.
+
+- Utilizzare il livello di accesso più restrittivo adatto a un determinato membro. Usa private a meno che tu non abbia una buona ragione per non farlo.
+- Evita i campi pubblici ad eccezione delle costanti. (Molti esempi nel tutorial utilizzano campi pubblici. Ciò può aiutare a illustrare alcuni punti in modo conciso, ma non è consigliato per il codice di produzione.) I campi pubblici tendono a collegarti a una particolare implementazione e limitano la tua flessibilità nel modificare il codice.
+
+## Capire i membri della classe
+In questa sezione, discutiamo l'uso della parola chiave static per creare campi e metodi che appartengono alla classe, piuttosto che a un'istanza della classe.
+
+### Variabili di classe
+Quando un numero di oggetti viene creato dallo stesso progetto di classe, ciascuno ha le proprie copie distinte delle variabili di istanza. Nel caso della classe Bicycle, le variabili di istanza sono cadenza, marcia e velocità. Ogni oggetto Bicycle ha i propri valori per queste variabili, memorizzati in diverse locazioni di memoria.
+
+A volte, vuoi avere variabili comuni a tutti gli oggetti. Questo si ottiene con il modificatore statico. I campi che hanno il modificatore static nella loro dichiarazione sono chiamati campi statici o variabili di classe. Sono associati alla classe, piuttosto che a qualsiasi oggetto. Ogni istanza della classe condivide una variabile di classe, che si trova in una posizione fissa in memoria. Qualsiasi oggetto può modificare il valore di una variabile di classe, ma le variabili di classe possono anche essere manipolate senza creare un'istanza della classe.
+
+Ad esempio, supponiamo di voler creare un numero di oggetti Bicycle e assegnare a ciascuno un numero di serie, iniziando con 1 per il primo oggetto. Questo numero ID è univoco per ogni oggetto ed è quindi una variabile di istanza. Allo stesso tempo, è necessario un campo per tenere traccia di quanti oggetti Bicycle sono stati creati in modo da sapere quale ID assegnare al successivo. Tale campo non è correlato a nessun singolo oggetto, ma alla classe nel suo insieme. Per questo è necessaria una variabile di classe, numberOfBicycles, come segue:
+```java
+public class Bicycle {
+        
+    private int cadence;
+    private int gear;
+    private int speed;
+        
+    // **add an instance variable for the object ID**
+    private int id;
+    
+    // **add a class variable for the**
+    // **number of Bicycle objects instantiated**
+    private static int numberOfBicycles = 0;
+        ...
+}
+```
+
+Le variabili di classe sono referenziate dal nome della classe stessa, come in
+```java
+Bicycle.numberOfBicycles
+```
+È possibile utilizzare il costruttore Bicycle per impostare la variabile di istanza id e incrementare la variabile di classe numberOfBicycles:
+```java
+public class Bicycle {
+        
+    private int cadence;
+    private int gear;
+    private int speed;
+    private int id;
+    private static int numberOfBicycles = 0;
+        
+    public Bicycle(int startCadence, int startSpeed, int startGear){
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+
+        // **increment number of Bicycles**
+        // **and assign ID number**
+        **id = ++numberOfBicycles;**
+    }
+
+    // **new method to return the ID instance variable**
+    public int getID() {
+        return id;
+    }
+        ...
+}
+```
+
+### Metodi della classe
+Il linguaggio di programmazione Java supporta metodi statici e variabili statiche. I metodi statici, che hanno il modificatore static nelle loro dichiarazioni, dovrebbero essere invocati con il nome della classe, senza la necessità di creare un'istanza della classe, come in
+```java
+ClassName.methodName(args)
+```
+Un uso comune dei metodi statici consiste nell'accedere ai campi statici. Ad esempio, potremmo aggiungere un metodo statico alla classe Bicycle per accedere al campo statico numberOfBicycles:
+```java
+public static int getNumberOfBicycles() {
+    return numberOfBicycles;
+}
+```
+
+Non tutte le combinazioni di variabili e metodi di istanza e di classe sono consentite:
+
+- I metodi di istanza possono accedere direttamente alle variabili di istanza e ai metodi di istanza.
+- I metodi di istanza possono accedere direttamente alle variabili di classe e ai metodi di classe.
+- I metodi di classe possono accedere direttamente alle variabili di classe e ai metodi di classe.
+- I metodi di classe non possono accedere direttamente alle variabili di istanza o ai metodi di istanza: devono utilizzare un riferimento a un oggetto. Inoltre, i metodi di classe non possono utilizzare la parola chiave this in quanto non esiste un'istanza a cui fare riferimento.
+
+### Costanti
+Il modificatore static, in combinazione con il modificatore final, viene utilizzato anche per definire le costanti. Il modificatore finale indica che il valore di questo campo non può cambiare.
+
+Ad esempio, la seguente dichiarazione di variabile definisce una costante denominata PI, il cui valore è un'approssimazione di pi (il rapporto tra la circonferenza di un cerchio e il suo diametro):
+```java
+static final double PI = 3.141592653589793;
+```
+Le costanti definite in questo modo non possono essere riassegnate ed è un errore in fase di compilazione se il programma tenta di farlo. Per convenzione, i nomi dei valori costanti sono scritti in lettere maiuscole. Se il nome è composto da più di una parola, le parole sono separate da un trattino basso ($\_$).
+
+#### La classe Bycicle
+Dopo tutte le modifiche apportate in questa sezione, la classe Bicicletta è ora:
+
+```java
+public class Bicycle {
+        
+    private int cadence;
+    private int gear;
+    private int speed;
+        
+    private int id;
+    
+    private **static** int numberOfBicycles = 0;
+
+        
+    public Bicycle(int startCadence,
+                   int startSpeed,
+                   int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+
+        id = ++numberOfBicycles;
+    }
+
+    public int getID() {
+        return id;
+    }
+
+    public static int getNumberOfBicycles() {
+        return numberOfBicycles;
+    }
+
+    public int getCadence() {
+        return cadence;
+    }
+        
+    public void setCadence(int newValue) {
+        cadence = newValue;
+    }
+        
+    public int getGear(){
+        return gear;
+    }
+        
+    public void setGear(int newValue) {
+        gear = newValue;
+    }
+        
+    public int getSpeed() {
+        return speed;
+    }
+        
+    public void applyBrake(int decrement) {
+        speed -= decrement;
+    }
+        
+    public void speedUp(int increment) {
+        speed += increment;
+    }
+}
+```
+
+## Inizializzazione dei campi
+
+Come hai visto, puoi spesso fornire un valore iniziale per un campo nella sua dichiarazione:
+```java
+public class BedAndBreakfast {
+
+    // initialize to 10
+    public static int capacity = 10;
+
+    // initialize to false
+    private boolean full = false;
+}
+```
+
+Funziona bene quando il valore di inizializzazione è disponibile e l'inizializzazione può essere inserita su una riga. Tuttavia, questa forma di inizializzazione presenta dei limiti a causa della sua semplicità. Se l'inizializzazione richiede un po' di logica (ad esempio, la gestione degli errori o un ciclo for per riempire una matrice complessa), l'assegnazione semplice è inadeguata. Le variabili di istanza possono essere inizializzate nei costruttori, dove è possibile utilizzare la gestione degli errori o altra logica. Per fornire la stessa capacità per le variabili di classe, il linguaggio di programmazione Java include blocchi di inizializzazione statici.
+
+### Blocchi di inizializzazione statici
+Un blocco di inizializzazione statico è un normale blocco di codice racchiuso tra parentesi graffe { } e preceduto dalla parola chiave static. Ecco un esempio:
+```java
+static {
+    // whatever code is needed for initialization goes here
+}
+```
+Una classe può avere un numero qualsiasi di blocchi di inizializzazione statici e possono apparire ovunque nel corpo della classe. Il sistema di runtime garantisce che i blocchi di inizializzazione statici vengano chiamati nell'ordine in cui appaiono nel codice sorgente.
+
+C'è un'alternativa ai blocchi statici: puoi scrivere un metodo statico privato:
+```java
+class Whatever {
+    public static varType myVar = initializeClassVariable();
+        
+    private static varType initializeClassVariable() {
+
+        // initialization code goes here
+    }
+}
+```
+Il vantaggio dei metodi statici privati è che possono essere riutilizzati in seguito se è necessario reinizializzare la variabile di classe.
+
+### Inizializzazione dei membri dell'istanza
+
+Normalmente, inseriresti il codice per inizializzare una variabile di istanza in un costruttore. Esistono due alternative all'utilizzo di un costruttore per inizializzare le variabili di istanza: blocchi di inizializzazione e metodi finali.
+
+I blocchi di inizializzazione per le variabili di istanza sembrano proprio come i blocchi di inizializzazione statici, ma senza la parola chiave static:
+```java
+{
+    // whatever code is needed for initialization goes here
+}
+```
+Il compilatore Java copia i blocchi di inizializzazione in ogni costruttore. Pertanto, questo approccio può essere utilizzato per condividere un blocco di codice tra più costruttori.
+
+Un metodo finale non può essere sovrascritto in una sottoclasse. Questo è discusso nella lezione sulle interfacce e l'ereditarietà. Ecco un esempio di utilizzo di un metodo finale per l'inizializzazione di una variabile di istanza
+
+```java
+class Whatever {
+    private varType myVar = initializeInstanceVariable();
+        
+    protected final varType initializeInstanceVariable() {
+
+        // initialization code goes here
+    }
+}
+```
+Ciò è particolarmente utile se le sottoclassi potrebbero voler riutilizzare il metodo di inizializzazione. Il metodo è definitivo perché la chiamata di metodi non finali durante l'inizializzazione dell'istanza può causare problemi.
+
