@@ -652,10 +652,62 @@ Il metodo getArea() nella classe Rectangle Rectangle discusso nelle sezioni sugl
     }
 ```
 
+Questo metodo restituisce l'intero a cui restituisce l'espressione width*height.
+
+Il metodo getArea restituisce un tipo primitivo. Un metodo può anche restituire un tipo di riferimento. Ad esempio, in un programma per manipolare oggetti Bicycle, potremmo avere un metodo come questo:
+```java
+public Bicycle seeWhosFastest(Bicycle myBike, Bicycle yourBike,
+                              Environment env) {
+    Bicycle fastest;
+    // code to calculate which bike is 
+    // faster, given each bike's gear 
+    // and cadence and given the 
+    // environment (terrain and wind)
+    return fastest;
+}
+```
 
 
+## Restituzione di una classe o interfaccia
+Se questa sezione ti confonde, saltala e torna ad essa dopo aver terminato la lezione sulle interfacce e sull'ereditarietà.
+
+Quando un metodo utilizza un nome di classe come tipo restituito, ad esempio whosFastest, la classe del tipo dell'oggetto restituito deve essere una sottoclasse o la classe esatta del tipo restituito. Supponiamo di avere una gerarchia di classi in cui ImaginaryNumber è una sottoclasse di java.lang.Number, che a sua volta è una sottoclasse di Object, come illustrato nella figura seguente.
 
 
+![[appunti lmp/immagini/classes-hierarchy.gif|center|400]]
+Supponiamo ora di avere un metodo dichiarato per restituire un numero:
+```java
+public Number returnANumber() {
+    ...
+}
+```
+Il metodo returnANumber può restituire un ImaginaryNumber ma non un Object. ImaginaryNumber è un numero perché è una sottoclasse di numero. Tuttavia, un oggetto non è necessariamente un numero: potrebbe essere una stringa o un altro tipo.
 
+Puoi sovrascrivere un metodo e definirlo per restituire una sottoclasse del metodo originale, in questo modo:
+```java
+public ImaginaryNumber returnANumber() {
+    ...
+}
+```
+Questa tecnica, denominata tipo restituito covariante, significa che il tipo restituito può variare nella stessa direzione della sottoclasse.
 
-MANCA PARTE USING OBJECTS E GARBAGE COLLECTOR
+## Usare la parolachiave this
+All'interno di un metodo di istanza o di un costruttore, questo è un riferimento all'oggetto corrente, l'oggetto il cui metodo o costruttore viene chiamato. Puoi fare riferimento a qualsiasi membro dell'oggetto corrente da un metodo di istanza o da un costruttore usando this.
+
+### Usando this con un campo
+Il motivo più comune per l'utilizzo della parola chiave this è perché un campo è ombreggiato da un metodo o da un parametro del costruttore.
+
+Ad esempio, la classe Point è stata scritta in questo modo
+```java
+public class Point {
+    public int x = 0;
+    public int y = 0;
+        **
+    //constructor
+    public Point(int a, int b) {
+        x = a;
+        y = b;
+    }**
+}
+```
+
