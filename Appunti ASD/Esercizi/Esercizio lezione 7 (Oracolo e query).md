@@ -33,3 +33,64 @@ Dopo aver effettuato crea oracolo avrò il mio array Y che sarà:
 $Y=[1,1,3,4,6,6,6,6,6,7,7,7,7,7,7,7,7,7,7,8]$
 E di conseguenza la differenza $Y[b]-Y[a-1]$ sarà uguale a $Y[15]-Y[5-1]=7-4=3$
 che è proprio il numero di elementi compresi fra a e b
+
+**Esempio con codice python**
+
+```python
+x=[1,10,4,5,5,20,3,3]
+
+def CreaOracolo(a,k):
+
+    y=[0]*(k+1)
+
+    n=len(a)
+
+    for i in range(n-1):
+
+        y[a[i]]+=1
+
+    print(f"Array Y: {y}")
+
+    for i in range(2,k):
+
+        y[i]=y[i]+y[i-1]
+
+    #print(y)
+
+    return y
+
+  
+
+def InterrogaOracolo(y,a,b,k):
+
+    if b>k:
+
+        b=k
+
+    if a <=1:
+
+        return y[b]
+
+    else:
+
+        return y[b]-y[a-1]
+
+y=CreaOracolo(x,20)
+
+print(f"array Y'(oracolo):{y}")
+
+a=5
+
+b=15
+
+valore = InterrogaOracolo(y,a,b,20)
+
+print(f"elementi compresi fra {a} e {b} in Y': {valore}")
+```
+
+Risultato:
+
+![[appunti asd/esercizi/imges/Pasted image 20221104103945.png|center|500]]
+
+
+
