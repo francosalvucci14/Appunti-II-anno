@@ -211,6 +211,7 @@ $$T(n)=\Omega(nlog(n))$$
 
 
 
+
 # Algoritmi non basati su confronto
 
 ## IntegerSort
@@ -227,7 +228,7 @@ Pseudo-codice:
 >6. 	while($Y[i]\gt0$) do
 >7. 	$X[j]=i$
 >8. 	incrementa i
->9. 	decrementa j
+>9. 	decrementa $Y[j]$
 
 ### Complessità temporale
 
@@ -249,5 +250,68 @@ Tempo linearea se $k=O(n)$
 
 
 
+
 # Codici degli algoritmi in python
-...
+## BubbleSort
+```python
+def bubble_sort( a ):
+    '''
+    pre: a è una lista di numeri
+    ordina la lista dall'elemento più piccolo a quello più grande
+    '''
+    n = len(a)
+    ordinata = False
+    num_scansioni = 1
+    while not ordinata:
+        print(num_scansioni)
+        num_scansioni += 1
+        ordinata = True
+        for i in range(n-1):
+            # confrontiamo l'elemento in posizione i e i+1
+            if a[i] > a[i+1]:
+                # scambio gli elementi, non posso dire che la lista è ordinata
+                a[i], a[i+1] = a[i+1], a[i]
+                ordinata = False
+b = [9,8,7,6,5,4,3,2,1]
+bubble_sort(b)
+print(b)
+```
+
+## MergeSort
+```python
+def merge( a, lx, cx, rx ):
+    '''
+    Precondizione: a lista e a[lx:cx] e a[cx:rx] ordinate in modo non decrescente
+    Modifica a fondendo le due sottoliste in modo che a[lx:rx] risulti ordinata
+    Sia n = len(a), e k = rx-lx
+    '''
+    i, j = lx, cx # indice in a[lx:cx] ed in a[cx:rx] rispettivamente
+    c = [] # lista di output
+    while i < cx and j < rx:
+        if a[i] < a[j]:
+            c.append(a[i])
+            i += 1
+        else:
+            c.append(a[j])
+            j += 1
+    c += a[i:cx] + a[j:rx]
+    for i in range(len(c)):
+        a[lx+i] = c[i]
+
+def merge_sort(a, lx, rx):
+    '''
+    Precondizione: a una lista numerica
+    Ordina a[lx:rx]
+    '''
+    if lx <= rx-2: # almeno due elementi in a[lx:rx]
+        cx = (rx+lx)//2
+        merge_sort(a, lx, cx)
+        merge_sort(a, cx, rx)
+        a = merge(a, lx, cx, rx)
+a = [2,1,10,5,7,0,4,9,6,8,11,1,2]
+n = len(a)
+merge_sort(a, 0, n)
+print(a)
+```
+
+## IntegerSort

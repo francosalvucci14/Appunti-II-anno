@@ -108,7 +108,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
+              }
             }
           },
           {
@@ -125,6 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,13 +144,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -168,17 +172,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "90fe890bef2bffd6",
+  "active": "738058aea5e29512",
   "lastOpenFiles": [
+    "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/Lezione 5 - Capitolo 4.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
-    "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Lezione 4 - Capitolo 2.md",
     "Appunti LMP/Introduzione.md",
     "Appunti BSD/Lezione 3.md",
     "Appunti CPS/Lezione 5.md",
-    "Appunti FI/Esercizi/Esercizi unità 3-4.md",
-    "Appunti FI/Esercizi/Esercizio RegEx.md"
+    "Appunti FI/Esercizi/Esercizi unità 3-4.md"
   ]
 }
