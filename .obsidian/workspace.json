@@ -14,19 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Appunti ASD/Algoritmi/Algoritmi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c0808d31bf98c9ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/Lezione 6 - HeapSort.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -172,17 +160,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "738058aea5e29512",
   "lastOpenFiles": [
-    "Appunti ASD/Lezione 6 - HeapSort.md",
+    "Appunti CPS/Lezione 5.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
     "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md",
     "Appunti BSD/Lezione 4 - Vincoli d'integrità.md",
     "Appunti FI/Esercizi/Esercizi_ASF_2_nov_2022.pdf",
     "Appunti FI/Esercizi/Esercizi ASF.md",
-    "Appunti BSD/Lezione 3.md",
-    "Appunti LMP/Lezione 6.md"
+    "Appunti BSD/Lezione 3.md"
   ]
 }
