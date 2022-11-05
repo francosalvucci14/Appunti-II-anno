@@ -12,7 +12,8 @@ $$X(\omega)=X(\omega_1,...,\omega_n)=\omega_1+...+\omega_n$$
 Vogliamo trovare la densità discreta di X e si ha:
 $$\forall k\in S_x=\lbrace 0,1,...,n\rbrace\:\:\:p_x(k)=\sum_{\omega:X(\omega)=k}P(\lbrace\omega\rbrace)$$
 
-____
+---
+
 Nei casi 1 e 2 avremo che:
 >$X(\omega)=X(\omega')\implies P(\lbrace\omega\rbrace)=P(\lbrace\omega'\rbrace)$
 >Cioè, date due sequenze qualsiasi $\omega\:e\:\omega'$ con lo stesso numero di successi, le rispettive probabilità coincidono
@@ -53,5 +54,16 @@ Questo spiega che abbiamo $r_{4,2}=6$ sequenze binarie di lunghezza 4 e con esat
 
 # Il caso 1: Distribuzione Binomiale
 
-Si usa per la v.a che conta il numero di successi su n prove indipendenti, con probabilità di successo p in ogni prova
+Si usa per la v.a che conta il numero di successi su n prove indipendenti, con probabilità di successo p in ogni prova (quindi in ogni prova c'è una probabilità di fallimento 1-p)
+
+
+
+
+
+
+
+
+
+
+
 # Il caso 2: Distribuzione Ipergeometrica
