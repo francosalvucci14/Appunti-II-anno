@@ -227,7 +227,7 @@ Pseudo-codice:
 >5. for i=1 to k do
 >6. 	while($Y[i]\gt0$) do
 >7. 	$X[j]=i$
->8. 	incrementa i
+>8. 	incrementa j
 >9. 	decrementa $Y[j]$
 
 ### Complessità temporale
