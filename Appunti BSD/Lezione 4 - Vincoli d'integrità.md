@@ -42,6 +42,12 @@ Una possibile sintassi:
 - Non ci sono due ennuple uguali su tutti e tre gli attibuti **Cognome,Nome,Data di Nascita**
 ![[appunti bsd/immagini/Pasted image 20221105113142.png|center|600]]
 
+## Chiave
+
+Insieme di attributi che identificano univocamente le ennuple di una relazione
+**Formalmente**
+- un insieme K di attibuti è **superchiave** per $r$ se $r$ non contiene due ennuple distinte $t_1,t_2$ con $t_1[K]=t_2[K]$
+- K è **chiave** per $r$ se è una superchiave minimale per $r$ (ossia, non contiene un'altra superchiave)
 
 
 # Chiavi e valori nulli
