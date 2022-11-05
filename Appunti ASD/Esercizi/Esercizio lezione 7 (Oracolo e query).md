@@ -25,7 +25,7 @@ if a <= 1 then return Y[b]
 		  else return (Y[b]-Y[a-1])
 ```
 
-**Oss** si può fare tutto anche in una sola funzione, in quel caso Y e a,b saranno globali alla funzione
+**Oss** si può fare tutto anche in una sola funzione, in quel caso Y,a,b saranno globali alla funzione
 
 **Esempio**
 Array $X=[1,10,4,5,5,20,3,3];\:a=5,b=15,k=20$
