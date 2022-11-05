@@ -7,7 +7,7 @@
 	- [[Algoritmi#Insertion Sort|InsertionSort]]
 	- SelectionSort
 	- QuickSort
-	- HeapSort
+	- [[Algoritmi#HeapSort|HeapSort]]
 
 - Algoritmi non basati su confronto
 	- [[Algoritmi#IntegerSort|IntegerSort]]
@@ -71,7 +71,50 @@ $t_j$ è il numero di volte che la linea 4 viene eseguita
 $T(n)\leq n((c_2+c_3+c_7+c_6+c_5)+(n-2))=nc+n^2\implies$
 $T(n)=O(n^2)\implies T(n)=\Theta(n^2)$
 
+## HeapSort
 
+#### Pseudo-codice
+
+Pseudo-codice HeapSort:
+
+>HeapSort(A)
+>1. Heapify(A)
+>2. $Heapsize[A]=n$
+>3. for i = n down to 2 do
+>4.	   scambia $A[i]$ e $A[j]$
+>5.    $Heapsize[A]=Heapsize[A]-1$
+>6.    fixHeap(1,A)
+
+Pseudo-codice fixHeap(1,A)
+
+>fixHeap(i,A)
+>1. s=sin(i)
+>2. d=des(i)
+>3. if($s\leq Heapsize[A]$ e $A[s]\gt A[i]$ )
+>4.       then massimo = s
+>5.       else massimo = i
+>6. if($d\leq Heapsize[A]$ e $A[d]\gt A[massimo]$ )
+>7.       then massimo = d
+>8. if (massimo$\neq$ i) then
+>9.      scambia $A[i]$ e $A[massimo]$
+>10.	     fixHeap(massimo,A)
+
+Pseudo-codice heapify
+
+>**heapify**(A)
+>1. $Heapsize[A]=n$
+>2. for i = $\lfloor n/2\rfloor$  down to 1 do
+>3.       fixHeap(i,A)
+
+### Complessità temporale
+
+Per complessità temporale di heapify si rimanda alla lezione [[Lezione 6 - HeapSort#Complessità heapify|Lezione 6 - Complessità heapify]]
+
+Complessità HeapSort:
+- linea 1 costo $O(n)$ (costruzione dell'heap)
+- linea 3-6 esegue n-1 estrazioni di costo $O(log(n))$
+
+Quindi $$T(n)\leq(n-1)log(n)\implies O(nlog(n))$$
 
 
 # Algoritmi non basati su confronto
@@ -102,11 +145,10 @@ Pseudo-codice:
 - linee 6-9, per i fissato il num. di volte eseguite è al più $1+Y[i]\implies O(k+n)$
 
 Quindi:
-$$T(n)=\sum_{i=1}^k(1+Y[i])=\sum_{i=1}^k1+\sum_{i=1}^k(Y[i])=k+n$$
+$$T(n)\leq\sum_{i=1}^k(1+Y[i])=\sum_{i=1}^k1+\sum_{i=1}^k(Y[i])=k+n\implies O(n+k)$$
 #### Analisi
 - Tempo $O(1)+O(k)=O(k)$ per inizializzare Y a 0
 - Tempo $O(1)+O(n)=O(n)$ per calcolare i valori dei contatori
 - Tempo $O(n+k)$ per ricostruire X
-$\downarrow$ 
 $O(n+k)$
 Tempo linearea se $k=O(n)$
