@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti CPS/Lezione 5.md",
+                "file": "Appunti ASD/Lezione 5 - Capitolo 4.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti CPS/Lezione 5.md"
+                "file": "Appunti ASD/Lezione 5 - Capitolo 4.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti CPS/Lezione 5.md",
+                "file": "Appunti ASD/Lezione 5 - Capitolo 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti CPS/Lezione 5.md",
+                "file": "Appunti ASD/Lezione 5 - Capitolo 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,15 +162,15 @@
   },
   "active": "738058aea5e29512",
   "lastOpenFiles": [
+    "Appunti BSD/Lezione 3.md",
+    "Appunti CPS/Lezione 5.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti FI/Esercizi/Esercizi unità 3-4.md",
     "Appunti FI/Esercizi/Esercizio RegEx.md",
     "Appunti FI/Esercizi/Esercizi Grammatiche.md",
-    "Appunti CPS/Lezione 5.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
-    "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md",
-    "Appunti BSD/Lezione 4 - Vincoli d'integrità.md"
+    "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md"
   ]
 }

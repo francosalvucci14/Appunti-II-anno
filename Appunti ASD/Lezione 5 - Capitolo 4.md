@@ -59,7 +59,7 @@ $T(n)\leq 5n^2O(1)=\Theta(n^2)\implies T(n)=O(n^2)$
 Idea: conto solo i confronti fra elementi
 - linea 3-4: esegue n-k-1 confronti
 
-$T(n)\geq\sum_{k=0}^n-2(n-k-1)=\sum_{k=1}^n-1(k)=n(n-1)/2=\Theta(n^2)\implies T(n)=\Omega(n^2)$
+$T(n)\geq\sum_{k=0}^{n-2}(n-k-1)=\sum_{k=1}^{n-1}(k)=n(n-1)/2=\Theta(n^2)\implies T(n)=\Omega(n^2)$
 
 Upper Bound $O(n^2)$ e Lower Bound $\Omega(n^2)$ allora $T(n)=\Theta(n^2)$
 
