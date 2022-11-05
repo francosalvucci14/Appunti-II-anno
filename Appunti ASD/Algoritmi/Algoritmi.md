@@ -223,7 +223,7 @@ Pseudo-codice:
 >1. Sia Y un array di dimensione k
 >2. for i=1 to k do $Y[i]=0$
 >3. for i=1 to n do incrementa $Y[x[i]]$
->4. j=i
+>4. j=1
 >5. for i=1 to k do
 >6. 	while($Y[i]\gt0$) do
 >7. 	$X[j]=i$
