@@ -188,7 +188,7 @@ Pseudo-codice Partition
 >3. sup=f+1
 >4. while(true) do
 >5. 	 do (inf=inf+1) while ($inf\leq f\:e\:A[inf]\leq x$)
->6. 	 do (sup=sup-1) while ($A[sup\gt x]$)
+>6. 	 do (sup=sup-1) while ($A[sup]\gt x$)
 >7. 	 if ($inf\lt sup$) then scambia $A[inf]\:e\:A[sup]$
 >8. 	 else **break**
 >9. scambia $A[i]\:e\:A[sup]$
