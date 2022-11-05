@@ -91,7 +91,30 @@ Fallimento  ="estrazione oggetto di tipo 2"
 Consideriamo il caso
 $\omega=(\underbrace{1,...,1}_{\text{k-volte}},\underbrace{0,...,0}_{\text{n-k volte}})$ $P(\{\omega\})=0\:se\:k\gt n_1\:oppure\:n-k\gt\ n_2$ 
 Al contrario ($0\leq k\leq n_1\:e\:0\leq n-k\leq n_2$)
-$P(\{\omega\})=\frac{n_1}{n_1+n_2}\cdot\frac{n_1-1}{n_1+n_2-1}\cdot...\cdot\frac{n_1-(k-1)}{n_1+n_2-(k-1)}\cdot\frac{n_2}{n_1+n_2-k}\cdot\frac{n_2-1}{n_1+n_2-k-1}\cdot..\cdot\frac{n_2-(n-k)}{n_1+n_2-(n-1)}$
+
+$P(\{\omega\})=\frac{n_1}{n_1+n_2}\cdot\frac{n_1-1}{n_1+n_2-1}\cdot...\cdot\frac{n_1-(k-1)}{n_1+n_2-(k-1)}\cdot\frac{n_2}{n_1+n_2-k}\cdot\frac{n_2-1}{n_1+n_2-k-1}\cdot..\cdot\frac{n_2-(n-k)}{n_1+n_2-(n-1)}(\star\star)$ 
 
 **Oss** se si cambia sequenza (sempre con k volte "q" e n-k volte "0") si ha sempre lo stesso valore
+
+Quindi sono nella posizione di dire che $\forall\:k\in\{0,1,...,n\}\exists q_k:X(\omega)=k\implies P(\{\omega\})=q_k$
+dove
+$$q_k=\begin{cases}0&k\gt n_1\:oppure\:n-k\gt n_2\\(\star\star)&altrimenti\end{cases}$$
+
+**Oss** $(\star\star)=\frac{\binom{n_1}{k}\binom{n_2}{n-k}}{\binom{n_1+n_2}{n}\binom{n}{k}}$ 
+
+In conclusione, con riferimento alla formula $(\star)$ si ha:
+$$p_x(k)=\cancel{\binom{n}{k}}\frac{\binom{n_1}{k}\binom{n_2}{n-k}}{\binom{n_1+n_2}{n}\cancel{\binom{n}{k}}}=\frac{\binom{n_1}{k}\binom{n_2}{n-k}}{\binom{n_1+n_2}{n}}$$
+Questa è la densità discreta della v.a con distribuzione ipergeometrica
+Qui abbiamo tre parametri: $n_1,n_2\gt1$ interi, e n intero con $n\lt n_1+n_2$
+A differenza del caso della distribuzione Binomiale si può avere qualche caso con $p_x(k)=0$ "non banale"
+
+# Un commento sulla validità della formula ($\star$)
+La formula $(\star)$ segue dall'ipotesi che $\forall k\in S_x=\lbrace 0,1,...,n\rbrace,\exists q_k:X(\omega)=k\implies P(\lbrace\omega\rbrace)=q_k(..)$ 
+
+Ora presentiamo un esempio dove $(..)$ _non_ è vera. Prendiamo n=2, prove indipendenti, probabilità di successo $p_1,p_2$ diverse tra loro
+Si ha: $$\begin{align}P(\{0,0\})=(1-p_1)(1-p_2)\\P(\{1,0\})=p_1(1-p_2)\\P(\{0,1\})=(1-p_1)p_2\\P(\{1,1\})=p_1p_2\end{align}$$
+Se per assurdo si avesse $(..)$, per k=1 si avrebbe $P(\{1,0\})=P(\{0,1\})$ da cui seguirebbe $p_1(1-p_2)=p_2(1-p_1),p_1-p_1p_2=p_2-p_2p_1,p_1=p_2$ (contro l'ipotesi $p_1\neq p_2$)
+
+In questo caso si ha $p_x(0)=(1-p_1)(1-p_2),p_x(1)=p_1(1-p_2)+p_2(1-p_1),p_x(2)=p_1p_2$
+
 
