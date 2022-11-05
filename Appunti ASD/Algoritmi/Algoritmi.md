@@ -228,7 +228,7 @@ Pseudo-codice:
 >6. 	while($Y[i]\gt0$) do
 >7. 	$X[j]=i$
 >8. 	incrementa j
->9. 	decrementa $Y[j]$
+>9. 	decrementa $Y[i]$
 
 ### Complessità temporale
 
