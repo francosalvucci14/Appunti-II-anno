@@ -47,7 +47,7 @@ $c_j$= costo della j-esima riga
 
 $$T(n)\leq c_1+nc_2+n(n-2)(c_3+c_4+c_5)\implies T(n)=O(n^2)\implies T(n)=\Theta(n^2)$$
 
-## Insertion Sort
+## InsertionSort
 
 Spiegazione dettagliata qui -> [Algoritmi,lezione 13/10/21](http://people.disim.univaq.it/guido.proietti/lezioni_algo2021.html)
 ### Pseudo-codice
