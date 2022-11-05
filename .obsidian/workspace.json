@@ -120,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Appunti BSD/Lezione 3.md"
-              }
+              "state": {}
             }
           },
           {
@@ -139,7 +137,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/Lezione 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,14 +153,13 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/Lezione 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -184,10 +180,10 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
-    "Appunti BSD/Lezione 2.md",
     "Appunti BSD/Lezione 3.md",
+    "Appunti BSD/Lezione 2.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti LMP/Esercitazioni/LMP 0.md",
     "Appunti LMP/Lezione 6.md",

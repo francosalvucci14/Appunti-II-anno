@@ -127,3 +127,27 @@ I dati disponibili possono non corrispondere al formato previsto
 **Esempio**
 ![[appunti bsd/immagini/Pasted image 20221105110719.png|center|500]]
 
+## Soluzioni?
+
+No conviene (anche se spesso si fa) usare valori del dominio (0,stringa vuota,"99",...):
+- potrebbero non esistere valori "non utilizzati"
+- valori "non utilizzati" potrebbero diventare significativi
+- in fase di utilizzo (nei programmi) sarebbe necessario ogni volta tener conto del "significato" di questi valori
+
+## Informazione incompleta nel modello relazionale
+Si adotta una tecnica rudimentale ma efficace:
+- **valore nullo**: denota l'assenza di un valore del dominio (e non è un valore del dominio)
+- $t[A]$, per ogni attributo A, è un valore del dominio dom(A) oppure valore nullo NULL
+- Si possono (e debbono) imporre restrizioni sulla presenza di valori nulli
+
+**Esempio con troppi valori nulli**
+![[appunti bsd/immagini/Pasted image 20221105111347.png|center|500]]
+
+## Tipi di valore nullo
+
+Almeno tre casi differenti:
+- valore **sconosciuto**
+- valore **inesistente**
+- valore **senza informazione**
+
+**Oss** I DBMS non distinguono i tipi di valore nullo
