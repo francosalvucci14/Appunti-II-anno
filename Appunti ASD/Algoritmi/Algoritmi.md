@@ -152,3 +152,4 @@ $$T(n)\leq\sum_{i=1}^k(1+Y[i])=\sum_{i=1}^k1+\sum_{i=1}^k(Y[i])=k+n\implies O(n+
 - Tempo $O(n+k)$ per ricostruire X
 $O(n+k)$
 Tempo linearea se $k=O(n)$
+
