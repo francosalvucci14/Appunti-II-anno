@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+                "file": "Appunti BSD/Lezione 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md"
+                "file": "Appunti BSD/Lezione 3.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+                "file": "Appunti BSD/Lezione 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+                "file": "Appunti BSD/Lezione 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,17 +184,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "0d80c8b8537ec0a7",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti BSD/Lezione 2.md",
+    "Appunti BSD/Lezione 3.md",
+    "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti LMP/Esercitazioni/LMP 0.md",
     "Appunti LMP/Lezione 6.md",
     "Appunti LMP/Lezione 7.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
-    "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti FI/Lezione 6 - ASF.md",
-    "Appunti BSD/Lezione 2.md",
-    "Appunti ASD/Lezione 6 - HeapSort.md",
-    "Appunti FI/Lezione 5 - Automi.md"
+    "Appunti ASD/Lezione 6 - HeapSort.md"
   ]
 }
