@@ -117,4 +117,7 @@ Se per assurdo si avesse $(..)$, per k=1 si avrebbe $P(\{1,0\})=P(\{0,1\})$ da c
 
 In questo caso si ha $p_x(0)=(1-p_1)(1-p_2),p_x(1)=p_1(1-p_2)+p_2(1-p_1),p_x(2)=p_1p_2$
 
+**Esercizi**
+
+Vedi file lezione 6 su Teams
 
