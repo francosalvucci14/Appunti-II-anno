@@ -2,11 +2,11 @@
 # Indice degli algoritmi
 
 - Algoritmi basati su confronto:
-	- MergeSort
+	- [[Algoritmi#MergeSort|MergeSort]]
 	- [[Algoritmi#BubbleSort|BubbleSort]]
 	- [[Algoritmi#Insertion Sort|InsertionSort]]
-	- SelectionSort
-	- QuickSort
+	- [[Lezione 5 - Capitolo 4#Selection Sort|SelectionSort]]
+	- [[Lezione 5 - Capitolo 4#QuickSort|QuickSort]]
 	- [[Algoritmi#HeapSort|HeapSort]]
 
 - Algoritmi non basati su confronto
@@ -14,10 +14,12 @@
 	- BucketSort
 	- RadixSort
 
+Per una spiegazione più dettagliata di qeusti algoritmi si rimanda a questo link [Algoritmi](http://people.disim.univaq.it/guido.proietti/lezioni_algo2021.html)
+
+
 # Algoritmi basati su confronto
 
 ## BubbleSort
-Algoritmo 1 (BubbleSort)
 
 ### Pseudo-codice
 Pseudo-codice:
@@ -47,6 +49,7 @@ $$T(n)\leq c_1+nc_2+n(n-2)(c_3+c_4+c_5)\implies T(n)=O(n^2)\implies T(n)=\Theta(
 
 ## Insertion Sort
 
+Spiegazione dettagliata qui -> [Algoritmi,lezione 13/10/21](http://people.disim.univaq.it/guido.proietti/lezioni_algo2021.html)
 ### Pseudo-codice
 
 >InsertionSort(A)
@@ -73,6 +76,7 @@ $T(n)=O(n^2)\implies T(n)=\Theta(n^2)$
 
 ## HeapSort
 
+Spiegazione qui -> [[Lezione 6 - HeapSort#HeapSort|HeapSort]]
 #### Pseudo-codice
 
 Pseudo-codice HeapSort:
@@ -117,6 +121,95 @@ Complessità HeapSort:
 Quindi $$T(n)\leq(n-1)log(n)\implies O(nlog(n))$$
 
 
+## MergeSort
+
+Spiegazione qui -> [[Lezione 5 - Capitolo 4#MergeSort|MergeSort]]
+### Pseudo-codice
+
+Pseudo-codice procedura Merge
+>$Merge(A,i_1,f_1,f_2)$
+>1. Sia X un array ausilirario di lunghezza $f_2-i_1+1$
+>2. $i=1;k_1=i_1$
+>3. $k_2=f_1+1$
+>4. while($k_1\leq f_1\:e\:k_2\leq f_2$) do
+>5.      if($A[k_1]\leq A[k_2]$)
+>6. 	 then $X[i]=A[k_1]$
+>7. 		 incrementa i e $k_1$
+>8. 	 else $X[i]=A[k_2]$
+>9. 		 incrementa i e $k_2$
+>10. if($k_1\leq f_1$) then copia $A[k_1;f_1]$ alla fine di X
+>11. else copia $A[k_2;f_2]$ alla fine di X
+>12. copia X in $A[i_1;f_2]$
+
+
+Pseudo-codice MergeSort
+>MergeSort(A,i,f)
+> 1. if(i<f) then
+> 2. 	 m=$\lfloor(i+f)/2\rfloor$
+> 3. 	 MergeSort(A,i,m)
+> 4. 	 MergeSort(A,m+1,f)
+> 5. 	 Merge(A,i,m,f) $\implies\:fonde\:A[i;m]\:e\:A[m+1;f]\:output\:A[i;f]$
+
+### Complessità temporale
+
+La complessità termporale del MergeSort è descritto dalla seguente relazione di ricorrenza:
+$$T(n)=2T(n/2)+O(n)$$
+Usando il Teorema Master abbiamo che:
+$$T(n)=O(nlog(n))$$
+ 
+## SelectionSort 
+
+Spiegazione qui -> [[Lezione 5 - Capitolo 4#Selection Sort|SelectionSort]]
+### Pseudo-codice
+
+>SelectionSort(A)
+>1. for k=0 to n-2 do
+>2.     m=k+1
+>3.     for j=k+2 to n do
+>4.          if($A[j]\lt A[m]$) then m=j
+>5.     scambia $A[m]\:con\:A[k+1]$
+### Complessità temporale
+
+Upper Bound:
+$$T(n)\leq 5n^2O(1)=\Theta(n^2)\implies T(n)=O(n^2)$$
+Lower Bound:
+$$T(n)\geq\sum_{k=0}^{n-2}(n-k-1)=\sum_{k=1}^{n-1}(k)=n(n-1)/2=\Theta(n^2)\implies T(n)=\Omega(n^2)$$
+Upper Bound $O(n^2)$ e Lower Bound $\Omega(n^2)$ allora $T(n)=\Theta(n^2)$
+
+## QuickSort
+
+Spiegazione qui -> [[Lezione 5 - Capitolo 4#QuickSort|QuickSort]]
+### Pseudo-codice
+
+Pseudo-codice Partition
+>Partition(A,i,f)
+>1. $x=A[i]$
+>2. inf=i
+>3. sup=f+1
+>4. while(true) do
+>5. 	 do (inf=inf+1) while ($inf\leq f\:e\:A[inf]\leq x$)
+>6. 	 do (sup=sup-1) while ($A[sup\gt x]$)
+>7. 	 if ($inf\lt sup$) then scambia $A[inf]\:e\:A[sup]$
+>8. 	 else **break**
+>9. scambia $A[i]\:e\:A[sup]$
+>10. return sup
+
+Pseudo-codice QuickSort
+>QuickSort(A,i,f)
+>1. if($i\lt f$) then
+>2. 	 m=Partition(A,i,f)
+>3. 	 QuickSort(A,i,m-1)
+>4. 	 QuickSort(A,m+1,f)
+
+
+### Complessità temporale
+
+Upper Bound:
+$$T(n)=T(n-1)+T(0)+O(n)=T(n-1)+O(1)+O(n)=T(n-1)+O(n)\implies T(n)=O(n^2)$$
+Lower Bound:
+$$T(n)=\Omega(nlog(n))$$
+
+
 # Algoritmi non basati su confronto
 
 ## IntegerSort
@@ -153,3 +246,7 @@ $$T(n)\leq\sum_{i=1}^k(1+Y[i])=\sum_{i=1}^k1+\sum_{i=1}^k(Y[i])=k+n\implies O(n+
 $O(n+k)$
 Tempo linearea se $k=O(n)$
 
+
+
+# Codici degli algoritmi in python
+...
