@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+                "file": "Appunti CPS/Lezione 5.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md"
+                "file": "Appunti CPS/Lezione 5.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+                "file": "Appunti CPS/Lezione 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+                "file": "Appunti CPS/Lezione 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,12 +160,12 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "195b83bf8ca7a0a9",
+  "active": "738058aea5e29512",
   "lastOpenFiles": [
-    "Appunti FI/Esercizi/Esercizio RegEx.md",
-    "Appunti FI/Esercizi/Esercizi unità 3-4.md",
-    "Appunti FI/Esercizi/Esercizi Grammatiche.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+    "Appunti FI/Esercizi/Esercizio RegEx.md",
+    "Appunti FI/Esercizi/Esercizi Grammatiche.md",
     "Appunti CPS/Lezione 5.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
