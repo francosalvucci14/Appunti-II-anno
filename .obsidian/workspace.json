@@ -108,9 +108,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
-              }
+              "state": {}
             }
           },
           {
@@ -127,7 +125,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,14 +141,13 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -172,13 +168,13 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "738058aea5e29512",
+  "active": "90fe890bef2bffd6",
   "lastOpenFiles": [
+    "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/Lezione 5 - Capitolo 4.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Lezione 4 - Capitolo 2.md",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti LMP/Introduzione.md",
     "Appunti BSD/Lezione 3.md",
     "Appunti CPS/Lezione 5.md",
