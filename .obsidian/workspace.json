@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
+                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti FI/Esercizi/Esercizi unità 3-4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,17 +160,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
-    "Appunti CPS/Lezione 5.md",
+    "Appunti FI/Esercizi/Esercizio RegEx.md",
+    "Appunti FI/Esercizi/Esercizi unità 3-4.md",
+    "Appunti FI/Esercizi/Esercizi Grammatiche.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti CPS/Lezione 5.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
     "Appunti ASD/Esercizi/Esercizi Pseudo-codice e complessità temporale.md",
-    "Appunti BSD/Lezione 4 - Vincoli d'integrità.md",
-    "Appunti FI/Esercizi/Esercizi_ASF_2_nov_2022.pdf",
-    "Appunti FI/Esercizi/Esercizi ASF.md",
-    "Appunti BSD/Lezione 3.md"
+    "Appunti BSD/Lezione 4 - Vincoli d'integrità.md"
   ]
 }
