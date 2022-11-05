@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "738058aea5e29512",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti BSD/Lezione 4 - Vincoli d'integrità.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "9851793d0f156fe7",
             "type": "leaf",
             "state": {
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -120,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti BSD/Lezione 4 - Vincoli d'integrità.md"
+              }
             }
           },
           {
@@ -137,6 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti BSD/Lezione 4 - Vincoli d'integrità.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,6 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti BSD/Lezione 4 - Vincoli d'integrità.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,6 +199,8 @@
   },
   "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
+    "Appunti BSD/Indice delle lezioni BSD.md",
+    "Appunti BSD/Lezione 4 - Vincoli d'integrità.md",
     "Appunti BSD/Lezione 3.md",
     "Appunti BSD/Lezione 2.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
@@ -189,8 +208,6 @@
     "Appunti LMP/Lezione 6.md",
     "Appunti LMP/Lezione 7.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti FI/Lezione 6 - ASF.md",
-    "Appunti ASD/Lezione 6 - HeapSort.md"
+    "Appunti ASD/Algoritmi/Algoritmi.md"
   ]
 }
