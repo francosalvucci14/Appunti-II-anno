@@ -153,29 +153,4 @@ $$T(n)\leq\sum_{i=1}^k(1+Y[i])=\sum_{i=1}^k1+\sum_{i=1}^k(Y[i])=k+n\implies O(n+
 $O(n+k)$
 Tempo linearea se $k=O(n)$
 
-```latex
-\begin{algorithm}
-\caption{Calculate $y = x^n$}
-\begin{algorithmic} 
-\REQUIRE $n \geq 0 \vee x \neq 0$
-\ENSURE $y = x^n$
-\STATE $y \leftarrow 1$
-\IF{$n < 0$}
-\STATE $X \leftarrow 1 / x$
-\STATE $N \leftarrow -n$
-\ELSE
-\STATE $X \leftarrow x$
-\STATE $N \leftarrow n$
-\ENDIF
-\WHILE{$N \neq 0$}
-\IF{$N$ is even}
-\STATE $X \leftarrow X \times X$
-\STATE $N \leftarrow N / 2$
-\ELSE[$N$ is odd]
-\STATE $y \leftarrow y \times X$
-\STATE $N \leftarrow N - 1$
-\ENDIF
-\ENDWHILE
-\end{algorithmic}
-\end{algorithm}
-```
+
