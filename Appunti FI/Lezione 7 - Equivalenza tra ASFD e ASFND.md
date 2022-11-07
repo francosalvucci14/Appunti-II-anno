@@ -38,3 +38,23 @@ $$\overline\delta'([q_0],x)=[q_{j_1},...,q_{j_h}]\iff\overline\delta_N(q_0,x)=\l
 
 Se è vero questo, significa che o ogni stringa $x$ è accettata sia da $\mathcal A$ e da $\mathcal A_N$, o non è accettata da nessuno dei due
 
+_Dim_
+
+Dimostrazione per induzione su $|x|$
+
+Passo base: $(|x|=0)$ In questo caso vale necessariamente che $x=\varepsilon$, per cui abbiamo che $\overline\delta_N(q_0,\varepsilon)=\lbrace q_0\rbrace$ e $\overline\delta'([q_0],\varepsilon)=[q_0]$
+
+Passo induttivo $(|x|\gt0)$ Supponiamo che la proprietà sia vera per $|x|=m$ e dimostriamo che essa continua a valere per $|x|=m+1$
+
+Poniamo $x=x'a$, con $|x'|=m$. Per $\overline\delta_N$ abbiamo:
+$$\overline\delta(q_0,x'a)=\bigcup_{p\in\overline\delta_N(q_0,x')}\delta_n(p,a)$$
+Supponendo che $\overline\delta_N(q_0,x')=\lbrace q_{i_1},...,q_{i_k}\rbrace$ e che $\delta_N(q_{i_1},a)\cup...\cup\delta_N(q_{i_k},a)=\lbrace q_{j_1},...,q_{j_h}\rbrace$ otteniamo:
+$$\overline\delta_N(q_0,x'a)=\lbrace q_{j_1},...,q_{j_h}\rbrace$$
+
+Per $\overline\delta$ vale:
+$$\overline\delta'(q_0,x'a)=\delta'(\overline\delta'([q_0],x'),a)$$
+Essendo $|x'|=m$ possiamo sfruttare l'ipotesi induttiva, e quindi:
+$$\delta'(\overline\delta'([q_0],x'),a)=\delta'([q_{i_1},...,q_{i_k}],a)$$
+che per costruzione vale proprio $[ q_{j_1},...,q_{j_h}]$ 
+
+La dimostrazione è completa osservando che $\overline\delta'([q_0],x)\in F'$ esattamente quando $\delta_N(q_0,x)$ contiene uno stato di $Q$ che è in $F$
