@@ -6,4 +6,5 @@
 - [[Lezione 4 - Ancora sulle grammatiche]]
 - [[Lezione 5 - Automi]]
 - [[Lezione 6 - ASF]]
+- [[Lezione 7 - Equivalenza tra ASFD e ASFND]]
 - 
