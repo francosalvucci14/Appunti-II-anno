@@ -5,8 +5,8 @@
 	- [[Algoritmi#MergeSort|MergeSort]]
 	- [[Algoritmi#BubbleSort|BubbleSort]]
 	- [[Algoritmi#Insertion Sort|InsertionSort]]
-	- [[Lezione 5 - Capitolo 4#Selection Sort|SelectionSort]]
-	- [[Lezione 5 - Capitolo 4#QuickSort|QuickSort]]
+	- [[Algoritmi#SelectionSort|SelectionSort]]
+	- [[Algoritmi#QuickSort|QuickSort]]
 	- [[Algoritmi#HeapSort|HeapSort]]
 
 - Algoritmi non basati su confronto
