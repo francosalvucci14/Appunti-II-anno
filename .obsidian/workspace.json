@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "038ea5a2c3ddf737",
+            "id": "736d61dc6bef2741",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Lezione 5 - Capitolo 4.md",
+                "file": "Appunti ASD/Lezione 7 - Capitolo 4.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "736d61dc6bef2741",
+            "id": "6164cd2c3f49598e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti ASD/Lezione 8 - Capitolo 4.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
+                "file": "Appunti ASD/Lezione 8 - Capitolo 4.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti ASD/Lezione 8 - Capitolo 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti ASD/Lezione 8 - Capitolo 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,17 +173,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "736d61dc6bef2741",
+  "active": "6164cd2c3f49598e",
   "lastOpenFiles": [
-    "Appunti ASD/Lezione 6 - HeapSort.md",
+    "Appunti ASD/Lezione 7 - Capitolo 4.md",
+    "Appunti ASD/Lezione 8 - Capitolo 4.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti ASD/Lezione 5 - Capitolo 4.md",
-    "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti FI/Indice delle lezioni.md",
     "Appunti ASD/Indice degli appunti.md",
     "Appunti BSD/Indice delle lezioni BSD.md",
-    "Appunti FI/Lezione 6 - ASF.md",
-    "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md"
+    "Appunti FI/Lezione 6 - ASF.md"
   ]
 }
