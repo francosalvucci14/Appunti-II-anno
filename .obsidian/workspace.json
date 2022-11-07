@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -173,7 +172,7 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "038ea5a2c3ddf737",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
     "Appunti ASD/Lezione 5 - Capitolo 4.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",

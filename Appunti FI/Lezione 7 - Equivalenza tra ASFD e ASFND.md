@@ -58,3 +58,4 @@ $$\delta'(\overline\delta'([q_0],x'),a)=\delta'([q_{i_1},...,q_{i_k}],a)$$
 che per costruzione vale proprio $[ q_{j_1},...,q_{j_h}]$ 
 
 La dimostrazione è completa osservando che $\overline\delta'([q_0],x)\in F'$ esattamente quando $\delta_N(q_0,x)$ contiene uno stato di $Q$ che è in $F$
+
