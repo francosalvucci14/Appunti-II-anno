@@ -55,3 +55,18 @@ Partiamo dalla cifra meno significativa verso quella più significativa:
 b=10
 ![[appunti asd/immagini/Pasted image 20221107163705.png|center]]
 
+## Correttezza
+- Se x e y hanno una diversa t-esima cifra, la t-esima passata di BucketSort li ordina
+- Se x e y hanno la stessa t-esima cifra, la prorpeità di stabilità del BucketSort li mantiene ordinati correttamente
+Quindi possiamo dire che, dopo la t-esima passata di BucketSort, i numeri sono correttamente ordinati rispetto alle t cifre meno significative
+
+## Tempo di esecuzione
+
+- $O(log_bk)$ passate di BucketSort
+- Ciascuna passata richiede tempo $O(n+b)$
+Quindi:
+$$O((n+b)log_bk)$$
+Se $b=\Theta(n)$, si ha $O(nlog_nk)=O[n\frac{log(k)}{log(n)}]$
+
+Tempo lineare se $k=O(n^c)$, c costante
+

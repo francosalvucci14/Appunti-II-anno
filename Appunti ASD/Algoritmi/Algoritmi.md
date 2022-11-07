@@ -11,7 +11,7 @@
 
 - Algoritmi non basati su confronto
 	- [[Algoritmi#IntegerSort|IntegerSort]]
-	- BucketSort
+	- [[Algoritmi#BucketSort|BucketSort]]
 	- RadixSort
 
 Per una spiegazione più dettagliata di qeusti algoritmi si rimanda a questo link [Algoritmi](http://people.disim.univaq.it/guido.proietti/lezioni_algo2021.html)
@@ -250,6 +250,44 @@ Tempo linearea se $k=O(n)$
 
 
 
+
+## BucketSort
+
+Spiegazione qui -> [[Lezione 8 - Capitolo 4#BucketSort|BucketSort]]
+
+### Pseudo-codice
+
+Pseudo codice BucketSort
+
+>BucketSort(X,k)
+>1. Sia Y un array di dimensione k
+>2. for i = 1 to k do $Y[i]$=lista vuota
+>3. for i = 1 to n do
+>	1. if ($chiave(X[i])\not\in[1,k]$) then errore
+>	2. else appendi il record $X[i]$ alla lista $Y[chiave(X[i])]$
+>3. for i = 1 to k do
+>	1. copia ripetutamente in X gli elementi della lista $Y[i]$
+
+### Complessità temporale
+
+Come l'IntegerSort, quindi $O(n+k)$
+
+## RadixSort
+
+Spiegazione qui -> [[Lezione 8 - Capitolo 4#RadixSort|RadixSort]]
+### Pseudo-codice
+
+Pseudo codice RadixSort
+>RadixSort(A)
+
+### Complessità
+- $O(log_bk)$ passate di BucketSort
+- Ciascuna passata richiede tempo $O(n+b)$
+Quindi:
+$$O((n+b)log_bk)$$
+Se $b=\Theta(n)$, si ha $O(nlog_nk)=O[n\frac{log(k)}{log(n)}]$
+
+Tempo lineare se $k=O(n^c)$, c costante
 
 # Codici degli algoritmi in python
 ## BubbleSort
