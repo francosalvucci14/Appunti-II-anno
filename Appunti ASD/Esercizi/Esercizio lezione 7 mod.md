@@ -1,1 +1,3 @@
 Dato un vettore X di n interi in $[1,k]$, costruire in tempo $o(n^2)$ una struttura dati (**oracolo**) che sappia rispondere a domande (**query**) in tempo $O(log(n))$ del tipo : "quanti interi in X cadono nell'intervallo $[a,b]$?", per ogni a e b
+
+per la risposta alla query usiamo il binarysearch
