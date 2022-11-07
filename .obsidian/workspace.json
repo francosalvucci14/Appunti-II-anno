@@ -30,8 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "736d61dc6bef2741",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md"
               }
             }
           },
@@ -127,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,17 +185,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "736d61dc6bef2741",
   "lastOpenFiles": [
-    "Appunti ASD/Lezione 7 - Capitolo 4.md",
+    "Appunti FI/Lezione 6 - ASF.md",
+    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/Lezione 5 - Capitolo 4.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti ASD/Lezione 4 - Capitolo 2.md",
     "Appunti LMP/Introduzione.md",
-    "Appunti BSD/Lezione 3.md",
-    "Appunti CPS/Lezione 5.md",
-    "Appunti FI/Esercizi/Esercizi unità 3-4.md"
+    "Appunti BSD/Lezione 3.md"
   ]
 }
