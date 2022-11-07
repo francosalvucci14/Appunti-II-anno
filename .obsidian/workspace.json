@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "039a12155964cc8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6164cd2c3f49598e",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md"
+                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md"
               }
             }
           },
@@ -127,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,14 +157,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -172,17 +185,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "736d61dc6bef2741",
+  "active": "039a12155964cc8d",
   "lastOpenFiles": [
-    "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+    "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
     "Appunti ASD/Lezione 8 - Capitolo 4.md",
+    "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti ASD/Lezione 5 - Capitolo 4.md",
     "Appunti FI/Indice delle lezioni.md",
-    "Appunti ASD/Indice degli appunti.md",
-    "Appunti BSD/Indice delle lezioni BSD.md"
+    "Appunti ASD/Indice degli appunti.md"
   ]
 }
