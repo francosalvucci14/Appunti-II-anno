@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "738058aea5e29512",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "038ea5a2c3ddf737",
             "type": "leaf",
             "state": {
@@ -44,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -187,15 +175,15 @@
   },
   "active": "736d61dc6bef2741",
   "lastOpenFiles": [
-    "Appunti FI/Lezione 6 - ASF.md",
-    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+    "Appunti ASD/Lezione 5 - Capitolo 4.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+    "Appunti ASD/Indice degli appunti.md",
+    "Appunti BSD/Indice delle lezioni BSD.md",
+    "Appunti FI/Lezione 6 - ASF.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
-    "Appunti ASD/Lezione 5 - Capitolo 4.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
-    "Appunti ASD/Lezione 4 - Capitolo 2.md",
-    "Appunti LMP/Introduzione.md",
-    "Appunti BSD/Lezione 3.md"
+    "Appunti ASD/Lezione 4 - Capitolo 2.md"
   ]
 }
