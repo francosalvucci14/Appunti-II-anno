@@ -29,6 +29,19 @@ Tempo $O(n+k)$ come per IntegerSort
 fino a...
 ![[appunti asd/immagini/Pasted image 20221107161857.png|center|500]]
 
+## Pseudo-codice
+
+![[appunti asd/immagini/Pasted image 20221107162008.png|center|500]]
+
+## Stabilità
+
+>**Def**
+>Un algoritmo è **stabile** se preserva l'ordine iniziale tra elementi con la stessa chiave
+
+Il BucketSort è stabile?
+
+> Il BucketSort è stabile se si appendono agli elementi di X in coda alla opportuna lista $Y[i]$
+
 
 
 
