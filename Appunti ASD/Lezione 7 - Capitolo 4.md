@@ -178,3 +178,5 @@ Dato un vettore X di n interi in $[1,k]$, costruire in tempo $O(n+k)$ una strutt
 ![[appunti asd/immagini/Pasted image 20221103104448.png|center|500]]
 
 Soluzione qui -> [[Esercizio lezione 7 (Oracolo e query)]]
+
+Per BucketSort e RadixSort vedi [[Lezione 8 - Capitolo 4]]

@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Lezione 8 - Capitolo 4.md"
+                "file": "Appunti ASD/Lezione 7 - Capitolo 4.md"
               }
             }
           },
@@ -128,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Lezione 8 - Capitolo 4.md",
+                "file": "Appunti ASD/Lezione 7 - Capitolo 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Lezione 8 - Capitolo 4.md",
+                "file": "Appunti ASD/Lezione 7 - Capitolo 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,10 +172,10 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "acd002c7f705cc3c",
+  "active": "736d61dc6bef2741",
   "lastOpenFiles": [
-    "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Lezione 8 - Capitolo 4.md",
+    "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",

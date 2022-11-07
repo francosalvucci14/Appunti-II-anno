@@ -43,7 +43,15 @@ Il BucketSort è stabile?
 > Il BucketSort è stabile se si appendono agli elementi di X in coda alla opportuna lista $Y[i]$
 
 
+# RadixSort
 
+Ordina n interi con valori in $[1,k]$
+Rappresentiamo gli elementi in **base b**, ed eseguiamo una serie di BucketSort
+Partiamo dalla cifra meno significativa verso quella più significativa:
+- Ordiniamo per l'i-esima cifra con una passata di BucketSort(stabile)
+- i-esima cifra è la chiave, il numero info satellite
 
-
+**Esempio**
+b=10
+![[appunti asd/immagini/Pasted image 20221107163705.png|center]]
 
