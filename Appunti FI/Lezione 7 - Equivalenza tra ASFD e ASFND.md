@@ -25,7 +25,16 @@ con $k\gt0,h\geq0$
 
 Inoltre, si assume che per ogni $a\in\Sigma$ sia $\delta'([],a)=[]$
 
+**Esempio di transizione da ASFND a ASFD**
+
+![[appunti fi/immagini/Pasted image 20221107150359.png|center|600]]
+
 Come mostrare che $\mathcal A_N$ e $\mathcal A$ sono equivalenti?
 
-è necessario mostrare che, per ogni $x\in\Sigma^\star$, se $x$ è accettata da $\mathcal A_N$ allora viene accettata anche da $A$. Vale anche il viceversa
+è necessario mostrare che, per ogni $x\in\Sigma^\star$, se $x$ è accettata da $\mathcal A_N$ allora viene accettata anche da $\mathcal A$. Vale anche il viceversa
+
+Dimostrazione "più forte", che ad ogni computazione effettuata dall'automa $\mathcal A$ ne corrisponde una equivalente dell'automa $\mathcal A_N$ e viceversa. Cioè
+$$\overline\delta'([q_0],x)=[q_{j_1},...,q_{j_h}]\iff\overline\delta_N(q_0,x)=\lbrace q_{j_1},...,q_{j_h}\rbrace$$
+
+Se è vero questo, significa che o ogni stringa $x$ è accettata sia da $\mathcal A$ e da $\mathcal A_N$, o non è accettata da nessuno dei due
 
