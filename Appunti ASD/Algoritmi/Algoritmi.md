@@ -85,7 +85,7 @@ Pseudo-codice HeapSort:
 >1. Heapify(A)
 >2. $Heapsize[A]=n$
 >3. for i = n down to 2 do
->4.	   scambia $A[i]$ e $A[j]$
+>4.	   scambia $A[1]$ e $A[i]$
 >5.    $Heapsize[A]=Heapsize[A]-1$
 >6.    fixHeap(1,A)
 
@@ -365,6 +365,23 @@ print(QuickSort(a,0,6))
 
 ## SelectionSort
 
+```python
+def SelectionSort(a):
+    n=len(a)
+    for k in range(n-2):
+        m=k+1
+        for j in range(k+2,n):
+            if a[j]<a[m]:
+                m=j
+        a[m],a[k+1]=a[k+1],a[m]
+    return a
+a = [1,10,4,3,3,5,20]
+print(SelectionSort(a))
+```
+
+
+## HeapSort
+da completare
 ```python
 
 ```
