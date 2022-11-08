@@ -108,7 +108,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md"
+              }
             }
           },
           {
@@ -125,6 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,13 +144,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -168,8 +172,10 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "90fe890bef2bffd6",
+  "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
+    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
+    "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
@@ -177,8 +183,6 @@
     "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/Lezione 8 - Capitolo 4.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
-    "Appunti ASD/Lezione 6 - HeapSort.md",
-    "Appunti ASD/Lezione 5 - Capitolo 4.md",
-    "Appunti FI/Indice delle lezioni.md"
+    "Appunti ASD/Lezione 6 - HeapSort.md"
   ]
 }

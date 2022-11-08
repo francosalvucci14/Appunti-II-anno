@@ -80,3 +80,29 @@ Definiamo una procedura che a partire da $\mathcal G$ produca un ASFND $\mathcal
 Per ogni coppia $a\in V_T$, $B\in V_N$, si ha che
 $$\delta_N(q_B,a)=\begin{cases}\lbrace q_C|B\to aC\in P\rbrace\cup\lbrace q_F\rbrace & se\:B\to a\in P\\\lbrace q_C|B\to aC\in P\rbrace & altrimenti\end{cases}$$
 L'automa, in generale, è non deterministico
+
+Per dimostrare l'equivalenza tra $\mathcal G\:e\:\mathcal A_N$, dobbiamo mostrare che per ogni $x\in\Sigma^\star$ si ha che:
+$$S\xRightarrow[\mathcal G]{\star}x\:\text{se e solo se}\:\overline\delta_N(q_S,x)\cap F\neq\emptyset$$
+Questo è chiaramente vero se $x=\varepsilon$, in quanto $\overline\delta_N(q_S,\varepsilon)=q_S\in F$, se e solo se $S\to\varepsilon\in P$, per costruzione
+
+Nel caso $x\in\Sigma^+$ mostriamo, per induzione sulla lunghezza di x, la proprietà più generale
+$$S\xRightarrow{\star}xZ\:\text{se e solo se}\:q_Z\in\overline\delta_N(q_S,x)$$
+
+Iniziamo da 
+$$S\xRightarrow{\star}xZ\implies q_Z\in\overline\delta_N(q_S,x)$$
+**Passo base**: $|x|=1$, per cui $x=a$, con $a\in\Sigma$. Allora abbiamo che $S\xRightarrow{}aZ$ se e solo se $S\to aZ\in P$ e quindi se e solo se, per costruzione dell'automa, $q_Z\in\delta_N(q_S,a)$
+**Passo induttivo**: $|x|\gt1$, per cui $x=ya$, con $|y|=n\geq1\;e\;a\in\Sigma$. Per l'ipotesi induttiva il risultato si assume valido per y, quindi $$S\xRightarrow{\star}yZ\iff q_Z\in\overline\delta_N(q_S,y)$$ Osserviamo che $S\xRightarrow{\star}xZ'$ se e solo se esiste $Z\in V_N$ tale che $S\xRightarrow{\star}yZ\xRightarrow{}yaZ'=xZ'$. Ne deriva che
+-  $q_Z\in\overline\delta_N(q_S,y)$ per induzione
+- $Z\to aZ'\in P$, e quindi $q_{Z'}\in\delta_N(a,Z)$ per costruzione
+
+Quindi, $q_{Z'}\in\overline\delta_N(q_S,ya)=\overline\delta_N(q_S,x)$ 
+
+Abbiamo verificato che $S\xRightarrow{\star}xZ$ se e solo se $q_Z\in\overline\delta_N(q_S,x)$
+Osserviamo ora che $S\xRightarrow{}x$ se e solo se esistono $Z\in V_N,y\in\Sigma^\star$ e $Z\to a\in P:x=ya\:e\:S\xRightarrow{\star}yZ\xRightarrow{\star}ya=x$ 
+
+Da quanto visto sopra, cio è vero se e solo se $q_Z\in\overline\delta_N(q_S,y)$ e $q_F\in\delta_N(q_Z,a)$, e quindi se e solo se $q_F\in\overline\delta_N(q_S,ya)=\overline\delta_N(q_S,x)$
+
+
+
+
+### Da $\mathcal A$ a $\mathcal G$
