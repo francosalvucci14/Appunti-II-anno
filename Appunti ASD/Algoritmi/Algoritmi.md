@@ -12,7 +12,7 @@
 - Algoritmi non basati su confronto
 	- [[Algoritmi#IntegerSort|IntegerSort]]
 	- [[Algoritmi#BucketSort|BucketSort]]
-	- RadixSort
+	- [[Algoritmi#RadixSort|RadixSort]]
 
 Per una spiegazione più dettagliata di qeusti algoritmi si rimanda a questo link [Algoritmi](http://people.disim.univaq.it/guido.proietti/lezioni_algo2021.html)
 
