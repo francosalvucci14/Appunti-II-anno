@@ -102,6 +102,7 @@ Osserviamo ora che $S\xRightarrow{}x$ se e solo se esistono $Z\in V_N,y\in\Sigma
 
 Da quanto visto sopra, cio è vero se e solo se $q_Z\in\overline\delta_N(q_S,y)$ e $q_F\in\delta_N(q_Z,a)$, e quindi se e solo se $q_F\in\overline\delta_N(q_S,ya)=\overline\delta_N(q_S,x)$
 
+In conclusione, per ogni linguaggio regolare (generato da una gframmatica di tipo 3), esiste un ASFND che lo accetta (e quindi anche un ASFD che lo decide)
 
 
 
