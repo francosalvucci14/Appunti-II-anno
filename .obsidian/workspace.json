@@ -13,25 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6164cd2c3f49598e",
+            "id": "f9f2993585209ec9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Lezione 8 - Capitolo 4.md",
+                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
+                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md"
               }
             }
           },
@@ -127,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,14 +173,14 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "195b83bf8ca7a0a9",
+  "active": "f9f2993585209ec9",
   "lastOpenFiles": [
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+    "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
+    "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti FI/Esercizi/Esercizi ASF.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
-    "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
     "Appunti ASD/Lezione 8 - Capitolo 4.md",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti ASD/Lezione 5 - Capitolo 4.md",
