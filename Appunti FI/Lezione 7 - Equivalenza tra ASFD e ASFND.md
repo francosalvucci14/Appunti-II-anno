@@ -77,3 +77,6 @@ Definiamo una procedura che a partire da $\mathcal G$ produca un ASFND $\mathcal
 - $Q=\lbrace q_I|I\in V_N\rbrace\cup\lbrace q_F\rbrace$
 - $q_0=q_S$
 - $$F=\begin{cases}\lbrace q_0,q_F\rbrace & se\:S\to\varepsilon\in P\\\lbrace q_F\rbrace & altrimenti\end{cases}$$
+Per ogni coppia $a\in V_T$, $B\in V_N$, si ha che
+$$\delta_N(q_B,a)=\begin{cases}\lbrace q_C|B\to aC\in P\rbrace\cup\lbrace q_F\rbrace & se\:B\to a\in P\\\lbrace q_C|B\to aC\in P\rbrace & altrimenti\end{cases}$$
+L'automa, in generale, è non deterministico
