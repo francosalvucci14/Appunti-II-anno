@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,9 +108,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md"
-              }
+              "state": {}
             }
           },
           {
@@ -128,7 +125,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +141,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +168,7 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "f9f2993585209ec9",
+  "active": "90fe890bef2bffd6",
   "lastOpenFiles": [
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",

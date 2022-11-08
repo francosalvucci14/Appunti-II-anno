@@ -59,7 +59,7 @@ che per costruzione vale proprio $[ q_{j_1},...,q_{j_h}]$
 
 La dimostrazione è completa osservando che $\overline\delta'([q_0],x)\in F'$ esattamente quando $\delta_N(q_0,x)$ contiene uno stato di $Q$ che è in $F$
 
-# Grammatiche Regolari
+# Equivalenza tra ASF,RG e RE
 
 ## ASF e Grammatiche di tipo 3
 
@@ -67,3 +67,13 @@ Per ogni grammatica regolare $\mathcal G=\langle V_T,V_N,P,S\rangle$, esiste un 
 
 Viceversa, per ogni ASFND $\mathcal A_N$ esiste una grammatica regolare che genera il linguaggio che esso riconosce
 
+Sia $\mathcal G=\langle V_T,V_N,P,S\rangle$ una grammatica di tipo 3 con al più la sola $\varepsilon$-produzione $S\to\varepsilon$
+
+Definiamo una procedura che a partire da $\mathcal G$ produca un ASFND $\mathcal A_N=\langle\Sigma,Q,\delta_N,q_0,F\rangle$ equivalente (che accetta tutte e sole le stringhe prodotte da $\mathcal G$)
+
+### Da $\mathcal G$ a $\mathcal A_N$
+
+- $\Sigma=V_T$
+- $Q=\lbrace q_I|I\in V_N\rbrace\cup\lbrace q_F\rbrace$
+- $q_0=q_S$
+- $$F=\begin{cases}\lbrace q_0,q_F\rbrace & se\:S\to\varepsilon\in P\\\lbrace q_F\rbrace & altrimenti\end{cases}$$
