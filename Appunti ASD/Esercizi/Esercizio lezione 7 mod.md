@@ -96,3 +96,4 @@ b = 15'''
 b = n**100'''
 print(CreaOracolo(x,a,b))
 ```
+
