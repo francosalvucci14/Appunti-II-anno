@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "039a12155964cc8d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md"
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md"
               }
             }
           },
@@ -140,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,17 +172,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "039a12155964cc8d",
+  "active": "736d61dc6bef2741",
   "lastOpenFiles": [
+    "Appunti FI/Esercizi/Esercizi ASF.md",
+    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
     "Appunti ASD/Lezione 8 - Capitolo 4.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
-    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti ASD/Lezione 5 - Capitolo 4.md",
-    "Appunti FI/Indice delle lezioni.md",
-    "Appunti ASD/Indice degli appunti.md"
+    "Appunti FI/Indice delle lezioni.md"
   ]
 }

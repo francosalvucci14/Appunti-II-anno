@@ -12,4 +12,6 @@ Stringhe di esempio:
 Altri esempi nel file Esercizi ASF qui -> [[Esercizi_ASF_2_nov_2022.pdf]]
 
 
+# Esercizio 2
+
 
