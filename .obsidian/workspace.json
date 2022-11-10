@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md"
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,11 +172,11 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "736d61dc6bef2741",
   "lastOpenFiles": [
+    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
     "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
-    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti FI/Esercizi/Esercizi ASF.md",
