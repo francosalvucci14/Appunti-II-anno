@@ -157,10 +157,10 @@ Il linguaggio rappresentato da $a(a+ba)^\star a$ è generato dalla grammatica
 - $B\to aB|bS|a$
 
 ed è riconosciuto dall'ASFND
-![[Pasted image 20221110143259.png|center|500]]
+![[appunti fi/immagini/Pasted image 20221110143259.png|center|500]]
 
 A partire dall' ASFND è possibile derivare un ASFD equivalente
-![[Pasted image 20221110143449.png|center|500]]
+![[appunti fi/immagini/Pasted image 20221110143449.png|center|500]]
 
 E da questo una grammatica di tipo 3 equivalente a quella iniziale, dove $S=A_0$
 - $A_0\to aA_1$
