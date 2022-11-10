@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -122,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md"
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md"
               }
             }
           },
@@ -140,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
+                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,15 +188,15 @@
   },
   "active": "ed3a3a21eaf13668",
   "lastOpenFiles": [
-    "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
-    "Appunti ASD/Esercizi/Esercizio 1.md",
-    "Appunti ASD/Esercizi/Esercizio 2.md",
-    "Appunti ASD/Esercizi/Esercitazioni.md",
+    "Appunti LMP/Lezione 6.md",
+    "Appunti LMP/Lezione 7.md",
+    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+    "Appunti CPS/Lezione 5.md",
+    "Appunti BSD/Lezione 4 - Vincoli d'integrità.md",
+    "Appunti BSD/Lezione 3.md",
     "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
-    "Appunti ASD/Lezione 3 - Capitolo 2.md",
-    "Appunti ASD/Lezione 2 - Capitolo 2.md",
-    "Appunti ASD/Lezione 1 - Capitolo 1.md",
-    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md"
+    "Appunti ASD/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+    "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti ASD/Esercizi/Indice degli esercizi ASD.md"
   ]
 }

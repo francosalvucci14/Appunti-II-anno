@@ -81,6 +81,7 @@ Per ogni coppia $a\in V_T$, $B\in V_N$, si ha che
 $$\delta_N(q_B,a)=\begin{cases}\lbrace q_C|B\to aC\in P\rbrace\cup\lbrace q_F\rbrace & se\:B\to a\in P\\\lbrace q_C|B\to aC\in P\rbrace & altrimenti\end{cases}$$
 L'automa, in generale, è non deterministico
 
+#### Equivalenza di $\mathcal G$ e $\mathcal A_N$
 Per dimostrare l'equivalenza tra $\mathcal G\:e\:\mathcal A_N$, dobbiamo mostrare che per ogni $x\in\Sigma^\star$ si ha che:
 $$S\xRightarrow[\mathcal G]{\star}x\:\text{se e solo se}\:\overline\delta_N(q_S,x)\cap F\neq\emptyset$$
 Questo è chiaramente vero se $x=\varepsilon$, in quanto $\overline\delta_N(q_S,\varepsilon)=q_S\in F$, se e solo se $S\to\varepsilon\in P$, per costruzione
@@ -104,6 +105,65 @@ Da quanto visto sopra, cio è vero se e solo se $q_Z\in\overline\delta_N(q_S,y)$
 
 In conclusione, per ogni linguaggio regolare (generato da una gframmatica di tipo 3), esiste un ASFND che lo accetta (e quindi anche un ASFD che lo decide)
 
-
+$\square$
 
 ### Da $\mathcal A$ a $\mathcal G$
+
+Sia $\mathcal A=\langle\Sigma,Q,\delta_N,q_0,F\rangle$ un ASFD
+
+Definiamo una procedura che a partire da $\mathcal A$ produca una grammatica di tipo 3 $\mathcal G=\langle V_T,V_N,P,S\rangle$ equivalente (che genera tutte e sole le stringhe accettate da $\mathcal A$)
+
+Se $q_0\not\in F$:
+- $V_T=\Sigma$
+- $V_N=\lbrace A_i|\forall q_i\in Q\rbrace$
+- $S=A_0$
+
+Per ogni regola di transizione $\delta(q_i,a)=q_j$ esiste $A_i\to aA_j\in P$, e se $q_j\in F$ esiste anche $A_i\to a\in P$
+
+Se $q_0\in F$:
+- $V_T=\Sigma$
+- $V_N=\lbrace A_i|\forall q_i\in Q\rbrace$
+- $S=A_0'$
+
+Per ogni regola di transizione $\delta(q_i,a)=q_j$ esiste $A_i\to aA_j\in P$, e se $q_j\in F$ esiste anche $A_i\to a\in P$ (tutte le precedenti). Inoltre, per ogni $\delta(q_0,a)=q_j$ esiste $A_0'\to aA_j\in P$, e se $q_j\in F$ esiste anche $A_0'\to a\in P$ ($A'$ ha tutte le produzioni di $A_0$), infine, esiste $A_0'\to\varepsilon\in P$ 
+
+#### Equivalenza di $\mathcal G$ e $\mathcal A$
+
+Come prima, per dimostrare l'equivalenza tra $\mathcal G$ e $\mathcal A$, dobbiamo mostrare che per ogni $x\in\Sigma^\star$ si ha che :
+$$\overline\delta(q_0,x)\in F\iff S\xRightarrow[\mathcal G]{\star}x$$
+Questo è chiaramente vero se $x=\varepsilon$,in quanto in tal caso necessariamente $q_0\in F$ e, per costruzione, l'assioma di $\mathcal G$ è $A_0'$ e $A_o'\to\varepsilon\in P$
+
+Nel caso $x\in\Sigma^+$ mostriamo, per induzione sulla lunghezza di x. entrambe le proprietà
+$$\begin{cases}A_i\xRightarrow{\star}xA_j&\iff\overline\delta(q_i,x)=q_j\\A_i\xRightarrow{\star}x&\iff\overline\delta(q_i,x)\in F\end{cases}$$
+**Passo base**: $|x|=1$, ad esempio $x=a$. Abbiamo allora che, per costruzione $A_i\to aA_j\in P$ se e solo se $\delta(q_i,a)=q_j$
+E inoltre, per costruzione, $A_i\to a\in P$ se e solo se $q_j\in F$
+
+**Passo induttivo** $|x|=n\gt1$
+Sia $x=ya$, con $|y|=n-1$: per l'ipotesi induttiva, la proprietà è valida per y e quindi
+$$A_i\xRightarrow{\star}yA_k\iff\overline\delta(q_i,y)=q_k$$
+Supponiamo $A_i\xRightarrow{\star}xA_j=yaA_j$: ciò è possibile se e solo se esiste $A_k$ tale che $A_i\xRightarrow{\star}yA_k$ e $A_k\to aA_j\in P$
+
+Per l'ipotesi induttiva, $A_i\xRightarrow{\star}yA_k$ se e solo se $\overline\delta(q_i,y)=q_k$
+Per costruzione, $A_k\to aA_j\in P$ se e solo se $\delta(q_k,a)=q_j$
+Ne consegue che 
+$$A_i\xRightarrow{\star}yA_k\xRightarrow{}yaA_j=xA_j$$
+se e solo se
+$$q_j=\delta(q_k,a)=\delta(\overline\delta(q_i,ya),a)=\overline\delta(q_i,ya)=\overline\delta(q_i,x)$$
+$\square$
+
+**Esempio**
+Il linguaggio rappresentato da $a(a+ba)^\star a$ è generato dalla grammatica
+- $S\to aB$
+- $B\to aB|bS|a$
+
+ed è riconosciuto dall'ASFND
+![[Pasted image 20221110143259.png|center|500]]
+
+A partire dall' ASFND è possibile derivare un ASFD equivalente
+![[Pasted image 20221110143449.png|center|500]]
+
+E da questo una grammatica di tipo 3 equivalente a quella iniziale, dove $S=A_0$
+- $A_0\to aA_1$
+- $A_1\to bA_0|aA_2|a$
+- $A_2\to aA_2|bA_0|a$
+Per costruzione, questa grammatica ha, per ogni coppia $X\in V_N$ e $c\in V_T$, al più un $Y\in V_N$ tale che $X\to xY\in P$
