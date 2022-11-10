@@ -60,7 +60,7 @@ def bin_search( a, k ):
             lx = cx+1
     return -1
 
-def funzione(A,x):
+def algoritmo(A,x):
     n=len(A)
     for i in range(n-1):
         j=bin_search(a,x-A[i])
@@ -74,3 +74,29 @@ print(funzione(a,26))
 
 Corretto? Si
 Complessità? $O(nlog(n))$
+
+Soluzione meglio di nlog(n)
+
+**Idea**: scansionare l'array "parallelamente" da sinistra e da destra
+```python
+def Lineare(A,x):
+    n=len(A)
+    i,j=0,n-1
+    while i<j:
+        if (A[i]+A[j]==x):
+            return i,j
+        if (A[i]+A[j]<x):
+            i+=1
+        else:
+            j-=1
+    return (-1,-1)
+
+a = [2,5,9,14,20,21,25,40]
+print(funzione(a,54))
+```
+
+Complessità? $O(n)$
+Correttezza? Da vedere
+
+**Oss**: Se non esistono due elementi di A che sommano a x l'algoritmo _Lineare_ risponde sicuramente bene, ovvero restituisce (-1,-1)
+

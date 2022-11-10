@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
+                "file": "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercitazioni.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercitazioni.md"
+                "file": "Appunti ASD/Esercizi/Indice degli esercizi ASD.md"
               }
             }
           },
@@ -140,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercitazioni.md",
+                "file": "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercitazioni.md",
+                "file": "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,15 +184,15 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "ed3a3a21eaf13668",
+  "active": "f9f2993585209ec9",
   "lastOpenFiles": [
-    "Appunti ASD/Lezione 3 - Capitolo 2.md",
     "Appunti ASD/Esercizi/Esercitazioni.md",
+    "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
+    "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti ASD/Lezione 3 - Capitolo 2.md",
     "Appunti ASD/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/Lezione 1 - Capitolo 1.md",
-    "Appunti ASD/Esercizi/Esercizio lezione 7 mod.md",
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
     "Appunti FI/Lezione 4 - Ancora sulle grammatiche.md",
     "Appunti FI/Esercizi/Esercizi ASF.md"
