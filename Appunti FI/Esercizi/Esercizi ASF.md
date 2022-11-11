@@ -36,4 +36,4 @@ Altrimenti:
 ![[appunti fi/esercizi/imges/Pasted image 20221111114055.png|center|500]]
 
 
-
+# Esercizio 4
