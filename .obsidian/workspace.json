@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f9f2993585209ec9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "ed3a3a21eaf13668",
             "type": "leaf",
             "state": {
@@ -32,12 +20,12 @@
             }
           },
           {
-            "id": "74c3277fe791b85f",
+            "id": "c130f656c4125433",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Lezione 2 - Capitolo 2.md",
+                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md"
+                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md"
               }
             }
           },
@@ -140,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,12 +173,12 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "ed3a3a21eaf13668",
+  "active": "c130f656c4125433",
   "lastOpenFiles": [
+    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti FI/Esercizi/Esercizi Grammatiche.md",
     "Appunti FI/Esercizi/Esercizi unità 3-4.md",
     "Appunti FI/Esercizi/Esercizi ASF.md",
-    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti LMP/Lezione 6.md",
     "Appunti LMP/Lezione 7.md",
     "Appunti CPS/Lezione 5.md",
