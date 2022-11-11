@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/Esercitazioni/Indice delle esercitazioni.md",
+                "file": "Appunti CPS/Indice delle lezioni CPS.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/Esercitazioni/Indice delle esercitazioni.md"
+                "file": "Appunti CPS/Indice delle lezioni CPS.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/Esercitazioni/Indice delle esercitazioni.md",
+                "file": "Appunti CPS/Indice delle lezioni CPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/Esercitazioni/Indice delle esercitazioni.md",
+                "file": "Appunti CPS/Indice delle lezioni CPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,17 +173,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "2b469da977d2f215",
+  "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
+    "Appunti FI/Indice delle lezioni FI.md",
+    "Appunti SOR/Indice degli appunti SOR.md",
+    "Appunti LMP/Indice delle lezioni LMP.md",
+    "Appunti LMP/Esercitazioni/Indice delle esercitazioni.md",
     "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti FI/Lezione 6 - ASF.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
-    "Appunti ASD/Lezione 8 - Capitolo 4.md",
-    "Appunti ASD/Lezione 7 - Capitolo 4.md",
-    "Appunti FI/Esercizi/Esercizi ASF.md",
-    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
-    "Appunti FI/Esercizi/Esercizi_ASF_2_nov_2022.pdf"
+    "Appunti ASD/Lezione 8 - Capitolo 4.md"
   ]
 }
