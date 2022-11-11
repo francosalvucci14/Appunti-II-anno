@@ -14,4 +14,12 @@ Altri esempi nel file Esercizi ASF qui -> [[Esercizi_ASF_2_nov_2022.pdf]]
 
 # Esercizio 2
 
+Definire un ASFD su $\lbrace0,1\rbrace$ tali che: dopo ogni 0 ci sono necessariamente due 1
+
+ASFD con stati pozzo:
+![[appunti fi/esercizi/imges/Pasted image 20221111112744.png|center|500]]
+ASFD senza stati pozzo:
+![[appunti fi/esercizi/imges/Pasted image 20221111112828.png|center|500]]
+
+# Esercizio 3
 

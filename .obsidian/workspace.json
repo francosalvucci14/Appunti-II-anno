@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
+                "file": "Appunti FI/Esercizi/Esercizi ASF.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md"
+                "file": "Appunti FI/Esercizi/Esercizi ASF.md"
               }
             }
           },
@@ -129,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
+                "file": "Appunti FI/Esercizi/Esercizi ASF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
+                "file": "Appunti FI/Esercizi/Esercizi ASF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
