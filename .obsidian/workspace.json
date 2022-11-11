@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c130f656c4125433",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Appunti FI/Esercizi/Esercizi ASF.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -173,17 +160,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "c130f656c4125433",
+  "active": "ed3a3a21eaf13668",
   "lastOpenFiles": [
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+    "Appunti FI/Esercizi/Esercizi ASF.md",
+    "Appunti FI/Esercizi/Esercizi_ASF_2_nov_2022.pdf",
     "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
     "Appunti FI/Esercizi/Esercizi unità 3-4.md",
     "Appunti FI/Esercizi/Esercizi Grammatiche.md",
-    "Appunti FI/Esercizi/Esercizi ASF.md",
     "Appunti FI/Indice delle lezioni.md",
     "Appunti LMP/Lezione 6.md",
     "Appunti LMP/Lezione 7.md",
-    "Appunti CPS/Lezione 5.md",
-    "Appunti BSD/Lezione 4 - Vincoli d'integrità.md"
+    "Appunti CPS/Lezione 5.md"
   ]
 }

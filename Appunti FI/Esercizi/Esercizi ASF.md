@@ -1,3 +1,6 @@
+
+Per ulteriori controlli sugli esercizi vedere il file -> [[Esercizi_ASF_2_nov_2022.pdf]]
+
 # Esercizio 1
 
 Definire un ASFD che riconosce le stringhe su $\lbrace a,b\rbrace$ caratterizzate dal fatto che il penultimo carattere è b
@@ -9,8 +12,6 @@ Stringhe di esempio:
 
 1. stringa aaba $$\delta(q_0,abba)=q_0\to\delta(q_0,bba)=q_1\to\delta(q_1,ba)=q_3\to\delta(q_3,a)=q_2$$
 2. stringa bbb $$\delta(q_0,bbb)=q_1\to\delta(q_1,bb)=q_3\to\delta(q_3,b)=q_3$$
-Altri esempi nel file Esercizi ASF qui -> [[Esercizi_ASF_2_nov_2022.pdf]]
-
 
 # Esercizio 2
 
@@ -22,4 +23,17 @@ ASFD senza stati pozzo:
 ![[appunti fi/esercizi/imges/Pasted image 20221111112828.png|center|500]]
 
 # Esercizio 3
+
+Definire un ASFD su $\lbrace a,b\rbrace$ tale che : le stringhe hanno come secondo carattere "b"
+
+ASFD con stati pozzo:
+![[appunti fi/esercizi/imges/Pasted image 20221111113854.png|center|500]]
+ASFD senza stati pozzo:
+
+Se si considera $|w|\geq2$
+![[appunti fi/esercizi/imges/Pasted image 20221111114009.png|center|500]]
+Altrimenti:
+![[appunti fi/esercizi/imges/Pasted image 20221111114055.png|center|500]]
+
+
 
