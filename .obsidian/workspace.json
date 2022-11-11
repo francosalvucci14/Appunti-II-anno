@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi ASF.md",
+                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi ASF.md"
+                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi ASF.md",
+                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Esercizi/Esercizi ASF.md",
+                "file": "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,17 +160,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "ed3a3a21eaf13668",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
-    "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+    "Appunti FI/Lezione 8 - RE e Grammatiche di tipo 3.md",
+    "Appunti FI/Lezione 6 - ASF.md",
+    "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti ASD/Lezione 6 - HeapSort.md",
+    "Appunti ASD/Lezione 8 - Capitolo 4.md",
+    "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti FI/Esercizi/Esercizi ASF.md",
-    "Appunti FI/Esercizi/Esercizi_ASF_2_nov_2022.pdf",
-    "Appunti FI/Esercizi/Esercizi unità 3-4.md",
-    "Appunti FI/Esercizi/Esercizi Grammatiche.md",
-    "Appunti FI/Indice delle lezioni.md",
-    "Appunti LMP/Lezione 6.md",
-    "Appunti LMP/Lezione 7.md"
+    "Appunti FI/Lezione 3 - Espressioni regolari,Grammatiche.md",
+    "Appunti FI/Esercizi/Esercizi_ASF_2_nov_2022.pdf"
   ]
 }

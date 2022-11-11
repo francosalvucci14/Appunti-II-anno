@@ -4,7 +4,7 @@
 >Tutti i linguaggi definiti da espressioni regolari sono regolari
 
 >**Teorema**
->Data una grammatica $\mathcal G$ di tipo 3, esiste una espression regolare $r$ tale che $L(\mathcal G)=L(r)$, che descrive cioè il linguaggio generato da $\mathcal G$
+>Data una grammatica $\mathcal G$ di tipo 3, esiste una espressione regolare $r$ tale che $L(\mathcal G)=L(r)$, che descrive cioè il linguaggio generato da $\mathcal G$
 
 Consideriamo una grammatica $\mathcal G$ di tipo 3 e il linguaggio $L$ da essa generato, che per semplicità assumiamo non contenga la stringa vuota $\varepsilon$
 
@@ -37,7 +37,7 @@ Con riferimento all'esempio precedente abbiamo
 $$\begin{cases}A=aA+b(bB+c)=aA+bbB+bc\\B=bB+c\end{cases}$$
 **Regola 2**: _Eliminazione della ricursione_ (**Teorema di Arden**)
 
-L'equazione $B=bB+c$ si risolve in $B0b^\star c$. INfatti, sostituendo a destra e sinistra abbiamo
+L'equazione $B=bB+c$ si risolve in $B=b^\star c$. Infatti, sostituendo a destra e sinistra abbiamo
 $$b^\star c=b(b^\star c)+c=b^+c+c=(b^++\varepsilon)c=b^\star c$$
 Più in generale abbiamo che un'equazione del tipo 
 $$A=\alpha_1A+\alpha_2A+...+\alpha_nA+\beta_1+\beta_2+...+\beta_m$$
