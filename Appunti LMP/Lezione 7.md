@@ -242,7 +242,79 @@ Ci sono due tipi aggiuntivi di classi interne. Puoi dichiarare una classe intern
 #### Modificatori
 Puoi usare gli stessi modificatori per le classi interne che usi per gli altri membri della classe esterna. Ad esempio, puoi utilizzare gli identificatori di accesso private, public e protected per limitare l'accesso alle classi interne, proprio come li usi per limitare l'accesso agli altri membri della classe.
 
-# Interfacce ed ereditarietà
+#### Classi Locali
+Puoi usare gli stessi modificatori per le classi interne che usi per gli altri membri della classe esterna. Ad esempio, puoi utilizzare gli identificatori di accesso private, public e protected per limitare l'accesso alle classi interne, proprio come li usi per limitare l'accesso agli altri membri della classe.
+
+##### Dichiarare classi locali
+È possibile definire una classe locale all'interno di qualsiasi blocco (consultare Espressioni, istruzioni e blocchi per ulteriori informazioni). Ad esempio, puoi definire una classe locale nel corpo di un metodo, un ciclo for o una clausola if.
+
+L'esempio seguente, LocalClassExample, convalida due numeri di telefono. Definisce la classe locale PhoneNumber nel metodo validatePhoneNumber:
+```java
+public class LocalClassExample {
+  
+    static String regularExpression = "[^0-9]";
+  
+    public static void validatePhoneNumber(
+        String phoneNumber1, String phoneNumber2) {
+      
+        final int numberLength = 10;
+        
+        // Valid in JDK 8 and later:
+       
+        // int numberLength = 10;
+       
+        class PhoneNumber {
+            
+            String formattedPhoneNumber = null;
+
+            PhoneNumber(String phoneNumber){
+                // numberLength = 7;
+                String currentNumber = phoneNumber.replaceAll(
+                  regularExpression, "");
+                if (currentNumber.length() == numberLength)
+                    formattedPhoneNumber = currentNumber;
+                else
+                    formattedPhoneNumber = null;
+            }
+
+            public String getNumber() {
+                return formattedPhoneNumber;
+            }
+            
+            // Valid in JDK 8 and later:
+
+//            public void printOriginalNumbers() {
+//                System.out.println("Original numbers are " + phoneNumber1 +
+//                    " and " + phoneNumber2);
+//            }
+        }
+
+        PhoneNumber myNumber1 = new PhoneNumber(phoneNumber1);
+        PhoneNumber myNumber2 = new PhoneNumber(phoneNumber2);
+        
+        // Valid in JDK 8 and later:
+
+//        myNumber1.printOriginalNumbers();
+
+        if (myNumber1.getNumber() == null) 
+            System.out.println("First number is invalid");
+        else
+            System.out.println("First number is " + myNumber1.getNumber());
+        if (myNumber2.getNumber() == null)
+            System.out.println("Second number is invalid");
+        else
+            System.out.println("Second number is " + myNumber2.getNumber());
+
+    }
+
+    public static void main(String... args) {
+        validatePhoneNumber("123-456-7890", "456-7890");
+    }
+}
+```
+
+
+# Interfacce ed ereditarietà (forse lezione 8)
 
 ## Interfacce
 Ci sono un certo numero di situazioni nell'ingegneria del software in cui è importante che gruppi disparati di programmatori accettino un "contratto" che spieghi come interagisce il loro software. Ogni gruppo dovrebbe essere in grado di scrivere il proprio codice senza alcuna conoscenza di come viene scritto il codice dell'altro gruppo. In generale, le interfacce sono tali contratti.
