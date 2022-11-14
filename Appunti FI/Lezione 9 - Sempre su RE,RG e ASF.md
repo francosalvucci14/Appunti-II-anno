@@ -31,6 +31,7 @@ lo stesso vale per $\overline r_{ki}$
 ## Proprietà
 Dato l’insieme dei linguaggi regolari, ci chiediamo quali siano le sue proprietà di chiusura rispetto avarie operazioni.
 Ci chiediamo quindi se, data una qualunque operazione $\odot$:
+
 - se $\odot$ è unaria, $\odot L$ è un linguaggio regolare per ogni $L$ regolare
 - se $\odot$ è binaria, $L_1\odot L_2$ è un linguaggio regolare per ogni coppia $L_1,L_2$ di linguaggi regolari
 - non consideriamo operatori di "arietà" maggiori
