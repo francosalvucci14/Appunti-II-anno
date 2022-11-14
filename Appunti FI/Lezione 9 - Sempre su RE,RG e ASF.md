@@ -37,3 +37,5 @@ Ci chiediamo quindi se, data una qualunque operazione $\odot$:
 - non consideriamo operatori di "arietà" maggiori
 
 Le dimostrazioni di tali proprietà presentano tutte uno stesso schema, in cui, a partire dagli ASFDche riconoscono i linguaggi regolari dati, viene derivato un automa (deterministico o nondeterministico) che riconosce il linguaggio risultante.
+
+## Unione
