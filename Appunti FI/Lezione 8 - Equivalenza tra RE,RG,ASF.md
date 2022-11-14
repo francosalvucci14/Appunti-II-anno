@@ -93,6 +93,10 @@ Per $k\gt1$, se $x\in R_{ij}^{k+1}$ è una stringa che conduce da $q_i\:a\:q_j$ 
 1. x conduce da $q_i\:a\:q_j$ senza transitare per $q_k$, dal che deriva che $x\in R_{ij}^k$
 2. x conduce da $q_i\:a\:q_j$ transitando per $q_k$
 
+Nel secondo caso la sequenza degli stati attraversati può essere divisa in varie sottosequenze:
 
+1. Una prima sequenza, da $q_i$ a $q_{k-1}$ senza transitare per nessuno stato $q_h$ con $h\geq k-1$, la corrispondente sottostringa di $x$ appartiene quindi a $R_{i(k-1)}^{k-1}$
+2. $r\geq0$ sequenze, ognuna dele quali inizia e termina in $q_{k-1}$ senza transitare per nesusno stato $q_h$ con $h\geq k-1$, le corrispondenti sottostringhe di x appartengono quindi ciascuna a $R_{(k-1)(k-1)}^{k-1}$
+3. una sequenza finale, da $q_{k-1}$ a $q_j$ 
 
-
+$$R_{ij}^k=R_{ij}^{k-1}\cup R_{i(k-1)}^{k-1}\circ(R_{(k-1)(k-1)}^{k-1})^\star\circ R_{(k-1)j}^{k-1}$$

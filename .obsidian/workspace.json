@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -173,7 +174,7 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "2b469da977d2f215",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
     "Appunti FI/Indice delle lezioni FI.md",
     "Appunti FI/Lezione 8 - Equivalenza tra RE,RG,ASF.md",
