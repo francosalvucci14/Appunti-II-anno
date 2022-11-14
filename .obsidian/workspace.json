@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "87e0dc796fae7b19",
+        "id": "4f55ce25ed883bfc",
         "type": "tabs",
         "children": [
           {
-            "id": "f2e2f52e903a695d",
+            "id": "0979d1abcc124077",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "08f095c0c35f2e92",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti LMP/Lezione 7.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
+                "file": "Appunti LMP/Lezione 7.md"
               }
             }
           },
@@ -127,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti LMP/Lezione 7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti LMP/Lezione 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,12 +160,12 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "0979d1abcc124077",
   "lastOpenFiles": [
-    "Appunti LMP/Lezione 7.md",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti LMP/Esercitazioni/LMP 0.md",
     "Appunti LMP/Lezione 6.md",
+    "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti LMP/Lezione 7.md",
+    "Appunti LMP/Esercitazioni/LMP 0.md",
     "Appunti LMP/Lezione 4.md",
     "Appunti LMP/Lezione 3.md",
     "Appunti LMP/Lezione 2.md",
