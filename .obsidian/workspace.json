@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2b469da977d2f215",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f2e2f52e903a695d",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -173,17 +160,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "f2e2f52e903a695d",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti FI/Lezione 2 - RE,Linguaggi e problemi.md",
-    "Appunti FI/Lezione 3 - RE,Grammatiche.md",
+    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
     "Appunti FI/Lezione 8 - RE,RG e ASF.md",
     "Appunti FI/Indice delle lezioni FI.md",
+    "Appunti FI/Lezione 2 - RE,Linguaggi e problemi.md",
+    "Appunti FI/Lezione 3 - RE,Grammatiche.md",
     "Appunti LMP/Lezione 6.md",
     "Appunti LMP/Lezione 7.md",
     "Appunti CPS/Indice delle lezioni CPS.md",
-    "Appunti SOR/Indice degli appunti SOR.md",
-    "Appunti LMP/Indice delle lezioni LMP.md"
+    "Appunti SOR/Indice degli appunti SOR.md"
   ]
 }
