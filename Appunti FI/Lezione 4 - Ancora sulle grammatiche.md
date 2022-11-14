@@ -12,7 +12,7 @@ Il linguaggio $L=\lbrace a^nb^nc^n|n\geq1\rbrace$ può essere generato dalla gra
 6. $GC\to cG$
 7. $G\to\epsilon$
 
-Vedi soluzione sotto l'esempio di [[Lezione 3 - Espressioni regolari,Grammatiche#Forme di frase|Lezione 3 (Forma di Frase)]]
+Vedi soluzione sotto l'esempio di [[Lezione 3 - RE,Grammatiche#Forme di frase|Lezione 3 (Forma di Frase)]]
 
 **Esempio/Esercizio**
 Come dimostrare che $L(G)=\lbrace a^nb^nc^n|n\geq1\rbrace$?

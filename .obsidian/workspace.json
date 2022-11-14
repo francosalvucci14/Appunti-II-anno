@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Lezione 8 - RE,RG e ASF.md",
+                "file": "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f114552d00aec697",
+            "id": "f2e2f52e903a695d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/Lezione 8 - RE,RG e ASF.md",
+                "file": "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/Lezione 8 - RE,RG e ASF.md"
+                "file": "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/Lezione 8 - RE,RG e ASF.md",
+                "file": "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/Lezione 8 - RE,RG e ASF.md",
+                "file": "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,17 +173,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "f114552d00aec697",
+  "active": "f2e2f52e903a695d",
   "lastOpenFiles": [
-    "Appunti FI/Indice delle lezioni FI.md",
+    "Appunti FI/Lezione 2 - RE,Linguaggi e problemi.md",
+    "Appunti FI/Lezione 3 - RE,Grammatiche.md",
     "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
     "Appunti FI/Lezione 8 - RE,RG e ASF.md",
+    "Appunti FI/Indice delle lezioni FI.md",
     "Appunti LMP/Lezione 6.md",
     "Appunti LMP/Lezione 7.md",
     "Appunti CPS/Indice delle lezioni CPS.md",
     "Appunti SOR/Indice degli appunti SOR.md",
-    "Appunti LMP/Indice delle lezioni LMP.md",
-    "Appunti LMP/Esercitazioni/Indice delle esercitazioni.md",
-    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md"
+    "Appunti LMP/Indice delle lezioni LMP.md"
   ]
 }
