@@ -84,3 +84,82 @@ Un'interfaccia può estendere altre interfacce, proprio come una sottoclasse di 
 Il corpo dell'interfaccia può contenere metodi astratti, metodi predefiniti e metodi statici. Un metodo astratto all'interno di un'interfaccia è seguito da un punto e virgola, ma senza parentesi graffe (un metodo astratto non contiene un'implementazione). I metodi predefiniti sono definiti con il modificatore predefinito e i metodi statici con la parola chiave static. Tutti i metodi astratti, predefiniti e statici in un'interfaccia sono implicitamente pubblici, quindi puoi omettere il modificatore public.
 
 Inoltre, un'interfaccia può contenere dichiarazioni di costanti. Tutti i valori costanti definiti in un'interfaccia sono implicitamente pubblici, statici e finali. Ancora una volta, puoi omettere questi modificatori.
+
+### Implementare un interfaccia
+
+Per dichiarare una classe che implementa un'interfaccia, includi una clausola implements nella dichiarazione di classe. La tua classe può implementare più di un'interfaccia, quindi la parola chiave implements è seguita da un elenco separato da virgole delle interfacce implementate dalla classe. Per convenzione, la clausola implements segue la clausola extends, se presente.
+
+#### Un'interfaccia di esempio, Relatable
+
+Si consideri un'interfaccia che definisce come confrontare le dimensioni degli oggetti.
+```java
+public interface Relatable {
+        
+    // this (object calling isLargerThan)
+    // and other must be instances of 
+    // the same class returns 1, 0, -1 
+    // if this is greater than, 
+    // equal to, or less than other
+    public int isLargerThan(Relatable other);
+}
+```
+Se vuoi essere in grado di confrontare le dimensioni di oggetti simili, indipendentemente da cosa siano, la classe che li istanzia dovrebbe implementare Relatable.
+
+Qualsiasi classe può implementare Relatable se esiste un modo per confrontare la "dimensione" relativa degli oggetti istanziati dalla classe. Per le stringhe, potrebbe essere il numero di caratteri; per i libri, potrebbe essere il numero di pagine; per gli studenti, potrebbe essere peso; e così via. Per gli oggetti geometrici planari, l'area sarebbe una buona scelta (vedi la classe RectanglePlus che segue), mentre il volume funzionerebbe per gli oggetti geometrici tridimensionali. Tutte queste classi possono implementare il metodo isLargerThan().
+
+Se sai che una classe implementa Relatable, allora sai che puoi confrontare la dimensione degli oggetti istanziati da quella classe.
+
+#### Implementazione dell'interfaccia Relatable
+Ecco la classe Rectangle che è stata presentata nella sezione Creazione di oggetti, riscritta per implementare Relatable.
+```java
+public class RectanglePlus 
+    implements Relatable {
+    public int width = 0;
+    public int height = 0;
+    public Point origin;
+
+    // four constructors
+    public RectanglePlus() {
+        origin = new Point(0, 0);
+    }
+    public RectanglePlus(Point p) {
+        origin = p;
+    }
+    public RectanglePlus(int w, int h) {
+        origin = new Point(0, 0);
+        width = w;
+        height = h;
+    }
+    public RectanglePlus(Point p, int w, int h) {
+        origin = p;
+        width = w;
+        height = h;
+    }
+
+    // a method for moving the rectangle
+    public void move(int x, int y) {
+        origin.x = x;
+        origin.y = y;
+    }
+
+    // a method for computing
+    // the area of the rectangle
+    public int getArea() {
+        return width * height;
+    }
+    
+    // a method required to implement
+    // the Relatable interface
+    public int isLargerThan(Relatable other) {
+        **RectanglePlus otherRect 
+            = (RectanglePlus)other;**
+        if (this.getArea() < otherRect.getArea())
+            return -1;
+        else if (this.getArea() > otherRect.getArea())
+            return 1;
+        else
+            return 0;               
+    }
+}
+```
+

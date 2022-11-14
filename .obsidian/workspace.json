@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Appunti LMP/Lezione 6.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a6abf7618afde97e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Appunti LMP/Lezione 7.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,13 +176,13 @@
   "active": "7931714fcd03803f",
   "lastOpenFiles": [
     "Appunti LMP/Lezione 6.md",
+    "Appunti LMP/Lezione 7.md",
     "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti FI/Lezione 8 - RE,RG e ASF.md",
     "Appunti FI/Indice delle lezioni FI.md",
     "Appunti FI/Lezione 2 - RE,Linguaggi e problemi.md",
     "Appunti FI/Lezione 3 - RE,Grammatiche.md",
-    "Appunti LMP/Lezione 7.md",
     "Appunti CPS/Indice delle lezioni CPS.md",
     "Appunti SOR/Indice degli appunti SOR.md"
   ]
