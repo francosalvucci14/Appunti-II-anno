@@ -77,11 +77,7 @@ Pseudo-codice fixHeap(1,A)
 ![[appunti asd/algoritmi/img/Pasted image 20221114152647.png|center|500]]
 
 Pseudo-codice heapify
-
->**heapify**(A)
->1. $Heapsize[A]=n$
->2. for i = $\lfloor n/2\rfloor$  down to 1 do
->3.       fixHeap(i,A)
+![[appunti asd/algoritmi/img/Pasted image 20221114152850.png|center|500]]
 
 ### Complessità temporale
 
@@ -370,3 +366,5 @@ def heapify(a):
 a = [1,10,4,3,3,5,20]
 print(HeapSort(a))
 ```
+
+
