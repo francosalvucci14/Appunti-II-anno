@@ -7,5 +7,5 @@
 - [[Lezione 5 - Automi]]
 - [[Lezione 6 - ASF]]
 - [[Lezione 7 - Equivalenza tra ASFD e ASFND]]
-- [[Lezione 8 - Equivalenza tra RE,RG,ASF]]
+- [[Lezione 8 - RE,RG e ASF]]
 - 

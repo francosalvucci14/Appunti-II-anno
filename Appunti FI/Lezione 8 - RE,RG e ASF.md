@@ -123,6 +123,3 @@ E quindi:
 
 E quindi il linguaggio accettato dall'automa sarà descritto dall'espressione regolare 
 $$r_{03}^4$$
-
-
-
