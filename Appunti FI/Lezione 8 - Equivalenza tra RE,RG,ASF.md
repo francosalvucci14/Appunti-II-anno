@@ -116,3 +116,13 @@ $$r_{0(n-1)}^n$$
 Assumiamo l'ordinamento $q_0=q_0,q_1=q_1,q_2=q_3,q_3=q_2$ tra gli stati. 
 Allora:
 ![[appunti fi/immagini/Pasted image 20221114105420.png|center|400]]
+E quindi:
+![[appunti fi/immagini/Pasted image 20221114105736.png|center|500]]
+![[appunti fi/immagini/Pasted image 20221114105826.png|center|500]]
+![[appunti fi/immagini/Pasted image 20221114105854.png|center|600]]
+
+E quindi il linguaggio accettato dall'automa sarà descritto dall'espressione regolare 
+$$r_{03}^4$$
+
+
+
