@@ -1,3 +1,247 @@
+
+# Ritornando alla [[Lezione 6]]
+
+## Classi nidificate
+Il linguaggio di programmazione Java consente di definire una classe all'interno di un'altra classe. Tale classe è chiamata classe nidificata ed è illustrata qui:
+```java
+class OuterClass {
+    ...
+    class NestedClass {
+        ...
+    }
+}
+```
+Una classe nidificata è un membro della sua classe che la racchiude. Le classi nidificate non statiche (classi interne) hanno accesso ad altri membri della classe che lo racchiude, anche se sono dichiarate private. Le classi nidificate statiche non hanno accesso ad altri membri della classe di inclusione. Come membro di OuterClass, una classe nidificata può essere dichiarata privata, pubblica, protetta o privata del pacchetto. (Ricorda che le classi esterne possono essere dichiarate solo pubbliche o private del pacchetto.)
+
+### Perchè usare le classi nidificate?
+I motivi convincenti per l'utilizzo di classi nidificate includono quanto segue:
+- **È un modo per raggruppare logicamente le classi che vengono utilizzate solo in un posto**: se una classe è utile solo a un'altra classe, è logico incorporarla in quella classe e tenerle insieme. L'annidamento di tali "classi di supporto" rende il loro pacchetto più snello.
+- **Aumenta l'incapsulamento**: considera due classi di primo livello, A e B, in cui B ha bisogno dell'accesso ai membri di A che altrimenti sarebbero dichiarati privati. Nascondendo la classe B all'interno della classe A, i membri di A possono essere dichiarati privati e B può accedervi. Inoltre, B stesso può essere nascosto dal mondo esterno.
+- **Può portare a un codice più leggibile e gestibile**: l'annidamento di classi piccole all'interno di classi di livello superiore posiziona il codice più vicino a dove viene utilizzato.
+
+### Classi interne
+Come per i metodi e le variabili di istanza, una classe interna è associata a un'istanza della sua classe di inclusione e ha accesso diretto ai metodi e ai campi di quell'oggetto. Inoltre, poiché una classe interna è associata a un'istanza, non può definire alcun membro statico.
+
+Gli oggetti che sono istanze di una classe interna esistono all'interno di un'istanza della classe esterna. Considera le seguenti classi:
+```java
+class OuterClass {
+    ...
+    class InnerClass {
+        ...
+    }
+}
+```
+Un'istanza di InnerClass può esistere solo all'interno di un'istanza di OuterClass e ha accesso diretto ai metodi e ai campi della sua istanza di inclusione.
+
+Per creare un'istanza di una classe interna, devi prima istanziare la classe esterna. Quindi, crea l'oggetto interno all'interno dell'oggetto esterno con questa sintassi:
+
+```java
+OuterClass outerObject = new OuterClass();
+OuterClass.InnerClass innerObject = outerObject.new InnerClass();
+```
+
+### Classi nidificate statiche
+Come per i metodi e le variabili di classe, una classe nidificata statica è associata alla sua classe esterna. E come i metodi di classe static, una classe nidificata statica non può fare riferimento direttamente a variabili di istanza o metodi definiti nella sua classe che li racchiude: può usarli solo attraverso un riferimento a un oggetto
+
+Istanzia una classe nidificata statica allo stesso modo di una classe di primo livello:
+
+```java
+StaticNestedClass staticNestedObject = new StaticNestedClass();
+```
+
+### Esempio di classe interna e classe statica nidificata
+L'esempio seguente, OuterClass, insieme a TopLevelClass, mostra a quali membri della classe di OuterClass possono accedere una classe interna (InnerClass), una classe statica nidificata (StaticNestedClass) e una classe di livello superiore (TopLevelClass):
+
+OuterClass.java
+```java
+public class OuterClass {
+
+    String outerField = "Outer field";
+    static String staticOuterField = "Static outer field";
+
+    class InnerClass {
+        void accessMembers() {
+            System.out.println(outerField);
+            System.out.println(staticOuterField);
+        }
+    }
+
+    static class StaticNestedClass {
+        void accessMembers(OuterClass outer) {
+            // Compiler error: Cannot make a static reference to the non-static
+            //     field outerField
+            // System.out.println(outerField);
+            System.out.println(outer.outerField);
+            System.out.println(staticOuterField);
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Inner class:");
+        System.out.println("------------");
+        OuterClass outerObject = new OuterClass();
+        OuterClass.InnerClass innerObject = outerObject.new InnerClass();
+        innerObject.accessMembers();
+
+        System.out.println("\nStatic nested class:");
+        System.out.println("--------------------");
+        StaticNestedClass staticNestedObject = new StaticNestedClass();        
+        staticNestedObject.accessMembers(outerObject);
+        
+        System.out.println("\nTop-level class:");
+        System.out.println("--------------------");
+        TopLevelClass topLevelObject = new TopLevelClass();        
+        topLevelObject.accessMembers(outerObject);                
+    }
+}
+```
+
+TopLevelClass.java
+```java
+public class TopLevelClass {
+
+    void accessMembers(OuterClass outer) {     
+        // Compiler error: Cannot make a static reference to the non-static
+        //     field OuterClass.outerField
+        // System.out.println(OuterClass.outerField);
+        System.out.println(outer.outerField);
+        System.out.println(OuterClass.staticOuterField);
+    }  
+}
+```
+
+Si noti che una classe nidificata statica interagisce con i membri di istanza della sua classe esterna proprio come qualsiasi altra classe di primo livello. La classe nidificata statica StaticNestedClass non può accedere direttamente a outerField perché è una variabile di istanza della classe di inclusione, OuterClass. Il compilatore Java genera un errore nell'istruzione evidenziata:
+```java
+static class StaticNestedClass {
+    void accessMembers(OuterClass outer) {
+       // Compiler error: Cannot make a static reference to the non-static
+       //     field outerField
+       **System.out.println(outerField);**
+    }
+}
+```
+Per correggere questo errore, accedi a externalField tramite un riferimento a un oggetto:
+```java
+System.out.println(outer.outerField);
+```
+Allo stesso modo, neanche la classe di primo livello TopLevelClass può accedere direttamente a outerField.
+
+### Shadowing
+Se una dichiarazione di un tipo (come una variabile membro o un nome di parametro) in un particolare ambito (come una classe interna o una definizione di metodo) ha lo stesso nome di un'altra dichiarazione nell'ambito di inclusione, la dichiarazione oscura la dichiarazione dell'ambito di inclusione. Non puoi fare riferimento a una dichiarazione ombreggiata solo con il suo nome. L'esempio seguente, ShadowTest, lo dimostra:
+```java
+public class ShadowTest {
+
+    public int x = 0;
+
+    class FirstLevel {
+
+        public int x = 1;
+
+        void methodInFirstLevel(int x) {
+            System.out.println("x = " + x);
+            System.out.println("this.x = " + this.x);
+            System.out.println("ShadowTest.this.x = " + ShadowTest.this.x);
+        }
+    }
+
+    public static void main(String... args) {
+        ShadowTest st = new ShadowTest();
+        ShadowTest.FirstLevel fl = st.new FirstLevel();
+        fl.methodInFirstLevel(23);
+    }
+}
+```
+Questo esempio definisce tre variabili denominate x: la variabile membro della classe ShadowTest, la variabile membro della classe interna FirstLevel e il parametro nel metodo methodInFirstLevel. La variabile x definita come parametro del metodo methodInFirstLevel oscura la variabile della classe interna FirstLevel. Di conseguenza, quando si utilizza la variabile x nel metodo methodInFirstLevel, fa riferimento al parametro del metodo. Per fare riferimento alla variabile membro della classe interna FirstLevel, utilizzare la parola chiave this per rappresentare l'ambito di inclusione:
+```java
+System.out.println("this.x = " + this.x);
+```
+Fare riferimento alle variabili membro che racchiudono ambiti più grandi in base al nome della classe a cui appartengono. Ad esempio, la seguente istruzione accede alla variabile membro della classe ShadowTest dal metodo methodInFirstLevel:
+```java
+System.out.println("ShadowTest.this.x = " + ShadowTest.this.x);
+```
+
+### Serializzazione
+La serializzazione delle classi interne, comprese le classi locali e anonime, è fortemente sconsigliata. Quando il compilatore Java compila determinati costrutti, come le classi interne, crea costrutti sintetici; si tratta di classi, metodi, campi e altri costrutti che non hanno un costrutto corrispondente nel codice sorgente. I costrutti sintetici consentono ai compilatori Java di implementare nuove funzionalità del linguaggio Java senza modifiche alla JVM. Tuttavia, i costrutti sintetici possono variare tra le diverse implementazioni del compilatore Java, il che significa che anche i file .class possono variare tra le diverse implementazioni. Di conseguenza, potresti avere problemi di compatibilità se serializzi una classe interna e poi la deserializzi con un'implementazione JRE diversa. Vedere la sezione Parametri impliciti e sintetici nella sezione Ottenere nomi di parametri di metodo per ulteriori informazioni sui costrutti sintetici generati quando viene compilata una classe interna.
+
+### Esempio di Inner Class
+Per vedere una classe interna in uso, considera prima un array. Nell'esempio seguente si crea una matrice, la si riempie con valori interi e quindi si generano solo i valori di indici pari della matrice in ordine crescente.
+
+L'esempio DataStructure.java che segue è costituito da:
+
+- La classe esterna di DataStructure, che include un costruttore per creare un'istanza di DataStructure contenente una matrice riempita con valori interi consecutivi (0, 1, 2, 3 e così via) e un metodo che stampa gli elementi della matrice che hanno un indice pari valore.
+- La classe interna EvenIterator, che implementa l'interfaccia DataStructureIterator, che estende l'interfaccia Iterator< Integer>. Gli iteratori vengono utilizzati per scorrere una struttura di dati e in genere dispongono di metodi per verificare l'ultimo elemento, recuperare l'elemento corrente e passare all'elemento successivo.
+- Un metodo principale che crea un'istanza di un oggetto DataStructure (ds), quindi richiama il metodo printEven per stampare gli elementi dell'array arrayOfInts che hanno un valore di indice pari.
+
+```java
+public class DataStructure {
+    
+    // Create an array
+    private final static int SIZE = 15;
+    private int[] arrayOfInts = new int[SIZE];
+    
+    public DataStructure() {
+        // fill the array with ascending integer values
+        for (int i = 0; i < SIZE; i++) {
+            arrayOfInts[i] = i;
+        }
+    }
+    
+    public void printEven() {
+        
+        // Print out values of even indices of the array
+        DataStructureIterator iterator = this.new EvenIterator();
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
+        }
+        System.out.println();
+    }
+    
+    interface DataStructureIterator extends java.util.Iterator<Integer> { } 
+
+    // Inner class implements the DataStructureIterator interface,
+    // which extends the Iterator<Integer> interface
+    
+    private class EvenIterator implements DataStructureIterator {
+        
+        // Start stepping through the array from the beginning
+        private int nextIndex = 0;
+        
+        public boolean hasNext() {
+            
+            // Check if the current element is the last in the array
+            return (nextIndex <= SIZE - 1);
+        }        
+        
+        public Integer next() {
+            
+            // Record a value of an even index of the array
+            Integer retValue = Integer.valueOf(arrayOfInts[nextIndex]);
+            
+            // Get the next even element
+            nextIndex += 2;
+            return retValue;
+        }
+    }
+    
+    public static void main(String s[]) {
+        
+        // Fill the array with integer values and print out only
+        // values of even indices
+        DataStructure ds = new DataStructure();
+        ds.printEven();
+    }
+}
+```
+Si noti che la classe EvenIterator fa riferimento direttamente alla variabile di istanza arrayOfInts dell'oggetto DataStructure.
+
+È possibile utilizzare le classi interne per implementare classi helper come quella mostrata in questo esempio. Per gestire gli eventi dell'interfaccia utente, è necessario sapere come utilizzare le classi interne, poiché il meccanismo di gestione degli eventi ne fa ampio uso.
+
+#### Classi locali e anonime
+Ci sono due tipi aggiuntivi di classi interne. Puoi dichiarare una classe interna all'interno del corpo di un metodo. Queste classi sono conosciute come classi locali. Puoi anche dichiarare una classe interna all'interno del corpo di un metodo senza nominare la classe. Queste classi sono note come classi anonime.
+
+#### Modificatori
+Puoi usare gli stessi modificatori per le classi interne che usi per gli altri membri della classe esterna. Ad esempio, puoi utilizzare gli identificatori di accesso private, public e protected per limitare l'accesso alle classi interne, proprio come li usi per limitare l'accesso agli altri membri della classe.
+
 # Interfacce ed ereditarietà
 
 ## Interfacce

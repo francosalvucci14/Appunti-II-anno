@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Appunti LMP/Lezione 7.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "583ceafa2f521d27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Appunti LMP/Lezione 6.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,9 +175,9 @@
   },
   "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti LMP/Esercitazioni/LMP 0.md",
-    "Appunti LMP/Lezione 6.md",
     "Appunti LMP/Lezione 7.md",
+    "Appunti LMP/Lezione 6.md",
+    "Appunti LMP/Esercitazioni/LMP 0.md",
     "Appunti LMP/Lezione 4.md",
     "Appunti LMP/Lezione 3.md",
     "Appunti LMP/Lezione 2.md",

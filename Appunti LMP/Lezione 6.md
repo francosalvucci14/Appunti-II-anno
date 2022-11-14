@@ -691,7 +691,7 @@ public ImaginaryNumber returnANumber() {
 ```
 Questa tecnica, denominata tipo restituito covariante, significa che il tipo restituito può variare nella stessa direzione della sottoclasse.
 
-## Usare la parolachiave this
+## Usare la parola-chiave this
 All'interno di un metodo di istanza o di un costruttore, questo è un riferimento all'oggetto corrente, l'oggetto il cui metodo o costruttore viene chiamato. Puoi fare riferimento a qualsiasi membro dell'oggetto corrente da un metodo di istanza o da un costruttore usando this.
 
 ### Usando this con un campo
@@ -1009,3 +1009,4 @@ class Whatever {
 ```
 Ciò è particolarmente utile se le sottoclassi potrebbero voler riutilizzare il metodo di inizializzazione. Il metodo è definitivo perché la chiamata di metodi non finali durante l'inizializzazione dell'istanza può causare problemi.
 
+Parte Nested Class qui -> [[Lezione 7#Classi nidificate|Lezione 7 - Classi Nidificate]]
