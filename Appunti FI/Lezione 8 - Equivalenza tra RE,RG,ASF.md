@@ -100,4 +100,19 @@ Nel secondo caso la sequenza degli stati attraversati può essere divisa in vari
 3. una sequenza finale, da $q_{k-1}$ a $q_j$ senza transitare per nessuno stato $q_h$ con $h\geq k-1$, la corrispondente sottostringa di x appartiene quindi a $R_{(k-1)j}^{k-1}$
 
 In conseguenza, ne deriva la relazione:
-$$R_{ij}^k=R_{ij}^{k-1}\cup R_{i(k-1)}^{k-1}\circ(R_{(k-1)(k-1)}^{k-1})^\star\circ R_{(k-1)j}^{k-1}$$
+$$R_{ij}^{k+1}=R_{ij}^k\cup R_{ik}^k\circ(R_{kk}^k)^\star\circ R_{kj}^k$$
+Dalle osservazioni precedenti deriva che è possibile costrutire tutti gli insieme $R_{ij}^k$ a partire da $k=0$ e derivando poi man mano i successivi
+
+Osserviamo anche che $L=R_{0(n-1)}^n$
+
+Ogni insieme di stringhe $R_{ij}^k$ può essere descritto per mezzo di una opportuna espressione regolare $r_{ij}^k$, infatti abbiamo che, per $k=0$,
+$$r_{ij}^0=\begin{cases}a_{i_1}+...+a_{i_l}&dove:\delta(q_i,a_{i_k})=q_j,k=1...,l;\\\varepsilon&se\:l=0\end{cases}$$
+per $k\geq1$, abbiamo che, dalla relazione $R_{ij}^{k+1},R_{ik}^k,R_{kk}^k,R_{kj}^k$, deriva che $$r_{ij}^{k+1}=r_{ij}^k+r_{ik}^k(r_{kk}^k)^\star r_{kj}^k$$
+Quindi, il linguaggio $L$ sarà descritto dall'espressione regolare
+$$r_{0(n-1)}^n$$
+**Esempio**
+
+![[appunti fi/immagini/Pasted image 20221114105223.png|center|500]]
+Assumiamo l'ordinamento $q_0=q_0,q_1=q_1,q_2=q_3,q_3=q_2$ tra gli stati. 
+Allora:
+![[appunti fi/immagini/Pasted image 20221114105420.png|center|400]]

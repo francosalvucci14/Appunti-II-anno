@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ed3a3a21eaf13668",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/Lezione 8 - Equivalenza tra RE,RG,ASF.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2b469da977d2f215",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d3d786b3af0b6470",
