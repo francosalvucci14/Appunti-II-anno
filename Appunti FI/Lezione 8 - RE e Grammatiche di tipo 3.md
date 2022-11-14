@@ -1,4 +1,4 @@
-# Espressioni Regolari
+# Espressioni Regolari e Grammatiche
 
 >**Teorema**
 >Tutti i linguaggi definiti da espressioni regolari sono regolari
@@ -68,3 +68,16 @@ per sostituzione di $A_1$ nell'equazione relativa a $A_0$
 $$\begin{cases}A_0&=a(b(b^\star aa^\star+a^\star)(bA_0+b))+a\\A_1&=b(b^\star aa^\star+a^\star)(bA_0+b)\\A_2&=a^\star(bA_0+b)\\A_3&=b^\star aa^\star(bA_0+b)\end{cases}$$
 per fattorizzazione nell'equazione relativa ad $A_0$
 $$\begin{cases}A_0&=ab(b^\star aa^\star+a^\star)bA_0+ab(b^\star aa^\star+a^\star)b+a\\A_1&=b(b^\star aa^\star+a^\star)(bA_0+b)\\A_2&=a^\star(bA_0+b)\\A_3&=b^\star aa^\star(bA_0+b)\end{cases}$$
+
+# Espressioni Regolari e ASF
+
+>**Teorema**
+>Dato un ASFD $\mathcal A$, esiste una espressione regolare $r$ tale che $L(\mathcal A)=L(r)$, che descrive cioè il linguaggio riconosciuto da $\mathcal A$
+
+Sia $\mathcal A=\langle\Sigma,Q,\delta,q_0,F\rangle$ un ASFD e $L$ il linguaggio da esso riconosciuto. Assumiamo $F=\lbrace q_F\rbrace$
+
+Sia $n=|Q|$ e sia $\langle q_0,...,q_{n-1}\rangle$ un qualunque ordinamento degli stati tale che $q_{n-1}=q_F$
+
+Definiamo ora come $$R_{ij}^k\:0\leq i,j\leq n-1;k\geq max(i,j)$$
+L'insieme delle stringhe tali da portare $\mathcal A$ da $q_i\:a\:q_j$ senza transitare nessuno stato $q_h$ con $h\geq k$
+
