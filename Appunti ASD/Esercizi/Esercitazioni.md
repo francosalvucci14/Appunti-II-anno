@@ -170,7 +170,7 @@ def merge( a, b ):
             j += 1
     c += a[i:] + b[j:]
     return c
-max = funzione(a)
+max = trovaMax(a)
 print(ordina(a,max))
 ```
 Con la funzione trovaMax trovo l'indice dell'elemento maggiore nell'array A, come nella risposta a
