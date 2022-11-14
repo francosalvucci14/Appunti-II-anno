@@ -802,7 +802,7 @@ In questa sezione, discutiamo l'uso della parola chiave static per creare campi 
 ### Variabili di classe
 Quando un numero di oggetti viene creato dallo stesso progetto di classe, ciascuno ha le proprie copie distinte delle variabili di istanza. Nel caso della classe Bicycle, le variabili di istanza sono cadenza, marcia e velocità. Ogni oggetto Bicycle ha i propri valori per queste variabili, memorizzati in diverse locazioni di memoria.
 
-A volte, vuoi avere variabili comuni a tutti gli oggetti. Questo si ottiene con il modificatore statico. I campi che hanno il modificatore static nella loro dichiarazione sono chiamati campi statici o variabili di classe. Sono associati alla classe, piuttosto che a qualsiasi oggetto. Ogni istanza della classe condivide una variabile di classe, che si trova in una posizione fissa in memoria. Qualsiasi oggetto può modificare il valore di una variabile di classe, ma le variabili di classe possono anche essere manipolate senza creare un'istanza della classe.
+A volte, vuoi avere variabili comuni a tutti gli oggetti. Questo si ottiene con il modificatore **static**. I campi che hanno il modificatore static nella loro dichiarazione sono chiamati campi statici o variabili di classe. Sono associati alla classe, piuttosto che a qualsiasi oggetto. Ogni istanza della classe condivide una variabile di classe, che si trova in una posizione fissa in memoria. Qualsiasi oggetto può modificare il valore di una variabile di classe, ma le variabili di classe possono anche essere manipolate senza creare un'istanza della classe.
 
 Ad esempio, supponiamo di voler creare un numero di oggetti Bicycle e assegnare a ciascuno un numero di serie, iniziando con 1 per il primo oggetto. Questo numero ID è univoco per ogni oggetto ed è quindi una variabile di istanza. Allo stesso tempo, è necessario un campo per tenere traccia di quanti oggetti Bicycle sono stati creati in modo da sapere quale ID assegnare al successivo. Tale campo non è correlato a nessun singolo oggetto, ma alla classe nel suo insieme. Per questo è necessaria una variabile di classe, numberOfBicycles, come segue:
 ```java
@@ -874,7 +874,7 @@ Non tutte le combinazioni di variabili e metodi di istanza e di classe sono cons
 - I metodi di classe non possono accedere direttamente alle variabili di istanza o ai metodi di istanza: devono utilizzare un riferimento a un oggetto. Inoltre, i metodi di classe non possono utilizzare la parola chiave this in quanto non esiste un'istanza a cui fare riferimento.
 
 ### Costanti
-Il modificatore static, in combinazione con il modificatore final, viene utilizzato anche per definire le costanti. Il modificatore finale indica che il valore di questo campo non può cambiare.
+Il modificatore static, in combinazione con il modificatore final, viene utilizzato anche per definire le costanti. Il modificatore final indica che il valore di questo campo non può cambiare.
 
 Ad esempio, la seguente dichiarazione di variabile definisce una costante denominata PI, il cui valore è un'approssimazione di pi (il rapporto tra la circonferenza di un cerchio e il suo diametro):
 ```java
