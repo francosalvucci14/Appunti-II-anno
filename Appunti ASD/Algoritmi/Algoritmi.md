@@ -51,16 +51,7 @@ $$T(n)\leq c_1+nc_2+n(n-2)(c_3+c_4+c_5)\implies T(n)=O(n^2)\implies T(n)=\Theta(
 
 Spiegazione dettagliata qui -> [Algoritmi,lezione 13/10/21](http://people.disim.univaq.it/guido.proietti/lezioni_algo2021.html)
 ### Pseudo-codice
-
->InsertionSort(A)
->1. for j=2 to n
->2.	do key=$A[j]$
->3.		//inserisce $A[j]$ nella sequenza ordinata $A[1...j-1]$
->4.		i=j-1
->5.		while $i\gt0\:and\:A[i]\gt key$
->6.			do $A[i+1]=A[i]$
->7.				i=i-1
->8.		$A[i+1]=key$
+![[appunti asd/algoritmi/img/Pasted image 20221114151346.png|center|500]]
 
 ### Complessità temporale
 
@@ -161,13 +152,8 @@ $$T(n)=O(nlog(n))$$
 
 Spiegazione qui -> [[Lezione 5 - Capitolo 4#Selection Sort|SelectionSort]]
 ### Pseudo-codice
+![[appunti asd/algoritmi/img/Pasted image 20221114151002.png|center|500]]
 
->SelectionSort(A)
->1. for k=0 to n-2 do
->2.     m=k+1
->3.     for j=k+2 to n do
->4.          if($A[j]\lt A[m]$) then m=j
->5.     scambia $A[m]\:con\:A[k+1]$
 ### Complessità temporale
 
 Upper Bound:
@@ -217,18 +203,7 @@ $$T(n)=\Omega(nlog(n))$$
 ## IntegerSort
 
 ### Pseudo-codice
-
-Pseudo-codice:
->IntegerSort(A,k):
->1. Sia Y un array di dimensione k
->2. for i=1 to k do $Y[i]=0$
->3. for i=1 to n do incrementa $Y[x[i]]$
->4. j=1
->5. for i=1 to k do
->6. 	while($Y[i]\gt0$) do
->7. 	$X[j]=i$
->8. 	incrementa j
->9. 	decrementa $Y[i]$
+![[appunti asd/algoritmi/img/Pasted image 20221114151518.png|center|400]]
 
 ### Complessità temporale
 
