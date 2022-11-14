@@ -100,3 +100,81 @@ Correttezza? Da vedere
 
 **Oss**: Se non esistono due elementi di A che sommano a x l'algoritmo _Lineare_ risponde sicuramente bene, ovvero restituisce (-1,-1)
 
+# Esercitazione 2
+
+## Esercizio 1
+
+### Risposta alla domanda a
+Utilizzo un algoritmo che in tempo $O(log(n))$ mi trova l'indice del massimo. L'algoritmo si basa sul fatto che $a[m]>a[m-1]\:e\:a[m+1]$ 
+Il codice è questo:
+```python
+#a = [2,4,20,13,9,6,5,2]
+a = [2,4,20,30,31,6,5,2]
+def funzione(a):
+    n = len(a)
+    lx,rx = 0,n-1
+    while lx<=rx:
+        cx = (rx+lx)//2
+        if (a[cx-1]<a[cx] and a[cx+1]<a[cx]):
+            return cx
+        if a[cx-1]>a[cx]:
+            rx=cx-1
+        else:
+            lx=cx+1
+print(funzione(a))
+```
+### Risposta alla domanda b
+Dato m trovato prima, sappiamo che le due "metà" $a[1:m]$ e $a[m+1,n]$ sono già ordinate
+A questo punto utilizzo il Merge per fonderle velocemente
+Codice:
+```python
+import math
+a = [2,4,20,30,31,6,5,2]
+def trovaMax(a):
+    n = len(a)
+    lx,rx = 0,n-1
+    while lx<=rx:
+        cx = (rx+lx)//2
+        if (a[cx-1]<a[cx] and a[cx+1]<a[cx]):
+            return cx
+        if a[cx-1]>a[cx]:
+            rx=cx-1
+        else:
+            lx=cx+1
+def ordina(a,m):
+    n=len(a)
+    if m != n:
+        Inverti(a,m)
+        if m!=1:
+            a = merge(a[:m],a[m:])
+    return a
+def Inverti(a,m):
+    n=len(a)-1
+    while m<n:
+        tmp = a[m]
+        a[m]=a[n]
+        a[n]=tmp
+        m+=1
+        n-=1
+    return a
+def merge( a, b ):
+    n_a, n_b = len(a), len(b)
+    i, j = 0, 0 # indice in a ed in b rispettivamente
+    c = [] # lista di output
+    while i < n_a and j < n_b:
+        if a[i] < b[j]:
+            c.append(a[i])
+            i += 1
+        else:
+            c.append(b[j])
+            j += 1
+    c += a[i:] + b[j:]
+    return c
+max = funzione(a)
+print(ordina(a,max))
+```
+Con la funzione trovaMax trovo l'indice dell'elemento maggiore nell'array A, come nella risposta a
+Poi partendo da m inverto la lista, quindi inverto da m a fine lista (tutta la parte sinistra partendo da m)
+a questo punto in tempo lineare eseguo il merge delle due sottoliste e ottengo l'array ordinato in tempo $o(nlog(n))$
+
+# Esercizio 2
