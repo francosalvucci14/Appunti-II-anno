@@ -7,5 +7,5 @@
 - [[Lezione 5 - Automi]]
 - [[Lezione 6 - ASF]]
 - [[Lezione 7 - Equivalenza tra ASFD e ASFND]]
-- [[Lezione 8 - RE e Grammatiche di tipo 3]]
+- [[Lezione 8 - Equivalenza tra RE,RG,ASF]]
 - 

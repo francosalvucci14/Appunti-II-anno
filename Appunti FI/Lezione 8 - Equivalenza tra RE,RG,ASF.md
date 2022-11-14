@@ -81,3 +81,18 @@ Sia $n=|Q|$ e sia $\langle q_0,...,q_{n-1}\rangle$ un qualunque ordinamento degl
 Definiamo ora come $$R_{ij}^k\:0\leq i,j\leq n-1;k\geq max(i,j)$$
 L'insieme delle stringhe tali da portare $\mathcal A$ da $q_i\:a\:q_j$ senza transitare nessuno stato $q_h$ con $h\geq k$
 
+Abbiamo cioè che $x=a_1,..,a_m\in R_{ij}^k$ se e solo se:
+
+1. $\overline\delta(q_i,x)=q_j$
+2. se $\overline\delta(q_i,a_1...a_l)=q_{i_l}$ allora $i_l\lt k$, per $1\leq l\leq m-1$
+
+Per $k=0$ si ha:
+$$R_{ij}^0=\begin{cases}\bigcup\{a\} & tali\:che\:\delta(q_i,a)=q_j,\text{se ne esiste alemeno uno}\\\emptyset & altrimenti\end{cases}$$
+Per $k\gt1$, se $x\in R_{ij}^{k+1}$ è una stringa che conduce da $q_i\:a\:q_j$ senza transitare per nessuno stato $q_h$ con $h\geq k+1$, possono verificarsi due casi
+
+1. x conduce da $q_i\:a\:q_j$ senza transitare per $q_k$, dal che deriva che $x\in R_{ij}^k$
+2. x conduce da $q_i\:a\:q_j$ transitando per $q_k$
+
+
+
+
