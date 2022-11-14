@@ -152,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -176,6 +176,7 @@
   "active": "08f095c0c35f2e92",
   "lastOpenFiles": [
     "Appunti LMP/Lezione 7.md",
+    "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti LMP/Esercitazioni/LMP 0.md",
     "Appunti LMP/Lezione 6.md",
     "Appunti LMP/Lezione 4.md",
@@ -183,7 +184,6 @@
     "Appunti LMP/Lezione 2.md",
     "Appunti LMP/Lezione 5.md",
     "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
-    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
-    "Appunti FI/Lezione 8 - RE,RG e ASF.md"
+    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md"
   ]
 }
