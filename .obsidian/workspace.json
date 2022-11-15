@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -151,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -172,7 +173,7 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "acd002c7f705cc3c",
+  "active": "0979d1abcc124077",
   "lastOpenFiles": [
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti FI/Lezione 8 - RE,RG e ASF.md",

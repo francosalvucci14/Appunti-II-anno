@@ -42,7 +42,7 @@ Le dimostrazioni di tali proprietà presentano tutte uno stesso schema, in cui, 
 
 Dati $L_1,L_2$, la loro unione $L_1\cup L_2$ è un linguaggio regolare
 Infatti, siano $A_1=\langle\Sigma_1,Q_1,\delta_{N_1},q_0,F_1\rangle$ e $A_1=\langle\Sigma_2,Q_2,\delta_{N_2},q_0,F_2\rangle$ , due ASFD che accettano $L_1,L_2$
-Costruiamo da $A_1,A_2$ un automa $A=\langle\Sigma,Q,\delta_N,q,F\rangle$ che riconosce il linguaggio $L_1\cup L_2$
+Costruiamo da $A_1,A_2$ un automa $A=\langle\Sigma,Q,\delta_N,q_0,F\rangle$ che riconosce il linguaggio $L_1\cup L_2$
 
 **Costruzione**:
 1. $\Sigma=\Sigma_1\cup\Sigma_2$
@@ -58,7 +58,7 @@ Costruiamo da $A_1,A_2$ un automa $A=\langle\Sigma,Q,\delta_N,q,F\rangle$ che ri
 ## Complemento
 
 Dato un linguaggio regolare $L$, il suo complemento $\overline L$ è un linguaggio regolare
-Infatti sia $A=\langle\Sigma,Q,\delta_N,q,F\rangle$ un automa che riconosce $L$, con funzione $\delta$ totale: l'automa
+Infatti sia $A=\langle\Sigma,Q,\delta_N,q_0,F\rangle$ un automa che riconosce $L$, con funzione $\delta$ totale: l'automa
 $$\overline{\mathcal A}=\langle\Sigma,Q,\delta,q_0,\lbrace Q-F\rbrace\rangle$$
 riconosce allora il linguaggio $\overline L$
 
@@ -75,7 +75,7 @@ $$L=L_1\cap L_2=\overline{\overline L_1\cup\overline{L_2}}$$
 Dati $L_1,L_2$, la loro intersezione $L=L_1\circ L_2$ è un linguaggio regolare
 
 Infatti, siano $A_1=\langle\Sigma_1,Q_1,\delta_{N_1},q_0,F_1\rangle$ e $A_1=\langle\Sigma_2,Q_2,\delta_{N_2},q_0,F_2\rangle$ , due ASFD che accettano $L_1,L_2$
-Costruiamo da $A_1,A_2$ un automa $A=\langle\Sigma,Q,\delta_N,q,F\rangle$ che riconosce il linguaggio $L_1\circ L_2$
+Costruiamo da $A_1,A_2$ un automa $A=\langle\Sigma,Q,\delta_N,q_0,F\rangle$ che riconosce il linguaggio $L_1\circ L_2$
 
 **Costruzione**
 1. $\Sigma=\Sigma_1\cup\Sigma_2$
@@ -91,4 +91,8 @@ Costruiamo da $A_1,A_2$ un automa $A=\langle\Sigma,Q,\delta_N,q,F\rangle$ che ri
 
 ## Iterazione
 
+Dato un linguaggio regolare $L$, la sua iterazione $L^\star$ è un linguaggio regolare
 
+Infatti, sia $A=\langle\Sigma,Q,\delta_{N},q,F\rangle$ un ASFD che accetta $L$
+Costruiamo da $A$ un automa $A'=\langle\Sigma,Q\cup\lbrace q_0'\rbrace,\delta',q_0',F\cup\lbrace q_0'\rbrace\rangle$ che riconosce il linguaggio $L^\star$ ponendo:
+$$\begin{cases}\delta'(q,a)&=\delta(q,a)&\forall q\in Q-F\\\delta'(q,a)&=\delta(q,a)\cup\delta(q_0,a)&\forall q\in F\\\delta'(q_0',a)&=\delta(q_0,a)\end{cases}$$
