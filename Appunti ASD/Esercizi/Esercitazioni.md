@@ -178,3 +178,38 @@ Poi partendo da m inverto la lista, quindi inverto da m a fine lista (tutta la p
 a questo punto in tempo lineare eseguo il merge delle due sottoliste e ottengo l'array ordinato in tempo $o(nlog(n))$
 
 # Esercizio 2
+
+## Esercizio 3 (opzionale)
+
+Sia $V[1:n]$ un vettore di n caratteri, dove ogni posizione può contenere un carattere nell'insieme $\lbrace Y,E,S\rbrace$. il vettore è organizzato in modo che, se letto da sinistra verso destra, si ottiene pirma un seq. non nulla di Y, poi di E e poi si S
+Progettare un algoritmo che in tempo $o(n)$ calcoli il numero di Y,E,S nel vettore.
+
+Codice:
+```python
+a = ["Y","Y","E","E","E","E","S","S"]
+def algoritmo(a):
+    num_y = applicazionebinsearch(a,"Y",0)
+    num_e = applicazionebinsearch(a,"E",1)-num_y
+    num_s = applicazionebinsearch(a,"S",2)-(num_e+num_y)
+    return(num_y,num_e,num_s)
+def applicazionebinsearch(a,k,flag):
+    """flag = 0 per Y, flag = 1 per E, flag = 2 per S"""
+    n = len(a)
+    lx, rx = 0, n-1
+    while lx <= rx:
+            cx = (lx + rx)//2
+            if k == a[cx] and ( cx == n-1 or a[cx+1] != k ):
+                return cx+1
+            if flag == 0 or flag == 1:
+                if k != a[cx+1]:
+                    rx = cx-1
+                else:
+                    lx = cx+1
+            else:
+                if k != a[cx-1]:
+                    lx = cx+1
+                else:
+                    rx = cx-1
+    return -1
+print(algoritmo(a))
+```
