@@ -12,3 +12,24 @@
 - 
 
 
+# Grafo delle lezioni
+```mermaid
+graph TD;
+    A[Appunti]
+    B[Appunti ASD]
+    C[Appunti BSD]
+    D[Appunti CPS]
+    E[Appunti FI]
+    F[Appunti LMP]
+    G[Appunti SOR]
+    A-->B;
+    A-->C;
+    A-->D;
+    A-->E;
+    A-->F;
+    A-->G;
+    
+```
+
+
+
