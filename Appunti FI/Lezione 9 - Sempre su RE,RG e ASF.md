@@ -101,4 +101,4 @@ $$\begin{cases}\delta'(q,a)&=\delta(q,a)&\forall q\in Q-F\\\delta'(q,a)&=\delta(
 
 ![[appunti fi/immagini/Pasted image 20221115111531.png|center|500]]
 
-
+  
