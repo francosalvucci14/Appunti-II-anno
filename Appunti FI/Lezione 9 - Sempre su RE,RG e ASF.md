@@ -96,3 +96,9 @@ Dato un linguaggio regolare $L$, la sua iterazione $L^\star$ è un linguaggio re
 Infatti, sia $A=\langle\Sigma,Q,\delta_{N},q,F\rangle$ un ASFD che accetta $L$
 Costruiamo da $A$ un automa $A'=\langle\Sigma,Q\cup\lbrace q_0'\rbrace,\delta',q_0',F\cup\lbrace q_0'\rbrace\rangle$ che riconosce il linguaggio $L^\star$ ponendo:
 $$\begin{cases}\delta'(q,a)&=\delta(q,a)&\forall q\in Q-F\\\delta'(q,a)&=\delta(q,a)\cup\delta(q_0,a)&\forall q\in F\\\delta'(q_0',a)&=\delta(q_0,a)\end{cases}$$
+**Esempio**
+![[appunti fi/immagini/Pasted image 20221115111514.png|center|500]]
+
+![[appunti fi/immagini/Pasted image 20221115111531.png|center|500]]
+
+
