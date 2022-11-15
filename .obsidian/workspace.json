@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercitazioni.md",
+                "file": "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercitazioni.md"
+                "file": "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercitazioni.md",
+                "file": "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,14 +144,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercitazioni.md",
+                "file": "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -172,17 +172,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
-    "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+    "Appunti FI/Lezione 8 - RE,RG e ASF.md",
+    "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
     "Appunti ASD/Esercizi/Esercitazioni.md",
+    "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti LMP/Lezione 7.md",
     "Appunti ASD/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti ASD/Lezione 8 - Capitolo 4.md",
-    "Appunti ASD/Lezione 9 - Capitolo 5.md",
-    "Appunti ASD/Indice degli appunti.md",
-    "Appunti LMP/Lezione 6.md",
-    "Appunti LMP/Esercitazioni/LMP 0.md"
+    "Appunti ASD/Lezione 9 - Capitolo 5.md"
   ]
 }
