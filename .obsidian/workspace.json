@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercitazioni.md"
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
               }
             }
           },
@@ -127,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercitazioni.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Esercizi/Esercitazioni.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,10 +173,10 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "0979d1abcc124077",
+  "active": "18ec563f4d375d85",
   "lastOpenFiles": [
-    "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
     "Appunti ASD/Esercizi/Esercitazioni.md",
+    "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
     "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti FI/Lezione 8 - RE,RG e ASF.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",

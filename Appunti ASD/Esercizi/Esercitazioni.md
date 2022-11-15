@@ -217,3 +217,8 @@ print(algoritmo(a))
 Pseudocodice
 
 
+
+
+
+
+

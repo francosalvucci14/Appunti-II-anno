@@ -68,6 +68,7 @@ $T(n)=O(n^2)\implies T(n)=\Theta(n^2)$
 ## HeapSort
 
 Spiegazione qui -> [[Lezione 6 - HeapSort#HeapSort|HeapSort]]
+
 #### Pseudo-codice
 
 Pseudo-codice HeapSort:
