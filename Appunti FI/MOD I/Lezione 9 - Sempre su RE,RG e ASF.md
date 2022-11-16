@@ -101,3 +101,6 @@ $$\begin{cases}\delta'(q,a)&=\delta(q,a)&\forall q\in Q-F\\\delta'(q,a)&=\delta(
 
 ![[Pasted image 20221115111531.png|center|500]]
 
+
+
+
