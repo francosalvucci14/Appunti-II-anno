@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 9 - Sempre su RE,RG e ASF.md",
+                "file": "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md"
+                "file": "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md"
               }
             }
           },
@@ -128,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
+                "file": "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
+                "file": "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,17 +172,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "e08866913edbf267",
+  "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
+    "Appunti FI/MOD I/Lezione 9 - Sempre su RE,RG e ASF.md",
+    "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md",
     "Appunti FI/MOD I/Indice delle lezioni FI.md",
     "Appunti FI/Untitled.md",
-    "Appunti FI/MOD I/Lezione 9 - Sempre su RE,RG e ASF.md",
     "Appunti FI/MOD I/Lezione 8 - RE,RG e ASF.md",
     "Appunti LMP/MOD I/Lezione 7.md",
     "Appunti LMP/MOD I/Lezione 6.md",
     "Appunti LMP/MOD I/Lezione 8.md",
-    "Appunti LMP/MOD I/Lezione 5.md",
-    "Appunti LMP/MOD I/Lezione 4.md"
+    "Appunti LMP/MOD I/Lezione 5.md"
   ]
 }
