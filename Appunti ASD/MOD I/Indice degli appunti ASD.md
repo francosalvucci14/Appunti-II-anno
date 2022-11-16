@@ -17,7 +17,7 @@
 ```mermaid
 graph LR
 	A{Indice delle lezioni LMP}
-	B[Introduzione]
+	B[Lezione 1]
 	C[Lezione 2]
 	D[Lezione 3]
 	E[Lezione 4]
