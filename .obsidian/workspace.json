@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md",
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md"
+              }
             }
           },
           {
@@ -125,6 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,6 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,17 +172,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "90fe890bef2bffd6",
+  "active": "27f0e1c78772c1e5",
   "lastOpenFiles": [
+    "Appunti CPS/Indice delle lezioni CPS.md",
     "Appunti FI/MOD I/Indice delle lezioni FI.md",
     "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti ASD/MOD I/Indice degli appunti.md",
+    "Appunti ASD/MOD I/Indice degli appunti ASD.md",
     "Appunti BSD/MOD I/Lezione 2.md",
     "Appunti BSD/MOD I/Lezione 4 - Vincoli d'integrità.md",
     "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
-    "Appunti SOR/MOD I/Indice degli appunti SOR.md",
-    "Appunti LMP/MOD I/Lezione 7.md"
+    "Appunti SOR/MOD I/Indice degli appunti SOR.md"
   ]
 }
