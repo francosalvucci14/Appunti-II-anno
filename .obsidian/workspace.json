@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e60380a9671c7126",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/Indice delle lezioni LMP.md"
+                "file": "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md"
               }
             }
           },
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/Indice delle lezioni LMP.md",
+                "file": "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/Indice delle lezioni LMP.md",
+                "file": "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,8 +173,9 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "27f0e1c78772c1e5",
+  "active": "e60380a9671c7126",
   "lastOpenFiles": [
+    "Appunti SOR/MOD I/Indice degli appunti SOR.md",
     "Appunti LMP/Indice delle lezioni LMP.md",
     "Appunti LMP/Lezione 7.md",
     "Appunti FI/Esercizi/Esercizi ASF.md",
@@ -170,7 +184,6 @@
     "Appunti ASD/Indice degli appunti.md",
     "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
     "Grafo degli appunti.md",
-    "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
-    "Appunti ASD/Esercizi/Esercitazioni.md"
+    "Appunti ASD/Esercizi/Indice degli esercizi ASD.md"
   ]
 }
