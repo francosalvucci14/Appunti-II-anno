@@ -463,7 +463,7 @@ Point originOne;
 Se dichiari originOne in questo modo, il suo valore sarà indeterminato fino a quando non verrà effettivamente creato e assegnato un oggetto. La semplice dichiarazione di una variabile di riferimento non crea un oggetto. Per questo, è necessario utilizzare il nuovo operatore, come descritto nella sezione successiva. Devi assegnare un oggetto a originOne prima di usarlo nel tuo codice. Altrimenti, otterrai un errore del compilatore.
 
 Una variabile in questo stato, che attualmente non fa riferimento a nessun oggetto, può essere illustrata come segue (il nome della variabile, originOne, più un riferimento che non punta a nulla):
-![[appunti lmp/immagini/objects-null.gif|center|300]]
+![[objects-null.gif|center|300]]
 ### Istanziare una classe
 L'operatore new crea un'istanza di una classe allocando memoria per un nuovo oggetto e restituendo un riferimento a quella memoria. L'operatore new richiama anche il costruttore di oggetti.
 L'operatore new richiede un singolo argomento suffisso: una chiamata a un costruttore. Il nome del costruttore fornisce il nome della classe di cui creare un'istanza.
@@ -498,7 +498,7 @@ Questa classe contiene un singolo costruttore. Puoi riconoscere un costruttore p
 Point originOne = new Point(23, 94);
 ```
 Il risultato dell'esecuzione di questa affermazione può essere illustrato nella figura seguente:
-![[appunti lmp/immagini/objects-oneRef.gif|center|500]]
+![[objects-oneRef.gif|center|500]]
 Ecco il codice per la classe Rectangle, che contiene quattro costruttori:
 ```java
 public class Rectangle {
@@ -543,7 +543,7 @@ Rectangle rectOne = new Rectangle(originOne, 100, 200);
 Questo chiama uno dei costruttori di Rectangle che inizializza origin su originOne. Inoltre, il costruttore imposta la larghezza su 100 e l'altezza su 200. Ora ci sono due riferimenti allo stesso oggetto Punto: un oggetto può avere più riferimenti ad esso, come mostrato nella figura seguente:
 
 
-![[appunti lmp/immagini/objects-multipleRefs.gif|center|500]]
+![[objects-multipleRefs.gif|center|500]]
 
 La riga di codice seguente chiama il costruttore Rectangle che richiede due argomenti interi, che forniscono i valori iniziali per larghezza e altezza. Se ispezioni il codice all'interno del costruttore, vedrai che crea un nuovo oggetto Point i cui valori xey sono inizializzati su 0:
 ```java
@@ -674,7 +674,7 @@ Se questa sezione ti confonde, saltala e torna ad essa dopo aver terminato la le
 Quando un metodo utilizza un nome di classe come tipo restituito, ad esempio whosFastest, la classe del tipo dell'oggetto restituito deve essere una sottoclasse o la classe esatta del tipo restituito. Supponiamo di avere una gerarchia di classi in cui ImaginaryNumber è una sottoclasse di java.lang.Number, che a sua volta è una sottoclasse di Object, come illustrato nella figura seguente.
 
 
-![[appunti lmp/immagini/classes-hierarchy.gif|center|400]]
+![[classes-hierarchy.gif|center|400]]
 Supponiamo ora di avere un metodo dichiarato per restituire un numero:
 ```java
 public Number returnANumber() {
@@ -778,7 +778,7 @@ I livelli di accesso ti influenzano in due modi. In primo luogo, quando si utili
 
 Diamo un'occhiata a una raccolta di classi e vediamo come i livelli di accesso influiscono sulla visibilità. La figura seguente mostra le quattro classi in questo esempio e come sono correlate.
 
-![[appunti lmp/immagini/classes-access.gif|center|500]]
+![[classes-access.gif|center|500]]
 
 La tabella seguente mostra dove sono visibili i membri della classe Alpha per ciascuno dei modificatori di accesso che possono essere applicati.
 

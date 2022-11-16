@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md",
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md"
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md",
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md",
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,8 @@
   },
   "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
-    "Appunti LMP/Indice delle lezioni LMP.md",
+    "Appunti FI/MOD I/Indice delle lezioni FI.md",
+    "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/MOD I/Indice degli appunti.md",
@@ -170,7 +171,6 @@
     "Appunti BSD/MOD I/Lezione 4 - Vincoli d'integrità.md",
     "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
     "Appunti SOR/MOD I/Indice degli appunti SOR.md",
-    "Appunti LMP/Lezione 7.md",
-    "Appunti FI/MOD I/Esercizi/Esercizi ASF.md"
+    "Appunti LMP/MOD I/Lezione 7.md"
   ]
 }

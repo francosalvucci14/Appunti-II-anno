@@ -1,9 +1,9 @@
 # Basi del linguaggio
 
-- [[Appunti LMP/Lezione 4#Variabili|Variabili]]
-- [[Appunti LMP/Lezione 4#Operatori|Operatori]]
-- [[Appunti LMP/Lezione 5#Espressioni,Blocchi e Statements|Espressioni,Blocchi e Statements]]
-- [[Appunti LMP/Lezione 5#Control Flow Statements|Control Flow Statements]]
+- [[Appunti LMP/MOD I/Lezione 4#Variabili|Variabili]]
+- [[Appunti LMP/MOD I/Lezione 4#Operatori|Operatori]]
+- [[Appunti LMP/MOD I/Lezione 5#Espressioni,Blocchi e Statements|Espressioni,Blocchi e Statements]]
+- [[Appunti LMP/MOD I/Lezione 5#Control Flow Statements|Control Flow Statements]]
 
 ## Variabili
 Come hai appreso nella lezione precedente, un oggetto memorizza il suo stato nei campi.
@@ -53,7 +53,7 @@ Il tipo di dati di una variabile determina i valori che può contenere, oltre al
 ### Array
 _Def_
 Un array è un oggetto contenitore che contiene un numero fisso di valori di un singolo tipo. La lunghezza di un array viene stabilita al momento della creazione dell'array. Dopo la creazione, la sua lunghezza è fissata. Hai già visto un esempio di array, nel metodo principale di "Hello World!" applicazione.
-![[appunti lmp/immagini/objects-tenElementArray.gif|center]]
+![[objects-tenElementArray.gif|center]]
 
 Ogni elemento in un array è chiamato elemento e ogni elemento è accessibile dal suo indice numerico.
 Il programma seguente, ArrayDemo, crea una matrice di numeri interi, inserisce alcuni valori nella matrice e stampa ogni valore sull'output standard.
