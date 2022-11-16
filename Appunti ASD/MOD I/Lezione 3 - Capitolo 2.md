@@ -77,7 +77,7 @@ _Idea_:
 **Esempio**
 $T(n)=T(n-1)+1$
 
-![[appunti asd/immagini/Pasted image 20221016160539.png|center]]
+![[Pasted image 20221016160539.png|center]]
 Quanto costa ogni nodo? ...uno!
 Quanti nodi ha l'albero? **n**
 Di conseguenza possiamo dire che $T(n)=\Theta(n)$
@@ -85,7 +85,7 @@ Di conseguenza possiamo dire che $T(n)=\Theta(n)$
 **Esempio**
 $T(n)=T(n-1)+n$
 
-![[appunti asd/immagini/Pasted image 20221016160737.png|center]]
+![[Pasted image 20221016160737.png|center]]
 
 Quanto costa ogni nodo? **...al più n**
 Quanti nodi ha l'albero? **n**
@@ -93,7 +93,7 @@ Quanti nodi ha l'albero? **n**
 Quindi possiamo dedurre che $T(n)=O(n^2)$
 Ma vale $T(n)=\Theta(n^2)$?
 
-![[appunti asd/immagini/Pasted image 20221016161024.png|center]]
+![[Pasted image 20221016161024.png|center]]
 
 Come possiamo vedere dalla foto, il lower bound è $T(n)\geq n/2n/2=n^2/4$ e quindi $T(n)=\Omega(n^2)$
 Di conseguenza dato che T(n) è sia $O(n^2)(upper\:bound)\:che\:\Omega(n^2)(lower\:bound)\implies T(n)=\Theta(n^2)$ 
@@ -104,7 +104,7 @@ I nodi di un albero binario completo di altezza h sono dati dalla seguente formu
 
 **Esempio**
 
-![[appunti asd/immagini/Pasted image 20221016161633.png|center]]
+![[Pasted image 20221016161633.png|center]]
 
 Quanto mi costa ogni nodo? ...uno!
 Quanto è alto l'albero? ...n-1
@@ -114,7 +114,7 @@ Quindi possiamo dire che $T(n)=2^n-1=\Theta(2^n)$
 
 **Esempio**
 
-![[appunti asd/immagini/Pasted image 20221016161952.png|center]]
+![[Pasted image 20221016161952.png|center]]
 
 Quanto costa ogni nodo? ...al più n
 Quanto è alto l'albero? n-1
@@ -126,7 +126,7 @@ $T(n)=O(n2^n)$
 
 **Un esempio un pò più complesso**
 
-![[appunti asd/immagini/Pasted image 20221016162503.png|center]]
+![[Pasted image 20221016162503.png|center]]
 
 In questo esempio possiamo verificare che a sinistra l'albero scende ogni volta di n/3, mentre a destra scende di 3n/2; da questo possiamo dedurre che da sinistra l'albero sarà alto $log_3n$ mentre da destra $log_{3/2}n$
 

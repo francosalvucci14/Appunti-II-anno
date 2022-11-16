@@ -81,7 +81,7 @@ Nodo interno (non foglia): $i:j$
 Nodo foglia:
 - modella una risposta (output) dell'algoritmo: **permutazione degli elementi**
 
-![[appunti asd/immagini/Pasted image 20221103094813.png|center]]
+![[Pasted image 20221103094813.png|center]]
 
 **Osservazioni**
 - L'albero di decisione **non è** associato ad un problema
@@ -114,7 +114,7 @@ v ha almeno un figlio u che è radice di un (sotto)albero che ha almeno k/2 fogl
 T ha altezza almeno
 $1+log_2k/2=1+log_2k-log_22=log_2k$
 
-![[appunti asd/immagini/Pasted image 20221103100148.png|center|300]]
+![[Pasted image 20221103100148.png|center|300]]
 
 ## Il Lower Bound $\Omega(nlog(n))$
 
@@ -122,7 +122,7 @@ Consideriamo l'albero di decisione di un qualsiasi algoritmo che risolve il prob
 L'altezza h dell'albero di decisione è almeno $log_2(n!)$
 **Formula di Stirling**: $n!\approx (2\pi n)^{1/2}\cdot(n/e)^n$
 
-![[appunti asd/immagini/Pasted image 20221103100605.png|center|500]]
+![[Pasted image 20221103100605.png|center|500]]
 
 **Esercizio**
 Dimostrare usando la tecnica dell'albero di decisione che l'algoritmo di pesatura che esegue (nel caso peggiore) $\lceil log_3n\rceil$ pesate per trovare la moneta falsa fra n monete è ottimo
@@ -137,16 +137,16 @@ Dimostrare usando la tecnica dell'albero di decisione che l'algoritmo di pesatur
 Per ordinare n interi con valori in $[1,k]$
 Mantiene un array Y di k contatori tale che $Y[x]=$numero di volte che il valore x compare nell'array di input X
 
-![[appunti asd/immagini/Pasted image 20221103102304.png|center|700]]
+![[Pasted image 20221103102304.png|center|700]]
 
 ### IntegerSort: fase 2
 Scorre Y da sinistra a destrae, se $Y[x]=k$, scrive in X il valore x per k volte
 
-![[appunti asd/immagini/Pasted image 20221103102511.png|center|700]]
+![[Pasted image 20221103102511.png|center|700]]
 
 ### PseudoCodice
 
-![[appunti asd/immagini/Pasted image 20221103102620.png|center|400]]
+![[Pasted image 20221103102620.png|center|400]]
 
 - linee 1.4 costo $O(1)$- tempo costante
 - linea 2 costo $O(k)$
@@ -174,8 +174,8 @@ per $c\gt1$
 **Esercizio Importante**
 Dato un vettore X di n interi in $[1,k]$, costruire in tempo $O(n+k)$ una struttura dati (**oracolo**) che sappia rispondere a domande (**query**) in tempo $O(1)$ del tipo : "quanti interi in X cadono nell'intervallo $[a,b]$?", per ogni a e b
 
-![[appunti asd/immagini/Pasted image 20221103104429.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221103104448.png|center|500]]
+![[Pasted image 20221103104429.png|center|500]]
+![[Pasted image 20221103104448.png|center|500]]
 
 Soluzione qui -> [[Esercizio lezione 7 (Oracolo e query)]]
 

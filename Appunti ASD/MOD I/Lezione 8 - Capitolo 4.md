@@ -20,18 +20,18 @@ Si potrebbe voler ordinare per matricola o per anno di nascita
 Tempo $O(n+k)$ come per IntegerSort
 
 **Esempio**
-![[appunti asd/immagini/Pasted image 20221107161441.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221107161547.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221107161643.png|center|500]]
+![[Pasted image 20221107161441.png|center|500]]
+![[Pasted image 20221107161547.png|center|500]]
+![[Pasted image 20221107161643.png|center|500]]
 ... e così via...
-![[appunti asd/immagini/Pasted image 20221107161742.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221107161822.png|center|500]]
+![[Pasted image 20221107161742.png|center|500]]
+![[Pasted image 20221107161822.png|center|500]]
 fino a...
-![[appunti asd/immagini/Pasted image 20221107161857.png|center|500]]
+![[Pasted image 20221107161857.png|center|500]]
 
 ## Pseudo-codice
 
-![[appunti asd/immagini/Pasted image 20221107162008.png|center|500]]
+![[Pasted image 20221107162008.png|center|500]]
 
 ## Stabilità
 
@@ -53,7 +53,7 @@ Partiamo dalla cifra meno significativa verso quella più significativa:
 
 **Esempio**
 b=10
-![[appunti asd/immagini/Pasted image 20221107163705.png|center]]
+![[Pasted image 20221107163705.png|center]]
 
 ## Correttezza
 - Se x e y hanno una diversa t-esima cifra, la t-esima passata di BucketSort li ordina

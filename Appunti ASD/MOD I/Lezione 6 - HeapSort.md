@@ -19,13 +19,13 @@ Stesso approccio incrementale del SelectionSort
 
 ### Alberi: qualche altra definizione
 
-![[appunti asd/immagini/Pasted image 20221028093543.png|center|700]]
+![[Pasted image 20221028093543.png|center|700]]
 
 **albero d-ario**: albero in cui tutti i nodi interni hanno (al più) d figli
 $d=2\implies$**albero binario**
 Un albero d-ario è **completo**: se tutti nodi interni hanno esattamente d figli e le foglie sono tutte allo steso livello
 
-![[appunti asd/immagini/Pasted image 20221028093928.png|center|600]]
+![[Pasted image 20221028093928.png|center|600]]
 
 
 ## Struttura dati Heap
@@ -35,7 +35,7 @@ Associati ad un insieme S=albero binario radicato con le seguenti proprietà:
 3. $chiave(padre(v))\geq chiave(v)$ per ogni nodo v diverso dalla radice
 
 
-![[appunti asd/immagini/Pasted image 20221028094332.png|center|600]]
+![[Pasted image 20221028094332.png|center|600]]
 
 ### Proprietà salienti degli Heap
 1. Il **massimo** è contenuto **nella radice**
@@ -43,15 +43,15 @@ Associati ad un insieme S=albero binario radicato con le seguenti proprietà:
 3. Gli heap con struttura rafforzara possono essere rappresentati in un **array di dimensione pari a n**
 #### Altezza di un heap : prop2
 Sia H un heap di n nodi e altezza h
-![[appunti asd/immagini/Pasted image 20221028094753.png|center|600]]
+![[Pasted image 20221028094753.png|center|600]]
 
 $$n\geq 1+\sum_{i=0}^{h-1}2^i=1+2^h-1=2^h\implies h\leq log_2n$$
 #### Rappresentazione tramite vettore posizionale : prop3
 
-![[appunti asd/immagini/Pasted image 20221028095850.png|center|600]]
+![[Pasted image 20221028095850.png|center|600]]
 
 ...ancora un esempio
-![[appunti asd/immagini/Pasted image 20221028095939.png|center|700]]
+![[Pasted image 20221028095939.png|center|700]]
 
 ## La procedura fixHeap
 
@@ -67,24 +67,24 @@ Sia v la radice di H. Assume che i sottoalberi radicati nel figlio sinistro e de
 Tempo di esecuzione: $O(log(n))$
 
 **Esempio**
-![[appunti asd/immagini/Pasted image 20221028101608.png|center|500]]
+![[Pasted image 20221028101608.png|center|500]]
 Scambio 4 con 16 (quindi chiave(i=1)<chiave(i=2))
-![[appunti asd/immagini/Pasted image 20221028103052.png|center|500]]
+![[Pasted image 20221028103052.png|center|500]]
 scambio 4 con 14 (quindi chiave(i=2)<chiave(i=4))
-![[appunti asd/immagini/Pasted image 20221028103151.png|center|500]]
+![[Pasted image 20221028103151.png|center|500]]
 scambio 4 con 8 (quindi chiave(i=4)<chiave(i=9))
-![[appunti asd/immagini/Pasted image 20221028103253.png|center|500]]
+![[Pasted image 20221028103253.png|center|500]]
 
 Complessità $O(log(n))$
 ### Pseudocodice più dettagliato
 (l'heap è mantenuto attraverso un vettore posizionale)
-![[appunti asd/immagini/Pasted image 20221028103423.png|center]]
+![[Pasted image 20221028103423.png|center]]
 
 ## Estrazione del massimo
 
-![[appunti asd/immagini/Pasted image 20221028112747.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221028112821.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221028112857.png|center|500]]
+![[Pasted image 20221028112747.png|center|500]]
+![[Pasted image 20221028112821.png|center|500]]
+![[Pasted image 20221028112857.png|center|500]]
 
 ## Costruzione dell'heap
 
@@ -95,10 +95,10 @@ Algoritmo ricorsivo basato sulla tecnica del divide et impera
 >	heapify (sottoalbero destro di H)
 >	fixHeap (radice di H,H)
 
-![[appunti asd/immagini/Pasted image 20221028113058.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221028113117.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221028113132.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221028113150.png|center|500]]
+![[Pasted image 20221028113058.png|center|500]]
+![[Pasted image 20221028113117.png|center|500]]
+![[Pasted image 20221028113132.png|center|500]]
+![[Pasted image 20221028113150.png|center|500]]
 
 #### Complessità heapify
 
@@ -130,7 +130,7 @@ Estrare ripetutamente il massimo per n-1 volte
 - asd ogni estrazione memorizza il massimo nella posizione dell'array che si è appena liberata
 
 ### Pseudocodice
-![[appunti asd/immagini/Pasted image 20221028114925.png|center|500]]
+![[Pasted image 20221028114925.png|center|500]]
 
 - linea 1 ha costo $O(n)$
 - linee 3-6 eseguono n-1 estrazioni di costo $O(log(n))$
@@ -138,15 +138,15 @@ $\implies$ ordina in loco in tempo $O(nlog(n))$
 
 #### Esempio concreto
 
-![[appunti asd/immagini/Pasted image 20221028115135.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221028121520.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221028121604.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221028121647.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221028121727.png|center|500]]
-![[appunti asd/immagini/Pasted image 20221028121801.png|center|500]]
+![[Pasted image 20221028115135.png|center|500]]
+![[Pasted image 20221028121520.png|center|500]]
+![[Pasted image 20221028121604.png|center|500]]
+![[Pasted image 20221028121647.png|center|500]]
+![[Pasted image 20221028121727.png|center|500]]
+![[Pasted image 20221028121801.png|center|500]]
 
 e così via, fin quando non ottengo il seguente risultato:
-![[appunti asd/immagini/Pasted image 20221028121859.png|center|600]]
+![[Pasted image 20221028121859.png|center|600]]
 
 ## Ritornado a max-heap e min-heap
 

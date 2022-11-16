@@ -90,7 +90,7 @@ print(f"elementi compresi fra {a} e {b} in Y': {valore}")
 
 Risultato:
 
-![[appunti asd/esercizi/imges/Pasted image 20221104103945.png|center|500]]
+![[Pasted image 20221104103945.png|center|500]]
 
 
 
