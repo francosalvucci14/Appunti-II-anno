@@ -40,3 +40,13 @@ Minimizzazione di un ASFD
 
 - Individuazione di tutte le coppie di stati indistinguibili (mediante un algoritmo di marcatura delle coppie distinguibili)
 - Unificazione degli stati equivalenti, eliminando quelli non raggiungibili e modificando opportunamente la funzione di transizione
+
+Ipotesi:
+
+Tutti gli stati di $\mathcal A$ sono raggiungibili dallo stato iniziale, altrimenti è necessario un passo preliminare di eliminazione degli stati irraggiungibili
+
+- Per marcare le coppire di stati distinguibili si utilizza una tabella contenente una casella per ciascuna coppia (non ordinata) di stati di $Q$
+- Le caselle vengono usate per marcare le coppie di stati distinguibili e per elencare, in una lista associata, tutte le coppie che dovranno essere marcate qualora la coppia a cui è associata la casella venga marcata
+
+La procedura inizia con la marcatura delle coppie distinguibili tramite la stringa $\varepsilon$ (tutte e sole le coppie costituite da uno stato finale e da uno non finale)
+Per ogni coppia $(p,q)$ nonn ancora marcata, si considerano, per ogni $q\in\Sigma$, tutte le coppie $(r,s)$, con $r=\delta(p,)\:e\:s=\delta(q,a)$
