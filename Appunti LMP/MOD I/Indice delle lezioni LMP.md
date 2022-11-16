@@ -37,15 +37,9 @@ graph LR
 	style H fill:black, color:#fff
 	style I fill:black, color:#fff
 	style J fill:black, color:#fff
-	A-->B
-	A-->C
-	A-->D
-	A-->E
-	A-->F
-	A-->G
-	A-->H
-	A-->I
-	A-->J
+	A-->B & C & D & E & F & G & H & I & J
 	E-->F
+	F-->E
 	G-->H
+	H-->G
 ```
