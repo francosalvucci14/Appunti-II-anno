@@ -26,6 +26,8 @@ graph LR
 	H[Lezione 7]
 	I[Lezione 8]
 	J[Lezione 9]
+	
+	linkStyle default stroke-width:2px,fill:none,stroke:red,color:red
 
 	style A fill:black, color:#fff
 	style B fill:black, color:#fff
@@ -37,15 +39,7 @@ graph LR
 	style H fill:black, color:#fff
 	style I fill:black, color:#fff
 	style J fill:black, color:#fff
-	A-->B
-	A-->C
-	A-->D
-	A-->E
-	A-->F
-	A-->G
-	A-->H
-	A-->I
-	A-->J
+	A-->B & C & D & E & F & G & H & I & J
 	H-->I
 	I-->H
 	D-->E
