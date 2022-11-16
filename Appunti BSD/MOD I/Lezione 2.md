@@ -1,11 +1,11 @@
 
-- [[Appunti BSD/Lezione 2#DBMS vs file system|DBMS vs file system]]
-- [[Appunti BSD/Lezione 2#Modello di rappresentazione dei dati|Modello di rappresentazione dei dati]]
-- [[Appunti BSD/Lezione 2#Schemi ed istanze|Schemi ed istanze]]
-- [[Appunti BSD/Lezione 2#Architettura di un DBMS|Architettura di un DBMS]]
-- [[Appunti BSD/Lezione 2#Indipendenza logica e fisica|Indipendenza logica e fisica]]
-- [[Appunti BSD/Lezione 2#Linguaggi per basi di dati|Linguaggi per basi di dati]]
-- [[Appunti BSD/Lezione 2#Attori del sistema|Attori del sistema]]
+- [[Appunti BSD/MOD I/Lezione 2#DBMS vs file system|DBMS vs file system]]
+- [[Appunti BSD/MOD I/Lezione 2#Modello di rappresentazione dei dati|Modello di rappresentazione dei dati]]
+- [[Appunti BSD/MOD I/Lezione 2#Schemi ed istanze|Schemi ed istanze]]
+- [[Appunti BSD/MOD I/Lezione 2#Architettura di un DBMS|Architettura di un DBMS]]
+- [[Appunti BSD/MOD I/Lezione 2#Indipendenza logica e fisica|Indipendenza logica e fisica]]
+- [[Appunti BSD/MOD I/Lezione 2#Linguaggi per basi di dati|Linguaggi per basi di dati]]
+- [[Appunti BSD/MOD I/Lezione 2#Attori del sistema|Attori del sistema]]
 
 
 # DBMS vs file system
@@ -28,7 +28,7 @@ Lo schema viene costruito secondo un modello di dati ben definito. Un Modello di
 Tramite questo schema dei dati fornisce al DBMS una rappresentazione dei dati, in modo tale da permettere l'organizzazione della gestione
 Le descrizioni e rappresentazioni dei dati a livelli diversi permettono l'indipendenza dei dati dalla rappresentazione fisica:
 - i programmi fanno riderimento alla struttura a livello più alto, e le rappresentazioni sottostanti possono essere modificate senza necessità di modifica dei programmi
-- QUesto concetto viene realizzato tramite il [[Appunti BSD/Lezione 2#Modello dei dati|Modello dei dati]]
+- QUesto concetto viene realizzato tramite il [[Appunti BSD/MOD I/Lezione 2#Modello dei dati|Modello dei dati]]
 ## Modello dei dati
 Un Modello dei dati è un insieme di concetti utilizzati per organizzare i dati di interesse e descriverne la struttura in modo che essa risulti comprensibile ad un elaboratore
 
@@ -65,7 +65,7 @@ Esistono due tipi di modelli:
 - **Entity-Relationship e Modello Classi Associazioni (UML)**
 
 Esempio di modello concettuale
-![[appunti bsd/immagini/Pasted image 20221019164651.png|center|500]]
+![[Pasted image 20221019164651.png|center|500]]
 
 # Schemi ed istanze
 In ogni base di dati esistono:
@@ -75,14 +75,14 @@ In ogni base di dati esistono:
 	- nell'esempio, il "corpo" di ciascuna tabella
 
 **Schema**
-![[appunti bsd/immagini/Pasted image 20221019165018.png|center|500]]
+![[Pasted image 20221019165018.png|center|500]]
 **Istanza**
-![[appunti bsd/immagini/Pasted image 20221019165123.png|center|600]]
+![[Pasted image 20221019165123.png|center|600]]
 
 
 # Architettura di un DBMS
 ## Architettura standard (ANSI/SPARC) a tre livelli per DBMS
-![[appunti bsd/immagini/Pasted image 20221019165546.png|center|600]]
+![[Pasted image 20221019165546.png|center|600]]
 
 ## Schemi
 - **schema logico**: descrizione della base di dati nel modello logico del DBMS
@@ -138,12 +138,12 @@ I DBMS dispongono di vari linguaggi e interfacce diverse:
 - **comandi (come quelli del linguaggio interattivo)** immersi in un linguaggioad hoc, con altre funzionalità (es. grafici o stampe strutturate), anche con l'ausilio di strumen ti di sviluppo
 - **con interfacce amichevoli**(senza linguaggio testuale)
 ## SQL,linguaggio interattivo
-![[appunti bsd/immagini/Pasted image 20221019171417.png|center|600]]
+![[Pasted image 20221019171417.png|center|600]]
 ## SQL immerso in un linguaggio ad alto livello
-![[appunti bsd/immagini/Pasted image 20221019171506.png|center|500]]
+![[Pasted image 20221019171506.png|center|500]]
 ## SQL immerso in un linguaggio ad hoc (Oracle PL/SQL)
 
-![[appunti bsd/immagini/Pasted image 20221019171621.png|center|600]]
+![[Pasted image 20221019171621.png|center|600]]
 
 # Attori del sistema
 ## Basi di dati: professionalità

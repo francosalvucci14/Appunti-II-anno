@@ -1,7 +1,7 @@
 
-- [[Appunti BSD/Lezione 3#Modello Relazionale|Modello Relazionale]]
-- [[Appunti BSD/Lezione 3#Strutture Nidificate|Strutture Nidificate]]
-- [[Appunti BSD/Lezione 3#Informazione incompleta|Informazione incompleta]]
+- [[Appunti BSD/MOD I/Lezione 3#Modello Relazionale|Modello Relazionale]]
+- [[Appunti BSD/MOD I/Lezione 3#Strutture Nidificate|Strutture Nidificate]]
+- [[Appunti BSD/MOD I/Lezione 3#Informazione incompleta|Informazione incompleta]]
 
 # Modello Relazionale
 
@@ -16,7 +16,7 @@ Si basa sul concetto matematico di **relazione(con una variante)**. Le relazioni
 - $D_1,...,D_n$ sono i **domini della relazione**
 
 **Esempio**
-![[appunti bsd/immagini/Pasted image 20221102200220.png|center|500]]
+![[Pasted image 20221102200220.png|center|500]]
 
 ### Relazione Matematica: Proprietà
 
@@ -27,14 +27,14 @@ Una relazione è un **insieme**, quindi:
 - _ciascuna n-upla è ordinata_: l'i-esimo valore proveien dall'i-esimo dominio
 
 **esempio**
-![[appunti bsd/immagini/Pasted image 20221105103445.png|center|700]]
+![[Pasted image 20221105103445.png|center|700]]
 
 Ciascuno dei domini ha due **ruoli** diversi, distinguibili attraverso la posizione
 La struttura è **posizionale**
 
 ## Struttura Non Posizionale
 Se a ciascun dominio si associa un nome (**attributo**), che ne descrive il "ruolo", la struttura diviene non posizionale
-![[appunti bsd/immagini/Pasted image 20221105103918.png|center|500]]
+![[Pasted image 20221105103918.png|center|500]]
 
 ## Collezione di funzioni
 Per meglio catturare il concetto di relazione del modello relazionale definiamo:
@@ -48,14 +48,14 @@ $t[A]$ denota il valore della ennupla $t$ sull'attributo A
 ## Modello Relazionale: esempio
 **Esempio di relazione**: Relazione rappresentata tramite tabella (solo una delle possibili forme)
 
-![[appunti bsd/immagini/Pasted image 20221105104410.png|center]]
+![[Pasted image 20221105104410.png|center]]
 
 ## Modello Relazione: notazione
 **Notazione**
 Se $t$ è una tupla su $X$ e $A$ è un attributo, con $A\in X$ allora $t[A]$ indica il valore di t su A
 **Esempio**: se t è la prima tupla allora...
 $$t[Cognome]\to\:'Rossi'$$
-![[appunti bsd/immagini/Pasted image 20221105104628.png|center]]
+![[Pasted image 20221105104628.png|center]]
 
 ### Tabelle e Relazioni
 
@@ -71,13 +71,13 @@ In una _tabella_ che rappresenta una _relazione_:
 - Ordine non rilevante
 - NO due righe uguali
 - NO dati non omogenei
-![[appunti bsd/immagini/Pasted image 20221105104923.png|center|600]]
-![[appunti bsd/immagini/Pasted image 20221105105009.png|center|600]]
+![[Pasted image 20221105104923.png|center|600]]
+![[Pasted image 20221105105009.png|center|600]]
 
 ### Modello basato su valori
 I riferimenti fra dati in relazioni diverse sono rappresentanti per mezzo di valori dei domini che compaiono nelle ennuple
-![[appunti bsd/immagini/Pasted image 20221105105126.png|center|600]]
-![[appunti bsd/immagini/Pasted image 20221105105211.png|center|600]]
+![[Pasted image 20221105105126.png|center|600]]
+![[Pasted image 20221105105211.png|center|600]]
 
 #### Vantaggi della struttura basata sui valori
 
@@ -93,19 +93,19 @@ I riferimenti fra dati in relazioni diverse sono rappresentanti per mezzo di val
 - **Schema basi di dati**: insieme di schemi di relazione $$R=\lbrace R_1(X_1),...,R_k(X_k)\rbrace$$
 **Esempio schema di relazioni e di basi di dati**
 
-![[appunti bsd/immagini/Pasted image 20221105105801.png|center|600]]
+![[Pasted image 20221105105801.png|center|600]]
 
 - (Istanza di) **relazione** su uno schema $R(X)$: insieme $r$ di ennuple su X
 - (Istanza di) **base di dati** su uno schema $R=\lbrace R_1(X_1),..,R_k(X_k)\rbrace$: insieme di relazioni $r=\lbrace r_1,...,r_n\rbrace$ (con $r_i$ relazione su $R_i$)
 
 ### Relazioni su singoli attributi
-![[appunti bsd/immagini/Pasted image 20221105110113.png|center|600]]
+![[Pasted image 20221105110113.png|center|600]]
 
 
 # Strutture Nidificate
-![[appunti bsd/immagini/Pasted image 20221105110203.png|center|600]]
+![[Pasted image 20221105110203.png|center|600]]
 ## Rappresentazione relazionale delle strutture nidificate
-![[appunti bsd/immagini/Pasted image 20221105110238.png|center|600]]
+![[Pasted image 20221105110238.png|center|600]]
 
 - Abbiamo rappresentato veramente tutti gli aspetti delle ricevute?
 - Dipende da che cosa ci interessa!
@@ -114,7 +114,7 @@ I riferimenti fra dati in relazioni diverse sono rappresentanti per mezzo di val
 - Sono possibili rappresentazioni diverse
 
 ### Rappresentazione alternativa
-![[appunti bsd/immagini/Pasted image 20221105110459.png|center|600]]
+![[Pasted image 20221105110459.png|center|600]]
 
 
 # Informazione incompleta
@@ -125,7 +125,7 @@ Il modello relazionale impone ai dati una struttura rigida_
 I dati disponibili possono non corrispondere al formato previsto
 
 **Esempio**
-![[appunti bsd/immagini/Pasted image 20221105110719.png|center|500]]
+![[Pasted image 20221105110719.png|center|500]]
 
 ## Soluzioni?
 
@@ -141,7 +141,7 @@ Si adotta una tecnica rudimentale ma efficace:
 - Si possono (e debbono) imporre restrizioni sulla presenza di valori nulli
 
 **Esempio con troppi valori nulli**
-![[appunti bsd/immagini/Pasted image 20221105111347.png|center|500]]
+![[Pasted image 20221105111347.png|center|500]]
 
 ## Tipi di valore nullo
 

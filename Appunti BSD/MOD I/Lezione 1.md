@@ -81,13 +81,13 @@ Collezione di informazioni registrate in formato leggibile dell'elaboratore elet
 L'approccio classico usato dai programmi che compongono il sistema informativo per la gestione delle informazioni è un archivio basato su files
 Ogni programma ha accesso al file system gestito dal sistema operativo per creare uno o più files (**archivi**)
 
-![[appunti bsd/immagini/Pasted image 20221013151002.png|center]]
+![[Pasted image 20221013151002.png|center]]
 
 
 Ogni file è un insieme di registrazioni (**record**) allìinterno dei quali sono memorizzati i dati elementari (**attributi e campi**)
 Condivisione di dati tra più programmi può essere fatto tramite l'uso di file condivisi
 
-![[appunti bsd/immagini/Pasted image 20221013151249.png|center]]
+![[Pasted image 20221013151249.png|center]]
 I file possono avere diversi **formati incompatibili** tra di loro, i programmi si devono adeguare a diverse convenzioni. Questo rende la **condivisione** dei dati attraverso applicazioni differenti **difficoltosa**
 I dati se non memorizzati su file condivisi sono replicati con spreco di **risorse** di memorizzazione e possibili problemi legati a inconsistenze
 L'accesso ai file in condivisione porta a dover gestire la **concorrenza con soluzioni ad-hoc**
@@ -95,7 +95,7 @@ L'approccio basato su DBMS invece va oltre l'uso di file locali gestiti dalle si
 I dati non sono gestiti dalle singole applicazioni ma da un DBMS che offre un **interfaccia comune** a tutte le applicazioni
 Si interpone fra le applicazioni e la memoria di massa
 
-![[appunti bsd/immagini/Pasted image 20221013152000.png|center]]
+![[Pasted image 20221013152000.png|center]]
 
 ### ...Ritornando al DBMS
 

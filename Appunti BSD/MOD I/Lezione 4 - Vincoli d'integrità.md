@@ -8,7 +8,7 @@
 Esistono istanze di basi di dati che, pur sintatticamente corrette, non rappresentano informazioni possibili per l'applicazione di interesse.
 
 **Esempio**
-![[appunti bsd/immagini/Pasted image 20221105112059.png|center|600]]
+![[Pasted image 20221105112059.png|center|600]]
 
 _Def_
 Proprietà che deve essere soddisfatta dalle istanze che rappresentano informazioni corrette per l'applicazione
@@ -28,10 +28,10 @@ Caso particolare:
 - **vincoli di dominio**: coinvolgono un solo attributo
 Una possibile sintassi:
 - espressione booleana di atomi che confrontano valori di attributo o espressioni aritmetiche su di essi
-![[appunti bsd/immagini/Pasted image 20221105112635.png|center|500]]
+![[Pasted image 20221105112635.png|center|500]]
 
 **Esempio**
-![[appunti bsd/immagini/Pasted image 20221105112832.png|center|600]]
+![[Pasted image 20221105112832.png|center|600]]
 
 
 # Chiavi e schemi di relazione
@@ -40,7 +40,7 @@ Una possibile sintassi:
 
 - Non ci sono due ennuple con lo stesso valore sull'attibuto **Matricola**
 - Non ci sono due ennuple uguali su tutti e tre gli attibuti **Cognome,Nome,Data di Nascita**
-![[appunti bsd/immagini/Pasted image 20221105113142.png|center|600]]
+![[Pasted image 20221105113142.png|center|600]]
 
 ## Chiave
 
@@ -53,7 +53,7 @@ Insieme di attributi che identificano univocamente le ennuple di una relazione
 - Matricola è una chiave:
 	- è una **superchiave**
 	- contiene un solo attributo e quindi è minimale
-![[appunti bsd/immagini/Pasted image 20221105113914.png|center|600]]
+![[Pasted image 20221105113914.png|center|600]]
 
 ## Vincoli,schemi e istanze
 - I vincoli corrispondono a proprietà del mondo reale modellato dalla base di dati
@@ -62,12 +62,12 @@ Insieme di attributi che identificano univocamente le ennuple di una relazione
 - Un'istanza può soddisfare altri vincoli ("per caso")
 
 **Esempio**
-![[appunti bsd/immagini/Pasted image 20221105114217.png|center|600]]
+![[Pasted image 20221105114217.png|center|600]]
 
 - è **corretta**: soddisfa i vincoli
 - Ne soddisfa anche altri ("per caso"):
 	- Cognome,Corso è chiav
-![[appunti bsd/immagini/Pasted image 20221105114410.png|center|600]]
+![[Pasted image 20221105114410.png|center|600]]
 
 ## Esistenza delle chiavi
 
@@ -87,7 +87,7 @@ le chiavi permettono di correlare i dati in relazioni diverse:
 In presenza di **valori nulli**, i valori della chiave non permettono:
 - di identificare le ennuple
 - di realizzare facilmente i riferimento da altre relazioni
-![[appunti bsd/immagini/Pasted image 20221105114743.png|center|600]]
+![[Pasted image 20221105114743.png|center|600]]
 
 ## Chiave primaria
 
@@ -102,8 +102,8 @@ In particolare, valoro delle chiavi (primarie)
 Le correlazioni debbono essere "coerenti"
 
 **Esempio**
-![[appunti bsd/immagini/Pasted image 20221105115112.png|center|600]]
-![[appunti bsd/immagini/Pasted image 20221105115137.png|center|600]]
+![[Pasted image 20221105115112.png|center|600]]
+![[Pasted image 20221105115137.png|center|600]]
 
 _Def_
 Un vincolo di **integrità referenziale**("**foreign key**") fra gli attributi X di una relazione $R_1$ e un'altra relazione $R_2$ impone ai valori su X in $R_1$ di comparire come valori della chiave primaria di $R_2$
@@ -112,7 +112,7 @@ Un vincolo di **integrità referenziale**("**foreign key**") fra gli attributi X
 Vincoli di integrità referenziale fra:
 - L'attributo Vigile della relazione **INFRAZIONI** e la relazione **VIGILI**
 - L'attributo Prov e Numero della relazione **INFRAZIONI** e la relazione **AUTO**
-![[appunti bsd/immagini/Pasted image 20221105115628.png|center|600]]
+![[Pasted image 20221105115628.png|center|600]]
 
 ### Alcuni commenti
 
@@ -120,7 +120,7 @@ Giocano un ruolo fondamentale nel concetto di "**modello basato su valori**"
 In presenza di valori nulli i vincoli possono essere resi meno restrittivi
 Sono possibili meccanismi per il supporto alla loro gestione ("azioni" compensative a seguito di violazioni)
 
-![[appunti bsd/immagini/Pasted image 20221105120036.png|center|600]]
+![[Pasted image 20221105120036.png|center|600]]
 
 ## Azioni compensative
 **Esempio**:
@@ -131,9 +131,9 @@ Sono possibili meccanismi per il supporto alla loro gestione ("azioni" compensat
 - Introduzione di valori nulli
 
 **Eliminazione in cascata**
-![[appunti bsd/immagini/Pasted image 20221105120240.png|center|600]]
+![[Pasted image 20221105120240.png|center|600]]
 **Introduzioni di valori nulli**
-![[appunti bsd/immagini/Pasted image 20221105120320.png|center|600]]
+![[Pasted image 20221105120320.png|center|600]]
 
 
 

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
+                "file": "Appunti BSD/MOD I/Lezione 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md"
+                "file": "Appunti BSD/MOD I/Lezione 2.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
+                "file": "Appunti BSD/MOD I/Lezione 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
+                "file": "Appunti BSD/MOD I/Lezione 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,6 +175,8 @@
   },
   "active": "e60380a9671c7126",
   "lastOpenFiles": [
+    "Appunti BSD/MOD I/Lezione 4 - Vincoli d'integrità.md",
+    "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
     "Appunti SOR/MOD I/Indice degli appunti SOR.md",
     "Appunti LMP/Indice delle lezioni LMP.md",
     "Appunti LMP/Lezione 7.md",
@@ -182,8 +184,6 @@
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/Lezione 6 - HeapSort.md",
     "Appunti ASD/Indice degli appunti.md",
-    "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
-    "Grafo degli appunti.md",
-    "Appunti ASD/Esercizi/Indice degli esercizi ASD.md"
+    "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md"
   ]
 }
