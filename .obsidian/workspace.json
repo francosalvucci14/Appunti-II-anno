@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti LMP/Indice delle lezioni LMP.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
+                "file": "Appunti LMP/Indice delle lezioni LMP.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti LMP/Indice delle lezioni LMP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti LMP/Indice delle lezioni LMP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,15 +162,15 @@
   },
   "active": "27f0e1c78772c1e5",
   "lastOpenFiles": [
-    "Appunti ASD/Lezione 6 - HeapSort.md",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti ASD/Indice degli appunti.md",
+    "Appunti LMP/Indice delle lezioni LMP.md",
+    "Appunti LMP/Lezione 7.md",
     "Appunti FI/Esercizi/Esercizi ASF.md",
+    "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti ASD/Lezione 6 - HeapSort.md",
+    "Appunti ASD/Indice degli appunti.md",
     "Appunti FI/Lezione 9 - Sempre su RE,RG e ASF.md",
     "Grafo degli appunti.md",
     "Appunti ASD/Esercizi/Indice degli esercizi ASD.md",
-    "Appunti ASD/Esercizi/Esercitazioni.md",
-    "Appunti FI/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
-    "Appunti FI/Lezione 8 - RE,RG e ASF.md"
+    "Appunti ASD/Esercizi/Esercitazioni.md"
   ]
 }
