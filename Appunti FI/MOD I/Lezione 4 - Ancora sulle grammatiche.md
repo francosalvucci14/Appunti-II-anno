@@ -170,7 +170,7 @@ le grammatiche sinistre differiscono dalle grammatiche destre lineari destre in 
 
 Per ogni $0\leq n\leq 2$, ogni grammatica di tipo n+1 è anche di tipo n: pertanto l'insieme dei linguaggi di tipo n contiene tutti i linguaggi di tipo n+1, formando quindi una gerarchai, detta **Gerarchia di Chomsky**
 
-![[appunti fi/immagini/Pasted image 20221024124024.png|center|500]]
+![[Pasted image 20221024124024.png|center|500]]
 
 # Grammatiche con $\epsilon$-produzioni
 Dalle definizioni, non è possibile generare la stringa vuota con grammatiche di tipo 1,2,3

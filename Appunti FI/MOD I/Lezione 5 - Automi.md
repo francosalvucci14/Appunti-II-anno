@@ -5,7 +5,7 @@ Se la computazione termina,restituisce,secondo una qualche modalità, un valore
 
 Nel caso del problema di riconoscimento, il valore restituito è booleano
 
-![[appunti fi/immagini/Pasted image 20221026150139.png|center|500]]
+![[Pasted image 20221026150139.png|center|500]]
 
 "Si" lo abbiamo se $x\in L$, altrimenti avremo "No" $x\not\in L$
 
@@ -84,7 +84,7 @@ la computazione **termina**
 ## Automi deterministici
 Ad ogni stringa di input associa una sola computazione, e quindi una singola sequenza di configurazioni
 
-![[appunti fi/immagini/Pasted image 20221026162346.png|center|600]]
+![[Pasted image 20221026162346.png|center|600]]
 
 Un automa deterministico, data una stringa in input, può eseguire una sola computazione: se la computazione termina in una configurazione di accettazione, allora la stringa viene accettata
 
@@ -108,7 +108,7 @@ Associa ad ogni stringa in input un numero qualunque, in generale maggiore di un
 La funzione di transizione associa ad almeno una configurazione c più di una configurazione successiva
 Per ogni computazione che conduce a $c$ sono definite continuazioni diverse, che definiscono diverse computazioni
 
-![[appunti fi/immagini/Pasted image 20221026164927.png|center|600]]
+![[Pasted image 20221026164927.png|center|600]]
 
 Nell'immagine possiamo vedere nel dettaglio questo discorso dell'associare ad una configurazione $c$ più di una configurazione.
 
@@ -120,7 +120,7 @@ Transizioni che un automa può eseguire senza leggere alcun carattere in input
 **Oss** La presenza di $\epsilon$-transizioni introduce non determinismo
 Se da una configurazione $c$ un automa può passare o meno in un'altra configurazione $c'$ senza leggere caratteri in input, sono possibili due diverse continuazioni della computazione attuale, l'una da $c$ e l'altra $c'$
 
-![[appunti fi/immagini/Pasted image 20221027095622.png|center|600]]
+![[Pasted image 20221027095622.png|center|600]]
 
 - Computazione 1: $...c_0c_1c_2...$
 - Computazione 2: $...c_0c_3...$
@@ -145,7 +145,7 @@ Un insieme di configurazioni è di accettazione se include almeno una configuraz
 
 ## Albero di computazione
 
-![[appunti fi/immagini/Pasted image 20221027112708.png|center|600]]
+![[Pasted image 20221027112708.png|center|600]]
 
 $c_0$ è il primo insieme
 $c_1,c_2,c_3$ è il secondo insieme

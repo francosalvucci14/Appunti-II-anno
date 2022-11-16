@@ -14,7 +14,7 @@ Un'espressione regolare su $\Sigma$ appena definito può essere $r=a)+b\cdot b$
 
 Le espressioni regolari consentono di rappresentare linguaggi mediante una opportuna interpretazione dei simboli che le compongono. Nella tabella seguente si mostra la corrispondenza tra un'espressione regolare $r$ e il linguaggio $\mathcal L(r)$ che essa rappresenta
 
-![[appunti fi/immagini/Pasted image 20221017111656.png|center]]
+![[Pasted image 20221017111656.png|center]]
 
 **Esempio**
 

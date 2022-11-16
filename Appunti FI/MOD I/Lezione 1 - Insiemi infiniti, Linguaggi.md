@@ -57,7 +57,7 @@ L'insieme $\mathbb N^2$ delle coppie di numeri naturali risulta essere numerabil
 ES : $p(3,4)=\frac{(3+4)(3+4+1)}{2}+3 = \frac{7\cdot 8}{2}+3 = \frac{56}{2}+3 =28+3=31$
 $p(0,0)=0, p(0,1)=1, p(1,0)=2, etc..$ 
 
-![[appunti fi/immagini/Pasted image 20221013163248.png|center]]
+![[Pasted image 20221013163248.png|center]]
 
 I numeri razionali corrispondono alle classi d'equivalenza della relazione bianria $R$ definita sull'insieme $\mathbb Zx\mathbb Z^+$ :
 $$R((\langle a,b\rangle),(\langle c,d\rangle)) \iff ad=bc$$
@@ -67,7 +67,7 @@ Quindi $\mathbb Q$ è contabile.
 
 L'unione di una quantità contabile di insiemi contabili è ancora un insieme contabile. L'enumerazione può essere effettuata applicando ancora il metodo di Cantor, dove si suppone che la riga i-esima contenga gli elementi dell'i-esimo insieme.
 
-![[appunti fi/immagini/Pasted image 20221013163946.png|center]]
+![[Pasted image 20221013163946.png|center]]
 
 L'insieme $\mathbb R$ dei reali non è numerabile
 L'insieme aperto (0,1) e l'insieme $\mathbb R$ sono equinumerosi(una possibile biezione è $\frac{1}{(2^x+1)}$, con dominio $\mathbb R$ e codominio (0,1)).
@@ -82,7 +82,7 @@ $$\phi[i]=(\phi_i[i]+1)mod\:10$$
 **Esempio**
 $\phi[0]=(\phi_0[0]+1)mod\:10$, se $\phi_0[0]=4\implies \phi[0]=5\:mod\:10$ 
 
-![[appunti fi/immagini/Pasted image 20221013165610.png|center]]
+![[Pasted image 20221013165610.png|center]]
 
 Si considera la prima cifra della prima sequenza(0+1), la seconda cifra della seconda sequenza(1+1), la terza cifra della terza sequenza(3+1) e cosi via, e otteniamo, in questo caso, una sequenza del tipo 
 $$\langle1,2,4,...,\rangle$$

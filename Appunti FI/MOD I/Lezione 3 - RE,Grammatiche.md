@@ -151,7 +151,7 @@ Data una grammatica $G$, si definisce **forma di frase** una qualunque stringa $
 Supponendo di partire da una stringa che contiene il solo simbolo $S$ 
 Utilizzando la grammatica dell'esempio 2, partendo da $S$ possiamo trovare la stringa $aabbcc$, utilizzando una sequenza di 8 $\psi$ (!!!VEDI FOTO)
 
-![[appunti fi/immagini/Pasted image 20221020163646.png|center|500]]
+![[Pasted image 20221020163646.png|center|500]]
 
 Infatti come si può notare, $S\xRightarrow{\star}\psi_1\xRightarrow{\star}\psi_2....\xRightarrow{\star}\psi_8$
 tutte le $\psi$ sono forme di frase, che possiamo derivare partendo dall'assioma $S$

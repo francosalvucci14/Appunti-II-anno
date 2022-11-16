@@ -7,7 +7,7 @@ Definire un ASFD che riconosce le stringhe su $\lbrace a,b\rbrace$ caratterizzat
 
 Soluzione:
 
-![[appunti fi/esercizi/imges/Pasted image 20221102192816.png|center|500]]
+![[Pasted image 20221102192816.png|center|500]]
 Stringhe di esempio:
 
 1. stringa aaba $$\delta(q_0,abba)=q_0\to\delta(q_0,bba)=q_1\to\delta(q_1,ba)=q_3\to\delta(q_3,a)=q_2$$
@@ -18,22 +18,22 @@ Stringhe di esempio:
 Definire un ASFD su $\lbrace0,1\rbrace$ tali che: dopo ogni 0 ci sono necessariamente due 1
 
 ASFD con stati pozzo:
-![[appunti fi/esercizi/imges/Pasted image 20221111112744.png|center|500]]
+![[Pasted image 20221111112744.png|center|500]]
 ASFD senza stati pozzo:
-![[appunti fi/esercizi/imges/Pasted image 20221111112828.png|center|500]]
+![[Pasted image 20221111112828.png|center|500]]
 
 # Esercizio 3
 
 Definire un ASFD su $\lbrace a,b\rbrace$ tale che : le stringhe hanno come secondo carattere "b"
 
 ASFD con stati pozzo:
-![[appunti fi/esercizi/imges/Pasted image 20221111113854.png|center|500]]
+![[Pasted image 20221111113854.png|center|500]]
 ASFD senza stati pozzo:
 
 Se si considera $|w|\geq2$
-![[appunti fi/esercizi/imges/Pasted image 20221111114009.png|center|500]]
+![[Pasted image 20221111114009.png|center|500]]
 Altrimenti:
-![[appunti fi/esercizi/imges/Pasted image 20221111114055.png|center|500]]
+![[Pasted image 20221111114055.png|center|500]]
 
 
 # Esercizio 4

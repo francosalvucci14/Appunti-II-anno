@@ -17,10 +17,10 @@ Dato un qualunque automa $\mathcal A$ non deterministico, un automa **generalizz
 - Al termine, rimangono lo stato iniziale e quello finale, collegati da un arco, la cui etichetta fornisce l'espressione regolare cercata
 
 Infatti, avremo una situazione del genere
-![[appunti fi/immagini/Pasted image 20221114124724.png|center|500]]
+![[Pasted image 20221114124724.png|center|500]]
 
 Le espressioni regolari possono essere comunque complesse
-![[appunti fi/immagini/Pasted image 20221114125012.png|center|600]]
+![[Pasted image 20221114125012.png|center|600]]
 
 In effetti, se esistono n cammini $q_iq_jq_h(h=k_1,...,k_n)$, allora si ha che:
 $$\overline r_{ik}=r_{ik_1}+r_{ij}r_{jj}^\star r_{jk_1}+r_{ik_2}+r_{ij}r_{jj}^\star r_{jk_2}+...+r_{ik_n}+r_{ij}r_{jj}^\star r_{jk_n}$$
@@ -51,8 +51,8 @@ Costruiamo da $A_1,A_2$ un automa $A=\langle\Sigma,Q,\delta_N,q_0,F\rangle$ che 
 4. La funzione di transizione $\delta_N$ è definita come: $$\begin{cases}\delta_N(q,a)&=\delta_{N_1}(q,a)&se\:q\in Q_1,a\in\Sigma_1\\\delta_N(q,a)&=\delta_{N_2}(q,a)&se\:q\in Q_2,a\in\Sigma_2\\\delta_N(q_0,a)&=\delta_{N_1}(q_{0_1},a)\cup\delta_{N_1}(q_{0_2},a)&a\in\Sigma\end{cases}$$
 **Esempio**
 
-![[appunti fi/immagini/Pasted image 20221115093902.png|center|500]]
-![[appunti fi/immagini/Pasted image 20221115093936.png|center|500]]
+![[Pasted image 20221115093902.png|center|500]]
+![[Pasted image 20221115093936.png|center|500]]
 
 
 ## Complemento
@@ -86,8 +86,8 @@ Costruiamo da $A_1,A_2$ un automa $A=\langle\Sigma,Q,\delta_N,q_0,F\rangle$ che 
 
 **Esempio**
 
-![[appunti fi/immagini/Pasted image 20221115095638.png|center|500]]
-![[appunti fi/immagini/Pasted image 20221115095705.png|center|500]]
+![[Pasted image 20221115095638.png|center|500]]
+![[Pasted image 20221115095705.png|center|500]]
 
 ## Iterazione
 
@@ -97,7 +97,7 @@ Infatti, sia $A=\langle\Sigma,Q,\delta_{N},q,F\rangle$ un ASFD che accetta $L$
 Costruiamo da $A$ un automa $A'=\langle\Sigma,Q\cup\lbrace q_0'\rbrace,\delta',q_0',F\cup\lbrace q_0'\rbrace\rangle$ che riconosce il linguaggio $L^\star$ ponendo:
 $$\begin{cases}\delta'(q,a)&=\delta(q,a)&\forall q\in Q-F\\\delta'(q,a)&=\delta(q,a)\cup\delta(q_0,a)&\forall q\in F\\\delta'(q_0',a)&=\delta(q_0,a)\end{cases}$$
 **Esempio**
-![[appunti fi/immagini/Pasted image 20221115111514.png|center|500]]
+![[Pasted image 20221115111514.png|center|500]]
 
-![[appunti fi/immagini/Pasted image 20221115111531.png|center|500]]
+![[Pasted image 20221115111531.png|center|500]]
 

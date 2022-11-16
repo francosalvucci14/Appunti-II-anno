@@ -27,7 +27,7 @@ Inoltre, si assume che per ogni $a\in\Sigma$ sia $\delta'([],a)=[]$
 
 **Esempio di transizione da ASFND a ASFD**
 
-![[appunti fi/immagini/Pasted image 20221107150359.png|center|600]]
+![[Pasted image 20221107150359.png|center|600]]
 
 Come mostrare che $\mathcal A_N$ e $\mathcal A$ sono equivalenti?
 
@@ -157,10 +157,10 @@ Il linguaggio rappresentato da $a(a+ba)^\star a$ è generato dalla grammatica
 - $B\to aB|bS|a$
 
 ed è riconosciuto dall'ASFND
-![[appunti fi/immagini/Pasted image 20221110143259.png|center|500]]
+![[Pasted image 20221110143259.png|center|500]]
 
 A partire dall' ASFND è possibile derivare un ASFD equivalente
-![[appunti fi/immagini/Pasted image 20221110143449.png|center|500]]
+![[Pasted image 20221110143449.png|center|500]]
 
 E da questo una grammatica di tipo 3 equivalente a quella iniziale, dove $S=A_0$
 - $A_0\to aA_1$
