@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
+                "file": "Appunti CPS/Indice delle lezioni CPS.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti CPS/Indice delle lezioni CPS.md"
+              }
             }
           },
           {
@@ -125,6 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti CPS/Indice delle lezioni CPS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,6 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti CPS/Indice delle lezioni CPS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,13 +172,13 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "90fe890bef2bffd6",
+  "active": "27f0e1c78772c1e5",
   "lastOpenFiles": [
     "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
+    "Appunti CPS/Indice delle lezioni CPS.md",
     "Appunti ASD/MOD I/Indice degli appunti ASD.md",
     "Appunti SOR/MOD I/Indice degli appunti SOR.md",
     "Appunti FI/MOD I/Indice delle lezioni FI.md",
-    "Appunti CPS/Indice delle lezioni CPS.md",
     "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
