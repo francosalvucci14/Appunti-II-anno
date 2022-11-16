@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md"
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "9393af5a4adeb034",
+  "active": "05204f466e6c84bf",
   "lastOpenFiles": [
     "Appunti FI/MOD I/Indice delle lezioni FI.md",
     "Appunti ASD/MOD I/Indice degli appunti ASD.md",

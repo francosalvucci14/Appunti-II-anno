@@ -16,7 +16,7 @@
 
 ```mermaid
 graph LR
-	A{Indice delle lezioni LMP}
+	A{Indice delle lezioni ASD}
 	B[Lezione 1]
 	C[Lezione 2]
 	D[Lezione 3]
