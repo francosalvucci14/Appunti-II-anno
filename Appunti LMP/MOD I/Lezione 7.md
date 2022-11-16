@@ -313,6 +313,79 @@ public class LocalClassExample {
 }
 ```
 
+##### Accesso ai membri di una classe di inclusione
+Una classe locale ha accesso ai membri della sua classe di inclusione. Nell'esempio precedente, il costruttore PhoneNumber accede al membro LocalClassExample.regularExpression.
+
+Inoltre, una classe locale ha accesso alle variabili locali. Tuttavia, una classe locale può accedere solo a variabili locali dichiarate final. Quando una classe locale accede a una variabile locale oa un parametro del blocco che lo contiene, acquisisce tale variabile o parametro. Ad esempio, il costruttore PhoneNumber può accedere alla variabile locale numberLength perché è dichiarata final; numberLength è una variabile acquisita.
+
+Tuttavia, a partire da Java SE 8, una classe locale può accedere a variabili e parametri locali del blocco che lo racchiude che sono final o effettivamente final. Una variabile o un parametro il cui valore non viene mai modificato dopo l'inizializzazione è effettivamente definitivo. Ad esempio, supponiamo che la variabile numberLength non sia dichiarata final e aggiungi l'istruzione di assegnazione evidenziata nel costruttore PhoneNumber per modificare la lunghezza di un numero di telefono valido a 7 cifre:
+```java
+PhoneNumber(String phoneNumber) {
+    **numberLength = 7;**
+    String currentNumber = phoneNumber.replaceAll(
+        regularExpression, "");
+    if (currentNumber.length() == numberLength)
+        formattedPhoneNumber = currentNumber;
+    else
+        formattedPhoneNumber = null;
+}
+```
+A causa di questa istruzione di assegnazione, la variabile numberLength non è più definitiva. Di conseguenza, il compilatore Java genera un messaggio di errore simile a "le variabili locali a cui fa riferimento una classe interna devono essere definitive o effettivamente finali" in cui la classe interna PhoneNumber tenta di accedere alla variabile numberLength:
+```java
+if (currentNumber.length() == numberLength)
+```
+A partire da Java SE 8, se dichiari la classe locale in un metodo, può accedere ai parametri del metodo. Ad esempio, puoi definire il seguente metodo nella classe locale PhoneNumber:
+```java
+public void printOriginalNumbers() {
+    System.out.println("Original numbers are " + phoneNumber1 +
+        " and " + phoneNumber2);
+}
+```
+
+#### Le classi locali sono simili alle classi interne
+Le classi locali sono simili alle classi interne perché non possono definire o dichiarare alcun membro statico. Le classi locali nei metodi statici, come la classe PhoneNumber, che è definita nel metodo statico validatePhoneNumber, possono fare riferimento solo ai membri statici della classe di inclusione. Ad esempio, se non si definisce la variabile membro regularExpression come statica, il compilatore Java genera un errore simile a "impossibile fare riferimento alla variabile non statica regularExpression da un contesto statico".
+
+Le classi locali non sono statiche perché hanno accesso ai membri dell'istanza del blocco contenitore. Di conseguenza, non possono contenere la maggior parte dei tipi di dichiarazioni statiche.
+
+Non puoi dichiarare un'interfaccia all'interno di un blocco; le interfacce sono intrinsecamente statiche. Ad esempio, il seguente estratto di codice non viene compilato perché l'interfaccia HelloThere è definita all'interno del corpo del metodo greetInEnglish:
+```java
+public void greetInEnglish() {
+        interface HelloThere {
+           public void greet();
+        }
+        class EnglishHelloThere implements HelloThere {
+            public void greet() {
+                System.out.println("Hello " + name);
+            }
+        }
+        HelloThere myGreeting = new EnglishHelloThere();
+        myGreeting.greet();
+    }
+```
+Non è possibile dichiarare inizializzatori statici o interfacce membro in una classe locale. Il seguente estratto di codice non viene compilato perché il metodo EnglishGoodbye.sayGoodbye è dichiarato statico. Il compilatore genera un errore simile a "il modificatore 'static' è consentito solo nella dichiarazione di variabile costante" quando incontra questa definizione di metodo:
+```java
+public void sayGoodbyeInEnglish() {
+        class EnglishGoodbye {
+            public static void sayGoodbye() {
+                System.out.println("Bye bye");
+            }
+        }
+        EnglishGoodbye.sayGoodbye();
+    }
+```
+Una classe locale può avere membri statici purché siano variabili costanti. (Una variabile costante è una variabile di tipo primitivo o di tipo String dichiarata final e inizializzata con un'espressione costante in fase di compilazione. Un'espressione costante in fase di compilazione è in genere una stringa o un'espressione aritmetica che può essere valutata in fase di compilazione. Vedere Comprensione dei membri della classe per ulteriori informazioni.) Il seguente estratto di codice viene compilato perché il membro statico EnglishGoodbye.farewell è una variabile costante:
+```java
+public void sayGoodbyeInEnglish() {
+        class EnglishGoodbye {
+            public static final String farewell = "Bye bye";
+            public void sayGoodbye() {
+                System.out.println(farewell);
+            }
+        }
+        EnglishGoodbye myEnglishGoodbye = new EnglishGoodbye();
+        myEnglishGoodbye.sayGoodbye();
+    }
+```
 
 # Interfacce ed ereditarietà (forse lezione 9)
 
