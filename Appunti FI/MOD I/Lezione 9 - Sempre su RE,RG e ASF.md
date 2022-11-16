@@ -103,4 +103,3 @@ $$\begin{cases}\delta'(q,a)&=\delta(q,a)&\forall q\in Q-F\\\delta'(q,a)&=\delta(
 
 
 
-
