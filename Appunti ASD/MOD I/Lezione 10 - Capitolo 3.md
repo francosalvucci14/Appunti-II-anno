@@ -106,4 +106,39 @@ _Def_
 u si dice **antenato** di v se u è raggiungibile da v risalendo di padre in padre
 v si dice **discendente** di u se u è un antenato di v
 
+### Rappresentazioni indicizzate di alberi
+
+**Idea**: ogni cella dell'array contiene:
+- le informazioni di un nodo
+- eventualmente altri indici per raggiungere altri nodi
+
+**Vettore dei padri**
+Per un albero con n nodi uso un array P di dimensione (almeno) n
+Una generica cella i contiene una coppia (**info,parent**) dove:
+- **info**: contenuto informativo del nodo i
+- **parent**: indice (nell'array) del nodo padre di i
+
+**Vettore posizionale** (per alberi d-ari (quasi) completi)
+
+**Esempio vettore dei padri**
+![[appunti asd/mod i/immagini/Pasted image 20221117100527.png|center|700]]
+
+>[!info]- Osservazioni
+>- num. arbitrario di figli
+>- tempo per individuare il padre di un nodo: $O(1)$
+>- tempo per individuare uno o più figli di un nodo: $O(n)$
+
+**Vettore posizionale**:
+- i nodi arrangiati nell'array "per livelli"
+- j-esimo figlio $(j\in\lbrace 1,...,d\rbrace)$ di i è in posizione $d(i-1)+j+1$
+- il padre di i è in posizione $\lfloor{(i-2)/d}\rfloor+1$
+
+![[appunti asd/mod i/immagini/Pasted image 20221117101155.png|center|600]]
+
+>[!info]- Osservazioni
+> - num. di figli esattamente $d$
+> - solo per alberi completi o quasi
+> - tempo per individuare il padre di un nodo: $O(1)$
+> - tempo per individuare uno specifico figlio di un nodo: $O(1)$
+
 
