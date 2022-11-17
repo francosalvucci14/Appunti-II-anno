@@ -112,9 +112,5 @@ e quindi:
 ![[appunti fi/mod i/immagini/Pasted image 20221117134319.png|center|400]]
 
 
-
-
-
-
-
+# Decidibilitò di predicati
 
