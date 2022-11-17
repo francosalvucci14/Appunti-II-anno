@@ -212,6 +212,3 @@ Un nodo sul livello i può essere visitato solo se tutti i nodi sul livello i-1 
 ![[appunti asd/mod i/immagini/Pasted image 20221117104916.png|center|700]]
 
 Quindi $T(n)=O(n)$
-
-
-$a\equal0$     
