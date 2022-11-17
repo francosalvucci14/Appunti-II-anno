@@ -15,6 +15,8 @@
 	- [[Algoritmi#RadixSort|RadixSort]]
 
 - Algoritmi di visita di un albero
+	- [[Algoritmi#Algoritmo DFS|Algoritmo DFS]]
+	- Algoritmo BFS
 Per una spiegazione più dettagliata di qeusti algoritmi si rimanda a questo link [Algoritmi](http://people.disim.univaq.it/guido.proietti/lezioni_algo2021.html)
 
 
@@ -370,3 +372,8 @@ print(HeapSort(a))
 ```
 
 
+
+
+# Algoritmi di visita su un albero
+
+## Algoritmo DFS

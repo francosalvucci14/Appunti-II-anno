@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md"
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
               }
             }
           },
@@ -128,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,13 +172,13 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "90a853081f49d1ee",
+  "active": "785eb07ac544f6c4",
   "lastOpenFiles": [
+    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20221117115715.png",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 3.md",
     "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md",
-    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
     "Appunti ASD/MOD I/Esercizi/Algoritmo_Es3.pdf",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti FI/MOD I/Lezione 1 - Insiemi infiniti, Linguaggi.md",
