@@ -187,6 +187,30 @@ Quindi $T(n)=O(n)$
 
 ![[appunti asd/mod i/immagini/Pasted image 20221117104111.png|center|600]]
 
+##### Complessità temporale
 
+Come la versione iterativa
+
+### Algoritmo di visita in ampiezza (BFS)
+
+_Def_
+L'algoritmo di visita in ampiezza (BFS) parte da r (radice) e procede visitando nodi per livelli successivi.
+Un nodo sul livello i può essere visitato solo se tutti i nodi sul livello i-1 sono stati visitati
+![[appunti asd/mod i/immagini/Pasted image 20221117104456.png|center|600]]
+
+
+#### Versione iterativa
+##### Pseudo-codice
+![[appunti asd/mod i/immagini/Pasted image 20221117104625.png|center|600]]
+
+**Esempio**
+
+![[appunti asd/mod i/immagini/Pasted image 20221117104803.png|center|600]]
+
+
+##### Complessità temporale
+![[appunti asd/mod i/immagini/Pasted image 20221117104916.png|center|700]]
+
+Quindi $T(n)=O(n)$
 
 
