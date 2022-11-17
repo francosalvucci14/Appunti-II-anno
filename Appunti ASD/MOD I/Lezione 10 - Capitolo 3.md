@@ -214,3 +214,4 @@ Un nodo sul livello i può essere visitato solo se tutti i nodi sul livello i-1 
 Quindi $T(n)=O(n)$
 
 
+$a\equal0$     
