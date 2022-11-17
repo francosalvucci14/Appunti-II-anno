@@ -71,3 +71,50 @@ Tutte le coppie in cui uno dei stati è $q_o\:o\:q_1$ e l'altro non è $q_o\:o\:
 
 ![[appunti fi/mod i/immagini/Pasted image 20221117131847.png|center|600]]
 
+Consideriamo le coppie di stati scandendo le celle da sinistra verso destra e dall'alto verso il basso
+$(q_0,q_1)$ è distinguibile se lo è la coppia $(q_2,q_5)$, in quanto $\delta(q_0,b)=q_2$ e $\delta(q_1,b)=q_5$: quindi $(0,1)$ inserito nella lista associata
+
+![[appunti fi/mod i/immagini/Pasted image 20221117132358.png|center|600]]
+
+$(q_2,q_3)$ sono distinguibili in quanto $\delta(q_2,a)=q_4$ e $\delta(q_3,a)=q_0$, e la coppia $(q_0,q_4)$ è distinguibile (perchè la cella $(0,4)$ è marcata): quindi viene marcata anche la cella $(2,3)$
+
+![[appunti fi/mod i/immagini/Pasted image 20221117132550.png|center|600]]
+
+Proseguendo, l'algoritmo determina che:
+
+-  la coppia $(q_2,q_4)$ è distinguibile se lo è la coppia $(q_3,q_6)$: $(2,4)$ è inserito nella lista della cella $(3,6)$
+- la coppia $(q_3,q_4)$ è distinguibile: la cella viene marcata
+- la coppia $(q_2,q_5)$ è distinguibile se lo sono le coppie $(q_2,q_4)$ e $(q_3,q_6)$: $(2,5)$ è inserito nelle liste delle celle $(2,4)$ e $(3,6)$
+- la coppia $(q_3,q_5)$ è distinguibile: la cella viene marcata
+- la coppia $(q_4,q_5)$ non è distinguibile (perchè se leggo b,partendo da $q_4,q_5$ arrivo sempre in $q_6$, se leggo a partendo da $q_4,q_5$ vado sempre in $q_2$)
+- la coppia $(q_2,q_6)$ è distinguibile: la cella viene marcata
+- la coppia $(q_3,q_6)$ è distinguibile se lo è la coppia $(q_0,q_1)$: $(3,6)$ è inserito nella lista della cella $(0,1)$
+- la coppia $(q_4,q_6)$ è distinguibile: la cella viene marcata
+- la coppia $(q_5,q_6)$ è distinguibile: la cella viene marcata
+
+Si ottiene quindi:
+![[appunti fi/mod i/immagini/Pasted image 20221117133405.png|center|600]]
+
+Mantenendo le sole indicazioni delle coppie distinguibili e non si ottiene:
+
+![[appunti fi/mod i/immagini/Pasted image 20221117133513.png|center|600]]
+
+Quindi avremo le coppie di stati indistinguibili, che saranno.
+- $q_0,q_1$
+- $q_2,q_4$ - $q_2,q_5$ - $q_4,q_5$ (oss. la regola di equivalenza rispettata è la transitività)
+- $q_3,q_6$
+E sono anche 3 classi di equivalenza
+
+A questo punto l'automa equivalente con il minimo numero di stati risultante dal procedimento è mostrato sotto:
+lo stato $q_0$ corrisponde alla classe d'equivalenza $\lbrace q_0,q_1\rbrace$, lo stato $q_1$ corrisponde alla classe $\lbrace q_3,q_6\rbrace$ e lo stato $q_3$ corrisponde alla classe $\lbrace q_2,q_4,q_5\rbrace$
+
+e quindi:
+![[appunti fi/mod i/immagini/Pasted image 20221117134319.png|center|400]]
+
+
+
+
+
+
+
+
