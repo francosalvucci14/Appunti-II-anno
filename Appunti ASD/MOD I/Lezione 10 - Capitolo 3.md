@@ -142,3 +142,28 @@ Una generica cella i contiene una coppia (**info,parent**) dove:
 > - tempo per individuare uno specifico figlio di un nodo: $O(1)$
 
 
+### Rappresentazioni collegate di alberi
+
+![[appunti asd/mod i/immagini/Pasted image 20221117102127.png|center|700]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221117102207.png|center|700]]
+
+## Visite di alberi
+
+Algoritmi che consentono l'**accesso sistematico ai nodi e agli archi** di un albero
+
+Gli algoritmi di visita si distinguono in nodi base al particolare ordine di accesso ai nodi
+
+### Algoritmo di visita in profondità (DFS)
+
+_Def_
+L'algoritmo di visita in profondità (DFS) parte da r (radice) e procede visitando nodi di figlio in figlio fino a raggiungere una foglia.
+Retrocede poi al primo antenato che ha ancora figli non visitati (se esiste) e ripete il procedimento a partire da uno di quei figli
+![[appunti asd/mod i/immagini/Pasted image 20221117102555.png|center|600]]
+
+#### Versione iterativa
+
+![[appunti asd/mod i/immagini/Pasted image 20221117102755.png|center|500]]
+
+
+
