@@ -163,7 +163,30 @@ Retrocede poi al primo antenato che ha ancora figli non visitati (se esiste) e r
 
 #### Versione iterativa
 
+##### Pseudo-codice
 ![[appunti asd/mod i/immagini/Pasted image 20221117102755.png|center|500]]
+
+
+Vedi esempio qua --> [Esempio algoritmo DFS](http://www.mat.uniroma2.it/~guala/cap3_2021.pdf) (da pag. 26 a pag. 45)
+
+##### Complessità Temporale
+
+![[appunti asd/mod i/immagini/Pasted image 20221117103228.png|center|700]]
+
+Quindi $T(n)=O(n)$
+
+#### Versione ricorsiva
+
+![[appunti asd/mod i/immagini/Pasted image 20221117103812.png|center|600]]
+
+- **Visita in preordine**: radice, sottoalbero sx, sottoalbero dx
+- **Visita simmetrica**: sottoalbero sx,radice,sottoalbero dx (scambio riga 2 con 3)
+- **Visita in postordine**: sottoalbero sx,sottoalbero dx,radice (sposta riga 2 dopo 4)
+
+**Esempi**
+
+![[appunti asd/mod i/immagini/Pasted image 20221117104111.png|center|600]]
+
 
 
 
