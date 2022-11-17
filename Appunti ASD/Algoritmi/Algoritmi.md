@@ -377,3 +377,41 @@ print(HeapSort(a))
 # Algoritmi di visita su un albero
 
 ## Algoritmo DFS
+
+### Pseudo-codice
+
+### Complessità
+
+### Codice in python
+
+```python
+class TreeNode:
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+  
+def DFS(root):
+    S = []
+    S.append(root)
+    while len(S) > 0:
+        u = S.pop()
+        if u != None:
+            print(u.val)
+            S.append(u.right)
+            S.append(u.left)
+
+root = TreeNode("A")
+l1 = TreeNode("L")
+l2 = TreeNode("E")
+r1 = TreeNode("R")
+r2 = TreeNode("B")
+r3 = TreeNode("O")
+  
+root.left = l1
+root.right = r2
+l1.left = l2
+l1.right = r1
+r2.right = r3
+DFS(root)
+```
