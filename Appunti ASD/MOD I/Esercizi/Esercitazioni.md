@@ -216,8 +216,11 @@ print(algoritmo(a))
 
 Pseudocodice
 
+Algoritmo
+![[Pasted image 20221117115715.png|center|700]]
 
-
+Applicazione BinSearch
+![[Pasted image 20221117115744.png|center|700]]
 
 
 
