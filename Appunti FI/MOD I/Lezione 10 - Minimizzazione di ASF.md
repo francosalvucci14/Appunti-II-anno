@@ -49,4 +49,25 @@ Tutti gli stati di $\mathcal A$ sono raggiungibili dallo stato iniziale, altrime
 - Le caselle vengono usate per marcare le coppie di stati distinguibili e per elencare, in una lista associata, tutte le coppie che dovranno essere marcate qualora la coppia a cui è associata la casella venga marcata
 
 La procedura inizia con la marcatura delle coppie distinguibili tramite la stringa $\varepsilon$ (tutte e sole le coppie costituite da uno stato finale e da uno non finale)
-Per ogni coppia $(p,q)$ nonn ancora marcata, si considerano, per ogni $q\in\Sigma$, tutte le coppie $(r,s)$, con $r=\delta(p,)\:e\:s=\delta(q,a)$
+Per ogni coppia $(p,q)$ non ancora marcata, si considerano, per ogni $q\in\Sigma$, tutte le coppie $(r,s)$, con $r=\delta(p,)\:e\:s=\delta(q,a)$
+- Se nessuna delle coppie $(r,s)$ è marcata come distinguibile allora si inserisce $(p,q)$ nella lista associata ad ognuna di esse
+- Altrimenti p e q veongono riconosciuti distinguibili e la corrispondente casella viene marcata; qualora questa contenga una lista di coppie si procede (ricorsivamente) con la marcatura delle relative caselle
+
+![[appunti fi/mod i/immagini/Pasted image 20221117125800.png|center|600]]
+
+Una volta identificate le coppie di stati indistinguibili, ricordando che la relazione di indistinguibilità è una relazione di equivalenza, l'automa equivalente con il minimo numero di stati è dato evidentemente da $\mathcal A'=\langle\Sigma,Q',\delta',q_0',F'\rangle$, in cui:
+
+1. $Q'$ è costruito selezionando, per ogni insieme di stati indistinguibili, uno ed un solo stato $Q$ (rappresentante)
+2. $F'$ è costruito da tutti i rappresentanti appartenenti a $F$
+3. $\delta'$ è ottenuta da $\delta$ mediante restrizione al dominio $Q'\times\Sigma$ ed inoltre, per ogni $\delta(q_i,a)=q_j$, con $q_i\in Q'\:e\:q_j\in Q$, poniamo $\delta'(q_i,a)=q_k$, dove $q_k\in Q'$ è il rappresentante dell'insieme di stati indistinguibili che include $q_j$ (chiaramente, se $q_j\in Q'$ allora è esso stesso un rappresentante e dunque $q_k=q_j$)
+
+**Esempio**
+
+![[appunti fi/mod i/immagini/Pasted image 20221117131616.png|center|600]]
+
+**Passo inziale**: $q_0,q_1$, finali, distinguibili da tutti gli altri
+
+Tutte le coppie in cui uno dei stati è $q_o\:o\:q_1$ e l'altro non è $q_o\:o\:q_1$ sono marcate 
+
+![[appunti fi/mod i/immagini/Pasted image 20221117131847.png|center|600]]
+
