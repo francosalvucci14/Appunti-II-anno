@@ -30,18 +30,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "eb880efcf134100c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
         "currentTab": 1
@@ -187,15 +175,15 @@
   },
   "active": "785eb07ac544f6c4",
   "lastOpenFiles": [
+    "Appunti ASD/MOD I/Esercizi/Algoritmo_Es3.pdf",
+    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 3.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
-    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
     "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md",
     "Appunti FI/MOD I/Lezione 1 - Insiemi infiniti, Linguaggi.md",
     "Appunti FI/MOD I/Lezione 9 - Sempre su RE,RG e ASF.md",
     "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti FI/MOD I/Indice delle lezioni FI.md",
-    "Appunti FI/Untitled.md",
-    "Appunti FI/MOD I/Lezione 8 - RE,RG e ASF.md"
+    "Appunti FI/Untitled.md"
   ]
 }
