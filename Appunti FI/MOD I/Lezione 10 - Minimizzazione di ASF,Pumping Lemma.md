@@ -166,3 +166,11 @@ L'algoritmo ha quindi complessità esponenziale
 Algoritmo polinomiale: visita del grafo di transizione, avente n nodi e $m\leq ns$ archi
 
 La visita richiede tempo $\Theta(m+n)=\Theta(n)$ lineare nel numero di stati
+
+
+Dalla possibilità di deidere se un linguaggio regolare è vuoto, ne deriva immediatamente la decidibilità di altri predicati sui linguaggi regolari
+
+>[!important]- Teorema
+>Il problema dell'equivalenza di due linguaggi regolari è decidibile
+
+Per dimostrare l'equivalenza tra due linguaggi, basta dimostrare che la loro intersezione coincide con la loro unione, cioè che la loro differenza simmetrica (l'unione dell'intersezione del primo con il complemento del secondo e l'unione dell'intersezione del secondo con il complemento del primo) è il linguaggio vuoto
