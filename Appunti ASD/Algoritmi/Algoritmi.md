@@ -27,7 +27,7 @@ Per una spiegazione più dettagliata di qeusti algoritmi si rimanda a questo lin
 ### Pseudo-codice
 Pseudo-codice:
 
-![[appunti asd/algoritmi/img/Pasted image 20221118114841.png|center|600]]
+![[appunti asd/algoritmi/img/Pasted image 20221118115350.png|center|600]]
 
 n è la lunghezza dell'array
 
