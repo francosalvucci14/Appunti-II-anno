@@ -16,7 +16,7 @@
 
 - Algoritmi di visita di un albero
 	- [[Algoritmi#Algoritmo DFS|Algoritmo DFS]]
-	- Algoritmo BFS
+	- [[Algoritmi#Algoritmo BFS|Algoritmo BFS]]
 Per una spiegazione più dettagliata di qeusti algoritmi si rimanda a questo link [Algoritmi](http://people.disim.univaq.it/guido.proietti/lezioni_algo2021.html)
 
 
