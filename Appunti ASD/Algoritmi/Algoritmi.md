@@ -27,14 +27,7 @@ Per una spiegazione più dettagliata di qeusti algoritmi si rimanda a questo lin
 ### Pseudo-codice
 Pseudo-codice:
 
->BubbleSort(A):
->1. scambio = true
->2. while scambio do
->3. 	scambio = false
->4. 	for i =0 to n-2 do
->5. 		if $A[i]\gt A[i+1]$ then
->6. 		swap($A[i],A[i+1]$)
->7. 		scambio=true
+![[appunti asd/algoritmi/img/Pasted image 20221118114841.png|center|600]]
 
 n è la lunghezza dell'array
 
