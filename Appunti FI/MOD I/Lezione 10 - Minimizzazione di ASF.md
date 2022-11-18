@@ -117,5 +117,22 @@ e quindi:
 >[!important]- Teorema
 >è possibile decidere se il linguagio accettato da un dato automa a stati finiti è vuoto
 
+**Osservazione**: se un automa con n stati accetta qualche stringa, allora accetta una stringa di lunghezza inferiore ad n
+
+Sia z la stringa più breve accettata dall'automa, se fosse $|z|\geq n$ allora, in base al pumping lemma, z potrebbe essere scritta come $uvw$ e anche la stringa $uw$, più breve di z, sarebbe accettata dall'automa
+
+Dato un automa $\mathcal A$ con $n=|Q|$ stati e $s=|\Sigma|$ simboli di input, per decidere se $L(\mathcal A)=\Lambda$ basat verificare se $\mathcal A$ accetta almeno una delle
+$$\sum_{i=0}^{n-1}s^i=\frac{s^n-1}{s-1}=\Theta(s^{n-1})$$
+stringhe di lunghezza inferiore ad n
+
+Il tempo necessario per tale operazione sarà evidentemente proporzionale a :
+$$\sum_{i=0}^{n-1}is^i=s\sum_{i=1}^{n}\frac{ds^i}{ds}=s\frac{d}{ds}\sum_{i?1}^{n}s^i=s\frac{d}{ds}\frac{s^n-1}{s-1}=\frac{ns^{n+1}-s^{n+1}+s}{(s-1)^2}=\Theta(s^n)$$
+L'algoritmo ha quindi complessità esponenziale
+
+**Osservazione**: datoil grafo di transizione di $mathcal A,L(\mathcal A)$ è non vuoto se e solo se esiste almeno uno stato finale raggiungibile da $q_0$
+
+Algoritmo polinomiale: visita del grafo di transizione, avente n nodi e $m\leq ns$ archi
+
+La visitia richiede tempo $\Theta(n+m)=\Theta(n)$ lineare nel numero di stati
 
 
