@@ -380,9 +380,16 @@ print(HeapSort(a))
 
 ### Pseudo-codice
 
+![[appunti asd/mod i/immagini/Pasted image 20221117102755.png|center|500]]
+
 ### Complessità
 
+![[appunti asd/mod i/immagini/Pasted image 20221117103228.png|center|700]]
+
+Quindi $T(n)=O(n)$
+
 ### Codice in python
+
 
 ```python
 class TreeNode:
@@ -415,3 +422,63 @@ l1.right = r1
 r2.right = r3
 DFS(root)
 ```
+
+## Algoritmo BFS
+
+### Pseudo-codice
+
+![[appunti asd/mod i/immagini/Pasted image 20221117104625.png|center|600]]
+
+### Complessità temporale
+
+![[appunti asd/mod i/immagini/Pasted image 20221117104916.png|center|700]]
+
+Quindi $T(n)=O(n)$
+
+### Codice in python
+
+```python
+class TreeNode:
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+class Queue:
+    def __init__(self):
+        self.items = []
+    def isEmpty(self):
+        return self.items == []
+    def enqueue(self, item):
+        self.items.insert(0,item)
+    def dequeue(self):
+        return self.items.pop()  
+    def size(self):
+        return len(self.items)
+
+def BFS(root):
+    c = Queue()
+    c.enqueue(root)
+    while not c.isEmpty():
+        u = c.dequeue()
+        if u != None:
+            print(u.val)#visito il nodo u
+            c.enqueue(u.right)
+            c.enqueue(u.left)
+
+root = TreeNode("A")
+l1 = TreeNode("L")
+r1 = TreeNode("B")
+l2 = TreeNode("E")
+r2 = TreeNode("R")
+r3 = TreeNode("O")
+  
+root.left = l1
+l1.right = r1
+r1.left = l2
+l2.right = r2
+r2.right = r3
+
+BFS(root)
+```
+
