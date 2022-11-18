@@ -9,7 +9,7 @@
 - [[Lezione 7 - Equivalenza tra ASFD e ASFND]]
 - [[Lezione 8 - RE,RG e ASF]]
 - [[Lezione 9 - Sempre su RE,RG e ASF]]
-- [[Lezione 10 - Minimizzazione di ASF]]
+- [[Lezione 10 - Minimizzazione di ASF,Pumping Lemma]]
 - 
 
 

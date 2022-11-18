@@ -121,7 +121,7 @@ e quindi:
 
 Sia z la stringa più breve accettata dall'automa, se fosse $|z|\geq n$ allora, in base al pumping lemma, z potrebbe essere scritta come $uvw$ e anche la stringa $uw$, più breve di z, sarebbe accettata dall'automa
 
-Dato un automa $\mathcal A$ con $n=|Q|$ stati e $s=|\Sigma|$ simboli di input, per decidere se $L(\mathcal A)=\Lambda$ basat verificare se $\mathcal A$ accetta almeno una delle
+Dato un automa $\mathcal A$ con $n=|Q|$ stati e $s=|\Sigma|$ simboli di input, per decidere se $L(\mathcal A)=\Lambda$ basta verificare se $\mathcal A$ accetta almeno una delle
 $$\sum_{i=0}^{n-1}s^i=\frac{s^n-1}{s-1}=\Theta(s^{n-1})$$
 stringhe di lunghezza inferiore ad n
 
@@ -129,10 +129,25 @@ Il tempo necessario per tale operazione sarà evidentemente proporzionale a :
 $$\sum_{i=0}^{n-1}is^i=s\sum_{i=1}^{n}\frac{ds^i}{ds}=s\frac{d}{ds}\sum_{i?1}^{n}s^i=s\frac{d}{ds}\frac{s^n-1}{s-1}=\frac{ns^{n+1}-s^{n+1}+s}{(s-1)^2}=\Theta(s^n)$$
 L'algoritmo ha quindi complessità esponenziale
 
-**Osservazione**: datoil grafo di transizione di $mathcal A,L(\mathcal A)$ è non vuoto se e solo se esiste almeno uno stato finale raggiungibile da $q_0$
+**Osservazione**: dato il grafo di transizione di $\mathcal A,L(\mathcal A)$ è non vuoto se e solo se esiste almeno uno stato finale raggiungibile da $q_0$
 
 Algoritmo polinomiale: visita del grafo di transizione, avente n nodi e $m\leq ns$ archi
 
 La visitia richiede tempo $\Theta(n+m)=\Theta(n)$ lineare nel numero di stati
 
+>[!important]- Teorema
+>è possibile decidere se il linguaggio accettato da un dato automa a stati finiti è finito
+
+**Proprietà 1**
+Se $\mathcal A$ accetta una z lungha almeno n allora, per il pumping lemma, accetta infinite stringhe
+
+**Proprietà 2**
+Se $L(\mathcal A)$ è infinito, allora esiste $z\in L(\mathcal A)$ tale che $n\leq|z|\lt 2n$
+- se $L(\mathcal A)$ è infinito esiste chiaramente $z\in L(\mathcal A)$ con $|z|\geq n$, altrimenti $L(\mathcal A)$ sarebbe finito (e composto di stringhe di lunghezza al più n-1)
+
+Assumiamo, senza perdere generalità, che z sia una stringha di lunghezza minima tra tutte le stringhe in $L(\mathcal A)$ lunghe almeno n
+
+Due casi sono possibili:
+- $|z|\lt 2n$, e quindi la proprietà è vera
+- $|z|\geq 2n$: in questo caso, per il pumping lemma (visto che $|z|\gt n$) possiamo scrivere $z = uvw$, con $1\leq|v|\leq n$. Per il pumping lemma, $uw\in L(\mathcal A)$ e $|uw|\lt|uvw|$: data l'ipotesi che z abbia lunghezza minima tra tutte le stringhe di $L(\mathcal A)$ lunghe almeno n, ne consegue che deve essere $|uw|\lt n$. Ma questo è impossibile, in quanto $|uw|=|z|-|v|\geq 2n-n=n$ in quanto per ipotesi $|z|\geq 2n$ e $|v|\leq n$. Ne deriva che la stringa in $L(\mathcal A)$ di lunghezza minima tra tutte quelle linghe almeno n non può essere lunga di 2n o più, e quindi la proprietà è vera
 
