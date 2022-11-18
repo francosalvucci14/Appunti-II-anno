@@ -209,10 +209,6 @@ Tempo lineare se $k=O(n^c)$, c costante
 ## BubbleSort
 ```python
 def bubble_sort( a ):
-    '''
-    pre: a è una lista di numeri
-    ordina la lista dall'elemento più piccolo a quello più grande
-    '''
     n = len(a)
     ordinata = False
     num_scansioni = 1
@@ -221,9 +217,7 @@ def bubble_sort( a ):
         num_scansioni += 1
         ordinata = True
         for i in range(n-1):
-            # confrontiamo l'elemento in posizione i e i+1
             if a[i] > a[i+1]:
-                # scambio gli elementi, non posso dire che la lista è ordinata
                 a[i], a[i+1] = a[i+1], a[i]
                 ordinata = False
 b = [9,8,7,6,5,4,3,2,1]
