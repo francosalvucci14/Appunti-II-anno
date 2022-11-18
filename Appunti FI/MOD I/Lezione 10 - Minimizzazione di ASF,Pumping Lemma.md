@@ -151,3 +151,18 @@ Due casi sono possibili:
 - $|z|\lt 2n$, e quindi la proprietà è vera
 - $|z|\geq 2n$: in questo caso, per il pumping lemma (visto che $|z|\gt n$) possiamo scrivere $z = uvw$, con $1\leq|v|\leq n$. Per il pumping lemma, $uw\in L(\mathcal A)$ e $|uw|\lt|uvw|$: data l'ipotesi che z abbia lunghezza minima tra tutte le stringhe di $L(\mathcal A)$ lunghe almeno n, ne consegue che deve essere $|uw|\lt n$. Ma questo è impossibile, in quanto $|uw|=|z|-|v|\geq 2n-n=n$ in quanto per ipotesi $|z|\geq 2n$ e $|v|\leq n$. Ne deriva che la stringa in $L(\mathcal A)$ di lunghezza minima tra tutte quelle linghe almeno n non può essere lunga di 2n o più, e quindi la proprietà è vera
 
+In conclusione: $L(\mathcal A)$ è infinito se e solo se esiste una stringa $z\in L(\mathcal A)$ tale che $n\leq|z|\lt 2n$
+
+Dato un automa $\mathcal A$ con $n=|Q|$ stati e $s=|\Sigma|$ simboli di input, per decidere se $L(\mathcal A)$ è infinito basta verificare se $\mathcal A$ accetta almeno una delle
+$$\sum_{i=n}^{2n-1}s^i=\sum_{i=0}^{2n-1}s^i-\sum_{i=0}^{n-1}s^i=\frac{(s^{2n}-1)-(s^n-1)}{s-1}=\Theta(s^{2n-1})$$
+stringhe di lunghezza compresa tra n e 2n
+
+Applicando le stesse considerazioni viste sopra il tempo necessario per tale operazione sarà evidentemente proporzionale a :
+$$\sum_{i=n}^{2n-1}is^i=\sum_{i=0}^{2n-1}is^i-\sum_{i=0}^{n-1}is^i=...=\Theta(s^{2n})$$
+L'algoritmo ha quindi complessità esponenziale
+
+**Osservazione**: dato il grafo di transizione di $\mathcal A,L(\mathcal A)$ è infinito se e solo se esiste almeno un ciclo a partire da uno stato su un cammino da $q_0$ a uno stato finale
+
+Algoritmo polinomiale: visita del grafo di transizione, avente n nodi e $m\leq ns$ archi
+
+La visita richiede tempo $\Theta(m+n)=\Theta(n)$ lineare nel numero di stati
