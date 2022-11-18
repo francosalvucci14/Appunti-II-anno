@@ -8,7 +8,7 @@
 - [[Lezione 6 - HeapSort]]
 - [[Lezione 7 - Capitolo 4]]
 - [[Lezione 8 - Capitolo 4]]
-- [[Lezione 9 - Capitolo 5]]
+- [[Lezione 9- Capitolo 3]]
 - 
 
 

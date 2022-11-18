@@ -1,4 +1,4 @@
-# Minimizzazione
+# Minimizzazione di ASF
 
 L'ASFD con minimo numero di stati che riconosce un dato linguaggio $L$ può essere derivato partizionando l'insieme $Q$ degli stati in un automa che riconosce $L$ in classi di equivalenza rispetto alla relazione
 $$q_i\equiv q_j\iff(\forall x\in\Sigma^\star,\overline\delta(q_i,x)\in F\iff\overline\delta(q_j,x)\in F)$$
@@ -112,6 +112,10 @@ e quindi:
 ![[appunti fi/mod i/immagini/Pasted image 20221117134319.png|center|400]]
 
 
-# Decidibilitò di predicati
+# Decidibilità di predicati
+
+>[!important]- Teorema
+>è possibile decidere se il linguagio accettato da un dato automa a stati finiti è vuoto
+
 
 
