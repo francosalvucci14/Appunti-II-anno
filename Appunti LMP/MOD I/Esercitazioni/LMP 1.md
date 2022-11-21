@@ -6,6 +6,8 @@ package it.uniroma2.art.lmp.ex.model;
 
 public interface Student extends Person {
 	public String getMatricola();
+	public void saluta(Professor prof);//overload a più livelli
+	public void saluta(Professor prof,String appellativo);
 }
 
 ```
@@ -34,7 +36,10 @@ public class StudentImpl extends PersonImpl implements Student {
 		super(nome, cognome, codiceFiscale);
 		this.matricola = matricola;
 	}
-
+	
+	public StudentImpl(Person p,String matricola) {
+		this(p.getNome(),p.getCognome(),p.getCodiceFiscale(),matricola);
+	}
 	@Override
 	public String getMatricola() {
 		return matricola;
@@ -43,18 +48,35 @@ public class StudentImpl extends PersonImpl implements Student {
 	public String toString() {
 		return super.toString()+" "+matricola;
 	}
+
+	@Override
+	public void saluta(Professor prof) {
+		// TODO Auto-generated method stub
+		System.out.println("Salve prof: "+prof);
+	}
+
+	@Override
+	public void saluta(Professor prof, String appellativo) {
+		// TODO Auto-generated method stub
+		System.out.println("Salve prof: "+prof+" lei è proprio un " + appellativo);
+	}
 }
 ```
 
 Codice di ProfessorImpl
 
 ```java
+/**
+ * 
+ */
 package it.uniroma2.art.lmp.ex.model;
+
 /**
  * @author franc
  *
  */
 public class ProfessorImpl extends PersonImpl implements Professor {
+
 	/**
 	 * @param nome
 	 * @param cognome
