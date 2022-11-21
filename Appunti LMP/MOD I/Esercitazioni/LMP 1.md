@@ -49,9 +49,6 @@ public class StudentImpl extends PersonImpl implements Student {
 Codice di ProfessorImpl
 
 ```java
-/**
- * 
- */
 package it.uniroma2.art.lmp.ex.model;
 
 /**
