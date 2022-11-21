@@ -223,9 +223,18 @@ Applicazione BinSearch
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20221117115744.png|center|700]]
 
 
+# Esercitazione 3
 
+## Esercizio 1
 
+Dato un albero binario T di n nodi, dove ogni nodo ha: **valore** $val(v)\gt0$, **colore** $col(v)\in\lbrace R,N\rbrace$,ottenere il valore del cammino rosso di tipo radice-nodo di valore massimo
 
+![[appunti asd/mod i/esercizi/imges/Pasted image 20221121160455.png|center]]
+
+Def: il **valore di un cammino** è la somma di valori dei nodi del cammino
+Def: un cammino è **rosso** se tutti i suoi nodi sono di colore rosso
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20221121160433.png|center|500]]
 
 
 
