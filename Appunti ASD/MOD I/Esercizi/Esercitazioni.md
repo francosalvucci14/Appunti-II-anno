@@ -347,3 +347,4 @@ Output: numero di nodi che soddisfano $\overbrace{\text{somma dei valori degli a
 Esempio
 
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20221121171612.png|center|500]]
+
