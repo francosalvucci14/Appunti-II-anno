@@ -1,4 +1,4 @@
-Ritornando a LMP 0, inseriamo le classi ProfessorImpl e StudentImpl e le interfacce corrispondenti, ovvero Student e Professor
+Ritornando a [[LMP 0]], inseriamo le classi ProfessorImpl e StudentImpl e le interfacce corrispondenti, ovvero Student e Professor
 
 Codice di Student
 ```java
