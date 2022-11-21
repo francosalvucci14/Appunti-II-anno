@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d5e8c485c43b475d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/MOD I/Esercizi/Esercizi Algoritmi di visita su alberi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md"
+                "file": "Appunti ASD/MOD I/Esercizi/Esercizi Algoritmi di visita su alberi.md"
               }
             }
           },
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti ASD/MOD I/Esercizi/Esercizi Algoritmi di visita su alberi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti ASD/MOD I/Esercizi/Esercizi Algoritmi di visita su alberi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,10 +173,10 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7cb8cbb75417657e",
+  "active": "d5e8c485c43b475d",
   "lastOpenFiles": [
-    "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
     "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+    "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
     "Appunti LMP/MOD I/Lezione 7.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",

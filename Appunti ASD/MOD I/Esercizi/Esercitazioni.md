@@ -302,3 +302,17 @@ print(n)
 
 Pseudocodice:
 Arriverà!!
+
+Complessità $O(n)$
+
+## Esercizio 2
+
+Input:
+- albero binario T di n nodi
+- un intero $h\geq0$
+
+Output: numero di nodi di T con profondità almeno h
+
+Def: **profondità di un nodo** distanza (#di archi) dalla radice
+
+Es: $h=3\implies output=7$
