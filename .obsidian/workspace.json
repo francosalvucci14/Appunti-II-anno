@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7cb8cbb75417657e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md"
               }
             }
           },
@@ -139,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,17 +197,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "90a853081f49d1ee",
+  "active": "7cb8cbb75417657e",
   "lastOpenFiles": [
-    "Appunti ASD/Algoritmi/Img/Pasted image 20221118114841.png",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
-    "Appunti ASD/MOD I/Lezione 9 - Capitolo 3.md",
     "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md",
-    "Appunti FI/MOD I/Indice delle lezioni FI.md",
-    "Appunti ASD/MOD I/Indice degli appunti ASD.md",
-    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
-    "Pasted image 20221117133714.png",
-    "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20221117115715.png"
+    "Appunti FI/MOD I/Lezione 6 - ASF.md",
+    "Appunti FI/MOD I/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
+    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
+    "Appunti ASD/MOD I/Lezione 1 - Capitolo 1.md",
+    "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
+    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
+    "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md"
   ]
 }
