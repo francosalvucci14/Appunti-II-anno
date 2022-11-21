@@ -38,3 +38,4 @@ Se $L$ non è regolare, Alice vince sempre questo gioco con Bob:
 3. Bob divide z in tre parti $uvw$ con $|uv|\leq n$ e $|v|\geq1$
 4. Alice sceglie un intero $i\geq0$ e mostra a Bob che $uv^iw\not\in L$
 
+Vedi esempi su file 6-lingreg-slides.pdf su Teams
