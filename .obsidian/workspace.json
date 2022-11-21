@@ -30,18 +30,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "d5e8c485c43b475d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD I/Lezione 9 - Capitolo 3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
         "currentTab": 1
@@ -164,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -185,11 +173,11 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "11b722bf5bf43fda",
+  "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
     "Appunti ASD/MOD I/Esercizi/Esercizi Algoritmi di visita su alberi.md",
-    "Appunti ASD/MOD I/Lezione 9 - Capitolo 3.md",
     "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+    "Appunti ASD/MOD I/Lezione 9 - Capitolo 3.md",
     "Appunti ASD/MOD I/Esercizi/Indice degli esercizi ASD.md",
     "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",

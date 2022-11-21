@@ -177,7 +177,7 @@ Con la funzione trovaMax trovo l'indice dell'elemento maggiore nell'array A, com
 Poi partendo da m inverto la lista, quindi inverto da m a fine lista (tutta la parte sinistra partendo da m)
 a questo punto in tempo lineare eseguo il merge delle due sottoliste e ottengo l'array ordinato in tempo $o(nlog(n))$
 
-# Esercizio 2
+## Esercizio 2
 
 ## Esercizio 3 (opzionale)
 
