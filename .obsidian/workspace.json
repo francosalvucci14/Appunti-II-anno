@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2873ea0e9967337a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md"
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 1.md"
               }
             }
           },
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,17 +173,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "2873ea0e9967337a",
   "lastOpenFiles": [
-    "Appunti FI/MOD I/Indice delle lezioni FI.md",
+    "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti ASD/MOD I/Lezione 9 - Capitolo 3.md",
     "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
+    "Appunti FI/MOD I/Indice delle lezioni FI.md",
     "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md",
     "Appunti FI/MOD I/Lezione 6 - ASF.md",
     "Appunti FI/MOD I/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
-    "Appunti ASD/MOD I/Lezione 1 - Capitolo 1.md",
-    "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md"
+    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md"
   ]
 }
