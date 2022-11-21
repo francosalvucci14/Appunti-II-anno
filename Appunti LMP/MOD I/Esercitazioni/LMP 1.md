@@ -44,7 +44,6 @@ public class StudentImpl extends PersonImpl implements Student {
 		return super.toString()+" "+matricola;
 	}
 }
-
 ```
 
 Codice di ProfessorImpl
