@@ -50,13 +50,11 @@ Codice di ProfessorImpl
 
 ```java
 package it.uniroma2.art.lmp.ex.model;
-
 /**
  * @author franc
  *
  */
 public class ProfessorImpl extends PersonImpl implements Professor {
-
 	/**
 	 * @param nome
 	 * @param cognome
@@ -77,8 +75,12 @@ public class ProfessorImpl extends PersonImpl implements Professor {
 		return cattedra;
 	}
 	
+	public void setCattedra(String cattedra) {
+		this.cattedra = cattedra;
+	}
+	
 	public String toString() {
-		return super.toString() + ", " + ((cattedra!=null)?cattedra:"");//espressione compatta per if-then-else
+		return super.toString() + " " + ((cattedra!=null)?cattedra:"");//espressione compatta per if-then-else
 	}
 }
 ```

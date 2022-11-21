@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
+                "file": "Appunti BSD/MOD I/Lezione 4 - Vincoli d'integrità.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "89b72fd344818bb1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6dab394e54015eae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 1.md"
+                "file": "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md"
               }
             }
           },
@@ -128,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
+                "file": "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
+                "file": "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,17 +197,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "ca0fd13eea8cf6d3",
+  "active": "6dab394e54015eae",
   "lastOpenFiles": [
-    "Appunti LMP/MOD I/Esercitazioni/LMP 0.md",
+    "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
+    "Appunti BSD/MOD I/Lezione 2.md",
+    "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
+    "Appunti BSD/MOD I/Lezione 4 - Vincoli d'integrità.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
+    "Appunti LMP/MOD I/Esercitazioni/LMP 0.md",
     "Appunti LMP/MOD I/Esercitazioni/Indice delle esercitazioni.md",
     "Appunti FI/MOD I/Indice delle lezioni FI.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti ASD/MOD I/Lezione 9 - Capitolo 3.md",
-    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
-    "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md",
-    "Appunti FI/MOD I/Lezione 6 - ASF.md",
-    "Appunti FI/MOD I/Lezione 7 - Equivalenza tra ASFD e ASFND.md"
+    "Appunti ASD/MOD I/Lezione 9 - Capitolo 3.md"
   ]
 }

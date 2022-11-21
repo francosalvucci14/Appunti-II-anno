@@ -1,7 +1,7 @@
 
-- [[Appunti BSD/MOD I/Lezione 3#Modello Relazionale|Modello Relazionale]]
-- [[Appunti BSD/MOD I/Lezione 3#Strutture Nidificate|Strutture Nidificate]]
-- [[Appunti BSD/MOD I/Lezione 3#Informazione incompleta|Informazione incompleta]]
+- [[Lezione 3 - Modello Relazionale#Modello Relazionale|Modello Relazionale]]
+- [[Lezione 3 - Modello Relazionale#Strutture Nidificate|Strutture Nidificate]]
+- [[Lezione 3 - Modello Relazionale#Informazione incompleta|Informazione incompleta]]
 
 # Modello Relazionale
 
