@@ -27,16 +27,24 @@ Codice di StudentImpl
 package it.uniroma2.art.lmp.ex.model;
 
 public class StudentImpl extends PersonImpl implements Student {
+	
 	private String matricola;
+	
 	public StudentImpl(String nome, String cognome, String codiceFiscale,String matricola) {
 		super(nome, cognome, codiceFiscale);
 		this.matricola = matricola;
 	}
+
 	@Override
 	public String getMatricola() {
 		return matricola;
 	}
+	
+	public String toString() {
+		return super.toString()+" "+matricola;
+	}
 }
+
 ```
 
 Codice di ProfessorImpl
