@@ -225,18 +225,8 @@ Applicazione BinSearch
 
 # Esercitazione 3
 
-## Esercizio 1
+L'albero per es 1 e es2 è fatto così
 
-Dato un albero binario T di n nodi, dove ogni nodo ha: **valore** $val(v)\gt0$, **colore** $col(v)\in\lbrace R,N\rbrace$,ottenere il valore del cammino rosso di tipo radice-nodo di valore massimo
-
-![[appunti asd/mod i/esercizi/imges/Pasted image 20221121160455.png|center]]
-
-Def: il **valore di un cammino** è la somma di valori dei nodi del cammino
-Def: un cammino è **rosso** se tutti i suoi nodi sono di colore rosso
-
-![[appunti asd/mod i/esercizi/imges/Pasted image 20221121160433.png|center|500]]
-
-Soluzione in python:
 ```python
 class TreeNode:
     def __init__(self, val, left=None, right=None,col = None):
@@ -244,14 +234,6 @@ class TreeNode:
         self.left = left
         self.right = right
         self.col = col
-
-def problema_1(root):
-    if root == None:
-        return 0
-    if root.col == "N":
-        return 0
-    return root.val+max(problema_1(root.left),problema_1(root.right))
-  
 root = TreeNode(1)
 l1 = TreeNode(10)
 r1 = TreeNode(4)
@@ -296,6 +278,29 @@ r1.right = r1_r
 r1_l.left = r1_l_l
 r1_r.left = r1_r_l
 
+```
+
+## Esercizio 1
+
+Dato un albero binario T di n nodi, dove ogni nodo ha: **valore** $val(v)\gt0$, **colore** $col(v)\in\lbrace R,N\rbrace$,ottenere il valore del cammino rosso di tipo radice-nodo di valore massimo
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20221121160455.png|center]]
+
+Def: il **valore di un cammino** è la somma di valori dei nodi del cammino
+Def: un cammino è **rosso** se tutti i suoi nodi sono di colore rosso
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20221121160433.png|center|500]]
+
+Soluzione in python:
+```python
+
+def problema_1(root):
+    if root == None:
+        return 0
+    if root.col == "N":
+        return 0
+    return root.val+max(problema_1(root.left),problema_1(root.right))
+  
 n = problema_1(root)
 print(n)
 ```
@@ -316,3 +321,29 @@ Output: numero di nodi di T con profondità almeno h
 Def: **profondità di un nodo** distanza (#di archi) dalla radice
 
 Es: $h=3\implies output=7$
+
+Soluzione in python
+
+```python
+def problema_2(root,h,i):
+    #Uso la visita in ampiezza, algoritmo BFS
+    #i = livello
+    if root == None:
+        return 0
+    if i>=h:
+        return 1+problema_2(root.left,h,i+1)+problema_2(root.right,h,i+1)
+    else:
+        return problema_2(root.left,h,i+1)+problema_2(root.right,h,i+1)
+```
+
+## Esercizio 3
+
+Input:
+- albero binario T di n nodi
+- ogni nodo v ha un valore $val(v)\gt0$
+
+Output: numero di nodi che soddisfano $\overbrace{\text{somma dei valori degli antenati del nodo}=\text{somma dei valori dei discendenti del nodo}}^{=\Delta}$
+
+Esempio
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20221121171612.png|center|500]]
