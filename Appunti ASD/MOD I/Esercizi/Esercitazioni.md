@@ -348,3 +348,19 @@ Esempio
 
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20221121171612.png|center|500]]
 
+Soluzione python
+
+```python
+def problema_3(root,SA):
+    if root == None:
+        return (0,0)
+    SA = SA+root.val
+    (SD_s,k_s) = problema_3(root.left,SA)
+    (SD_d,k_d) = problema_3(root.right,SA)
+  
+    SD = SD_s+SD_d+root.val
+    if SD == SA:
+        return (SD,1+k_s+k_d)
+    else:
+        return (SD,k_s+k_d)
+```
