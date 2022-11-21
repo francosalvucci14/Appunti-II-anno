@@ -236,12 +236,3 @@ Def: un cammino è **rosso** se tutti i suoi nodi sono di colore rosso
 
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20221121160433.png|center|500]]
 
-
-
-
-
-
-
-
-
-

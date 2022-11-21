@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md"
+                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md"
               }
             }
           },
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,6 +199,7 @@
   },
   "active": "6dab394e54015eae",
   "lastOpenFiles": [
+    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
     "Appunti LMP/MOD I/Lezione 7.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
@@ -207,7 +208,6 @@
     "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
     "Appunti BSD/MOD I/Lezione 4 - Vincoli d'integrità.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 0.md",
-    "Appunti LMP/MOD I/Esercitazioni/Indice delle esercitazioni.md",
-    "Appunti FI/MOD I/Indice delle lezioni FI.md"
+    "Appunti LMP/MOD I/Esercitazioni/Indice delle esercitazioni.md"
   ]
 }

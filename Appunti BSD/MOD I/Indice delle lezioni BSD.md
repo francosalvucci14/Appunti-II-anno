@@ -3,6 +3,9 @@
 - [[Appunti BSD/MOD I/Lezione 2|Lezione 2]]
 - [[Lezione 3 - Modello Relazionale|Lezione 3]]
 - [[Lezione 4 - Vincoli d'integrità]]
+- [[Lezione 5 - Modello Concettuale, Modello ER]]
+- [[Lezione 6 - Progettazione logica]]
+- 
 
 # Grafo delle lezioni
 
@@ -13,6 +16,8 @@ graph LR
 	C[Lezione 2]
 	D[Lezione 3]
 	E[Lezione 4 - Vincoli di integrità]
+	F[Lezione 5]
+	G[Lezione 6]
 	
 	linkStyle default stroke-width:2px,fill:none,stroke:grey,color:red
 
@@ -21,6 +26,9 @@ graph LR
 	style C fill:black, color:#fff
 	style D fill:black, color:#fff
 	style E fill:black, color:#fff
-	A-->B & C & D & E
+	style F fill:black, color:#fff
+	style G fill:black, color:#fff
+	A-->B & C & D & E & F & G
 	
 ```
+
