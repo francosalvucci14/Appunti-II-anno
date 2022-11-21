@@ -17,7 +17,7 @@ $\square$
 
 Se $L$ è regolare, ALice vince sempre questo gioco con Bob:
 
-1. ALice fissa un intero $n\gt0$ opportuno
+1. Alice fissa un intero $n\gt0$ opportuno
 2. Bob sceglie una stringa $z\in L$ con $|z|\gt n$
 3. Alice divide z in tre parti $uvw$ con $|uv|\leq n\:e\:|v|\geq1$
 4. Bob scelgie un intero $i\gt0$
