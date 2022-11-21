@@ -236,3 +236,69 @@ Def: un cammino è **rosso** se tutti i suoi nodi sono di colore rosso
 
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20221121160433.png|center|500]]
 
+Soluzione in python:
+```python
+class TreeNode:
+    def __init__(self, val, left=None, right=None,col = None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.col = col
+
+def problema_1(root):
+    if root == None:
+        return 0
+    if root.col == "N":
+        return 0
+    return root.val+max(problema_1(root.left),problema_1(root.right))
+  
+root = TreeNode(1)
+l1 = TreeNode(10)
+r1 = TreeNode(4)
+l1_l = TreeNode(1)
+l1_r = TreeNode(2)
+l1_l_l = TreeNode(1)
+l1_l_r = TreeNode(2)
+l1_r_l = TreeNode(30)
+l1_r_l_l = TreeNode(50)
+l1_r_r = TreeNode(2)
+r1_l = TreeNode(15)
+r1_l_l = TreeNode(2)
+r1_r = TreeNode(20)
+r1_r_l = TreeNode(20)
+  
+root.col = "R"
+l1.col = "R"
+r1.col = "R"
+l1_l.col = "R"
+l1_l_l.col = "R"
+l1_r.col = "R"
+l1_l_r.col = "R"
+l1_r_l.col = "N"
+l1_r_l_l.col = "R"
+l1_r_r.col = "R"
+r1_l.col = "R"
+r1_l_l.col = "N"
+r1_r.col = "N"
+r1_r_l.col = "R"
+  
+root.left = l1
+root.right = r1
+l1.left = l1_l
+l1.right = l1_r
+l1_l.left = l1_l_l
+l1_l.right = l1_l_r
+l1_r.left = l1_r_l
+l1_r.right = l1_r_r
+l1_r_l.left = l1_r_l_l
+r1.left = r1_l
+r1.right = r1_r
+r1_l.left = r1_l_l
+r1_r.left = r1_r_l
+
+n = problema_1(root)
+print(n)
+```
+
+Pseudocodice:
+Arriverà!!

@@ -13,50 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ca0fd13eea8cf6d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti BSD/MOD I/Lezione 4 - Vincoli d'integrità.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "89b72fd344818bb1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6dab394e54015eae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
+                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md"
+                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md"
               }
             }
           },
@@ -152,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
+                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
+                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,8 +160,9 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "6dab394e54015eae",
+  "active": "7cb8cbb75417657e",
   "lastOpenFiles": [
+    "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
     "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
     "Appunti LMP/MOD I/Lezione 7.md",
@@ -207,7 +171,6 @@
     "Appunti BSD/MOD I/Lezione 2.md",
     "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
     "Appunti BSD/MOD I/Lezione 4 - Vincoli d'integrità.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 0.md",
-    "Appunti LMP/MOD I/Esercitazioni/Indice delle esercitazioni.md"
+    "Appunti LMP/MOD I/Esercitazioni/LMP 0.md"
   ]
 }
