@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "5b6662477f6d512c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "502fffa01958b8ed",
             "type": "leaf",
             "state": {
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md"
+                "file": "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md"
               }
             }
           },
@@ -139,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
+                "file": "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
+                "file": "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,11 +197,11 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7cb8cbb75417657e",
+  "active": "5b6662477f6d512c",
   "lastOpenFiles": [
+    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
     "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti FI/MOD I/Indice delle lezioni FI.md",
-    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
     "Appunti CPS/Lezione 5.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
