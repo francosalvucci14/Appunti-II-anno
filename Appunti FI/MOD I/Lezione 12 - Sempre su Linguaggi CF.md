@@ -30,7 +30,22 @@ Quindi:
 $$\begin{align}N_0 &= \{A\}\\N_1 &= \{A,S\}\\N_2&=\{A,S,B\}\\N_3&=\{A,S,B\}=N_2=N\end{align}$$
 Costruzione delle produzioni $P'$ di $\mathcal G'$:
 - Si esamina ciascuna produzione $A\to\alpha$ di $P$, con l'esclusione delle $\varepsilon$-produzioni:
-	- se nessun simbolo di $\alpha$ è annullabile: $A\to\alpha$ è inserita in $P'$
+	- Se nessun simbolo di $\alpha$ è annullabile: $A\to\alpha$ è inserita in $P'$
 	- Altrimenti $\alpha$ contiene $k\gt0$ simboli che si annullano: sono inserite in $P'$ tutte le possibili produzioni ottenute da $A\to\alpha$ eliminando da $\alpha$ uno dei sottoinsiemi di simboli che si annullano
 
+Ritornando all'esempio:
 
+Le produzioni $P'$ sono quindi:
+$$\begin{align}S&\to A|SSa|Sa|a|\varepsilon\\A&\to B|Ab|b\\B&\to S|ab|aA|a\end{align}$$
+
+## Passo 2
+
+>[!important]- Teorema
+>Per ogni grammatica $\mathcal G$ di tipo 2 senza $\varepsilon$-produzioni, esiste sempre una grammatica $\mathcal G'$ di tipo 2 senza $\varepsilon$-produzioni,priva di produzioni unitarie ed equivalente a $\mathcal G$
+
+Sia, per ogni $A\in V_N,U(A)$ il sottoinsieme di $V_N-\lbrace A\rbrace$ comprendente tutti i non terminali derivabii da $A$ applicando una sequenza di produzioni unitarie:
+$$U(A)=\lbrace B\in V_N-\lbrace A\rbrace|A\xRightarrow[]{\star}B\rbrace$$
+Data la grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$, $P'$ è costruito:
+
+- Inserendo dapprima in $P'$ tutte le produzioni non unitarie di $P$
+- Inserendo in $P'$, per ogni non terminale $A$ e per ogni $B\in U(A)$, la produzione $A\to\beta$ se e solo se in $P$ esiste una produzione non unitaria $B\to\beta$
