@@ -61,3 +61,18 @@ Soluzione:
 
 ## Passo 3
 
+>[!important]- Teorema
+>Per ogni grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ di tipo 2 senza ε-produzioni e priva di produzioni unitarie, esiste sempre uina grammatica $\mathcal G'$ senza ε-produzioni,priva di produzioni unitarie e senza simboli inutili equivalente a $\mathcal G$
+
+Affinchè un simbolo $A\in V_N$ non sia inutile, è necessario che nella grammatica $\mathcal G$ si abbia che:
+
+- A sia un simbolo **fecondo**, vale a dire che da esso siano generabili stringhe di terminali, cioè $\exists w\in V_T^+:A\xRightarrow[]{\star}w$
+- A sia generabile dall'assioma in produzioni che non contengano simboli fecondi, cioè $S\xRightarrow[]{\star}\alpha A\beta$ con $\alpha,\beta\in(V_T\cup V_N)^\star$ e, per ogni $B\in V_N$ in $\alpha\:o\:\beta$, valga la proprietà precedente
+
+Equivalentemente, un simbolo $A\in V_N$ non è inutile se esiste una derivazione $S\xRightarrow[]{\star}\alpha A\beta\xRightarrow[]{\star}w\in V_T^+$
+
+Un non terminale $A$ è fecondo se e solo se vale una delle seguenti condizioni:
+
+- esiste $w\in V_T^+|A\to w\in P$
+- esiste $\alpha\in(V_T\cup V_N)^\star|A\to\alpha\in P$ e tutti i simboli non terminali in $\alpha$ sono fecondi
+
