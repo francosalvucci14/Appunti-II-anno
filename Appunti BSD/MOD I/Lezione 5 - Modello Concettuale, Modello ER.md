@@ -162,6 +162,34 @@ Le entità **deboli** sono le entità che non hanno una chiave primaria e devono
 
 ![[appunti bsd/mod i/immagini/Pasted image 20221122150955.png|center|600]]
 
+#### Modello ER - Molteplicità
+
+La **molteplicità** di una relazione è il numero di possibili istanze di un'entità che sono messe in corrispondenza con un'istanza dell'altra entità:
+
+- I valori **min** e **max** assunti dalla molteplicità sono rappresentati con : **(1,1),(1,N),(0,1),(0,N)**
+- Al valore min è associato il concetto di partecipazione facoltativa **(0)** o obbligatoria **(1)**
+- Il valore massimo definisce la cardinalità della partecipazione all'associazione e assume due valori  1 e N
+- In relazione alla cardinalità si parla di **associazioni**:
+	- **Uno a uno 1:1**
+	- **Uno a molti 1:N**
+	- **Molti a molti N:N**
+
+#### Modello ER - Associazione 1:1
+Un'associazione tra E1 e E2 si dice _uno a uno (1:1)_ quando a ogni istanza di E1 corrisponde una sola istanza di E2 e a ogni istanza di E2 corrisponde una sola istanza di E1
+![[appunti bsd/mod i/immagini/Pasted image 20221122152709.png|center|600]]
+
+**Esempio**
+![[appunti bsd/mod i/immagini/Pasted image 20221122152854.png|center|600]]
+
+#### Modello ER - Associazione 1:N
+Un'associazione tra E1 e E2 si dice uno a molti (1:N) quando a ogni istanza di E1 corrispondono una o più istanze di E2 e a ogni istanza di E2 corrispondono una o più istanze di E1
+![[appunti bsd/mod i/immagini/Pasted image 20221122153254.png|center|600]]
+
+**Esempio**
+![[appunti bsd/mod i/immagini/Pasted image 20221122153325.png|center|600]]
+
+
+
 
 
 
