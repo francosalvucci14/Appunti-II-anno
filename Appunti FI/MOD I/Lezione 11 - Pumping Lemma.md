@@ -41,7 +41,7 @@ Se $L$ non è regolare, Alice vince sempre questo gioco con Bob:
 **Esempio**
 
 Si consideri il linguaggio $L=\lbrace w\overline{w}|w\in\lbrace a,b\rbrace^\star\rbrace$, ove si è indicata con $\overline w$ la stringa ottenuta invertendo i caratteri presenti in $w$
-Dimostrare, usando il pumping lemma, che tae linguaggio non è regolare
+Dimostrare, usando il pumping lemma, che tale linguaggio non è regolare
 
 Svolgimento:
 
