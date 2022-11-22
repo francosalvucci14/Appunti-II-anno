@@ -130,6 +130,39 @@ Una **chiave artificiale** è formata da un attributo privo di significato propr
 **Esempio**
 ![[appunti bsd/mod i/immagini/Pasted image 20221122145652.png|center|600]]
 
+#### Modello ER - Proprietà
+
+- Ogni entità deve avere una **chiave primaria**
+- L'attributo chiave primaria **non può essere opzionale**
+- La chiave primaria **non può avere valori ripetuti**
+
+Proprietà per il Dominio:
+- **Tipo di dato**: intero,decimale,carattere,data,...
+- **Lunghezza**: numero di cifre o caratteri per rappresentare il valore del'attributi
+- **Intervallo**: Limite superiore e inferiore dei valori
+- **Vincoli**: Restrizioni sui valori ammessi
+- **Supporto del valore NULL**: quando non è assegnato nessun valore
+- Valore di **default**
+Per le chiavi primarie:
+- Il valore deve essere unico e i NULL non sono ammessi
+Per le chiavi esterne:
+- Il tipo di dato, la lunghezza e il formato della chiave esterna devono essere uguali a quelli della corrispondente chiave primaria
+
+##### Ritornando a [[Lezione 5 - Modello Concettuale, Modello ER#Modello ER - Entità|Modello ER - Entità]]
+
+Esistono vari tipi di entità, alcune **forti** e altre **deboli**
+_Def_
+Le entità **deboli** sono le entità che non hanno una chiave primaria e devono essere associate ad un'altra entità per essere completamente significative
+![[appunti bsd/mod i/immagini/Pasted image 20221122150709.png|center|600]]
+
+- Movimento ha senso solo in relazione a Conto
+- Movimento è un entità debole
+- Cliente e Conto sono entità forti
+- Per evitare entità deboli, si aggiunge un numero progressivo come attributo
+
+![[appunti bsd/mod i/immagini/Pasted image 20221122150955.png|center|600]]
+
+
 
 
 
