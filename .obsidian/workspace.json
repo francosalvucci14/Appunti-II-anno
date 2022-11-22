@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercizi Algoritmi di visita su alberi.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md"
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md"
               }
             }
           },
@@ -128,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,14 +144,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -173,7 +172,7 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "acd002c7f705cc3c",
+  "active": "7cb8cbb75417657e",
   "lastOpenFiles": [
     "Appunti ASD/MOD I/Esercizi/Esercizi Algoritmi di visita su alberi.md",
     "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
