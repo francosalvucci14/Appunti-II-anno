@@ -44,7 +44,7 @@ $$\begin{align}S&\to A|SSa|Sa|a|\varepsilon\\A&\to B|Ab|b\\B&\to S|ab|aA|a\end{a
 >[!important]- Teorema
 >Per ogni grammatica $\mathcal G$ di tipo 2 senza $\varepsilon$-produzioni, esiste sempre una grammatica $\mathcal G'$ di tipo 2 senza $\varepsilon$-produzioni,priva di produzioni unitarie ed equivalente a $\mathcal G$
 
-Sia, per ogni $A\in V_N,U(A)$ il sottoinsieme di $V_N-\lbrace A\rbrace$ comprendente tutti i non terminali derivabii da $A$ applicando una sequenza di produzioni unitarie:
+Sia, per ogni $A\in V_N,U(A)$ il sottoinsieme di $V_N-\lbrace A\rbrace$ comprendente tutti i non terminali derivabili da $A$ applicando una sequenza di produzioni unitarie:
 $$U(A)=\lbrace B\in V_N-\lbrace A\rbrace|A\xRightarrow[]{\star}B\rbrace$$
 Data la grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$, $P'$ è costruito:
 
@@ -62,7 +62,7 @@ Soluzione:
 ## Passo 3
 
 >[!important]- Teorema
->Per ogni grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ di tipo 2 senza ε-produzioni e priva di produzioni unitarie, esiste sempre uina grammatica $\mathcal G'$ senza ε-produzioni,priva di produzioni unitarie e senza simboli inutili equivalente a $\mathcal G$
+>Per ogni grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ di tipo 2 senza ε-produzioni e priva di produzioni unitarie, esiste sempre una grammatica $\mathcal G'$ senza ε-produzioni,priva di produzioni unitarie e senza simboli inutili equivalente a $\mathcal G$
 
 Affinchè un simbolo $A\in V_N$ non sia inutile, è necessario che nella grammatica $\mathcal G$ si abbia che:
 
@@ -85,3 +85,33 @@ Ciò può essere effettuato in modo iterativom osservando che $A$ è generabile 
 1. esistono $\alpha,\beta\in(F\cup V_T)^\star:S\to\alpha A\beta\in \hat P$
 2. esistono $\alpha,\beta\in(F\cup V_T)^\star$ e $B\in F$,generabile a partire da $S$, tali che $B\to\alpha A\beta\in\hat P$ 
 
+Al fine di eliminare i simboli inutili (non fecondi e non generabili da $S$) è necessario i due algoritmi nell'ordine dato: eliminare prima i simboli non generabili e poi quelli non fecondi può far si che non tutti i simboli inutili vengano rimossi dalla grammatica
+
+Infatti, si consideri la grammatica:
+$$\begin{align}S&\to AB|a\\A&\to a\end{align}$$
+Procedendo prima all'eliminazione dei simboli non derivabili dall'assioma e poi all'eliminazione di quelli non fecondi, otterremmo le seguenti grammatiche:
+$$\begin{align}S&\to AB|a\\ A&\to a\end{align}$$
+e successivamente : $$\begin{align}S&\to a\\A&\to a\end{align}$$
+che non è in forma ridotta
+
+Se invece si procede come indicato sopra si ottengono le due grammatiche
+$$\begin{align}S&\to a\\A&\to a\end{align}$$
+e successivamente:
+$$\begin{align}S&\to a\end{align}$$
+
+## Passo 4
+
+Una grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ può essere estesa in una grammatica $\mathcal G'=\langle V_T,V_N',P',S'\rangle$ che generi anche la stringa vuota nel modo seguente:
+
+1. $V_N'=V_N\cup\lbrace T\rbrace$, dove $T\not\in V_N$
+2. $P'=P\cup\lbrace T\to\varepsilon\rbrace\cup\lbrace T\to\alpha|S\to\alpha\in P\rbrace$
+3. $S'=T$
+
+**Esempio**
+$$\begin{align}S&\to aUVb|TZ\\Z&\to aZ\\U&\to bU|b\\v&\to W\\v&\to aY\\Y&\to bY|b\\W&\to cWd|cd\\T&\to tT|tz\end{align}$$
+- L’eliminazione delle produzioni unitarie porta ad escludere la produzione 4 e ad aggiungere una terza produzione alla 1.
+- L’eliminazione di simboli non fecondi porta ad escludere la produzione 2 e la seconda produzione della 1.
+- L’eliminazione dei simboli non raggiungibili porta infine ad escludere la produzione 8.
+
+Si ottiene quindi la grammatica:
+$$\begin{align}S&\to aUVb|aUWb\\U&\to bU|b\\V&\to aY\\Y&\to bY|b\\W&\to cWd|cd\end{align}$$
