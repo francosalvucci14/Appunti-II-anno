@@ -79,7 +79,7 @@ Al fine di studiare alcune proprietà dei linguaggi generati da queste grammatic
 
 è importante dimostrare che i linguaggi non contestuali possono essere generati mediante tali tipi di grammatiche
 
-Una grammatica $\mathcal G$ è in forma ridotta se:
+Una grammatica $\mathcal G$ è in _forma ridotta_ se:
 
 1. non contiene $\varepsilon$-produzioni (se non, eventualmente, in corrispondenza all'assioma, ed in tal caso l'assioma non compare mai al lato destro di una produzione)
 2. non contiene **produzioni unitarie**, cioè produzioni del tipo $$A\to B, con\:A,B\in V_N$$
