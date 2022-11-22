@@ -59,3 +59,29 @@ La derivazione di una stringa generata da una grammatica di tipo 2 può essere r
 
 In un albero sintattico, ad ogni nodo interno è associato un simbolo non-terminale e ad ogni foglia è associato un simbolo terminale. Per ogni produzionme del tipo $S\to aSbA$ che viene applicata nel processo di derivazione, il nodo interno etichettato con S avrà nell'albero quattro figli etichettati con $a,S,b,A$
 
+**Esempio**
+Data la grammatica $\mathcal G$ avente le produzioni
+$$\begin{align}S\to aSbA|ab\\A\to cAd|cd\end{align}$$
+La stringa $aaabbcdbcd\in L(\mathcal G)$ può essere così derivata:
+$$S\to aSbA\to aaSbAbA\to aaabbAbA\to aaabbcdbA\to aaabbcdbcd$$
+L'albero sintattico associato sarà:
+![[appunti fi/mod i/immagini/Pasted image 20221122102425.png|center|500]]
+
+L'insieme delle foglie, se lette da sinistra verso destra, sarà proprio la stringa $w\in L(\mathcal G)$ 
+
+In questa rappresentazione non si mantiene traccia dell'ordine con cui le produzioni sono state applicate. Ad un unico albero possono corrispondere diverse derivazioni
+
+Vantaggio: un albero di derivazione fornisce una descrizione sintentica della struttura sintattica della stringa, indipendentemente dall'ordine con cui le produzioni sono state applicate
+
+## Forme ridotte e forme normali
+
+Al fine di studiare alcune proprietà dei linguaggi generati da queste grammatiche, è utile considerare grammatiche "ristrette", comprendenti soltanto le produzioni coon struttura particolare
+
+è importante dimostrare che i linguaggi non contestuali possono essere generati mediante tali tipi di grammatiche
+
+Una grammatica $\mathcal G$ è in forma ridotta se:
+
+1. non contiene $\varepsilon$-produzioni (se non, eventualmente, in corrispondenza all'assioma, ed in tal caso l'assioma non compare mai al lato destro di una produzione)
+2. non contiene **produzioni unitarie**, cioè produzioni del tipo $$A\to B, con\:A,B\in V_N$$
+3. non contiene **simboli inutili**, cioè simboli che non compaiono in nessuna derivazione di una stringa di soli terminali
+
