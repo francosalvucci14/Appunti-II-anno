@@ -67,7 +67,7 @@ Soluzione:
 Affinchè un simbolo $A\in V_N$ non sia inutile, è necessario che nella grammatica $\mathcal G$ si abbia che:
 
 - A sia un simbolo **fecondo**, vale a dire che da esso siano generabili stringhe di terminali, cioè $\exists w\in V_T^+:A\xRightarrow[]{\star}w$
-- A sia generabile dall'assioma in produzioni che non contengano simboli fecondi, cioè $S\xRightarrow[]{\star}\alpha A\beta$ con $\alpha,\beta\in(V_T\cup V_N)^\star$ e, per ogni $B\in V_N$ in $\alpha\:o\:\beta$, valga la proprietà precedente
+- A sia generabile dall'assioma in produzioni che non contengano simboli fecondi, cioè $S\xRightarrow[]{\star}\alpha A\beta$ con $\alpha,\beta\in(V_T\cup V_N)^\star$ e, per ogni $B\in V_N$ in $\alpha$ o $\beta$, valga la proprietà precedente
 
 Equivalentemente, un simbolo $A\in V_N$ non è inutile se esiste una derivazione $S\xRightarrow[]{\star}\alpha A\beta\xRightarrow[]{\star}w\in V_T^+$
 
