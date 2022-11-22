@@ -196,5 +196,5 @@ Un'associazione tra E1 e E2 si dice uno a molti (1:N) quando a ogni istanza di E
 **Esempio**
 ![[appunti bsd/mod i/immagini/Pasted image 20221122153728.png|center|600]]
 
-
+Manca parte IsA - Generalizzazione - Ereditarietà - UML
 
