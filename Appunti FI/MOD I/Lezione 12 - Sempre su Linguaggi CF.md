@@ -9,10 +9,11 @@ Trasformazione di una grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ di tipo
 3. A partire da $\mathcal G_2$, derivazione di $\mathcal G_3$ di tipo 2 senza $\varepsilon$-produzioni, senza produzioni unitarie e senza simboli inutili tale che $L(\mathcal G_3)=L(\mathcal G_2)$
 4. La grammatica $\mathcal G_4$ di tipo 2, equivalente a $\mathcal G$ coincide con $\mathcal G_3$ se $\varepsilon\not\in L(\mathcal G)$; altrimenti, $\mathcal G_4$ è ottenuta da $\mathcal G_3$ introducendo un nuovo assioma ed un opportuno insieme di produzioni su tale simbolo
 
->[!important]- Teorema
->Data una grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ il cui insieme di produzioni P comprende soltanto produzioni di tipo non contestuale e produzioni vuote, esiste una grammatica non contestuale $\mathcal G'$ tale che $L(\mathcal G')=L(\mathcal G)-\lbrace\varepsilon\rbrace$
 
 ## Passo 1
+
+>[!important]- Teorema
+>Data una grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ il cui insieme di produzioni P comprende soltanto produzioni di tipo non contestuale e produzioni vuote, esiste una grammatica non contestuale $\mathcal G'$ tale che $L(\mathcal G')=L(\mathcal G)-\lbrace\varepsilon\rbrace$
 
 Determinazione dell'insieme $N\subseteq V_N$ dei simboli che si annullano, cioè i non terminali da cui è possibile derivare $\varepsilon$ in $\mathcal G$
 
@@ -49,3 +50,14 @@ Data la grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$, $P'$ è costruito:
 
 - Inserendo dapprima in $P'$ tutte le produzioni non unitarie di $P$
 - Inserendo in $P'$, per ogni non terminale $A$ e per ogni $B\in U(A)$, la produzione $A\to\beta$ se e solo se in $P$ esiste una produzione non unitaria $B\to\beta$
+
+**Esercizio/Esempio**
+Costruire un algoritmo che, data una grammatica $\mathcal G$ di tipo 2 senza $\varepsilon$-produzioni e dato un non terminale $A$ della grammatica, determini l’insieme $U(A)$
+
+Soluzione:
+- Passo iniziale: Inserisci in $U(A)$ tutti i simboli $B$ tali che $A\to B$
+- Passo iterativo: per ogni simbolo $B\in U(A)$, inserisci in $U(A)$ tutti i simboli $C$ tali che $B\to C$; termina se nessun nuovo simbolo è stato inserito in $U(A)$
+
+
+## Passo 3
+
