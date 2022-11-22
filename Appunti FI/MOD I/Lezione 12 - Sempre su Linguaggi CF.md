@@ -74,5 +74,5 @@ Equivalentemente, un simbolo $A\in V_N$ non è inutile se esiste una derivazione
 Un non terminale $A$ è fecondo se e solo se vale una delle seguenti condizioni:
 
 - esiste $w\in V_T^+|A\to w\in P$
-- esiste $\alpha\in(V_T\cup V_N)^\star|A\to\alpha\in P$ e tutti i simboli non terminali in $\alpha$ sono fecondi
+- esiste $\alpha\in(V_N\cup V_T)^\star|A\to\alpha\in P$ e tutti i simboli non terminali in $\alpha$ sono fecondi
 
