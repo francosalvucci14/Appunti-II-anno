@@ -52,3 +52,10 @@ Interpretiamo il ruolo di Alice nel gioco.
 3. Bob divide z in tre parti $uvw$ con $|uv|\leq n,|v|\geq1$: per la struttura di z, necessariamente $uv=a^h$, con $1\lt h\leq n$. Quindi,$v=a^l$, con $1\lt l\leq h$ e corrispondentemente $u=a^{h-l}$, inoltre $w=a^{n-h}bba^n$
 4. Scegliamo l'intero 2 e mostriamo a Bob che $$uv^2w=a^{h-l}a^la^la^{n-h}bba^n=a^{n+l}bba^n\not\in L$$
 Quindi il linguaggio $L=\lbrace w\overline{w}|w\in\lbrace a,b\rbrace^\star\rbrace$ non è regolare
+
+# Linguaggi CF
+
+La derivazione di una stringa generata da una grammatica di tipo 2 può essere rappresentanta mediante una struttura ad albero. Tali alberi vengono chiamati **alberi di derivazione**, o **alberi sintattici**
+
+In un albero sintattico, ad ogni nodo interno è associato un simbolo non-terminale e ad ogni foglia è associato un simbolo terminale. Per ogni produzionme del tipo $S\to aSbA$ che viene applicata nel processo di derivazione, il nodo interno etichettato con S avrà nell'albero quattro figli etichettati con $a,S,b,A$
+

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md"
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,17 +172,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7cb8cbb75417657e",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti ASD/MOD I/Esercizi/Esercizi Algoritmi di visita su alberi.md",
-    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+    "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
+    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
+    "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
+    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 3.md",
-    "Appunti ASD/MOD I/Esercizi/Indice degli esercizi ASD.md",
-    "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
-    "Appunti LMP/MOD I/Lezione 7.md",
-    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
-    "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
-    "Appunti BSD/MOD I/Lezione 2.md"
+    "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
+    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
+    "Appunti FI/MOD I/Indice delle lezioni FI.md"
   ]
 }
