@@ -76,3 +76,12 @@ Un non terminale $A$ è fecondo se e solo se vale una delle seguenti condizioni:
 - esiste $w\in V_T^+|A\to w\in P$
 - esiste $\alpha\in(V_N\cup V_T)^\star|A\to\alpha\in P$ e tutti i simboli non terminali in $\alpha$ sono fecondi
 
+![[appunti fi/mod i/immagini/Pasted image 20221122131622.png|center|600]]
+
+è necessario verificare che i simboli rimasti siano generabili a partire dall'assioma.
+
+Ciò può essere effettuato in modo iterativom osservando che $A$ è generabile a partire da $S$ se vale una delle due condizioni seguenti:
+
+1. esistono $\alpha,\beta\in(F\cup V_T)^\star:S\to\alpha A\beta\in \hat P$
+2. esistono $\alpha,\beta\in(F\cup V_T)^\star$ e $B\in F$,generabile a partire da $S$, tali che $B\to\alpha A\beta\in\hat P$ 
+
