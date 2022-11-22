@@ -28,7 +28,7 @@ Consideriamo la grammatica $\mathcal G=\langle\{a,b\},\{S,A,B\},P,S\rangle$, le 
 $$\begin{align}S&\to A|SSa\\A&\to B|Ab|\varepsilon\\B&\to S|ab|aA\end{align}$$
 Quindi:
 $$\begin{align}N_0 &= \{A\}\\N_1 &= \{A,S\}\\N_2&=\{A,S,B\}\\N_3&=\{A,S,B\}=N_2=N\end{align}$$
-Costruzione delle produzioni $P'\:di\:\mathcal G'$:
+Costruzione delle produzioni $P'$ di $\mathcal G'$:
 - Si esamina ciascuna produzione $A\to\alpha$ di $P$, con l'esclusione delle $\varepsilon$-produzioni:
 	- se nessun simbolo di $\alpha$ è annullabile: $A\to\alpha$ è inserita in $P'$
 	- Altrimenti $\alpha$ contiene $k\gt0$ simboli che si annullano: sono inserite in $P'$ tutte le possibili produzioni ottenute da $A\to\alpha$ eliminando da $\alpha$ uno dei sottoinsiemi di simboli che si annullano
