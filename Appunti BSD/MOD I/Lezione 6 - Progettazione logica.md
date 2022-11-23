@@ -49,7 +49,23 @@ La relazione 1:N viene rappresentatat aggiungendo,agli attributi dell'entità ch
 ![[appunti bsd/mod i/immagini/Pasted image 20221123152427.png|center|700]]
 ![[appunti bsd/mod i/immagini/Pasted image 20221123152510.png|center|700]]
 
-La relazione ricordiva 1:N è oltre che con due relazioni è traducibile con una sola relazione che contiene due volte l'attributo identificatore, una volta come chiave priamaria e una volta come chiave esterna con un nome che riflette il ruolo dell'entità
+La **relazione ricordiva 1:N** è oltre che con due relazioni è traducibile con una sola relazione che contiene due volte l'attributo identificatore, una volta come chiave priamaria e una volta come chiave esterna con un nome che riflette il ruolo dell'entità
+
+## ER->Modello Relazionale N:N
+
+La relazione N:N diventa una nuova relazione (tabella) composta dagli identificatori univoci delle due entità e dagli eventuali attributi dell'associazione. La chaive della nuova relazione è formata dall'insieme di attributi che compongono le chiavi delle due entità oltre agli attributi necessari a garantire l'unicità delle entità
+
+**Esempio**
+![[appunti bsd/mod i/immagini/Pasted image 20221123153139.png|center|700]]
+![[appunti bsd/mod i/immagini/Pasted image 20221123153217.png|center|700]]
+
+La **relazione ricorsiva N:N** è tradotta con 2 relazioni, una per l'entità e una per la relazione, la chiave della relazione che modella l'associazione è composta da 2 attributi, i cui nomi riflettono il diverso ruolo dell'entità. Ognuno di questi 2 attributi è anche chiave esterna
+
+**Esempio**
+![[appunti bsd/mod i/immagini/Pasted image 20221123153458.png|center|600]]
+![[appunti bsd/mod i/immagini/Pasted image 20221123153617.png|center|600]]
+
+
 
 
 
