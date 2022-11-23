@@ -11,8 +11,8 @@
 graph LR;
 	A[Indice delle esercitazioni]
 	B[LMP 0]
-	C[LMP 0.1]
-	D[LMP 0.2]
+	C[LMP 1]
+	D[LMP 2]
 
 	linkStyle default stroke-width:2px,fill:none,stroke:grey,color:red
 	
