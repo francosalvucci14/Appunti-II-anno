@@ -66,6 +66,18 @@ La **relazione ricorsiva N:N** è tradotta con 2 relazioni, una per l'entità e 
 ![[appunti bsd/mod i/immagini/Pasted image 20221123153617.png|center|600]]
 
 
+# ER->Modello Relazionale - Generalizzazioni
+
+Il modello relazionale non può rappresentare direttamente le **generalizzazioni**. Si eliminano quindi le gerarchie sostituendole con entità e relazioni/associazioni
+
+**Esempio**
+![[appunti bsd/mod i/immagini/Pasted image 20221123153929.png|center|700]]
+
+Soluzione 1: accorpamento dell'entità padre nelle entità figlie
+- Le soluzioni d'accesso distinguono tra occorrenze delle diverse entità figlie (accesso pèiù efficiente)
+- le entità figlie introducono differenziazioni non sostanziali (pochi valori nulli)
+
+
 
 
 
