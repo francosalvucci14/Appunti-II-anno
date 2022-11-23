@@ -34,6 +34,23 @@ Se _entrambe_ le entità partecipano in modo opzionale si tratta come una _assoc
 
 **Esempio**
 ![[appunti bsd/mod i/immagini/Pasted image 20221123151731.png|center|700]]
+![[appunti bsd/mod i/immagini/Pasted image 20221123151909.png|center|700]]
+
+## ER->Modello Relazionale 1:N
+
+La relazione 1:N viene rappresentatat aggiungendo,agli attributi dell'entità che svolge il ruolo a molti, l'identificatore univoco dell'entità col ruolo a uno. Questo identificatore prende il nome di **chiave esterna (foreign key = FK)** dell'entità associata. Eventuali atrtibuti dell'associazione vengono inseriti anch'essi nell'entità con ruolo a molti,insieme alla chiave esterna
+
+**Esempio**
+![[appunti bsd/mod i/immagini/Pasted image 20221123152226.png|center|700]]
+![[appunti bsd/mod i/immagini/Pasted image 20221123152258.png|center|700]]
+
+**Esempio con partecipazione opzionale**
+![[appunti bsd/mod i/immagini/Pasted image 20221123152355.png|center|700]]
+![[appunti bsd/mod i/immagini/Pasted image 20221123152427.png|center|700]]
+![[appunti bsd/mod i/immagini/Pasted image 20221123152510.png|center|700]]
+
+La relazione ricordiva 1:N è oltre che con due relazioni è traducibile con una sola relazione che contiene due volte l'attributo identificatore, una volta come chiave priamaria e una volta come chiave esterna con un nome che riflette il ruolo dell'entità
+
 
 
 
