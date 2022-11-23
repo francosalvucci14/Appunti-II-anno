@@ -77,6 +77,18 @@ Soluzione 1: accorpamento dell'entità padre nelle entità figlie
 - Le soluzioni d'accesso distinguono tra occorrenze delle diverse entità figlie (accesso pèiù efficiente)
 - le entità figlie introducono differenziazioni non sostanziali (pochi valori nulli)
 
+![[appunti bsd/mod i/immagini/Pasted image 20221123162022.png|center|700]]
+
+Soluzione 2: accorpamento dell’entità padre nelle entità figlie
+- le operazioni d’accesso distinguono tra occorrenze delle diverse entità figlie (accesso più efficiente)
+![[appunti bsd/mod i/immagini/Pasted image 20221123162107.png|center|700]]
+
+Soluzione 3: sostituzione delle generalizzazioni con le associazioni
+![[appunti bsd/mod i/immagini/Pasted image 20221123162148.png|center|700]]
+
+
+
+
 
 
 
