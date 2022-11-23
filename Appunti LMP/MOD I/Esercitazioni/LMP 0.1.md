@@ -1,4 +1,4 @@
-Ritornando a [[LMP 0]], inseriamo le classi ProfessorImpl e StudentImpl e le interfacce corrispondenti, ovvero Student e Professor
+Ritornando a [[LMP 0]], inseriamo le classi ProfessorImpl e StudentImpl e AngryStudent e le interfacce corrispondenti, ovvero Student e Professor
 
 Codice di Student
 ```java
@@ -100,6 +100,26 @@ public class ProfessorImpl extends PersonImpl implements Professor {
 	
 	public String toString() {
 		return super.toString() + " " + ((cattedra!=null)?cattedra:"");//espressione compatta per if-then-else
+	}
+}
+```
+
+Codice di AngryStudent
+```java
+package it.uniroma2.art.lmp.ex.model;
+
+public class AngryStudent extends StudentImpl implements Student {
+
+	public AngryStudent(String nome, String cognome, String codiceFiscale, String matricola) {
+		super(nome, cognome, codiceFiscale, matricola);
+	}
+
+	public AngryStudent(Person p, String matricola) {
+		super(p, matricola);
+	}
+	//overide del metodo saluta della superclasse
+	public void saluta(Professor prof) {
+		this.saluta(prof,"xxx");
 	}
 }
 ```
