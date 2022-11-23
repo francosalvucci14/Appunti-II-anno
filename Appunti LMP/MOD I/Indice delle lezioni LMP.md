@@ -11,12 +11,6 @@
 - [[Lezione 8]]
 - 
 
-# Indice delle esercitazioni
-
-- [[LMP 0]]
-- 
-
-
 # Grafo delle lezioni
 
 ```mermaid
