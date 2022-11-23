@@ -123,3 +123,17 @@ public class AngryStudent extends StudentImpl implements Student {
 	}
 }
 ```
+
+
+>[!info]- Osservazione
+>**Late Binding**: l'esecuzione avviene più tardi; il compilatore non decide il metodo da chiamare. L'override è un perfetto esempio di late binding. 
+>Processo a runtime, quando java invoca il metodo dell'oggetto, guarda l'implementazione
+>Quando il tipo dell'oggetto viene determinato in fase di esecuzione, è noto come Late Binding
+>Spiegazione qui -->[Late-Binding](http://www.diag.uniroma1.it//liberato/laboratorio/late/late.html)
+
+
+
+
+
+
+
