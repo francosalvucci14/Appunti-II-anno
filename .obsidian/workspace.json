@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 0.1.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md"
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 0.1.md"
               }
             }
           },
@@ -140,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 0.1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 0.1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,11 +184,11 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "7cb8cbb75417657e",
   "lastOpenFiles": [
+    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
     "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
     "Appunti FI/MOD I/Indice delle lezioni FI.md",
-    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
     "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti CPS/Lezione 5.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
