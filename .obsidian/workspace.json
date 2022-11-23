@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 0.1.md",
+                "file": "Appunti LMP/MOD I/Lezione 8.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 0.1.md"
+                "file": "Appunti LMP/MOD I/Lezione 8.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 0.1.md",
+                "file": "Appunti LMP/MOD I/Lezione 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 0.1.md",
+                "file": "Appunti LMP/MOD I/Lezione 8.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,15 +186,15 @@
   },
   "active": "7cb8cbb75417657e",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Lezione 7.md",
+    "Appunti LMP/MOD I/Lezione 6.md",
+    "Appunti LMP/MOD I/Esercitazioni/LMP 0.1.md",
     "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
     "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
     "Appunti FI/MOD I/Indice delle lezioni FI.md",
     "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti CPS/Lezione 5.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
-    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
-    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
-    "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
-    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md"
+    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md"
   ]
 }

@@ -82,7 +82,7 @@ Considera l'istanza dell'oggetto frenchGreeting:
 
 L'espressione di classe anonima è costituita da quanto segue:
 
-- Il nuovo operatore
+- L'operatore new
 - Il nome di un'interfaccia da implementare o di una classe da estendere. In questo esempio, la classe anonima sta implementando l'interfaccia HelloWorld.
 - Parentesi che contengono gli argomenti di un costruttore, proprio come una normale espressione di creazione di un'istanza di classe. **Nota**: quando si implementa un'interfaccia, non esiste un costruttore, quindi si utilizza una coppia vuota di parentesi, come in questo esempio.
 - Un corpo, che è un corpo di dichiarazione di classe. Più specificamente, nel corpo sono consentite le dichiarazioni di metodo, ma non le istruzioni.
