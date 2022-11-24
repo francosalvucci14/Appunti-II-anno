@@ -233,4 +233,17 @@ Foto qua
 
 Il principio di ereditarietà vale anche per le generalizzazioni:
 - ogni proprietà dell'entità padre è anche una proprietà della sottoentità, e non si riporta esplicitamente nel diagramma
-- 
+- L'entità figlia può avere ovviamente ulteriori proprietà
+
+### UML - Diagramma delle Classi
+
+_Def_
+Il _diagramma delle classi_ è un grafo che descrive i tipi degli oggetti in un sistema, le relazioni statistiche tra essi, gli attributi e le operazioni di una classe,ed i vincoli sulle relazioni
+
+Una classe è rappresentata da un rettangolo scomposto in tre parti:
+- il nome della classe
+- gli attributi della classe
+- le operazioni della classe
+
+Foto qua
+
