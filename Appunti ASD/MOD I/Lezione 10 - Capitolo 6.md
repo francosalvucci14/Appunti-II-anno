@@ -98,6 +98,18 @@ Nota: la ricerca del successore di un nodo è simmetrica
 
 ![[appunti asd/mod i/immagini/Pasted image 20221124101244.png|center|700]]
 
+#### Delete(elem e)
+Sia u il nodo contenente l'elemento e da cancellare:
+1. u è una foglia:rimuvila
+2. u ha un solo figlio: ![[appunti asd/mod i/immagini/Pasted image 20221124102324.png|center|600]]
+3. u ha due figli : sostituiscilo con il predecessore (o successore) (v)  e rimuovi fisicamente il predecessore (o successore) (che ha al più un figlio)![[appunti asd/mod i/immagini/Pasted image 20221124102527.png|center|700]]
+**Esempio**
+
+![[appunti asd/mod i/immagini/Pasted image 20221124103024.png|center|700]]
+
+
+
+
 
 
 
