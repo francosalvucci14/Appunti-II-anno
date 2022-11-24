@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,9 +96,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md"
-              }
+              "state": {}
             }
           },
           {
@@ -115,7 +113,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +129,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,17 +156,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "eaad06a83a2f50e2",
+  "active": "90fe890bef2bffd6",
   "lastOpenFiles": [
-    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
-    "Appunti ASD/MOD I/Esercizi/Search,Insert,Delete su BTS.md",
-    "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
-    "Appunti ASD/MOD I/Esercizi/Esercizi Algoritmi di visita su alberi.md",
+    "Appunti ASD/MOD I/Indice degli appunti ASD.md",
+    "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti LMP/MOD I/Lezione 8.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 2.md",
-    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
-    "Appunti ASD/MOD I/Indice degli appunti ASD.md"
+    "Appunti LMP/MOD I/Lezione 7.md",
+    "Appunti LMP/MOD I/Lezione 6.md",
+    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
+    "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
+    "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
+    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
+    "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md"
   ]
 }
