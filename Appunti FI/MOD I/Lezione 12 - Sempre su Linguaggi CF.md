@@ -108,7 +108,7 @@ Una grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ può essere estesa in una
 3. $S'=T$
 
 **Esempio**
-$$\begin{align}S&\to aUVb|TZ\\Z&\to aZ\\U&\to bU|b\\v&\to W\\v&\to aY\\Y&\to bY|b\\W&\to cWd|cd\\T&\to tT|tz\end{align}$$
+$$\begin{align}S&\to aUVb|TZ\\Z&\to aZ\\U&\to bU|b\\V&\to W\\V&\to aY\\Y&\to bY|b\\W&\to cWd|cd\\T&\to tT|tz\end{align}$$
 - L’eliminazione delle produzioni unitarie porta ad escludere la produzione 4 e ad aggiungere una terza produzione alla 1.
 - L’eliminazione di simboli non fecondi porta ad escludere la produzione 2 e la seconda produzione della 1.
 - L’eliminazione dei simboli non raggiungibili porta infine ad escludere la produzione 8.

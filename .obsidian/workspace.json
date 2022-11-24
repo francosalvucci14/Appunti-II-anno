@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
+                "file": "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md"
+              }
             }
           },
           {
@@ -113,6 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,6 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,8 +160,9 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "90fe890bef2bffd6",
+  "active": "eaad06a83a2f50e2",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Esercitazioni/LMP 2.md",
     "Appunti ASD/MOD I/Indice degli appunti ASD.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti LMP/MOD I/Lezione 8.md",
@@ -166,7 +171,6 @@
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
     "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
-    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
-    "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md"
+    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md"
   ]
 }
