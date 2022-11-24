@@ -196,5 +196,41 @@ Un'associazione tra E1 e E2 si dice uno a molti (1:N) quando a ogni istanza di E
 **Esempio**
 ![[appunti bsd/mod i/immagini/Pasted image 20221122153728.png|center|600]]
 
-Manca parte IsA - Generalizzazione - Ereditarietà - UML
 
+#### Modello ER - IsA
+
+Può accadere che sussista l'**associazione IsA** (o associazione di sottoinsieme) tra due entità, e cioè che ogni istanza di una sia anche istanza dell'altra
+
+L'associazione IS-A nel modello ER si può definire tra due entità, che si dicono "entità padre" ed "entità figlia" (o sottentità,cioè quella che rappresenta un sottoinsieme dell'entità padre)
+
+L'associazione IS-A si rappresenta nel diagramma dello schema concettuale mediante una freccia dalla sottoentità alla entità padre
+Vige la regola che un'entità può avere al massimo una entità padre. In altre parole,il modello ER non ammette ereditarietà multipla
+
+foto qua
+
+#### Modello ER- Ereditarietà
+**Principio di ereditarietà:** ogni proprietà dell'entità è anche una proprietà della sottoentità, e non si riporta esplicitamente nel diagramma
+**L'entità figlia** può avere ovviamente ulteriori proprietà.
+
+**Esempio**
+Cognome e Nome ereditati da Persona:
+Foto qua
+
+**Principio di ereditarietà:** l'associazione IS-A si eredita, pertanto IS-A è transitiva
+**Esempio**
+Ogni istanza di Studente è un'istanza di Persona, ogni istanza di Fuori corso è un'istanza di Studente -> ogni istanza di Fuori corso è un'istanza di Persona
+
+Fotp qua
+
+#### Modello ER - Generalizzazione
+
+L'entità padre può generalizzare diverse sottoentità rispetto ad un unico criterio. In questo caso si parla di **generalizzazione**
+Nella generalizzazione, le sottoentità hanno insiemi di istanza disgiunti a coppie (anche se in alcune varianti del modello ER si può speficifare se due sottoentità della stessa entità padre sono disgiunte o no).
+
+oto qua
+
+Foto qua
+
+Il principio di ereditarietà vale anche per le generalizzazioni:
+- ogni proprietà dell'entità padre è anche una proprietà della sottoentità, e non si riporta esplicitamente nel diagramma
+- 
