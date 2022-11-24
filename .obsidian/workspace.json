@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
+                "file": "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "32673e7c9b544e82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md"
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md"
               }
             }
           },
@@ -127,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,17 +185,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "32673e7c9b544e82",
   "lastOpenFiles": [
+    "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
+    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
+    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti BSD/MOD I/Lezione 1.md",
     "Appunti BSD/MOD I/Lezione 2.md",
-    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti BSD/MOD I/Lezione 4 - Vincoli d'integrità.md",
     "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 2.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 0.md",
-    "Appunti LMP/MOD I/Esercitazioni/Indice delle esercitazioni.md"
+    "Appunti LMP/MOD I/Esercitazioni/LMP 1.md"
   ]
 }
