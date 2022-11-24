@@ -410,6 +410,26 @@ r2.right = r3
 DFS(root)
 ```
 
+Versione ricorsiva, con Visita in preordine,postordine,simmetrica
+```python
+def DFS_postorder(root):
+    if root != None:
+        DFS_postorder(root.left)
+        DFS_postorder(root.right)
+        print(root.val)
+        
+def DFS_sim(root):
+    if root != None:
+        DFS_sim(root.left)
+        print(root.val)
+        DFS_sim(root.right)
+        
+def DFS_preorder(root):
+    if root != None:
+        print(root.val)
+        DFS_preorder(root.left)
+        DFS_preorder(root.right)	     
+```
 ## Algoritmo BFS
 
 ### Pseudo-codice
