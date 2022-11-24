@@ -247,3 +247,35 @@ Una classe è rappresentata da un rettangolo scomposto in tre parti:
 
 Foto qua
 
+#### Proprietà di una classe: Attributi in UML
+- Un **attributo** modella una proprietà locale della classe ed è caratterizzato da un nome e dal tipo dei valori associati
+- Ogni attributo di una classe stabilisce una proprietà locale **valida per tutte le istanze** della classe. Il fatto che la proprietà sia locale significa che è una prorpeità indipendente da altri oggetti
+- Formalmente, un attributo A della classe C si può considerare una funzione che associa un valore di tipo T ad **ogni** oggetto che è istanza di C
+
+#### Istanze di una classe
+Tra un oggetto che è istanza di una classe C e la classe C si traccia un arco **Instance-of** (l'arco in realtà non è strettamente necessario, perchè la classe di cui l'oggetto è istanza è già indicata nell'oggetto)
+Ricordiamo che gli oggetti formano il livello **estensionale**, mentre le classi a livello **intensionale**
+
+#### Attributi di oggetti
+
+Gli attributi di una classe determinano gli attributi delle sue istanze
+- **Regola importante**: se una classe C ha un attributo A di tipo T, ogni oggetto che è istanza di C ha l'attributo A, con un valore associato di tipo T
+- **Regola importante**: un oggetto X non può avere un valore per un attributo che non è definito nella classe di cui X è istanza
+
+#### Identificatori degli oggetti
+Due oggetti con identificatori distinti sono comunque distinti, anche se hanno i valori di tutti gli attributi uguali
+Due oggetti diversi devono avere identificatori diversi, anche se possono avere gli stessi valori per tutti gli attributi
+
+#### Diagrammi delle classi
+Secondo la metodologia UML vengono definiti come _Diagrammi a struttura statica_. Vengono utilizzati per:
+- Documentate le classi che compongono un sistema o un sottosistema
+- Descrivere **associazioni,generalizzazioni aggregazioni**, fra le varie classi.
+- Evidenziare le caratteristiche di una classe - **attributi** e **operazioni**
+
+- I diagrammi delle classi possono essere utilizzati in vaire fasi dello sviluppo di un sistema:
+	- In fase di **analisi**: per la specifica delle classi all'interno del dominio del problema
+	- In fase di **progettazione**: per la rappresentazione delle classi e relazioni che riflettono il modello della soluzione
+- Possono documentare come interagiscono le classi di un particolare sistema con le librerie di classi già esistenti
+- Possono essere utilizzati a rappresentare istanze di oggetti all'interno delle classi
+- Possono mostrare le interfacce di una classe
+
