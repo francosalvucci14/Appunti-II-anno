@@ -108,15 +108,13 @@ Sia u il nodo contenente l'elemento e da cancellare:
 ![[appunti asd/mod i/immagini/Pasted image 20221124103024.png|center|700]]
 
 
+#### Costo delle operazioni
+- Tutte le operazioni hanno costo $O(h)$ dove h è l'altezza dell'albero
+- $O(n)$ nel caso peggiore (albei molto sbilanciati e profondi)
 
+Con un albero binario di ricerca bilanciato: h=$O(log(n))$
+![[appunti asd/mod i/immagini/Pasted image 20221124103301.png|center|700]]
 
-
-
-
-
-
-
-
-
-
+Ma...
+![[appunti asd/mod i/immagini/Pasted image 20221124103335.png|center|700]]
 
