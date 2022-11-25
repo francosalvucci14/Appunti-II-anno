@@ -320,3 +320,47 @@ Una associazione tra due classi modella una proprietà di entrambe le classi
 ##### Associazione: Ruoli 
 è possibile aggiungere alla associazione una informazione che specifica il **ruolo** che una classe gioca nella associazione
 Il ruolo si indica con un nome posizionato lungo la linea che rappresenta l'assocaizione, vicino alla claase alla quale si riferisce
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125095952.png|center]]
+
+Analogalmente al verso, il ruolo è generalmente opzionale, e non aggiunge nulla al significato dell'associazione
+L'unico caso in cui **il ruolo è obbligatorio è quello in cui l'associazione insiste più volte sulla stessa classe**, e rappresenta una relazione non simmetrica
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125100135.png|center]]
+
+
+##### Associazione: Molteplicità
+
+Per specificare con maggiore precisione il significato delle associazioni binarie si possono definire i vincoli di **molteplicitià** (o semplicemente molteplicità) delle associazioni
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125100303.png|center|600]]
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125100334.png|center|600]]
+
+##### Associazioni N-arie
+
+Una associazione può essere definita su tre o più classi. In tale caso **l'associazione si dice n-aria**, modella una relazione matematica tra n insiemi
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125100452.png|center|600]]
+
+#### Aggregazioni in UML
+
+Un'**aggregazione** viene utilizzata per indicare che, oltre ad avere attributi propri, l'istanza di una classe può consistere di, o comprendere, istanze di altre classi
+Per riferisri alle aggregazione si utilizza il termine _**tutto-parte**_
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125100637.png|center]]
+
+#### Composizioni in UML
+
+A differenza delle aggregazioni, in cui le istenze componenti possono eisstere a prescindere dalla istanza di cui sono componenti, in una _composizione_ le parti non possono eisstere senza la parte "tutto"
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125100811.png|center]]
+
+#### Generalizzazioni in UML
+
+
+
+
+
+
+
