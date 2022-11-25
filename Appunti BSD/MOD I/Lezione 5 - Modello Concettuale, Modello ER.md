@@ -206,7 +206,7 @@ L'associazione IS-A nel modello ER si può definire tra due entità, che si dico
 L'associazione IS-A si rappresenta nel diagramma dello schema concettuale mediante una freccia dalla sottoentità alla entità padre
 Vige la regola che un'entità può avere al massimo una entità padre. In altre parole,il modello ER non ammette ereditarietà multipla
 
-foto qua
+![[appunti bsd/mod i/immagini/Pasted image 20221125090657.png|center|600]]
 
 #### Modello ER- Ereditarietà
 **Principio di ereditarietà:** ogni proprietà dell'entità è anche una proprietà della sottoentità, e non si riporta esplicitamente nel diagramma
@@ -214,22 +214,21 @@ foto qua
 
 **Esempio**
 Cognome e Nome ereditati da Persona:
-Foto qua
+![[appunti bsd/mod i/immagini/Pasted image 20221125090738.png|center|400]]
 
 **Principio di ereditarietà:** l'associazione IS-A si eredita, pertanto IS-A è transitiva
 **Esempio**
 Ogni istanza di Studente è un'istanza di Persona, ogni istanza di Fuori corso è un'istanza di Studente -> ogni istanza di Fuori corso è un'istanza di Persona
 
-Fotp qua
+![[appunti bsd/mod i/immagini/Pasted image 20221125090905.png|center|500]]
 
 #### Modello ER - Generalizzazione
 
 L'entità padre può generalizzare diverse sottoentità rispetto ad un unico criterio. In questo caso si parla di **generalizzazione**
 Nella generalizzazione, le sottoentità hanno insiemi di istanza disgiunti a coppie (anche se in alcune varianti del modello ER si può speficifare se due sottoentità della stessa entità padre sono disgiunte o no).
 
-oto qua
-
-Foto qua
+![[appunti bsd/mod i/immagini/Pasted image 20221125091033.png|center|500]]
+![[appunti bsd/mod i/immagini/Pasted image 20221125091118.png|center|600]]
 
 Il principio di ereditarietà vale anche per le generalizzazioni:
 - ogni proprietà dell'entità padre è anche una proprietà della sottoentità, e non si riporta esplicitamente nel diagramma
@@ -245,7 +244,7 @@ Una classe è rappresentata da un rettangolo scomposto in tre parti:
 - gli attributi della classe
 - le operazioni della classe
 
-Foto qua
+![[appunti bsd/mod i/immagini/Pasted image 20221125091208.png|center]]
 
 #### Proprietà di una classe: Attributi in UML
 - Un **attributo** modella una proprietà locale della classe ed è caratterizzato da un nome e dal tipo dei valori associati
@@ -255,6 +254,8 @@ Foto qua
 #### Istanze di una classe
 Tra un oggetto che è istanza di una classe C e la classe C si traccia un arco **Instance-of** (l'arco in realtà non è strettamente necessario, perchè la classe di cui l'oggetto è istanza è già indicata nell'oggetto)
 Ricordiamo che gli oggetti formano il livello **estensionale**, mentre le classi a livello **intensionale**
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125091257.png|center|600]]
 
 #### Attributi di oggetti
 
@@ -279,3 +280,39 @@ Secondo la metodologia UML vengono definiti come _Diagrammi a struttura statica_
 - Possono essere utilizzati a rappresentare istanze di oggetti all'interno delle classi
 - Possono mostrare le interfacce di una classe
 
+#### Tipi di attributi e di operazioni
+
+- **Sintassi** $$<nomeCaratteristica>:<tipo>$$
+- **Semantica**
+	- **nomeCaratteristica**: identifica o un attributo oppure un'operazione 
+	- **Tipo**: identifica il tipo di dato dell'attributo oppure il tipo di dato restituito dall'operazione
+- **Oss**: Gli attributi e le operazioni possono essere tipizzati come classi provenienti:
+	- Dalle librerire dell'ambientazione d'implementazione
+	- Dal modello delle classi in uso
+Foto qua
+
+##### Attributi e operazioni: Visibilità
+- **"-" private**: disponibile solo all'interno della classe che la definisce
+- **"+" public**: disponibile solo per le classi associate alla classe che la definisce
+- **"#" protected**: disponibile solo all'interno della classe che la possiede e di ogni sua sottoclasse
+
+###### Attributi: ulteriori specifiche
+- **Molteplicità**:
+	- $[m...n]$: "m" numero minimo e "n" numero massimo
+	- $1...1$ troncato a 1
+	- $0...^\star$ troncato a $^\star$
+- **Attributi derivati**
+- **Valori iniziali**
+
+#### Associazioni
+Per il momento, ci limitiamo a discutere associazioni tra **due** classi (ma le associazioni possono coinvolgere N classi)
+Una **associazione** (o relazione) tra una classe $C1$ ed una classe $C2$ modella una relazione matematica tra l'insieme delle istanze di $C1$ e l'insieme delle istanze di $C2$
+Gli attributi modellano proprietà locali di una classe, le associazioni modellano proprietà che coinvolgono altre classi
+Una associazione tra due classi modella una proprietà di entrambe le classi
+
+**Esempio**
+Fpoto qua
+
+##### Associazione: Ruoli 
+è possibile aggiungere alla associazione una informazione che specifica il **ruolo** che una classe gioca nella associazione
+Il ruolo si indica con un nome posizionato lungo la linea che rappresenta l'assocaizione, vicino alla claase alla quale si riferisce
