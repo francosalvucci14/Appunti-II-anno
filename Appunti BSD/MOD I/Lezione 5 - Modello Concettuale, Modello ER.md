@@ -262,10 +262,13 @@ Ricordiamo che gli oggetti formano il livello **estensionale**, mentre le classi
 Gli attributi di una classe determinano gli attributi delle sue istanze
 - **Regola importante**: se una classe C ha un attributo A di tipo T, ogni oggetto che è istanza di C ha l'attributo A, con un valore associato di tipo T
 - **Regola importante**: un oggetto X non può avere un valore per un attributo che non è definito nella classe di cui X è istanza
+![[appunti bsd/mod i/immagini/Pasted image 20221125091418.png|center|500]]
 
 #### Identificatori degli oggetti
 Due oggetti con identificatori distinti sono comunque distinti, anche se hanno i valori di tutti gli attributi uguali
 Due oggetti diversi devono avere identificatori diversi, anche se possono avere gli stessi valori per tutti gli attributi
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125091453.png|center|500]]
 
 #### Diagrammi delle classi
 Secondo la metodologia UML vengono definiti come _Diagrammi a struttura statica_. Vengono utilizzati per:
@@ -289,7 +292,8 @@ Secondo la metodologia UML vengono definiti come _Diagrammi a struttura statica_
 - **Oss**: Gli attributi e le operazioni possono essere tipizzati come classi provenienti:
 	- Dalle librerire dell'ambientazione d'implementazione
 	- Dal modello delle classi in uso
-Foto qua
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125091546.png|center|500]]
 
 ##### Attributi e operazioni: Visibilità
 - **"-" private**: disponibile solo all'interno della classe che la definisce
@@ -297,12 +301,8 @@ Foto qua
 - **"#" protected**: disponibile solo all'interno della classe che la possiede e di ogni sua sottoclasse
 
 ###### Attributi: ulteriori specifiche
-- **Molteplicità**:
-	- $[m...n]$: "m" numero minimo e "n" numero massimo
-	- $1...1$ troncato a 1
-	- $0...^\star$ troncato a $^\star$
-- **Attributi derivati**
-- **Valori iniziali**
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125091639.png|center|700]]
 
 #### Associazioni
 Per il momento, ci limitiamo a discutere associazioni tra **due** classi (ma le associazioni possono coinvolgere N classi)
@@ -311,7 +311,11 @@ Gli attributi modellano proprietà locali di una classe, le associazioni modella
 Una associazione tra due classi modella una proprietà di entrambe le classi
 
 **Esempio**
-Fpoto qua
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125091718.png|center]]
+
+- Alcune volte è interessante specificare un verso per il nome della associazione
+- **Atttenzione**: La notazione riportata sopra **non** significa che l'associazione ha un verso. In altre parole, il verso non è una caratteristica del significato della associazione, ma dice semplicemente che il nome scelto per l'associazione evoca un verso
 
 ##### Associazione: Ruoli 
 è possibile aggiungere alla associazione una informazione che specifica il **ruolo** che una classe gioca nella associazione
