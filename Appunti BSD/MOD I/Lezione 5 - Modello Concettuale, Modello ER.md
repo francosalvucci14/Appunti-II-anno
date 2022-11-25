@@ -411,6 +411,15 @@ In una generalizzazione la sottoclasse non solo può avere proprietà aggiuntive
 ![[appunti bsd/mod i/immagini/Pasted image 20221125102606.png|center|400]]
 
 
+#### Classi di associazioni
+
+Le **Classi associazioni** permettono di esplicitare gli attributi e le associazioni di una associazione
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125102730.png|center]]
+
+**UML Example for Displaying Specialization/Generalization**
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125102824.png|center]]
 
 
 
