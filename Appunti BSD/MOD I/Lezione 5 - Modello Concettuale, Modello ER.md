@@ -358,6 +358,60 @@ A differenza delle aggregazioni, in cui le istenze componenti possono eisstere a
 
 #### Generalizzazioni in UML
 
+Fino ad ora abbiamo assunto che due classi siano sempre disgiunte. In realtà sappiamo che può accadere che tra due classi susista la relazione Is-A, e cioè che ogni istanza di una sia anche istanza dell'altra
+In UML la relazione Is-A si modella mediante la nozione di _**generalizzazione**_
+La generalizzazione coinvolge una superclasse ed una o più sottoclassi (dette anche **classi derivate**). Il significato della generalizzazione è il seguente: ogni istanza di ciascuna sottoclasse è anche istanza della superclasse
+Quando la sottoclasse è una, la generalizzazione modella appunto la relazione Is-A tra la sottoclasse e la superclasse
+
+**Esempio**
+![[appunti bsd/mod i/immagini/Pasted image 20221125101156.png|center|500]]
+
+_**Principio di ereditarietà**_: ogni proprietà della superclasse è anche una proprietà della sottoclasse, e non si riporta esplicitamente nel diagramma
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125101310.png|center|500]]
+
+La _**generalizzazione**_ oltre a modellare la relazione "Is-A" fra due classi, vengono utilizzate anche per rappresentare la relazione gerarchica fra più classi rispetto ad un unico criterio (che si può indicare con un nome, che è il nome della generalizzazione)
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125101519.png|center|600]]
+
+##### Diverse generalizzazioni di una stessa classe
+
+La stessa superclasse può partecipare a diverse generalizzazioni
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125101634.png|center|600]]
+
+Concettualmente, non c'è alcuna correlazione tra due generalizzazioni diverse, perchè rispondono a due criteri diversi di classificare le istanze della superclasse
+
+###### Generalizzazioni "disjoint"
+
+Una generalizzazione può essere disgiunta (le sottoclassi sono disgiunte a coppie) o no
+![[appunti bsd/mod i/immagini/Pasted image 20221125101839.png|center|600]]
+
+##### Generalizzazioni "complete"
+
+Una generalizzazione può essere completa (l'unione dele istanze delle sottoclassi è uguale all'insieme delle istanze della superclasse) o no
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125102039.png|center|600]]
+
+##### Generalizzazioni "incomplete"
+
+Una generalizzazione incomplete è tale che l'unione delle istanze delle sottoclassi non è uguale all'insieme delle istanze della superclasse
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125102214.png|center|400]]
+
+##### Generalizzazioni "overlapping"
+Una generalizzazione **_overlapping_** è l'opposto di quella disjoint. Un'istanza può esserlo di più di una delle sottoclassi della superclasse
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125102341.png|center]]
+
+#### Specializzazioni
+In una generalizzazione la sottoclasse non solo può avere proprietà aggiuntive rispetto alla superclasse, ma può anche specializzare le proprietà ereditare dalla superclasse
+- Specializzazione di un attributo: se una classe $C1$ ha un atrtibuto $A$ di tipo $T1$, e se $C2$ è una sottoclasse di $C1$, specializzare $A$ in $C2$ significa definire $A$ anche in $C2$ ed assegnargli un tipo $T2$ i cui valori sono un sottoinsieme dei valori di $T$
+
+![[appunti bsd/mod i/immagini/Pasted image 20221125102606.png|center|400]]
+
+
+
 
 
 
