@@ -28,4 +28,4 @@ $$\begin{align}&S\to X_aSX_b\\&X_a\to a\\&X_b\to b\end{align}$$
 >La produzione $S\to X_aSX_b$ può essere sostituita con le produzioni $S\to X_aZ_1,Z_1\to SX_b$
 
 
-
+# GNF (Greibach Normal Form)
