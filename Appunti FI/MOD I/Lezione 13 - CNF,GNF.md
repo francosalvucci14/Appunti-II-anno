@@ -23,7 +23,7 @@ $$\begin{align}S&\to aSb\\S&\to ab\end{align}$$
 La gramamtica è in forma ridotta
 
 La grammatica equivalente in CNF avrà le seguenti produzioni: 
-$$\begin{align}&S\to X_aSX_b\\&X_a\to a\\&X_b\to b\end{align}$$
+$$\begin{align}&S\to X_aSX_b\\&X_a\to a\\&X_b\to b\\&\text{oppure}\\&S\to X_aZ_1\\&Z_1\to SX_b\\&X_a\to a\\&X_b\to b\end{align}$$
 >[!info]- Osservazione
 >La produzione $S\to X_aSX_b$ può essere sostituita con le produzioni $S\to X_aZ_1,Z_1\to SX_b$
 
