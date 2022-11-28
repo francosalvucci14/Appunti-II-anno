@@ -76,7 +76,7 @@ new @Interned MyObject();
 ```
 - Tipo cast:
 ```java
-```miaStringa = (@StringaNonNull) str;
+myString = (@StringaNonNull) str;
 ```
 - clausola _implements_:
 ```java
@@ -93,4 +93,146 @@ Questa forma di annotazione è chiamata annotazione di tipo (_type annotation_).
 
 ## Dichiarare un tipo di annotazione
 
+Molte annotazioni sostituiscono i commenti nel codice.
+
+Supponiamo che un gruppo di software tradizionalmente inizi il corpo di ogni classe con commenti che forniscono informazioni importanti:
+```java
+public class Generation3List extends Generation2List {
+
+   // Author: John Doe
+   // Date: 3/17/2002
+   // Current revision: 6
+   // Last modified: 4/12/2004
+   // By: Jane Doe
+   // Reviewers: Alice, Bill, Cindy
+
+   // class code goes here
+
+}
+```
+Per aggiungere questi stessi metadati con un'annotazione, devi prima definire il tipo di annotazione. La sintassi per farlo è:
+```java
+@interface ClassPreamble {
+   String author();
+   String date();
+   int currentRevision() default 1;
+   String lastModified() default "N/A";
+   String lastModifiedBy() default "N/A";
+   // Note use of array
+   String[] reviewers();
+}
+```
+
+La definizione del tipo di annotazione è simile a una definizione di interfaccia in cui la parola chiave interface è preceduta dal simbolo di chiocciola (@) (@ = AT, come nel tipo di annotazione). I tipi di annotazione sono una forma di interfaccia, che verrà trattata in una lezione successiva. Per il momento, non è necessario comprendere le interfacce.
+
+Il corpo della precedente definizione di annotazione contiene dichiarazioni di elementi del tipo di annotazione (_annotation type element_ declarations), che assomigliano molto ai metodi. Si noti che possono definire valori predefiniti facoltativi.
+
+Dopo aver definito il tipo di annotazione, puoi utilizzare annotazioni di quel tipo, con i valori inseriti, in questo modo:
+
+```java
+@ClassPreamble (
+   author = "John Doe",
+   date = "3/17/2002",
+   currentRevision = 6,
+   lastModified = "4/12/2004",
+   lastModifiedBy = "Jane Doe",
+   // Note array notation
+   reviewers = {"Alice", "Bob", "Cindy"}
+)
+public class Generation3List extends Generation2List {
+
+// class code goes here
+
+}
+```
+
+**Nota**: per visualizzare le informazioni in @ClassPreamble nella documentazione generata da Javadoc, è necessario annotare la definizione @ClassPreamble con l'annotazione @Documented:
+```java
+// import this to use `@Documented`
+import java.lang.annotation.*;
+
+@Documented
+@interface ClassPreamble {
+
+   // Annotation element definitions
+   
+}
+```
+
+## Tipi di annotazioni predefinite
+
+Un set di tipi di annotazione è predefinito nell'API Java SE. Alcuni tipi di annotazione vengono utilizzati dal compilatore Java e alcuni si applicano ad altre annotazioni.
+
+### Tipi di annotazioni usate da Java
+
+I tipi di annotazione predefiniti definiti in java.lang sono @Deprecated, @Override e @SuppressWarnings.
+
+**@Deprecated**: L'annotazione @Deprecated indica che l'elemento contrassegnato è deprecato e non dovrebbe più essere utilizzato. Il compilatore genera un avviso ogni volta che un programma utilizza un metodo, una classe o un campo con l'annotazione @Deprecated. Quando un elemento è deprecato, dovrebbe anche essere documentato utilizzando il tag Javadoc @deprecated, come mostrato nell'esempio seguente. L'uso della chiocciola (@) sia nei commenti Javadoc che nelle annotazioni non è casuale: sono correlati concettualmente. Si noti inoltre che il tag Javadoc inizia con una d minuscola e l'annotazione inizia con una D maiuscola
+
+```java
+// Javadoc comment follows
+    /**
+     * _@deprecated_
+     * _explanation of why it was deprecated_
+     */
+    @Deprecated
+    static void deprecatedMethod() { }
+}
+```
+
+**@Override**: L'annotazione @Override informa il compilatore che l'elemento ha lo scopo di sovrascrivere un elemento dichiarato in una superclasse. I metodi di override saranno discussi in Interfacce ed ereditarietà.
+```java
+   // _mark method as a superclass method_
+   // _that has been overridden_
+   @Override 
+   int overriddenMethod() { }
+```
+Sebbene non sia necessario utilizzare questa annotazione quando si esegue l'override di un metodo, aiuta a prevenire gli errori. Se un metodo contrassegnato con @Override non riesce a sovrascrivere correttamente un metodo in una delle sue superclassi, il compilatore genera un errore
+
+**@SuppressWarnings**: L'annotazione @SuppressWarnings indica al compilatore di sopprimere avvisi specifici che altrimenti genererebbe. Nell'esempio seguente viene utilizzato un metodo deprecato e il compilatore di solito genera un avviso. In questo caso, tuttavia, l'annotazione provoca la soppressione dell'avviso.
+```java
+// _use a deprecated method and tell_ 
+   // _compiler not to generate a warning_
+   @SuppressWarnings("deprecation")
+    void useDeprecatedMethod() {
+        // deprecation warning
+        // - suppressed
+        objectOne.deprecatedMethod();
+    }
+```
+Ogni avviso del compilatore appartiene a una categoria. La specifica del linguaggio Java elenca due categorie: _deprecation_ e _unchecked_. L'avviso _unchecked_ può verificarsi durante l'interfacciamento con codice legacy scritto prima dell'avvento dei generici. Per sopprimere più categorie di avvisi, utilizzare la seguente sintassi:
+```java
+@SuppressWarnings({"unchecked", "deprecation"})
+```
+
+**@SafeVarargs**: L'annotazione@SafeVarargs, quando applicata a un metodo oa un costruttore, afferma che il codice non esegue operazioni potenzialmente non sicure sul relativo parametro varargs. Quando viene utilizzato questo tipo di annotazione, gli avvisi non controllati relativi all'utilizzo di varargs vengono soppressi.
+
+**@FunctionalInterface**: L'annotazione @FunctionalInterface, introdotta in Java SE 8, indica che la dichiarazione del tipo è intesa come interfaccia funzionale, come definito dalla specifica del linguaggio Java.
+
+### Annotazioni che si applicano ad altre annotazioni
+
+Le annotazioni che si applicano ad altre annotazioni sono chiamate meta-annotazioni. Esistono diversi tipi di meta-annotazione definiti in java.lang.annotation.
+
+**@Retention**: L'annotazione @Retention specifica come viene memorizzata l'annotazione contrassegnata:
+
+- _RetentionPolicy.SOURCE_ – L'annotazione contrassegnata viene conservata solo a livello di origine e viene ignorata dal compilatore.
+- _RetentionPolicy.CLASS_: l'annotazione contrassegnata viene conservata dal compilatore in fase di compilazione, ma viene ignorata dalla Java Virtual Machine (JVM).
+- _RetentionPolicy.RUNTIME_ – L'annotazione contrassegnata viene conservata dalla JVM in modo che possa essere utilizzata dall'ambiente di runtime.
+
+**@Documented**: L'annotazione @Documented indica che ogni volta che viene utilizzata l'annotazione specificata, tali elementi devono essere documentati utilizzando lo strumento Javadoc. (Per impostazione predefinita, le annotazioni non sono incluse in Javadoc.) Per ulteriori informazioni, vedere la pagina degli strumenti [Javadoc](https://docs.oracle.com/javase/8/docs/technotes/guides/javadoc/index.html)
+
+**@Target** L'annotazione @Target contrassegna un'altra annotazione per limitare il tipo di elementi Java a cui può essere applicata l'annotazione. Un'annotazione di destinazione specifica come valore uno dei seguenti tipi di elemento:
+
+- ElementType.ANNOTATION_TYPE può essere applicato a un tipo di annotazione.
+- ElementType.CONSTRUCTOR può essere applicato a un costruttore.
+- ElementType.FIELD può essere applicato a un campo oa una proprietà.
+- ElementType.LOCAL_VARIABLE può essere applicato a una variabile locale.
+- ElementType.METHOD può essere applicato a un'annotazione a livello di metodo.
+- ElementType.PACKAGE può essere applicato a una dichiarazione di pacchetto.
+- ElementType.PARAMETER può essere applicato ai parametri di un metodo.
+- ElementType.TYPE può essere applicato a qualsiasi elemento di una classe.
+
+**@Inherited**: L'annotazione @Inherited indica che il tipo di annotazione può essere ereditato dalla superclasse. (Questo non è vero per impostazione predefinita.) Quando l'utente interroga il tipo di annotazione e la classe non ha annotazioni per questo tipo, la superclasse della classe viene interrogata per il tipo di annotazione. Questa annotazione si applica solo alle dichiarazioni di classe.
+
+**@Repeatable**: L'annotazione @Repeatable, introdotta in Java SE 8, indica che l'annotazione contrassegnata può essere applicata più di una volta alla stessa dichiarazione o utilizzo del tipo
 
