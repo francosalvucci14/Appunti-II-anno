@@ -46,4 +46,6 @@ graph LR
 	F-->E
 	G-->H
 	H-->G
+	K-->G
+	G-->K
 ```
