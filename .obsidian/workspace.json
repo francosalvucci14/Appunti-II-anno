@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "eaad06a83a2f50e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "27870a60d02d4fa4",
             "type": "leaf",
             "state": {
@@ -32,19 +20,19 @@
             }
           },
           {
-            "id": "88026792279cbe4e",
+            "id": "95672f04542c0102",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
+                "file": "Appunti LMP/MOD I/Lezione 9 - Metaprogrammazione.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md"
+                "file": "Appunti LMP/MOD I/Lezione 9 - Metaprogrammazione.md"
               }
             }
           },
@@ -140,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
+                "file": "Appunti LMP/MOD I/Lezione 9 - Metaprogrammazione.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
+                "file": "Appunti LMP/MOD I/Lezione 9 - Metaprogrammazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,15 +175,15 @@
   },
   "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti ASD/MOD I/Esercizi/Indice degli esercizi ASD.md",
-    "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
-    "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
-    "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",
-    "Appunti FI/MOD I/Indice delle lezioni FI.md",
-    "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
-    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
-    "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
+    "Appunti LMP/MOD I/Lezione 8.md",
+    "Appunti LMP/MOD I/Lezione 7.md",
+    "Appunti LMP/MOD I/Lezione 6.md",
+    "Appunti LMP/MOD I/Lezione 5.md",
+    "Appunti LMP/MOD I/Lezione 4.md",
+    "Appunti LMP/MOD I/Introduzione.md",
+    "Appunti LMP/MOD I/Lezione 9 - Metaprogrammazione.md",
+    "Appunti LMP/MOD I/Lezione 3.md",
+    "Appunti LMP/MOD I/Lezione 2.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md"
   ]
 }

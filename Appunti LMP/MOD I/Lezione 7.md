@@ -552,3 +552,4 @@ public class RectanglePlus
 }
 ```
 
+Manca Using interface as type,evolving interface, default methods
