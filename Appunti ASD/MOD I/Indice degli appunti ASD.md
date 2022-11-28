@@ -10,6 +10,7 @@
 - [[Lezione 8 - Capitolo 4]]
 - [[Lezione 9 - Capitolo 5]]
 - [[Lezione 10 - Capitolo 6]]
+- [[Lezione 11 - Capitolo 6]]
 - 
 
 
