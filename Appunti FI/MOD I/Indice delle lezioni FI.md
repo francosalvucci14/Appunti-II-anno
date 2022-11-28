@@ -12,6 +12,7 @@
 - [[Lezione 10 - Minimizzazione di ASF]]
 - [[Lezione 11 - Pumping Lemma,Linguaggi CF]]
 - [[Lezione 12 - Sempre su Linguaggi CF]]
+- [[Lezione 13 - CNF,GNF]]
 - 
 
 

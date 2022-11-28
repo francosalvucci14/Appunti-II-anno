@@ -6,4 +6,5 @@
 - [[Esercizio lezione 7 mod]]
 - [[Esercizio lezione 7 (Oracolo e query)]]
 - [[Esercizi Algoritmi di visita su alberi]]
+- [[Search,Insert,Delete su BTS]]
 - 
