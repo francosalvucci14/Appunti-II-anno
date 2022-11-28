@@ -1,4 +1,4 @@
-# Interfacce ed ereditarietà (forse lezione 9)
+# Interfacce ed ereditarietà
 
 ## Interfacce
 Ci sono un certo numero di situazioni nell'ingegneria del software in cui è importante che gruppi disparati di programmatori accettino un "contratto" che spieghi come interagisce il loro software. Ogni gruppo dovrebbe essere in grado di scrivere il proprio codice senza alcuna conoscenza di come viene scritto il codice dell'altro gruppo. In generale, le interfacce sono tali contratti.
