@@ -27,5 +27,9 @@ $$\begin{align}&S\to X_aSX_b\\&X_a\to a\\&X_b\to b\\&\text{oppure}\\&S\to X_aZ_1
 >[!info]- Osservazione
 >La produzione $S\to X_aSX_b$ può essere sostituita con le produzioni $S\to X_aZ_1,Z_1\to SX_b$
 
-
 # GNF (Greibach Normal Form)
+
+Una grammatica di tipo 2 si dice in **Forma Normale di Greibach** (GNF) se tutte le sue produzioni sono del tipo $A\to a\beta$, con $A\in V_N,a\in V_T,\beta\in V_N^\star$
+
+Si osservi come una grammatica di tipo 3 corrisponda al caso in cui $|\beta|\leq1$
+
