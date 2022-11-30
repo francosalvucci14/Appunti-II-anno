@@ -1,2 +1,5 @@
-Aggiunta di StudenteInf
-aggiunta di abstract su StudentImpl
+- Aggiunta di StudenteInf
+- aggiunta di abstract su StudentImpl
+- modifica dei costruttori si StudentImpl con protected
+- aggiunta del metodo "protected abstract String getFacultyCode();"
+- 
