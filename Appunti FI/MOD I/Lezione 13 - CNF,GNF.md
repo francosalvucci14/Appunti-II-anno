@@ -44,8 +44,46 @@ Si osservi come una grammatica di tipo 3 corrisponda al caso in cui $|\beta|\leq
 >L'insieme delle A-produzioni in $\mathcal G$, dove nessuna delle stringhe $\beta_i$ inizia per A. La grammatica $\mathcal G'$ in cui le A-produzioni in $\mathcal G$ sono state sostituite dalle produzioni: $$\begin{align}A&\to\beta_1A|...|\beta_nA'|\beta_1...|\beta_n\\A'&\to\alpha_1A'|...|\alpha_mA'|\alpha_1...|\alpha_m\end{align}$$
 >è equivalente a $\mathcal G$ e non presenta ricursione sinistra rispetto al non terminale A
 
+**Esempio**
+La grammatica con produzioni:
+$$\begin{align}A&\to Ab|ABC|bb|BA\end{align}$$
+diventa:
+$$\begin{align}A&\to bb|BA|bbA'|BAA'\\A'&\to b|BC|bA|BCA'\end{align}$$
+
 >[!important]- Teorema
 >Ogni linguaggio non contestuale $L$ tale che $\varepsilon\not\in L$ può essere generato da una grammatica di tipo 2 in GNF
+
+Si assuma che $\mathcal G$ sia una grammatica CF in CNF che genera $L$
+
+La derivazione di $\mathcal G'$ da $\mathcal G$ avviene applicando iterativamente i due lemmi precedenti, a partire da un ordinamento arbitrario $A_1,...,A_n$ tra i non terminali di $\mathcal G$.
+
+### Fase 1
+
+![[appunti fi/mod i/immagini/Pasted image 20221130153509.png|center|700]]
+
+Siano $B_1,...,B_j$ i non terminali aggiunti. A questo punto le produzioni sono tutte di uno tra i tipi:
+
+- (a) $A_k\to A_jy$ con $j\gt k,y\in(V_N\cup\lbrace B_1,...,B_j\rbrace)^\star$
+- (b) $A_k\to ay$ con $a\in V_T,y\in(V_N\cup\lbrace B_1,...,B_j\rbrace)^\star$
+- (c) $B_k\to y$ con $y\in V_N(V_N\cup\lbrace B_1,...,B_j\rbrace)^\star$
+
+Inoltre, le $A_k$-produzioni sono:
+- se $k=n$ tutte del tipo (b)
+- se $k\lt n$ del tipo (b) o del tipo (a), con $j\leq n$
+
+### Fase 2
+
+![[appunti fi/mod i/immagini/Pasted image 20221130155448.png|center|700]]
+
+A questo punto le produzioni sono del tipo (b) o (c)
+
+### Fase 3
+
+![[appunti fi/mod i/immagini/Pasted image 20221130155547.png|center|700]]
+
+A questo punto le produzioni sono del tipo (b)
+
+# Pumping Lemma per linguaggi CF
 
 
 
