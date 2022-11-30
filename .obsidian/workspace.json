@@ -13,37 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a7b81561a6b239e6",
+            "id": "03abb4dcc9516933",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f171473503c3d1d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md"
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md"
               }
             }
           },
@@ -139,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,17 +173,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "27870a60d02d4fa4",
+  "active": "03abb4dcc9516933",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Esercitazioni/LMP 2.md",
+    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+    "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
-    "Appunti ASD/MOD I/Indice degli appunti ASD.md",
-    "Appunti LMP/MOD I/Lezione 9 - Metaprogrammazione.md",
-    "Appunti LMP/MOD I/Indice delle lezioni LMP.md"
+    "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md"
   ]
 }
