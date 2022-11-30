@@ -83,6 +83,10 @@ A questo punto le produzioni sono del tipo (b) o (c)
 
 A questo punto le produzioni sono del tipo (b)
 
+**Esempio**
+
+Vedi file 7-lincf-slides.pdf da pagina 54 a pagina 59
+
 # Pumping Lemma per linguaggi CF
 
 
