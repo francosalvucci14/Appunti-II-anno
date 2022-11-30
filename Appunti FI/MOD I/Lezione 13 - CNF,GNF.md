@@ -41,7 +41,7 @@ Si osservi come una grammatica di tipo 3 corrisponda al caso in cui $|\beta|\leq
 
 >[!important]- Lemma (Eliminazione ricursione sinistra)
 >Sia data la grammatica $\mathcal G$ con ricursione sinistra sul non terminale A e sia $$\begin{align}A&\to A\alpha_1|...|A\alpha_m|\beta_1|...|\beta_n\end{align}$$
->L'insieme delle A-produzioni in $\mathcal G$, dove nessuna delle stringhe $\beta_i$ inizia per A. La grammatica $\mathcal G'$ in cui le A-produzioni in $\mathcal G$ sono state sostituite dalle produzioni: $$\begin{align}A&\to\beta_1A|...|\beta_nA'|\beta_1...|\beta_n\\A'&\to\alpha_1A'|...|\alpha_mA'|\alpha_1...|\alpha_m\end{align}$$
+>L'insieme delle A-produzioni in $\mathcal G$, dove nessuna delle stringhe $\beta_i$ inizia per A. La grammatica $\mathcal G'$ in cui le A-produzioni in $\mathcal G$ sono state sostituite dalle produzioni: $$\begin{align}A&\to\beta_1A'|...|\beta_nA'|\beta_1...|\beta_n\\A'&\to\alpha_1A'|...|\alpha_mA'|\alpha_1...|\alpha_m\end{align}$$
 >è equivalente a $\mathcal G$ e non presenta ricursione sinistra rispetto al non terminale A
 
 **Esempio**
