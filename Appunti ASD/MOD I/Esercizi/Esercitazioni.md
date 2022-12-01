@@ -365,10 +365,22 @@ def problema_3(root,SA):
         return (SD,k_s+k_d)
 ```
 
-# Esercitazione 3
+# Esercitazione 4
 
 ## Esercizio 1
 
-Input: vettore ordinato $A[1:n]$ di n bit, ovvero $A[i]\in\lbrace 0,1\rbrace$
-Output: l'indice k dell'ultimo 0
+**Input**: vettore ordinato $A[1:n]$ di n bit, ovvero $A[i]\in\lbrace 0,1\rbrace$
+**Output**: l'indice k dell'ultimo 0
 
+![[appunti asd/mod i/esercizi/imges/Pasted image 20221201092633.png|center|600]]
+
+**Goal1**: $O(log(n))$
+**Idea1** (di base): uso l'approccio della ricerca binaria
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20221201092412.png|center|600]]
+
+Complessità? $O(log(n))$
+
+Goal2: $O(log(k))$
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20221201092633.png|center|600]]
