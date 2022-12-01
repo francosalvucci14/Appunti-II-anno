@@ -384,3 +384,26 @@ Complessità? $O(log(n))$
 Goal2: $O(log(k))$
 
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20221201092633.png|center|600]]
+
+Soluzione? 
+Scorro l'array in base alle potenze di 2, mi trovo in un caso in cui avrò che l'elemento in posizione $2^i=0$ e $2^{i+1}=1$
+A quel punto mi trovo l'indice k in tempo $O(log(k))$ utilizzando la ricerca binaria classica
+
+Infatti,
+**Idea:** trovare in $O(log(k))$ due indici $i^\star,j^\star$ tali che:
+- $A[i^\star]=0,A[j^\star]=1$
+- $|j^\star-i^\star|=O(k)$ su cui fare la ricerca binaria in tempo log(k)
+
+**Analisi**:
+Ho guardato $i+2=O(i)$ elementi:
+- $2^i\leq k\implies i\leq log_2k$
+- $j^\star-i^\star=2^{i+1}-2^i=2^i\leq k\implies A[i^\star:j^\star]$ ha $j^\star-i^\star+1$ elementi e quindi $O(k)$ elementi
+
+## Esercizio 2
+
+**Input**: vettore $A[1:n]$ di n bit, ovvero $A[i]\in\lbrace 0,1\rbrace$
+**Output**: l'indice k tale che num di zeri in $A[1:k]$ = num di uno in $A[k+1:n]$
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20221201095802.png]]
+
+Goal: $O(n)$
