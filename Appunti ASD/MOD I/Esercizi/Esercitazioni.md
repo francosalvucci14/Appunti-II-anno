@@ -407,3 +407,48 @@ Ho guardato $i+2=O(i)$ elementi:
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20221201095802.png]]
 
 Goal: $O(n)$
+
+Soluzione nostra:
+Tempo $O(nlog(n))$
+
+```python
+def prob2(a,i,j):
+    n=len(a)
+    k = (i+j)//2
+    k_i,k_j=k,k+1
+    count_0,count_1=0,0
+    while k_i>0 and k_j<n-1:
+        if a[k_i] == 0:
+            count_0+=1
+            k_i-=1
+        else:
+            k_i-=1
+        if a[k_j]==1:
+            count_1+=1
+            k_j+=1
+        else:
+            k_j-=1
+    if count_1 == count_1:
+        return k
+    if count_1 > count_0:
+        k=binsearch(a,(3j/2))
+        return prob2(a,i,k)
+    else:
+        k=binsearch(a,(j/2))
+        return prob2(a,i,k)
+```
+
+Soluzione prof:
+
+[Soluzione prof](http://www.mat.uniroma2.it/~guala/esercitazione_4_2021.pdf) da pagina 9 a 10
+
+Soluzione perfetta (anche se non sembra):
+```python
+def prob2(a):
+    n=len(a)
+    count=0
+    for i in range(n):
+        count+=a[i]
+    return count
+```
+
