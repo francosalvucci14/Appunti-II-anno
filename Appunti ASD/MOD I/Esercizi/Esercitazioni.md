@@ -452,3 +452,5 @@ def prob2(a):
     return count
 ```
 
+Complessità? $O(n)$
+
