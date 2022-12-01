@@ -364,3 +364,11 @@ def problema_3(root,SA):
     else:
         return (SD,k_s+k_d)
 ```
+
+# Esercitazione 3
+
+## Esercizio 1
+
+Input: vettore ordinato $A[1:n]$ di n bit, ovvero $A[i]\in\lbrace 0,1\rbrace$
+Output: l'indice k dell'ultimo 0
+
