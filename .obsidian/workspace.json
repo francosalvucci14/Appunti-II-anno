@@ -37,14 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/ProblemSet/Overleaf.md"
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/ProblemSet/Overleaf.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/ProblemSet/Overleaf.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,17 +185,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "36522d80ca1f15d4",
+  "active": "27526a97af6a5cf3",
   "lastOpenFiles": [
+    "Appunti ASD/Algoritmi/Algoritmi.md",
+    "Appunti ASD/MOD I/ProblemSet/Overleaf.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/MOD I/ProblemSet/ProblemSet 1.md",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
     "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
     "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md"
+    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md"
   ]
 }
