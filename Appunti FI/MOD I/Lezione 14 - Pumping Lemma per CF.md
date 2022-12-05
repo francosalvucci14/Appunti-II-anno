@@ -33,3 +33,8 @@ Qualunque albero sintattico $A(\sigma)$ relativo ad una stringa $\sigma\in V_T^\
 - Indichiamo con $r(\sigma),s(\sigma)$ le sottostringhe di $\sigma$ corrispondenti alle foglie dei due sottoalberi $R(\sigma),S(\sigma)$ di $A(\sigma)$ aventi radice _r_ e _s_
 - Dato che _s_ è un discendente di _r_, necessariamente $s(\sigma)$ è una sottostringa di $r(\sigma)$, per cui esistono due sottostringhe di v,x di $\sigma$ tali che $r(\sigma)=v\cdot s(\sigma)\cdot x$
 
+- La grammatica considerata è in CNF, per cui non sono presenti produzioni unitarie (a parte quelle relatice alle foglie): di conseguenza, non può essere $s(\sigma)=r(\sigma)$, e quindi $|vx|\gt1$
+- Senza perdere generalità, possiamo assumere che $r(\sigma)$ sia il nodo in c più vicino alle foglie per il quale c'è un nodo sottostante $s(\sigma)$ associato allo stesso non terminale: quindi, il cammino più lungo da $r(\sigma)$ ad una foglia attraversa al più $|V_N|+1$ nodi interni (esso stesso incluso)
+- Dalle osservazioni precedenti, ne deriva che $r(\sigma)$ ha lunghezza al più $2^{|V_N|+1-1}=2^{|V_N|}$
+
+
