@@ -175,4 +175,4 @@ catch (IOException|SQLException ex) {
 }
 ```
 
-**Oss**: Se un blocco catch gestisce più di un tipo di eccezione, allora il parametro catch è implicitamente definitivo. In questo esempio, il parametro catch ex è final e pertanto non è possibile assegnargli alcun valore all'interno del blocco catch
+**Oss**: Se un blocco catch gestisce più di un tipo di eccezione, allora il parametro catch è implicitamente _final_. In questo esempio, il parametro catch ex è final e pertanto non è possibile assegnargli alcun valore all'interno del blocco catch

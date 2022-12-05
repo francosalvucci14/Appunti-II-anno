@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 11.md",
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 11.md"
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 11.md",
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 11.md",
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,17 +173,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "14230dd2bf23ee5a",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Lezione 11.md",
+    "Appunti ASD/MOD I/ProblemSet/ProblemSet 1.md",
+    "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti LMP/MOD I/Lezione 10.md",
     "Appunti LMP/MOD I/Lezione 9 - Metaprogrammazione.md",
     "Appunti LMP/MOD I/Lezione 8.md",
     "Appunti LMP/MOD I/Lezione 5.md",
     "Appunti LMP/MOD I/Lezione 7.md",
     "Appunti LMP/MOD I/Lezione 6.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 3.md",
-    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
-    "Appunti FI/MOD I/Indice delle lezioni FI.md",
-    "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md"
+    "Appunti LMP/MOD I/Esercitazioni/LMP 3.md"
   ]
 }
