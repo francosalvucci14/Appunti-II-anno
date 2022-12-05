@@ -176,3 +176,49 @@ catch (IOException|SQLException ex) {
 ```
 
 **Oss**: Se un blocco catch gestisce più di un tipo di eccezione, allora il parametro catch è implicitamente _final_. In questo esempio, il parametro catch ex è final e pertanto non è possibile assegnargli alcun valore all'interno del blocco catch
+
+### Il blocco finally
+
+Il blocco finally viene sempre eseguito quando il blocco try termina. Ciò garantisce che il blocco finally venga eseguito anche se si verifica un'eccezione imprevista. Ma infine è utile per qualcosa di più della semplice gestione delle eccezioni: consente al programmatore di evitare che il codice di pulizia venga accidentalmente aggirato da un return, continue o break. Mettere il codice di pulizia in un blocco finally è sempre una buona pratica, anche quando non sono previste eccezioni.
+
+**Oss**: Il blocco finally potrebbe non essere eseguito se la JVM esce durante l'esecuzione del codice try o catch.
+
+Il blocco try del metodo writeList con cui hai lavorato qui apre un PrintWriter. Il programma dovrebbe chiudere quel flusso prima di uscire dal metodo writeList. Ciò pone un problema alquanto complicato perché il blocco try di writeList può terminare in tre modi.
+
+- L'istruzione new FileWriter ha esito negativo e genera un'eccezione IOException.
+- L'istruzione list.get(i) ha esito negativo e genera un'eccezione IndexOutOfBoundsException.
+- Tutto riesce e il blocco try esce normalmente.
+
+Il sistema di runtime esegue sempre le istruzioni all'interno del blocco finally indipendentemente da ciò che accade all'interno del blocco try. Quindi è il posto perfetto per eseguire la pulizia.
+
+Il seguente blocco finally per il metodo writeList pulisce e quindi chiude PrintWriter e FileWriter.
+
+```java
+finally {
+    if (out != null) { 
+        System.out.println("Closing PrintWriter");
+        out.close(); 
+    } else { 
+        System.out.println("PrintWriter not open");
+    } 
+    if (f != null) {
+	    System.out.println("Closing FileWriter");
+	    f.close();
+	}	
+}
+```
+
+**Importante**
+Utilizzare un'istruzione try-with-resources invece di un blocco finally quando si chiude un file o si recuperano risorse in altro modo. L'esempio seguente utilizza un'istruzione try-with-resources per ripulire e chiudere PrintWriter e FileWriter per il metodo writeList:
+```java
+public void writeList() throws IOException {
+    try (FileWriter f = new FileWriter("OutFile.txt");
+         PrintWriter out = new PrintWriter(f)) {
+        for (int i = 0; i < SIZE; i++) {
+            out.println("Value at: " + i + " = " + list.get(i));
+        }
+    }
+}
+```
+
+L'istruzione try-with-resources rilascia automaticamente le risorse di sistema quando non sono più necessarie
