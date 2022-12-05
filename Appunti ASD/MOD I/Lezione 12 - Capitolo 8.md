@@ -138,3 +138,65 @@ Due modi:
 2. **Inserimenti ripetuti**: si inseriscono ripetutamente gli elementi della cosa più piccola in quella più grande
 
 ##### Costruire da zero
+
+**Idea**: genero un nuovo heap d-ario contenente tutti gli elementi in $c_1,c_2$
+
+**Come**: 
+- generalizzazione della procedura **heapify**
+- rendo i d sottoalberi della radice heap ricorsivamente e chiamo **muoviBasso** sulla radice
+
+**Complessità** (d costante):
+$$T(n)=dT(n/d)+O(dlog_dn)\underbrace{\implies}_{\text{Teorema Master (caso 1)}}T(n)=\Theta(n)$$
+dove $n=|c_1|+|c_2|$
+
+##### Inserimenti ripetuti
+
+Inseriamo ad uno ad uno tutti gli elementi della coda più piccola nella coda più grande
+
+Sia $k=min\{|c_1|,|c_2|\}$ e $n=|c_1|+|c_2|$
+Eseguiamo quindi k inserimenti nella cosa più grande
+Costo: $O(klog(n))$, dove $n=|c_1|+|c_2|$
+
+L'approccio conviene quindi per $klog(n)=o(n)$, cioè per $$k=o(n/log(n))$$
+**Osservazione**: nel caso peggiore entrambe le operazioni hanno un costo di $\Omega(n)$
+
+### Heap Binomiali
+
+#### Alberi Binomiali
+
+Un albero binomiale $B_i$ è definito ricorsivamente come segue:
+
+1. $B_0$ consiste di un **unico** nodo
+2. per $i\gt0,B_{i+1}$ è ottenuto fondendo due alberi binomiali $B_i$, ponendo la radice dell'uno come figlia della radice dell'altro
+
+![[appunti asd/mod i/immagini/Pasted image 20221205172006.png|center]]
+
+##### Proprietà strutturali
+
+![[appunti asd/mod i/immagini/Pasted image 20221205172251.png|center|600]]
+
+#### Definizione di un heap binomiale
+
+Un heap binomiale è una **foresta di alberi binomiali** che gode delle seguenti proprietà:
+
+1. **Unicità**: per ogni intero $i\geq0$ esiste al più un $B_i$ nella foresta
+2. **Contenuto informativo**: ogni nodo v contiene un elemento elem(v) ed una chaive chiave(v) presa da un dominio totalmente ordinato
+3. **Ordinamento a heap**: chiave(v)$\geq$chiave(parent(v)) per ogni nodo v diverso sa una delle radici
+
+**Esempio con n=13 nodi**
+
+![[appunti asd/mod i/immagini/Pasted image 20221205172958.png|center]]
+
+
+Domanda: quanti alberi binomiali può avere al massimo un heap binomiale con n nodi?
+
+![[appunti asd/mod i/immagini/Pasted image 20221205173317.png|center|500]]
+
+La risposta è $\lceil log_2n\rceil$ 
+
+##### Proprietà topologiche
+
+Dalla prorpietà di unicità degli alberi binomiali che lo costituiscono, ne deriva ce un heap binomiale di n elementi è formato dagli alberi binomiali $B_{i_0},B_{i_1},...,B_{i_h}$, dove $i_0,i_1,..,i_h$ corrispondomo alle posizione degli 1 nella rappresentazione in base 2 di n
+Ne consegue che in un heap binomiale con n nodi, vi sono al più $\lceil log_2n\rceil$ **alberi binomiali**, ciascuno con grado ed altezza $O(log(n))$
+
+
