@@ -222,3 +222,236 @@ public void writeList() throws IOException {
 ```
 
 L'istruzione try-with-resources rilascia automaticamente le risorse di sistema quando non sono più necessarie
+
+### L'istruzione try-with-resources
+
+L'istruzione try-with-resources è un'istruzione try che dichiara una o più risorse. Una risorsa è un oggetto che deve essere chiuso al termine del programma. L'istruzione try-with-resources assicura che ogni risorsa sia chiusa alla fine dell'istruzione. Qualsiasi oggetto che implementa java.lang.AutoCloseable, che include tutti gli oggetti che implementano java.io.Closeable, può essere utilizzato come risorsa.
+
+L'esempio seguente legge la prima riga da un file. Utilizza un'istanza di FileReader e BufferedReader per leggere i dati dal file. FileReader e BufferedReader sono risorse che devono essere chiuse al termine del programma:
+
+```java
+static String readFirstLineFromFile(String path) throws IOException {
+	    **try (FileReader fr = new FileReader(path);
+	         BufferedReader br = new BufferedReader(fr))** {
+	        return br.readLine();
+	    }
+	}
+```
+
+In questo esempio, le risorse dichiarate nell'istruzione try-with-resources sono un FileReader e un BufferedReader. Le istruzioni di dichiarazione di queste risorse vengono visualizzate tra parentesi subito dopo la parola chiave try. Le classi FileReader e BufferedReader, in Java SE 7 e versioni successive, implementano l'interfaccia java.lang.AutoCloseable. Poiché le istanze FileReader e BufferedReader sono dichiarate in un'istruzione try-with-resource, verranno chiuse indipendentemente dal fatto che l'istruzione try venga completata normalmente o bruscamente (come risultato del metodo BufferedReader.readLine che genera un'eccezione IOException).
+
+Prima di Java SE 7, puoi utilizzare un blocco finally per assicurarti che una risorsa venga chiusa indipendentemente dal fatto che l'istruzione try venga completata normalmente o bruscamente. L'esempio seguente utilizza un blocco finally invece di un'istruzione try-with-resources:
+
+```java
+static String readFirstLineFromFileWithFinallyBlock(String path) throws IOException {
+   
+    FileReader fr = new FileReader(path);
+    BufferedReader br = new BufferedReader(fr);
+    try {
+        return br.readLine();
+    } finally {
+        br.close();
+        fr.close();
+    }
+}
+```
+
+Tuttavia, questo esempio potrebbe avere una perdita di risorse. Un programma deve fare di più che affidarsi al Garbage Collector (GC) per recuperare la memoria di una risorsa quando ha finito con essa. Il programma deve inoltre rilasciare nuovamente la risorsa al sistema operativo, in genere chiamando il metodo close della risorsa. Tuttavia, se un programma non riesce a eseguire questa operazione prima che il GC rivendichi la risorsa, le informazioni necessarie per rilasciare la risorsa vengono perse. La risorsa, che è ancora considerata in uso dal sistema operativo, è trapelata.
+
+In questo esempio, se il metodo readLine genera un'eccezione e l'istruzione br.close() nel blocco finally genera un'eccezione, allora il FileReader è trapelato. Pertanto, usa un'istruzione try-with-resources invece di un blocco finally per chiudere le risorse del tuo programma.
+
+Se i metodi readLine e close generano entrambi eccezioni, il metodo readFirstLineFromFileWithFinallyBlock genera l'eccezione generata dal blocco finally; l'eccezione generata dal blocco try viene soppressa. Al contrario, nell'esempio readFirstLineFromFile, se le eccezioni vengono generate sia dal blocco try che dall'istruzione try-with-resources, il metodo readFirstLineFromFile genera l'eccezione generata dal blocco try; l'eccezione generata dal blocco try-with-resources viene soppressa. In Java SE 7 e versioni successive, puoi recuperare le eccezioni soppresse; vedere la sezione Eccezioni soppresse per ulteriori informazioni.
+
+L'esempio seguente recupera i nomi dei file compressi nel file zip zipFileName e crea un file di testo che contiene i nomi di questi file:
+
+```java
+public static void writeToFileZipFileContents(String zipFileName,
+                                           String outputFileName)
+                                           throws java.io.IOException {
+
+    java.nio.charset.Charset charset =
+         java.nio.charset.StandardCharsets.US_ASCII;
+    java.nio.file.Path outputFilePath =
+         java.nio.file.Paths.get(outputFileName);
+
+    // Open zip file and create output file with 
+    // try-with-resources statement
+
+    **try (
+        java.util.zip.ZipFile zf =
+             new java.util.zip.ZipFile(zipFileName);
+        java.io.BufferedWriter writer = 
+            java.nio.file.Files.newBufferedWriter(outputFilePath, charset)
+    )** {
+        // Enumerate each entry
+        for (java.util.Enumeration entries =
+                                zf.entries(); entries.hasMoreElements();) {
+            // Get the entry name and write it to the output file
+            String newLine = System.getProperty("line.separator");
+            String zipEntryName =
+                 ((java.util.zip.ZipEntry)entries.nextElement()).getName() +
+                 newLine;
+            writer.write(zipEntryName, 0, zipEntryName.length());
+        }
+    }
+}
+```
+
+In questo esempio, l'istruzione try-with-resources contiene due dichiarazioni separate da un punto e virgola: ZipFile e BufferedWriter. Quando il blocco di codice che lo segue direttamente termina, normalmente oa causa di un'eccezione, i metodi close degli oggetti BufferedWriter e ZipFile vengono chiamati automaticamente in questo ordine. Si noti che i metodi di chiusura delle risorse vengono chiamati nell'ordine opposto rispetto alla loro creazione.
+
+L'esempio seguente utilizza un'istruzione try-with-resources per chiudere automaticamente un oggetto java.sql.Statement:
+
+```java
+public static void viewTable(Connection con) throws SQLException {
+
+    String query = "select COF_NAME, SUP_ID, PRICE, SALES, TOTAL from COFFEES";
+
+    **try (Statement stmt = con.createStatement())** {
+        ResultSet rs = stmt.executeQuery(query);
+
+        while (rs.next()) {
+            String coffeeName = rs.getString("COF_NAME");
+            int supplierID = rs.getInt("SUP_ID");
+            float price = rs.getFloat("PRICE");
+            int sales = rs.getInt("SALES");
+            int total = rs.getInt("TOTAL");
+
+            System.out.println(coffeeName + ", " + supplierID + ", " + 
+                               price + ", " + sales + ", " + total);
+        }
+    } catch (SQLException e) {
+        JDBCTutorialUtilities.printSQLException(e);
+    }
+}
+```
+
+### Mettiamo tutto insieme
+
+Quando tutti i componenti vengono messi insieme, il metodo writeList ha il seguente aspetto.
+
+```java
+public void writeList() {
+    PrintWriter out = null;
+
+    try {
+        System.out.println("Entering" + " try statement");
+
+        out = new PrintWriter(new FileWriter("OutFile.txt"));
+        for (int i = 0; i < SIZE; i++) {
+            out.println("Value at: " + i + " = " + list.get(i));
+        }
+    } catch (IndexOutOfBoundsException e) {
+        System.err.println("Caught IndexOutOfBoundsException: "
+                           +  e.getMessage());
+                                 
+    } catch (IOException e) {
+        System.err.println("Caught IOException: " +  e.getMessage());
+                                 
+    } finally {
+        if (out != null) {
+            System.out.println("Closing PrintWriter");
+            out.close();
+        } 
+        else {
+            System.out.println("PrintWriter not open");
+        }
+    }
+}
+```
+
+Come accennato in precedenza, il blocco try di questo metodo ha tre diverse possibilità di uscita; qui ce ne sono due.
+
+- Il codice nell'istruzione try ha esito negativo e genera un'eccezione. Potrebbe trattarsi di una IOException causata dalla nuova istruzione FileWriter o di un'eccezione IndexOutOfBoundsException causata da un valore di indice errato nel ciclo for.
+- Tutto riesce e l'istruzione try termina normalmente.
+
+Diamo un'occhiata a cosa succede nel metodo writeList durante queste due possibilità di uscita.
+
+#### Scenario 1: si verifica un'eccezione
+
+L'istruzione che crea un FileWriter può fallire per diversi motivi. Ad esempio, il costruttore per FileWriter lancia una IOException se il programma non può creare o scrivere nel file indicato.
+
+Quando FileWriter lancia una IOException, il sistema di runtime interrompe immediatamente l'esecuzione del blocco try; le chiamate al metodo in esecuzione non vengono completate. Il sistema di runtime avvia quindi la ricerca nella parte superiore dello stack di chiamate del metodo per un gestore di eccezioni appropriato. In questo esempio, quando si verifica IOException, il costruttore FileWriter si trova in cima allo stack di chiamate. Tuttavia, il costruttore FileWriter non dispone di un gestore di eccezioni appropriato, quindi il sistema di runtime controlla il metodo successivo, il metodo writeList, nello stack di chiamate al metodo. Il metodo writeList ha due gestori di eccezioni: uno per IOException e uno per IndexOutOfBoundsException.
+
+Il sistema di runtime controlla i gestori di writeList nell'ordine in cui appaiono dopo l'istruzione try. L'argomento del primo gestore di eccezioni è IndexOutOfBoundsException. Questo non corrisponde al tipo di eccezione generata, quindi il sistema di runtime controlla il successivo gestore di eccezioni: IOException. Questo corrisponde al tipo di eccezione generata, quindi il sistema di runtime termina la ricerca di un gestore di eccezioni appropriato. Ora che il runtime ha trovato un gestore appropriato, viene eseguito il codice in quel blocco catch.
+
+Dopo l'esecuzione del gestore delle eccezioni, il sistema di runtime passa il controllo al blocco finally. Il codice nel blocco finally viene eseguito indipendentemente dall'eccezione rilevata al di sopra di esso. In questo scenario, FileWriter non è mai stato aperto e non è necessario chiuderlo. Al termine dell'esecuzione del blocco finally, il programma continua con la prima istruzione dopo il blocco finally.
+
+Ecco l'output completo del programma ListOfNumbers che appare quando viene generata un'eccezione IOException.
+
+```java
+Entering try statement
+Caught IOException: OutFile.txt
+PrintWriter not open
+```
+
+Il codice in grassetto nel seguente elenco mostra le istruzioni che vengono eseguite durante questo scenario:
+
+```java
+public void writeList() {
+   **PrintWriter out = null;
+
+    try {
+        System.out.println("Entering try statement");
+        out = new PrintWriter(new FileWriter("OutFile.txt"));**
+        for (int i = 0; i < SIZE; i++)
+            out.println("Value at: " + i + " = " + list.get(i));
+                               
+    } catch (IndexOutOfBoundsException e) {
+        System.err.println("Caught IndexOutOfBoundsException: "
+                           + e.getMessage());
+                                 
+    } **catch (IOException e) {
+        System.err.println("Caught IOException: " + e.getMessage());
+    } finally {
+        if (out != null) {**
+            System.out.println("Closing PrintWriter");
+            out.close();
+        } 
+        **else {
+            System.out.println("PrintWriter not open");
+        }**
+    }
+}
+```
+
+#### Scenario 2: Il blocco try si chiude normalmente
+
+In questo scenario, tutte le istruzioni all'interno dell'ambito del blocco try vengono eseguite correttamente e non generano eccezioni. L'esecuzione cade alla fine del blocco try e il sistema di runtime passa il controllo al blocco finally. Poiché tutto è andato a buon fine, PrintWriter è aperto quando il controllo raggiunge il blocco finally, che chiude PrintWriter. Di nuovo, dopo che il blocco finally ha terminato l'esecuzione, il programma continua con la prima istruzione dopo il blocco finally.
+
+Ecco l'output del programma ListOfNumbers quando non vengono lanciate eccezioni.
+
+```java
+Entering try statement
+Closing PrintWriter
+```
+
+Il codice in grassetto nell'esempio seguente mostra le istruzioni che vengono eseguite durante questo scenario.
+
+```java
+public void writeList() {
+    **PrintWriter out = null;
+    try {
+        System.out.println("Entering try statement");
+        out = new PrintWriter(new FileWriter("OutFile.txt"));
+        for (int i = 0; i < SIZE; i++)
+            out.println("Value at: " + i + " = " + list.get(i));
+                  
+    }** catch (IndexOutOfBoundsException e) {
+        System.err.println("Caught IndexOutOfBoundsException: "
+                           + e.getMessage());
+
+    } catch (IOException e) {
+        System.err.println("Caught IOException: " + e.getMessage());
+                                 
+    } **finally {
+        if (out != null) {
+            System.out.println("Closing PrintWriter");
+            out.close();
+        }** 
+        else {
+            System.out.println("PrintWriter not open");
+        }
+    }
+}
+```
+
