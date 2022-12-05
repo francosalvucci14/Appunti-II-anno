@@ -65,7 +65,7 @@ Tengo la lista bidirezionale **ordinata** in ordine **crescente**
 
 1. d-heap: generalizzazione degli heap binari visti per l'ordinamento
 2. Heap binomiali
-3. Heap di FIbonacci (cenni)
+3. Heap di Fibonacci (cenni)
 
 ### d-heap
 
@@ -103,5 +103,38 @@ $T(n)=O(1)$
 
 Vedi esempio qua [Esempio Insert](https://www.mat.uniroma2.it/~guala/cap8_2021.pdf) da pagina 17 a 21
 
-![[appunti asd/mod i/immagini/Pasted image 20221205165446.png|center|600]]
+![[appunti asd/mod i/immagini/Pasted image 20221205165446.png|center]]
 
+$T(n)=O(log_dn)$ per l'esecuzione di muoviAlto
+
+#### delete(elem e) e deleteMin
+
+Vedi esempio qua [Esempio delete](https://www.mat.uniroma2.it/~guala/cap8_2021.pdf) da pagina 23 a 30
+
+![[appunti asd/mod i/immagini/Pasted image 20221205170319.png|center]]
+
+$T(n)=O(log_dn)$ o $O(dlog_dn)$ per l'esecuzione di muoviAlto o muoviBasso
+
+#### decreaseKey (elem e, chiave d)
+
+Vedi esempio qua [Esempio delete](https://www.mat.uniroma2.it/~guala/cap8_2021.pdf) da pagina 32 a 36
+
+![[appunti asd/mod i/immagini/Pasted image 20221205170802.png|center]]
+
+$T(n)=O(log_dn)$ per l'esecuzione di muoviAlto
+
+#### increaseKey (elem e,chiave d)
+
+Vedi esempio qua [Esempio delete](https://www.mat.uniroma2.it/~guala/cap8_2021.pdf) da pagina 38 a 42
+
+![[appunti asd/mod i/immagini/Pasted image 20221205170924.png|center]]
+
+$T(n)=O(dlog_dn)$ per l'esecuzione di muoviBasso
+
+#### merge (CodaPriorità $c_1$, CodaPriorità $c_2$)
+
+Due modi:
+1. **Costruire da zero**: si distruggono le due cose e se ne crea una nuova contenente l'unione degli elementi
+2. **Inserimenti ripetuti**: si inseriscono ripetutamente gli elementi della cosa più piccola in quella più grande
+
+##### Costruire da zero
