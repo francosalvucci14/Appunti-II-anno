@@ -455,3 +455,77 @@ public void writeList() {
 }
 ```
 
+## Specifica delle eccezioni generate da un metodo
+
+La sezione precedente ha mostrato come scrivere un gestore di eccezioni per il metodo writeList nella classe ListOfNumbers. A volte, è opportuno che il codice rilevi le eccezioni che possono verificarsi al suo interno. In altri casi, tuttavia, è meglio lasciare che un metodo più in alto nello stack di chiamate gestisca l'eccezione. Ad esempio, se fornisci la classe ListOfNumbers come parte di un pacchetto di classi, probabilmente non potresti anticipare le esigenze di tutti gli utenti del tuo pacchetto. In questo caso, è meglio non rilevare l'eccezione e consentire a un metodo più in alto nello stack di chiamate di gestirla.
+
+Se il metodo writeList non rileva le eccezioni verificate che possono verificarsi al suo interno, il metodo writeList deve specificare che può generare tali eccezioni. Modifichiamo il metodo writeList originale per specificare le eccezioni che può lanciare invece di catturarle. Per ricordartelo, ecco la versione originale del metodo writeList che non verrà compilata.
+
+```java
+public void writeList() {
+    PrintWriter out = new PrintWriter(new FileWriter("OutFile.txt"));
+    for (int i = 0; i < SIZE; i++) {
+        out.println("Value at: " + i + " = " + list.get(i));
+    }
+    out.close();
+}
+```
+
+per specificare che writeList può generare due eccezioni, aggiungere una clausola throws alla dichiarazione del metodo per il metodo writeList. La clausola throws comprende la parola chiave throws seguita da un elenco separato da virgole di tutte le eccezioni generate da tale metodo. La clausola va dopo il nome del metodo e l'elenco degli argomenti e prima della parentesi graffa che definisce l'ambito del metodo; ecco un esempio.
+
+```java
+public void writeList() **throws IOException, IndexOutOfBoundsException** {
+```
+
+## Come generare eccezioni
+
+Prima che tu possa rilevare un'eccezione, un codice da qualche parte deve lanciarne una. Qualsiasi codice può generare un'eccezione: il tuo codice, il codice di un pacchetto scritto da qualcun altro, ad esempio i pacchetti forniti con la piattaforma Java o l'ambiente di runtime Java. Indipendentemente da ciò che genera l'eccezione, viene sempre generata con l'istruzione throw.
+
+Come probabilmente avrai notato, la piattaforma Java fornisce numerose classi di eccezione. Tutte le classi sono discendenti della classe Throwable e tutte consentono ai programmi di differenziare tra i vari tipi di eccezioni che possono verificarsi durante l'esecuzione di un programma.
+
+Puoi anche creare le tue classi di eccezione per rappresentare i problemi che possono verificarsi all'interno delle classi che scrivi. Infatti, se sei uno sviluppatore di pacchetti, potresti dover creare il tuo insieme di classi di eccezione per consentire agli utenti di differenziare un errore che può verificarsi nel tuo pacchetto dagli errori che si verificano nella piattaforma Java o in altri pacchetti.
+
+Puoi anche creare eccezioni concatenate
+
+### L'istruzione throw
+
+Tutti i metodi utilizzano l'istruzione throw per generare un'eccezione. L'istruzione throw richiede un singolo argomento: un oggetto gettabile. Gli oggetti Throwable sono istanze di qualsiasi sottoclasse della classe Throwable. Ecco un esempio di istruzione throw.
+
+```java
+throw _someThrowableObject_;
+```
+
+Diamo un'occhiata all'istruzione throw nel contesto. Il seguente metodo pop è tratto da una classe che implementa un oggetto stack comune. Il metodo rimuove l'elemento superiore dallo stack e restituisce l'oggetto.
+
+```java
+public Object pop() {
+    Object obj;
+
+    if (size == 0) {
+        **throw new EmptyStackException();**
+    }
+
+    obj = objectAt(size - 1);
+    setObjectAt(size - 1, null);
+    size--;
+    return obj;
+}
+```
+
+### Classe Throwable e sue sottoclassi
+
+Gli oggetti che ereditano dalla classe Throwable includono discendenti diretti (oggetti che ereditano direttamente dalla classe Throwable) e discendenti indiretti (oggetti che ereditano da figli o nipoti della classe Throwable). La figura seguente illustra la gerarchia di classi della classe Throwable e delle sue sottoclassi più significative. Come puoi vedere, Throwable ha due discendenti diretti: Error ed Exception.
+
+![[appunti lmp/mod i/immagini/exceptions-throwable.gif|center|400]]
+
+#### Classe Error
+
+Quando si verifica un errore di collegamento dinamico o un altro errore hardware nella macchina virtuale Java, la macchina virtuale genera un errore. I programmi semplici in genere non rilevano né generano errori.
+
+#### Classe Exception
+
+La maggior parte dei programmi lancia e cattura oggetti che derivano dalla classe Exception. Un'eccezione indica che si è verificato un problema, ma non si tratta di un grave problema di sistema. La maggior parte dei programmi che scrivi genererà e rileverà eccezioni anziché errori.
+
+La piattaforma Java definisce i numerosi discendenti della classe Exception. Questi discendenti indicano vari tipi di eccezioni che possono verificarsi. Ad esempio, IllegalAccessException segnala che non è stato possibile trovare un metodo particolare e NegativeArraySizeException indica che un programma ha tentato di creare un array con una dimensione negativa.
+
+Una sottoclasse Exception, RuntimeException, è riservata alle eccezioni che indicano un uso non corretto di un'API. Un esempio di eccezione di runtime è NullPointerException, che si verifica quando un metodo tenta di accedere a un membro di un oggetto tramite un riferimento null

@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 10.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "14230dd2bf23ee5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Appunti LMP/MOD I/Lezione 11.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -152,7 +139,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -173,17 +160,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "acd002c7f705cc3c",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
-    "Appunti LMP/MOD I/Lezione 11.md",
-    "Appunti ASD/MOD I/ProblemSet/ProblemSet 1.md",
     "Appunti LMP/MOD I/Lezione 10.md",
+    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
+    "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
+    "Appunti LMP/MOD I/Lezione 11.md",
+    "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
+    "Appunti ASD/MOD I/ProblemSet/ProblemSet 1.md",
     "Appunti LMP/MOD I/Lezione 9 - Metaprogrammazione.md",
     "Appunti LMP/MOD I/Lezione 8.md",
     "Appunti LMP/MOD I/Lezione 5.md",
-    "Appunti LMP/MOD I/Lezione 7.md",
-    "Appunti LMP/MOD I/Lezione 6.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 3.md"
+    "Appunti LMP/MOD I/Lezione 7.md"
   ]
 }
