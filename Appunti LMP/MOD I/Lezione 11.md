@@ -160,3 +160,19 @@ try {
 }
 ```
 
+I gestori di eccezioni possono fare molto di più che stampare messaggi di errore o arrestare il programma. Possono eseguire il ripristino degli errori, richiedere all'utente di prendere una decisione o propagare l'errore fino a un gestore di livello superiore utilizzando eccezioni concatenate
+
+#### Catturare più di un tipo di eccezione con un gestore di eccezioni
+
+In Java SE 7 e versioni successive, un singolo blocco catch può gestire più di un tipo di eccezione. Questa funzione può ridurre la duplicazione del codice e ridurre la tentazione di rilevare un'eccezione eccessivamente ampia.
+
+Nella clausola catch, specifica i tipi di eccezioni che il blocco può gestire e separa ciascun tipo di eccezione con una barra verticale (|):
+
+```java
+catch (IOException|SQLException ex) {
+    logger.log(ex);
+    throw ex;
+}
+```
+
+**Oss**: Se un blocco catch gestisce più di un tipo di eccezione, allora il parametro catch è implicitamente definitivo. In questo esempio, il parametro catch ex è final e pertanto non è possibile assegnargli alcun valore all'interno del blocco catch
