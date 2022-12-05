@@ -3,6 +3,8 @@
 - modifica dei costruttori si StudentImpl con protected
 - aggiunta del metodo "protected abstract String getFacultyCode();"
 
+
+
 Codice di StudentImpl con Abstract
 ```java
 package it.uniroma2.art.lmp.ex.model;

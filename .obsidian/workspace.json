@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md"
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
+                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,8 +162,8 @@
   },
   "active": "2e09e7b4a6f0fcf8",
   "lastOpenFiles": [
-    "Appunti FI/MOD I/Indice delle lezioni FI.md",
     "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
+    "Appunti FI/MOD I/Indice delle lezioni FI.md",
     "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
