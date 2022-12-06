@@ -113,12 +113,12 @@ Infatti, se così fosse, avremmo che dati due qualunque linguaggi CF $L_1,L_2$, 
 $$L_1\cap L_2=\overline{\overline{L_1}\cup\overline{L_2}}$$
 Quindi se non è chiuso rispetto all'intersezione, allora non è chiuso rispetto al complemento, e viceversa
 
-## Decidibilità di predicati su linguaggi CF
+# Decidibilità di predicati su linguaggi CF
 
 >[!info]- Ricorda
 >Qualunque linguaggio CF ha una grammatica in CNF che lo genera
 
-### Predicato $L(\mathcal G)=\emptyset$
+## Predicato $L(\mathcal G)=\emptyset$
 
 Data una grammatica $\mathcal G$ di tipo 2 è decidibile stabilire se $L(\mathcal G)=\emptyset$
 
@@ -133,7 +133,7 @@ Per verificare se esiste una stringa di lunghezza minore di $2^{|V_N|}$ generabi
 $$\sum_{k=1}^{2^{|V_N|+1}-2}|P|^k=\frac{|P|^{2^{|V_N|+1}-1}-1}{|P|-1}=O(2^{2^{|V_N|+1}})$$
 Un metodo più efficiente consiste nel portare la grammatica in forma ridotta, verificando se esistono simboli fecondi. Condizione necessaria e sufficiente affinchè il linguaggio sia vuoto è che la grammatica non abbia simboli fecondi
 
-### Predicato $L(\mathcal G)$ infinito
+## Predicato $L(\mathcal G)$ infinito
 
 Data una grammatica $\mathcal G$ di tipo 2 è decidibile stabilire se $L(\mathcal G)=\emptyset$
 

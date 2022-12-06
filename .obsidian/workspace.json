@@ -139,7 +139,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -160,7 +160,7 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "2e09e7b4a6f0fcf8",
+  "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
     "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
     "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
