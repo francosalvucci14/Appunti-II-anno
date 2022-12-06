@@ -63,3 +63,30 @@ Se Alice vince sempre questo gioco con Bob, allora $L$ non è CF
 4. Alice sceglie un intero $i\geq0$
 5. Alice mostra a Bob che $uv^iwx^iy\not\in L$
 
+**Esempio**
+
+$L=\{a^kb^kc^k|k\gt0\}$ non è CF
+
+Infatti:
+1. Bob sceglie un intero $n\gt0$
+2. Alice prende la stringa $a^nb^nc^n\in L$
+3. Bob divide $z$ in cinque parti $uvwxy$ con $|vwx|\leq n$ e $|vx|\geq1$. $vwx$ o è una sequenza di occorrenze dello stesso simbolo (ad esempio $a^h,h\gt0$) o è composta di due sottosequenze di stessi simboli (ad esempio $a^rb^s,r,s\gt0$). Quindi, almeno uno dei simboli a,b,c non compare in vwx e quindi né in v né in x
+4. Alice sceglie i=2
+5. Alice mostra a Bob che $uv^2wx^2y\not\in L$ in quanto almeno un simbolo ha aumentato il numero di occorrenze ed almeno un altro simbolo ha un numoer di occorrenze invariato
+
+# Proprietà dei linguaggi CF
+
+## Chiusura dei linguaggi CF: intersezione
+
+Il linguaggio $L=\{a^nb^nc^n|n\geq1\}$ non è context free
+
+Del resto, $L_1=\{a^nb^nc^m|n,m\geq1\}$ e $L_2=\{a^mb^nc^n|n,m\geq1\}$ sono non contestuali
+
+Ma $L=L_1\cap L_2$, da cui deriva che la classe dei linguaggi CF non è chiusa rispetto all'intersezione
+
+## Chiusura dei linguaggi CF: unione
+
+Dati due linguaggi CF $L_1\subseteq\Sigma_1^\star$ e $L_2\subseteq\Sigma_2^\star$, siano $\mathcal G_1=\langle\Sigma_1,V_{N_1},P_1,S_1\rangle$ e $\mathcal G_2=\langle\Sigma_2^\star,V_{N_2},P_2,S_2\rangle$ due grammatiche di tipo 2 tali che $L_1=L(\mathcal G_1),L_2=L(\mathcal G_2)$
+
+Il linguaggio $L=L_1\cup L_2$ potrà allora essere generato dalla grammatica di tipo 2 $\mathcal G=\langle\Sigma_1\cup\Sigma_2,V_{N_1}\cup V_{N_2}\cup\{S\},P,S\rangle$, dove $P=P_1\cup P_2\cup\{S\to S_1|S_2\}$
+
