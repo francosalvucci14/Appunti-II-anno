@@ -107,3 +107,15 @@ Il linguaggio $L'=L^\star$ è allora generato dalla grammatica di tipo 2 $\mathc
 La classe dei linguaggi CF non è chiusa rispetto al complemento
 
 Infatti, se così fosse, avremmo che dati due qualunque linguaggi CF $L_1,L_2$, il linguaggio $L=\overline{\overline{L_1}\cup\overline{L_2}}$ sarebbe CF anch'esso. Ma $L=L_1\cap L_2$ e quindi ne risulterebbe la chiusura rispetto all'intersezione, che non sussiste 
+
+>[!info]- Osservazione
+>Ricorda, vale che:
+$$L_1\cap L_2=\overline{\overline{L_1}\cup\overline{L_2}}$$
+Quindi se non è chiuso rispetto all'intersezione, allora non è chiuso rispetto al complemento, e viceversa
+
+
+
+
+
+
+
