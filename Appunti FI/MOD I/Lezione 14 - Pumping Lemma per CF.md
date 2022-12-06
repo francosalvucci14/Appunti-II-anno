@@ -143,4 +143,10 @@ Per il pumping lemma, se esiste una stringa $z=uvwxy\in L(\mathcal G)$ con $|z|\
 
 Quindi, se il linguaggio è infinito, esiste una stringa in esso di lunghezza $z\in[2^{|V_N|},2^{|V_N|+1}-1]$, che sarà derivata (in una grammatica in CNF) da una derivazione di lunghezza compresa tra $2^{|V_N|+1}-1$ e $2^{|V_N|+2}-3$
 
+è possibile allora considerare tutte le derivazioni di lunghezza compresa tra $2^{|V_N|+1}-1$ e $2^{|V_N|+2}-3$ che sono al più:
+$$\sum_{k=2^{|V_N|+1}-1}^{2^{|V_N|+2}-3}|P|^k=\frac{|P|^{2^{|V_N|+2}-2}-|P|^{2^{|V_N|+1}-1}}{|P|-1}=O(2^{2^{2^{|V_N|+2}}})$$
+e verifica re se qualcuna di esse da origine ad una stringa di terminali
+
+Metodo più efficiente: verificare la ciclicità del grafo orientato $G=(N,A)$ derivato dalla grammatica in CNF che genera $L$, ponendo $N=V_N$ e introducendo, per ogni produzione $B\to CD$, gli archi $\langle B,C\rangle$ e $\langle B,D\rangle$
+
 
