@@ -118,9 +118,11 @@ Quindi se non è chiuso rispetto all'intersezione, allora non è chiuso rispetto
 >[!info]- Ricorda
 >Qualunque linguaggio CF ha una grammatica in CNF che lo genera
 
+### Predicato $L(\mathcal G)=\emptyset$
+
 Data una grammatica $\mathcal G$ di tipo 2 è decidibile stabilire se $L(\mathcal G)=\emptyset$
 
-Assumiamo che $\mathcal G=\langle\Sigma,V_{N},P,S\rangle$ sia in CNF
+Assumiamo che $\mathcal G=\langle V_T,V_{N},P,S\rangle$ sia in CNF
 
 Per il pumping lemma, se esiste una stringa $z=uvwxy\in L(\mathcal G)$ con $|z|\geq2^{|V_N|}$, allora esiste una stringa $z'=uwy\in L(\mathcal G)$ con $|z'|\lt2^{|V_N|}$.
 Quindi, se il linguaggio non è vuoto, esiste una stringa in esso di lunghezza minore di $2^{|V_N|}$
@@ -129,3 +131,16 @@ In una grammatica in CNF, ogni applicazione di una produzione o incrementa di un
 
 Per verificare se esiste una stringa di lunghezza minore di $2^{|V_N|}$ generabile, è sufficiente considerare tutte le derivazioni di lunghezza minore di $2^{|V_N|+1}-1$ che sono, al più:
 $$\sum_{k=1}^{2^{|V_N|+1}-2}|P|^k=\frac{|P|^{2^{|V_N|+1}-1}-1}{|P|-1}=O(2^{2^{|V_N|+1}})$$
+Un metodo più efficiente consiste nel portare la grammatica in forma ridotta, verificando se esistono simboli fecondi. Condizione necessaria e sufficiente affinchè il linguaggio sia vuoto è che la grammatica non abbia simboli fecondi
+
+### Predicato $L(\mathcal G)$ infinito
+
+Data una grammatica $\mathcal G$ di tipo 2 è decidibile stabilire se $L(\mathcal G)=\emptyset$
+
+Assumiamo che $\mathcal G=\langle V_T,V_{N},P,S\rangle$ sia in CNF
+
+Per il pumping lemma, se esiste una stringa $z=uvwxy\in L(\mathcal G)$ con $|z|\geq2^{|V_N|}$, allora esistono infinite stringhe $z_i=uv^iwx^iy\in L(\mathcal G)$, con $i\geq0$, e almeno una di queste ha lunghezza $|z'|\lt2^{|V_N|+1}$
+
+Quindi, se il linguaggio è infinito, esiste una stringa in esso di lunghezza $z\in[2^{|V_N|},2^{|V_N|+1}-1]$, che sarà derivata (in una grammatica in CNF) da una derivazione di lunghezza compresa tra $2^{|V_N|+1}-1$ e $2^{|V_N|+2}-3$
+
+
