@@ -4,7 +4,6 @@
 >[!important]- Teorema
 >Sia $L\subseteq V_T^\star$ un linguaggio non contestuale. Esiste allora una costante n tale che se $z\in L$ e $|z|\geq n$ allora esistono 5 stringhe $u,v,w,x,y\in V_T^\star$ tali che $$\begin{align}i)&uvwxy=z\\ii)&|vx|\geq1\\iii)&|vwx|\leq n\\iv)&\forall i\geq0\:uv^iwx^iy\in L\end{align}$$
 
-
 ## Interpretazione come gioco a due
 
 Se $L$ è contex free, Alice vince sempre questo gioco con Bob:
@@ -16,9 +15,9 @@ Se $L$ è contex free, Alice vince sempre questo gioco con Bob:
 4. Bob sceglie un intero $i\geq0$
 5. Alice mostra a Bob che $uv^iwx^iy\in L$
 
-### Dimostrazione
+**Dimostrazione**
 
-Grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ in CNF che genera $L=L(\mathcal G)$ e sia $k=|V_N|$ il numoer di simboli non terminali in $\mathcal G$ 
+Grammatica $\mathcal G=\langle V_T,V_N,P,S\rangle$ in CNF che genera $L=L(\mathcal G)$ e sia $k=|V_N|$ il numero di simboli non terminali in $\mathcal G$ 
 
 Qualunque albero sintattico $A(\sigma)$ relativo ad una stringa $\sigma\in V_T^\star$ derivata in $\mathcal G$ sarà tale da avere tutti i nodi interni (corrispondenti ai simboli non terminali) di grado 2,eccetto quelli aventi foglie dell'albero come figli, che hanno grado 1
 
@@ -37,4 +36,30 @@ Qualunque albero sintattico $A(\sigma)$ relativo ad una stringa $\sigma\in V_T^\
 - Senza perdere generalità, possiamo assumere che $r(\sigma)$ sia il nodo in c più vicino alle foglie per il quale c'è un nodo sottostante $s(\sigma)$ associato allo stesso non terminale: quindi, il cammino più lungo da $r(\sigma)$ ad una foglia attraversa al più $|V_N|+1$ nodi interni (esso stesso incluso)
 - Dalle osservazioni precedenti, ne deriva che $r(\sigma)$ ha lunghezza al più $2^{|V_N|+1-1}=2^{|V_N|}$
 
+Poniamo $s(\sigma)=w$ e $r(\sigma)=vwx$
+
+![[appunti fi/mod i/immagini/Pasted image 20221206094941.png|center|400]]
+
+![[appunti fi/mod i/immagini/Pasted image 20221206095016.png|center|400]]
+
+- Gli alberi $R(\sigma),S(\sigma)$ possono essere sostituiti (avendo radice corrispondente allo stesso non terminale) l'uno all'altro all'interno di qualunque albero sintattico
+- Quindi, anche la stringa $uvy$ è generata dalla grammatica (sostituendo in $A(\sigma),R(\sigma)\:e\:S(\sigma)$)
+- Mediante la sostituzione opposta, anche la stringa $uvwxy$ risulta generabile
+
+$\square$
+
+## Interpretazione come gioco a due
+
+La proprietà mostrata fornisce soltanto una condizione necessaria perchè un linguaggio sia context free: non può essere utilizzata per mostrare la non contestualità di un linguaggio, ma solo per dimostrarne la contestualità
+
+$$\begin{align}&\text{L contestuale}\implies\text{pumping lemma verificato}\\&\text{pumping lemma non verificato}\implies\text{L non contestuale}\end{align}$$
+
+Se Alice vince sempre questo gioco con Bob, allora $L$ non è CF
+(Alice = $\exists$ e Bob = $\forall$)
+
+1. Bob sceglie un interno $n\gt0$
+2. Alice sceglie una stringa $z\in L$ con $|z|\gt n$
+3. Bob divide $z$ in cinque parti $uvwxy$ con $|vwx|\leq n$ e $|vx|\geq1$
+4. Alice sceglie un intero $i\geq0$
+5. Alice mostra a Bob che $uv^iwx^iy\not\in L$
 
