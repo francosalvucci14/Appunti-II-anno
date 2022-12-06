@@ -80,12 +80,12 @@ Un non terminale $A$ è fecondo se e solo se vale una delle seguenti condizioni:
 
 è necessario verificare che i simboli rimasti siano generabili a partire dall'assioma.
 
-Ciò può essere effettuato in modo iterativom osservando che $A$ è generabile a partire da $S$ se vale una delle due condizioni seguenti:
+Ciò può essere effettuato in modo iterativo osservando che $A$ è generabile a partire da $S$ se vale una delle due condizioni seguenti:
 
 1. esistono $\alpha,\beta\in(F\cup V_T)^\star:S\to\alpha A\beta\in \hat P$
 2. esistono $\alpha,\beta\in(F\cup V_T)^\star$ e $B\in F$,generabile a partire da $S$, tali che $B\to\alpha A\beta\in\hat P$ 
 
-Al fine di eliminare i simboli inutili (non fecondi e non generabili da $S$) è necessario i due algoritmi nell'ordine dato: eliminare prima i simboli non generabili e poi quelli non fecondi può far si che non tutti i simboli inutili vengano rimossi dalla grammatica
+Al fine di eliminare i simboli inutili (non fecondi e non generabili da $S$) è necessario eseguire i due algoritmi nell'ordine dato: eliminare prima i simboli non generabili e poi quelli non fecondi può far si che non tutti i simboli inutili vengano rimossi dalla grammatica
 
 Infatti, si consideri la grammatica:
 $$\begin{align}S&\to AB|a\\A&\to a\end{align}$$

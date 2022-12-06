@@ -113,9 +113,19 @@ Infatti, se così fosse, avremmo che dati due qualunque linguaggi CF $L_1,L_2$, 
 $$L_1\cap L_2=\overline{\overline{L_1}\cup\overline{L_2}}$$
 Quindi se non è chiuso rispetto all'intersezione, allora non è chiuso rispetto al complemento, e viceversa
 
+## Decidibilità di predicati su linguaggi CF
 
+>[!info]- Ricorda
+>Qualunque linguaggio CF ha una grammatica in CNF che lo genera
 
+Data una grammatica $\mathcal G$ di tipo 2 è decidibile stabilire se $L(\mathcal G)=\emptyset$
 
+Assumiamo che $\mathcal G=\langle\Sigma,V_{N},P,S\rangle$ sia in CNF
 
+Per il pumping lemma, se esiste una stringa $z=uvwxy\in L(\mathcal G)$ con $|z|\geq2^{|V_N|}$, allora esiste una stringa $z'=uwy\in L(\mathcal G)$ con $|z'|\lt2^{|V_N|}$.
+Quindi, se il linguaggio non è vuoto, esiste una stringa in esso di lunghezza minore di $2^{|V_N|}$
 
+In una grammatica in CNF, ogni applicazione di una produzione o incrementa di uno la lunghezza della forma di frase (se la produzione è del tipo $A\to BC$) o sostituisce un terminale a un non temrinale (se è del tipo $A\to a$). Quindi, una stringa di lunghezza $2^k$ è generata da una derivazione di lunghezza $2^{k+1}-1$
 
+Per verificare se esiste una stringa di lunghezza minore di $2^{|V_N|}$ generabile, è sufficiente considerare tutte le derivazioni di lunghezza minore di $2^{|V_N|+1}-1$ che sono, al più:
+$$\sum_{k=1}^{2^{|V_N|+1}-2}|P|^k=\frac{|P|^{2^{|V_N|+1}-1}-1}{|P|-1}=O(2^{2^{|V_N|+1}})$$
