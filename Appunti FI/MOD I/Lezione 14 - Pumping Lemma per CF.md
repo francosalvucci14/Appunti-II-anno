@@ -82,7 +82,7 @@ Il linguaggio $L=\{a^nb^nc^n|n\geq1\}$ non è context free
 
 Del resto, $L_1=\{a^nb^nc^m|n,m\geq1\}$ e $L_2=\{a^mb^nc^n|n,m\geq1\}$ sono non contestuali
 
-Ma $L=L_1\cap L_2$, da cui deriva che la classe dei linguaggi CF non è chiusa rispetto all'intersezione
+Ma $L=L_1\cap L_2$ ,da cui deriva che la classe dei linguaggi CF non è chiusa rispetto all'intersezione
 
 ## Chiusura dei linguaggi CF: unione
 
@@ -90,3 +90,20 @@ Dati due linguaggi CF $L_1\subseteq\Sigma_1^\star$ e $L_2\subseteq\Sigma_2^\star
 
 Il linguaggio $L=L_1\cup L_2$ potrà allora essere generato dalla grammatica di tipo 2 $\mathcal G=\langle\Sigma_1\cup\Sigma_2,V_{N_1}\cup V_{N_2}\cup\{S\},P,S\rangle$, dove $P=P_1\cup P_2\cup\{S\to S_1|S_2\}$
 
+## Chiusura dei linguaggi CF: concatenazione
+
+Dati due linguaggi CF $L_1\subseteq\Sigma_1^\star$ e $L_2\subseteq\Sigma_2^\star$, siano $\mathcal G_1=\langle\Sigma_1,V_{N_1},P_1,S_1\rangle$ e $\mathcal G_2=\langle\Sigma_2^\star,V_{N_2},P_2,S_2\rangle$ due grammatiche di tipo 2 tali che $L_1=L(\mathcal G_1),L_2=L(\mathcal G_2)$
+
+Mostriamo che il linguaggio $L=L_1\circ L_2$ è generato dalla grammatica di tipo 2 definita come $\mathcal G=\langle\Sigma_1\cup\Sigma_2,V_{N_1}\cup V_{N_2}\cup\{S\},P,S\rangle$, dove $P=P_1\cup P_2\cup\{S\to S_1S_2\}$ 
+
+## Chiusura dei linguaggi CF: iterazione
+
+Dato un linguaggio CF $L\subseteq\Sigma^\star$,sia $\mathcal G=\langle\Sigma,V_{N},P,S\rangle$ e una grammatica di tipo 2 tale che $L=L(\mathcal G)$
+
+Il linguaggio $L'=L^\star$ è allora generato dalla grammatica di tipo 2 $\mathcal G'=\langle\Sigma,V_N\cup\{S'\},P',S'\rangle$, dove $P'=P'\cup\{S'\to SS'|\varepsilon\}$ 
+
+## Chiusura dei linguaggi CF: complemento
+
+La classe dei linguaggi CF non è chiusa rispetto al complemento
+
+Infatti, se così fosse, avremmo che dati due qualunque linguaggi CF $L_1,L_2$, il linguaggio $L=\overline{\overline{L_1}\cup\overline{L_2}}$ sarebbe CF anch'esso. Ma $L=L_1\cap L_2$ e quindi ne risulterebbe la chiusura rispetto all'intersezione, che non sussiste 
