@@ -163,4 +163,45 @@ public class RectanglePlus
 }
 ```
 
-Manca Using interface as type,evolving interface, default methods
+#### Utilizzo di un'interfaccia come tipo
+
+Quando si definisce una nuova interfaccia, si definisce un nuovo tipo di dati di riferimento. È possibile utilizzare i nomi di interfaccia ovunque sia possibile utilizzare qualsiasi altro nome di tipo di dati. Se definisci una variabile di riferimento il cui tipo è un'interfaccia, qualsiasi oggetto che le assegni deve essere un'istanza di una classe che implementa l'interfaccia.
+
+Ad esempio, ecco un metodo per trovare l'oggetto più grande in una coppia di oggetti, per qualsiasi oggetto istanziato da una classe che implementa Relatable:
+
+```java
+public Object findLargest(Object object1, Object object2) {
+   Relatable obj1 = (Relatable)object1;
+   Relatable obj2 = (Relatable)object2;
+   if ((obj1).isLargerThan(obj2) > 0)
+      return object1;
+   else 
+      return object2;
+}
+```
+
+Eseguendo il cast di object1 su un tipo Relatable, può richiamare il metodo isLargerThan.
+
+Se ti impegni a implementare Relatable in un'ampia varietà di classi, gli oggetti istanziati da una qualsiasi di queste classi possono essere confrontati con il metodo findLargest(), a condizione che entrambi gli oggetti siano della stessa classe. Allo stesso modo, possono essere tutti confrontati con i seguenti metodi:
+
+```java
+public Object findSmallest(Object object1, Object object2) {
+   Relatable obj1 = (Relatable)object1;
+   Relatable obj2 = (Relatable)object2;
+   if ((obj1).isLargerThan(obj2) < 0)
+      return object1;
+   else 
+      return object2;
+}
+
+public boolean isEqual(Object object1, Object object2) {
+   Relatable obj1 = (Relatable)object1;
+   Relatable obj2 = (Relatable)object2;
+   if ( (obj1).isLargerThan(obj2) == 0)
+      return true;
+   else 
+      return false;
+}
+```
+
+Questi metodi funzionano per qualsiasi oggetto "riconoscibile", indipendentemente dalla loro ereditarietà di classe. Quando implementano Relatable, possono essere sia del proprio tipo di classe (o superclasse) che di tipo Relatable. Ciò offre loro alcuni dei vantaggi dell'ereditarietà multipla, in cui possono avere un comportamento sia da una superclasse che da un'interfaccia.
