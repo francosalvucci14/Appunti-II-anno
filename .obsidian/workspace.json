@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 12.md",
+                "file": "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 12.md"
+                "file": "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 12.md",
+                "file": "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,21 +149,9 @@
                 "unlinkedCollapsed": true
               }
             }
-          },
-          {
-            "id": "385e7ef929320702",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Appunti LMP/MOD I/Lezione 12.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -184,11 +172,11 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "acd002c7f705cc3c",
+  "active": "521d0df32fec7e92",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Lezione 12.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
     "Appunti LMP/MOD I/Esercitazioni/Indice delle esercitazioni.md",
-    "Appunti LMP/MOD I/Lezione 12.md",
     "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti LMP/MOD I/Lezione 6.md",
     "Appunti LMP/MOD I/Lezione 5.md",

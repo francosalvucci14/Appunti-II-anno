@@ -199,7 +199,52 @@ La risposta è $\lceil log_2n\rceil$
 Dalla prorpietà di unicità degli alberi binomiali che lo costituiscono, ne deriva ce un heap binomiale di n elementi è formato dagli alberi binomiali $B_{i_0},B_{i_1},...,B_{i_h}$, dove $i_0,i_1,..,i_h$ corrispondomo alle posizione degli 1 nella rappresentazione in base 2 di n
 Ne consegue che in un heap binomiale con n nodi, vi sono al più $\lceil log_2n\rceil$ **alberi binomiali**, ciascuno con grado ed altezza $O(log(n))$
 
-va fatto fino a pag 68
 ##### Procedura ausiliaria
+
+Utile per ripristinare la prorpietà di unicità in un heap binomiale (ipotizziamo di scorrere la lista delle radici da sinistra verso destra, in ordine crescente rispetto all'indice degli alberi binomiali)
+
+![[appunti asd/mod i/immagini/Pasted image 20221207134234.png|center]]
+
+$T(n)$ = lineare nel numero di alberi binomiali in input
+(Ogni fusione diminuisce di uno il numero di alberi binomiali)
+
+Esempio -> [Esempio Ristruttura](http://www.mat.uniroma2.it/~guala/cap8_2022.pdf#page=59)
+
+
+###### Realizzazione (1/3)
+
+![[appunti asd/mod i/immagini/Pasted image 20221207134640.png|center|600]]
+
+###### Realizzazione (2/3)
+
+![[appunti asd/mod i/immagini/Pasted image 20221207134721.png|center|600]]
+
+###### Realizzazione (3/3)
+
+![[appunti asd/mod i/immagini/Pasted image 20221207134805.png|center|600]]
+
+Tutte le operazioni richiedono tempo $T(n)=O(log(n))$
+Durante l'esecuzione della procedura ristruttura esistono infatti al più tre $B_i$, per ogni $i\geq0$
+
+Esempio completo -> [Esempio Completo](http://www.mat.uniroma2.it/~guala/cap8_2022.pdf) da pag 63 a 67
+
+### Heap di Fibonacci (Fredman,Tarjan,1987)
+
+>[!important]- Definizione (Heap Binomiale Rilassato)
+>**Heap Binomiale Rilassato**: si ottiene da un heap binomiale rialssando la proprietà di **unicità** dei $B_i$ ed utilizzando un atteggiamento più "pigro" durante l'operazione insert (perchè ristrutturare subito la foresta quando potremmo farlo dopo?)
+
+>[!important]- Defizione (Heap di Fibonacci)
+>si ottiene da un heap binomiale rilassato indebolendo la proprietà di **struttura** dei $B_i$ che non sono più necessariamente alberi binomiali
+
+Analisi sofisticata: i tempi di esecuzione sono **ammortizzati** su sequenze di operazioni, cioè dividendo il **costo complessivo** della sequenza di operazioni per il numero di operazioni della sequenza
+
+### Conclusioni: tabella riassuntiva
+
+| Heap        | **FindMin** | **Insert**      | **Delete**            | **DelMin**            | **IncKey**            | *DecKey*       | **Merge**        |
+| ----------- | ----------- | ----------- | ----------------- | ----------------- | ----------------- | ------------ | ------------ |
+| d-Heap      | $O(1)$      | $O(log(n))$ | $O(log(n))$       | $O(log(n))$       | $O(log(n))$       | $O(log(n))$  | $O(n)$       |
+| Heap Binom. | $O(log(n))$ | $O(log(n))$ | $O(log(n))$       | $O(log(n))$       | $O(log(n))$       | $O(log(n))$  | $O(log(n))$  |
+| Heap Fibon. | $O(1)$      | $O(1)$      | $O(log(n))^\star$ | $O(log(n))^\star$ | $O(log(n))^\star$ | $O(1)^\star$ | $O(1)^\star$ |
+
 
 
