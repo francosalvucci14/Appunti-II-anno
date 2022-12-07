@@ -246,5 +246,24 @@ Analisi sofisticata: i tempi di esecuzione sono **ammortizzati** su sequenze di 
 | Heap Binom. | $O(log(n))$ | $O(log(n))$ | $O(log(n))$       | $O(log(n))$       | $O(log(n))$       | $O(log(n))$  | $O(log(n))$  |
 | Heap Fibon. | $O(1)$      | $O(1)$      | $O(log(n))^\star$ | $O(log(n))^\star$ | $O(log(n))^\star$ | $O(1)^\star$ | $O(1)^\star$ |
 
+L'analisi per d-Heap e Heap Binomiali è nel caso peggiore, mentre quella per gli Heap di Fibonacci è ammortizzata (per le operazioni **asteriscate**)
+
+----
+# Analisi Ammortizzata
+
+- Il **costo ammortizzato** di un'operazione è il costo "**medio**" rispetto a una sequenza _qualsiasi_ di operazioni
+- Esempio: se un'operazione ha costo ammortizzato costante e eseguo una sequenza (qualsiasi) di k operazioni è possibile che il costo di una singola operazione può non essere costante, ma l'intera sequenza costerà $O(k)$
+- Diverso dal **costo medio**: non c'è nessuna deistribuzione di probabilità (sulla sequenza da eseguire) e l'algoritmo è un algoritmo deterministico
+- Molto utile quando si vogliono **buone prestazioni sull'intera sequenza** e non garanzie sulla singola operazione
+	- esempio: progettare algoritmi veloci attraverso strutture dati efficienti
+
+>[!important]- Teorema
+>Usando un Heap di Fibonacci, una qualsiasi sequenza di _n_ insert, _d_ delete, _f_ findMin, _m_ deleteMin, $\Delta$ increaseKey, $\delta$ decreaseKey, $\micro$ merge prende tempo (nel caso peggiore): $$O(n+f+\delta+\micro+(d+m+\Delta)log(n))$$
+
+**Esercizio (di manipolazione)**
+Creare e unire 2 Heap Binomiali sui seguenti insiemi:
+- $A_1=\{3,5,7,21,2,4\}$
+- $A_2=\{1,11,6,22,13,12,23,31\}$
+
 
 
