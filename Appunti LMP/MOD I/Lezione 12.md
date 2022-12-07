@@ -299,3 +299,98 @@ I metodi chiamati dai costruttori dovrebbero generalmente essere dichiarati fina
 
 Nota che puoi anche dichiarare finale un'intera classe. Una classe dichiarata final non può essere sottoclasse. Ciò è particolarmente utile, ad esempio, quando si crea una classe immutabile come la classe String.
 
+# Generics
+
+>[!cite]- Osservazione
+>sono un modo per parametrizzare l'interzione con altre classi
+
+In qualsiasi progetto software non banale, i bug sono semplicemente un dato di fatto. Un'attenta pianificazione, programmazione e test possono aiutare a ridurre la loro pervasività, ma in qualche modo, da qualche parte, troveranno sempre un modo per insinuarsi nel tuo codice. Ciò diventa particolarmente evidente quando vengono introdotte nuove funzionalità e la tua base di codice cresce in dimensioni e complessità.
+
+Fortunatamente, alcuni bug sono più facili da rilevare rispetto ad altri. I bug in fase di compilazione, ad esempio, possono essere rilevati in anticipo; puoi usare i messaggi di errore del compilatore per capire qual è il problema e risolverlo, subito e lì. I bug di runtime, tuttavia, possono essere molto più problematici; non sempre emergono immediatamente e, quando lo fanno, potrebbe essere in un punto del programma molto lontano dalla vera causa del problema.
+
+I generics aggiungono stabilità al tuo codice rendendo più rilevabili i tuoi bug in fase di compilazione
+
+## Perchè usare i generics?
+
+In poche parole, i generici consentono ai tipi (classi e interfacce) di essere parametri durante la definizione di classi, interfacce e metodi. Proprio come i parametri formali più familiari utilizzati nelle dichiarazioni di metodo, i parametri di tipo forniscono un modo per riutilizzare lo stesso codice con input diversi. La differenza è che gli input ai parametri formali sono valori, mentre gli input ai parametri di tipo sono tipi.
+
+Il codice che utilizza i generici ha molti vantaggi rispetto al codice non generico:
+
+- Controlli di tipo più forti in fase di compilazione.Un compilatore Java applica un forte controllo del tipo al codice generico e genera errori se il codice viola l'indipendenza dai tipi. Correggere gli errori in fase di compilazione è più semplice che correggere gli errori di runtime, che possono essere difficili da trovare.
+
+- Eliminazione dei cast. Il seguente frammento di codice senza generici richiede il casting
+```java
+List list = new ArrayList();
+list.add("hello");
+String s = **(String)** list.get(0);
+```
+Quando viene riscritto per utilizzare i generici, il codice non richiede il casting:
+```java
+List<String> list = new ArrayList<String>();
+list.add("hello");
+String s = list.get(0);   // no cast
+```
+- Consentire ai programmatori di implementare algoritmi generici. Utilizzando i generici, i programmatori possono implementare algoritmi generici che funzionano su raccolte di tipi diversi, possono essere personalizzati e sono indipendenti dai tipi e più facili da leggere.
+
+## Tipi generici
+
+Un tipo generico è una classe o un'interfaccia generica parametrizzata sui tipi. La seguente classe Box verrà modificata per illustrare il concetto.
+
+### Una semplice classe Box
+
+Inizia esaminando una classe Box non generica che opera su oggetti di qualsiasi tipo. Deve solo fornire due metodi: set, che aggiunge un oggetto alla scatola, e get, che lo recupera:
+
+```java
+public class Box {
+    private Object object;
+
+    public void set(Object object) { this.object = object; }
+    public Object get() { return object; }
+}
+```
+
+Poiché i suoi metodi accettano o restituiscono un oggetto, sei libero di passare quello che vuoi, a condizione che non sia uno dei tipi primitivi. Non c'è modo di verificare, in fase di compilazione, come viene utilizzata la classe. Una parte del codice potrebbe inserire un numero intero nella casella e aspettarsi di estrarre numeri interi da esso, mentre un'altra parte del codice potrebbe passare erroneamente una stringa, provocando un errore di runtime.
+
+### Una versione generica della classe Box
+
+Una **classe generica** è definita con il seguente formato:
+```java
+class name<T1, T2, ..., Tn> { /* ... */ }
+```
+
+La sezione del parametro di tipo, delimitata da parentesi angolari (<>), segue il nome della classe. Specifica i parametri di tipo (chiamati anche variabili di tipo) T1, T2, ... e Tn.
+
+Per aggiornare la classe Box in modo che utilizzi generici, creare una dichiarazione di tipo generico modificando il codice ``"public class Box"`` in ``"public class Box<T>"``. Questo introduce la variabile di tipo, T, che può essere utilizzata ovunque all'interno della classe.
+
+Con questa modifica la classe Box diventa:
+```java
+/**
+ * Generic version of the Box class.
+ * @param <T> the type of the value being boxed
+ */
+public class Box<T> {
+    // T stands for "Type"
+    private T t;
+
+    public void set(T t) { this.t = t; }
+    public T get() { return t; }
+}
+```
+
+Come puoi vedere, tutte le occorrenze di Object vengono sostituite da T. Una variabile di tipo può essere qualsiasi tipo non primitivo specificato: qualsiasi tipo di classe, qualsiasi tipo di interfaccia, qualsiasi tipo di array o anche un'altra variabile di tipo.
+
+Questa stessa tecnica può essere applicata per creare interfacce generiche.
+
+#### Convenzioni per il nominativo dei tipi
+
+Per convenzione, i nomi dei parametri di tipo sono lettere maiuscole singole. Ciò è in netto contrasto con le convenzioni di denominazione delle variabili che già conosci, e con buone ragioni: senza questa convenzione, sarebbe difficile distinguere tra una variabile di tipo e un normale nome di classe o interfaccia.
+
+I nomi dei parametri di tipo più comunemente utilizzati sono:
+
+- E - Element (utilizzato ampiamente da Java Collections Framework)
+- K - Chiave
+- N - Numero
+- T - Tipo
+- V - Valore
+- S,U,V ecc. - 2°, 3°, 4° tipo
+
