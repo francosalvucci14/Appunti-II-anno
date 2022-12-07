@@ -151,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -172,17 +172,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "521d0df32fec7e92",
   "lastOpenFiles": [
-    "Appunti LMP/MOD I/Lezione 10.md",
-    "Appunti LMP/MOD I/Lezione 12.md",
     "Appunti LMP/MOD I/Lezione 5.md",
-    "Appunti LMP/MOD I/Lezione 6.md",
+    "Appunti LMP/MOD I/Lezione 4.md",
+    "Appunti LMP/MOD I/Lezione 3.md",
+    "Appunti LMP/MOD I/Lezione 2.md",
+    "Appunti LMP/MOD I/Lezione 10.md",
+    "Appunti LMP/MOD I/Lezione 11.md",
+    "Appunti LMP/MOD I/Lezione 9 - Metaprogrammazione.md",
     "Appunti LMP/MOD I/Lezione 8.md",
     "Appunti LMP/MOD I/Lezione 7.md",
-    "Appunti FI/MOD I/Lezione 6 - ASF.md",
-    "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
-    "Appunti FI/MOD I/Lezione 9 - Sempre su RE,RG e ASF.md",
-    "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md"
+    "Appunti LMP/MOD I/Lezione 6.md"
   ]
 }
