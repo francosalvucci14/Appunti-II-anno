@@ -269,7 +269,7 @@ Puoi usare tu stesso un costruttore di superclassi. La lezione di MountainBike a
 
 È possibile utilizzare i modificatori di accesso nella dichiarazione di un costruttore per controllare quali altre classi possono chiamare il costruttore.
 
-## Passare informazioni a un metodo oa un costruttore
+## Passare informazioni a un metodo o a un costruttore
 
 La dichiarazione per un metodo o un costruttore dichiara il numero e il tipo degli argomenti per quel metodo o costruttore. Ad esempio, il seguente è un metodo che calcola le rate mensili di un mutuo per la casa, in base all'importo del prestito, al tasso di interesse, alla durata del prestito (il numero di periodi) e al valore futuro del prestito:
 ```java

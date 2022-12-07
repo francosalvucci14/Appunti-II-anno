@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 12.md",
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 12.md"
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 12.md",
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,14 +144,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 12.md",
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -172,8 +172,10 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "521d0df32fec7e92",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Lezione 12.md",
+    "Appunti LMP/MOD I/Lezione 6.md",
     "Appunti LMP/MOD I/Lezione 5.md",
     "Appunti LMP/MOD I/Lezione 4.md",
     "Appunti LMP/MOD I/Lezione 3.md",
@@ -181,8 +183,6 @@
     "Appunti LMP/MOD I/Lezione 10.md",
     "Appunti LMP/MOD I/Lezione 11.md",
     "Appunti LMP/MOD I/Lezione 9 - Metaprogrammazione.md",
-    "Appunti LMP/MOD I/Lezione 8.md",
-    "Appunti LMP/MOD I/Lezione 7.md",
-    "Appunti LMP/MOD I/Lezione 6.md"
+    "Appunti LMP/MOD I/Lezione 8.md"
   ]
 }

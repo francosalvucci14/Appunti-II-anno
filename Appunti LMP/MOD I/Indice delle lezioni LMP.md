@@ -12,6 +12,7 @@
 - [[Lezione 9 - Metaprogrammazione]]
 - [[Lezione 10]]
 - [[Lezione 11]]
+- [[Lezione 12]]
 - 
 
 # Grafo delle lezioni
@@ -30,6 +31,7 @@ graph LR
 	J[Lezione 9]
 	K[Lezione 10]
 	L[Lezione 11]
+	M[Lezione 12]
 
 	style A fill:black, color:#fff
 	style B fill:black, color:#fff
@@ -43,12 +45,18 @@ graph LR
 	style J fill:black, color:#fff
 	style K fill:black, color:#fff
 	style L fill:black, color:#fff
+	style M fill:black, color:#fff
 	
-	A-->B & C & D & E & F & G & H & I & J & K & L
+	A-->B & C & D & E & F & G & H & I & J & K & L & M
 	E-->F
 	F-->E
 	G-->H
 	H-->G
 	K-->G
 	G-->K
+	M-->K
+	K-->M
+	M-->G
+	G-->M
 ```
+
