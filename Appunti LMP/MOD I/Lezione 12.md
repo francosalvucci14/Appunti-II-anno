@@ -492,4 +492,77 @@ Se l'argomento del tipo effettivo viene omesso, crei un tipo non elaborato di ``
 Box rawBox = new Box();
 ```
 
-Da finire parte Raw type e generics method
+Pertanto, Box è il tipo non elaborato del tipo generico ``Box<T>``. Tuttavia, una classe non generica o un tipo di interfaccia non è un tipo non elaborato.
+
+I tipi non elaborati vengono visualizzati nel codice legacy perché molte classi API (come le classi Collections) non erano generiche prima di JDK 5.0. Quando usi i tipi non elaborati, ottieni essenzialmente un comportamento pre-generico: una scatola ti dà oggetti. Per compatibilità con le versioni precedenti, è consentito assegnare un tipo con parametri al relativo tipo non elaborato:
+
+```java
+Box<String> stringBox = new Box<>();
+Box rawBox = stringBox;               // OK
+```
+
+Ma se assegni un tipo non elaborato a un tipo parametrizzato, ricevi un avviso:
+
+```java
+Box rawBox = new Box(); // rawBox è un tipo non elaborato di Box<T>
+Box<Integer> intBox = rawBox; // avviso: conversione non verificata
+```
+
+Ricevi anche un avviso se usi un tipo non elaborato per richiamare metodi generici definiti nel tipo generico corrispondente:
+
+```java
+Box<String> stringBox = new Box<>();
+Box rawBox = stringBox;
+rawBox.set(8);  // warning: unchecked invocation to set(T)
+```
+
+## Metodi generici
+
+I metodi generici sono metodi che introducono i propri parametri di tipo. È simile alla dichiarazione di un tipo generico, ma l'ambito del parametro di tipo è limitato al metodo in cui è dichiarato. Sono consentiti metodi generici statici e non statici, nonché costruttori di classi generiche.
+
+La sintassi per un metodo generico include un elenco di parametri di tipo, all'interno di parentesi angolari, che viene visualizzato prima del tipo restituito del metodo. Per i metodi generici statici, la sezione del parametro di tipo deve essere visualizzata prima del tipo restituito del metodo.
+
+La classe Util include un metodo generico, compare, che confronta due oggetti Pair:
+
+```java
+public class Util {
+    **public static <K, V> boolean compare(Pair<K, V> p1, Pair<K, V> p2)** {
+        return p1.getKey().equals(p2.getKey()) &&
+               p1.getValue().equals(p2.getValue());
+    }
+}
+
+public class Pair<K, V> {
+
+    private K key;
+    private V value;
+
+    public Pair(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public void setKey(K key) { this.key = key; }
+    public void setValue(V value) { this.value = value; }
+    public K getKey()   { return key; }
+    public V getValue() { return value; }
+}
+```
+
+La sintassi completa per invocare questo metodo sarebbe:
+
+```java
+Pair<Integer, String> p1 = new Pair<>(1, "apple");
+Pair<Integer, String> p2 = new Pair<>(2, "pear");
+boolean same = Util.**<Integer, String>**compare(p1, p2);
+```
+
+Il tipo è stato fornito in modo esplicito, come mostrato in grassetto. In genere, questo può essere omesso e il compilatore dedurrà il tipo necessario:
+
+```java
+Pair<Integer, String> p1 = new Pair<>(1, "apple");
+Pair<Integer, String> p2 = new Pair<>(2, "pear");
+boolean same = Util.compare(p1, p2);
+```
+
+Questa funzionalità, nota come inferenza del tipo, consente di invocare un metodo generico come metodo ordinario, senza specificare un tipo tra parentesi angolari
