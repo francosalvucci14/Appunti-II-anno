@@ -196,7 +196,7 @@ La risposta è $\lceil log_2n\rceil$
 
 ##### Proprietà topologiche
 
-Dalla prorpietà di unicità degli alberi binomiali che lo costituiscono, ne deriva ce un heap binomiale di n elementi è formato dagli alberi binomiali $B_{i_0},B_{i_1},...,B_{i_h}$, dove $i_0,i_1,..,i_h$ corrispondomo alle posizione degli 1 nella rappresentazione in base 2 di n
+Dalla prorpietà di unicità degli alberi binomiali che lo costituiscono, ne deriva che un heap binomiale di n elementi è formato dagli alberi binomiali $B_{i_0},B_{i_1},...,B_{i_h}$, dove $i_0,i_1,..,i_h$ corrispondomo alle posizione degli 1 nella rappresentazione in base 2 di n
 Ne consegue che in un heap binomiale con n nodi, vi sono al più $\lceil log_2n\rceil$ **alberi binomiali**, ciascuno con grado ed altezza $O(log(n))$
 
 ##### Procedura ausiliaria
