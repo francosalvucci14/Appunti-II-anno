@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 10.md"
+                "file": "Appunti LMP/MOD I/Lezione 12.md"
               }
             }
           },
@@ -128,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 10.md",
+                "file": "Appunti LMP/MOD I/Lezione 12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,14 +144,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 10.md",
+                "file": "Appunti LMP/MOD I/Lezione 12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -173,10 +172,10 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "3df4b984a2f03d74",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti LMP/MOD I/Lezione 12.md",
     "Appunti LMP/MOD I/Lezione 10.md",
+    "Appunti LMP/MOD I/Lezione 12.md",
     "Appunti LMP/MOD I/Lezione 5.md",
     "Appunti LMP/MOD I/Lezione 6.md",
     "Appunti LMP/MOD I/Lezione 8.md",
