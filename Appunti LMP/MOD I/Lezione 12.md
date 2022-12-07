@@ -381,7 +381,7 @@ Come puoi vedere, tutte le occorrenze di Object vengono sostituite da T. Una var
 
 Questa stessa tecnica può essere applicata per creare interfacce generiche.
 
-#### Convenzioni per il nominativo dei tipi
+### Convenzioni per il nominativo dei tipi
 
 Per convenzione, i nomi dei parametri di tipo sono lettere maiuscole singole. Ciò è in netto contrasto con le convenzioni di denominazione delle variabili che già conosci, e con buone ragioni: senza questa convenzione, sarebbe difficile distinguere tra una variabile di tipo e un normale nome di classe o interfaccia.
 
@@ -394,3 +394,102 @@ I nomi dei parametri di tipo più comunemente utilizzati sono:
 - V - Valore
 - S,U,V ecc. - 2°, 3°, 4° tipo
 
+### Invocazione e istanziazione di un tipo generico
+
+Per fare riferimento alla classe Box generica dall'interno del codice, è necessario eseguire un'invocazione di tipo generico, che sostituisce T con un valore concreto, ad esempio Integer:
+
+```java
+Box<Integer> integerBox;
+```
+
+Puoi pensare a un'invocazione di tipo generico come simile a un'invocazione di metodo ordinaria, ma invece di passare un argomento a un metodo, stai passando un argomento di tipo, Integer in questo caso, alla stessa classe Box.
+
+Come qualsiasi altra dichiarazione di variabile, questo codice in realtà non crea un nuovo oggetto Box. Dichiara semplicemente che integerBox manterrà un riferimento a un "Box of Integer", che è il modo in cui ``Box<Integer>`` viene letto.
+
+Una chiamata di un tipo generico è generalmente nota come tipo con parametri.
+
+Per istanziare questa classe, usa la parola chiave new, come al solito, ma inserisci ``<Integer>`` tra il nome della classe e la parentesi:
+
+```java
+Box<Integer> integerBox = new Box<Integer>();
+```
+
+### Il Diamante
+
+In Java SE 7 e versioni successive, è possibile sostituire gli argomenti di tipo richiesti per richiamare il costruttore di una classe generica con un set vuoto di argomenti di tipo (<>) purché il compilatore possa determinare o dedurre gli argomenti di tipo dal contesto . Questa coppia di parentesi angolari, <>, è chiamata informalmente il **diamante**. Ad esempio, puoi creare un'istanza di ``Box<Integer>`` con la seguente istruzione:
+
+```java
+Box<Integer> integerBox = new Box<>();
+```
+
+### Parametri di tipo multiplo
+
+Come accennato in precedenza, una classe generica può avere più parametri di tipo. Ad esempio, la classe generica OrderedPair, che implementa l'interfaccia generica Pair:
+
+```java
+public interface Pair<K, V> {
+    public K getKey();
+    public V getValue();
+}
+
+public class OrderedPair<K, V> implements Pair<K, V> {
+
+    private K key;
+    private V value;
+
+    public OrderedPair(K key, V value) {
+	this.key = key;
+	this.value = value;
+    }
+
+    public K getKey()	{ return key; }
+    public V getValue() { return value; }
+}
+```
+
+Le seguenti istruzioni creano due istanze della classe OrderedPair:
+
+```java
+Pair<String, Integer> p1 = new OrderedPair<String, Integer>("Even", 8);
+Pair<String, String>  p2 = new OrderedPair<String, String>("hello", "world");
+```
+
+Il codice, new OrderedPair<String, Integer>, istanzia K come String e V come Integer. Pertanto, i tipi di parametro del costruttore di OrderedPair sono rispettivamente String e Integer. A causa dell'autoboxing, è valido passare una stringa e un int alla classe.
+
+Come accennato in The Diamond, poiché un compilatore Java può dedurre i tipi K e V dalla dichiarazione OrderedPair<String, Integer>, queste istruzioni possono essere abbreviate utilizzando la notazione a diamante:
+
+```java
+OrderedPair<String, Integer> p1 = new OrderedPair**<>**("Even", 8);
+OrderedPair<String, String>  p2 = new OrderedPair**<>**("hello", "world");
+```
+
+### Tipi parametrizzati
+
+È inoltre possibile sostituire un parametro di tipo (ovvero K o V) con un tipo con parametri (ovvero ``List<String>``). Ad esempio, utilizzando l'esempio OrderedPair<K, V>:
+
+```java
+OrderedPair<String, **Box<Integer>**> p = new OrderedPair<>("primes", new Box<Integer>(...));
+```
+
+## Tipi Raw
+
+Un tipo non elaborato (Raw) è il nome di una classe o interfaccia generica senza argomenti di tipo. Ad esempio, data la generica classe Box:
+
+```java
+public class Box<T> {
+    public void set(T t) { /* ... */ }
+    // ...
+}
+```
+
+Per creare un tipo parametrico di ``Box<T>``, fornire un argomento di tipo effettivo per il parametro di tipo formale T:
+```java
+Box<Integer> intBox = new Box<>();
+```
+
+Se l'argomento del tipo effettivo viene omesso, crei un tipo non elaborato di ``Box<T>``:
+```java
+Box rawBox = new Box();
+```
+
+Da finire parte Raw type e generics method
