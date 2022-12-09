@@ -1,7 +1,8 @@
 
 # Ambiguità
 
-Una grammmatica CF $\mathcal G$ si dice **ambigua** se esiste una stringa $x\in L(\mathcal G)$ derivabile con due diversi alberi sintattici
+>[!important]- Definizione (Ambiguità)
+>Una grammatica CF $\mathcal G$ si dice **ambigua** se esiste una stringa $x\in L(\mathcal G)$ derivabile con due diversi alberi sintattici
 
 L'albero sintattico di una stringa corrisponde in qualche modo al significato della stringa stessa, quindi l'univocità di questo albero è importante per comprendere senza ambiguità tale significato
 
@@ -93,4 +94,25 @@ Se $\mathcal G'$ è ambigua, allora l'istanza $(A,B)$ di PCP ha soluzione
 - Allora, deve essere $w=x_{i_1}...x_{i_m}$. e la produzione iniziale della derivazione deve essere $S\to S_A$
 - Ma per definizione di $\mathcal G'$, l'altro modo di derivare z non può che prevedere come pirma produzione $S\to S_B$, per cui $w=y_{i_1}...y_{i_m}$
 - Ne deriva che $i_1,...,i_m$ è la soluzione dell'istanza $(A,B)$ di PCP
+
+**Esempio di riduzione**
+
+Come osservato, la sequenza 2,1,1,3 costituisce una soluzione dell'istanza di PCP
+
+Corrispondentemente, la stringa 101111110caab può essere ottenuta dalle due derivazioni
+$$\begin{align}&S\to A\to 10111Ab\to 101111Aab\to 1011111Aaab\to 10111111ocaab\\&S\to B\to 10Bb\to 10111Babb\to 10111111Baab\to 101111110caab\end{align}$$
+
+## Indecidibilità
+
+- La trasformazione definita deriva quindi, da una istanza di PCP, una grammatica CF che è ambigua se e solo se l'istanza ha soluzione
+- Se avessimo un algoritmo che determina se una grammatica CF è ambigua, allora potremmo determinare se una istanza di PCP ha soluzione
+- Ma un algoritmo ceh determina se una istanza di PCP ha soluzione non esiste
+- Quindi, non esiste un algoritmo che determina se una grammatica CF è ambigua
+
+## Esistenza di grammatica equivalente non ambigua
+
+>[!important]- Definizione
+>Un linguaggio di tipo 2 si dice **inerentemente ambiguo** se tutte le grammatiche che lo generano sono ambigue
+
+Anche il problema dell'inerente ambiguità di un linguaggio è indecidibile
 
