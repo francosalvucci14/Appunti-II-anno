@@ -19,3 +19,11 @@ Se si pone $a=3$, nel primo albero avremo che la stringa genererà il numero 12,
 
 ## Eliminazione dell'ambiguità
 
+- Introduzione di parentesi
+- Precedenza tra operatori
+
+### Parentesi
+$$E\to (E+E)|(E-E)|(E*E)|(E/E)|(E)|a$$
+I due diversi alberi di derivazione che davano origine alla stessa stringa, danno ora origine alle due stringhe
+$$\begin{align}&(a+(a*a))\\&((a+a)*a)\end{align}$$
+
