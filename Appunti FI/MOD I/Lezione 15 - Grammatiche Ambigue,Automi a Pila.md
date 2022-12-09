@@ -85,4 +85,12 @@ Se l'istanza $(A,B)$ di PCP ha soluzione,allora $\mathcal G'$ è ambigua
 - La stringa $\sigma$ appartiene a $L'$ e ammette due distinti alberi sintattici, corrispondenti (il primo) alla derivazione: $$S\implies S_A\implies x_{i_1}S_Aa_{i_1}\implies x_{i_1}x_{i_2}S_Aa_{i_2}a_{i_1}\xRightarrow[]{\star}x_{i_1}...x_{i_m}a_{i_m}...a_{i_1},$$ e il secondo alla derivazione : $$S\implies S_B\implies y_{i_1}S_Ba_{i_1}\xRightarrow[]{\star} y_{i_1}...y_{i_m}a_{i_m}...a_{i_1}=x_{i_1}...x_{i_m}a_{i_m}...a_{i_1}$$
 - $\mathcal G'$ risulta dunque ambigua
 
+Se $\mathcal G'$ è ambigua, allora l'istanza $(A,B)$ di PCP ha soluzione
+
+- Sia z una stringa di $L'$ che ammette due distinti alberi sintattici
+- Per definizione di $L'$, deve essere $z=wa_{i_m}...a_{i_1}$ per un qualche $m\geq1$
+- Inoltre, per definzione di $L'$, z deve appartenenre ad almeno uno tra $L_A$ e $L_B$: assumiamo, senza perdere generalità, che $z\in L_A$
+- Allora, deve essere $w=x_{i_1}...x_{i_m}$. e la produzione iniziale della derivazione deve essere $S\to S_A$
+- Ma per definizione di $\mathcal G'$, l'altro modo di derivare z non può che prevedere come pirma produzione $S\to S_B$, per cui $w=y_{i_1}...y_{i_m}$
+- Ne deriva che $i_1,...,i_m$ è la soluzione dell'istanza $(A,B)$ di PCP
 
