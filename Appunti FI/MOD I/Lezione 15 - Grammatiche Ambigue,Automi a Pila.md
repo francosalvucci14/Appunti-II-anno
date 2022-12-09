@@ -2,7 +2,7 @@
 # Ambiguità
 
 Una grammmatica CF $\mathcal G$ si dice **ambigua** se esiste una stringa $x\in L(\mathcal G)$ derivabile con due diversi alberi sintattici
-
+[Ciao](obsidian://open?vault=Appunti-II-anno&file=Appunti%20FI%2FMOD%20I%2FLezione%2014%20-%20Pumping%20Lemma%20per%20CF)
 L'albero sintattico di una stringa corrisponde in qualche modo al significato della stringa stessa, quindi l'univocità di questo albero è importante per comprendere senza ambiguità tale significato
 
 **esempio**
