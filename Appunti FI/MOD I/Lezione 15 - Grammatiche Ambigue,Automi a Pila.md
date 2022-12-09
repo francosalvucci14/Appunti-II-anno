@@ -27,3 +27,16 @@ $$E\to (E+E)|(E-E)|(E*E)|(E/E)|(E)|a$$
 I due diversi alberi di derivazione che davano origine alla stessa stringa, danno ora origine alle due stringhe
 $$\begin{align}&(a+(a*a))\\&((a+a)*a)\end{align}$$
 
+
+### Precedenza
+
+$$\begin{align}&E\to E+T|E-T|T\\&T\to T*F|T/F|F\\&F\to (E)|a\end{align}$$
+La grammatica rappresenta nella sua struttura le relazioni di precedenza definite tra gli operatori (nell'ordine non decrescente $+,-,*,/$) e in tal caso consente di utilizzare le parentesi soltanto quando strettamente necessario
+
+## Riconoscimento
+
+Data una grammatica $\mathcal G$ non contestuale, $\mathcal G$ è ambigua?
+
+Il problema è **indicidibile** nel caso delle CFG: non esiste quindi nessun algoritmo di decisione che, data una CFG, restituisca T se la grammatica è ambigua e F altrimenti
+
+
