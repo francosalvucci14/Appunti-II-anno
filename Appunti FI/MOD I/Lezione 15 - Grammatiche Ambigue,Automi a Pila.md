@@ -58,5 +58,31 @@ Nel nostro caso:
 	- data una istanza del problema, composta da:
 		- un alfabeto $\Sigma$
 		- due sequenze di k parole $X=x_1,...,x_k$ e $Y=y_1,...,y_k$ costruite su $\Sigma$
-	- ci si chiede se esiste una sequenza di $m\geq1$ interi $i_1,i_2,...,i_m$ in $[1,..,k]$ tale che risulti $$x_{i_1},...,x_{i_m}=y_{i_1},...,y_{i_m}$$
+	- ci si chiede se esiste una sequenza di $m\geq1$ interi $i_1,i_2,...,i_m\in [1,..,k]$ tale che risulti $$x_{i_1},...,x_{i_m}=y_{i_1},...,y_{i_m}$$
+**Esempio di PCP**
+
+- Consideriamo le due sequenze 1,10111,10 e 111,10,0 costruite sull'alfabeto $\{0,1\}$
+- Si può verificare che la sequenza di interi 2,1,1,3 costitusice una soluzione alla istanza di PCP considerata
+- Infatti, si ottiene in un caso la sequenza $$10111*1*1*10 = 101111110$$ e nell'altro la stessa sequenza $$10*111*111*0 = 101111110$$
+PCP è indecidibile (dimostrazione per riduzione dal **Problema della fermata**)
+
+- Sia $A=x_1,..,x_k$ e $B=y_1,..,y_k$ una istanza (generica) di PCP su un alfabeto $\Sigma$
+- Consideriamo:
+	- l'alfabeto $\Sigma\cup\{a_1,a_2,...,a_k\}$, con $a_i\not\in\Sigma,i=1,...,k$
+	- Il linguaggio $L'=L_A\cup L_B$ definito su $\Sigma$, in cui:
+		- $L_A=\{x_{i_1}x_{i_2}...x_{i_m}a_{i_{m-1}}...a_{i_1}|m\geq1\}$
+		- $L_B=\{y_{i_1}y_{i_2}...y_{i_m}a_{i_{m-1}}...a_{i_1}|m\geq1\}$
+	- La relativa grammatica CF: $$\mathcal G'=\langle\{S,S_A,S_B\},\Sigma\cup\{a_1,a_2,...,a_k\},P,S\rangle$$, con produzioni P, per $i=1,...,k$:$$\begin{align}&S\to S_A|S_B\\&S_A\to x_1S_Aa_1|...|x_kS_Aa_k|x_1a_1|....|x_ka_k\\&S_B\to y_1S_Ba_1|...|y_kS_Ba_k|y_1a_1|...|y_ka_k\end{align}$$
+**Esempio di riduzione**
+
+Data l'istanza $([1,10111,10],[111,10,0])$, la corrispondente grammatica sarà data da:
+$$\begin{align}&S\to A|B\\&A\to 1Aa|10111Ab|10Ac|1a|10111b|10c\\&B\to 111Ba|10Bb|0Bc|111a|10b|0c\end{align}$$
+#### Equivalenza tra istanze
+
+Se l'istanza $(A,B)$ di PCP ha soluzione,allora $\mathcal G'$ è ambigua
+
+- Sia $i_1,...,i_m$ una soluzione di PCP, tale che quindi $x_{i_1}...x_{i_m}a_{i_m}...a_{i_1}=y_{i_1}...y_{i_m}a_{i_m}...a_{i_1}=\sigma$
+- La stringa $\sigma$ appartiene a $L'$ e ammette due distinti alberi sintattici, corrispondenti (il primo) alla derivazione: $$S\implies S_A\implies x_{i_1}S_Aa_{i_1}\implies x_{i_1}x_{i_2}S_Aa_{i_2}a_{i_1}\xRightarrow[]{\star}x_{i_1}...x_{i_m}a_{i_m}...a_{i_1},$$ e il secondo alla derivazione : $$S\implies S_B\implies y_{i_1}S_Ba_{i_1}\xRightarrow[]{\star} y_{i_1}...y_{i_m}a_{i_m}...a_{i_1}=x_{i_1}...x_{i_m}a_{i_m}...a_{i_1}$$
+- $\mathcal G'$ risulta dunque ambigua
+
 
