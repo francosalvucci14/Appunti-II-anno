@@ -231,7 +231,7 @@ Esempio completo -> [Esempio Completo](http://www.mat.uniroma2.it/~guala/cap8_20
 ### Heap di Fibonacci (Fredman,Tarjan,1987)
 
 >[!important]- Definizione (Heap Binomiale Rilassato)
->**Heap Binomiale Rilassato**: si ottiene da un heap binomiale rialssando la proprietà di **unicità** dei $B_i$ ed utilizzando un atteggiamento più "pigro" durante l'operazione insert (perchè ristrutturare subito la foresta quando potremmo farlo dopo?)
+>**Heap Binomiale Rilassato**: si ottiene da un heap binomiale rilassando la proprietà di **unicità** dei $B_i$ ed utilizzando un atteggiamento più "pigro" durante l'operazione insert (perchè ristrutturare subito la foresta quando potremmo farlo dopo?)
 
 >[!important]- Defizione (Heap di Fibonacci)
 >si ottiene da un heap binomiale rilassato indebolendo la proprietà di **struttura** dei $B_i$ che non sono più necessariamente alberi binomiali
