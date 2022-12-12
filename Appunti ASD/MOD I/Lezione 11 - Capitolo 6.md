@@ -89,7 +89,7 @@ Dopo l'inserimento non è più un albero AVL
 di **quanto** e **quali** fattori di bilanciamento **cambiano** a fronte di un inserimento/cancellazione?
 
 **Se parto da un albero AVL** e inserisco/cancello un nodo
-- (quali) cambiano solo ifattori di bilanciamento dei nodi lungo il cammino radice-nodo inserito/cancellato
+- (quali) cambiano solo i fattori di bilanciamento dei nodi lungo il cammino radice-nodo inserito/cancellato
 - (quanto) i fattori di bilanciamento cambiano di +/- 1
 
 ## Implementazione delle operazioni

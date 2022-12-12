@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
+                "file": "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md"
+                "file": "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md"
               }
             }
           },
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
+                "file": "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
+                "file": "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -197,17 +197,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "81ee52db7af06aae",
   "lastOpenFiles": [
-    "Appunti FI/MOD I/Indice delle lezioni FI.md",
-    "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
-    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
+    "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
+    "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
+    "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 3.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 2.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 1.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 0.md"
+    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
+    "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md"
   ]
 }
