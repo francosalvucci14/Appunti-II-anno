@@ -116,3 +116,6 @@ $$\begin{align}&S\to A\to 10111Ab\to 101111Aab\to 1011111Aaab\to 10111111ocaab\\
 
 Anche il problema dell'inerente ambiguità di un linguaggio è indecidibile
 
+# Automi a Pila
+
+

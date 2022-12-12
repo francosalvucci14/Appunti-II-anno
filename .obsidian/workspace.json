@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
+                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md"
+                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md"
               }
             }
           },
@@ -152,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
+                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
+                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -199,6 +198,7 @@
   },
   "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
     "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
@@ -207,7 +207,6 @@
     "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md"
+    "Appunti ASD/Algoritmi/Algoritmi.md"
   ]
 }
