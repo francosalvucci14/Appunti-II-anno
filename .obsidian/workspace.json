@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
+                "file": "Appunti LMP/MOD I/Lezione 12.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6c09d4a92702d243",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti LMP/MOD I/Lezione 13.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md"
+                "file": "Appunti LMP/MOD I/Lezione 13.md"
               }
             }
           },
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
+                "file": "Appunti LMP/MOD I/Lezione 13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
+                "file": "Appunti LMP/MOD I/Lezione 13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,17 +173,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "145ca76d1da962e1",
+  "active": "6c09d4a92702d243",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Lezione 12.md",
+    "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
+    "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
     "Appunti BSD/MOD I/Lezione 1.md",
-    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
-    "Appunti ASD/MOD I/Indice degli appunti ASD.md",
-    "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
-    "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md"
+    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md"
   ]
 }
