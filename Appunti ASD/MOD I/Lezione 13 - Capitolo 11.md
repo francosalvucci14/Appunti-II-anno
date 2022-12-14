@@ -205,5 +205,12 @@ Due soluzioni:
 ![[appunti asd/mod i/immagini/Pasted image 20221214144118.png|center|650]]
 
 
+**Kevin Bacon Number**: Distanza dal nodo Kevin Bacon
 
+![[appunti asd/mod i/immagini/Pasted image 20221214144246.png|center]]
 
+![[appunti asd/mod i/immagini/Pasted image 20221214144448.png|center]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214144515.png|center]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214144649.png|center]]
