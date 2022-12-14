@@ -160,3 +160,33 @@ $$n-1\leq m\leq n(n-1)/2$$
 
 Se G è connesso: $$m=\Omega(n),m=O(n^2)$$
 **Nota bene**: Se un grafo ha $m\geq n-1$ archi, non è detto che sia connesso. Quanti archi deve avere un grafo per essere **sicuramente connesso?**
+
+
+### ... Tornando al problema dei 7 ponti
+
+>[!important]- Definizione (Ciclo Euleriano)
+Dato un grafo G, un **ciclo** (rispettivamente un **cammino**) **Euleriano** è un ciclo (rispettivamente un **cammino** non chiuso) di G che passa per tutti gli archi di G una e una sola volta
+
+>[!important]- Teorema (di Eulero)
+>Un grafo G ammette un **ciclo Euleriano** se e solo se tutti i nodi hanno grado pari. Inoltre, ammette un **cammino Euleriano** se e solo se tutti i nodi hanno grado pari tranne due (i due nodi di grado dispari sono gli estremi del cammino)
+
+![[appunti asd/mod i/immagini/Pasted image 20221214143312.png|center]]
+
+## Perchè i grafi?
+
+I grafi costituscono un linguaggio potente per descrivere oggetti e problemi algoritmici
+
+**Esempio (Reti stradali e di trasporto)**
+
+![[appunti asd/mod i/immagini/Pasted image 20221214143455.png|center|650]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214143535.png|center|650]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214143609.png|center|650]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214143639.png|center|650]]
+
+**Problema**: trovare il cammino minimo fra due nodi
+
+![[appunti asd/mod i/immagini/Pasted image 20221214143741.png|center|650]]
+
