@@ -190,3 +190,20 @@ I grafi costituscono un linguaggio potente per descrivere oggetti e problemi alg
 
 ![[appunti asd/mod i/immagini/Pasted image 20221214143741.png|center|650]]
 
+Due soluzioni:
+- Pesi archi: lunghezze $\implies$ Strada più breve
+- Pesi archi: tempo percorrenza $\implies$ Strada più veloce
+
+**Esempio (Reti sociali)**
+
+![[appunti asd/mod i/immagini/Pasted image 20221214143923.png|center|650]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214143951.png|center|650]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214144048.png|center|650]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214144118.png|center|650]]
+
+
+
+
