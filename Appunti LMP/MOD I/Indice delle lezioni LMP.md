@@ -13,6 +13,7 @@
 - [[Lezione 10]]
 - [[Lezione 11]]
 - [[Lezione 12]]
+- [[Lezione 13]]
 - 
 
 # Grafo delle lezioni
@@ -32,6 +33,7 @@ graph LR
 	K[Lezione 10]
 	L[Lezione 11]
 	M[Lezione 12]
+	N[Lezione 13]
 
 	style A fill:black, color:#fff
 	style B fill:black, color:#fff
@@ -46,8 +48,9 @@ graph LR
 	style K fill:black, color:#fff
 	style L fill:black, color:#fff
 	style M fill:black, color:#fff
+	style N fill:black, color:#fff
 	
-	A-->B & C & D & E & F & G & H & I & J & K & L & M
+	A-->B & C & D & E & F & G & H & I & J & K & L & M & N
 	E-->F
 	F-->E
 	G-->H
