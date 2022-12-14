@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
+                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md"
+                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
+                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,14 +132,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
+                "file": "Appunti BSD/MOD I/Indice delle lezioni BSD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -162,10 +162,10 @@
   },
   "active": "145ca76d1da962e1",
   "lastOpenFiles": [
+    "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
-    "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
     "Appunti BSD/MOD I/Lezione 1.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",

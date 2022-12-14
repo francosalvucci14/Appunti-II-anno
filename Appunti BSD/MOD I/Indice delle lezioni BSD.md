@@ -5,6 +5,8 @@
 - [[Lezione 4 - Vincoli d'integrità]]
 - [[Lezione 5 - Modello Concettuale, Modello ER]]
 - [[Lezione 6 - Progettazione logica]]
+- [[Lezione 7 - Metodologie di progettazione della base di dati]]
+- [[Lezione 8 - Algebra relazionale,query,visite]]
 - 
 
 # Grafo delle lezioni
@@ -18,6 +20,8 @@ graph LR
 	E[Lezione 4 - Vincoli di integrità]
 	F[Lezione 5]
 	G[Lezione 6]
+	H[Lezione 7]
+	I[Lezione 8]
 	
 	linkStyle default stroke-width:2px,fill:none,stroke:grey,color:red
 
@@ -28,7 +32,9 @@ graph LR
 	style E fill:black, color:#fff
 	style F fill:black, color:#fff
 	style G fill:black, color:#fff
-	A-->B & C & D & E & F & G
+	style H fill:black, color:#fff
+	style I fill:black, color:#fff
+	A-->B & C & D & E & F & G & H & I
 	
 ```
 
