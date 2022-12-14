@@ -103,3 +103,60 @@ In un grafo **orientato**, il cammino deve rispettare il verso di orientamento d
 
 ![[appunti asd/mod i/immagini/Pasted image 20221214125541.png|center|600]]
 
+Altri due grafi di diametro 2
+
+![[appunti asd/mod i/immagini/Pasted image 20221214140325.png|center]]
+
+- **Grafo pesato**: è un grafo **G=(V,E,w)** in cui ad ogni arco viene associato un valore definito dalla funzione peso w (definita su un opportuno insieme, di solito i reali)
+
+![[appunti asd/mod i/immagini/Pasted image 20221214140535.png|center]]
+![[appunti asd/mod i/immagini/Pasted image 20221214140551.png|center]]
+
+### Quanti archi può avere un grafo di n nodi?
+
+Due grafi molto particolari
+
+- **Grafo totalmente sconnesso**: è un grafo G=(V,E) tale che $V\neq\emptyset$ ed $E=\emptyset$ ![[appunti asd/mod i/immagini/Pasted image 20221214140800.png|center]]
+- **Grafo completo**: per ogni coppia di nodi esiste un arco che li congiunge. ![[appunti asd/mod i/immagini/Pasted image 20221214140900.png|center]]
+Il grafo completo con n vertici verrà indicato con $K_n$
+
+Vale, infatti:
+$$m=|E|=n(n-1)/2$$
+Il grafo completo in esempio ha $K_n=K_5$
+
+Per rispondere alla domanda quindi:
+- un grafo (senza cappi o archi paralleli) può avere un numero di archi m compreso tra $0$ e $n(n-1)/2=\Theta(n^2)$
+
+### Come è fatto un grafo connesso con il minimo numero di archi?
+
+_Def_
+
+Un albero è un grafo connesso e aciclico
+
+![[appunti asd/mod i/immagini/Pasted image 20221214141251.png|center|600]]
+
+>[!important]- Teorema
+>Sia **T=(V,E)** un albero, allora $|E|=|V|-1$
+
+**Dim (per induzione su |V|)**
+
+**Caso base**: $|V|=1\implies T=\text{un solo nodo}\implies |E|=0=|V|-1$
+**Caso induttivo**: $|V|\gt1$. 
+Sia n il numero di nodi di T. 
+Poichè T è connesso e aciclico ha almeno una foglia (nodo con grado 1)
+	**Oss**: Se tutti i nodi avessero grado almeno 2 ci sarebbe un ciclo (si vede perchè?)
+Rimuovendo tale foglia si ottiene un grafo connesso e aciclico con n-1 nodi che per **ipotesi induttiva** ha n-2 archi
+Quindi, T ha n-1 archi
+![[appunti asd/mod i/immagini/Pasted image 20221214141849.png|center]]
+
+$\square$ 
+
+**Esercizio**
+
+![[appunti asd/mod i/immagini/Pasted image 20221214142026.png|center]]
+
+Per un grafo connesso con n nodi e m archi vale :
+$$n-1\leq m\leq n(n-1)/2$$
+
+Se G è connesso: $$m=\Omega(n),m=O(n^2)$$
+**Nota bene**: Se un grafo ha $m\geq n-1$ archi, non è detto che sia connesso. Quanti archi deve avere un grafo per essere **sicuramente connesso?**
