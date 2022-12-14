@@ -176,7 +176,9 @@ Dato un grafo G, un **ciclo** (rispettivamente un **cammino**) **Euleriano** è 
 
 I grafi costituscono un linguaggio potente per descrivere oggetti e problemi algoritmici
 
-**Esempio (Reti stradali e di trasporto)**
+### Vari esempi
+
+#### Reti stradali e di trasporto
 
 ![[appunti asd/mod i/immagini/Pasted image 20221214143455.png|center|650]]
 
@@ -194,7 +196,7 @@ Due soluzioni:
 - Pesi archi: lunghezze $\implies$ Strada più breve
 - Pesi archi: tempo percorrenza $\implies$ Strada più veloce
 
-**Esempio (Reti sociali)**
+#### Reti sociali
 
 ![[appunti asd/mod i/immagini/Pasted image 20221214143923.png|center|650]]
 
@@ -214,3 +216,66 @@ Due soluzioni:
 ![[appunti asd/mod i/immagini/Pasted image 20221214144515.png|center]]
 
 ![[appunti asd/mod i/immagini/Pasted image 20221214144649.png|center]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214144846.png|center]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214144914.png|center]]
+
+>[!quote]- Cit.
+>Studia Algoritmi dicevano, è una materia seria dicevano...
+
+
+#### Reti "delle dipendenze"
+
+![[appunti asd/mod i/immagini/Pasted image 20221214145117.png|center]]
+
+**Nodi**: compiti da svolgere
+**Arco (u,v)**: u deve essere eseguito prima di v
+
+**Esempi**:
+- Esami e propedeucità
+- Moduli software di un progetto e dipendenze
+- ...
+
+**Problema**: trovare un ordine in cuie seguire i compiti in modo da rispettare le dipendenze
+
+![[appunti asd/mod i/immagini/Pasted image 20221214145402.png|center]]
+
+Un altro esempio
+
+![[appunti asd/mod i/immagini/Pasted image 20221214145602.png|center|300]]
+
+**Nodi**: compiti da svolgere
+**Arco (u,v)**: u e v _non_ possono essere svolti insieme
+
+Esempi:
+- Esami e vincoli
+- certi esami non possono essere svolti lo stesso giorno (stesso anno, usano la stessa aula, ecc...)
+
+**Problemi**:
+
+1. Trovare max numero di compiti eseguibili
+2. Trovare min numero di "gruppi" di compiti, t.c. compiti dello stesso gruppo possono essere eseguiti insieme
+
+Nello specifico vale che:
+- (1) = **Massimo insieme indipendente**: Trovare l'insieme X di nodi di cardinalità massima tale che per ogni u,v in X, u e v non sono **adiacenti**
+- (2) = **Colorazione di un grafo**: Colorare i nodi del grafo risultante usando il minimo numero $\chi$ di colori in modo che due nodi **adiacenti** non abbiano lo stesso colore
+
+$\chi$ : numero cromatico 
+
+**Esempio**
+
+![[appunti asd/mod i/immagini/Pasted image 20221214150439.png|center|600]]
+
+Vale che : $\chi(G)=3$ 
+
+Possiamo usare 2 colori? ..no: ogni ciclo da tre (triangolo) ha bisogno di almeno tre colori
+
+"Per questa parte rimando agli appunti di Matematica Discreta, parte sui Grafi"
+
+**Esercizio**
+
+![[appunti asd/mod i/immagini/Pasted image 20221214150641.png|center]]
+
+
+
