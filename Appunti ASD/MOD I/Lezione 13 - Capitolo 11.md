@@ -30,7 +30,76 @@ Grafo di Eulero associato alla città di Königsberg:
 
 **Nota**: è più propriamente detto **multigrafo**, in quanto contiene **archi paralleli**
 
-![[appunti asd/mod i/immagini/Pasted image 20221214123400.png|center]]
+![[appunti asd/mod i/immagini/Pasted image 20221214123400.png|center|600]]
 
-![[appunti asd/mod i/immagini/Pasted image 20221214123443.png|center]]
+![[appunti asd/mod i/immagini/Pasted image 20221214123443.png|center|600]]
+
+### Definizione di grafo diretto
+
+Un **grafo diretto D=(V,A)** consiste in:
+- Un insieme **V** di **vertici** (o **nodi**)
+- Un insieme **A** di coppie **ordinate** di vertici, detti **archi diretti**
+
+![[appunti asd/mod i/immagini/Pasted image 20221214123706.png|center|600]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214123758.png|center|600]]
+
+### Terminologia
+
+- **G=(V,E)** grafo non diretto
+- **n** = |V| numero di vertici
+- **m** = |E| numero di archi
+- **u** ed **v** sono **adiacenti**
+- **(u,v)** è **incidente** a **u** e a **v** (detti **estremi**)
+- $\delta(u)$: **grado** di **u**: numero archi incidenti a **u**
+- **grado** di **G** = $max_{v\in V}\{\delta(v)\}$
+
+![[appunti asd/mod i/immagini/Pasted image 20221214124123.png|center]]
+
+### Che relazione c'è fra grado dei nodi e numero di archi?
+
+#### Una semplice proprietà (grafi non diretti)
+
+Cosa ottengo se sommo i gradi di ogni nodo?
+
+![[appunti asd/mod i/immagini/Pasted image 20221214124257.png|center|400]]
+
+>[!important]- Formula
+>$$\sum_{v\in V}\delta(v)=2m$$
+
+In ogni grafo il numero di nodi di grado dispari è pari
+
+#### Una semplice proprietà (grafi diretti)
+
+**Domanda (sui grafi diretti)**
+Cosa ottengo se sommo il grado **uscente/entrante** di tutti i nodi?
+
+![[appunti asd/mod i/immagini/Pasted image 20221214124551.png|center|400]]
+
+>[!important]- Formula
+>$$\sum_{v\in V}\delta_{out}(v)=\sum_{v\in V}\delta_{in}(v)=m$$
+
+
+### Altra Terminologia
+
+- **_cammino_**: sequenza di nodi connessi da archi
+- **_lunghezza_** di un cammino: numero di archi del cammino
+- **_distanza_**: la lunghezza del più corto cammino tra due vertici si dice **_distanza_** tra due vertici
+
+![[appunti asd/mod i/immagini/Pasted image 20221214124943.png|center]]
+
+**Esempio**:
+distanza fra L e A: 4 (il cammino in questione è L-I-E-B-A)
+
+In un grafo **orientato**, il cammino deve rispettare il verso di orientamento degli archi
+
+- G è **connesso** se esiste un cammino per ogni coppia di vertici
+- **ciclo**: un cammino chiuso, ovvero un cammino da un vertice a se stesso
+- **diametro**: massima distanza fra due nodi_
+	- $max_{u.v\in V}dist(u,v)$
+	- il diametro di un grafo non connesso è $\infty$
+
+![[appunti asd/mod i/immagini/Pasted image 20221214125445.png|center]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214125541.png|center|600]]
 
