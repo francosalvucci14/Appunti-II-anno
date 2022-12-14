@@ -30,4 +30,7 @@ Grafo di Eulero associato alla città di Königsberg:
 
 **Nota**: è più propriamente detto **multigrafo**, in quanto contiene **archi paralleli**
 
+![[appunti asd/mod i/immagini/Pasted image 20221214123400.png|center]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221214123443.png|center]]
 
