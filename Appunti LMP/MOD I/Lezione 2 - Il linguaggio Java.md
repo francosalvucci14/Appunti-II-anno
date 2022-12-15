@@ -1,7 +1,7 @@
 Indice:
-- [[Appunti LMP/MOD I/Lezione 2#Il linguaggio Java |Il linguaggio java]]
-- [[Appunti LMP/MOD I/Lezione 2#La piattaforma Java|La piattaforma Java]]
-- [[Appunti LMP/MOD I/Lezione 2#Cosa posso fare con la tecnologia Java|Cosa posso fare con la tecnologia Java?]]
+- [[Lezione 2 - Il linguaggio Java#Il linguaggio Java |Il linguaggio java]]
+- [[Lezione 2 - Il linguaggio Java#La piattaforma Java|La piattaforma Java]]
+- [[Lezione 2 - Il linguaggio Java#Cosa posso fare con la tecnologia Java|Cosa posso fare con la tecnologia Java?]]
 
 
 # Il linguaggio Java

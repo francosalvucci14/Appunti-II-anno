@@ -1,5 +1,5 @@
 
-# Ritornando alla [[Lezione 6]]
+# Ritornando alla [[Lezione 6 - Classi]]
 
 ## Classi nidificate
 Il linguaggio di programmazione Java consente di definire una classe all'interno di un'altra classe. Tale classe è chiamata classe nidificata ed è illustrata qui:

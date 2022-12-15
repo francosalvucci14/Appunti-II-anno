@@ -1,4 +1,4 @@
-# Ritornando a [[Lezione 10#Interfacce ed ereditarietà|Lezione 10 - Interfacce]]
+# Ritornando a [[Lezione 10 - Interfacce Parte 1#Interfacce ed ereditarietà|Lezione 10 - Interfacce]]
 
 ## Interfacce in evoluzione
 
@@ -37,7 +37,7 @@ public interface DoItPlus extends DoIt {
 
 Ora gli utenti del tuo codice possono scegliere di continuare a utilizzare la vecchia interfaccia o eseguire l'upgrade alla nuova interfaccia.
 
-In alternativa, puoi definire i tuoi nuovi metodi come metodi predefiniti. L'esempio seguente definisce un [[Lezione 12#Metodi predefiniti|metodo predefinito]] denominato didItWork:
+In alternativa, puoi definire i tuoi nuovi metodi come metodi predefiniti. L'esempio seguente definisce un [[Lezione 12 - Interfacce parte 2, Generics#Metodi predefiniti|metodo predefinito]] denominato didItWork:
 
 ```java
 public interface DoIt {
@@ -51,7 +51,7 @@ public interface DoIt {
 }
 ```
 
-Si noti che è necessario fornire un'implementazione per i metodi predefiniti. È inoltre possibile definire nuovi [[Lezione 12#Metodi statici|metodi statici]] per le interfacce esistenti. Gli utenti che dispongono di classi che implementano interfacce migliorate con nuovi metodi predefiniti o statici non devono modificarle o ricompilarle per adattarle ai metodi aggiuntivi.
+Si noti che è necessario fornire un'implementazione per i metodi predefiniti. È inoltre possibile definire nuovi [[Lezione 12 - Interfacce parte 2, Generics#Metodi statici|metodi statici]] per le interfacce esistenti. Gli utenti che dispongono di classi che implementano interfacce migliorate con nuovi metodi predefiniti o statici non devono modificarle o ricompilarle per adattarle ai metodi aggiuntivi.
 
 ## Metodi predefiniti
 
@@ -234,7 +234,7 @@ Qualsiasi classe che implementa l'interfaccia HandleInvalidTimeZoneClient utiliz
 
 ### Metodi statici
 
-Oltre ai metodi predefiniti, è possibile definire [[Lezione 6#Metodi della classe|metodi statici]] nelle interfacce. (Un metodo statico è un metodo associato alla classe in cui è definito piuttosto che a qualsiasi oggetto. Ogni istanza della classe condivide i suoi metodi statici.) Ciò semplifica l'organizzazione dei metodi di supporto nelle librerie; puoi mantenere metodi statici specifici per un'interfaccia nella stessa interfaccia piuttosto che in una classe separata. L'esempio seguente definisce un metodo statico che recupera un oggetto ZoneId corrispondente a un identificatore di fuso orario; utilizza il fuso orario predefinito del sistema se non esiste alcun oggetto ZoneId corrispondente all'identificatore specificato. (Di conseguenza, puoi semplificare il metodo getZonedDateTime):
+Oltre ai metodi predefiniti, è possibile definire [[Lezione 6 - Classi#Metodi della classe|metodi statici]] nelle interfacce. (Un metodo statico è un metodo associato alla classe in cui è definito piuttosto che a qualsiasi oggetto. Ogni istanza della classe condivide i suoi metodi statici.) Ciò semplifica l'organizzazione dei metodi di supporto nelle librerie; puoi mantenere metodi statici specifici per un'interfaccia nella stessa interfaccia piuttosto che in una classe separata. L'esempio seguente definisce un metodo statico che recupera un oggetto ZoneId corrispondente a un identificatore di fuso orario; utilizza il fuso orario predefinito del sistema se non esiste alcun oggetto ZoneId corrispondente all'identificatore specificato. (Di conseguenza, puoi semplificare il metodo getZonedDateTime):
 
 ```java
 public interface TimeClient {

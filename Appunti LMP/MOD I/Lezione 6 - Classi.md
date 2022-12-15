@@ -1009,4 +1009,4 @@ class Whatever {
 ```
 Ciò è particolarmente utile se le sottoclassi potrebbero voler riutilizzare il metodo di inizializzazione. Il metodo è definitivo perché la chiamata di metodi non finali durante l'inizializzazione dell'istanza può causare problemi.
 
-Parte Nested Class qui -> [[Lezione 7#Classi nidificate|Lezione 7 - Classi Nidificate]]
+Parte Nested Class qui -> [[Lezione 7 - Classi Nidificate#Classi nidificate|Lezione 7 - Classi Nidificate]]
