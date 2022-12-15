@@ -174,9 +174,20 @@ L'albero DFS associato al labirinto sarà
 ![[appunti asd/mod i/immagini/Pasted image 20221215120841.png|center|400]]
 
 
+##### Costo della visita in profondità
 
+Il tempo di esecuzione dipende dalla struttura dati usata per rappresentare il grafo (e dalla connettività o meno del grafo rispetto ad s):
+- Liste di adiacenza: $O(m+n)$
+- Matrice di adiacenza: $O(n^2)$
 
+##### Proprietà dell'albero DFS radicato in s
 
-
+- Se il grafo è **non orientato**, per ogni arco **(u,v)** si ha:
+	- **(u,v)** è un arco dell'albero DFS
+	- i nodi **u** e **v** sono l'uno discendente/antenato dell'altro
+- Se il grafo è **orientato**,per ogni arco **(u,v)** si ha:
+	- **(u,v)** è un arco dell'albero DFS
+	- i nodi **u** e **v** sono l'uno discendente/antenato dell'altro
+	- **(u,v)** è un arco **trasversale a sinistra**, ovvero il vertice v è in un sottoalbero visitato precedentemente ad u
 
 
