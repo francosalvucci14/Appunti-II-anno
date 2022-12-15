@@ -167,6 +167,14 @@ Esempio --> [Esempio visitaDFS](http://www.mat.uniroma2.it/~guala/visite_2021.pd
 ![[appunti asd/mod i/immagini/Pasted image 20221215120651.png|center|600]]
 
 
+... ritornando al labirinto
+
+L'albero DFS associato al labirinto sarà
+
+![[appunti asd/mod i/immagini/Pasted image 20221215120841.png|center|400]]
+
+
+
 
 
 
