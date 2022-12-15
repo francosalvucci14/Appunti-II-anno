@@ -78,6 +78,96 @@ Cubo di Rubick 2x2x2
 
 ![[appunti asd/mod i/immagini/Pasted image 20221215112709.png|center|400]]
 
+numero di vertici $\leq 8!\times 3^8=264.539.520$
+
+![[appunti asd/mod i/immagini/Pasted image 20221215112839.png|center]]
+
+
+![[appunti asd/mod i/immagini/Pasted image 20221215113149.png|center|500]]
+
+**God's number**:
+
+- 2x2x2 = 11
+- 3x3x3 = 20
+- 4x4x4 = ???
+- ...
+- $n\times n\times n=\Theta(n^2/log(n))$
+
+##### Pseudo-codice
+
+![[appunti asd/mod i/immagini/Pasted image 20221215113850.png|center|600]]
+
+**Esempio**
+
+[Esempio visitaBFS](http://www.mat.uniroma2.it/~guala/visite_2021.pdf) da pagin a15 a pagina 33
+
+**Esempio Grafo orientato**
+
+![[appunti asd/mod i/immagini/Pasted image 20221215114402.png|center|600]]
+
+
+##### Costo della visita in ampiezza (grafo rappresentato con matrice di a.)
+
+![[appunti asd/mod i/immagini/Pasted image 20221215114527.png|center|600]]
+
+
+##### Costo della visita in ampiezza (grafo rappresentato con liste di a.)
+
+![[appunti asd/mod i/immagini/Pasted image 20221215114640.png|center|600]]
+
+##### Costo della visita in ampiezza
+
+Il tempo di esecuzione dipende dalla sruttura dati usata per rappresentare il grafo (e dalla connettività o meno del grafo rispetto ad s):
+- Liste di adiacenza: $O(m+n)$
+- Matrice di adiacenza: $O(n^2)$
+
+**Osservazioni**
+
+1. Si noti che se il grafo è connesso allora $m\geq n-1$ e quindi $O(m+n)=O(m)$
+2. Ricordando che $m\leq n(n-1)/2$, si ha $O(m+n)=O(n^2)\implies$ per $m=o(n^2)$ la rappresentazione mediante **liste di adiacenza** è **temporalmente più efficiente!**
+
+##### Proprietà dell'albero BFS radicato in s
+
+1. Se il grafo è **non orientato**, per ogni arco (u,v) del grafo gli estremi u e v appartengono allo stesso livello o a livelli consecutivi dell'albero BFS ![[appunti asd/mod i/immagini/Pasted image 20221215115146.png|center]]
+2. Se il grafo è **orientato**, allora gli archi orientati **verso il basso** uniscono nodi sullo stesso livello o su livelli adiacenti, mentre gli archi orientati **verso l'alto** possono unire nodi su livelli non adiacenti ![[appunti asd/mod i/immagini/Pasted image 20221215115354.png|center]]
+
+>[!important]- Teorema
+>Per ogni nodo v, il livello di v nell'albero BFS è pari alla distanza di v dalla sorgente s (sia per grafi orientati che non orientati)
+
+**Dimostrazione informale**
+
+- all'inizio inserisco **s** in **F** (che è a distanza 0 da se stesso) e gli assegno livello 0; chiaramente **s** è l'unico nodo a distanza 0
+- estraggo **s** e guardo tutti i suoi vicini (archi uscenti); questi sono tutti i nodi a distanza 1 da **s**; li inserisco in **F** e assegno loro livello 1. Ora in **F** ho **tutti** i nodi a distanza 1
+- estraggo uno a uno tutti i nodi di livello/distanza 1 e per ognuno guardo tutti i suoi vicini (archi uscenti); i vicini non marcati sono a distanza 2 da **s**; li inserisco in **F** e assegno loro livello 2; quando ho estratto e visitato tutti i nodi di livello 1, in **F** ho **tutti** i nodi a distanza 2 da **s**
+- estraggo uno a uno tutti i nodi di livello/distanza 2 e per ognino guardo tutti i suoi vicini (archi uscenti); i vicini non marcati sono a distanza 3 da **s**...
+
+#### Visita in profondità
+
+Un'analogia: esplorare un labirinto
+
+![[appunti asd/mod i/immagini/Pasted image 20221215120225.png|center|700]]
+
+**Cosa mi serve?**
+
+- gesso: per disegnare le strade prese
+- corda: per tornare indietro se necessario
+
+**Variabile booleana**: dice se un nodo è stato già visitato 
+**Pila**: push vuol dire srotolare, pop vuol dire arrotolare
+
+##### Pseudo-codice
+
+![[appunti asd/mod i/immagini/Pasted image 20221215120502.png|center|600]]
+
+
+Esempio --> [Esempio visitaDFS](http://www.mat.uniroma2.it/~guala/visite_2021.pdf) da pagina 43 a pagina 60
+
+**Esempio: Grafo diretto**
+
+![[appunti asd/mod i/immagini/Pasted image 20221215120651.png|center|600]]
+
+
+
 
 
 
