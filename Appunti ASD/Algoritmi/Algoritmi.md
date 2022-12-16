@@ -17,6 +17,11 @@
 - Algoritmi di visita di un albero
 	- [[Algoritmi#Algoritmo DFS|Algoritmo DFS]]
 	- [[Algoritmi#Algoritmo BFS|Algoritmo BFS]]
+
+- Algoritmi di visita di un grafo
+	- Algoritmo DFS
+	- Algoritmo BFS
+
 Per una spiegazione più dettagliata di qeusti algoritmi si rimanda a questo link [Algoritmi](http://people.disim.univaq.it/guido.proietti/lezioni_algo2021.html)
 
 
@@ -488,4 +493,35 @@ r2.right = r3
 
 BFS(root)
 ```
+
+
+# Algoritmi di visita di un grafo
+
+## Algoritmo DFS
+
+Speigazione qua -> [[Lezione 14 - Capitolo 11#Visita in profondità|Lezione 14 - DFS]]
+
+### Pseudocodice
+
+![[appunti asd/mod i/immagini/Pasted image 20221215120502.png|center|600]]
+
+### Costo computazionale
+
+Il tempo di esecuzione dipende dalla struttura dati usata per rappresentare il grafo (e dalla connettività o meno del grafo rispetto ad s):
+- Liste di adiacenza: $O(m+n)$
+- Matrice di adiacenza: $O(n^2)$
+
+## Algortimo BFS
+
+Speigazione qua -> [[Lezione 14 - Capitolo 11#Visita in ampiezza|Lezione 14 - BFS]]
+
+### Pseudocodice
+
+![[appunti asd/mod i/immagini/Pasted image 20221215113850.png|center|600]]
+
+### Costo Computazionale
+
+Il tempo di esecuzione dipende dalla sruttura dati usata per rappresentare il grafo (e dalla connettività o meno del grafo rispetto ad s):
+- Liste di adiacenza: $O(m+n)$
+- Matrice di adiacenza: $O(n^2)$
 

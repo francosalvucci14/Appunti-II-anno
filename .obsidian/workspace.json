@@ -13,25 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 13 - Collections.md",
+                "file": "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "abe5531e210d22fd",
+            "id": "dfc17e266311e1c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 13 - Collections.md"
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
               }
             }
           },
@@ -127,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 13 - Collections.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,14 +145,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 13 - Collections.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -172,17 +173,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "acd002c7f705cc3c",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti ASD/MOD I/Immagini/Pasted image 20221215120841.png",
+    "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
+    "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti LMP/MOD I/Lezione 13 - Collections.md",
     "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
+    "Appunti ASD/MOD I/Immagini/Pasted image 20221215120841.png",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti LMP/MOD I/Lezione 12 - Interfacce parte 2, Generics.md",
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
     "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
-    "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
-    "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
-    "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md"
+    "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md"
   ]
 }
