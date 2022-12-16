@@ -841,4 +841,434 @@ Le viste Collection supportano la rimozione degli elementi in tutte le sue numer
 
 Le viste Raccolta non supportano l'aggiunta di elementi in nessun caso. Non avrebbe senso per le viste keySet e values, e non è necessario per la vista entrySet, perché i metodi put e putAll della mappa di supporto forniscono la stessa funzionalità.
 
+##### Usi fantasiosi delle viste di raccolta: Map algebra
+
+Se applicate alle visualizzazioni Collection, le operazioni in blocco (contieneAll, removeAll e retainAll) sono strumenti sorprendentemente potenti. Per cominciare, supponi di voler sapere se una mappa è una sottomappa di un'altra, ovvero se la prima mappa contiene tutte le mappature chiave-valore nella seconda. Il seguente idioma fa il trucco.
+
+```java
+if (m1.entrySet().containsAll(m2.entrySet())) {
+    ...
+}
+```
+
+Analogamente, si supponga di voler sapere se due oggetti Map contengono mappature per tutte le stesse chiavi.
+
+```java
+if (m1.keySet().equals(m2.keySet())) {
+    ...
+}
+```
+
+Supponiamo di avere una mappa che rappresenta una raccolta di coppie attributo-valore e due set che rappresentano attributi richiesti e attributi consentiti. (Gli attributi consentiti includono gli attributi richiesti.) Il seguente frammento di codice determina se la mappa degli attributi è conforme a questi vincoli e stampa un messaggio di errore dettagliato in caso contrario.
+
+```java
+static <K, V> boolean validate(Map<K, V> attrMap, Set<K> requiredAttrs, Set<K>permittedAttrs) {
+    boolean valid = true;
+    Set<K> attrs = attrMap.keySet();
+
+    if (! attrs.containsAll(requiredAttrs)) {
+        Set<K> missing = new HashSet<K>(requiredAttrs);
+        missing.removeAll(attrs);
+        System.out.println("Missing attributes: " + missing);
+        valid = false;
+    }
+    if (! permittedAttrs.containsAll(attrs)) {
+        Set<K> illegal = new HashSet<K>(attrs);
+        illegal.removeAll(permittedAttrs);
+        System.out.println("Illegal attributes: " + illegal);
+        valid = false;
+    }
+    return valid;
+}
+```
+
+Supponiamo di voler conoscere tutte le chiavi comuni a due oggetti Map.
+
+```java
+Set<KeyType>commonKeys = new HashSet<KeyType>(m1.keySet());
+commonKeys.retainAll(m2.keySet());
+```
+
+Un linguaggio simile ti dà i valori comuni.
+
+Tutti gli idiomi presentati finora sono stati non distruttivi; ovvero non modificano la mappa di supporto. Eccone alcuni che lo fanno. Supponiamo di voler rimuovere tutte le coppie chiave-valore che una mappa ha in comune con un'altra.
+
+```java
+m1.entrySet().removeAll(m2.entrySet());
+
+```
+
+Supponiamo di voler rimuovere da una mappa tutte le chiavi che hanno mappature in un'altra.
+
+```java
+m1.keySet().removeAll(m2.keySet());
+```
+
+Cosa succede quando inizi a mescolare chiavi e valori nella stessa operazione in blocco? Supponiamo di avere una mappa, manager, che associa ogni dipendente di un'azienda al manager del dipendente. Saremo deliberatamente vaghi sui tipi di oggetti chiave e valore. Non importa, basta che siano uguali. Supponiamo ora di voler sapere chi sono tutti i "contribuenti individuali" (o non manager). Il seguente frammento ti dice esattamente quello che vuoi sapere.
+
+```java
+Set<Dipendente> individualContributors = new HashSet<Dipendente>(managers.keySet());
+individualContributors.removeAll(managers.values());
+```
+
+Supponiamo che tu voglia licenziare tutti i dipendenti che riportano direttamente a un manager, Simon.
+
+```java
+Impiegato simone = ... ;
+manager.values().removeAll(Collections.singleton(simon));
+```
+
+Si noti che questo idioma utilizza Collections.singleton, un metodo factory statico che restituisce un Set immutabile con il singolo elemento specificato.
+
+Dopo averlo fatto, potresti avere un gruppo di dipendenti i cui manager non lavorano più per l'azienda (se qualcuno dei rapporti diretti di Simon fosse a sua volta manager). Il seguente codice ti dirà quali dipendenti hanno manager che non lavorano più per l'azienda.
+
+```java
+Map<Employee, Employee> m = new HashMap<Employee, Employee>(managers);
+m.values().removeAll(managers.keySet());
+Set<Employee> slackers = m.keySet();
+```
+
+Questo esempio è un po' complicato. Innanzitutto, crea una copia temporanea della mappa e rimuove dalla copia temporanea tutte le voci il cui valore (manager) è una chiave nella mappa originale. Ricorda che la mappa originale ha una voce per ogni dipendente. Pertanto, le voci rimanenti nella mappa temporanea comprendono tutte le voci della mappa originale i cui valori (manager) non sono più dipendenti. Le chiavi nella copia provvisoria, quindi, rappresentano proprio i dipendenti che stiamo cercando.
+
+Ci sono molti altri modi di dire come quelli contenuti in questa sezione, ma sarebbe poco pratico e noioso elencarli tutti. Una volta capito, non è così difficile trovare quello giusto quando ne hai bisogno.
+
+##### Multimap
+
+Una multimap è come una mappa ma può mappare ogni chiave a più valori. Il Java Collections Framework non include un'interfaccia per le mappe multiple perché non vengono utilizzate così comunemente. È abbastanza semplice utilizzare una mappa i cui valori sono istanze di List come multimap. Questa tecnica è dimostrata nel prossimo esempio di codice, che legge un elenco di parole contenente una parola per riga (tutte minuscole) e stampa tutti i gruppi di anagrammi che soddisfano un criterio di dimensione. Un gruppo di anagrammi è un gruppo di parole, che contengono tutte esattamente le stesse lettere ma in un ordine diverso. Il programma accetta due argomenti sulla riga di comando: (1) il nome del file del dizionario e (2) la dimensione minima del gruppo di anagrammi da stampare. I gruppi di anagrammi contenenti meno parole del minimo specificato non vengono stampati.
+
+Esiste un trucco standard per trovare i gruppi di anagrammi: per ogni parola nel dizionario, alfabetizza le lettere nella parola (ovvero, riordina le lettere della parola in ordine alfabetico) e inserisci una voce in una mappa multipla, mappando la parola in ordine alfabetico all'originale parola. Ad esempio, la parola bad fa sì che una voce che mappa abd in bad venga inserita nella multimap. Un momento di riflessione mostrerà che tutte le parole a cui una data mappatura chiave formano un gruppo anagrammatico. È semplice iterare sulle chiavi nella multimappa, stampando ogni gruppo di anagrammi che soddisfa il vincolo di dimensione.
+
+Il seguente programma è una semplice implementazione di questa tecnica.
+
+```java
+import java.util.*;
+import java.io.*;
+
+public class Anagrams {
+    public static void main(String[] args) {
+        int minGroupSize = Integer.parseInt(args[1]);
+
+        // Read words from file and put into a simulated multimap
+        Map<String, List<String>> m = new HashMap<String, List<String>>();
+
+        try {
+            Scanner s = new Scanner(new File(args[0]));
+            while (s.hasNext()) {
+                String word = s.next();
+                String alpha = alphabetize(word);
+                List<String> l = m.get(alpha);
+                if (l == null)
+                    m.put(alpha, l=new ArrayList<String>());
+                l.add(word);
+            }
+        } catch (IOException e) {
+            System.err.println(e);
+            System.exit(1);
+        }
+
+        // Print all permutation groups above size threshold
+        for (List<String> l : m.values())
+            if (l.size() >= minGroupSize)
+                System.out.println(l.size() + ": " + l);
+    }
+
+    private static String alphabetize(String s) {
+        char[] a = s.toCharArray();
+        Arrays.sort(a);
+        return new String(a);
+    }
+}
+```
+
+
+#### Object Ordering
+
+Una lista l può essere ordinata come segue.
+
+```java
+Collezioni.sort(l);
+```
+
+Se l'elenco è costituito da elementi String, verrà ordinato in ordine alfabetico. Se è costituito da elementi Data, verrà ordinato in ordine cronologico. Come succede? String e Date implementano entrambi l'interfaccia Comparable. Implementazioni comparabili forniscono un ordinamento naturale per una classe, che consente di ordinare automaticamente gli oggetti di quella classe. La tabella seguente riassume alcune delle più importanti classi della piattaforma Java che implementano Comparable.
+
+![[appunti lmp/mod i/immagini/Pasted image 20221216132704.png|center]]
+
+Se provi a ordinare un elenco, i cui elementi non implementano Comparable, Collections.sort(list) genererà un'eccezione ClassCastException. Allo stesso modo, Collections.sort(list, comparator) genererà un'eccezione ClassCastException se si tenta di ordinare un elenco i cui elementi non possono essere confrontati tra loro utilizzando il comparatore. Gli elementi che possono essere confrontati tra loro sono detti mutuamente confrontabili. Sebbene elementi di tipo diverso possano essere reciprocamente confrontabili, nessuna delle classi qui elencate consente il confronto tra classi.
+
+Questo è tutto ciò che devi veramente sapere sull'interfaccia Comparable se vuoi solo ordinare elenchi di elementi comparabili o creare raccolte ordinate di essi. La prossima sezione ti interesserà se desideri implementare il tuo tipo comparabile.
+
+##### Scrivere i propri tipi comparabili
+
+L'interfaccia Comparable consiste nel seguente metodo.
+
+```java
+public interface Comparable<T> {
+    public int compareTo(T o);
+}
+```
+
+Il metodo compareTo confronta l'oggetto ricevente con l'oggetto specificato e restituisce un numero intero negativo, 0, o un numero intero positivo a seconda che l'oggetto ricevente sia minore, uguale o maggiore dell'oggetto specificato. Se l'oggetto specificato non può essere confrontato con l'oggetto ricevente, il metodo genera un'eccezione ClassCastException.
+
+La seguente classe che rappresenta il nome di una persona implementa Comparable.
+
+```java
+import java.util.*;
+
+public class Name implements Comparable<Name> {
+    private final String firstName, lastName;
+
+    public Name(String firstName, String lastName) {
+        if (firstName == null || lastName == null)
+            throw new NullPointerException();
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public String firstName() { return firstName; }
+    public String lastName()  { return lastName;  }
+
+    public boolean equals(Object o) {
+        if (!(o instanceof Name))
+            return false;
+        Name n = (Name) o;
+        return n.firstName.equals(firstName) && n.lastName.equals(lastName);
+    }
+
+    public int hashCode() {
+        return 31*firstName.hashCode() + lastName.hashCode();
+    }
+
+    public String toString() {
+	return firstName + " " + lastName;
+    }
+
+    public int compareTo(Name n) {
+        int lastCmp = lastName.compareTo(n.lastName);
+        return (lastCmp != 0 ? lastCmp : firstName.compareTo(n.firstName));
+    }
+}
+```
+
+Per mantenere breve l'esempio precedente, la classe è alquanto limitata: non supporta i secondi nomi, richiede sia un nome che un cognome e non è in alcun modo internazionalizzata. Tuttavia, illustra i seguenti punti importanti:
+
+- Gli oggetti nome sono immutabili. A parità di altre condizioni, i tipi immutabili sono la strada da percorrere, specialmente per gli oggetti che verranno utilizzati come elementi nei set o come chiavi nelle mappe. Queste raccolte si interromperanno se modifichi i loro elementi o chiavi mentre sono nella raccolta.
+- Il costruttore controlla i suoi argomenti per null. Ciò garantisce che tutti gli oggetti Name siano ben formati in modo che nessuno degli altri metodi genererà mai una NullPointerException.
+- Il metodo hashCode viene ridefinito. Questo è essenziale per qualsiasi classe che ridefinisce il metodo equals. (Gli oggetti uguali devono avere codici hash uguali.)
+- Il metodo equals restituisce false se l'oggetto specificato è nullo o di un tipo non appropriato. Il metodo compareTo genera un'eccezione di runtime in queste circostanze. Entrambi questi comportamenti sono richiesti dai contratti generali dei rispettivi metodi.
+- Il metodo toString è stato ridefinito in modo che stampi il nome in un formato leggibile dall'uomo. Questa è sempre una buona idea, soprattutto per gli oggetti che verranno inseriti nelle collezioni. I metodi toString dei vari tipi di raccolta dipendono dai metodi toString dei relativi elementi, chiavi e valori.
+
+Poiché questa sezione riguarda l'ordinamento degli elementi, parliamo un po' di più del metodo compareTo di Name. Implementa l'algoritmo standard di ordinamento dei nomi, in cui i cognomi hanno la precedenza sui nomi. Questo è esattamente ciò che vuoi in un ordinamento naturale. Sarebbe davvero molto confuso se l'ordinamento naturale fosse innaturale!
+
+Dai un'occhiata a come viene implementato compareTo, perché è abbastanza tipico. Innanzitutto, confronti la parte più significativa dell'oggetto (in questo caso, il cognome). Spesso puoi semplicemente utilizzare l'ordinamento naturale del tipo di parte. In questo caso, la parte è una stringa e l'ordinamento naturale (lessicografico) è esattamente quello richiesto. Se il confronto risulta in qualcosa di diverso da zero, che rappresenta l'uguaglianza, hai finito: devi solo restituire il risultato. Se le parti più significative sono uguali, si passa a confrontare le successive parti più significative. In questo caso, ci sono solo due parti: nome e cognome. Se ci fossero più parti, procederesti in modo ovvio, confrontando le parti finché non ne trovi due che non erano uguali o confrontavi le parti meno significative, a quel punto restituiresti il risultato del confronto.
+
+Giusto per dimostrare che tutto funziona, ecco un programma che crea un elenco di nomi e li ordina.
+
+```java
+import java.util.*;
+
+public class NameSort {
+    public static void main(String[] args) {
+        Name nameArray[] = {
+            new Name("John", "Smith"),
+            new Name("Karl", "Ng"),
+            new Name("Jeff", "Smith"),
+            new Name("Tom", "Rich")
+        };
+
+        List<Name> names = Arrays.asList(nameArray);
+        Collections.sort(names);
+        System.out.println(names);
+    }
+}
+```
+
+
+##### Comparatori
+
+Cosa succede se si desidera ordinare alcuni oggetti in un ordine diverso dal loro ordinamento naturale? O se volessi ordinare alcuni oggetti che non implementano Comparable? Per fare una di queste cose, dovrai fornire un Comparator, un oggetto che incapsula un ordinamento. Come l'interfaccia Comparable, l'interfaccia Comparator consiste in un unico metodo
+
+```java
+public interface Comparator<T> {
+    int compare(T o1, T o2);
+}
+```
+
+Il metodo compare confronta i suoi due argomenti, restituendo un numero intero negativo, 0, o un numero intero positivo a seconda che il primo argomento sia minore, uguale o maggiore del secondo. Se uno degli argomenti ha un tipo inappropriato per Comparator, il metodo compare genera un'eccezione ClassCastException.
+
+Molto di quanto detto su Comparable vale anche per Comparator. Scrivere un metodo compare è quasi identico a scrivere un metodo compareTo, tranne per il fatto che il primo ottiene entrambi gli oggetti passati come argomenti. Il metodo compare deve obbedire alle stesse quattro restrizioni tecniche del metodo compareTo di Comparable per lo stesso motivo: un Comparatore deve indurre un ordine totale sugli oggetti che confronta.
+
+Supponiamo di avere una classe chiamata Employee, come segue.
+
+```java
+public class Employee implements Comparable<Employee> {
+    public Name name()     { ... }
+    public int number()    { ... }
+    public Date hireDate() { ... }
+       ...
+}
+```
+
+Supponiamo che l'ordinamento naturale delle istanze di Employee sia l'ordinamento per nome (come definito nell'esempio precedente) sul nome del dipendente. Purtroppo il capo ha chiesto l'elenco dei dipendenti in ordine di anzianità. Ciò significa che dobbiamo lavorare un po', ma non molto. Il seguente programma produrrà l'elenco richiesto.
+
+```java
+import java.util.*;
+public class EmpSort {
+    static final Comparator<Employee> SENIORITY_ORDER = 
+                                        new Comparator<Employee>() {
+            public int compare(Employee e1, Employee e2) {
+                return e2.hireDate().compareTo(e1.hireDate());
+            }
+    };
+
+    // Employee database
+    static final Collection<Employee> employees = ... ;
+
+    public static void main(String[] args) {
+        List<Employee> e = new ArrayList<Employee>(employees);
+        Collections.sort(e, SENIORITY_ORDER);
+        System.out.println(e);
+    }
+}
+```
+
+Il Comparatore nel programma è ragionevolmente semplice. Si basa sull'ordinamento naturale di Date applicato ai valori restituiti dal metodo della funzione di accesso leaseDate. Si noti che il comparatore passa la data di assunzione del secondo argomento al primo anziché viceversa. Il motivo è che il dipendente che è stato assunto più di recente è il meno anziano; l'ordinamento in ordine di data di assunzione metterebbe l'elenco in ordine di anzianità inverso. Un'altra tecnica che le persone a volte usano per ottenere questo effetto è mantenere l'ordine degli argomenti ma negare il risultato del confronto.
+
+```java
+// Don't do this!!
+return -r1.hireDate().compareTo(r2.hireDate());
+```
+
+Dovresti sempre usare la prima tecnica a favore della seconda perché quest'ultima non è garantita per funzionare. La ragione di ciò è che il metodo compareTo può restituire qualsiasi int negativo se il suo argomento è minore dell'oggetto su cui è invocato. C'è un int negativo che rimane negativo quando negato, per quanto strano possa sembrare.
+
+```java
+-Integer.MIN_VALUE == Integer.MIN_VALUE
+```
+
+Il comparatore nel programma precedente funziona bene per ordinare una lista, ma ha un difetto: non può essere usato per ordinare una raccolta ordinata, come TreeSet, perché genera un ordinamento che non è compatibile con uguali. Ciò significa che questo Comparator equipara gli oggetti che il metodo equals non fa. In particolare, due dipendenti assunti nella stessa data verranno confrontati alla pari. Quando stai ordinando una lista, questo non ha importanza; ma quando usi il comparatore per ordinare una raccolta ordinata, è fatale. Se si utilizza questo Comparatore per inserire più dipendenti assunti nella stessa data in un TreeSet, solo il primo verrà aggiunto all'insieme; il secondo sarà visto come un elemento duplicato e verrà ignorato.
+
+Per risolvere questo problema, modifica semplicemente Comparator in modo che produca un ordinamento compatibile con equals. In altre parole, modificalo in modo che gli unici elementi visti come uguali quando usi compare siano quelli che sono visti come uguali anche quando confrontati usando equals. Il modo per farlo è eseguire un confronto in due parti (come per Nome), dove la prima parte è quella che ci interessa — in questo caso, la data di assunzione — e la seconda parte è un attributo che identifica in modo univoco l'oggetto. Qui il numero del dipendente è l'attributo ovvio. Questo è il Comparatore che ne risulta.
+
+```java
+static final Comparator<Employee> SENIORITY_ORDER = 
+                                        new Comparator<Employee>() {
+    public int compare(Employee e1, Employee e2) {
+        int dateCmp = e2.hireDate().compareTo(e1.hireDate());
+        if (dateCmp != 0)
+            return dateCmp;
+
+        return (e1.number() < e2.number() ? -1 :
+               (e1.number() == e2.number() ? 0 : 1));
+    }
+};
+```
+
+#### SortedSet
+
+Un SortedSet è un Set che mantiene i propri elementi in ordine crescente, ordinati in base all'ordinamento naturale degli elementi o in base a un Comparatore fornito al momento della creazione di SortedSet. Oltre alle normali operazioni Set, l'interfaccia SortedSet fornisce operazioni per quanto segue:
+
+- **Visualizzazione intervallo**: consente operazioni di intervallo arbitrarie sul set ordinato
+- **Endpoint**: restituisce il primo o l'ultimo elemento nel set ordinato
+- **Accesso al comparatore**: restituisce il comparatore, se presente, utilizzato per ordinare l'insieme
+
+Segue il codice per l'interfaccia SortedSet
+
+```java
+public interface SortedSet<E> extends Set<E> {
+    // Range-view
+    SortedSet<E> subSet(E fromElement, E toElement);
+    SortedSet<E> headSet(E toElement);
+    SortedSet<E> tailSet(E fromElement);
+
+    // Endpoints
+    E first();
+    E last();
+
+    // Comparator access
+    Comparator<? super E> comparator();
+}
+```
+
+##### Operazioni dal Set
+
+Le operazioni che SortedSet eredita da Set si comportano in modo identico su set ordinati e set normali con due eccezioni:
+
+L'iteratore restituito dall'operazione iteratore attraversa il set ordinato in ordine.
+L'array restituito da toArray contiene gli elementi dell'insieme ordinato in ordine.
+Sebbene l'interfaccia non lo garantisca, il metodo toString delle implementazioni SortedSet della piattaforma Java restituisce una stringa contenente tutti gli elementi dell'insieme ordinato, in ordine.
+
+##### Costrutto Standard
+
+Per convenzione, tutte le implementazioni di Collection generiche forniscono un costruttore di conversione standard che accetta una Collection; Le implementazioni di SortedSet non fanno eccezione. In TreeSet, questo costruttore crea un'istanza che ordina i suoi elementi in base al loro ordinamento naturale. Questo è stato probabilmente un errore. Sarebbe stato meglio verificare dinamicamente se la raccolta specificata fosse un'istanza SortedSet e, in tal caso, ordinare il nuovo TreeSet secondo lo stesso criterio (comparatore o ordinamento naturale). Poiché TreeSet ha adottato l'approccio adottato, fornisce anche un costruttore che accetta un SortedSet e restituisce un nuovo TreeSet contenente gli stessi elementi ordinati in base allo stesso criterio. Si noti che è il tipo in fase di compilazione dell'argomento, non il suo tipo in fase di esecuzione, che determina quale di questi due costruttori viene richiamato (e se il criterio di ordinamento viene mantenuto).
+
+Le implementazioni di SortedSet forniscono anche, per convenzione, un costruttore che accetta un Comparator e restituisce un set vuoto ordinato in base al Comparator specificato. Se null viene passato a questo costruttore, restituisce un set che ordina i suoi elementi in base al loro ordinamento naturale.
+
+##### Operazioni Range-view
+
+Le operazioni di visualizzazione dell'intervallo sono in qualche modo analoghe a quelle fornite dall'interfaccia List, ma c'è una grande differenza. Le visualizzazioni dell'intervallo di un set ordinato rimangono valide anche se il set ordinato di supporto viene modificato direttamente. Ciò è fattibile perché i punti finali di una vista di intervallo di un insieme ordinato sono punti assoluti nello spazio degli elementi piuttosto che elementi specifici nella raccolta di supporto, come nel caso delle liste. Una visualizzazione dell'intervallo di un set ordinato è in realtà solo una finestra su qualunque parte dell'insieme si trovi nella parte designata dello spazio degli elementi. Le modifiche alla visualizzazione dell'intervallo riscrivono al set ordinato di supporto e viceversa. Pertanto, va bene utilizzare le visualizzazioni di intervallo su insiemi ordinati per lunghi periodi di tempo, a differenza delle visualizzazioni di intervallo sugli elenchi.
+
+I set ordinati forniscono tre operazioni di visualizzazione del raggio. Il primo, subSet, accetta due endpoint, come subList. Piuttosto che indici, i punti finali sono oggetti e devono essere confrontabili con gli elementi nell'insieme ordinato, utilizzando il comparatore dell'insieme o l'ordinamento naturale dei suoi elementi, qualunque sia l'insieme utilizzato per ordinare se stesso. Come subList, l'intervallo è semiaperto, compreso il punto finale basso ma escluso quello alto.
+
+Pertanto, la seguente riga di codice indica quante parole tra "doorbell" e "pickle", incluso "doorbell" ma escluso "pickle", sono contenute in un SortedSet di stringhe chiamato dictionary:
+
+```java
+int count = dictionary.subSet("doorbell", "pickle").size();
+```
+
+In modo analogo, la riga successiva rimuove tutti gli elementi che iniziano con la lettera f.
+
+```java
+dictionary.subSet("f", "g").clear();
+```
+
+Un trucco simile può essere usato per stampare una tabella che ti dice quante parole iniziano con ogni lettera.
+
+```java
+for (char ch = 'a'; ch <= 'z'; ) {
+    Stringa da = String.valueOf(ch++);
+    Stringa a = String.valueOf(ch);
+    System.out.println(from + ": " + dictionary.subSet(from, to).size());
+}
+```
+
+Si supponga di voler visualizzare un intervallo chiuso, che contiene entrambi i relativi punti finali, invece di un intervallo aperto. Se il tipo di elemento consente il calcolo del successore di un dato valore nello spazio dell'elemento, è sufficiente richiedere il subSet da lowEndpoint a successor(highEndpoint). Sebbene non sia del tutto ovvio, il successore di una stringa s nell'ordinamento naturale di String è s + "\0", ovvero s con un carattere null aggiunto.
+
+Pertanto, la seguente riga ti dice quante parole tra "campanello" e "sottaceto", inclusi campanello e sottaceto, sono contenute nel dizionario.
+
+```java
+count = dictionary.subSet("doorbell", "pickle\0").size();
+```
+
+Una tecnica simile può essere utilizzata per visualizzare un intervallo aperto, che non contiene né l'endpoint né l'endpoint. La visualizzazione dell'intervallo aperto da LowEndpoint a HighEndpoint è l'intervallo semiaperto dal successore (lowEndpoint) a HighEndpoint. Usa quanto segue per calcolare il numero di parole tra "campanello" e "sottaceto", escludendo entrambi.
+
+```java
+count = dictionary.subSet("doorbell\0", "pickle").size();
+```
+
+L'interfaccia SortedSet contiene altre due operazioni di visualizzazione dell'intervallo: headSet e tailSet, che accettano entrambe un singolo argomento Object. Il primo restituisce una vista della parte iniziale del SortedSet di supporto, fino all'oggetto specificato ma non lo include. Quest'ultimo restituisce una visualizzazione della parte finale del SortedSet di supporto, iniziando con l'oggetto specificato e continuando fino alla fine del SortedSet di supporto. Pertanto, il codice seguente consente di visualizzare il dizionario come due volumi disgiunti (a-m e n-z).
+
+```java
+SortedSet<String> volume1 = dictionary.headSet("n");
+SortedSet<String> volume2 = dictionary.tailSet("n");
+```
+
+##### Operazioni sugli endpoint
+
+L'interfaccia SortedSet contiene operazioni per restituire il primo e l'ultimo elemento nell'insieme ordinato, non a caso chiamato primo e ultimo. Oltre ai loro ovvi usi, last consente una soluzione alternativa per una carenza nell'interfaccia SortedSet. Una cosa che ti piacerebbe fare con un SortedSet è andare all'interno del Set e iterare avanti o indietro. È abbastanza facile andare avanti dall'interno: basta prendere un tailSet e iterarci sopra. Sfortunatamente, non esiste un modo semplice per tornare indietro.
+
+Il seguente idioma ottiene il primo elemento che è minore di un oggetto specificato o nello spazio degli elementi.
+
+```java
+Object predecessore = ss.headSet(o).last();
+```
+
+Questo è un ottimo modo per andare indietro di un elemento da un punto all'interno di un insieme ordinato. Potrebbe essere applicato ripetutamente per iterare all'indietro, ma questo è molto inefficiente e richiede una ricerca per ogni elemento restituito.
+
+##### Accessorio comparatore
+
+L'interfaccia SortedSet contiene un metodo di accesso denominato comparator che restituisce il Comparator utilizzato per ordinare il set o null se il set è ordinato in base all'ordine naturale dei suoi elementi. Questo metodo viene fornito in modo che i set ordinati possano essere copiati in nuovi set ordinati con lo stesso ordinamento. Viene utilizzato dal costruttore SortedSet descritto in precedenza.
+
+#### SortedMap
+
+
+
 Collections, fino a SortedMap
