@@ -343,4 +343,6 @@ symmetricDiff.removeAll(tmp);
 
 Le operazioni sugli array non fanno nulla di speciale per i set oltre a ciò che fanno per qualsiasi altra raccolta
 
+
+
 Collections, fino a SortedMap
