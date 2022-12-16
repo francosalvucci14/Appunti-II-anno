@@ -1269,6 +1269,41 @@ L'interfaccia SortedSet contiene un metodo di accesso denominato comparator che 
 
 #### SortedMap
 
+Una SortedMap è una Mappa che mantiene le sue voci in ordine crescente, ordinate secondo l'ordine naturale delle chiavi, o secondo un Comparatore fornito al momento della creazione della SortedMap. L'ordinamento naturale e i comparatori sono discussi nella sezione Ordinamento degli oggetti. L'interfaccia SortedMap fornisce operazioni per le normali operazioni della mappa e per quanto segue:
 
+- **Visualizzazione intervallo**: esegue operazioni di intervallo arbitrario sulla mappa ordinata
+- **Endpoint**: restituisce la prima o l'ultima chiave nella mappa ordinata
+- **Accesso al comparatore**: restituisce il comparatore, se presente, utilizzato per ordinare la mappa
 
-Collections, fino a SortedMap
+L'interfaccia seguente è l'analogo Map di SortedSet.
+
+```java
+public interface SortedMap<K, V> extends Map<K, V>{
+    Comparator<? super K> comparator();
+    SortedMap<K, V> subMap(K fromKey, K toKey);
+    SortedMap<K, V> headMap(K toKey);
+    SortedMap<K, V> tailMap(K fromKey);
+    K firstKey();
+    K lastKey();
+}
+```
+
+##### Operazioni su Map
+
+Le operazioni che SortedMap eredita da Map si comportano in modo identico su mappe ordinate e mappe normali con due eccezioni:
+
+- **L'iteratore** restituito dall'operazione iteratore su una qualsiasi delle viste Raccolta della mappa ordinata attraversa le raccolte in ordine.
+- Gli array restituiti dalle operazioni toArray delle viste Collection contengono le chiavi, i valori o le voci in ordine.
+
+Sebbene non sia garantito dall'interfaccia, il metodo toString delle viste Collection in tutte le implementazioni SortedMap della piattaforma Java restituisce una stringa contenente tutti gli elementi della vista, in ordine.
+
+##### Costrutto Standard
+
+Per convenzione, tutte le implementazioni Map generiche forniscono un costruttore di conversione standard che accetta una Map; Le implementazioni SortedMap non fanno eccezione. In TreeMap, questo costruttore crea un'istanza che ordina le sue voci in base all'ordine naturale delle chiavi. Questo è stato probabilmente un errore. Sarebbe stato meglio verificare dinamicamente se l'istanza di Map specificata fosse una SortedMap e, in tal caso, ordinare la nuova mappa secondo lo stesso criterio (comparatore o ordinamento naturale). Poiché TreeMap ha adottato l'approccio adottato, fornisce anche un costruttore che prende un SortedMap e restituisce un nuovo TreeMap contenente le stesse mappature del dato SortedMap, ordinato in base allo stesso criterio. Si noti che è il tipo in fase di compilazione dell'argomento, non il suo tipo in fase di esecuzione, che determina se il costruttore SortedMap viene richiamato in preferenza rispetto al normale costruttore di mappe.
+
+Le implementazioni di SortedMap forniscono anche, per convenzione, un costruttore che accetta un Comparator e restituisce una mappa vuota ordinata in base al Comparator specificato. Se null viene passato a questo costruttore, restituisce una mappa che ordina i suoi mapping in base all'ordine naturale delle chiavi.
+
+##### Confronto con SortedSet
+
+Poiché questa interfaccia è un preciso analogo Map di SortedSet, tutti gli idiomi e gli esempi di codice nella sezione L'interfaccia SortedSet si applicano a SortedMap con solo modifiche banali.
+
