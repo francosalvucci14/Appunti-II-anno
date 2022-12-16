@@ -343,6 +343,98 @@ symmetricDiff.removeAll(tmp);
 
 Le operazioni sugli array non fanno nulla di speciale per i set oltre a ciò che fanno per qualsiasi altra raccolta
 
+#### Liste
+
+Una lista è una raccolta ordinata (a volte chiamata sequenza). Gli elenchi possono contenere elementi duplicati. Oltre alle operazioni ereditate da Collection, l'interfaccia List include operazioni per quanto segue:
+
+- **Accesso posizionale**: manipola gli elementi in base alla loro posizione numerica nell'elenco. Questo include metodi come get, set, add, addAll e remove.
+- **Cerca**: ricerca un oggetto specificato nell'elenco e ne restituisce la posizione numerica. I metodi di ricerca includono indexOf e lastIndexOf.
+- **Iterazione**: estende la semantica di Iterator per sfruttare la natura sequenziale dell'elenco. I metodi listIterator forniscono questo comportamento.
+- **Range-view**: Il metodo sublist esegue operazioni arbitrarie sull'elenco.
+
+La piattaforma Java contiene due implementazioni List generiche. ArrayList, che di solito è l'implementazione con prestazioni migliori, e LinkedList che offre prestazioni migliori in determinate circostanze.
+
+##### Operazioni di riscossione
+
+Le operazioni ereditate da Collection fanno tutte ciò che ti aspetteresti che facciano, supponendo che tu le abbia già familiarità. Se non li conosci da Collection, ora sarebbe un buon momento per leggere la sezione The Collection Interface. L'operazione di rimozione rimuove sempre la prima occorrenza dell'elemento specificato dall'elenco. Le operazioni add e addAll aggiungono sempre i nuovi elementi alla fine dell'elenco. Pertanto, il seguente idioma concatena un elenco a un altro.
+
+```java
+list1.addAll(list2);
+```
+
+Ecco una forma non distruttiva di questo idioma, che produce un terzo elenco costituito dal secondo elenco aggiunto al primo.
+
+```java
+List<Type> list3 = new ArrayList<Type>(list1);
+list3.addAll(list2);
+```
+
+Si noti che l'idioma, nella sua forma non distruttiva, sfrutta il costruttore di conversione standard di ArrayList.
+
+Ed ecco un esempio (JDK 8 e versioni successive) che aggrega alcuni nomi in una lista
+
+```java
+List<String> list = people.stream()
+.map(Person::getName)
+.collect(Collectors.toList());
+```
+
+Come l'interfaccia Set, List rafforza i requisiti sui metodi equals e hashCode in modo che due oggetti List possano essere confrontati per l'uguaglianza logica indipendentemente dalle loro classi di implementazione. Due oggetti List sono uguali se contengono gli stessi elementi nello stesso ordine.
+
+##### Accesso posizionale e operazioni di ricerca
+
+Le operazioni di accesso posizionale di base sono get, set, add e remove. (Le operazioni set e remove restituiscono il vecchio valore che viene sovrascritto o rimosso.) Altre operazioni (indexOf e lastIndexOf) restituiscono il primo o l'ultimo indice dell'elemento specificato nell'elenco.
+L'operazione addAll inserisce tutti gli elementi della Collection specificata a partire dalla posizione specificata. Gli elementi vengono inseriti nell'ordine in cui vengono restituiti dall'iteratore della Collection specificato. Questa chiamata è l'analogo di accesso posizionale dell'operazione addAll di Collection.
+
+Ecco un piccolo metodo per scambiare due valori indicizzati in una lista.
+
+```java
+public static <E> void swap(List<E> a, int i, int j) {
+    E tmp = a.get(i);
+    a.set(i, a.get(j));
+    a.set(j, tmp);
+}
+```
+
+Certo, c'è una grande differenza. Questo è un algoritmo polimorfico: scambia due elementi in qualsiasi elenco, indipendentemente dal tipo di implementazione. Ecco un altro algoritmo polimorfico che utilizza il precedente metodo di scambio.
+
+```java
+public static void shuffle(List<?> list, Random rnd) {
+    for (int i = list.size(); i > 1; i--)
+        swap(list, i - 1, rnd.nextInt(i));
+}
+```
+
+Questo algoritmo, incluso nella classe Collections della piattaforma Java, permuta in modo casuale l'elenco specificato utilizzando l'origine di casualità specificata. È un po' sottile: risale l'elenco dal basso, scambiando ripetutamente un elemento selezionato a caso nella posizione corrente. A differenza della maggior parte dei tentativi ingenui di mescolamento, è giusto (tutte le permutazioni si verificano con uguale probabilità, assumendo una fonte imparziale di casualità) e veloce (richiede esattamente list.size()-1 swap). Il seguente programma utilizza questo algoritmo per stampare le parole nella sua lista di argomenti in ordine casuale.
+
+```java
+import java.util.*;
+
+public class Shuffle {
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<String>();
+        for (String a : args)
+            list.add(a);
+        Collections.shuffle(list, new Random());
+        System.out.println(list);
+    }
+}
+```
+
+In effetti, questo programma può essere reso ancora più breve e veloce. La classe Arrays ha un metodo factory statico chiamato asList, che consente di visualizzare un array come un elenco. Questo metodo non copia l'array. Le modifiche nell'elenco vengono scritte nell'array e viceversa. L'elenco risultante non è un'implementazione di elenco generica, poiché non implementa le operazioni di aggiunta e rimozione (facoltative): gli array non sono ridimensionabili. Sfruttando Arrays.asList e chiamando la versione della libreria di shuffle, che utilizza una sorgente predefinita di casualità, si ottiene il seguente minuscolo programma il cui comportamento è identico al programma precedente.
+
+```java
+import java.util.*;
+
+public class Shuffle {
+    public static void main(String[] args) {
+        List<String> list = Arrays.asList(args);
+        Collections.shuffle(list);
+        System.out.println(list);
+    }
+}
+```
+
 
 
 Collections, fino a SortedMap
