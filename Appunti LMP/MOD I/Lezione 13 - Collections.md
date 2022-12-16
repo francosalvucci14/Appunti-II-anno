@@ -41,10 +41,10 @@ Per mantenere gestibile il numero di interfacce di raccolta principali, la piatt
 
 L'elenco seguente descrive le interfacce principali della raccolta:
 - **Raccolta (Collection)**: la radice della gerarchia della raccolta. Una raccolta rappresenta un gruppo di oggetti noti come i suoi elementi. L'interfaccia Collection è il minimo comune denominatore implementato da tutte le raccolte e viene utilizzata per passare raccolte e manipolarle quando si desidera la massima generalità. Alcuni tipi di raccolte consentono elementi duplicati e altri no. Alcuni sono ordinati e altri non sono ordinati. La piattaforma Java non fornisce implementazioni dirette di questa interfaccia ma fornisce implementazioni di sottointerfacce più specifiche, come Set e List. Vedi anche la sezione [[Lezione 13 - Collections#Raccolta (Collection)|Raccolta (Collection)]] 
-- **Set**: una raccolta che non può contenere elementi duplicati. Questa interfaccia modella l'astrazione dell'insieme matematico e viene utilizzata per rappresentare insiemi, come le carte che compongono una mano di poker, i corsi che costituiscono il programma di uno studente oi processi in esecuzione su una macchina. Vedi anche la sezione Set Interface.
-- **Lista**: una raccolta ordinata (a volte chiamata sequenza). Gli elenchi possono contenere elementi duplicati. L'utente di una lista generalmente ha un controllo preciso su dove è inserito ogni elemento nella lista e può accedere agli elementi tramite il loro indice intero (posizione). Se hai utilizzato Vector, hai familiarità con il sapore generale di List. Vedi anche la sezione L'interfaccia della lista.
-- **Coda**: una raccolta utilizzata per contenere più elementi prima dell'elaborazione. Oltre alle operazioni di raccolta di base, una coda fornisce ulteriori operazioni di inserimento, estrazione e ispezione.Le code in genere, ma non necessariamente, ordinano gli elementi in un modo FIFO (first-in, first-out). Tra le eccezioni vi sono le code di priorità, che ordinano gli elementi in base a un comparatore fornito o all'ordinamento naturale degli elementi. Qualunque sia l'ordinamento utilizzato, l'inizio della coda è l'elemento che verrebbe rimosso da una chiamata a remove o poll. In una coda FIFO, tutti i nuovi elementi vengono inseriti in coda alla coda. Altri tipi di code possono utilizzare regole di posizionamento differenti. Ogni implementazione di Queue deve specificare le proprie proprietà di ordinamento. Vedere anche la sezione L'interfaccia della coda.
-- **Deque**: una raccolta utilizzata per contenere più elementi prima dell'elaborazione. Oltre alle operazioni di raccolta di base, una Deque fornisce ulteriori operazioni di inserimento, estrazione e ispezione.Deques può essere utilizzato sia come FIFO (first-in, first-out) che LIFO (last-in, first-out). In una deque tutti i nuovi elementi possono essere inseriti, recuperati e rimossi alle due estremità. Vedi anche la sezione L'interfaccia Deque.
+- **Set**: una raccolta che non può contenere elementi duplicati. Questa interfaccia modella l'astrazione dell'insieme matematico e viene utilizzata per rappresentare insiemi, come le carte che compongono una mano di poker, i corsi che costituiscono il programma di uno studente oi processi in esecuzione su una macchina. Vedi anche la sezione [[Lezione 13 - Collections#Set|Set]].
+- **Lista**: una raccolta ordinata (a volte chiamata sequenza). Gli elenchi possono contenere elementi duplicati. L'utente di una lista generalmente ha un controllo preciso su dove è inserito ogni elemento nella lista e può accedere agli elementi tramite il loro indice intero (posizione). Se hai utilizzato Vector, hai familiarità con il sapore generale di List. Vedi anche la sezione [[Lezione 13 - Collections#Liste|Liste]]
+- **Coda**: una raccolta utilizzata per contenere più elementi prima dell'elaborazione. Oltre alle operazioni di raccolta di base, una coda fornisce ulteriori operazioni di inserimento, estrazione e ispezione.Le code in genere, ma non necessariamente, ordinano gli elementi in un modo **FIFO (first-in, first-out)**. Tra le eccezioni vi sono le code di priorità, che ordinano gli elementi in base a un comparatore fornito o all'ordinamento naturale degli elementi. Qualunque sia l'ordinamento utilizzato, l'inizio della coda è l'elemento che verrebbe rimosso da una chiamata a remove o poll. In una coda FIFO, tutti i nuovi elementi vengono inseriti in coda alla coda. Altri tipi di code possono utilizzare regole di posizionamento differenti. Ogni implementazione di Queue deve specificare le proprie proprietà di ordinamento. Vedere anche la sezione [[Lezione 13 - Collections#Coda|Coda]].
+- **Deque**: una raccolta utilizzata per contenere più elementi prima dell'elaborazione. Oltre alle operazioni di raccolta di base, una Deque fornisce ulteriori operazioni di inserimento, estrazione e ispezione.Deques può essere utilizzato sia come **FIFO (first-in, first-out) che LIFO (last-in, first-out)**. In una deque tutti i nuovi elementi possono essere inseriti, recuperati e rimossi alle due estremità. Vedi anche la sezione [[Lezione 13 - Collections#Deque|Deque]].
 - **Mappa**: un oggetto che mappa le chiavi ai valori. Una mappa non può contenere chiavi duplicate; ogni chiave può mappare al massimo un valore. Se hai utilizzato Hashtable, hai già familiarità con le basi di Map. Vedi anche la sezione L'interfaccia della mappa.
 
 Le ultime due interfacce di raccolta principali sono semplicemente versioni ordinate di Set e Map:
@@ -435,6 +435,410 @@ public class Shuffle {
 }
 ```
 
+##### Iteratori
 
+Come ci si aspetterebbe, l'Iterator restituito dall'operazione iteratore di List restituisce gli elementi dell'elenco nella sequenza corretta. List fornisce anche un iteratore più ricco, chiamato ListIterator, che consente di attraversare l'elenco in entrambe le direzioni, modificare l'elenco durante l'iterazione e ottenere la posizione corrente dell'iteratore.
+
+I tre metodi che ListIterator eredita da Iterator (hasNext, next e remove) fanno esattamente la stessa cosa in entrambe le interfacce. Le operazioni hasPrevious e previous sono analoghi esatti di hasNext e next. Le prime operazioni si riferiscono all'elemento prima del cursore (implicito), mentre le seconde si riferiscono all'elemento dopo il cursore. L'operazione precedente sposta il cursore indietro, mentre quella successiva lo sposta in avanti.
+
+Ecco l'idioma standard per l'iterazione all'indietro di un elenco.
+
+```java
+for (ListIterator<Type> it = list.listIterator(list.size()); it.hasPrevious(); ) {
+    Type t = it.previous();
+    ...
+}
+```
+
+Nota l'argomento di listIterator nell'idioma precedente. L'interfaccia List ha due forme del metodo listIterator. Il form senza argomenti restituisce un ListIterator posizionato all'inizio della lista; il form con un argomento int restituisce un ListIterator posizionato all'indice specificato. L'indice si riferisce all'elemento che verrebbe restituito da una chiamata iniziale a next. Una chiamata iniziale a previous restituirebbe l'elemento il cui indice era index-1. In un elenco di lunghezza n, sono presenti n+1 valori validi per index, da 0 a n inclusi.
+
+Intuitivamente parlando, il cursore si trova sempre tra due elementi: quello che verrebbe restituito da una chiamata a previous e quello che verrebbe restituito da una chiamata a next. Gli n+1 valori di indice validi corrispondono agli n+1 spazi tra gli elementi, dallo spazio prima del primo elemento allo spazio dopo l'ultimo. La figura seguente mostra le cinque possibili posizioni del cursore in un elenco contenente quattro elementi.
+
+![[appunti lmp/mod i/immagini/colls-fivePossibleCursor.gif|center]]
+
+Le chiamate al successivo e al precedente possono essere mescolate, ma devi stare un po' attento. La prima chiamata a previous restituisce lo stesso elemento dell'ultima chiamata a next. Allo stesso modo, la prima chiamata a next dopo una sequenza di chiamate a previous restituisce lo stesso elemento dell'ultima chiamata a previous.
+
+Non dovrebbe sorprendere che il metodo nextIndex restituisca l'indice dell'elemento che verrebbe restituito da una successiva chiamata a next, e previousIndex restituisca l'indice dell'elemento che verrebbe restituito da una successiva chiamata a previous. Queste chiamate vengono in genere utilizzate per segnalare la posizione in cui è stato trovato qualcosa o per registrare la posizione di ListIterator in modo da poter creare un altro ListIterator con posizione identica.
+
+Non dovrebbe inoltre sorprendere il fatto che il numero restituito da nextIndex sia sempre maggiore di uno rispetto al numero restituito da previousIndex. Ciò implica il comportamento dei due casi limite: (1) una chiamata a previousIndex quando il cursore è prima dell'elemento iniziale restituisce -1 e (2) una chiamata a nextIndex quando il cursore è dopo l'elemento finale restituisce list.size() . Per rendere tutto questo concreto, la seguente è una possibile implementazione di List.indexOf.
+
+```java
+public int indexOf(E e) {
+    for (ListIterator<E> it = listIterator(); it.hasNext(); )
+        if (e == null ? it.next() == null : e.equals(it.next()))
+            return it.previousIndex();
+    // Element not found
+    return -1;
+}
+```
+
+Si noti che il metodo indexOf restituisce it.previousIndex() anche se sta attraversando l'elenco in avanti. Il motivo è che it.nextIndex() restituirebbe l'indice dell'elemento che stiamo per esaminare, e noi vogliamo restituire l'indice dell'elemento appena esaminato.
+
+L'interfaccia Iterator fornisce l'operazione di rimozione per rimuovere l'ultimo elemento restituito da next dalla Collection. Per ListIterator, questa operazione rimuove l'ultimo elemento restituito da next o previous. L'interfaccia ListIterator fornisce due operazioni aggiuntive per modificare l'elenco: impostare e aggiungere. Il metodo set sovrascrive l'ultimo elemento restituito da next o previous con l'elemento specificato. Il seguente algoritmo polimorfico usa set per sostituire tutte le occorrenze di un valore specificato con un altro.
+
+```java
+public static <E> void replace(List<E> list, E val, E newVal) {
+    for (ListIterator<E> it = list.listIterator(); it.hasNext(); )
+        if (val == null ? it.next() == null : val.equals(it.next()))
+            it.set(newVal);
+}
+```
+
+L'unica complicazione in questo esempio è il test di uguaglianza tra val e it.next. È necessario inserire in un caso speciale un valore val nullo per evitare un'eccezione NullPointerException.
+
+Il metodo add inserisce un nuovo elemento nell'elenco immediatamente prima della posizione corrente del cursore. Questo metodo è illustrato nel seguente algoritmo polimorfico per sostituire tutte le occorrenze di un valore specificato con la sequenza di valori contenuta nell'elenco specificato.
+
+```java
+public static <E> 
+    void replace(List<E> list, E val, List<? extends E> newVals) {
+    for (ListIterator<E> it = list.listIterator(); it.hasNext(); ){
+        if (val == null ? it.next() == null : val.equals(it.next())) {
+            it.remove();
+            for (E e : newVals)
+                it.add(e);
+        }
+    }
+}
+```
+
+##### Operazione Range-View
+
+L'operazione di visualizzazione dell'intervallo, subList(int fromIndex, int toIndex), restituisce una visualizzazione List della parte di questo elenco i cui indici vanno da fromIndex, inclusivo, a toIndex, esclusivo. Questa gamma semiaperta rispecchia il tipico ciclo for.
+
+```java
+for (int i = fromIndex; i < toIndex; i++) {
+    ...
+}
+```
+
+Come implica il termine view, l'elenco restituito è supportato dall'elenco su cui è stato chiamato subList, quindi i cambiamenti nel primo si riflettono nel secondo.
+
+Questo metodo elimina la necessità di operazioni di intervallo esplicite (del tipo che esiste comunemente per gli array). Qualsiasi operazione che prevede un elenco può essere utilizzata come un'operazione di intervallo passando una vista sottolista invece di un intero elenco. Ad esempio, il seguente idioma rimuove un intervallo di elementi da un elenco.
+
+```java
+list.subList(fromIndex, toIndex).clear();
+```
+
+Idiomi simili possono essere costruiti per cercare un elemento in un intervallo.
+
+```java
+int i = list.subList(fromIndex, toIndex).indexOf(o);
+int j = list.subList(fromIndex, toIndex).lastIndexOf(o);
+```
+
+Si noti che gli idiomi precedenti restituiscono l'indice dell'elemento trovato nel subList, non l'indice nell'elenco di supporto.
+
+Qualsiasi algoritmo polimorfico che opera su un elenco, come gli esempi di sostituzione e shuffle, funziona con l'elenco restituito da subList.
+
+Ecco un algoritmo polimorfico la cui implementazione utilizza subList per distribuire una mano da un mazzo. Cioè, restituisce una nuova lista (la "mano") contenente il numero specificato di elementi presi dalla fine della lista specificata (il "mazzo"). Gli elementi restituiti in mano vengono rimossi dal mazzo.
+
+```java
+public static <E> List<E> dealHand(List<E> deck, int n) {
+    int deckSize = deck.size();
+    List<E> handView = deck.subList(deckSize - n, deckSize);
+    List<E> hand = new ArrayList<E>(handView);
+    handView.clear();
+    return hand;
+}
+```
+
+Nota che questo algoritmo rimuove la mano dalla fine del mazzo. Per molte implementazioni comuni di List, come ArrayList, le prestazioni della rimozione di elementi dalla fine dell'elenco sono sostanzialmente migliori rispetto a quelle della rimozione di elementi dall'inizio.
+
+Quello che segue è un programma che utilizza il metodo dealHand in combinazione con Collections.shuffle per generare mani da un normale mazzo da 52 carte. Il programma accetta due argomenti della riga di comando: (1) il numero di mani da distribuire e (2) il numero di carte in ciascuna mano.
+
+```java
+import java.util.*;
+
+public class Deal {
+    public static void main(String[] args) {
+        if (args.length < 2) {
+            System.out.println("Usage: Deal hands cards");
+            return;
+        }
+        int numHands = Integer.parseInt(args[0]);
+        int cardsPerHand = Integer.parseInt(args[1]);
+    
+        // Make a normal 52-card deck.
+        String[] suit = new String[] {
+            "spades", "hearts", 
+            "diamonds", "clubs" 
+        };
+        String[] rank = new String[] {
+            "ace", "2", "3", "4",
+            "5", "6", "7", "8", "9", "10", 
+            "jack", "queen", "king" 
+        };
+
+        List<String> deck = new ArrayList<String>();
+        for (int i = 0; i < suit.length; i++)
+            for (int j = 0; j < rank.length; j++)
+                deck.add(rank[j] + " of " + suit[i]);
+    
+        // Shuffle the deck.
+        Collections.shuffle(deck);
+    
+        if (numHands * cardsPerHand > deck.size()) {
+            System.out.println("Not enough cards.");
+            return;
+        }
+    
+        for (int i = 0; i < numHands; i++)
+            System.out.println(dealHand(deck, cardsPerHand));
+    }
+  
+    public static <E> List<E> dealHand(List<E> deck, int n) {
+        int deckSize = deck.size();
+        List<E> handView = deck.subList(deckSize - n, deckSize);
+        List<E> hand = new ArrayList<E>(handView);
+        handView.clear();
+        return hand;
+    }
+}
+```
+
+Sebbene l'operazione subList sia estremamente potente, è necessario prestare attenzione quando la si utilizza. La semantica dell'elenco restituito da subList diventa indefinita se gli elementi vengono aggiunti o rimossi dall'elenco di supporto in qualsiasi modo diverso dall'elenco restituito. Pertanto, si consiglia vivamente di utilizzare l'elenco restituito da subList solo come oggetto transitorio, per eseguire una o una sequenza di operazioni di intervallo sull'elenco di supporto. Più a lungo utilizzi l'istanza subList, maggiore è la probabilità che tu la comprometta modificando l'elenco di supporto direttamente o tramite un altro oggetto subList. Si noti che è consentito modificare una sottolista di una sottolista e continuare a utilizzare la sottolista originale (anche se non contemporaneamente).
+
+##### Algoritmi delle liste
+
+La maggior parte degli algoritmi polimorfici nella classe Collections si applica specificamente a List. Avere tutti questi algoritmi a tua disposizione rende molto facile manipolare gli elenchi. Di seguito è riportato un riepilogo di questi algoritmi
+
+- **sort**:ordina un elenco utilizzando un algoritmo di ordinamento di tipo merge, che fornisce un ordinamento veloce e stabile. (Un ordinamento stabile è quello che non riordina elementi uguali.)
+- **shuffle**: permuta casualmente gli elementi in una lista.
+- **reverse**: inverte l'ordine degli elementi in un elenco.
+- **ruotare**: ruota tutti gli elementi in un elenco di una distanza specificata.
+- **swap**: scambia gli elementi in posizioni specificate in un elenco.
+- **replaceAll**: sostituisce tutte le occorrenze di un valore specificato con un altro.
+- **fill** : sovrascrive ogni elemento in una lista con il valore specificato.
+- **copy** : copia l'elenco di origine nell'elenco di destinazione.
+- **binarySearch**: cerca un elemento in un elenco ordinato utilizzando l'algoritmo di ricerca binaria.
+- **indexOfSubList** : restituisce l'indice del primo sottoelenco di un elenco uguale a un altro.
+- **lastIndexOfSubList**: restituisce l'indice dell'ultimo sottoelenco di un elenco uguale a un altro.
+
+#### Coda
+
+Una coda è una raccolta per conservare gli elementi prima dell'elaborazione. Oltre alle operazioni di raccolta di base, le code forniscono ulteriori operazioni di inserimento, rimozione e ispezione. Segue l'interfaccia della coda.
+
+```java
+public interface Queue<E> extends Collection<E> {
+    E element();
+    boolean offer(E e);
+    E peek();
+    E poll();
+    E remove();
+}
+```
+
+Ogni metodo Queue esiste in due forme: (1) una genera un'eccezione se l'operazione fallisce e (2) l'altra restituisce un valore speciale se l'operazione fallisce (null o false, a seconda dell'operazione). La struttura regolare dell'interfaccia è illustrata nella tabella seguente.
+
+| **Operazione** | **Eccezione** | **Return valore speciale** |
+| -------------- | ------------- | -------------------------- |
+| Insert         | add(e)        | offer(e)                   |
+| Remove         | remove()      | poll()                     |
+| Examine        | element()     | peek()                     |
+
+Le code in genere, ma non necessariamente, ordinano gli elementi in un modo FIFO (first-in-first-out). Tra le eccezioni vi sono le code di priorità, che ordinano gli elementi in base ai loro valori (vedere la sezione Ordinamento degli oggetti per i dettagli). Qualunque sia l'ordinamento utilizzato, l'inizio della coda è l'elemento che verrebbe rimosso da una chiamata a remove o poll. In una coda FIFO, tutti i nuovi elementi vengono inseriti in coda alla coda. Altri tipi di code possono utilizzare regole di posizionamento differenti. Ogni implementazione di Queue deve specificare le proprie proprietà di ordinamento.
+
+È possibile che un'implementazione di Queue limiti il numero di elementi che contiene; tali code sono note come limitate. Alcune implementazioni di Queue in java.util.concurrent sono limitate, ma le implementazioni in java.util non lo sono.
+
+Il metodo add, che Queue eredita da Collection, inserisce un elemento a meno che non violi le restrizioni di capacità della coda, nel qual caso genera IllegalStateException. Il metodo offer, destinato esclusivamente all'uso su code limitate, differisce da add only in quanto indica il mancato inserimento di un elemento restituendo false.
+
+I metodi remove e poll rimuovono e restituiscono l'inizio della coda. Esattamente quale elemento viene rimosso è una funzione della politica di ordinazione della coda. I metodi remove e poll differiscono nel loro comportamento solo quando la coda è vuota. In queste circostanze, remove genera NoSuchElementException, mentre poll restituisce null.
+
+I metodi element e peek restituiscono, ma non rimuovono, l'inizio della coda. Differiscono l'uno dall'altro esattamente nello stesso modo di remove e poll: se la coda è vuota, element lancia NoSuchElementException, mentre peek restituisce null.
+
+Le implementazioni della coda generalmente non consentono l'inserimento di elementi nulli. L'implementazione LinkedList, che è stata adattata per implementare Queue, è un'eccezione. Per ragioni storiche, consente elementi null, ma dovresti evitare di trarne vantaggio, poiché null viene utilizzato come valore di ritorno speciale dai metodi poll e peek.
+
+Le implementazioni della coda in genere non definiscono le versioni basate sugli elementi dei metodi equals e hashCode, ma ereditano invece le versioni basate sull'identità da Object.
+
+L'interfaccia Queue non definisce i metodi di coda di blocco, che sono comuni nella programmazione concorrente. Questi metodi, che attendono la comparsa di elementi o la disponibilità di spazio, sono definiti nell'interfaccia java.util.concurrent.BlockingQueue, che estende Queue.
+
+Nel seguente programma di esempio, viene utilizzata una coda per implementare un timer per il conto alla rovescia. La coda è precaricata con tutti i valori interi da un numero specificato nella riga di comando a zero, in ordine decrescente. Quindi, i valori vengono rimossi dalla coda e stampati a intervalli di un secondo. Il programma è artificiale in quanto sarebbe più naturale fare la stessa cosa senza usare una coda, ma illustra l'uso di una coda per memorizzare elementi prima della successiva elaborazione.
+
+```java
+import java.util.*;
+
+public class Countdown {
+    public static void main(String[] args) throws InterruptedException {
+        int time = Integer.parseInt(args[0]);
+        Queue<Integer> queue = new LinkedList<Integer>();
+
+        for (int i = time; i >= 0; i--)
+            queue.add(i);
+
+        while (!queue.isEmpty()) {
+            System.out.println(queue.remove());
+            Thread.sleep(1000);
+        }
+    }
+}
+```
+
+Nell'esempio seguente viene utilizzata una coda di priorità per ordinare una raccolta di elementi. Ancora una volta questo programma è artificiale in quanto non c'è motivo di usarlo a favore del metodo di ordinamento fornito in Collections, ma illustra il comportamento delle code di priorità.
+
+```java
+static <E> List<E> heapSort(Collection<E> c) {
+    Queue<E> queue = new PriorityQueue<E>(c);
+    List<E> result = new ArrayList<E>();
+
+    while (!queue.isEmpty())
+        result.add(queue.remove());
+
+    return result;
+}
+```
+
+
+#### Deque
+
+Solitamente pronunciato come mazzo, un deque è una coda a doppia estremità. Una coda a doppia estremità è una raccolta lineare di elementi che supporta l'inserimento e la rimozione di elementi in entrambi i punti finali. L'interfaccia Deque è un tipo di dati astratto più ricco rispetto sia a Stack che a Queue perché implementa contemporaneamente sia stack che code. L'interfaccia Deque definisce i metodi per accedere agli elementi su entrambe le estremità dell'istanza Deque. Vengono forniti metodi per inserire, rimuovere ed esaminare gli elementi. Classi predefinite come ArrayDeque e LinkedList implementano l'interfaccia Deque.
+
+Si noti che l'interfaccia Deque può essere utilizzata sia come stack last-in-first-out che come code first-in-first-out. I metodi forniti nell'interfaccia Deque sono divisi in tre parti:
+
+- Insert: I metodi addfirst e offerFirst inseriscono elementi all'inizio dell'istanza Deque. I metodi addLast e offerLast inseriscono elementi alla fine dell'istanza Deque. Quando la capacità dell'istanza Deque è limitata, i metodi preferiti sono offerFirst e offerLast perché addFirst potrebbe non riuscire a generare un'eccezione se è piena.
+- Remove:I metodi removeFirst e pollFirst rimuovono elementi dall'inizio dell'istanza Deque. I metodi removeLast e pollLast rimuovono gli elementi dalla fine. I metodi pollFirst e pollLast restituiscono null se Deque è vuoto, mentre i metodi removeFirst e removeLast generano un'eccezione se l'istanza Deque è vuota.
+- Retrieve:I metodi getFirst e peekFirst recuperano il primo elemento dell'istanza Deque. Questi metodi non rimuovono il valore dall'istanza Deque. Allo stesso modo, i metodi getLast e peekLast recuperano l'ultimo elemento. I metodi getFirst e getLast generano un'eccezione se l'istanza deque è vuota mentre i metodi peekFirst e peekLast restituiscono NULL.
+
+I 12 metodi per l'inserimento, la rimozione e il recupero degli elementi Deque sono riassunti nella seguente tabella:
+
+| **Operazioni** | **First Element**         | **Last Element**        |
+| -------------- | ------------------------- | ----------------------- |
+| Insert         | addFirst(e),offerFirst(e) | addLast(e),offerLast(e) |
+| Remove         | removeFirst(),pullFirst() | removeLast(),pullLast() |
+| Examine        | getFirst(),peekFirst()    | getLast(),peekLast()    |
+
+Oltre a questi metodi di base per inserire, rimuovere ed esaminare un'istanza Deque, l'interfaccia Deque ha anche altri metodi predefiniti. Uno di questi è removeFirstOccurence, questo metodo rimuove la prima occorrenza dell'elemento specificato se esiste nell'istanza Deque. Se l'elemento non esiste, l'istanza Deque rimane invariata. Un altro metodo simile è removeLastOccurence; questo metodo rimuove l'ultima occorrenza dell'elemento specificato nell'istanza Deque. Il tipo restituito di questi metodi è booleano e restituiscono true se l'elemento esiste nell'istanza Deque.
+
+#### Map
+
+Una mappa è un oggetto che mappa le chiavi ai valori. Una mappa non può contenere chiavi duplicate: ogni chiave può mappare al massimo un valore. Modella l'astrazione della funzione matematica. L'interfaccia Map include metodi per operazioni di base (come put, get, remove, containsKey, containsValue, size e empty), operazioni di massa (come putAll e clear) e viste di raccolta (come keySet, entrySet e valori) .
+
+La piattaforma Java contiene tre implementazioni di mappe generiche: HashMap, TreeMap e LinkedHashMap. Il loro comportamento e le loro prestazioni sono esattamente analoghi a HashSet, TreeSet e LinkedHashSet, come descritto nella sezione The Set Interface.
+
+Il resto di questa pagina discute in dettaglio l'interfaccia Mappa. Ma prima, ecco alcuni altri esempi di raccolta su Maps utilizzando le operazioni di aggregazione JDK 8. La modellazione di oggetti del mondo reale è un'attività comune nella programmazione orientata agli oggetti, quindi è ragionevole pensare che alcuni programmi potrebbero, ad esempio, raggruppare i dipendenti per dipartimento:
+
+```java
+// Group employees by department
+Map<Department, List<Employee>> byDept = employees.stream()
+.collect(Collectors.groupingBy(Employee::getDepartment));
+```
+
+Oppure calcola la somma di tutti gli stipendi per dipartimento:
+
+```java
+// Compute sum of salaries by department
+Map<Department, Integer> totalByDept = employees.stream()
+.collect(Collectors.groupingBy(Employee::getDepartment,
+Collectors.summingInt(Employee::getSalary)));
+```
+
+O forse raggruppare gli studenti superando o fallendo i voti:
+
+```java
+// Partition students into passing and failing
+Map<Boolean, List<Student>> passingFailing = students.stream()
+.collect(Collectors.partitioningBy(s -> s.getGrade()>= PASS_THRESHOLD));
+```
+
+Puoi anche raggruppare le persone per città:
+
+```java
+// Classify Person objects by city
+Map<String, List<Person>> peopleByCity
+         = personStream.collect(Collectors.groupingBy(Person::getCity));
+```
+
+O anche mettere in cascata due raccoglitori per classificare le persone per stato e città:
+
+```java
+// Cascade Collectors 
+Map<String, Map<String, List<Person>>> peopleByStateAndCity
+  = personStream.collect(Collectors.groupingBy(Person::getState,
+  Collectors.groupingBy(Person::getCity)))
+```
+
+##### Operazioni base sull'interfaccia Map
+
+Le operazioni di base di Map (put, get, containsKey, containsValue, size e isEmpty) si comportano esattamente come le loro controparti in Hashtable. Il seguente programma genera una tabella di frequenza delle parole trovate nella sua lista di argomenti. La tabella delle frequenze associa ogni parola al numero di volte in cui ricorre nell'elenco degli argomenti.
+
+```java
+import java.util.*;
+
+public class Freq {
+    public static void main(String[] args) {
+        Map<String, Integer> m = new HashMap<String, Integer>();
+
+        // Initialize frequency table from command line
+        for (String a : args) {
+            Integer freq = m.get(a);
+            m.put(a, (freq == null) ? 1 : freq + 1);
+        }
+
+        System.out.println(m.size() + " distinct words:");
+        System.out.println(m);
+    }
+}
+```
+
+Come le interfacce Set e List, Map rafforza i requisiti sui metodi equals e hashCode in modo che due oggetti Map possano essere confrontati per l'uguaglianza logica indipendentemente dai loro tipi di implementazione. Due istanze Map sono uguali se rappresentano le stesse mappature chiave-valore.
+
+Per convenzione, tutte le implementazioni di Map generiche forniscono costruttori che accettano un oggetto Map e inizializzano il nuovo Map per contenere tutti i mapping di valori-chiave nella Map specificata. Questo costruttore di conversione Map standard è del tutto analogo al costruttore Collection standard: consente al chiamante di creare una mappa di un tipo di implementazione desiderato che inizialmente contiene tutte le mappature in un'altra mappa, indipendentemente dal tipo di implementazione dell'altra mappa. Ad esempio, supponi di avere una mappa, denominata m. Il seguente one-liner crea una nuova HashMap contenente inizialmente tutte le stesse mappature chiave-valore di m.
+
+```java
+Map<K, V> copy = new HashMap<K, V>(m);
+```
+
+##### Operazioni di bulk sull'interfaccia Map
+
+L'operazione di cancellazione fa esattamente ciò che si potrebbe pensare: rimuove tutte le mappature dalla mappa. L'operazione putAll è l'analogo Map dell'operazione addAll dell'interfaccia Collection. Oltre al suo ovvio uso di scaricare una mappa in un'altra, ha un secondo uso più sottile. Supponiamo che una mappa venga utilizzata per rappresentare una raccolta di coppie attributo-valore; l'operazione putAll, in combinazione con il costruttore di conversione Map, fornisce un modo accurato per implementare la creazione di mappe di attributi con valori predefiniti. Di seguito è riportato un metodo factory statico che illustra questa tecnica.
+
+```java
+static <K, V> Map<K, V> newAttributeMap(Map<K, V>defaults, Map<K, V> overrides) {
+    Map<K, V> result = new HashMap<K, V>(defaults);
+    result.putAll(overrides);
+    return result;
+}
+```
+
+##### Viste di raccolta
+
+I metodi di visualizzazione della raccolta consentono di visualizzare una mappa come una raccolta in questi tre modi:
+
+- keySet — l'insieme di chiavi contenute nella mappa.
+- values — La raccolta di valori contenuti nella mappa. Questa Collection non è un Set, perché più chiavi possono essere associate allo stesso valore.
+- entrySet — l'insieme di coppie chiave-valore contenute nella mappa. L'interfaccia Map fornisce una piccola interfaccia nidificata chiamata Map.Entry, il tipo degli elementi in questo Set.
+
+Le viste Collection forniscono l'unico mezzo per iterare su una mappa. Questo esempio illustra l'idioma standard per iterare sulle chiavi in una mappa con un costrutto for-each:
+
+```java
+for (KeyType key : m.keySet())
+    System.out.println(key);
+```
+
+e con un iteratore:
+
+```java
+// Filter a map based on some 
+// property of its keys.
+for (Iterator<Type> it = m.keySet().iterator(); it.hasNext(); )
+    if (it.next().isBogus())
+        it.remove();
+```
+
+L'idioma per iterare sui valori è analogo. Di seguito è riportato l'idioma per l'iterazione sulle coppie chiave-valore.
+
+```java
+for (Map.Entry<KeyType, ValType> e : m.entrySet())
+    System.out.println(e.getKey() + ": " + e.getValue());
+```
+
+All'inizio, molte persone temono che questi idiomi possano essere lenti perché Map deve creare una nuova istanza Collection ogni volta che viene chiamata un'operazione di visualizzazione Collection. Stai tranquillo: non c'è motivo per cui una mappa non possa restituire sempre lo stesso oggetto ogni volta che viene richiesta una determinata visualizzazione della raccolta. Questo è esattamente ciò che fanno tutte le implementazioni di Map in java.util.
+
+Con tutte e tre le visualizzazioni Collection, chiamando l'operazione di rimozione di un iteratore viene rimossa la voce associata dalla mappa di supporto, presupponendo che la mappa di supporto supporti la rimozione dell'elemento per cominciare. Ciò è illustrato dall'idioma di filtraggio precedente.
+
+Con la vista entrySet, è anche possibile modificare il valore associato a una chiave chiamando il metodo setValue di Map.Entry durante l'iterazione (di nuovo, supponendo che la mappa supporti la modifica del valore per cominciare). Si noti che questi sono gli unici modi sicuri per modificare una mappa durante l'iterazione; il comportamento non è specificato se la mappa sottostante viene modificata in qualsiasi altro modo mentre l'iterazione è in corso.
+
+Le viste Collection supportano la rimozione degli elementi in tutte le sue numerose forme: operazioni remove, removeAll, retainAll e clear, nonché l'operazione Iterator.remove. (Ancora una volta, questo presuppone che la mappa di supporto supporti la rimozione degli elementi.)
+
+Le viste Raccolta non supportano l'aggiunta di elementi in nessun caso. Non avrebbe senso per le viste keySet e values, e non è necessario per la vista entrySet, perché i metodi put e putAll della mappa di supporto forniscono la stessa funzionalità.
 
 Collections, fino a SortedMap
