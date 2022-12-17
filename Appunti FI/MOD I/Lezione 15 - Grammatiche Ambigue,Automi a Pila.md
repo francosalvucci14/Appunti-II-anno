@@ -135,5 +135,17 @@ La convenzione è che il primo carattere della stringa diventi il simbolo di pil
 ![[appunti fi/mod i/immagini/Pasted image 20221217155054.png|center|600]]
 
 
+Dato un automa a pila $\mathcal M=\langle\Sigma,\Gamma,Z_0,Q,q_0,F,\delta\rangle$, una configurazione di $\mathcal M$ è data dalla tripla $\langle q,x,\gamma\rangle$, dove $q\in Q,x\in\Sigma^\star,\gamma\in\Gamma^\star$
 
+Sia $\mathcal M=\langle\Sigma,\Gamma,Z_0,Q,q_0,F,\delta\rangle$ un automa a pila e siano $(q,x,\gamma)$ e $(q',x',\gamma')$ due configurazioni di $\mathcal M$: avremo allora che $(q,x,\gamma)\vdash_{\mathcal M}(q',x',\gamma')$ se e solo se valgono le tre condizioni:
+
+1. esiste $a\in\Sigma$ tale che $x=ax'$
+2. esistono $Z\in\Gamma$ e $\eta,\zeta\in\Gamma^\star$ tali che $\gamma=Z\eta$ e $\gamma'=\zeta\eta$
+3. $\delta(q,a,Z)=(q',\zeta)$
+
+oppure le tre condizioni: 
+
+1. $x=x'$
+2. esistono $Z\in\Gamma$ e $\eta,\zeta\in\Gamma^\star$ tali che $\gamma=Z\eta$ e $\gamma'=\zeta\eta$
+3. $\delta(q,\varepsilon,Z)=(q',\zeta)$
 
