@@ -11,3 +11,20 @@ Mentre gli automi a pila non deterministici riconoscono la classe dei linguaggi 
 
 **Esempio**: accettazione del linguaggio non contestuale $\{w\hat w|w\in\{s,b\}^+\}$, dove $\hat w$ indica la stringa riflessa di $w$  
 
+**Esempio di accettazione per pila vuota**
+
+Tabella di transizione dell’automa a pila che accetta per pila vuota il linguaggio $\{w\hat w|w\in\{s,b\}^+\}$
+
+![[appunti fi/mod i/immagini/Pasted image 20221217162459.png|center|550]]
+
+**Esempio di accettazione per stato finale**
+
+Tabella di transizione dell’automa a pila che accetta per stato finale il linguaggio $\{w\hat w|w\in\{s,b\}^+\}$
+
+![[appunti fi/mod i/immagini/Pasted image 20221217162904.png|center|550]]
+
+
+
+
+
+

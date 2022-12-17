@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md",
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md"
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md",
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md",
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,15 +175,15 @@
   },
   "active": "e904208e7153a764",
   "lastOpenFiles": [
+    "Appunti FI/MOD I/Immagini/Pasted image 20221217162730.png",
     "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
+    "Appunti FI/MOD I/Indice delle lezioni FI.md",
     "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti LMP/MOD I/Lezione 13 - Collections.md",
-    "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Immagini/Pasted image 20221215120841.png"
+    "Appunti LMP/MOD I/Lezione 13 - Collections.md"
   ]
 }
