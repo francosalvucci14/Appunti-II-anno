@@ -134,6 +134,7 @@ La convenzione è che il primo carattere della stringa diventi il simbolo di pil
 
 ![[appunti fi/mod i/immagini/Pasted image 20221217155054.png|center|600]]
 
+## Configurazioni
 
 Dato un automa a pila $\mathcal M=\langle\Sigma,\Gamma,Z_0,Q,q_0,F,\delta\rangle$, una configurazione di $\mathcal M$ è data dalla tripla $\langle q,x,\gamma\rangle$, dove $q\in Q,x\in\Sigma^\star,\gamma\in\Gamma^\star$
 
@@ -148,4 +149,18 @@ oppure le tre condizioni:
 1. $x=x'$
 2. esistono $Z\in\Gamma$ e $\eta,\zeta\in\Gamma^\star$ tali che $\gamma=Z\eta$ e $\gamma'=\zeta\eta$
 3. $\delta(q,\varepsilon,Z)=(q',\zeta)$
+
+Una computazione è definita come una sequenza $c_0,...,c_k$ di configurazioni di $\mathcal M$ tale che 
+$$c_i\vdash_{\mathcal M}c_{i+1}$$
+## Accettazione per pila vuota
+
+Sia $\mathcal M$ un automa a pila. Una configurazione $(q,x,\gamma)$ di $\mathcal M$ è di accetazione se $x=\gamma=\varepsilon$. Secondo tale definizione, una stringa x è quindi **accettata** da $\mathcal M$ se e solo se al termine della scansione della stringa la pila è vuota
+
+Indichiamo con $N(\mathcal M)$ il linguaggio accettato per pila vuota dall'automa $\mathcal M$
+
+## Accettazione per stato finale
+
+Sia $\mathcal M$ un automa a pila. Una configurazione $(q,x,\gamma)$ di $\mathcal M$ è di accetazione se $x=\varepsilon$ e $q\in F$. Secondo tale definzione, una stringa x è quindi **accettata** da $\mathcal M$ se e solo se al termine della scansione della stringa l'automa si trova in uno stato finale
+
+Indichiamo con $L(\mathcal M)$ il linguaggio accettato per stato finale dall'automa
 

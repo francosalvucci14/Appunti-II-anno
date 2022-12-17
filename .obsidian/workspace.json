@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e904208e7153a764",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md"
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md"
               }
             }
           },
@@ -115,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,14 +145,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -160,8 +173,10 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "145ca76d1da962e1",
+  "active": "e904208e7153a764",
   "lastOpenFiles": [
+    "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
+    "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
@@ -169,8 +184,6 @@
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti LMP/MOD I/Lezione 13 - Collections.md",
     "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Immagini/Pasted image 20221215120841.png",
-    "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
-    "Appunti LMP/MOD I/Lezione 12 - Interfacce parte 2, Generics.md"
+    "Appunti ASD/MOD I/Immagini/Pasted image 20221215120841.png"
   ]
 }
