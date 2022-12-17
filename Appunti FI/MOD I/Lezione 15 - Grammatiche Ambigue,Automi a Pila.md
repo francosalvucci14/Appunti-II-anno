@@ -130,6 +130,10 @@ La convenzione è che il primo carattere della stringa diventi il simbolo di pil
 
 ![[appunti fi/mod i/immagini/Pasted image 20221217155019.png|center|600]]
 
+**Esempio**
+
 ![[appunti fi/mod i/immagini/Pasted image 20221217155054.png|center|600]]
+
+
 
 
