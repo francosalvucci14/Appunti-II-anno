@@ -118,4 +118,18 @@ Anche il problema dell'inerente ambiguità di un linguaggio è indecidibile
 
 # Automi a Pila
 
+Un automa a pila (o automa push-down) è definito come una settupla $\mathcal M=\langle\Sigma,\Gamma,Z_0,Q,q_0,F,\delta\rangle$ dove $\Sigma$ è l'**alfabeto in input**, $\Gamma$ è l'**alfabeto dei simboli della pila**, $Z_0\in\Gamma$ è il **simbolo iniziale di pila**, Q è un insieme finito e non vuoto di **stati**, $q_0\in Q$ è lo **stato iniziale**, $F\subseteq Q$ è l'**insieme degli stati finali**, $\delta:Q\times(\Sigma\cup\{\varepsilon\})\times\Gamma\to Q\times\Gamma^\star$ è la **funzione (parziale) di transizione**
+
+L'automa introdotto è non deterministico, in quanto la presenza di $\varepsilon$-transizioni può comportare che esistano continuazioni diverse di una stessa computazione anche in presenza di uno stesso carattere letto
+
+Per ottenere un comportamento deterministico dobbiamo fare l'ulteriore ipotesi che se, per una coppia $q\in Q,Z\in\Gamma$, è definita $\delta(q,\varepsilon,Z)$ allora la funzione di transizione $\delta(q,a,Z)$ non deve essere definita per nessun $a\in\Sigma$ 
+
+Ad ogni passo l'automa, a partire dallo stato attuale,dal carattere letto sul nastro di input e dal carattere affiorante sulla pila, sostituisce il simbolo affiorante nella pila con una stringa di caratteri e si porta in un nuovo stato.
+
+La convenzione è che il primo carattere della stringa diventi il simbolo di pila affiorante. Si noti che se la stringa che viene inserita nella pila è la stringa vuota,ciò equivale a dire che il simbolo precedente affiorante nella pila è stato cancellato
+
+![[appunti fi/mod i/immagini/Pasted image 20221217155019.png|center|600]]
+
+![[appunti fi/mod i/immagini/Pasted image 20221217155054.png|center|600]]
+
 

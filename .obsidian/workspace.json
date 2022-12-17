@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
+                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md"
+                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
+                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
+                "file": "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,8 +162,8 @@
   },
   "active": "145ca76d1da962e1",
   "lastOpenFiles": [
-    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
+    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
