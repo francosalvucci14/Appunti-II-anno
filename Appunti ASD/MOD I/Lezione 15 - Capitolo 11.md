@@ -97,6 +97,36 @@ $\square$
 ![[appunti asd/mod i/immagini/Pasted image 20221219164942.png|center|200]]
 
 
+##### Correttezza
+
+Per ogni coppia di nodi u e v, gli intervalli $[pre(u),post(u)]$ e $[pre(v),post(v)]$ o sono disgiunyi o l'uno è contenuto nell'altro
+
+![[appunti asd/mod i/immagini/Pasted image 20221219165156.png|center|500]]
+
+##### Algoritmo alternativo
+
+![[appunti asd/mod i/immagini/Pasted image 20221219165306.png|center|600]]
+
+$(*)$ perchè altrimenti in $\hat G$ ogni vertice deve avere almeno un arco entrante, e quindi posso trovare un ciclo percorrendo archi entranti a ritroso, e quindi G non può essere aciclico
+
+**Tempo di esecuzione (con liste di adiacenza)**: $\Theta(n+m)$
+
+[Esempio](http://www.mat.uniroma2.it/~guala/usi_dfs_2021.pdf#page=17)
+
+## Componenti fortemente connesse
+
+Una **componente fortemente connessa** di un grafo G=(V,E) è un insieme **_massimale_** di vertici $C\subseteq V$ tale che per ogni coppia di nodi **u** e **v** in C, **u** è raggiungibile da **v** e **v** è raggiungibile da **u**
+
+**massimale**: se si aggiunge un qualsiasi vertice a C la proprietà non è più vera
+
+Grafo delle componenti fortemente connesse di G
+
+![[appunti asd/mod i/immagini/Pasted image 20221219165907.png|300]]
+
+è sempre un **DAG**
+![[Pasted image 20221219170011.png|center|300]]
+
+
 
 
 
