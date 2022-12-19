@@ -10,7 +10,7 @@
 - [[Lezione 8 - RE,RG e ASF]]
 - [[Lezione 9 - Sempre su RE,RG e ASF]]
 - [[Lezione 10 - Minimizzazione di ASF]]
-- [[Lezione 11 - Pumping Lemma,Linguaggi CF]]
+- [[Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF]]
 - [[Lezione 12 - Sempre su Linguaggi CF]]
 - [[Lezione 13 - CNF,GNF]]
 - [[Lezione 14 - Pumping Lemma per CF]]

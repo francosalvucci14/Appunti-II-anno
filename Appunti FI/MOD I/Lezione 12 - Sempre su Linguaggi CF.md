@@ -1,4 +1,4 @@
-Ritornando a [[Lezione 11 - Pumping Lemma,Linguaggi CF#Forme ridotte e forme normali|Forme ridotte e forme normali]]
+Ritornando a [[Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF#Forme ridotte e forme normali|Forme ridotte e forme normali]]
 
 # Forme ridotte e normali 
 

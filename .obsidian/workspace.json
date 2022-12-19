@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md"
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma,Linguaggi CF.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +160,7 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "e904208e7153a764",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
     "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
     "Appunti FI/MOD I/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
