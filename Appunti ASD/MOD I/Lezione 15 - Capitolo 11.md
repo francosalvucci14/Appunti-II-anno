@@ -159,3 +159,13 @@ Grafo delle componenti fortemente connesse di G
 ![[appunti asd/mod i/immagini/Pasted image 20221219171613.png|300]]
 
 
+![[appunti asd/mod i/immagini/Pasted image 20221219171716.png|center|600]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221219171819.png|center|600]]
+
+![[appunti asd/mod i/immagini/Pasted image 20221219171854.png|center|600]]
+
+
+
+
+
