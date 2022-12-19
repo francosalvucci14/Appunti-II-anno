@@ -88,3 +88,16 @@ $\square$
 
 #### Calcolare ordinamento topologico
 
+![[appunti asd/mod i/immagini/Pasted image 20221219164658.png|center|650]]
+
+**Esempio**
+
+![[appunti asd/mod i/immagini/Pasted image 20221219164841.png|center|400]]
+![[appunti asd/mod i/immagini/Pasted image 20221219164912.png|center|500]]
+![[appunti asd/mod i/immagini/Pasted image 20221219164942.png|center|200]]
+
+
+
+
+
+
