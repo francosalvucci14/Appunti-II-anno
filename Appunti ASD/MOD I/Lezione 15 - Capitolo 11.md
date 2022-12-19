@@ -43,7 +43,7 @@ Possiamo usare i tempi di visiita per riconoscere il tipo di un generico arco (u
 >Un grafo diretto G ha un ciclo se e solo se la visita DFS rivela un arco all'indietro
 
 $(\leftarrow):$ se c'è arco all'indietro, chairamente G ha un ciclo
-$(\to):$ se c'è ciclo $<v_0,v_1,..,v_k=v_0>$ 
+$(\to):$ se c'è ciclo $\lt v_0,v_1,..,v_k=v_0\gt$ 
 
 sia $v_i$ il primo nodo scoperto nella visita:
 - $v_i$ termina la visita dopo che $v_{i+1}$ ha terminato la sua
@@ -63,7 +63,28 @@ sia $v_i$ il primo nodo scoperto nella visita:
 ![[appunti asd/mod i/immagini/Pasted image 20221219163503.png|center|600]]
 
 
+### Reti delle "dipendenze"
 
+**nodi**: compiti da svolgere
+**arco (u,v)**: u deve essere eseguito prima di v
 
+![[appunti asd/mod i/immagini/Pasted image 20221219163623.png|center|300]]
 
+**problema**: trovare un ordine in cui eseguire i compiti in modo da rispettare le dipendenze
+
+![[appunti asd/mod i/immagini/Pasted image 20221219163735.png|center|500]]
+
+### Quali grafi (diretti) ammettono un ordinamento topologico?
+
+>[!important]- Teorema
+>Un grafo diretto G ammette un ordinamento topologico se e solo se G è un DAG
+
+**dim (per $\leftarrow$)**
+
+per assurdo: sia $\sigma$ un ordinamento topologico di G, e sia $\lt v_0,v_1,..,v_k=v_0\gt$ un ciclo, allora $\sigma(v_0)\lt\sigma(v_1)\lt...\lt\sigma(v_{k-1})\lt\sigma(v_k)=\sigma(v_0)$
+$\square$
+
+**dim (per $\to$)**: ... adesso diamo un algoritmo costruttivo
+
+#### Calcolare ordinamento topologico
 
