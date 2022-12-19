@@ -33,6 +33,34 @@ Possiamo usare i tempi di visiita per riconoscere il tipo di un generico arco (u
 ![[appunti asd/mod i/immagini/Pasted image 20221219161932.png|center|600]]
 
 
+# Cicli,DAG e ordinamenti topologici
+
+## Riconoscere la presenza di un ciclo in un grafo diretto
+
+**Algoritmo**: fai una visita DFS e controlla se c'è un arco all'indietro
+
+>[!important]- Proprietà
+>Un grafo diretto G ha un ciclo se e solo se la visita DFS rivela un arco all'indietro
+
+$(\leftarrow):$ se c'è arco all'indietro, chairamente G ha un ciclo
+$(\to):$ se c'è ciclo $<v_0,v_1,..,v_k=v_0>$ 
+
+sia $v_i$ il primo nodo scoperto nella visita:
+- $v_i$ termina la visita dopo che $v_{i+1}$ ha terminato la sua
+- $v_{i+1}$ termina la visita dopo che $v_{i+2}$ ha terminato la sua
+- ...
+- quindi, per transitività, $v_i$ termina la visita dopo che $v_{i-1}$ ha temrinato la sua
+- allora $(v_{i-1},v_i)$ è un arco all'indietro
+
+![[appunti asd/mod i/immagini/Pasted image 20221219163048.png|center|150]]
+
+>[!important]- Definizione
+>Un **grafo diretto aciclico (DAG)** è un grafo diretto G che non contiene cicli (diretti)
+
+>[!important]- Definizione
+>Un ordinamento topologico di un grafo diretto G=(V,E) è una funzione biettiva $\sigma:V\to\{1,2,...,n\}$ tale che per ogni arco $(u,v)\in E,\sigma(u)\lt\sigma(v)$
+
+![[appunti asd/mod i/immagini/Pasted image 20221219163503.png|center|600]]
 
 
 
