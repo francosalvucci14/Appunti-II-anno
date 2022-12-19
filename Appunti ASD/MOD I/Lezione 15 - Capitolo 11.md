@@ -130,4 +130,22 @@ Grafo delle componenti fortemente connesse di G
 ### Come si possono calcolare le componenti fortemente connesse di un grafo diretto?
 
 
+**Proprietà 1**: se si esegue la procedura visitaDFSricorsiva a partire da un nodo u la procedura termina dopo che tutti i nodi raggiungibili da u sono stati visitati
+
+![[appunti asd/mod i/immagini/Pasted image 20221219165907.png|300]]
+
+**Idea**: eseguire una visita a partire da un nodo di una componente pozzo, "eliminare" la componente e ripetere
+
+#### Come trovo una componente pozzo?
+
+**Proprietà 2**: se C e C' sono due componenti e c'è un arco da un nodo in C verso uno in C', allora il più grande valore post() in C è maggiore del più alto valore di post() di C'
+
+**dim**: 
+- se la DFS visita prima C' di C: banale
+- se visita prima C, allora si ferma dopo che ha raggiunto tutti i nodi di C e C' e termina su un nodo di C
+
+**Proprietà 3**: il nodo che riceve da una visita DFS il valore più grande di post() appartiene a una componente sorgente
+
+![[appunti asd/mod i/immagini/Pasted image 20221219170808.png|center|300]]
+
 
