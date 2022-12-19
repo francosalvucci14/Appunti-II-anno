@@ -124,10 +124,10 @@ Grafo delle componenti fortemente connesse di G
 ![[appunti asd/mod i/immagini/Pasted image 20221219165907.png|300]]
 
 è sempre un **DAG**
-![[Pasted image 20221219170011.png|center|300]]
+![[appunti asd/mod i/immagini/Pasted image 20221219170011.png|center|300]]
 
 
-
+### Come si possono calcolare le componenti fortemente connesse di un grafo diretto?
 
 
 
