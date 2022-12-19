@@ -148,4 +148,14 @@ Grafo delle componenti fortemente connesse di G
 
 ![[appunti asd/mod i/immagini/Pasted image 20221219170808.png|center|300]]
 
+##### Ma avevamo bisogno di una componente pozzo?
+
+**Idea**: invertiamo gli archi!
+
+![[appunti asd/mod i/immagini/Pasted image 20221219171514.png|300]]
+
+**Nota bene:** le componenti fortemente connesse sono le stesse! **(perchè?)**
+
+![[appunti asd/mod i/immagini/Pasted image 20221219171613.png|300]]
+
 
