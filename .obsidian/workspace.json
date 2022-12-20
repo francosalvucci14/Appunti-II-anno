@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md"
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,14 +144,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -172,17 +172,17 @@
     "direction": "horizontal",
     "width": 288.5
   },
-  "active": "7931714fcd03803f",
+  "active": "e904208e7153a764",
   "lastOpenFiles": [
-    "Appunti ASD/Algoritmo_Es3.pdf",
-    "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Indice degli appunti ASD.md",
-    "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
-    "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
     "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
-    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
-    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
-    "Appunti FI/MOD I/Lezione 7 - Equivalenza tra ASFD e ASFND.md"
+    "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
+    "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
+    "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
+    "Appunti LMP/MOD I/Lezione 13 - Collections.md",
+    "Appunti LMP/MOD I/Lezione 12 - Interfacce parte 2, Generics.md",
+    "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
+    "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
+    "Appunti ASD/Algoritmo_Es3.pdf",
+    "Appunti ASD/MOD I/Indice degli appunti ASD.md"
   ]
 }

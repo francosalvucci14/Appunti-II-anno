@@ -19,8 +19,8 @@
 	- [[Algoritmi#Algoritmo BFS|Algoritmo BFS]]
 
 - Algoritmi di visita di un grafo
-	- Algoritmo DFS
-	- Algoritmo BFS
+	- [[Algoritmi#Algoritmo DFS (Grafi)|Algoritmo DFS]]
+	- [[Algoritmi#Algoritmo BFS (Grafi)|Algoritmo BFS]]
 
 Per una spiegazione più dettagliata di qeusti algoritmi si rimanda a questo link [Algoritmi](http://people.disim.univaq.it/guido.proietti/lezioni_algo2021.html)
 
@@ -497,8 +497,7 @@ BFS(root)
 
 # Algoritmi di visita di un grafo
 
-## Algoritmo DFS
-
+## Algoritmo DFS (Grafi)
 Speigazione qua -> [[Lezione 14 - Capitolo 11#Visita in profondità|Lezione 14 - DFS]]
 
 ### Pseudocodice
@@ -511,7 +510,7 @@ Il tempo di esecuzione dipende dalla struttura dati usata per rappresentare il g
 - Liste di adiacenza: $O(m+n)$
 - Matrice di adiacenza: $O(n^2)$
 
-## Algortimo BFS
+## Algoritmo BFS (Grafi)
 
 Speigazione qua -> [[Lezione 14 - Capitolo 11#Visita in ampiezza|Lezione 14 - BFS]]
 
