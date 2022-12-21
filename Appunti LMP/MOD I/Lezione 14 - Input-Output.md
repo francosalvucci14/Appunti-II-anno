@@ -520,6 +520,63 @@ Nella figura seguente, logFile sembra essere un normale file per l'utente, ma in
 
 ![[appunti lmp/mod i/immagini/io-symlink.gif|center|400]]
 
+Un collegamento simbolico è solitamente trasparente per l'utente. Leggere o scrivere su un collegamento simbolico equivale a leggere o scrivere su qualsiasi altro file o directory.
 
+La frase risolvere un collegamento significa sostituire la posizione effettiva nel file system per il collegamento simbolico. Nell'esempio, la risoluzione di logFile restituisce `dir/logs/HomeLogFile`.
 
+Negli scenari del mondo reale, la maggior parte dei file system fa un uso liberale dei collegamenti simbolici. Occasionalmente, un collegamento simbolico creato con noncuranza può causare un riferimento circolare. Un riferimento circolare si verifica quando la destinazione di un collegamento rimanda al collegamento originale. Il riferimento circolare potrebbe essere indiretto: la directory a punta alla directory b, che punta alla directory c, che contiene una sottodirectory che punta alla directory a. I riferimenti circolari possono causare problemi quando un programma percorre ricorsivamente una struttura di directory. Tuttavia, questo scenario è stato tenuto in considerazione e non causerà il ciclo infinito del programma.
+
+### La classe Path
+
+La classe Path, introdotta nella versione Java SE 7, è uno dei principali punti di ingresso del pacchetto java.nio.file. Se la tua applicazione utilizza file I/O, vorrai conoscere le potenti funzionalità di questa classe.
+
+Come suggerisce il nome, la classe Path è una rappresentazione programmatica di un percorso nel file system. Un oggetto Path contiene il nome del file e l'elenco di directory utilizzati per costruire il percorso e viene utilizzato per esaminare, individuare e manipolare i file.
+
+Un'istanza Path riflette la piattaforma sottostante. Nel sistema operativo Solaris, un percorso utilizza la sintassi di Solaris (/home/joe/foo) e in Microsoft Windows, un percorso utilizza la sintassi di Windows (C:\home\joe\foo). Un percorso non è indipendente dal sistema. Non è possibile confrontare un percorso da un file system Solaris e aspettarsi che corrisponda a un percorso da un file system Windows, anche se la struttura della directory è identica ed entrambe le istanze individuano lo stesso file relativo.
+
+Il file o la directory corrispondente al percorso potrebbe non esistere. Puoi creare un'istanza di Path e manipolarla in vari modi: puoi accodarla, estrarne pezzi, confrontarla con un altro percorso. Al momento opportuno, è possibile utilizzare i metodi della classe Files per verificare l'esistenza del file corrispondente al Path, creare il file, aprirlo, eliminarlo, modificarne i permessi e così via.
+
+#### Operazioni su Path
+
+La classe Path include vari metodi che possono essere utilizzati per ottenere informazioni sul percorso, accedere agli elementi del percorso, convertire il percorso in altre forme o estrarre parti di un percorso. Esistono anche metodi per abbinare la stringa del percorso e metodi per rimuovere le ridondanze in un percorso. Questa lezione affronta questi metodi Path, a volte chiamati operazioni sintattiche, perché operano sul percorso stesso e non accedono al file system
+
+##### Creazione di un percorso
+
+Un'istanza Path contiene le informazioni utilizzate per specificare la posizione di un file o di una directory. Nel momento in cui viene definito, un Sentiero viene fornito con una serie di uno o più nomi. Potrebbero essere inclusi un elemento radice o un nome file, ma nessuno dei due è obbligatorio. Un percorso potrebbe consistere in una singola directory o nome di file.
+
+È possibile creare facilmente un oggetto Path utilizzando uno dei seguenti metodi get dalla classe helper Paths (notare il plurale):
+
+```java
+Path p1 = Paths.get("/tmp/foo");
+Path p2 = Paths.get(args[0]);
+Path p3 = Paths.get(URI.create("file:///Users/joe/FileTest.java"));
+```
+
+##### Recupero di informazioni su un percorso
+
+Puoi pensare al percorso come alla memorizzazione di questi elementi del nome come una sequenza. L'elemento più alto nella struttura della directory si trova all'indice 0. L'elemento più basso nella struttura della directory si trova all'indice $[n-1]$, dove n è il numero di elementi del nome nel percorso. Sono disponibili metodi per recuperare singoli elementi o una sottosequenza del percorso utilizzando questi indici.
+
+Gli esempi in questa lezione utilizzano la seguente struttura di directory.
+
+![[appunti lmp/mod i/immagini/io-dirStructure 1.gif|center]]
+
+Il seguente frammento di codice definisce un'istanza Path e quindi richiama diversi metodi per ottenere informazioni sul percorso:
+
+```java
+// None of these methods requires that the file corresponding
+// to the Path exists.
+// Microsoft Windows syntax
+Path path = Paths.get("C:\\home\\joe\\foo");
+
+// Solaris syntax
+Path path = Paths.get("/home/joe/foo");
+
+System.out.format("toString: %s%n", path.toString());
+System.out.format("getFileName: %s%n", path.getFileName());
+System.out.format("getName(0): %s%n", path.getName(0));
+System.out.format("getNameCount: %d%n", path.getNameCount());
+System.out.format("subpath(0,2): %s%n", path.subpath(0,2));
+System.out.format("getParent: %s%n", path.getParent());
+System.out.format("getRoot: %s%n", path.getRoot());
+```
 
