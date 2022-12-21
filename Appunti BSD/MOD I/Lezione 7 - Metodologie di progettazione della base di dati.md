@@ -99,7 +99,7 @@ Vedi esempio2 -> [Esempio 2-Più articolato](http://www.informatica.uniroma2.it/
 - Rappresentazione mediante **relazioni** concetti che associano più entità precedentemente identificate
 - Rappresentazione mediante **generalizzazioni** concetti che risultino essere casi particolari di altri
 
-## Strategie di progetto
+### Strategie di progetto
 
 Si possono utilizzare le strategie tipiche dello sviluppo di un processo di ingegnerizzazione (es. ingegneria del software)
 
@@ -108,7 +108,7 @@ Si possono utilizzare le strategie tipiche dello sviluppo di un processo di inge
 - Strategie inside-out
 - Approcci misti
 
-### Strategia top-down
+#### Strategia top-down
 
 A partire da uno schema che descrive le specifiche mediante pochi concetti molto astratti, si produce uno schema concettuale mediante raffinamenti successivi che aggiungono via via più dettagli.
 
@@ -116,7 +116,7 @@ I raffinamenti successivi, come accade anche per altre strategie, vengono realiz
 
 ![[appunti bsd/mod i/immagini/Pasted image 20221221152107.png|center|500]]
 
-#### Primitive di trasformazione top-down
+##### Primitive di trasformazione top-down
 
 - **T1, _da entità a relazione fra entità_**: si applica quando si verifica che una entità descrive due concetti diversi legati logicamente fra loro
 - **T2, _da entità a generalizzazione_**: si applica quando una entità è composta da sotto-entità distinte o,più in generale, che uno stesso concetto può in realtà comprendere più concetti
@@ -127,7 +127,93 @@ I raffinamenti successivi, come accade anche per altre strategie, vengono realiz
 
 ![[appunti bsd/mod i/immagini/Pasted image 20221221152609.png|center|400]]
 
-### Strategia bottom-up
+#### Strategia bottom-up
+
+Nella strategia bottom-up le specifiche iniziali sono suddivise in componenti via via sempre più piccole, fino a descrivere frammenti elementari della realtà
+
+Le componenti vengono poi fuse con trasformazioni successive (primitive di trasformazione bottom-up) per giungere allo schema concettuale finale
+
+Ogni trasformazione introduce nuovi concetti non presenti al livello precedente
+
+![[appunti bsd/mod i/immagini/Pasted image 20221221152927.png|center|500]]
+
+
+##### Primitive di trasformazione bottom-up
+
+- **T1, _generazione di entità_**: si applica quando si individua nelle specifiche una classe di oggetti caratterizzata da proprietà comuni
+- **T2, _generazione di relazione_**: si applica quando nelle specifiche si individua un legame logico fra entità
+- **T3, _generazione di generalizzazione_**: si applica quando si individua un legame fra diverse entità riconducibile ad una generalizzazione, quando cioè le diverse entità possono essere istanze di una stessa classe
+- **T4, _aggregazione di attributi su entità_**: si applica quando si individua una entità che può essere rappresentata come aggragazione di attributi presenti nelle specifiche
+- **T5, _aggregazione di attributi su relazione_**: analoga a T4, ma relativa ad una relazione
+
+![[appunti bsd/mod i/immagini/Pasted image 20221221153416.png|center|400]]
+
+#### Strategia inside-out
+
+Può essere vista come un caso particolare della strategia bottom-up: individua solo alcuni concetti importanti, per poi procedere a macchia d'olio
+
+Si rappresentano prima i concetti più vicini a quelli di partenza per poi sviluppare quelli più lontani attraverso una _navigazione_ nelle specifiche
+
+- **Vantaggi**: non richiedere passi di integrazione
+- **Svantaggi**: è necessario di volta in volta esaminare tutte le specifiche e descrivere i nuovi concetti nel dettaglio
+
+**Non è possibile procedere per livelli di astrazione**
+
+![[appunti bsd/mod i/immagini/Pasted image 20221221153733.png|center|600]]
+
+![[appunti bsd/mod i/immagini/Pasted image 20221221153833.png|center|500]]
+
+#### Strategia mista
+
+- Cerca di unire i vantaggi delle strategie top-down e bottom-up. A un estremo, si individuano **componenti elementari**, all'altro si crea uno **schema scheletro** contenente concetti di base da espandere, con raffinamenti successivi, in modo top-down
+- Contemporaneamente, dalle specifiche, si creano in modo bottom-up i concetti non presenti nello schema scheletro
+- Si adatta alle esigenze opposte di suddivisione di un problema complesso in sottoproblemi, e di procedura per raffinamenti successivi
+- Ingloba in pratica anche la strategia inside-out
+
+**Spesso è l'unica strategia utilizzabile**
+
+##### In pratica
+
+Si procede di solito con una strategia ibrida (**mista**):
+- si individuano i concetti principali e si realizza uno **schema scheletro**
+- sulla base di questo si può decomporre
+- poi si **raffina**, si espande, si integra
+
+**Schema scheletro**: Si individuano i concetti più importanti, ad esempio perchè più citati o perchè indicati esplicitamente come cruciali e li si organizza in un semplice schema concettuale
+
+### Qualità di uno schema concettuale
+
+Nel definire uno schema concettuale ci sono alcune prorpietà che bisogna cercare di garantire:
+
+- **Correttezza**: lo schema utilizza propriamente i costrutti del modello di riferimento
+- **Completezza**: tutti i dati di interesse sono rappresentati e tutte le operazioni sono eseguibili a partire dai concetti descritti nello schema
+- **Leggibilità**: i requisiti sono rappresentati in modo naturale e comprensibile. Estetica dello schema
+- **Minimalità**: le specifiche sono rappresentate una sola volta. Non sempre, tuttavia, eventali ridondanze sono indesiderate
+
+### Metodologia
+
+- **Analisi dei requisiti**:
+	- Analizzare i requisiti ed eliminare le ambiguità
+	- Costruire un glossario dei termini
+	- Raggruppare i requisiti in insiemi omogenei
+- **Passo base**: Definire uno schema scheletro con i concetti più rilevanti
+- **Passo decomposizione**: Effettuare una decomposizione dei requisiti con riferimento ai concetti presenti nello schema scheletro
+- **Passo iterativo**: Da ripetere per tutti i sottoschemi finchè ogni specifica è stata rappresentata:
+	- Raffinare i concetti presenti in base alle specifiche
+	- Aggiungere nuovi concetti
+- **Passo di integrazione**: Integrare i vari sottoschemi utilizzando lo schema scheletro
+- **Analisi di qualità**:
+	- Verifica correttezza
+	- Verifica compeltezza
+	- Verifica leggibilità
+	- Verifica La minimalità e documentare eventuali ridondanze volute
+
+
+
+
+
+
+
 
 
 
