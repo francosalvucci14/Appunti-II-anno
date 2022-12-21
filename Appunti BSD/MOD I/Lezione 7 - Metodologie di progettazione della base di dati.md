@@ -206,7 +206,7 @@ Nel definire uno schema concettuale ci sono alcune prorpietà che bisogna cercar
 	- Verifica correttezza
 	- Verifica compeltezza
 	- Verifica leggibilità
-	- Verifica La minimalità e documentare eventuali ridondanze volute
+	- Verifica la minimalità e documentare eventuali ridondanze volute
 
 
 
