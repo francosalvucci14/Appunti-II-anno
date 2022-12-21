@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",
+                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 14 - Input-Output.md"
+                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md"
               }
             }
           },
@@ -140,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
+                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
+                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,9 +197,9 @@
   },
   "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
+    "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",
     "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
-    "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
     "Appunti FI/MOD I/Lezione 3 - RE,Grammatiche.md",
     "Appunti FI/MOD I/Lezione 2 - RE,Linguaggi e problemi.md",
