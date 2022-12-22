@@ -151,4 +151,37 @@ Assurdo! $\square$
 
 ### Analisi della complessità
 
+Se si escludono le operazioni sulla coda con priorità: tempo $O(m+n)$
+
+Quanto costano le operazioni sulla coda con priorità?
+
+#### Tempo di esecuzione: implementazioni elementari
+
+Supponendo che il grafo G sia rappresentato tramite liste di adiacenza, e supponendo che tutti i nodi siano connessi ad s, avremo n insert, n deleteMin, e al più n decreaseKey nella coda con priorità, al costo di:
+
+![[appunti asd/mod i/immagini/Pasted image 20221222104458.png|center|500]]
+
+- $n*O(1)+n*O(n)+O(m)*O(1)=O(n^2)$ con array non ordinati
+- $n*O(n)+n*O(1)+O(m)*O(n)=O(m*n)$ con array ordinati
+- $n*O(1)+n*O(n)+O(m)*O(1)=O(n^2)$ con liste non ordinate
+- $n*O(n)+n*O(1)+O(m)*O(n)=O(m*n)$ con liste ordinate
+
+#### Tempo di esecuzione: implementazioni efficienti
+
+Supponendo che il grafo G sia rappresentato tramite liste di adiacenza, e supponendo che tutti i nodi siano connessi ad s, avremo n insert, n deleteMin e al più m decreaseKey nella coda con priorità, al costo di:
+
+![[appunti asd/mod i/immagini/Pasted image 20221222105118.png|center|500]]
+
+- $n*O(log(n))+n*O(log(n))+O(m)*O(log(n))=O(m*log(n))$ utilizzando heap binari o binomiali
+- $n*O(1)+n*O(log(n))^\star+O(m)*O(1)^\star=O(m+nlog(n))$ utilizzando Heap di Fibonacci
+
+La seconda soluzione è la migliore: mai peggiore, a volte meglio delle altre
+
+Quindi, il tempo di esecuzione per l'algoritmo di Dijkstra è $O(m+nlog(n))$
+
+
+#### Osservazione sulla decreaseKey
+
+- Ricordiamo che le complessità computazionali esposte per la **decreaseKey** sono valide supponendo di avere un **puntatore diretto** all'elemento su cui eseguire l'operazione. Come possiamo garantire tael condizione?
+- Semplicemente mantenendo un puntatore tra il nodo v nell'array dei nodi della lista di adiacenza del grafo e l'elemento nella coda di priorità associato al nodo v; tale puntatore viene inizializzato nella fase di inserimento di quest'ultimo all'interno della coda
 
