@@ -141,4 +141,14 @@ Tale cammino, per uscire da T, deve allora passare per un qualche arco $(x,y)\ne
 
 ![[appunti asd/mod i/immagini/Pasted image 20221222102603.png|center|400]]
 
+![[appunti asd/mod i/immagini/Pasted image 20221222103218.png|center|400]]
+
+Per la **minimalità dei sottocammini di un cammino minimo**:
+$$\begin{align}&w(\pi_{sv})=w(\pi_{sy})+w(\pi_{yv})=d(s,x)+w(x,y)+w(\pi_{yv})\\&\text{Quindi}:w(\pi_{sv})\lt d(s,u)+w(u,v)\\&d(s,x)+w(x,y)+\underbrace{w(\pi_{yv})}_{\geq0}\lt d(s,u)+w(u,v)\\&d(s,x)+w(x,y)\lt d(s,u)+w(u,v)\end{align}$$
+ma (u,v) minimizza $d(s,t)+w(t,z)$ per ogni $t\in T,z\not\in T$, quindi:
+$$d(s,x)+w(x,y)\geq d(s,u)+w(u,v)$$
+Assurdo! $\square$
+
+### Analisi della complessità
+
 
