@@ -177,8 +177,7 @@ Supponendo che il grafo G sia rappresentato tramite liste di adiacenza, e suppon
 
 La seconda soluzione è la migliore: mai peggiore, a volte meglio delle altre
 
-Quindi, il tempo di esecuzione per l'algoritmo di Dijkstra è $O(m+nlog(n))$
-
+Quindi, il **tempo di esecuzione per l'algoritmo di Dijkstra** è $O(m+nlog(n))$, se el code con priorità vengono implementate con Heap di Fibonacci
 
 #### Osservazione sulla decreaseKey
 
