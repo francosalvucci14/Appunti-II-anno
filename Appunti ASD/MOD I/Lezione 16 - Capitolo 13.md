@@ -92,7 +92,7 @@ Archi come **tubi**
 Peso degli archi come **lunghezza**
 Acqua **scorre a velocità costante**
 
-Vedi l'idea qua: [Alg.Dijkstra](http://www.mat.uniroma2.it/~guala/Dijkstra_2021.pdf#page=21) 
+Vedi l'idea qua: [Idea Alg.Dijkstra](http://www.mat.uniroma2.it/~guala/Dijkstra_2021.pdf#page=21) 
 
 ### Verso l'algoritmo: approccio greedy (goloso)
 
@@ -119,5 +119,26 @@ Se y è in coda con arco (x,y) associato, e se dopo aver aggiunto u a T troviamo
 
 >[!info]- Nota
 >$\hat T$ è un albero che contiene tutti i nodi in X **più** i nodi correntemente contenuti nella coda di priorità (nodi arancioni); è composto cioè dagli archi di T (albero dei cammini minimi ristretto ai nodi in X) più gli archi arancioni (potenziali archi da aggiungere a T)
+
+Vedi esempio -> [Alg.Dijkstra](http://www.mat.uniroma2.it/~guala/Dijkstra_2021.pdf#page=37)
+
+### Correttezza
+
+#### Estendere l'albero dei cammini minimi
+
+>[!important]- **Lemma di Dijkstra**
+>Sia G=(V,E,w) (diretto o non diretto) con pesi non negativi, e sia T un sottoalbero dell'albero dei cammini minimi radicato in s che include s ma non include tutti i vertici raggiungibili da s. Sia (u,v) l'arco che **minimizza** la quantità $d(s,t)+w(t,z)$, per ogni $t\in T,z\not\in T$. Allora, (u,v) appartiene a un cammino minimo da **s** a **v** e $d(s,v)=d(s,u)+d(u,v)$
+
+**Dim**: Supponiamo per assurdo che (u,v) non appartenga ad un cammino minimo da s a v, e quindi che $d(s,v)\lt d(s,u)+w(u,v)$
+Allora, $d(s,v)$ è la lunghezza di un cammino minimo da s a v che non passa per (u,v)
+
+![[appunti asd/mod i/immagini/Pasted image 20221222101603.png|center|400]]
+![[appunti asd/mod i/immagini/Pasted image 20221222102301.png|center|400]]
+
+Supponiamo per assurdo che (u,v) non appartenga ad un cammino minimo da s a v, e quindi che $d(s,v)\lt d(s,u)+w(u,v)$
+Allora, $d(s,v)$ è la lunghezza di un cammino minimo da s a v che non passa per (u,v)
+Tale cammino, per uscire da T, deve allora passare per un qualche arco $(x,y)\neq (u,v)$, con $x\in T,y\not\in T$. Sia quindi $\pi_{sv}=<s,...,x,y,...,v>$
+
+![[appunti asd/mod i/immagini/Pasted image 20221222102603.png|center|400]]
 
 
