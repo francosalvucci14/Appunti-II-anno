@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md"
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md"
               }
             }
           },
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,14 +169,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -208,8 +208,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "acd002c7f705cc3c",
+  "active": "fa75d02c54cd3a5c",
   "lastOpenFiles": [
+    "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
     "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
     "Appunti ASD/Algoritmi/Algoritmi.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
@@ -218,7 +219,6 @@
     "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
     "Appunti FI/MOD I/Lezione 3 - RE,Grammatiche.md",
-    "Appunti FI/MOD I/Lezione 2 - RE,Linguaggi e problemi.md",
-    "Appunti FI/MOD I/Lezione 8 - RE,RG e ASF.md"
+    "Appunti FI/MOD I/Lezione 2 - RE,Linguaggi e problemi.md"
   ]
 }

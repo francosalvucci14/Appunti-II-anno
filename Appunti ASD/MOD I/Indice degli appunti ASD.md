@@ -15,6 +15,7 @@
 - [[Lezione 13 - Capitolo 11]]
 - [[Lezione 14 - Capitolo 11]]
 - [[Lezione 15 - Capitolo 11]]
+- [[Lezione 16 - Capitolo 13]]
 - 
 
 
