@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Esame 16-7-13.md",
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md"
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti.md"
               }
             }
           },
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -208,11 +208,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "7e9bc53cc2bdae2e",
   "lastOpenFiles": [
-    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
-    "Appunti ASD/MOD I/Esami/Esame 16-5-15.md",
     "Appunti ASD/MOD I/Esami/Esame 16-7-13.md",
+    "Appunti ASD/MOD I/Esami/Esame 16-5-15.md",
+    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
     "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
