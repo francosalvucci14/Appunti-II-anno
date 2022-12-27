@@ -8,18 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fa75d02c54cd3a5c",
+            "id": "85fce3514fc79a08",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
+                "file": "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9d0c569cc6b4eb2a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/MOD I/Esami/Esame 13-6-13.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "985b8429403b121d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md"
+                "file": "Appunti ASD/MOD I/Esami/Esame 13-6-13.md"
               }
             }
           },
@@ -115,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 13-6-13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,14 +157,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 13-6-13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -171,17 +196,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "9d0c569cc6b4eb2a",
   "lastOpenFiles": [
-    "Appunti ASD/MOD I/Indice degli appunti ASD.md",
-    "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
-    "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
-    "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",
-    "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
-    "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
+    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
+    "Appunti ASD/MOD I/Esami/Esame 13-6-13.md",
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
-    "Appunti FI/MOD I/Lezione 3 - RE,Grammatiche.md"
+    "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
+    "Appunti ASD/MOD I/Esami/Indice degli esami svolti.md",
+    "Appunti ASD/MOD I/Untitled.md",
+    "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
+    "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
+    "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
+    "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md"
   ]
 }

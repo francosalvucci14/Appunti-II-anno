@@ -33,7 +33,7 @@ $d_G(u,v)=17$
 
 - se non esiste nessun cammino da u a v:
 	- $d(u,v)=\infty$
-- se c'è un cammino che contiene un **ciclo** uil cui costo è negativo
+- se c'è un cammino che contiene un **ciclo** il cui costo è negativo
 	- $d(u,v)=-\infty$
 
 ![[appunti asd/mod i/immagini/Pasted image 20221222093143.png|center|400]]
@@ -45,13 +45,13 @@ $d_G(u,v)=17$
 
 Ogni **sottocammino** di un cammino minimo è un cammino minimo
 
-dim: tecinca **cut&paste**
+dim: tecnica **cut&paste**
 
 ![[appunti asd/mod i/immagini/Pasted image 20221222093353.png|center|550]]
 
 #### Disuguaglianza triangolare
 
-$\forall u,v,x\in V$, cale che:
+$\forall u,v,x\in V$, vale che:
 $$d(u,v)\leq d(u,x)+d(x,v)$$
 
 ![[appunti asd/mod i/immagini/Pasted image 20221222093548.png|center|600]]
