@@ -137,7 +137,7 @@ Quanti costa ogni livello? $\leq n$
 Quanti livelli ha l'albero? $O(log_{3/2}n)$
 
 Quindi possiamo dire che $T(n)=O(nlog(n))$.(Upper Bound)
-Perchè però $n_log_{3/2}n$? perchè ci sono $log_{3/2}n$ livelli, ognuno di costo al più n
+Perchè però $nlog_{3/2}n$? perchè ci sono $log_{3/2}n$ livelli, ognuno di costo al più n
 Ma vale che $T(n)=\Theta(nlog(n))$?
 
 **Lower bound**
