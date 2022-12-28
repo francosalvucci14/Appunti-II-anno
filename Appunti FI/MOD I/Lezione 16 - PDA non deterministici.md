@@ -97,6 +97,7 @@ In due passi:
 2. Dimostrazione, per induzione su i (numero di passi della derivazione), che se $$S'\xRightarrow[]{\star}x\alpha\implies (q,x,S')\vdash^\star(q,\varepsilon,\alpha)$$
 $\square$
 
+## Equivalenza NPDA-CFG
 
 ### $\varepsilon\in L(\mathcal G)$ da $\mathcal M$ deriviamo $\mathcal G$
 
