@@ -129,3 +129,14 @@ Definiamo le produzioni $P$ nel modo seguente:
 	1. **Ipotesi**: $[q,A,q_{i_m}]\xRightarrow[\mathcal G]{\star}\sigma$ se e solo se $\mathcal M$, a partire da $(q,\sigma,A)$, può giungere a $(q_{i_m},\varepsilon,\varepsilon)$
 	2. Consideriamo il caso in cui il primo passo di $\mathcal M$ è $\delta(q,a,A)=(q',B_1...B_m)$: allora $\mathcal M$ potrà raggiungere $(q_{i_m},\varepsilon,\varepsilon)$ soltanto attraverso una sequenza di passi di cui la prima parte (leggendo una stringa $\sigma_1$ e giungendo a uno stato $q_{i_1}$) porterà all'eliminazione di $B_1$ dallo stack, la seconda (leggeno una stringa $\sigma_2$ e giugnendo a uno stato $q_{i_2}$) all'eliminazione di $B_2$ e così via
 
+Quindi, si ha che:
+
+- $\mathcal M$ può passare da $(q_{i_{k-1}},\sigma_kB_k)$ a $(q_{i_k},\varepsilon,\varepsilon)$ per $k=1,..,m$
+- $\sigma=a\sigma_1\sigma_2\sigma_m$
+
+Corrispondentemente, la grammatica $\mathcal G$ può generare $\sigma$ a partire da $[q,A,q_{i_m}]$ producendo in un passo la frase $a[q'B_1q_{i_1}][q_{i_1}B_2q_{i_2}]...[q_{i_{m-1}}B_mq_{i_m}]$ e utilizzando le derivazioni $[q_{i_{k-1}}B_kq_{i_k}]\xRightarrow[]{\star}\sigma_k$
+
+**Esempio totale**
+
+Consideriamo l'automa a pila avente la funzione di transizione:
+$$\begin{align}&\delta(q_0,0,Z_0)=\{(q_0,XZ_0)\}\\&\delta(q_0,0,X)=\{(q_0,XX)\}\\&\delta(q_0,1,X)=\{(q_1,\varepsilon)\}\\&\delta(q_1,1,X)=\{(q_1,\varepsilon)\}\\&\delta(q_1,\varepsilon,X)=\{(q_1,\varepsilon)\}\\&\delta(q_1,\varepsilon,Z_0)=\{(q_1,\varepsilon)\}\end{align}$$
