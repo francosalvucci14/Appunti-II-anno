@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md"
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md"
               }
             }
           },
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,8 @@
   },
   "active": "7e9bc53cc2bdae2e",
   "lastOpenFiles": [
-    "Appunti ASD/MOD I/Esami/Indice degli esami svolti.md",
+    "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
+    "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
     "Appunti ASD/MOD I/Esami/Esame 16-7-13.md",
     "Appunti ASD/MOD I/Esami/Esame 16-5-15.md",
     "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
@@ -218,7 +219,6 @@
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
-    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
-    "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md"
+    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md"
   ]
 }
