@@ -160,3 +160,8 @@ Accettazione/produzione della stringa 00011
 
 ![[appunti fi/mod i/immagini/Pasted image 20221228125503.png|center|650]]
 
+# Automi a pila deterministici
+
+Un automa a pila **deterministico** è un automa a pila $\mathcal M=\langle\Sigma,\Gamma,Z_0,Q,q_0,F,\delta\rangle$ tale che, $\forall a\in\Sigma,\forall Z\in\Gamma,\forall q\in Q$, si ha che 
+$$|\delta(q,a,Z)|+|\delta(q,\varepsilon,Z)|\leq1$$
+Una stringa è accettata da un automa a pila deterministico se e solo se essa da luogo ad una computazione che termina in una configurazione $\langle q,\varepsilon,\omega\rangle$, con $q\in F,\omega\in\Gamma^\star$ 

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md"
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md"
               }
             }
           },
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,14 +169,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
+                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -208,17 +208,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7e9bc53cc2bdae2e",
+  "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
-    "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
+    "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
+    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
+    "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
+    "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
+    "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
     "Appunti ASD/MOD I/Esami/Esame 16-7-13.md",
     "Appunti ASD/MOD I/Esami/Esame 16-5-15.md",
     "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
-    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
-    "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
-    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md"
+    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md"
   ]
 }
