@@ -73,3 +73,37 @@ A questo punto si avrà che:
 
 ## Equivalenza CFG-NPDA
 
+Se un linguaggio è generato da una grammatica $\mathcal G$ non contestuale, esiste un automa a pila non deterministico $\mathcal M$ tale che $L(\mathcal G)=N(\mathcal M)$
+
+La dimostrazione è costruttiva: a partire da $\mathcal G$ deriviamo $\mathcal M$ e poi mostriamo l'equivalenza
+
+### $\varepsilon\not\in L(\mathcal G)$
+
+Consideriamo dapprima il caso in cui $\varepsilon\not\in L(\mathcal G)$. A partire da $\mathcal G$, costruiamo una grammatica $\mathcal G'=\langle\Sigma,V_N',P',S'\rangle$ equivalente a $\mathcal G$, ma in Forma Normale di Greibach
+
+Per l'automa, poniamo $\Gamma=V_N',Q=\{q_0\},Z_0=S'$
+
+Funzione di transizione: per ogni produzione $A\to a\gamma,\gamma\in(V_N')^\star$ introduciamo la regola $\delta(q_0,a,A)=(q_0,\gamma)$ (più precisamente si ha che $(q_0,\gamma)\in\delta(q_0,a,A)$)
+
+L'equivalenza deriva dalla dimostrazione che 
+$$(q,x,S')\vdash^\star(q,\varepsilon,\alpha)$$
+se e solo se $S'\xRightarrow[]{\star}x\alpha$, dove $q\in Q,x\in\Sigma^\star,\alpha\in(V_N')$
+
+**Dimostrazione**
+
+In due passi:
+
+1. Dimostrazione, per induzione su i (numero di passi della computazione), che se $$(q,x,S')\vdash^i(q,\varepsilon,\alpha)\implies S'\xRightarrow[]{\star}x\alpha$$
+2. Dimostrazione, per induzione su i (numero di passi della derivazione), che se $$S'\xRightarrow[]{\star}x\alpha\implies (q,x,S')\vdash^\star(q,\varepsilon,\alpha)$$
+$\square$
+
+
+### $\varepsilon\in L(\mathcal G)$
+
+Se $\varepsilon\in L(\mathcal G)$ possiamo costruire una grammatica $\mathcal G'$ in GNF che genera il linguaggio $L(\mathcal G')=L(\mathcal G)-\{\varepsilon\}$ e quindi applicare la procedura descritta per ottenere un automa a pila $\langle\Sigma,\Gamma,Z_0,\delta,\{q_0\},\emptyset\rangle$ che riconosce $L(\mathcal G')$
+
+Un automa che riconosce $L(\mathcal G)$ può essere ottenuto aggiungendo un nuovo stato iniziale $q_0'$ e la transizione $\delta(q_0',\varepsilon,Z_0)=\{(q_0',\varepsilon),(q_0,Z_0)\}$
+
+
+
+
