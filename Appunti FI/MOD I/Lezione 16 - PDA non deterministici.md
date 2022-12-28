@@ -140,3 +140,13 @@ Corrispondentemente, la grammatica $\mathcal G$ può generare $\sigma$ a partire
 
 Consideriamo l'automa a pila avente la funzione di transizione:
 $$\begin{align}&\delta(q_0,0,Z_0)=\{(q_0,XZ_0)\}\\&\delta(q_0,0,X)=\{(q_0,XX)\}\\&\delta(q_0,1,X)=\{(q_1,\varepsilon)\}\\&\delta(q_1,1,X)=\{(q_1,\varepsilon)\}\\&\delta(q_1,\varepsilon,X)=\{(q_1,\varepsilon)\}\\&\delta(q_1,\varepsilon,Z_0)=\{(q_1,\varepsilon)\}\end{align}$$
+Le produzioni iniziali della grammatica saranno:
+$$\begin{align}&S\to[q_0Z_0q_0]\\&S\to[q_0Z_0q_1]\end{align}$$
+Da $\delta(q_0,0,Z_0)=\{(q_0,XZ_0)\}$:
+$$\begin{align}&[q_0Z_0q_0]\to 0[q_0Xq_0][q_0Z_0q_0]\\&[q_0Z_0q_0]\to 0[q_0Xq_1][q_1Z_0q_0]\\&[q_0Z_0q_1]\to 0[q_0Xq_0][q_0Z_0q_1]\\&[q_0Z_0q_1]\to 0[q_0Xq_1][q_1Z_0q_1]\end{align}$$
+Da $\delta(q_0,0,X)=\{(q_0,XX)\}$:
+$$\begin{align}&[q_0Xq_0]\to 0[q_0Xq_0][q_0Xq_0]\\&[q_0Xq_0]\to 0[q_0Xq_1][q_1Xq_0]\\&[q_0Xq_1]\to 0[q_0Xq_0][q_0Xq_1]\\&[q_0Xq_1]\to 0[q_0Xq_1][q_1Xq_1]\end{align}$$
+Poi, tutte le altre saranno:
+$$\begin{align}&[q_0Xq_1]\to1\\&[q_1Xq_1]\to1\\&[q_1Xq_1]\to\varepsilon\\&[q_1Z_0q_1]\to\varepsilon\end{align}$$
+Portata poi in forma ridotta, la grammatica risultate sarà:
+$$\begin{align}&S\to 0[q_0Xq_1][q_1Z_0q_1]\\&[q_0Xq_1]\to 0[q_0Xq_1][q_1Xq_1]\:|\:1\\&[q_1Xq_1]\to1|\varepsilon\\&[q_1Z_0q_1]\to\varepsilon\end{align}$$
