@@ -150,3 +150,6 @@ Poi, tutte le altre saranno:
 $$\begin{align}&[q_0Xq_1]\to1\\&[q_1Xq_1]\to1\\&[q_1Xq_1]\to\varepsilon\\&[q_1Z_0q_1]\to\varepsilon\end{align}$$
 Portata poi in forma ridotta, la grammatica risultate sarà:
 $$\begin{align}&S\to 0[q_0Xq_1][q_1Z_0q_1]\\&[q_0Xq_1]\to 0[q_0Xq_1][q_1Xq_1]\:|\:1\\&[q_1Xq_1]\to1|\varepsilon\\&[q_1Z_0q_1]\to\varepsilon\end{align}$$
+L'equivalenza deriva dalla dimostrazione che 
+$$[q,A,q']\xRightarrow[]{\star}x\iff(q,x,A)\vdash^\star(q',\varepsilon,\varepsilon)$$
+da cui otteniamo come caso particolare, che $[q_0Z_,q']\xRightarrow[]{\star}x\iff(q_0,x,Z_0)\vdash^\star(q',\varepsilon,\varepsilon)$ per qualche $q'$, cioè se e solo se l'automa accetta la stringa x per pila vuota
