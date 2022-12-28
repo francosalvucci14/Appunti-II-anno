@@ -153,3 +153,10 @@ $$\begin{align}&S\to 0[q_0Xq_1][q_1Z_0q_1]\\&[q_0Xq_1]\to 0[q_0Xq_1][q_1Xq_1]\:|
 L'equivalenza deriva dalla dimostrazione che 
 $$[q,A,q']\xRightarrow[]{\star}x\iff(q,x,A)\vdash^\star(q',\varepsilon,\varepsilon)$$
 da cui otteniamo come caso particolare, che $[q_0Z_,q']\xRightarrow[]{\star}x\iff(q_0,x,Z_0)\vdash^\star(q',\varepsilon,\varepsilon)$ per qualche $q'$, cioè se e solo se l'automa accetta la stringa x per pila vuota
+
+**Esempio**
+
+Accettazione/produzione della stringa 00011
+
+![[appunti fi/mod i/immagini/Pasted image 20221228125503.png|center|650]]
+
