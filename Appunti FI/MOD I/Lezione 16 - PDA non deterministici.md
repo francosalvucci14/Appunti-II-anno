@@ -165,3 +165,13 @@ Accettazione/produzione della stringa 00011
 Un automa a pila **deterministico** è un automa a pila $\mathcal M=\langle\Sigma,\Gamma,Z_0,Q,q_0,F,\delta\rangle$ tale che, $\forall a\in\Sigma,\forall Z\in\Gamma,\forall q\in Q$, si ha che 
 $$|\delta(q,a,Z)|+|\delta(q,\varepsilon,Z)|\leq1$$
 Una stringa è accettata da un automa a pila deterministico se e solo se essa da luogo ad una computazione che termina in una configurazione $\langle q,\varepsilon,\omega\rangle$, con $q\in F,\omega\in\Gamma^\star$ 
+
+1. La definizione di automa a pila deterministico è una **specializzazione** della definizione di automa a pila non deterministico, quindi la classe dei linguaggi accettati da automi a pila non deterministici include quella dei linguaggi accettati da automi a pila deterministici.
+2. La classe dei linguaggi di tipo 2, vale a dire dei linguaggi accettati da automi a pila non deterministici, non è chiusa rispetto alla complementazione.
+3. Per ogni automa a pila deterministico $\mathcal M$, è possibile costruirne uno che accetta il linguaggio $\Sigma^\star-L(\mathcal M)$: quindi classe dei linguaggi accettati da automi a pila deterministici è chiusa rispetto alla complementazione
+4. Quindi, la classe dei linguaggi accettati da automi a pila deterministici dunque non coincide con quella dei linguaggi di tipo 2
+
+Intuitivamente, un linguaggio separatore è dato da $L = \{w\hat w | w\in\{a,b\}^+ \}$
+
+Il linguaggio, di tipo 2, non può essere accettato da alcun automa a pila deterministico. Infatti,intuitivamente, durante la scansione dell’input non è possibile individuare a priori, in maniera deterministica, dove termina la stringa $w$ ed inizia $\hat w$.
+
