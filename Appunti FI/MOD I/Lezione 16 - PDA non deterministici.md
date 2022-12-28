@@ -77,7 +77,7 @@ Se un linguaggio è generato da una grammatica $\mathcal G$ non contestuale, esi
 
 La dimostrazione è costruttiva: a partire da $\mathcal G$ deriviamo $\mathcal M$ e poi mostriamo l'equivalenza
 
-### $\varepsilon\not\in L(\mathcal G)$
+### $\varepsilon\not\in L(\mathcal G)$  da $\mathcal G$ deriviamo $\mathcal M$ 
 
 Consideriamo dapprima il caso in cui $\varepsilon\not\in L(\mathcal G)$. A partire da $\mathcal G$, costruiamo una grammatica $\mathcal G'=\langle\Sigma,V_N',P',S'\rangle$ equivalente a $\mathcal G$, ma in Forma Normale di Greibach
 
@@ -98,12 +98,33 @@ In due passi:
 $\square$
 
 
-### $\varepsilon\in L(\mathcal G)$
+### $\varepsilon\in L(\mathcal G)$ da $\mathcal M$ deriviamo $\mathcal G$
 
 Se $\varepsilon\in L(\mathcal G)$ possiamo costruire una grammatica $\mathcal G'$ in GNF che genera il linguaggio $L(\mathcal G')=L(\mathcal G)-\{\varepsilon\}$ e quindi applicare la procedura descritta per ottenere un automa a pila $\langle\Sigma,\Gamma,Z_0,\delta,\{q_0\},\emptyset\rangle$ che riconosce $L(\mathcal G')$
 
 Un automa che riconosce $L(\mathcal G)$ può essere ottenuto aggiungendo un nuovo stato iniziale $q_0'$ e la transizione $\delta(q_0',\varepsilon,Z_0)=\{(q_0',\varepsilon),(q_0,Z_0)\}$
 
+Sia $L$ un linguaggio accettato mediante pila vuota da un automa a pila $\mathcal M=\langle\Sigma,\Gamma,Q,\delta,Z_0,q_0,\emptyset\rangle$, allora esiste una grammatica non contestuale $\mathcal G$ che lo genera, cioè $L=N(\mathcal M)=L(\mathcal G)$
 
+La dimostrazione è costruttiva: a partire da $\mathcal M$ deriviamo $\mathcal G$ e mostriamo poi l'equivalenza
 
+Definiamo 
+$$V_N=\{[q_i,A,q_j]:\forall q_i,q_j\in Q,A\in\Gamma\}\cup\{S\}$$
+dove S è l'assioma:
+
+- **Idea di base**: $[q_i,A,q_j]\xRightarrow[\mathcal G]{\star}\sigma\iff (q_i,\sigma,A)\vdash_{\mathcal M}^\star(q_j\varepsilon,\varepsilon)$
+- quindi $[q_i,A,q_j]\xRightarrow[\mathcal G]{\star}\sigma$ se e solo se $\mathcal M$, a partire dalla configurazione $(q_i,\sigma,A)$, può raggiungere (per una sequenza opportuna di scelte) la configurazione $(q_j,\varepsilon,\varepsilon)$
+
+Definiamo le produzioni $P$ nel modo seguente:
+
+1. per ogni $q\in Q$: $S\to[q_0,Z_0,q]\in P$
+	1. **per ipotesi**, $[q_0,Z_0,q]\xRightarrow[\mathcal G]{\star}\sigma$ se e solo se $\mathcal M$, a partire dalla configurazione $(q_0,\sigma,Z_0)$, può raggiungere (per una sequenza opportuna di scelte) la configurazione $(q,\varepsilon,\varepsilon)$ e quindi se $\mathcal M$ accetta $\sigma$ per **pila vuota** (q è lo stato in cui $\mathcal M$ si viene a trovare)
+	2. quindi $S\xRightarrow[]{}[q_0,Z_0,q]\xRightarrow[]{\star}\sigma$ se e solo se $\mathcal M$ accetta $\sigma$ e quindi $\sigma\in L(\mathcal G)\iff\sigma\in N(\mathcal M)$
+
+2. per ogni $q\in Q,A\in\Gamma,a\in\Sigma\cup\{\varepsilon\}$: se $(q',\varepsilon)\in\delta(q,a,A)$ allora $[q,A,q']\to a\in P$
+	1. **mantiene l'ipotesi**, in quanto $[q,A,q']\xRightarrow[]{\star}a$ e $\mathcal M$, a partire da $(q,A,a)$, può raggiungere la configurazione $(q',\varepsilon,\varepsilon)$
+
+3. per ogni $q\in Q,A\in\Gamma,a\in\Sigma\cup\{\varepsilon\}$: se $(q',B_1...B_m)\in\delta(q,a,A)$ allora $[q,A,q_{i_m}]\to a[q'B1q_{i_1}][q_{i_1}B_2q_{i_2}]...[q_{i_m-1}B_mq_{i_m}]\in P$. Per ogni possibile sequenza $q_{i_1},...,q_{i_m}$ di m stati (non distinti) in Q:
+	1. **Ipotesi**: $[q,A,q_{i_m}]\xRightarrow[\mathcal G]{\star}\sigma$ se e solo se $\mathcal M$, a partire da $(q,\sigma,A)$, può giungere a $(q_{i_m},\varepsilon,\varepsilon)$
+	2. Consideriamo il caso in cui il primo passo di $\mathcal M$ è $\delta(q,a,A)=(q',B_1...B_m)$: allora $\mathcal M$ potrà raggiungere $(q_{i_m},\varepsilon,\varepsilon)$ soltanto attraverso una sequenza di passi di cui la prima parte (leggendo una stringa $\sigma_1$ e giungendo a uno stato $q_{i_1}$) porterà all'eliminazione di $B_1$ dallo stack, la seconda (leggeno una stringa $\sigma_2$ e giugnendo a uno stato $q_{i_2}$) all'eliminazione di $B_2$ e così via
 
