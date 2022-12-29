@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 mod.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Esame 16-5-15.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 22-6-22.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md"
+                "file": "Appunti ASD/MOD I/Esami/Esame 22-6-22.md"
               }
             }
           },
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 22-6-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,14 +169,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 22-6-22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -208,17 +208,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "2924d6cb40558ea9",
   "lastOpenFiles": [
+    "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 mod.md",
+    "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+    "Appunti ASD/MOD I/Esami/Esame 22-6-22.md",
+    "Appunti ASD/MOD I/Esami/Esame 16-7-13.md",
+    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
-    "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
-    "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
-    "Appunti ASD/MOD I/Esami/Esame 16-7-13.md",
-    "Appunti ASD/MOD I/Esami/Esame 16-5-15.md",
-    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
-    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md"
+    "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md"
   ]
 }
