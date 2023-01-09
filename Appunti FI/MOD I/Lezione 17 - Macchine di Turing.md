@@ -17,3 +17,13 @@ Sestupla $\mathcal M=\langle\Gamma,\square,Q,q_0,F,\delta\rangle$ dove:
 - $F\subseteq Q$: insieme degli **stati finali**
 - $\delta$: funzione di transizione definita come $$\delta:(Q-F)\times(\Gamma\cup\{\square\})\to Q\times(\Gamma\cup\{\square\})\times(\to,\leftarrow,\circ)$$ in cui $\to,\leftarrow,\circ$ indicano rispettivamente, lo spostamento a destra, a sinistra o l'immobilità della testina
 
+**Esempio**
+
+![[appunti fi/mod i/immagini/Pasted image 20230109121029.png|center|500]]
+
+### DTM (Deterministic Turing Machine)
+
+
+
+
+
