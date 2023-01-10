@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 4.md"
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
+                "file": "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,17 +184,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5184c530c7d315d8",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
-    "Appunti FI/MOD I/Indice delle lezioni FI.md",
-    "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
-    "Appunti LMP/MOD I/Lezione 13 - Collections.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
-    "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
+    "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
+    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
+    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
     "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
-    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md"
+    "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
+    "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
+    "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+    "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md",
+    "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
+    "Appunti FI/MOD I/Indice delle lezioni FI.md"
   ]
 }

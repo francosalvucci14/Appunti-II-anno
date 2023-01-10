@@ -116,3 +116,9 @@ Data una MT $\mathcal M$ con alfabeto di input $\Sigma$, l'insieme $\Sigma^\star
 - Che succede per $x\not\in L?$ La computazione effettuata da $\mathcal M$ può:
 	- terminare in uno stato $q\in Q-F$
 	- non terminare
+
+# Turing-decidibilità
+
+- Un linguaggio $L$ è detto **Turing-decidibile** se esiste una DTM che lo riconosce
+- Un linguaggio $L$ è detto **Turing-semidecidibile** se esiste una DTM che lo accetta
+ 
