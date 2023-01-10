@@ -111,7 +111,7 @@ Data una MT $\mathcal M$ con alfabeto di input $\Sigma$, l'insieme $\Sigma^\star
 
 - Data una MT deterministica $\mathcal M=\langle\Gamma,\square,Q,q_0,F,\delta\rangle$ 
 - Dato un alfabeto di input $\Sigma\subseteq\Gamma$
-- $\mathcal M$ accetta un linguaggio $L\in\Sigma^\star$ se e solo se: $L=\{x\in\Sigma^\star|q_0x\vdash_{\mathcal M}^\star wqz;q\in F\}$
+- $\mathcal M$ **accetta** un linguaggio $L\in\Sigma^\star$ se e solo se: $L=\{x\in\Sigma^\star|q_0x\vdash_{\mathcal M}^\star wqz;q\in F\}$
 - Quindi, L è l'insieme delle stringhe per le quali la computazione effettuata da $\mathcal M$ temrina in uno stato finale
 - Che succede per $x\not\in L?$ La computazione effettuata da $\mathcal M$ può:
 	- terminare in uno stato $q\in Q-F$
