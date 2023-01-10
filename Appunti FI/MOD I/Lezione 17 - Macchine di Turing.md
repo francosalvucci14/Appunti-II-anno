@@ -23,3 +23,25 @@ Sestupla $\mathcal M=\langle\Gamma,\square,Q,q_0,F,\delta\rangle$ dove:
 
 ### DTM (Deterministic Turing Machine)
 
+- DTM utilizzabili per il calcolo di funzioni, o per riconoscere o accettare stringhe su un alfabeto di input $\Sigma\subseteq\Gamma$
+- DTM usate per accettare stringhe vengono dette di tipo _riconoscitore_
+- DTM usare per calcolare funzioni vengono dette di tipo _trasduttore_
+- In entrambi i casi, all'inizio del calcolo, solo una porzione finita del nastro contiene simboli diversi da blank che costituiscono l'input del calcolo stesso
+
+#### Configurazione di una DTM
+
+SI definisce configurazione istantaneta o configurazione di una macchina di Turing con alfabeto di nastro $\Gamma$ ed insieme degli stati $Q$, una stringa $c=xqy$, con (assumendo $\overline\Gamma=\Gamma\cup\{\square\}$):
+
+1. $x\in\Gamma\overline\Gamma^\star\cup\{\varepsilon\}$
+2. $q\in Q$
+3. $y\in\overline\Gamma^\star\Gamma\cup\{\square\}$
+
+L'interpretazione data ad una stringa $xqy$ è che $xy$ rappresenti il contenuto della sezione non vuota del nastro, che lo stato attuale sia $q$ e che la testina sia posizionata sul primo carattere di $y$. Nel caso in cui $x=\varepsilon$ abbiamo che a sinistra della testina compaiono solo simboli $\square$, mentre se $y=\square$ sulla cella attuale e a destra della testina compaiono soltanto simboli $\square$
+
+##### Configurazione iniziale
+
+La configurazione iniziale di MT rispetto a una stringa di input $\sigma$ prevede che:
+
+- il nastro contenga la stringa $\sigma$ in una sequenza di celle
+- tutte le altre celle del nastro siano vuote (contengano $\square$)
+- 
