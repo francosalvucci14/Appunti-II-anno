@@ -23,7 +23,3 @@ Sestupla $\mathcal M=\langle\Gamma,\square,Q,q_0,F,\delta\rangle$ dove:
 
 ### DTM (Deterministic Turing Machine)
 
-
-
-
-

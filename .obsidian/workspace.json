@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "85fce3514fc79a08",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8db6c3c13803af9f",
             "type": "leaf",
             "state": {
@@ -30,33 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "2924d6cb40558ea9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/MOD I/Lezione 9 - Sempre su RE,RG e ASF.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3dfcaa5b186a6417",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -210,15 +173,15 @@
   },
   "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti FI/MOD I/Indice delle lezioni FI.md",
+    "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
+    "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+    "Appunti LMP/MOD I/Lezione 13 - Collections.md",
+    "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
     "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
     "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
     "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
-    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
-    "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
-    "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
-    "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
-    "Appunti ASD/MOD I/Esami/Esame 22-6-22.md",
-    "Appunti ASD/Algoritmi/Algoritmi.md"
+    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md"
   ]
 }
