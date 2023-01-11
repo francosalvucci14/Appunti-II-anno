@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8db6c3c13803af9f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "3bfc0f531767fa60",
             "type": "leaf",
             "state": {
@@ -32,19 +20,18 @@
             }
           },
           {
-            "id": "5d761e5abb16de1c",
+            "id": "b4156f5211135172",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 5.md",
+                "file": "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,6 +185,8 @@
   },
   "active": "3bfc0f531767fa60",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
+    "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 5.md",
     "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
@@ -205,8 +194,6 @@
     "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
     "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
     "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
-    "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
-    "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
-    "Appunti FI/MOD I/Lezione 10 - Minimizzazione di ASF.md"
+    "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md"
   ]
 }
