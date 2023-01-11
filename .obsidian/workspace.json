@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "3bfc0f531767fa60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "5d761e5abb16de1c",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 5.md"
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md"
               }
             }
           },
@@ -127,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 5.md",
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercitazioni/LMP 5.md",
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,10 +196,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8db6c3c13803af9f",
+  "active": "3bfc0f531767fa60",
   "lastOpenFiles": [
-    "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 5.md",
+    "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
     "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
     "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
