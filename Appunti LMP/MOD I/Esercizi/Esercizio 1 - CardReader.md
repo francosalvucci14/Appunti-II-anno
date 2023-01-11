@@ -12,16 +12,24 @@ graph LR
 	C[Associazione]
 	D[Ristorante]
 	E[Negozio]
+	F[CardReader]
+	G[CardReaderDeserializer]
 	
 	style A fill:black, color:#fff
 	style B fill:black, color:#fff
 	style C fill:black, color:#fff
 	style D fill:black, color:#fff
 	style E fill:black, color:#fff
+	style F fill:black, color:#fff
+	style G fill:black, color:#fff
 	
 	A-- Superclasse di -->B & C
-	B--Superclasse di -->D & E
+	B-- Superclasse di -->D & E
+	G-- Crea Card per -->F
+	F-- Legge la card da -->G
+	
 ```
+
 
 - Attività è la superclasse di Attività Commerciali e Associazione, nel emntre Attività Commerciali è la superclasse di Ristorante e Negozio
 

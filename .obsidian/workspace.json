@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b4156f5211135172",
+            "id": "7e7f75315335860d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "7e7f75315335860d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti LMP/MOD I/Esercizi/Indice degli esercizi LMP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercizi/Indice degli esercizi LMP.md"
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md"
               }
             }
           },
@@ -128,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercizi/Indice degli esercizi LMP.md",
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Esercizi/Indice degli esercizi LMP.md",
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,6 +173,7 @@
   },
   "active": "7e7f75315335860d",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Esercizi/Indice degli esercizi LMP.md",
     "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 5.md",
     "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
@@ -194,7 +182,6 @@
     "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
     "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
     "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
-    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
-    "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md"
+    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md"
   ]
 }
