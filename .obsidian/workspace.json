@@ -96,7 +96,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md"
+              }
             }
           },
           {
@@ -113,6 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,6 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,12 +171,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "195b83bf8ca7a0a9",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Esercitazioni/LMP 5.md",
     "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
     "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
     "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 5.md",
     "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
     "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
