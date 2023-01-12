@@ -567,10 +567,14 @@ $G_i=(V,E_i)$
 
 **Osservazione**: se $G_i$ è connesso allora Alice può vedere il mondo intero all'età di $w(e_i)$
 
+**Goal**: trovare il minimo i per cui $G_i$ è connesso
+
 **Corretto?** Si, per oss. precedente
 **Complessità?**
 
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20230112104216.png|center|600]]
 
 
+Posso fare di meglio? Si, cerco l'indice i utilizzando la ricerca binaria
 
+![[appunti asd/mod i/esercizi/imges/Pasted image 20230112104548.png|center|600]]
