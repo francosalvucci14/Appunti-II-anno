@@ -579,3 +579,4 @@ Posso fare di meglio? Si, cerco l'indice i utilizzando la ricerca binaria
 
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20230112104548.png|center|600]]
 
+SI poteva risolvere anche con il calcolo del Minimum Spanning Tree, ma è un piccolo spoiler per ASD Mod 2
