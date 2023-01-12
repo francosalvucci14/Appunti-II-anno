@@ -543,3 +543,34 @@ $O(|V'|+|E'|)=O(nm)$ Se trovo le distanze fra tutte le coppie in $O(nm)$ (eseguo
 
 ## Esercizio 2
 
+Grafo non orientato $G=(V,E)$ di n nodi e m archi
+Alice vuole spostarsi in tutti i rimenenti n-1 nodi
+Ad ogni arco è associato un valore $w(e)$ che indica l'età minima necessaria per attraversare l'arco
+
+Un posto v è raggiungibile da Alice all'età x se esiste un cammino da s a v composto di soli archi di peso minore o uguale a x
+
+Progettare un algoritmo che calcoli l'età minima che consente ad Alice di vedere il mondo intero, ovvero la più piccola età x per cui tutti i posti sono raggiungibili da Alice all'età x
+
+Esempio di grafo
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20230112101504.png|center|500]]
+
+**Esempio** da pagina 20 a pagina 29 [Esempio](http://www.mat.uniroma2.it/~guala/esercitazione_6_2021.pdf#page=20)
+
+**Idea/Soluzione**
+
+Far crescere l'insieme degli archi utilizzabili con l'età
+
+Considera gli archi di G ordinati in ordine crescente di peso:
+$\underbrace{e_1,e_2,e_3,...,e_i}_{E_i},...,e_{m-1},e_m$
+$G_i=(V,E_i)$
+
+**Osservazione**: se $G_i$ è connesso allora Alice può vedere il mondo intero all'età di $w(e_i)$
+
+**Corretto?** Si, per oss. precedente
+**Complessità?**
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20230112104216.png|center|600]]
+
+
+
