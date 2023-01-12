@@ -521,4 +521,18 @@ Il grafo è fatto in questo modo:
 
 Adesso quello che devo fare è cercare un cammino minimo da $\langle s_1,s_2\rangle\to\langle t_1,t_2\rangle$
 
+**Correttezza**:
 
+>[!tips]- Proprietà
+>Esiste una sequenza di k mosse che porta i robot nella posizione finale **se e soltanto se** essite un cammino in $G'$ da $\langle s_1,s_2\rangle\to\langle t_1,t_2\rangle$ di lunghezza k
+
+**Complessità**
+
+Dimensione di $G'$: 
+
+$|V'|=O(n^2)$ 
+$$\begin{align}&|E'|\leq\sum_{\{u,v\}\in V'}\delta_{G'}(\{u,v\})\leq\sum_{\{u,v\}\in V'}(\delta_G(u)+\delta_G(v))=\sum_{\{u,v\}\in V'}\delta_G(u)+\sum_{\{u,v\}\in V'}\delta_G(u)\leq\\&\sum_{u,v\in V}\delta_G(u)+\sum_{u,v\in V}\delta_G(v)\leq n\sum_{u\in V}\delta_G(u)+n\sum_{v\in V}\delta_G(v)\leq 2nm+2nm=O(nm)\end{align}$$
+
+Calcolo cammino minimo in $G'$:
+
+$O(|V'|+|E'|)\implies O(n^2+nm)=O(nm)$
