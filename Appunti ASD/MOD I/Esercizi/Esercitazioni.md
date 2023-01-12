@@ -488,3 +488,19 @@ Costo $O(m+nlog(n))$
 
 ## Esercizio 1
 
+Grafo non orientato e non pesato $G=(V,E)$
+Due nodi $s_1,s_2$ e due nodi di arrivo $t_1,t_2$ 
+I due robot devono stare a distanza almeno k, con k elemento del problema
+
+**Obiettivo**: Spostare $s_1\to t_1,s_2\to t_2$
+**Mossa**: sposta un robot verso il nodo adiacente
+**Vincolo**: i robot devono essere sempre a distanza almeno k
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20230112093134.png|center|300]]
+
+Trovare la sequenza minima di mosse.
+
+**Esempio** Da pagina 4 a pagina 14 [Esempio](http://www.mat.uniroma2.it/~guala/esercitazione_6_2021.pdf#page=4)
+
+
+
