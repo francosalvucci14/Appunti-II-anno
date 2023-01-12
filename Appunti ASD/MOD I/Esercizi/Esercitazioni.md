@@ -454,3 +454,37 @@ def prob2(a):
 
 Complessità? $O(n)$
 
+# Esercitazione 5
+
+## Esercizio 1
+
+Grafo diretto e pesato $G=(V,E,w)$, ad ogni arco è associato un peso $w(e)\geq0$ che rappresenta il costo della benzina 
+Due nodi $s_1,s_2$ e un nodo di arrivo $t$ 
+Per ogni nodo $v$ si conosce il costo del parcheggio, ovvero $c(v)$ (per semplicità si assume che $c(s_1)=c(s_2)=c(t)=0$)
+Progettare un algoritmo con complessità $O(m+nlog(n))$ che faccia spendere il meno possibile in termini di costo della benzina e del parcheggio
+
+**Grafo**
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20230112091415.png|center|500]]
+
+**Idea 1**
+
+"Indovinare" il nodo in cui Guala e Clementi parcheggiano l'auto, e poi da li calcolare il cammino minimo verso t
+
+$cost(x):=d(s_1,x)+d(s_2,x)+c(x)+d(x,t)$
+
+cost(x) costo totale se guala e clementi parcheggiano nel nodo x
+
+**Corretto?** Si
+**Complessità**?
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20230112091612.png|center|500]]
+
+Costo $O(m+nlog(n))$
+
+## Esercizio 2
+
+# Esercitazione 6
+
+## Esercizio 1
+
