@@ -547,6 +547,7 @@ soluzione cercara: cammino minimo in $G'$ da $s_0\to\overline t$
 - calcolo cammino minimo in $G'$: $O(m'+n'log(n'))=O(k(m+nlog(n)))$
 
 Quindi l'algoritmo ha costo $O(k(m+nlog(n)))$ 
+
 # Esercitazione 6
 
 ## Esercizio 1
