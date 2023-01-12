@@ -510,6 +510,7 @@ Grafo ausiliario $G'=(V',E')$ definito così:
 - $V'=\{\langle u,v\rangle:u,v\in V,d_G(u,v)\geq k\}$
 - $E'=\{(\langle u,v\rangle,\langle x,y\rangle):(u=x,(v,y)\in E)\lor(v=y,(u,x)\in E)\}$
 
+Una possibile configurazione:
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20230112094651.png|center|250]]
 
 Robot blu su "u" e robot rosso su "v"
@@ -517,5 +518,7 @@ Robot blu su "u" e robot rosso su "v"
 Il grafo è fatto in questo modo:
 
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20230112094846.png|center|500]]
+
+Adesso quello che devo fare è cercare un cammino minimo da $\langle s_1,s_2\rangle\to\langle t_1,t_2\rangle$
 
 
