@@ -504,7 +504,7 @@ Trovare la sequenza minima di mosse.
 
 **Idea/Soluzione**
 
-Ridurre il problema al calcolo di un cammino minimo in un opportuno grafo delle configurazioni
+Ridurre il problema al calcolo di un cammino minimo in un opportuno **grafo delle configurazioni**
 
 Grafo ausiliario $G'=(V',E')$ definito così:
 - $V'=\{\langle u,v\rangle:u,v\in V,d_G(u,v)\geq k\}$
