@@ -484,6 +484,41 @@ Costo $O(m+nlog(n))$
 
 ## Esercizio 2
 
+- grafo orientato G=(V,E,w) con pesi non negativi
+- $B\subseteq E$ sottoinsieme di archi blu 
+- k intero, $s,t\in V$
+
+Output: un cammino di costo minimo da s a t che usa al più k archi blu
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20230112111246.png|center|400]]
+
+**Idea 1/Soluzione**
+
+"Indovinare" i k archi blu della soluzione
+
+$\overline G=(V,E-B)$  
+Per ogni k-tupla F di archi in B:
+- calcola il cammino minimo da s a t nel grafo $\overline G+F$ 
+restituisci il miglior cammino trovato
+
+Correttezza?
+- Ogni cammino calcolato è un cammino ammisibbile
+- Quando guardo la k-tupla usata dalla soluzione (o un sovrainsieme) il cammino calcolato è quello ottimo cercato
+
+Complessità? $O(|B|^k(m+nlog(n)))$
+
+**Idea 2/Soluzione**
+
+Ridurre il problema al calcolo di un cammino minimo su un opportuno grafo ausiliario $G'$
+
+- $G'$ fatto "a livelli"
+- ogni volta che uso un arco blu sono costretto a cambiare livello
+- num. livelli dipende da k
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20230112112027.png|center|600]]
+
+
+
 # Esercitazione 6
 
 ## Esercizio 1
