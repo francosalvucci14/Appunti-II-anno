@@ -467,7 +467,7 @@ Progettare un algoritmo con complessità $O(m+nlog(n))$ che faccia spendere il m
 
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20230112091415.png|center|500]]
 
-**Idea 1**
+**Idea/Soluzione**
 
 "Indovinare" il nodo in cui Guala e Clementi parcheggiano l'auto, e poi da li calcolare il cammino minimo verso t
 
@@ -502,5 +502,20 @@ Trovare la sequenza minima di mosse.
 
 **Esempio** Da pagina 4 a pagina 14 [Esempio](http://www.mat.uniroma2.it/~guala/esercitazione_6_2021.pdf#page=4)
 
+**Idea/Soluzione**
+
+Ridurre il problema al calcolo di un cammino minimo in un opportuno grafo delle configurazioni
+
+Grafo ausiliario $G'=(V',E')$ definito così:
+- $V'=\{\langle u,v\rangle:u,v\in V,d_G(u,v)\geq k\}$
+- $E'=\{(\langle u,v\rangle,\langle x,y\rangle):(u=x,(v,y)\in E)\lor(v=y,(u,x)\in E)\}$
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20230112094651.png|center|250]]
+
+Robot blu su "u" e robot rosso su "v"
+
+Il grafo è fatto in questo modo:
+
+![[appunti asd/mod i/esercizi/imges/Pasted image 20230112094846.png|center|500]]
 
 
