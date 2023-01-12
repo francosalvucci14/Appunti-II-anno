@@ -519,7 +519,6 @@ Ridurre il problema al calcolo di un cammino minimo su un opportuno grafo ausili
 
 
 
-
 # Esercitazione 6
 
 ## Esercizio 1
