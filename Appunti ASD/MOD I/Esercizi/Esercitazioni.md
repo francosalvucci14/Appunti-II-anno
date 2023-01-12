@@ -532,7 +532,7 @@ archi:
 
 soluzione cercara: cammino minimo in $G'$ da $s_0\to\overline t$
 
-![[Pasted image 20230112114304.png|center|400]]
+![[appunti asd/mod i/esercizi/imges/Pasted image 20230112114304.png|center|400]]
 
 **correttezza**:
 
