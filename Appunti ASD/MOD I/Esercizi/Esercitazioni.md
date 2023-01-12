@@ -518,7 +518,35 @@ Ridurre il problema al calcolo di un cammino minimo su un opportuno grafo ausili
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20230112112027.png|center|600]]
 
 
+**Definizione di $G'$**
 
+nodi:
+
+- per ogni nodo $v\in V$ ho $k+1$ nodi $v_0,v_1,...,v_k$
+- un nodo $\overline t$
+
+archi:
+- per ogni arco (u,v) non blu in G ho gli archi ($u_i,v_i$), $i=0,1,..,k$ di peso $w(u,v)$
+- per ogni arco (u,v) blu in G ho gli archi ($u_i,v_{i+1}$),$i=0,1,...,k-1$ di peso $w(u,v)$
+- ho archi $(t_i,\overline t)$, $i=0,1,...,k$ di peso 0
+
+soluzione cercara: cammino minimo in $G'$ da $s_0\to\overline t$
+
+![[Pasted image 20230112114304.png|center|400]]
+
+**correttezza**:
+
+>[!tips]- Proprietà
+>Esiste un cammino in G da s a t che usa al più k archi blu di costo w se e solo se esiste un cammino in $G'$ da $s_0$ a $\overline t$ di costo w
+
+**complessità**
+- dimensione di $G'$:
+	- $n'=n(k+1)+1=\Theta(nk)$
+	- $m'\leq(k+1)m+k=\Theta(mk)$
+- costruzione di $G'$: $O(m'+n')=O(k(m+n))$
+- calcolo cammino minimo in $G'$: $O(m'+n'log(n'))=O(k(m+nlog(n)))$
+
+Quindi l'algoritmo ha costo $O(k(m+nlog(n)))$ 
 # Esercitazione 6
 
 ## Esercizio 1
