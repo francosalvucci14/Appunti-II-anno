@@ -536,3 +536,10 @@ $$\begin{align}&|E'|\leq\sum_{\{u,v\}\in V'}\delta_{G'}(\{u,v\})\leq\sum_{\{u,v\
 Calcolo cammino minimo in $G'$:
 
 $O(|V'|+|E'|)\implies O(n^2+nm)=O(nm)$
+
+Costruzione di $G'$:
+
+$O(|V'|+|E'|)=O(nm)$ Se trovo le distanze fra tutte le coppie in $O(nm)$ (eseguo n visite BFS, una da ogni vertice)
+
+## Esercizio 2
+
