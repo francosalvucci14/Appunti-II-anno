@@ -578,3 +578,4 @@ $G_i=(V,E_i)$
 Posso fare di meglio? Si, cerco l'indice i utilizzando la ricerca binaria
 
 ![[appunti asd/mod i/esercizi/imges/Pasted image 20230112104548.png|center|600]]
+
