@@ -151,6 +151,7 @@ Visualizzare matricola e cognome di tutti i cittadini
 
 ![[appunti bsd/mod i/immagini/Pasted image 20230113160642.png|center|500]]
  
+# Join
 
 
 
