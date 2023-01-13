@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+                "file": "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md"
+                "file": "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+                "file": "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+                "file": "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,15 +173,15 @@
   },
   "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti BSD/MOD I/Lezione 2.md",
+    "Appunti BSD/MOD I/Lezione 1.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
+    "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
     "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20230112114304.png",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
     "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20230112094846.png",
-    "Pasted image 20230112094817.png",
-    "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
-    "Appunti LMP/MOD I/Esercizi/Indice degli esercizi LMP.md",
-    "Appunti LMP/MOD I/Esercitazioni/LMP 5.md"
+    "Pasted image 20230112094817.png"
   ]
 }
