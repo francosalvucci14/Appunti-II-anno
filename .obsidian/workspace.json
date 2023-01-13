@@ -96,7 +96,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti BSD/MOD I/Lezione 2.md"
+              }
             }
           },
           {
@@ -113,6 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti BSD/MOD I/Lezione 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,6 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti BSD/MOD I/Lezione 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,8 +171,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "195b83bf8ca7a0a9",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti BSD/MOD I/DMBS e SQL (Compatibility Mode).md",
     "Appunti BSD/MOD I/Lezione 2.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD I/Immagini/Pasted image 20230113122711.png",
@@ -177,7 +182,6 @@
     "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
     "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20230112114304.png",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
-    "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20230112094846.png"
+    "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md"
   ]
 }
