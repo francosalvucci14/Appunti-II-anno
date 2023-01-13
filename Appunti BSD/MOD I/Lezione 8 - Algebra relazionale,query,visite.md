@@ -97,3 +97,65 @@ La **produzione** produce un risultato definito su un inseme di attributi, cui c
 
 ![[appunti bsd/mod i/immagini/Pasted image 20230113123542.png|center|500]]
 
+- Operatore **monadico**
+- Produce un risultato che:
+	- ha lo stesso schema dell'operando
+	- contiene un sottoinsieme delle ennuple dell'operando che soddisfano una **specifica _condizione di selezione_**
+- Si indica con $\sigma_F(r)$ o $SEL_F(r)$, dove:
+	- F è una condizione da verificare
+	- r è la relazione a cui la selezione è applicata definita su un insieme di attributi X
+
+Quindi, $\sigma_F(r)$ produce una relazione sugli stessi attributi di r contenente le ennupla su cui F è vera (**semantica**)
+
+## Selezione: Condizione di selezione
+
+- F è una formula proposizionale su X, cioè una formula ottenuta combinando con i simboli $\land(and),\lor(or),\lnot(not)$ espressioni del tipo $A\theta B$ o $A\theta c$, dove:
+	- $\theta$ è un operatore di confronto ($\leq,\lt,=,\gt,\geq$)
+	- A e B sono attributi di X su cui il confronto abbia senso
+	- c è una costante tale che il confronto con A sia definito
+- è definito un valore di verità di F su una ennupla $t\in r$:
+	- $A\theta B$ è vera se e solo se $t[A]\theta t[B]$ è vero
+	- $A\theta c$ è vera se $t[A]\theta c$ è vera
+	- $F_1\land F_2,F_1\lor F_2,\lnot F$ hanno l'usuale significato
+
+**Esempio**
+
+![[appunti bsd/mod i/immagini/Pasted image 20230113155508.png|center|500]]
+
+![[appunti bsd/mod i/immagini/Pasted image 20230113155614.png|center|500]]
+
+## Selezione con valori nulli
+
+![[appunti bsd/mod i/immagini/Pasted image 20230113155721.png|center|500]]
+
+- Perchè? Perchè le selezioni vengono valutate separatamente!
+- Ma anche $$\sigma_{Età\gt30\lor Età\leq30}(Persone)\neq Persone$$
+- Perchè? Perchè anche le condizioni atomiche vengono valutate separatamente!
+
+Per riferisi ai valori nulli esistono forme apposite di condizioni:$$\begin{align}&\text{Is Null}\\&\text{Is Not Null}\end{align}$$
+![[appunti bsd/mod i/immagini/Pasted image 20230113160103.png|center|500]]
+
+# Proiezione
+
+Dati una relazione $r(X)$ e un sottoinsieme Y di X, la proiezione di r su Y si indica con 
+$$\Pi_Y(r),PROJ_Y(r)$$
+l'insieme delle ennuple su Y ottenute dalle ennuple di r considerando solo i valori su Y
+
+La proiezione $\Pi_Y(r)$ è l'insieme di tuple su un sottoinsieme Y di attributi X di R, ottenuta dalle tuple  di R considerando solo i valori su Y cioè:
+$$\Pi_Y(r)=\{t[Y]:t\in r\}$$
+Una proiezione ha un numero di tuple _minore o uguale_ rispetto alla relazione r cui è applicata. Il numero di tuple è uguale se e solo se **Y è superchiave per r**
+
+**Esempio**:
+
+Visualizzare matricola e cognome di tutti i cittadini
+
+![[appunti bsd/mod i/immagini/Pasted image 20230113160642.png|center|500]]
+ 
+
+
+
+
+
+
+
+
