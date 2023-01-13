@@ -65,4 +65,35 @@ Per esempio:
 
 # Ridenominazione
 
+L'operazione di **ridenominazione** cambia il nome degli attributi allo scopo di facilitare operazioni insiemistiche
+
+é un operatore che consente di modificare il nome di un attributo per poterlo associare ad un altro attributo in una operazione algebrica:
+- operatore **monadico** (con argomento)
+- "**modifica lo schema**" lasciando inalterata l'istanza dell'operando
+
+SI indica con "$\rho$ nuovonome $\leftarrow$ vecchionome (Relazione)"
+
+La ridenominazione $\rho_{B1,B2,...,Bk\leftarrow A1,A2,...,Ak}(R)$ contiene tuple $t'$ tali che $t'$ è una tupla e $t'[B_i]=t[A_i]$, cioè cambiano i nomi degli attributi ma i valori non cambiano
+
+**Esempio**: Date le relazioni
+- **Paternità** (Padre,Figlio)
+- **Maternità** (Madre,Figlio)
+è possibile ottenere : **$\rho$ Genitore $\leftarrow$ Padre (Paternità) $\cup$ $\rho$ Genitore $\leftarrow$ Madre (Maternità)**
+
+**Esempio**
+
+![[appunti bsd/mod i/immagini/Pasted image 20230113122711.png|center|500]]
+![[appunti bsd/mod i/immagini/Pasted image 20230113122810.png|center|500]]
+
+# Selezione e Proiezione
+
+Le operazioni di **selezione** e di **proiezione** si applicano ad una relazione e ne restituiscono una porzione
+
+Possono essere considerate ortogonali o complementari, in quanto una opera sulle **righe** el'altra sulle **colonne**
+
+La **selezione** produce un insieme di tuple, su tutti gli attributi
+
+La **produzione** produce un risultato definito su un inseme di attributi, cui contribuiscono tutte le tuple
+
+![[appunti bsd/mod i/immagini/Pasted image 20230113123542.png|center|500]]
 
