@@ -130,5 +130,9 @@ dove:
 - $\Gamma=\bigcup_{i=1}^{(k)}\Gamma_i$ è l'unione dei k **alfabeti di nastro** $\Gamma_1,...,\Gamma_k$ non necessariamente distinti
 - $Q,q_0,F$ hanno lo stesso significato che nel caso della macchina di Turing ad 1 nastro 
 - la funzione di transizione $\delta^{(k)}$ è definita come: $$\delta^{(k)}:(Q-F)\times\overline\Gamma[1]\times...\times\overline\Gamma[k]\times\{\to,\leftarrow,\circ\}^k$$
+Una $\mathcal M$ esegue una transizione a partire da uno stato interno $q_i$ e con le k testine - una per nastro - posizionate sui caratteri $a_{i_1},...,a_{i_k}$
 
-
+Se $\delta^{(k)}(q_i,a_{i_1},...,a_{i_k})=(q_j,a_{j_1},...,a_{j_k},z_{j_1},...,z_{j_k})$:
+- si porta nello stato $q_j$
+- scrive i caratteri $a_{j_1},...,a_{j_k}$ sui rispettivi nastri
+- fa compiere alle testine i rispettivi spostamenti - a destra, a sinistra o nessuno spostamento, come specificato dagli $z_{j_l}\in\{\to,\leftarrow,\circ\},l=1,...,k$
