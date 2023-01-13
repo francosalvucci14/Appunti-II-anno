@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md"
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md"
               }
             }
           },
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,14 +132,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -171,11 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f2e54cf500bab62a",
+  "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
-    "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20230112114304.png",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
+    "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20230112114304.png",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
     "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20230112094846.png",
