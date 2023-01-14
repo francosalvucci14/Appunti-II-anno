@@ -295,8 +295,36 @@ Trovare matricola, nome, età e stipendio degli impiegati che guadagnano più di
 
 ![[appunti bsd/mod i/immagini/Pasted image 20230114111950.png|center|600]]
 
+![[appunti bsd/mod i/immagini/Pasted image 20230114114519.png|center|600]]
 
+Per esercizi vedi pagina 59 del pdf 9-AlgebraRelazionale.pdf
 
+## Equivalenza di espressioni
 
+Due espressioni sono **equivalenti** se:
 
+- $E_1\equiv_R E_2$ se $E_1(r)=E_2(r)$ per ogni istanza r di R (**equivalenza dipendente dallo schema**)
+- $E_1\equiv E_2$ se $E_1\equiv_R E_2$ per ogni schema R (**equivalenza assoluta**)
+
+L'equivalenza è importante in quanto consente di scegliere, a parità di risultato,l'operazione meno  costosa
+
+- **Atomizzazione delle selezioni** $$\sigma_{F_1\land F_2}(E)\equiv\sigma_{F_1}(\sigma_{F_2}(E))$$
+- **Indempotenza delle proiezioni**$$\Pi_X(E)\equiv\Pi_X(\Pi_{XY}(E))$$
+- **Anticipazione della selezione rispetto al join** $$\sigma_F(E_1\Join E_2)\equiv(\sigma_F(E_1))\Join(\sigma_F(E_2))$$
+
+- Anticipazione della proiezione rispetto al join: $$\Pi_{X_1Y_2}(E_1\Join E_2)\equiv E_1\Join\Pi_{Y_2}(E_2)$$ (Se gli attributi in $X_2-Y_2$ non sono coinvolti nel join). Allora (combinando con inmepotenza delle proiezioni) : $$\Pi_Y(E_1\Join_F E_2)\equiv\Pi_Y(\Pi_{Y_1}(E_1\Join_F\Pi_{Y_2}(E_2)))$$ dove $Y_1,Y_2$ sono gli attributi di $X_1,X_2$ compresi in $Y$ o coinvolti nel join. In pratica è possibile ignorare in ciascuna relazione gli attributi non compresi in Y e non coinvolti nel join
+- **Inglobamento di una selezione in un prodotto cartesiano a formare un join**: $$S_F(E_1\Join E_2)\equiv E_1\Join_F E_2$$
+
+- **Distributività** della selezione rispetto all'unione: $$S_F(E_1\cup E_2)\equiv S_F(E_1)\cup S_F(E_2)$$
+- **Distributività della selezione rispetto alla differenza**: $$S_F(E_1-E_2)\equiv S_F(E_1)- S_F(E_2)$$
+- Distributività della proiezione rispetto **all'unione**: $$P_X(E_1\cup E_2)\equiv P_X(E_1)\cup P_X(E_2)$$ NB: **La proiezione NON è distributiva rispetto alla differenza**
+- Tutti gli operatori binari eccetto la differenza godono delle proprietà associativa e commutativa
+
+- Corrispondenze fra operatori insiemistici e selezioni complesse $$\begin{align}&\sigma_{F_1\lor F_2}(R)\equiv\sigma_{F_1}(R)\cup\sigma_{F_2}(R)\\&\sigma_{F_1\land F_2}(R)\equiv\sigma_{F_1}(R)\cap\sigma_{F_2}(R)\\&\sigma_{F_1\land\lnot F_2}(R)\equiv\sigma_{F_1}(R)-\sigma_{F_2}(R)\end{align}$$
+- Proprietà distributiva del join rispetto all'unione: $$E\Join(E_1\cup E_2)\equiv(E\cup E_1)\Join(E\cup E_2)$$
+## Algebra con valori nulli
+
+Estensione degli operatori logici ad una logica a 3 valori (VERO,FASLO,SCONOSCIUTO(U))
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114121814.png|center|500]]
 
