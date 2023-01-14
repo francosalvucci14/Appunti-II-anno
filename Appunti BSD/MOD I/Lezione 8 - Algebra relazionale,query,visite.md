@@ -328,3 +328,9 @@ Estensione degli operatori logici ad una logica a 3 valori (VERO,FASLO,SCONOSCIU
 
 ![[appunti bsd/mod i/immagini/Pasted image 20230114121814.png|center|500]]
 
+- A IS NULL è vero su una ennupla t se il valore di t su A è nullo; falso se è specificato.
+- A IS NOT NULL è vero su una tupla t se il valore di t su A è specificato; falso se è nullo.
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114122108.png|center|500]]
+
+
