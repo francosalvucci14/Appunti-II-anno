@@ -278,9 +278,22 @@ Sono importati formalmente:
 
 ![[appunti bsd/mod i/immagini/Pasted image 20230114111128.png|center|600]]
 
+![[appunti bsd/mod i/immagini/Pasted image 20230114111350.png|center|600]]
 
+# Query
 
+Un’interrogazione è una funzione $E(R)$ che applicata ad istanze di una base di dati $R$ produce una relazione su un dato insieme di attributi $X$.
+Le interrogazioni su uno schema di base di dati $R$ in algebra relazionale sono espressioni i cui atomi (le variabili) sono relazioni in $R$ o costanti.
 
+Le interrogazioni sono in pratica espressioni di relazioni che producono relazioni
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114111846.png|center|600]]
+
+**Esempio**
+
+Trovare matricola, nome, età e stipendio degli impiegati che guadagnano più di 40 milioni
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114111950.png|center|600]]
 
 
 
