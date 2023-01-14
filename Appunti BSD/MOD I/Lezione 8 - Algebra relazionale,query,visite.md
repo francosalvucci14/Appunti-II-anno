@@ -153,6 +153,109 @@ Visualizzare matricola e cognome di tutti i cittadini
  
 # Join
 
+Combinando selezione e proiezione, si possono estrarre informazioni da **una** relazione
+
+Non si possono però correlare informazioni presenti in relazioni diverse
+
+Il **join** è l'operatore più interessante (potente) dell'algebra relazionale in quanto permette di correlare dati in relazioni diverse
+
+Evidenzia la prorpietà del modello relazione di essere **basato su valori**
+
+Due tipi di join:
+- **Join naturale**
+- **Theta Join**
+
+## Join naturale
+
+L'operatore di **join naturale** $r_1\Join r_2$ (o $r_1|X|r_2$) correla dati in relazioni diverse sulla base di valori uguali in attributi con lo stesso nome
+
+Il **join naturale** $r_1\Join r_2$ di $r_1(X),r_2(x)$ è una relazione definita su $X_1\cup X_2$ (che si può scrivere $X_1X_2$):
+$$r_1\Join r_2=\{t\in X_1X_2:t[X_1]\in r_1,t[X_2]\in r_2\}$$
+- Il grado di una relazione ottenuta è minore o uguale al grado della somma dei gradi delle due relazioni in quanto gli attributi omonimi compaiono una sola volta
+- se $X_1\cap X_2$ è vuoto, il join naturale equivale al **_prodotto cartesiano_** fra le relazioni
+- se $X_1=X_2$, il join naturale equivale all'intersezione fra le relazioni
+
+
+- Se ciascuna ennupla di ciascuno degli operandi contribuisce ad almeno una ennupla del risultato il join si dice **_completo_**
+- Se per alcune ennuple non è verificata la corrispondenza e non contribuiscono al risultato, le ennuple si dicono **_dangling_**
+- Ai due estremi si pongono il join vuoto, in cui nessuna ennupla delgi operandi è combinabile, e quello in cui ciascuna delle ennuple dell'operando è combinabile con tutte le ennuple dell'altro. In questo caso la cardinalità della relazione risultatne è pari al prodotto della cardinalità degli operandi
+
+**Esempio join naturale completo**
+
+Ogni ennupla contribuisce al risultato: join **completo**
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114102556.png|center|500]]
+
+**Esempio join non completo**
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114102652.png|center|500]]
+
+
+**Esempio join vuoto**
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114102750.png|center|500]]
+
+
+### Join naturale: Proprietà
+
+1. Il join di $r_1,r_2$ contiene un numero di ennuple compreso fra zero e il prodotto di $|r_1|,|r_2|$
+2. Se il join di $r_1,r_2$ è **completo** allora contiene un numero di tuple pari almeno al massimo fra $|r_1|,|r_2|$
+3. Se $X_1\cap X_2$ contiene un achiave per $r_2$, allora il join di $r_1(X),r_2(X)$ contiene almeno $|r_2|$ tuple
+4. Se il join coinvolge una chaive di $r_2$ e un **vincolo di integrità referenziale**, allora il numero di tuple è pari a $|r_1|$
+5. Il join è **_commutativo_**, infatti $r_1\Join r_2=r_2\Join r_1$
+6. il join è **_associativo_**, infatti $(r_1\Join r_2)\Join r_3=r_1\Join(r_2\Join r_3)$. Quindi sequenze di join possono essere scritte senza parentesi
+
+### Prodotto cartesiano
+
+- Un join naturale senza attributi in comune
+- Contiene sempre un numero di ennuple pari al prodotto delle cardinalità degli operandi (le ennuple sono tutte combinabili)
+- il prodotto cartesiano $r_1\times r_2$ di $r_1(X_1),r_2(X_2)$ è una relazione definita su $X_1\cup X_2$ : $$r_1\times r_2=\{t\in X_1X_2:t[X_1]\in r_1,t[X_2]\in r_2\}$$
+**Esempio**
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114103942.png|center|500]]
+
+## Join esterni: Outer Join
+
+- Il **join naturale** tralascia le ennuple in cui non ci è corrispondenza fra gli attributi legati dal join
+- L'operatore di _join esterno_ (**outer join**) prevede che tutte le tuple diano sempre un contributo al risultato, eventualmente estese con valori nulli ove non vi siano controparti opportune
+
+Tre tipi di outer join:
+- **Left join**: Contribuiscono tutte le ennuple del primo operando eventualmente estese con valori nulli
+- **Right join**: Contribuiscono tutte le ennuple del secondo operando eventualmente estese con valori nulli
+- **Full join**: Contribuiscono tutte le ennuple del primo e del secondo operando eventualmente estese con valori nulli
+
+### Left Join
+
+Ritorna tutte le tuple dalla relazione di sinistra a prescindere dal fatto che siano combinabili con quelle della relazione di destra
+
+Assegna valori nulli per i record che non matchano
+
+**Esempio**
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114104538.png|center|500]]
+
+### Right Join
+
+Ritorna tutte le tuple dalla relazione di destra a prescindere dal fatto che siano combinabili con quelle della relazione di sinistra
+
+Assegna valori nulli per i record che non matchano
+
+**Esempio**
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114104805.png|center|500]]
+
+### Full Join
+
+Combina i risultati di due relazioni tenendo conto di tutte le tuple delle relazioni, anche di quelle che non hanno corrispondenza tra di loro
+Il risultato contiene sempre tutte le tuple della relazione di sinistra ("left"), estraendo dalla relazione di destra ("right") solamente le tuple che trovano corrispondenza nella regola di confronto; inoltre verranno estratte tutte le tuple della relazione di sinistra ("left") che non trovano corrispondenza nella relazione di destra ("right") impostando a nulli i valori di tutti gli attributi della relazione di destra, e viceversa
+
+**Esempio**
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114105214.png|center|500]]
+
+## Theta Join
+
+
 
 
 
