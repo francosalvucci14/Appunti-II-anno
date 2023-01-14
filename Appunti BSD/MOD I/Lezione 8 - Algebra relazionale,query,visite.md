@@ -255,6 +255,30 @@ Il risultato contiene sempre tutte le tuple della relazione di sinistra ("left")
 
 ## Theta Join
 
+Si devono correlare attributi con nome diverso è possibile fare il **theta-join** ($\Join_\theta$), definito come un prodotto cartesiano seguito da una selezione 
+$$r_1\Join_{\theta F} r_2=\sigma_F(r_1\times r_2)$$
+Dove F è una formula e $r_1,r_2$ non hanno attributi di nome comune
+Se F è una relazione di uguaglianza, con un attributo della prima relazione e uno della seconda, allora siamo in presenza di un **equi-join**
+
+Sono importati formalmente:
+- il join naturale è basato sui **_nomi_** degli attributi
+- equi-join e theta-join sono basati sui _**valori**_
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114110111.png|center|500]]
+
+**Esempio join naturale ed equi-join**
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114110446.png|center|700]]
+
+## Join e proiezioni: perdita di informazioni
+
+- $R_1(X_1),R_2(X_2)$ $$\Pi_{X_1}(R_1\Join R_2)\subseteq R_1$$
+- $R(X),X=X_1\cup X_2$ $$(\Pi_{X_1}(R))\Join(\Pi_{X_2}(R))\supseteq R$$
+## Join e proiezioni: problemi
+
+![[appunti bsd/mod i/immagini/Pasted image 20230114111128.png|center|600]]
+
+
 
 
 
