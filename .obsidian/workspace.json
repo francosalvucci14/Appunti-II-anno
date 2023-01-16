@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f2e54cf500bab62a",
+            "id": "c446b6487b7f6dfe",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "c446b6487b7f6dfe",
+            "id": "f9b43ef97d2a23f8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+                "file": "Appunti ASD/MOD I/ProblemSet1/Problem Set.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md"
+                "file": "Appunti ASD/MOD I/ProblemSet1/Problem Set.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+                "file": "Appunti ASD/MOD I/ProblemSet1/Problem Set.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+                "file": "Appunti ASD/MOD I/ProblemSet1/Problem Set.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,17 +184,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c446b6487b7f6dfe",
+  "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
-    "Appunti ASD/MOD I/Esami/Esame 3-2-2020.md",
+    "Appunti ASD/MOD I/Untitled.md",
     "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+    "Appunti ASD/MOD I/Esami/Esame 3-2-2020.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD I/Lezione 2.md",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
     "Appunti BSD/MOD I/DMBS e SQL (Compatibility Mode).md",
     "Appunti BSD/MOD I/Immagini/Pasted image 20230113122711.png",
     "Appunti BSD/MOD I/Lezione 1.md",
-    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
-    "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20230112114304.png"
+    "Appunti ASD/MOD I/Esercizi/Esercitazioni.md"
   ]
 }
