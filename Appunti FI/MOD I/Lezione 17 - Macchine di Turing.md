@@ -158,11 +158,14 @@ Riconoscimento di $L=\{xc\hat x,x\in\{a,b\}^+\}$
 Sul nastro di lavoro deve esserci $\square$
 
 - Operazioni:
-
 	1. input scandito da sx verso dx fino a quando si incontra il separatore c: simboli copiato sul nastro di lavoro da sx a dx
 	2. resto dell'input scandito da sx verso dx, nastro di lvaoro scandito da dx verso sx, confrontando i caratteri in input con quelli presenti sul nastro di lavoro
 - Alfabeto di input $\Sigma=\{a,b,c\}$
-- 
+- Alfabeto del nastro di lavoro è $\Gamma=\{a,b\}$
+- Configurazione iniziale: $q_0\#\uparrow xc\hat x\#\uparrow\square$
+- Tre stati: $q_0$ (scansione di x), $q_1$ (scansione di $\hat x$), $q_2$ stato finale. Quindi $Q=\{q_0,q_1,q_2\}$ e $F=\{q_2\}$
+
+
 
 
 
