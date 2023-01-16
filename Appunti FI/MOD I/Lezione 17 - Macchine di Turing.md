@@ -165,7 +165,14 @@ Sul nastro di lavoro deve esserci $\square$
 - Configurazione iniziale: $q_0\#\uparrow xc\hat x\#\uparrow\square$
 - Tre stati: $q_0$ (scansione di x), $q_1$ (scansione di $\hat x$), $q_2$ stato finale. Quindi $Q=\{q_0,q_1,q_2\}$ e $F=\{q_2\}$
 
+Funzione di transizione:
 
+- Lettura e copiatura di x: $\delta(q_0,a,\square)=(q_0,a,a,\to,\to),\delta(q_0,b,\square)=(q_0,b,b,\to,\to)$
+- Lettura separatore: $\delta(q_0,c,\square)=(q_1,c,\square,\to,\leftarrow)$
+- Lettura e verifica di $\hat x$:
+	- Caratteri uguali sui due nastri $\delta(q_1,a,a)=(q_1,a,a,\to,\leftarrow),\delta(q_1,b,b)=(q_1,b,b,\to\leftarrow)$
+	- Caratteri diversi sui due nastri: in questo caso la stringa non viene accettata. Nessuna transizione definita
+- Terminazione della verifica: $\delta(q_1,\square,\square)=(q_2,\square,\square,\circ,\circ)$
 
 
 
