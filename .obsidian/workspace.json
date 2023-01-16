@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Esame 3-2-2020.md",
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Esame 3-2-2020.md"
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md"
               }
             }
           },
@@ -128,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Esame 3-2-2020.md",
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Esame 3-2-2020.md",
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,6 +186,7 @@
   },
   "active": "c446b6487b7f6dfe",
   "lastOpenFiles": [
+    "Appunti ASD/MOD I/Esami/Esame 3-2-2020.md",
     "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD I/Lezione 2.md",
@@ -194,7 +195,6 @@
     "Appunti BSD/MOD I/Immagini/Pasted image 20230113122711.png",
     "Appunti BSD/MOD I/Lezione 1.md",
     "Appunti ASD/MOD I/Esercizi/Esercitazioni.md",
-    "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20230112114304.png",
-    "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md"
+    "Appunti ASD/MOD I/Esercizi/ImgEs/Pasted image 20230112114304.png"
   ]
 }

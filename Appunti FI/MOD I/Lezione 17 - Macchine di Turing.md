@@ -136,3 +136,26 @@ Se $\delta^{(k)}(q_i,a_{i_1},...,a_{i_k})=(q_j,a_{j_1},...,a_{j_k},z_{j_1},...,z
 - si porta nello stato $q_j$
 - scrive i caratteri $a_{j_1},...,a_{j_k}$ sui rispettivi nastri
 - fa compiere alle testine i rispettivi spostamenti - a destra, a sinistra o nessuno spostamento, come specificato dagli $z_{j_l}\in\{\to,\leftarrow,\circ\},l=1,...,k$
+
+## Configurazioni di MTM
+
+Una _**configurazione istantaneta**_ di una macchina di Turing multinastro può essere rappresentata da una stringa del tipo 
+$$q\#\alpha_1\uparrow\beta_1\#\alpha_2\uparrow\beta_2\#...\#\alpha_k\uparrow\beta_k$$
+- q è lo stato attuale
+- il contenuto significativo del nastro $T_k$ è $\alpha_k\beta_k$
+- la testina del nastro $T_k$ è posizionata sulla cella contenente il primo carattere di $\beta_k$
+
+Una configurazione di una MTM è:
+- **finale**, se $q\in F$, quindi se lo stato attuale è finale, indipendentemente dal contenuto dei nastri
+- **iniziale** (con stringa di input x) se $q=q_0,\alpha_i=\varepsilon,i=1,...,k,\beta_1=x,\beta_i=\square,i=2,...,k$, quindi se il primo nastro contiene l'input con la testina sul primo carattere, e gli altri nastri sono vuoti
+
+**Esempio**
+
+Riconoscimento di $L=\{xc\hat x,x\in\{a,b\}^+\}$
+
+![[appunti fi/mod i/immagini/Pasted image 20230116151522.png|center|500]]
+
+Sul nastro di lavoro deve esserci $\square$
+
+
+
