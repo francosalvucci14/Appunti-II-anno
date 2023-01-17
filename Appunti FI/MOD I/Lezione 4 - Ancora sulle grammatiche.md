@@ -119,7 +119,7 @@ dunque il linguaggio è contestuale
 ### Definizione alternativa
 
 Il termine "linguaggio contestuale" deriva dal fatto che sono generabili da gramamtiche aventi produzioni "contestuali" del tipo $$\beta_1A\beta_2\to \beta_1\gamma\beta_2,A\in V_N,\beta_1\beta_2\in V^\star,\gamma\in V^+$$
-in cui si esprime il fatto che A può essere sostituito da $\gamma$ in una forma di frase solo se si trova nel contesto $\langle beta_1,\beta_2\rangle$ 
+in cui si esprime il fatto che A può essere sostituito da $\gamma$ in una forma di frase solo se si trova nel contesto $\langle\beta_1,\beta_2\rangle$ 
 
 ## Grammatiche di tipo 2 (Context Free)
 _Def_

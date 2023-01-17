@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
+                "file": "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/ProblemSet1/Problem Set.md"
+                "file": "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md"
               }
             }
           },
@@ -128,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/ProblemSet1/Problem Set.md",
+                "file": "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/ProblemSet1/Problem Set.md",
+                "file": "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,15 +185,15 @@
   },
   "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti FI/MOD I/Lezione 3 - RE,Grammatiche.md",
+    "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
+    "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
     "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti ASD/MOD I/ProblemSet1/Problem Set.md",
     "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
     "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
-    "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Untitled.md",
-    "Appunti ASD/MOD I/Esami/Esame 3-2-2020.md"
+    "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md"
   ]
 }
