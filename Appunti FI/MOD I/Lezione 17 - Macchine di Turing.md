@@ -188,8 +188,44 @@ Computazioni massimali corrispondenti ai due input $bacab$ e $acb$.
 ## Macchina di Turing non deterministica
 
 Una macchina di Turing non deterministica (NDTM) $\mathcal M$ a k nastri è una sestupla $\mathcal M=\langle\Gamma,\square,Q,q_0,F,\delta_N\rangle$, in cui:
+
 - $\Gamma=\bigcup_{i=1}^k\Gamma_i$
 - $\delta_N$ è una funzione parziale: $$\delta_N:(Q-F)\times\overline\Gamma_1\times...\times\overline\Gamma_k\to\mathcal P(Q\times\overline\Gamma_1\times...\times\overline\Gamma_k\times\{\to,\leftarrow,\circ\}^k)$$
+**Esempio di NDTM**
+
+Consideriamo una macchina di Turing non deterministica avente $\Gamma=\{a,b,c,d\},Q=\{q_0,...,q_{11}\},F=\{q_{11}\}$ e funzione di transizione definita in questo modo 
+
+![[appunti fi/mod i/immagini/Pasted image 20230118145343.png|center|600]]
+
+La macchina di Turing $\mathcal M$:
+
+- ha grado di non determinismo 2
+- data una stringa di input $x\in\{a,b\}^\star$, la accetta se e solo se esiste una stringa $y\in\{a,b\}^\star$ con $|y|\geq2$ tale che $x=uyyv$, con $u,v\in\{a,b\}^\star$
 
 
+### Equivalenza tra MT e MTND
+
+è possibile dimostrare l'equivalenza tra MTM e MT:
+- per ogni MT $\mathcal M$ esiste una MTND $\mathcal M'$ equivalente, tale cioè che $L(\mathcal M)=L(\mathcal M')$ (si tratta della stessa $\mathcal M$)
+- per ogni MTND $\mathcal M$ esiste una MT $\mathcal M'$ equivalente, tale cioè che $L(\mathcal M)=L(\mathcal M')$
+	- dimostrazione mediante **simulazione** di $\mathcal M'$ su $\mathcal M$: mostrando come ad ogni computazione di $\mathcal M$ corrisponda una computazione di $\mathcal M'$ con stesso esito (accettazione, rifiuto, non termina).
+
+# Linguaggi di tipo 0 e Macchine di Turing
+
+>[!important]- Teorema
+>Se $\mathcal G$ è una grammatica di tipo 0 e $L=L(\mathcal G)$ è il linguaggio da essa generato, esiste una macchina di Turing non deterministica a due nastri $\mathcal M_L$ che accetta $L$
+
+Sia $\mathcal G=\langle V_N,V_T,P,S\rangle$, la macchina $\mathcal M_L$ opera nel seguente modo.
+
+- Data una stringa $w\in V_T^\star$, la configurazione iniziale di $\mathcal M_L$ è $q_0\#\uparrow w\#\uparrow S$ 
+- Ad ogni passo, in modo non deterministico $\mathcal M_L$ applica sulla forma di frase $\phi$ presente sul secondo nastro tutte le possibili produzioni in P, rimpiazzando $\phi$ con una nuova forma di frase $\phi'$ derivabile da $\phi$. Quindi verifica se $\phi'$ coincide con $w$: solo se la verifica da esito positivo la macchina entra in uno stato finale di accettazione
+
+Corollario:
+I linguaggi di tipo 0 sono Turing-decidibili
+
+Lo stesso approccio mostrato sopra può essere applicato in una MT che **genera**, una dopo l'altra, tutte le stringhe generate da $\mathcal G$, di tipo 0
+
+Dato un linguaggio di tipo 0 esiste una MT che produce una dopo l'altra (enumerata) tutte e sole le stringhe del linguaggio 
+
+I linguaggi di tipo 0 sono **ricorsivamente enumerabili**
 
