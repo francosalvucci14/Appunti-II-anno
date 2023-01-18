@@ -174,5 +174,22 @@ Funzione di transizione:
 	- Caratteri diversi sui due nastri: in questo caso la stringa non viene accettata. Nessuna transizione definita
 - Terminazione della verifica: $\delta(q_1,\square,\square)=(q_2,\square,\square,\circ,\circ)$
 
+Computazioni massimali corrispondenti ai due input $bacab$ e $acb$.
+
+![[appunti fi/mod i/immagini/Pasted image 20230118144127.png|center|200]]
+
+## Equivalenza tra MTM e MT
+
+è possibile dimostrare l'equivalenza tra MTM e MT:
+- per ogni MT $\mathcal M$ esiste una MTM $\mathcal M'$ equivalente, tale cioè che $L(\mathcal M)=L(\mathcal M')$ (si tratta della stessa $\mathcal M$)
+- per ogni MTM $\mathcal M$ esiste una MT $\mathcal M'$ equivalente, tale cioè che $L(\mathcal M)=L(\mathcal M')$
+	- dimostrazione mediante **simulazione** di $\mathcal M'$ su $\mathcal M$: mostrando come ad ogni computazione di $\mathcal M$ corrisponda una computazione di $\mathcal M'$ con stesso esito (accettazione, rifiuto, non termina)
+
+## Macchina di Turing non deterministica
+
+Una macchina di Turing non deterministica (NDTM) $\mathcal M$ a k nastri è una sestupla $\mathcal M=\langle\Gamma,\square,Q,q_0,F,\delta_N\rangle$, in cui:
+- $\Gamma=\bigcup_{i=1}^k\Gamma_i$
+- $\delta_N$ è una funzione parziale: $$\delta_N:(Q-F)\times\overline\Gamma_1\times...\times\overline\Gamma_k\to\mathcal P(Q\times\overline\Gamma_1\times...\times\overline\Gamma_k\times\{\to,\leftarrow,\circ\}^k)$$
+
 
 

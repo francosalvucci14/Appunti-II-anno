@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md"
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,14 +144,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "55a9fd2141be2520",
@@ -183,8 +183,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c446b6487b7f6dfe",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
     "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
     "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
     "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
@@ -193,7 +194,6 @@
     "Appunti FI/MOD I/Lezione 6 - ASF.md",
     "Appunti FI/MOD I/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
     "Appunti FI/MOD I/Lezione 9 - Sempre su RE,RG e ASF.md",
-    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
     "Appunti FI/MOD I/Lezione 11 - Pumping Lemma per ling. reg.,Linguaggi CF.md"
   ]
 }
