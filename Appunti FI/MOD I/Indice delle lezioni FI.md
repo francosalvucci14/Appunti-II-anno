@@ -17,6 +17,7 @@
 - [[Lezione 15 - Grammatiche Ambigue,Automi a Pila]]
 - [[Lezione 16 - PDA non deterministici]]
 - [[Lezione 17 - Macchine di Turing]]
+- [[Lezione 18 - Parsing]]
 - 
 
 
