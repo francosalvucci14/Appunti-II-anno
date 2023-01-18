@@ -247,3 +247,8 @@ Vale il seguente teorema
 - è possibile verificare se l'automa non si ferma su un determinato input semplicemente osservando se la relativa computazione è più lunga di N passi
 - L'appartenenza di una stringa a un linguaggio CS è un problema Turing-decidibile
 
+Vale anche il contrario
+
+>[!important]- Teorema
+>Se $\mathcal M$ è un LBA che accetta il linguaggio $L$ allora esiste una grammatica $\mathcal G_L$ di tipo 1 tale che $L=L(\mathcal G_L)$
+
