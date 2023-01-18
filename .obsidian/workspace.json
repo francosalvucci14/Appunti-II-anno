@@ -151,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -183,7 +183,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
     "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",

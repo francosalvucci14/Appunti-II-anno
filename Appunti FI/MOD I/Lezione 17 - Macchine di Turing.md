@@ -221,11 +221,29 @@ Sia $\mathcal G=\langle V_N,V_T,P,S\rangle$, la macchina $\mathcal M_L$ opera ne
 - Ad ogni passo, in modo non deterministico $\mathcal M_L$ applica sulla forma di frase $\phi$ presente sul secondo nastro tutte le possibili produzioni in P, rimpiazzando $\phi$ con una nuova forma di frase $\phi'$ derivabile da $\phi$. Quindi verifica se $\phi'$ coincide con $w$: solo se la verifica da esito positivo la macchina entra in uno stato finale di accettazione
 
 Corollario:
-I linguaggi di tipo 0 sono Turing-decidibili
+I linguaggi di tipo 0 sono **Turing-semidecidibili**
 
 Lo stesso approccio mostrato sopra può essere applicato in una MT che **genera**, una dopo l'altra, tutte le stringhe generate da $\mathcal G$, di tipo 0
 
 Dato un linguaggio di tipo 0 esiste una MT che produce una dopo l'altra (enumerata) tutte e sole le stringhe del linguaggio 
 
 I linguaggi di tipo 0 sono **ricorsivamente enumerabili**
+
+>[!important]- Teorema
+>Se $\mathcal M$ è una macchina di Turing che accetta il linguaggio $L$ allora esiste una grammatica $\mathcal G_L$ di tipo tale che $L=L(\mathcal G)$
+
+# Linguaggi di tipo 1 e Macchine di Turing
+
+Cosa possiamo dire rispetto ai linguaggio di tipo 1?
+
+Vale il seguente teorema
+
+>[!important]- Teorema
+>Se $\mathcal G$ è una grammatica di tipo 1 e $L=L(\mathcal G)$ è il linguaggio da essa generato, esiste una macchina di Turing deterministica $\mathcal M_L$ che accetta $L$ utilizzando un numero di celle di nastro al più pari a kn, dove n è la lunghezza della stringa e k una costante (**Lineare Bounded Automaton,**LBA)
+
+**Osservazione**: 
+- Il LBA utilizza al più $L=kn$ celle di nastro: ne deriva che il numero di possibili configurazioni dell'automa è finito e al più pari a $$N=|\overline\Gamma|^L|Q|L$$
+- Una computazione dell'automa più lunga di N necessariamente attraversa la stessa configurazione per due volte, e quindi successivamente un numero infinito di volte
+- è possibile verificare se l'automa non si ferma su un determinato input semplicemente osservando se la relativa computazione è più lunga di N passi
+- L'appartenenza di una stringa a un linguaggio CS è un problema Turing-decidibile
 
