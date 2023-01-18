@@ -135,7 +135,7 @@ Un metodo più efficiente consiste nel portare la grammatica in forma ridotta, v
 
 ## Predicato $L(\mathcal G)$ infinito
 
-Data una grammatica $\mathcal G$ di tipo 2 è decidibile stabilire se $L(\mathcal G)=\emptyset$
+Data una grammatica $\mathcal G$ di tipo 2 è decidibile stabilire se $L(\mathcal G)$ è infinito
 
 Assumiamo che $\mathcal G=\langle V_T,V_{N},P,S\rangle$ sia in CNF
 
