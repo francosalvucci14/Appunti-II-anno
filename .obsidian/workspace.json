@@ -13,31 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+                "file": "Appunti ASD/MOD I/Indice degli appunti ASD.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "55d49fd532630d14",
+            "id": "f22281f63b6128fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f9b43ef97d2a23f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD I/ProblemSet1/Problem Set.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 26-9-16.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +110,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md"
+                "file": "Appunti ASD/MOD I/Esami/Esame 26-9-16.md"
               }
             }
           },
@@ -140,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 26-9-16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,14 +145,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD I/Indice delle lezioni FI.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 26-9-16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "55a9fd2141be2520",
@@ -196,17 +184,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "55d49fd532630d14",
+  "active": "f22281f63b6128fd",
   "lastOpenFiles": [
-    "Appunti FI/MOD I/Lezione 18 - Parsing.md",
+    "Appunti ASD/MOD I/Indice degli appunti ASD.md",
+    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Esami/Esame 26-9-16.md",
+    "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
+    "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
+    "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
     "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
-    "Appunti FI/MOD I/Lezione 14 - Pumping Lemma per CF.md",
-    "Appunti FI/MOD I/Lezione 15 - Grammatiche Ambigue,Automi a Pila.md",
-    "Appunti FI/MOD I/Lezione 12 - Sempre su Linguaggi CF.md",
-    "Appunti FI/MOD I/Lezione 16 - PDA non deterministici.md",
-    "Appunti FI/MOD I/Lezione 13 - CNF,GNF.md",
-    "Appunti FI/MOD I/Lezione 6 - ASF.md",
-    "Appunti FI/MOD I/Lezione 7 - Equivalenza tra ASFD e ASFND.md",
-    "Appunti FI/MOD I/Lezione 9 - Sempre su RE,RG e ASF.md"
+    "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md"
   ]
 }
