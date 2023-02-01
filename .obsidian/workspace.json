@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Esame 26-9-16.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 16-7-13.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 14-9-22.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md"
+                "file": "Appunti ASD/MOD I/Esami/Esame 14-9-22.md"
               }
             }
           },
@@ -152,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 14-9-22.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
+                "file": "Appunti ASD/MOD I/Esami/Esame 14-9-22.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -208,17 +208,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "b71a56e8a70d5773",
   "lastOpenFiles": [
-    "Appunti ASD/MOD I/Esami/Esame 14-9-22.md",
-    "Appunti ASD/MOD I/Esami/Esame 26-9-16.md",
-    "Appunti ASD/MOD I/Esami/Esame 22-6-22.md",
-    "Appunti ASD/MOD I/Esami/Esame 18-7-22.md",
     "Appunti ASD/MOD I/Esami/Esame 16-7-13.md",
+    "Appunti ASD/MOD I/Esami/Esame 18-7-22.md",
+    "Appunti ASD/MOD I/Esami/Esame 22-6-22.md",
+    "Appunti ASD/MOD I/Esami/Esame 26-9-16.md",
+    "Appunti ASD/MOD I/Esami/Esame 14-9-22.md",
+    "Appunti ASD/MOD I/Esami/Esame 3-2-2020.md",
+    "Appunti ASD/MOD I/Esami/Esame 13-6-13.md",
+    "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
     "Appunti CPS/Lezione 2.md",
-    "Appunti CPS/Lezione 4.md",
-    "Appunti CPS/Lezione 1.md",
-    "Appunti CPS/Lezione 3.md",
-    "Appunti CPS/Lezione 5.md"
+    "Appunti CPS/Lezione 4.md"
   ]
 }
