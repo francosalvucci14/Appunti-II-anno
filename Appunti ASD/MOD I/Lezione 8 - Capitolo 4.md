@@ -17,7 +17,7 @@ Si potrebbe voler ordinare per matricola o per anno di nascita
 - La lista $Y[i]$ conterrà gli elementi con chiave uguale a i
 - Concatenare poi le liste
 
-Tempo $O(n+k)$ come per IntegerSort
+Tempo $O(n+k)$ come per IntegerSort 
 
 **Esempio**
 ![[Pasted image 20221107161441.png|center|500]]
