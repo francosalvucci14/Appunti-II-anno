@@ -17,9 +17,7 @@ Libri:
 	2. Reti sequenziali
 	3. Codifiche
 
-# Inizio
-
-cos'è la logica?
+# Cos'è la logica?
 
 > La logica è _ragionamento_ 
 
@@ -52,3 +50,34 @@ B = "il cibo è economico"
 Possiamo vedere che $A\implies\overline B$ e $B\implies\overline A$
 
 Le due relazioni sono equivalenti
+
+## Come possiamo definire il concetto di "dimostrazione"?
+
+Prendiamo alcuni esempi provenienti dalla teoria degli insiemi
+
+Un'insieme è una collezione di oggetti
+
+Le operazioni che si possono fare sugli insiemi sono:
+
+- $A\cup B$ Unione
+- $A\cap B$ Intersezione
+- $A\setminus B$ Differenza
+- $A\times B$ Prodotto cartesiano
+- $\overline A$ Complementare di A
+- $A\uplus B$ Unione disgiunta
+- $(A\setminus B)\cup(B\setminus A)$ Differenza Simmetrica, si indica anche con il simbolo $\triangle$ $A\triangle B$
+
+**Esempio**
+
+$A\cup B=A\cap B$?
+
+In genere no, ma se A e B sono uguali, la risposta diventa **SI**
+
+Ma la relazione non è **valida** (valida = vera sempre)
+
+**Esercizio**
+
+$A\cap(B\triangle C)=(A\cap B)\triangle(A\cap C)$ 
+
+Verificare che la relazione è valida
+
