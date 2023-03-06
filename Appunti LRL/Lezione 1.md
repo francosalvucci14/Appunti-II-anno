@@ -88,3 +88,25 @@ $A_1,A_2,...,A_n$
 
 La porzione $A_i$ sarà
 $$A_i=\{\underline x=(x_1,...,x_n)\in\{0,1\}^\star:x_i=1\}$$
+
+>[!important]- Osservazione
+>Argomento ancora aperto
+
+# Cosa significa "contare"?
+
+Prendiamo due insiemi, l'insieme A con cardinalità che conosco e l'insieme B con cardinalità che non conosco
+
+Devo cercare una **corrispondenza biunivoca** tra i due insiemi
+
+Una corrispondenza biunivoca è una funzione definita in questo modo:
+$$\begin{align}f:&B\to A\\&x\to f(x)\end{align}$$
+che è una funzione sia iniettiva che suriettiva
+
+- Iniettiva : $\forall x,y \in B, x\neq y\implies f(x)\neq f(y)$  
+
+- Suriettiva: $\forall y \in A,\exists x\in A : f(x)=y$
+
+Quindi contare un insieme significa mettere in corrispondenza biunivoca l'insieme con un insieme di cui conosco la cardinalità
+
+
+
