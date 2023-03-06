@@ -81,3 +81,10 @@ $A\cap(B\triangle C)=(A\cap B)\triangle(A\cap C)$
 
 Verificare che la relazione è valida
 
+**Fine esercizio**
+
+Data una sequenza 
+$A_1,A_2,...,A_n$
+
+La porzione $A_i$ sarà
+$$A_i=\{\underline x=(x_1,...,x_n)\in\{0,1\}^\star:x_i=1\}$$
