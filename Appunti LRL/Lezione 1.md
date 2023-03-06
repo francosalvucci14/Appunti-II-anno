@@ -6,6 +6,7 @@ Libri:
 - Sarah L. Harris and David Money Harris. Sistemi digitali e architettura dei calcolatori. Zanichelli, 2017
 
 # Programma generale
+
 2 parti del corso:
 1. Logica
 	1. Riepilogo di matematica
