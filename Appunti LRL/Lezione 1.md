@@ -107,6 +107,25 @@ che è una funzione sia iniettiva che suriettiva
 - Suriettiva: $\forall y \in A,\exists x\in A : f(x)=y$
 
 Quindi contare un insieme significa mettere in corrispondenza biunivoca l'insieme con un insieme di cui conosco la cardinalità
+ 
+# Dimostrazione per assurdo
 
+Prendiamo il teorema di Cantor: Non esiste una corrispondenza biunivoca $f:\mathbb N\to \mathcal P(\mathbb N)$  
 
+Dimostriamo il teorema (per assurdo)
+
+Supponiamo che esiste una corrispondenza biunivoca tra $\mathbb N$ e $\mathcal P(\mathbb N)$ 
+Supponiamo che esista questa enumerazione dei sottoinsiemi dei Naturali :
+$$\mathcal P(\mathbb N)=\{A_1\subseteq \mathbb {N},A_2,A_3,...\}$$
+Prendiamo un insieme definito in questo modo:
+$C=\{x\in\mathbb N:x\not\in A_x\}\subseteq\mathbb N$
+
+Siccome $C\subseteq\mathbb N$ allora $\exists n\in\mathbb N:A_n=C$ 
+
+Domanda: $n\in C$ o $n\not\in C$
+
+1. se $n\in C$, allora $n\in A_n$, ma di conseguenza $n\not\in C$ (contraddizione)
+2. se $n\not\in C$, allora $n\not\in A_n$, ma di conseguenza $n\in C$ (contraddizione)
+
+E quindi **assurdo**
 
