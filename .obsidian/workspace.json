@@ -32,19 +32,31 @@
             }
           },
           {
-            "id": "b70932d4f0819e23",
+            "id": "9df32aed1b4087fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
+                "file": "Appunti LRL/Indice delle lezioni.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "383cabb43bfb338b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti LRL/Indice delle lezioni.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -121,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 1 - Introduzione.md"
+                "file": "Appunti LRL/Indice delle lezioni.md"
               }
             }
           },
@@ -139,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
+                "file": "Appunti LRL/Indice delle lezioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
+                "file": "Appunti LRL/Indice delle lezioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,8 +192,10 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "383cabb43bfb338b",
   "lastOpenFiles": [
+    "Appunti LRL/Lezione 1.md",
+    "Appunti LRL/Indice delle lezioni.md",
     "Appunti LMP/MOD II/Indice delle lezioni.md",
     "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
     "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
@@ -189,8 +203,6 @@
     "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
-    "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md"
+    "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md"
   ]
 }
