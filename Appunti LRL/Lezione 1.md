@@ -37,3 +37,18 @@ Questi due sillogismi sono entrambi validi, perchè se sono vere le premesse, al
 
 Per la struttura del ragionamento in se, i due sillogismi sono entrambi **_validi_**
 
+**Esempio**
+
+- Il cibo buono non è economico
+- Il cibo economico non è buono
+
+Le due frasi sono uguali?
+
+Da un punto di vista prettamente logico si, vediamo perchè:
+
+A = "il cibo è buono"
+B = "il cibo è economico"
+
+Possiamo vedere che $A\implies\overline B$ e $B\implies\overline A$
+
+Le due relazioni sono equivalenti
