@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "0eb1ec61815231df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti RO/Lezione 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "511bac5c5c17fb46",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 1.md"
+                "file": "Appunti RO/Lezione 1.md"
               }
             }
           },
@@ -126,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 1.md",
+                "file": "Appunti RO/Lezione 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 1.md",
+                "file": "Appunti RO/Lezione 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,10 +180,12 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "0eb1ec61815231df",
   "lastOpenFiles": [
-    "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti FI/MOD II/Lezione 1.md",
+    "Appunti RO/Lezione 1.md",
+    "Appunti RO",
+    "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230307115244.png",
     "Appunti FI/MOD II/Immagini",
     "README.md",
