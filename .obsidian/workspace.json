@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "ef6e54d2074a89f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c9f5a83a4ff2a9c4",
             "type": "leaf",
             "state": {
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni.md"
+                "file": "Appunti LRL/Lezione 1.md"
               }
             }
           },
@@ -139,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni.md",
+                "file": "Appunti LRL/Lezione 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni.md",
+                "file": "Appunti LRL/Lezione 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,16 +167,16 @@
       "graph:Open graph view": false
     }
   },
-  "active": "ef6e54d2074a89f3",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti FI/MOD II/Lezione 1.md",
+    "README.md",
     "Appunti FI/MOD II/Indice delle lezioni.md",
+    "Appunti FI/MOD II/Lezione 1.md",
     "Appunti LRL/Lezione 1.md",
     "Appunti FI/MOD I/Lezione 2 - RE,Linguaggi e problemi.md",
     "Appunti FI/MOD I/Lezione 3 - RE,Grammatiche.md",
     "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",
     "Appunti FI/MOD I/Lezione 1 - Insiemi infiniti, Linguaggi.md",
-    "README.md",
     "Appunti LRL/Indice delle lezioni.md",
     "Appunti LMP/MOD II/Indice delle lezioni.md"
   ]
