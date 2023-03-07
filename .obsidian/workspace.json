@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "383cabb43bfb338b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti LRL/Lezione 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c9f5a83a4ff2a9c4",
             "type": "leaf",
             "state": {
@@ -108,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 1.md"
+                "file": "Appunti FI/MOD II/Lezione 1.md"
               }
             }
           },
@@ -126,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 1.md",
+                "file": "Appunti FI/MOD II/Lezione 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 1.md",
+                "file": "Appunti FI/MOD II/Lezione 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,12 +155,12 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "c9f5a83a4ff2a9c4",
   "lastOpenFiles": [
     "README.md",
+    "Appunti LRL/Lezione 1.md",
     "Appunti FI/MOD II/Indice delle lezioni.md",
     "Appunti FI/MOD II/Lezione 1.md",
-    "Appunti LRL/Lezione 1.md",
     "Appunti FI/MOD I/Lezione 2 - RE,Linguaggi e problemi.md",
     "Appunti FI/MOD I/Lezione 3 - RE,Grammatiche.md",
     "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",
