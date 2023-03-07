@@ -140,3 +140,152 @@ Ma è vero che Il procedimento che esegue la somma ha un insieme di “poche” 
 
 - Che poi: ma cosa si intende con “poche” e con quantità limitata?
 
+Ma è vero che Il procedimento che esegue la somma ha un insieme di “poche” istruzioni disponibili ciascuna delle quali utilizza una quantità limitata di memoria?
+
+Riflettiamo:
+
+- il numero di istruzioni disponibili è pari al numero di coppie di cifre moltiplicato per il numero di possibili valori per il riporto, ossia, 10 × 10 × 2 = 200
+- per sapere quale istruzione dobbiamo eseguire abbiamo bisogno di conoscere le due cifre da sommare e il valore del riporto, ossia, 3 numeri di una cifra
+
+Ricapitolando: per sommare qualunque coppia di interi (**grandi quanto ci pare**) abbiamo a **disposizione 222 istruzioni** (che eseguono 2 azioni) fra le quali scegliere quella da eseguire utilizzando una memoria di 3 cifre
+
+Indipendentemente da quanto sono grandi i due numeri che vogliamo sommare, sempre 222 istruzioni (che eseguono 2 azioni) disponibili che utilizzano una memoria di 3 cifre sono!
+
+**Ossia, il numero di istruzioni, azioni e la quantità di memoria necessaria sono _costanti_: non dipendono da quello che chiameremo input**
+- chiaro ora cosa si intende con “poche” e con quantità limitata?
+- Chiara, ora, la scelta di Turing delle sue tre caratteristiche!
+
+Ossia, il procedimento per calcolare la “somma in colonna” di due numeri naturali è una sequenza di “se sono vere _certe condizioni_ allora esegui **queste azioni**” 
+- ad ogni coppia (_certe condizioni_, **queste azioni**) corrisponde un’istruzione 
+- dove _certe condizioni_ è ciò che viene letto (la coppia di cifre dei due numeri, eventualmente assenti) e il valore del riporto 
+- e **queste azioni** è ciò che viene scritto, la modifica del valore del riporto, e lo spostamento
+	- o, in alcuni casi, **queste azioni** è l’indicazione che la somma è stata completata (termina)
+- Pensandoci bene, questo procedimento potrebbe eseguirlo chiunque sappia leggere e scrivere e distinguere fra destra e sinistra 
+- Pensandoci bene, per eseguire questo procedimento non è necessario nemmeno sapere cosa significa “sommare due numeri naturali”
+- esegui le istruzioni del procedimento e, come per magia, alla fine ti ritrovi con il risultato in mano
+- Perché, naturalmente, le istruzioni ti dicono, **per ogni condizione possibile, esattamente quali azioni devi eseguire in quelle condizioni**
+- questo significa che l’insieme di istruzioni è _non ambiguo_: non può contenere due (o più) istruzioni che, a partire dalle stesse condizioni , ti indica  diverse azioni da eseguire
+	- non può succedere, ad esempio, che un’istruzione affermi “se è vero a allora scrivi 5” e un’altra istruzione affermi “se è vero a allora scrivi 6”
+	- altrimenti, quando è vero a come devi comportarti tu che vuoi eseguire le istruzioni?
+- E, dunque, **l’ordine in cui eseguire le istruzioni è indicato implicitamente nel meccanismo stesso de “se ... allora ...”**
+	- in ogni istante devi eseguire l’unica istruzione che è possibile eseguire, fino a quando non incontri un’istruzione che ti dice di terminare
+	- non puoi fare altro!
+- Attenzione, però: per ottenere il risultato **devi** eseguire le istruzioni
+	- ossia, ogni volta che si verificano quelle condizioni tu quelle azioni devi eseguirle
+	- senza se e senza ma, le esegui e basta!
+- Cioè, le istruzioni sono una sorta di ordini
+	- loro ti dicono di fare qualcosa e tu lo fai!
+- Questa idea di istruzione, nata dall’analisi di Turing, è alla base di molti linguaggi di programmazione che, proprio per questo, vengono detti imperativi
+	- il C, il Fortran, ma anche Java o Python
+
+## Risolvere automaticamente un problema
+
+Eccoci al nocciolo della questione:
+
+- informalmente, risolvere automaticamente un problema significa progettare un procedimento che risolve tutte le istanze di quel problema e che può essere eseguito da un automa
+	- ossia, da un esecutore che può non avere alcuna idea del problema né del significato delle istruzioni contenute nel procedimento
+
+Il resto della prima parte di questo modulo è dedicato a formalizzare questo concetto informale
+
+## Un nuovo linguaggio...
+
+Ripensiamo alla somma di due numeri naturali:
+
+1) il procedimento che abbiamo visto è costituito di sole istruzioni      “se sono vere certe condizioni allora esegui queste azioni”
+	1) ripetute fino a quando non si incontra il comando “termina”
+2) in ciascuna istruzione le azioni da eseguire sono le 3 azioni seguenti
+	1) la scrittura di una cifra, la (eventuale) modifica del riporto, il movimento a sinistra per considerare le successive due cifre da sommare
+3) infine, le condizioni di ognuna delle istruzioni dipendono da due tipi di parametri
+	1) il valore del riporto
+	2) le due cifre da sommare
+
+NOTA: mentre le due cifre da sommare le troviamo scritte sul foglio sul quale abbiamo indicato (in colonna) i due numeri che vogliamo sommare
+
+Il valore del riporto lo teniamo a mente ad ogni coppia di cifre sommate
+
+- è, cioè, qualcosa che caratterizza il nostro “stato interiore
+
+In virtù delle osservazioni 1), 2) e 3), possiamo scrivere il nostro procedimento in forma più compatta
+
+- poiché utilizziamo sole istruzioni “se condizione allora azione”  possiamo anche evitare di scrivere “se ... allora ...” ogni santa volta
+- e scrivere, di seguito, le due condizioni seguite dalle tre azioni
+
+così, ad esempio, l’istruzione
+
+- se r = 0 e le due cifre sono 4 e 6, allora scrivi 0, poni r = 1, e spostati di una posizione a sinistra
+
+diventa
+
+-  $\langle q_0,(4,6),0,q_1,sx\rangle$
+
+dove q_0 e q_1 sono due simboli che indicano, rispettivamente, r = 0 e r = 1
+OSSERVAZIONE: in questo esempio sembrerebbe che anche “sinistra” possa essere omesso; vedremo che questa specifica, invece, occorre tenerla
+
+e l’istruzione 
+- se r = 1 e l’unica cifra è 5, allora scrivi 6, poni r = 0, e spostati di una posizione a sinistra
+nella quale le cifre di uno degli operandi sono terminate, diventa la coppia di istruzioni
+- $\langle q_1,(5,\square),6,q_0,sx\rangle$ 
+- $\langle q_1,(\square,5),6,q_0,sx\rangle$ 
+dove il simbolo $\square$ indica che non viene letto alcunché o che non deve essere scritto alcunché 
+e abbiamo due diverse istruzioni perché l’operando le cui cifre sono terminate può essere il primo o il secondo
+
+e, infine, le istruzioni 
+- se r = 1 e le cifre di entrambi i numeri sono terminate, allora scrivi 1 e termina 
+- se r = 0 e le cifre di entrambi i numeri sono terminate, allora termina 
+diventano, rispettivamente 
+- $\langle q_1,(\square,\square),1,q_f,fermo\rangle$
+- $\langle q_0,(\square,\square),\square,q_f,fermo\rangle$
+dove $q_f$ è lo “_**stato interiore**_” che permette all’esecutore di comprendere che non deve più eseguire alcuna azione 
+- ossia, non si deve “tornare al punto 2)” 
+e qui l’utilizzo di “fermo” mostra anche perché è necessario specificare come ci si deve muovere
+
+## ... e una macchina che lo comprende
+
+- Possiamo, a questo punto, rappresentare graficamente l’esecuzione del procedimento che calcola la somma di due numeri qualsiasi 
+	- ad esempio, i numeri 53 e 28 
+- per farlo, immaginiamo di disporre di una sorta di automa 
+	- che rappresentiamo come una specie di “testa robotizzata” 
+	- e che può trovarsi in uno di tre possibili “stati interiori”: $q_0$ , $q_1$ e $q_f$ 
+- che utilizza, per leggere e scrivere , tre nastri 
+	- suddivisi ciascuno in un numero infinito di celle 
+	- tali che ciascuna cella, in ogni istante, può contenere o una cifra (un numero compreso fra 0 e 9) oppure può essere vuota (e indichiamo con $\square$ il simbolo di cella vuota) 
+- e tre testine di lettura/scrittura 
+- Non appena viene scritto qualcosa sui nastri, dipendentemente dallo “stato interiore” dell’automa e da quello che viene letto, l’automa inizia a **computare** – ossia a eseguire le quintuple del procedimento
+
+![[appunti fi/mod ii/immagini/Pasted image 20230307151710.png|center|500]]
+
+## Quasi una macchina di Turing
+
+Quella che abbiamo visto è quasi una descrizione informale di una maccina di Turing 
+
+_Quasi_, perché abbiamo utilizzato tre nastri e in una macchina di Turing occorre descrivere cosa viene letto (nelle condizioni) e cosa viene scritto (nelle azioni) su ogni nastro
+
+Così che l’istruzione 
+
+- se r = 0 e le due cifre sono 4 e 6, allora scrivi 0, poni r = 1, spostati di una posizione a sinistra e torna al punto 2) 
+
+Diventa $\langle q_0,(4,6,\square),(4,6,0),q_1,sx\rangle$ 
+
+- che specifica cosa deve essere scritto sui 3 nastri (4, 6, $\square$) e con cosa questi tre elementi devono essere sovrascritti (4, 6, 0)
+
+Poiché specifica 2 condizioni e 3 azioni, essa prende il nome di **quintupla** 
+
+E, quelli che abbiamo chiamato sino ad ora “stati interiori”, si chiamano propriamente **stati interni** 
+
+E l’esecuzione delle quintuple su un insieme fissato di dati (come nella figura) si chiama **_computazione_**
+
+# Calcolabilità
+
+Quella che abbiamo visto è, dunque, una descrizione informale di una macchina di Turing
+
+- con la ‘m’ minuscola
+
+Che è la descrizione di un procedimento di risoluzione di un problema espresso nel linguaggio definito da Alan Turing
+
+Linguaggio che costituisce un modello di calcolo: il modello Macchina di Turing 
+
+- con la ’M’ maiuscola 
+
+E tutto ciò, che è necessario per parlare di Calcolabilità
+
+
