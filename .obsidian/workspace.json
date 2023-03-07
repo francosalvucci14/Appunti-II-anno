@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "511bac5c5c17fb46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -155,14 +167,15 @@
       "graph:Open graph view": false
     }
   },
-  "active": "c9f5a83a4ff2a9c4",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+    "Appunti FI/MOD II/Lezione 1.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230307115244.png",
     "Appunti FI/MOD II/Immagini",
     "README.md",
     "Appunti LRL/Lezione 1.md",
     "Appunti FI/MOD II/Indice delle lezioni.md",
-    "Appunti FI/MOD II/Lezione 1.md",
     "Appunti FI/MOD I/Lezione 2 - RE,Linguaggi e problemi.md",
     "Appunti FI/MOD I/Lezione 3 - RE,Grammatiche.md",
     "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",

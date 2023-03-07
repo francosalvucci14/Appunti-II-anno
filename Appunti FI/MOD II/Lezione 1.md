@@ -102,3 +102,41 @@ Per questa ragione, per eseguire la somma di qualunque coppia di numeri naturali
 - e in cui ogni operazione elementare utilizza una quantità limitata di dati (due cifre e l’eventuale riporto) 
 In accordo alle caratteristiche enunciate da Turing
 E adesso andiamo a ripassare questo procedimento ...
+
+### La somma di due numeri naturali
+
+- Per calcolare il valore della somma 37895 + 441238, innanzi tutto scriviamo l’operazione in colonna:$$\begin{align}&3 7 8 9 5 +\\&4 4 1 2 3 8=\end{align}$$
+- poi, osserviamo le due cifre più a destra, e calcoliamo la loro somma e l’eventuale riporto $$\begin{align}&3 7 8 9 5 +\\& 4 4 1 2 3 8\end{align}$$ =  3 con riporto di 1
+- poi, osserviamo le due cifre più a destra non ancora considerate, e calcoliamo la loro somma più l’eventuale riporto, e il nuovo eventuale riporto $$\begin{align}&3 7 8 9 5 +\\& 4 4 1 2 3 8\end{align}$$ = 3 3 con riporto di 1 
+- ... e così via ...
+
+Pensandoci bene, potremmo descrivere il procedimento per calcolare la “somma in colonna” di due numeri naturali nel modo seguente
+1) posizionati sulla coppia di cifre più a destra, e poni r = 0 
+2) fino a quando leggi una coppia di cifre, esegui la somma della coppia di cifre sulle quali sei posizionato, aggiungi r a tale valore e scrivi una cifra del risultato calcolando anche il nuovo valore di r, e poi spostati a sinistra
+3) fino a quando leggi una sola cifra (ossia, le cifre di uno dei due numeri sono terminate) aggiungi r ad essa e scrivi una cifra del risultato calcolando anche il nuovo valore di r, e poi spostati a sinistra
+4) se le cifre di entrambi i numeri sono terminate, allora calcola l’eventuale ultima cifra del risultato e termina
+
+Ossia, il procedimento per calcolare la “somma in colonna” di due numeri naturali è una sequenza di “se sono vere _certe condizioni_ allora esegui **queste azioni**” 
+- ad ogni coppia (_certe condizioni_, **queste azioni**) corrisponde un’istruzione 
+- dove _certe condizioni_ è ciò che viene letto (la coppia di cifre dei due numeri, eventualmente assenti) e il valore del riporto 
+- e **queste azioni** è ciò che viene scritto, la modifica del valore del riporto, e lo spostamento
+	- o, in alcuni casi, **queste azioni** è l’indicazione che la somma è stata completata (termina)
+- Pensandoci bene, questo procedimento potrebbe eseguirlo chiunque sappia leggere e scrivere e distinguere fra destra e sinistra 
+	- che sono nozioni davvero **elementari!** 
+	- Su questo non c’è davvero dubbio! 
+- Ma, pur essendo istruzioni elementari da un punto di vista intuitivo, sono quelle appena individuate **istruzioni elementari nel senso indicato da Turing?**
+
+Ricordiamo che, nell’accezione di Turing, un’istruzione, per potere essere definita elementare, deve avere le seguenti caratteristiche: 
+
+- deve essere scelta in un insieme di “poche” istruzioni disponibili
+- deve scegliere l’azione da eseguire all’interno di un insieme di “poche” azioni possibili
+- deve poter essere eseguita ricordando una quantità limitata di dati, ossia, in termini più tecnici, utilizzando una quantità limitata di memoria. 
+
+Ora, abbiamo già visto che nel procedimento che esegue la somma le azioni che vengono eseguite sono due: scrittura di una cifra e spostamento 
+
+- e possiamo ben affermare che esse sono davvero “poche”! 
+
+Ma è vero che Il procedimento che esegue la somma ha un insieme di “poche” istruzioni disponibili ciascuna delle quali utilizza una quantità limitata di memoria? 
+
+- Che poi: ma cosa si intende con “poche” e con quantità limitata?
+
