@@ -41,3 +41,6 @@ Tizio è fratello di Caio **se**
 	- il prolog e la statistica
 
 
+>[!quote]- Cit.
+>Le funzioni funzionano, i predicati predicano
+
