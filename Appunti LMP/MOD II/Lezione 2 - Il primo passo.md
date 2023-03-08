@@ -189,13 +189,15 @@ Soluzione
 ```prolog
 edge(a,b).
 edge(b,c).
+edge(a,e).
 edge(c,d).
 edge(d,e).
-edge(a,e).
 edge(f,e).
-edge(b,e).
 
-path(X,Y):-
-    edge(X,Y).
+path(X,Y):- edge(X,Y).
+path(X,Y):- path(X,Z),path(Z,Y).
+
 ```
+
+Occhio che la soluzione va in infinite recursion, da rivedere
 
