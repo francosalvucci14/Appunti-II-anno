@@ -44,3 +44,5 @@ Tizio è fratello di Caio **se**
 >[!quote]- Cit.
 >Le funzioni funzionano, i predicati predicano
 
+
+
