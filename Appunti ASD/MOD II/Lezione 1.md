@@ -7,7 +7,7 @@
 
 **Input** : Weighted connected graph $\langle G=(V,E),l:E\to \mathbb R^+\rangle$; **Source** s in V 
 (Lenght $l_e$ = lenght of edge e)
-**Feasible Solution** : Any set of _simple_ paths from "s" to "t", for all t in V
+**Feasible Solution** : Any set ($T\subseteq E$) of _simple_ paths from "s" to "t", $\forall t\in V : t\neq s$ 
 **Goal** : for any t in V, **_minimize_ the cost** of the **s-t path**
 
 > cost of path = sum of edge costs in path
