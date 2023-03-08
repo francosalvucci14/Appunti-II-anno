@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
+                "file": "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 1 - Introduzione.md"
+                "file": "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
+                "file": "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,14 +144,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
+                "file": "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -170,8 +170,8 @@
   },
   "active": "fafa6f75c01abe3f",
   "lastOpenFiles": [
-    "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
+    "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti LMP/MOD II/Immagini",
     "Appunti ASD/MOD II/Indice delle lezioni.md",
     "Appunti ASD/MOD II/Lezione 1.md",
