@@ -152,7 +152,50 @@ Prolog cerca nel proprio database di regole e fatti, quelli che soddisfano la no
 
 Ogni variabile, una volta istanziata (unificata), non può assumere un secondo valore (a differenza dei linguaggi classici di programmazione, com Java,C,C++,etc...)
 
+Per altri esempi vedi il file "Basi del linguaggio Prolog" pagina 13
 
+**Esercizio**
 
+Scrivere un programma Prolog che rappresenta un grafo tramite il fatto edge(A,B) per indicare che A e B sono connessi
+```mermaid
+graph LR;
+	A[a]
+	B[b]
+	C[c]
+	D[d]
+	E[e]
+	F[f]
+	
+	style A fill:black, color:#fff
+	style B fill:black, color:#fff
+	style C fill:black, color:#fff
+	style D fill:black, color:#fff
+	style E fill:black, color:#fff
+	style F fill:black, color:#fff
 
+	A-->B & E
+	B-->C & E
+	C-->D
+	D-->E
+	F-->E
+```
+
+Interrogare il programma realizzato per avere tutti i nodi raggiungibili partendo da b:
+```prolog
+?- path(b,X).
+```
+
+Soluzione
+```prolog
+edge(a,b).
+edge(b,c).
+edge(c,d).
+edge(d,e).
+edge(a,e).
+edge(f,e).
+edge(b,e).
+
+path(X,Y):-
+    edge(X,Y).
+```
 
