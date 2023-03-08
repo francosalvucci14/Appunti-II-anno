@@ -1,5 +1,5 @@
 
-# Definizione di Macchina di Turing
+# Definizione di macchina di Turing
 
 La macchina di Turing che abbiamo visto informalmente durante la scorsa lezione utilizza 3 nastri: sui primi due nastri, prima che la macchina inizi ad operare, vengono scritti (dall’utente) i due numeri da sommare, sul terzo, inizialmente vuoto, la macchina scrive il risultato nel corso della sua computazione
 
@@ -25,7 +25,7 @@ Eseguire una quintupla significa eseguire le tre azioni in essa indicate:
 
 Eseguita la prima quintupla, si cerca un’altra quintupla da eseguire (ossia, una quintupla i cui primi due elementi sono lo stato in cui si trova la machina e il simbolo letto dalla testina) e così via, fino a quando nessuna quintupla può essere eseguita
 
-## Esempio di Macchina di Turing
+## Esempio di macchina di Turing
 
 Consideriamo una macchina di Turing ad un nastro, $T_{parità}$ , definita sull’alfabeto $\Sigma=\langle 0,1,p,d\rangle$ e sull’insieme di stati $Q=\langle q_0,q_p,q_d,q_f\rangle$ con stato iniziale $q_0$ e stato finale $q_f$ il cui insieme delle quintuple è :
 $$\begin{align}P=&\{\langle q_0,0,\square,q_p,dx\rangle,\langle q_0,1,\square,q_d,dx\rangle\\&\langle q_p,0,\square,q_p,dx\rangle,\langle q_d,0,\square,q_d,dx\rangle\\&\langle q_p,1,\square,q_d,dx\rangle,\langle q_d,1,\square,q_p,dx\rangle\\&\langle q_p,\square,p,q_f,stop\rangle,\langle q_d,\square,d,q_f,stop\rangle\}\end{align}$$
@@ -57,3 +57,35 @@ Naturalmente, sul nastro di $T_{parità}$ possiamo scrivere ciò che vogliamo:
 .. Attenzione! P non contiene alcuna quintupla che inizia con la coppia $(q_0,p)$
 - quindi, nessuna quintupla può essere eseguita
 
+# Ritorniamo alla definizione di macchina di Turing (a singolo nastro)
+
+Riassumiamo: una macchina di Turing ad un nastro è completamente caratterizzata dai cinque elementi:
+
+- $\Sigma$, ossia, un insieme $\underline{finito}$ di caratteri che prende il nome di **alfabeto**
+- $Q$, ossia, un insieme $\underline{finito}$ di **stati interni**
+- uno stato interno particolare (generalmente indicato come $q_0$) chiamato **stato iniziale**
+- un sottoinsieme $Q_F$ di $Q$ di stati finali
+- un insieme $P\subseteq Q\times\Sigma\times\Sigma\times Q\times\{sx,stop,dx\}$ di quintuple
+	- che, sappiamo, deve essere _non ambiguo_
+	- ossia,  non contiene coppie di quintuple che hanno uguali i primi due elementi
+	- ossia, in effetti, $P$ **è una funzione**: $P:Q\times\Sigma\to\Sigma\times Q\times\{sx,stop,dx\}$
+
+Ossia, possiamo dire che:  **una macchina di Turing (ad un nastro) è una quintupla$\langle\Sigma,Q ,q_0, Q_F, P\rangle$**
+e dare per assodata l’esistenza di unità di controllo e nastro
+
+# Definizione di macchina di Turing (a nastro multiplo)
+
+E che dire di una macchina di Turing a più nastri? È (quasi) la stessa cosa:
+una macchina di Turing a k nastri è completamente caratterizzata da
+
+- un **alfabeto** $\Sigma$, ossia, un insieme finito di caratteri
+- un insieme finito $Q$ di **stati interni**
+- uno stato interno **iniziale**
+- un sottoinsieme $Q_F$ di $Q$ di stati finali
+- un insieme $P$ di **quintuple**, ove in questo caso una quintupla ha la forma   $\langle q_1 , (a_1, a_2, ... , a_k), (b_1, b_2, ... , b_k),  q_2 , (m_1, m_2, ... , m_k)\rangle$
+	- $(a_1, a_2, ... , a_k)$ sono i caratteri che devono essere letti sui k nastri
+		- $a_1$ è il carattere che deve essere letto sul nastro 1, $a_2$ è il carattere che deve essere letto sul nastro 2, ...
+	- $(b_1, b_2, ... , b_k)$ sono i caratteri che devono essere scritti sui k nastri (sovrascrivendo $(a_1, a_2, ... , a_k)$ )
+		-  $b_1$ è il carattere che deve essere scritto sul nastro 1, ...
+	-  $(m_1, m_2, ... , m_k)$, sono i movimenti che devono essere eseguiti dalle k testine
+		-  $m_1$ è il movimento che deve essere compiuto dalla testina sul nastro 1, ...
