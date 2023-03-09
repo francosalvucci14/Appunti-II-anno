@@ -1,2 +1,2 @@
-- [[Appunti ASD/MOD II/Lezione 1|Lezione 1]]
+- [[Lezione 1 - Shortest Path|Lezione 1]]
 - 
