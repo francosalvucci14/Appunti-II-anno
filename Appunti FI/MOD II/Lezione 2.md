@@ -89,3 +89,7 @@ una macchina di Turing a k nastri è completamente caratterizzata da
 		-  $b_1$ è il carattere che deve essere scritto sul nastro 1, ...
 	-  $(m_1, m_2, ... , m_k)$, sono i movimenti che devono essere eseguiti dalle k testine
 		-  $m_1$ è il movimento che deve essere compiuto dalla testina sul nastro 1, ...
+
+>[!important]- Osservazione
+>Il numero di nastri che si possono usare devono essere sempre un numero k **costante**, e quindi che non dipende dall'input.
+
