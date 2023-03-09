@@ -218,7 +218,7 @@ diventa
 
 -  $\langle q_0,(4,6),0,q_1,sx\rangle$
 
-dove q_0 e q_1 sono due simboli che indicano, rispettivamente, r = 0 e r = 1
+dove $q_0$ e $q_1$ sono due simboli che indicano, rispettivamente, r = 0 e r = 1
 OSSERVAZIONE: in questo esempio sembrerebbe che anche “sinistra” possa essere omesso; vedremo che questa specifica, invece, occorre tenerla
 
 e l’istruzione 
