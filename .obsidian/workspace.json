@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md"
+                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,12 +168,12 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "e66ae6f880709143",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230309163922.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230309163355.png",
     "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
@@ -205,7 +205,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230308101859.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230308092938.png",
     "Appunti ASD/MOD II/Immagini",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230308092458.png",
     "Appunti ASD/MOD II",
     "Appunti RO/Lezione 1.md",
     "Appunti RO",

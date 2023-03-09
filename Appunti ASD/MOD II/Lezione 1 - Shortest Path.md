@@ -67,3 +67,9 @@ Dijkstra's Algorithm (Overall Scheme) :
 	- $P$ is already too long as soon as it leaves S
 	- $$l(P)\geq l(P')+l(x,y)\geq d(x)+l(x,y)\geq\pi(y)\geq\pi(v)$$
 
+>[!definition]- Ciao
+>sa
+>asdasd
+
+
+
