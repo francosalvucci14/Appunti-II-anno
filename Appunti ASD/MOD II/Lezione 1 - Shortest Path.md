@@ -19,7 +19,7 @@
 >[!important]- Theorem (SPT)
 >For any inputs $[\langle G=(V,E),l:E\to\mathbb R^+,s\in V\rangle]$, there always exists an **optimal** solution that forms a Spanning Tree for G
 
-**Proof** : Esay consequence of the _**Principle of Sub-Optimal**_ of Shortest Paths in a graph with positive weights : 
+**Proof** : Easy consequence of the _**Principle of Sub-Optimal**_ of Shortest Paths in a graph with positive weights : 
 
 >[!quote] Any sub-path of a shortest pats is a shortest path
 
