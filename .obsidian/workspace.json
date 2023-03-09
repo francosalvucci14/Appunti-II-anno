@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
+                "file": "Appunti FI/MOD II/Lezione 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md"
+                "file": "Appunti FI/MOD II/Lezione 1.md"
               }
             }
           },
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
+                "file": "Appunti FI/MOD II/Lezione 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
+                "file": "Appunti FI/MOD II/Lezione 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,13 +181,14 @@
   },
   "active": "393c71a4173262b9",
   "lastOpenFiles": [
-    "Appunti FI/MOD II/Lezione 2.md",
+    "Appunti FI/MOD II/Indice delle lezioni.md",
+    "Appunti FI/MOD II/Lezione 1.md",
     "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
+    "Appunti FI/MOD II/Lezione 2.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230308154333.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230308154155.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230308153924.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230308154102.png",
-    "Appunti FI/MOD II/Lezione 1.md",
     "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
     "Appunti ASD/MOD II/Lezione 1.md",
     "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
@@ -214,7 +215,6 @@
     "Appunti FI/MOD II/Immagini",
     "README.md",
     "Appunti LRL/Lezione 1.md",
-    "Appunti FI/MOD II/Indice delle lezioni.md",
     "Appunti FI/MOD I/Lezione 2 - RE,Linguaggi e problemi.md",
     "Appunti FI/MOD I/Lezione 3 - RE,Grammatiche.md",
     "Appunti FI/MOD I/Lezione 4 - Ancora sulle grammatiche.md",
