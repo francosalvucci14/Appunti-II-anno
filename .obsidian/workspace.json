@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "393c71a4173262b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "aabb9b1f28366774",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "71547ce2eac66d07",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
+                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md"
+                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md"
               }
             }
           },
@@ -139,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
+                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
+                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,10 +155,11 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "aabb9b1f28366774",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
+    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti FI/MOD II/Lezione 1.md",
     "Appunti FI/MOD II/Lezione 2.md",
     "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
@@ -194,7 +170,6 @@
     "Appunti FI/MOD II/Immagini/Pasted image 20230308153924.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230308154102.png",
     "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
-    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
     "Appunti BSD/MOD I/Lezione 2.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",

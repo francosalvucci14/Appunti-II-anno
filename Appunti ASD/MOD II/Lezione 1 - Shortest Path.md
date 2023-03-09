@@ -34,7 +34,7 @@ Dijkstra's Algorithm :
 - Initialize $S=\{s\},d(s)=0$
 - Repeatedly choose unexplored node v which minimizes $$\pi(v)=min_{e=(u,v)t.c\ u\in S}\{d(u)+l_e\}(\star)$$ add v to S, set $d(v)=\pi(v)$ , and store the father of **v** (i.e u)
 
->$\star$ = shortest path to some "u" in explored part, followed by a signle edge (u,v)
+>$\star$ = shortest path to some "u" in explored part, followed by a single edge (u,v)
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230308103125.png|center|500]]
 
