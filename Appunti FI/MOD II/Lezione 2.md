@@ -7,9 +7,9 @@ Dobbiamo, ora, formalizzare questi concetti e, allo scopo, cominciamo con il lim
 
 La definizione 1.3 a pag. 9 della dispensa 1 presenta una macchina di Turing ad un nastro come:
 
-- una unità di controllo che, ad ogni istante, può trovarsi in uno stato interno appartenente ad un certo insieme Q che contiene, fra gli altri, lo stato particolare q_0 che fa partire la computazione e un sottoinsieme QF di stati che fanno terminare la computazione
-- un nastro suddiviso in un infinito numero di celle, ciascuna delle quali, ad ogni istante, può essere vuota o contenere un simbolo appartenente ad un alfabeto Σ, e sul quale nastro si muove una testina di lettura/scrittura
-- ad ogni istante, dipendentemente dallo stato interno e da ciò che è letto dalla testina, viene eseguita una quintupla scelta in un insieme P di quintuple
+- una unità di controllo che, ad ogni istante, può trovarsi in uno stato interno appartenente ad un certo insieme Q che contiene, fra gli altri, lo stato particolare $q_0$ che fa partire la computazione e un sottoinsieme $Q_F$ di stati che fanno terminare la computazione
+- un nastro suddiviso in un infinito numero di celle, ciascuna delle quali, ad ogni istante, può essere vuota o contenere un simbolo appartenente ad un alfabeto $\Sigma$, e sul quale nastro si muove una testina di lettura/scrittura
+- ad ogni istante, dipendentemente dallo stato interno e da ciò che è letto dalla testina, viene eseguita una quintupla scelta in un insieme $P$ di quintuple
 
 E come funziona una macchina di Turing? Facile: quando l’unità di controllo si trova nello stato $q_0$, la testina legge il simbolo contenuto nella cella che sta scandendo, cerca una quintupla i cui primi due elementi sono $q_0$ e il simbolo letto dalla testina (che può anche essere il simbolo blank $\square$) e, se trova una tale quintupla, la esegue
 
