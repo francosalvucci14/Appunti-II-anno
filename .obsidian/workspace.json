@@ -151,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -170,6 +170,8 @@
   },
   "active": "e66ae6f880709143",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230309163922.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230309163355.png",
     "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
@@ -205,11 +207,9 @@
     "Appunti ASD/MOD II/Immagini",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230308092458.png",
     "Appunti ASD/MOD II",
-    "Appunti FI/MOD II/Immagini/Pasted image 20230307151710.png",
     "Appunti RO/Lezione 1.md",
     "Appunti RO",
     "Appunti FI/MOD II/Immagini",
-    "README.md",
-    "Appunti LRL/Lezione 1.md"
+    "README.md"
   ]
 }
