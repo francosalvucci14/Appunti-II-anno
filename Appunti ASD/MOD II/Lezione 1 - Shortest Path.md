@@ -51,3 +51,19 @@ Dijkstra's Algorithm (Overall Scheme) :
 ![[appunti asd/mod ii/immagini/Pasted image 20230308103722.png|center|500]]
 
 
+### Proof of Correctness
+
+>[!important]- THM 1.
+>For each node $u\in S,d(u)$ is the **lenght** of the **shortest** s-u path
+
+**Dim** (by induction on $|S|$)
+
+- Base case : $|S|=1$
+- Inductive hypothesis: Assume true for $|S|=k\geq1$
+	- Let v be next node added to S, a d let u-v be the chosen edge
+	- The shortest s-u path plus (u,v) is an s-v path of lenght $\pi(v)$
+	- Consider any s-v path P. We'll see tath it's no shorte than $\pi(v)$
+	- Let x-y be the **first edge** in $P$ that leaves S, and let $P'$ be the subpath to x
+	- $P$ is already too long as soon as it leaves S
+	- $$l(P)\geq l(P')+l(x,y)\geq d(x)+l(x,y)\geq\pi(y)\geq\pi(v)$$
+
