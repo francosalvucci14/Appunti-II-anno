@@ -43,3 +43,5 @@ We will use TOW GENERAL PROPRERTIES OF GRAPHS :
 **Cut property** : Let S be any subset of nodes, and let "e" be the min cost edge with exactly one endpoint in S, Then the MST contains "e"
 
 **Cycle property** : Let C be any cicle, and let "f" be the max cost edge belonging to C. Then the MST does not contain "f"
+
+
