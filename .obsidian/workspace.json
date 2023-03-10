@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
+                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md"
+                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
+                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
+                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,6 +170,7 @@
   },
   "active": "e66ae6f880709143",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti FI/MOD II/Lezione 2.md",
@@ -183,7 +184,6 @@
     "Appunti FI/MOD II/Immagini/Pasted image 20230310124342.png",
     "Appunti FI/MOD II/Lezione 1.md",
     "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
-    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230309163922.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230309163355.png",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
