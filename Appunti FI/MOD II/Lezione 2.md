@@ -198,39 +198,39 @@ se esiste un indice h tale che $SG_h$ è uno stato globale dal quale non può av
 
 #### Trasduttori
 
-´Nel paragrafo 2.2 della dispensa 2 vengono definiti due tipi di macchine di Turing.
+Nel paragrafo 2.2 della dispensa 2 vengono definiti due tipi di macchine di Turing.
 
-´Le macchine di tipo **trasduttore** sanno calcolare il valore di una funzione qualsiasi
+Le macchine di tipo **trasduttore** sanno calcolare il valore di una funzione qualsiasi
 
-- ´ad esempio, un trasduttore sa calcolare la funzione f(a,b)=a+b.
+- ad esempio, un trasduttore sa calcolare la funzione f(a,b)=a+b.
 
-´Assumeremo sempre che le macchine di Turing di tipo trasduttore dispongano di un **nastro di output** sul quale scrivono il valore della funzione che hanno calcolato
+Assumeremo sempre che le macchine di Turing di tipo trasduttore dispongano di un **nastro di output** sul quale scrivono il valore della funzione che hanno calcolato
 
-´Un trasduttore <u>ha un solo stato finale</u> con il quale terminare la computazione: lo stato $q_F$
+Un trasduttore <u>ha un solo stato finale</u> con il quale terminare la computazione: lo stato $q_F$
 
 #### Riconoscitori
 
-´Nel paragrafo 2.2 della dispensa 2 vengono definiti due tipi di macchine di Turing.
+Nel paragrafo 2.2 della dispensa 2 vengono definiti due tipi di macchine di Turing.
 
-´Le macchine di tipo **riconoscitore** sanno calcolare soltanto il valore di funzioni booleane
+Le macchine di tipo **riconoscitore** sanno calcolare soltanto il valore di funzioni booleane
 
-- ´ossia, funzioni il cui valore è 0 oppure 1
+- ossia, funzioni il cui valore è 0 oppure 1
 
-´e non dispongono di un nastro di output.
+e non dispongono di un nastro di output.
 
-´**Il valore calcolato da un riconoscitore viene memorizzato nello stato interno con il quale la macchina termina la computazione**: $q_A$ se il valore della funzione è 1, $q_R$ se il valore della funzione è 0
+**Il valore calcolato da un riconoscitore viene memorizzato nello stato interno con il quale la macchina termina la computazione**: $q_A$ se il valore della funzione è 1, $q_R$ se il valore della funzione è 0
 
-- ´quindi, ogni riconoscitore ha due stati finali: $q_A,q_R$
+- quindi, ogni riconoscitore ha due stati finali: $q_A,q_R$
 
-´Diciamo che un riconoscitore T **accetta** x se la computazione $T(x)$ termina in $q_A$ e che la macchina T **rigetta** x se la computazione $T(x)$ termina in $q_R$
+Diciamo che un riconoscitore T **accetta** x se la computazione $T(x)$ termina in $q_A$ e che la macchina T **rigetta** x se la computazione $T(x)$ termina in $q_R$
 
 ### Esito di una computazione
 
-´Sempre nel paragrafo 2.2 della dispensa 2 viene introdotto il concetto di esito di una computazione
+Sempre nel paragrafo 2.2 della dispensa 2 viene introdotto il concetto di esito di una computazione
 
-´Data una macchina di Turing T ed un suo input x, l’esito della computazione $T(x)$ è indicato con $o_T(x)$ – informalmente è “il risultato” della computazione, la risposta che ci dà la macchina rispetto all’istanza x del problema che le abbiamo chiesto di risolvere
+Data una macchina di Turing T ed un suo input x, l’esito della computazione $T(x)$ è indicato con $o_T(x)$ – informalmente è “il risultato” della computazione, la risposta che ci dà la macchina rispetto all’istanza x del problema che le abbiamo chiesto di risolvere
 
-´Se T è una macchina di tipo _trasduttore_, allora $o_T(x)$ è la parola scritta da T sul nastro di output al termine della computazione $T(x)$ (ossia, quando T ha raggiunto lo stato $q_F$): ad esempio, se T è il trasduttore che calcola la funzione $f(a,b)=a+b\implies o_T(15,6)= 21$
+Se T è una macchina di tipo _trasduttore_, allora $o_T(x)$ è la parola scritta da T sul nastro di output al termine della computazione $T(x)$ (ossia, quando T ha raggiunto lo stato $q_F$): ad esempio, se T è il trasduttore che calcola la funzione $f(a,b)=a+b\implies o_T(15,6)= 21$
 
-´Se T è una macchina di tipo **riconoscitore**, allora $o_T(x)$ è lo stato interno con il quale la macchina termina la computazione $T(x)$: ad esempio, se T è la macchina che decide se una parola è palindroma, allora $o_T(abba) =q_A$ e $o_T(baaba) =q_R$
+Se T è una macchina di tipo **riconoscitore**, allora $o_T(x)$ è lo stato interno con il quale la macchina termina la computazione $T(x)$: ad esempio, se T è la macchina che decide se una parola è palindroma, allora $o_T(abba) =q_A$ e $o_T(baaba) =q_R$
 
