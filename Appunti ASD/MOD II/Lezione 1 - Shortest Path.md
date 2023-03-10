@@ -66,3 +66,4 @@ Dijkstra's Algorithm (Overall Scheme) :
 	- Let x-y be the **first edge** in $P$ that leaves S, and let $P'$ be the subpath to x
 	- $P$ is already too long as soon as it leaves S
 	- $$l(P)\geq l(P')+l(x,y)\geq d(x)+l(x,y)\geq\pi(y)\geq\pi(v)$$
+
