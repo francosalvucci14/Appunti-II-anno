@@ -57,7 +57,7 @@ Naturalmente, sul nastro di $T_{parità}$ possiamo scrivere ciò che vogliamo:
 .. Attenzione! P non contiene alcuna quintupla che inizia con la coppia $(q_0,p)$
 - quindi, nessuna quintupla può essere eseguita
 
-# Ritorniamo alla definizione di macchina di Turing (a singolo nastro)
+## Ritorniamo alla definizione di macchina di Turing (a singolo nastro)
 
 Riassumiamo: una macchina di Turing ad un nastro è completamente caratterizzata dai cinque elementi:
 
@@ -92,4 +92,145 @@ una macchina di Turing a k nastri è completamente caratterizzata da
 
 >[!important]- Osservazione
 >Il numero di nastri che si possono usare devono essere sempre un numero k **costante**, e quindi che non dipende dall'input.
+
+**OSSERVAZIONE**
+per capire quale sia il numero di nastri di una macchina di Turing $\langle\Sigma,Q, q_0, Q_F, P\rangle$ è sufficiente osservare le quintuple contenute in P:
+
+- il numero di componenti del secondo elemento di una quintupla in P (che specifica ciò che deve essere letto sul/sui nastro/nastri per poter eseguire una quintupla) corrisponde al numero di nastri!
+- ad esempio, se le quintuple di una macchina di Turing hanno la forma $\langle q_1 , a_1, ...\rangle$ allora si tratta di una macchina ad un nastro
+- se le quintuple di una macchina di Turing hanno la forma $\langle q_1 , (a_1, a_2), ... \rangle$ allora si tratta di una macchina a due nastri
+- e così via
+
+# Definizione di Macchina di Turing
+
+Dunque, possiamo dire che, in generale, una macchina di Turing è una quintupla$\langle\Sigma,Q, q_0, Q_F, P\rangle$
+
+E, come dovremmo aver compreso, una macchina di Turing è la descrizione di un procedimento di calcolo
+
+ossia, è un algoritmo descritto utilizzando le regole introdotte da Alan Turing
+
+- in qualche modo, dunque, un programma scritto nel linguaggio progettato da Turing
+
+Le regole introdotte da Turing per descrivere procedimenti di calcolo costituiscono un **modello di calcolo**
+
+- tanto quanto ciascun linguaggio di programmazione, ad esempio, è un modello di calcolo
+- o tanti altri modelli ai quali accenneremo
+
+un modello di calcolo che prende il nome di **_Macchina di Turing_**  
+
+Per esercizi vedi su Ipad, lezione 2
+
+# macchine di Turing
+
+Il modello di calcolo Macchina di Turing richiede che in ogni macchina l’insieme degli stati e l’alfabeto abbiano cardinalità **finita** – e lo stesso vale per il numero di nastri
+
+è necessario che numero di stati, numero di simboli dell’alfabeto, numero di quintuple e numero di nastri siano **costanti**
+
+- **ossia, indipendenti dall’input**
+
+## Tante definizioni per la macchina di Turing
+
+Nel paragrafo 2.1 della dispensa 2 vengono presentate alcune definizioni formali relative alle macchine di Turing:
+
+- parole
+- stati globali
+- transizioni
+- computazioni
+
+Queste definizioni devono essere tenute sempre presenti!!!!
+
+Osservate che viene utilizzata la parola _deterministica_: questo significa che P è una funzione (avremo tempo e modo di affrontarla bene e a lungo, questa questione)
+
+Innanzi tutto: dato un alfabeto finito $\Sigma$, una _**parola**_ su $\Sigma$ è una sequenza finita di elementi di $\Sigma$
+
+- ad esempio, aba è una parola sull’alfabeto $\Sigma$ = { a, b, c }
+
+L’insieme della parole su un alfabeto $\Sigma$ si indica con $\Sigma^{\star}$ 
+
+### Stati globali
+
+Uno stato globale SG di una macchina di Turing è una “fotografia” della macchina ad un certo istante
+
+Formalmente, uno **stato globale** di una macchina ad un nastro T ad un certo istante
+
+- contiene una descrizione della porzione non blank del nastro di T, della posizione della testina (e, dunque, del carattere da essa letto) e dello stato interno  
+- ed è rappresentato mediante la sequenza di caratteri (non blank) contenuti sul nastro in cui al carattere letto dalla testina è premesso lo stato interno
+
+Naturalmente, possiamo definire anche lo stato globale di una macchina a k nastri (con k costante!)
+
+![[appunti fi/mod ii/immagini/Pasted image 20230310124342.png|center|600]]
+
+
+### Transizioni
+
+Una transizione dallo stato globale $SG_1$ allo stato globale $SG_2$ avviene quando viene eseguita una quintupla che trasforma $SG_1$ in $SG_2$
+
+Formalmente, se $T =\langle\Sigma, Q, q_0, Q_F, P\rangle$ è una macchina di Turing ad un nastro, esiste una **transizione** da $SG_1$ a $SG_2$ se esiste una quintupla $\langle q,x,x',q',m\rangle\in P$ tale che
+
+- in $SG_1$ T si trova nello stato interno $q\in Q$
+- in $SG_1$ la testina di T sta scandendo una cella che contiene il carattere $x\in\Sigma$
+- in $SG_2$ la cella che in $SG_1$ conteneva il carattere x contiene il carattere $x'\in\Sigma$
+- in $SG_2$ T si trova nello stato interno $q'\in Q$
+- in $SG_2$ la testina di T sta scandendo la cella che si trova in posizione m rispetto a quella che stava scandendo in $SG_1$
+
+il concetto può essere facilmente esteso a macchine a più nastri
+- con qualche tecnicismo in più, che non affrontiamo
+
+![[appunti fi/mod ii/immagini/Pasted image 20230310124748.png|center|600]]
+
+### Computazione
+
+Informalmente, una computazione di una macchina di Turing **deterministica** a un nastro $T =\langle\Sigma, Q, q_0, Q_F, P\rangle$ è l’esecuzione delle quintuple di T su una sequenza di caratteri scritti sul suo nastro
+- e analogamente per le macchine a più nastri
+
+Formalmente: una **computazione** di una macchina di Turing T è una sequenza $SG_0$, $SG_1$, $SG_2$, ... , $SG_h$, ... di stati globali di T tali che
+
+- $SG_0$ è uno stato globale iniziale, ossia, uno stato globale nel quale lo stato interno è $q_0$ e la testina è posizionata sul carattere più a sinistra scritto sul nastro
+- per ogni $0\leq i\leq h-1$, esiste una transizione da $SG_i$ a $SG_{i+1}$ oppure per ogni $h\geq i+1$ $SG_h$ non è definito
+
+se esiste un indice h tale che $SG_h$ è uno stato globale dal quale non può avvenire alcuna transizione allora la computazione **termina**
+
+- e questo accade quando lo stato interno nel quale T si trova in  $SG_h$ è uno stato finale oppure P non contiene una quintupla che possa essere eseguita in $SG_h$
+
+![[appunti fi/mod ii/immagini/Pasted image 20230310125150.png|center|600]]
+
+### Trasduttori e Riconoscitori
+
+#### Trasduttori
+
+´Nel paragrafo 2.2 della dispensa 2 vengono definiti due tipi di macchine di Turing.
+
+´Le macchine di tipo **trasduttore** sanno calcolare il valore di una funzione qualsiasi
+
+- ´ad esempio, un trasduttore sa calcolare la funzione f(a,b)=a+b.
+
+´Assumeremo sempre che le macchine di Turing di tipo trasduttore dispongano di un **nastro di output** sul quale scrivono il valore della funzione che hanno calcolato
+
+´Un trasduttore <u>ha un solo stato finale</u> con il quale terminare la computazione: lo stato $q_F$
+
+#### Riconoscitori
+
+´Nel paragrafo 2.2 della dispensa 2 vengono definiti due tipi di macchine di Turing.
+
+´Le macchine di tipo **riconoscitore** sanno calcolare soltanto il valore di funzioni booleane
+
+- ´ossia, funzioni il cui valore è 0 oppure 1
+
+´e non dispongono di un nastro di output.
+
+´**Il valore calcolato da un riconoscitore viene memorizzato nello stato interno con il quale la macchina termina la computazione**: $q_A$ se il valore della funzione è 1, $q_R$ se il valore della funzione è 0
+
+- ´quindi, ogni riconoscitore ha due stati finali: $q_A,q_R$
+
+´Diciamo che un riconoscitore T **accetta** x se la computazione $T(x)$ termina in $q_A$ e che la macchina T **rigetta** x se la computazione $T(x)$ termina in $q_R$
+
+### Esito di una computazione
+
+´Sempre nel paragrafo 2.2 della dispensa 2 viene introdotto il concetto di esito di una computazione
+
+´Data una macchina di Turing T ed un suo input x, l’esito della computazione $T(x)$ è indicato con $o_T(x)$ – informalmente è “il risultato” della computazione, la risposta che ci dà la macchina rispetto all’istanza x del problema che le abbiamo chiesto di risolvere
+
+´Se T è una macchina di tipo _trasduttore_, allora $o_T(x)$ è la parola scritta da T sul nastro di output al termine della computazione $T(x)$ (ossia, quando T ha raggiunto lo stato $q_F$): ad esempio, se T è il trasduttore che calcola la funzione $f(a,b)=a+b\implies o_T(15,6)= 21$
+
+´Se T è una macchina di tipo **riconoscitore**, allora $o_T(x)$ è lo stato interno con il quale la macchina termina la computazione $T(x)$: ad esempio, se T è la macchina che decide se una parola è palindroma, allora $o_T(abba) =q_A$ e $o_T(baaba) =q_R$
 

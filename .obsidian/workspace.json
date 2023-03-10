@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
+                "file": "Appunti FI/MOD II/Lezione 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md"
+                "file": "Appunti FI/MOD II/Lezione 2.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
+                "file": "Appunti FI/MOD II/Lezione 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
+                "file": "Appunti FI/MOD II/Lezione 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,13 +168,23 @@
       "graph:Open graph view": false
     }
   },
-  "active": "e66ae6f880709143",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
+    "Appunti FI/MOD II/Lezione 2.md",
+    "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230310125150.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230310124748.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230310124342.png",
+    "Appunti FI/MOD II/Lezione 1.md",
+    "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
+    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230309163922.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230309163355.png",
-    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
-    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
@@ -183,11 +193,8 @@
     "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
     "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
-    "Appunti FI/MOD II/Lezione 1.md",
-    "Appunti FI/MOD II/Lezione 2.md",
     "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti FI/MOD II/Indice delle lezioni.md",
-    "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230308154333.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230308154155.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230308153924.png",
@@ -198,17 +205,11 @@
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti ASD/MOD II/Indice delle lezioni.md",
-    "Appunti LMP/MOD I/Indice delle lezioni LMP.md",
     "Appunti LMP/MOD II/Immagini",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230308103722.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230308103125.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230308101859.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230308092938.png",
     "Appunti ASD/MOD II/Immagini",
     "Appunti ASD/MOD II",
-    "Appunti RO/Lezione 1.md",
     "Appunti RO",
-    "Appunti FI/MOD II/Immagini",
-    "README.md"
+    "Appunti FI/MOD II/Immagini"
   ]
 }
