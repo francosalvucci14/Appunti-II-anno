@@ -1,7 +1,7 @@
 
 # Minimum Spanning Tree
 
->[!important]- Definition
+>[!definition]- Definition
 >Given a connected graph $G=(V,E)$ with real-valued edge weights $c_e$, an MST is a subset of the edges $T\subseteq E$ such that $T$ is a spanning tree whose sum of edge weights is minimized
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230309163355.png|center|600]]
