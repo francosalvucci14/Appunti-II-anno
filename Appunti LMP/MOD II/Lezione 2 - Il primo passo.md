@@ -201,3 +201,4 @@ path(X,Y):- path(X,Z),path(Z,Y).
 
 Occhio che la soluzione va in infinite recursion, da rivedere
 
+$\blitzb$   
