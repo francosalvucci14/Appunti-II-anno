@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+                "file": "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a1c9b7be8e27fde2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md"
+                "file": "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md"
               }
             }
           },
@@ -127,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+                "file": "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+                "file": "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,12 +180,15 @@
       "graph:Open graph view": false
     }
   },
-  "active": "e66ae6f880709143",
+  "active": "a1c9b7be8e27fde2",
   "lastOpenFiles": [
+    "Appunti LMP/MOD II/Immagini/Pasted image 20230313110900.png",
+    "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
+    "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
+    "Appunti FI/MOD II/Lezione 2.md",
     "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
-    "Appunti FI/MOD II/Lezione 2.md",
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
     "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
@@ -183,7 +198,6 @@
     "Appunti FI/MOD II/Immagini/Pasted image 20230310124748.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230310124342.png",
     "Appunti FI/MOD II/Lezione 1.md",
-    "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230309163922.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230309163355.png",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
@@ -204,7 +218,6 @@
     "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
     "Appunti BSD/MOD I/Lezione 2.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
-    "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti LMP/MOD II/Immagini",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230308103722.png",
     "Appunti ASD/MOD II/Immagini",
