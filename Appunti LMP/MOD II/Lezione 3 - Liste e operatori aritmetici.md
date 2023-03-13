@@ -11,4 +11,6 @@ Utilizzo del **Backtracking** per tornare indietro a prima che una variabile fos
 
 Utilizzo della **ricorsione** per chiamare le altre regole
 
+Per avere altre risposte, e quindi forzare il backtracking anche se il programma ne ha già trovata una che funziona, basta premere ";"
+
 
