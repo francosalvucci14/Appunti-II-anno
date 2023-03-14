@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c88d0fabb73aab9f",
+        "id": "3460d8049741af6b",
         "type": "tabs",
         "children": [
           {
-            "id": "cc4c19d2c7ae0658",
+            "id": "276f2e003530c4cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tags: porco",
+                "query": "graph",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md"
+                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,6 +139,20 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "f22977b99d54ade6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc4c19d2c7ae0658",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -155,8 +169,14 @@
       "graph:Open graph view": false
     }
   },
-  "active": "cc4c19d2c7ae0658",
+  "active": "276f2e003530c4cf",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
+    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+    "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
+    "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
+    "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
+    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LMP/MOD II/Indice delle lezioni LMP MOD 2.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
@@ -181,8 +201,6 @@
     "Appunti BSD/Untitled.md",
     "Appunti BSD/MOD II",
     "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
-    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
     "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
@@ -191,10 +209,6 @@
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
-    "Appunti ASD/MOD I/Lezione 13 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
     "Appunti LMP/MOD II/Immagini",
     "Appunti ASD/MOD II/Immagini",
     "Appunti ASD/MOD II",

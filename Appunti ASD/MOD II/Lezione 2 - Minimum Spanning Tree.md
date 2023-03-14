@@ -24,7 +24,7 @@
 ## General Approach : Greedy Algorithms
 
 - **Kruskal's algorithm** : Start with $T=\emptyset$. Consider edges in **ascending order** of cost. Insert edge e in T unless doing so would create a **cycle**
-- **Reverse-Delete algorithm : Start with $T=E$. Consider edges in **descendig order** of cost. Delete edge e from T unless doing so would **disconnect T**
+- **Reverse-Delete algorithm** : Start with $T=E$. Consider edges in **descendig** order of cost. Delete edge e from T unless doing so would **disconnect T**
 - **Prim's algorithm** : Start with any root node s and greedily grow a tree T from s outward (visiting G). At each steps, add the **cheapest edge** e to T that has exactly one endpoint in T
 
 >[!important]- Main Theorem
