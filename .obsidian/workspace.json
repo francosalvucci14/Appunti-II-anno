@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 2.md",
+                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 2.md"
+                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 2.md",
+                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 2.md",
+                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,6 +157,10 @@
   },
   "active": "cc4c19d2c7ae0658",
   "lastOpenFiles": [
+    "Appunti LRL/Indice delle lezioni LRL.md",
+    "Appunti LMP/MOD II/Indice delle lezioni LMP MOD 2.md",
+    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+    "Appunti FI/MOD II/Lezione 2.md",
     "Appunti FI/MOD II/Lezione 1.md",
     "Appunti FI/MOD II/Lezione 3.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230314170549.png",
@@ -176,7 +180,6 @@
     "Appunti LRL/Lezione 1.md",
     "Appunti BSD/Untitled.md",
     "Appunti BSD/MOD II",
-    "Appunti FI/MOD II/Lezione 2.md",
     "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
@@ -192,8 +195,6 @@
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
     "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
     "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
-    "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
-    "Appunti FI/MOD I/Lezione 17 - Macchine di Turing.md",
     "Appunti LMP/MOD II/Immagini",
     "Appunti ASD/MOD II/Immagini",
     "Appunti ASD/MOD II",

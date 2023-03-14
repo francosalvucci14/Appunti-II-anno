@@ -1,0 +1,3 @@
+- [[Lezione 1 - Shortest Path]]
+- [[Lezione 2 - Minimum Spanning Tree]]
+- 
