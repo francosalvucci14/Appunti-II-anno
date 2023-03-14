@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 2.md",
+                "file": "Appunti LRL/Lezione 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc4c19d2c7ae0658",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 2.md"
+                "file": "Appunti LRL/Lezione 2.md"
               }
             }
           },
@@ -114,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 2.md",
+                "file": "Appunti LRL/Lezione 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 2.md",
+                "file": "Appunti LRL/Lezione 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,13 +169,17 @@
   },
   "active": "0e6150acefc46143",
   "lastOpenFiles": [
-    "Appunti FI/MOD II/Lezione 3.md",
+    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
+    "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
     "Appunti LRL/Lezione 2.md",
-    "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti LRL/Lezione 1.md",
+    "Appunti FI/MOD II/Lezione 3.md",
+    "Appunti BSD/Untitled.md",
+    "Appunti BSD/MOD II",
+    "Appunti FI/MOD II/Lezione 2.md",
+    "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
     "Appunti LMP/MOD II/Immagini/Pasted image 20230313110900.png",
-    "Appunti FI/MOD II/Lezione 2.md",
     "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
@@ -171,7 +187,6 @@
     "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230310125150.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230310124748.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230310124342.png",
@@ -192,8 +207,6 @@
     "Appunti FI/MOD II/Immagini/Pasted image 20230308154155.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230308153924.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230308154102.png",
-    "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
-    "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
     "Appunti LMP/MOD II/Immagini",
     "Appunti ASD/MOD II/Immagini",
     "Appunti ASD/MOD II",
