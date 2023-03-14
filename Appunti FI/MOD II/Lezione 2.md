@@ -82,7 +82,7 @@ una macchina di Turing a k nastri è completamente caratterizzata da
 - un insieme finito $Q$ di **stati interni**
 - uno stato interno **iniziale**
 - un sottoinsieme $Q_F$ di $Q$ di stati finali
-- un insieme $P$ di **quintuple**, ove in questo caso una quintupla ha la forma   $\langle q_1 , (a_1, a_2, ... , a_k), (b_1, b_2, ... , b_k),  q_2 , (m_1, m_2, ... , m_k)\rangle$
+- un insieme $P$ di **quintuple**, ove in questo caso una quintupla ha la forma   $\langle q_1 , (a_1, a_2,... , a_k), (b_1, b_2, ... , b_k),q_2 , (m_1, m_2, ... , m_k)\rangle$
 	- $(a_1, a_2, ... , a_k)$ sono i caratteri che devono essere letti sui k nastri
 		- $a_1$ è il carattere che deve essere letto sul nastro 1, $a_2$ è il carattere che deve essere letto sul nastro 2, ...
 	- $(b_1, b_2, ... , b_k)$ sono i caratteri che devono essere scritti sui k nastri (sovrascrivendo $(a_1, a_2, ... , a_k)$ )

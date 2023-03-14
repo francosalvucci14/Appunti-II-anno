@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 3.md",
+                "file": "Appunti FI/MOD II/Lezione 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 3.md"
+                "file": "Appunti FI/MOD II/Lezione 2.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 3.md",
+                "file": "Appunti FI/MOD II/Lezione 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,14 +131,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 3.md",
+                "file": "Appunti FI/MOD II/Lezione 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -157,6 +157,8 @@
   },
   "active": "cc4c19d2c7ae0658",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 1.md",
+    "Appunti FI/MOD II/Lezione 3.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230314170549.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230314165219.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230314164912.png",
@@ -167,9 +169,7 @@
     "Appunti FI/MOD II/Immagini/Pasted image 20230314160326.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230314160248.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230314160211.png",
-    "Appunti FI/MOD II/Immagini/Pasted image 20230314154815.png",
     "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
-    "Appunti FI/MOD II/Lezione 3.md",
     "Appunti LRL/Lezione 2.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
@@ -185,7 +185,6 @@
     "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
-    "Appunti FI/MOD II/Lezione 1.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
