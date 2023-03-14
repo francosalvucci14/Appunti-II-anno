@@ -124,3 +124,33 @@ Si possono estrarre più elementi contemporaneamente:
 
 ## Operatori su liste
 
+$member(?ELem,?List)$
+- restituisce true se Elem si trova nella lista, può essere usato in vari modi:
+	- $member(b,[a,b,c,d]).$->true
+	- $member(e,[a,b,c,d]).$->false
+	- $member(X,[a,b,c,d]).$->X=a,X=b,....
+	- $member(c,[a,b,X,d]).$->X=c
+
+Possibile implementazione : 
+```prolog
+member(X,[X,_]).
+member(X,[_,T]):-
+	member(X,T).
+```
+
+$append(?List1,?List2,?List1AndList2)$ 
+- **List1AndList2** è la concatenazione di **List1** e **List2**. Vari utilizzi:
+	- $append([a,b],[c,d],X).$->$X=[a,b,c,d]$
+	- $append([a,b],X,[a,b,c,d]).$->$X=[c,d]$
+	- ...
+
+**Esercizio**
+
+Scrivere una possibile implementazione della append.
+Scrivere la regola per invertire tutti gli elementi di una lista, in modo da avere:
+```prolog
+?- reversed([a,b,c,d,e,f],X).
+X=[f,e,d,c,b,a]
+```
+
+
