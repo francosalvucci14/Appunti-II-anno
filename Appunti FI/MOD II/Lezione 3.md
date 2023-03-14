@@ -167,3 +167,45 @@ E, infine, T può simulare il movimento delle testine di $T_3$
 
 Si consiglia un'approfondimento sulle dispense
 
+### Da un alfabeto ricco a uno binario
+
+Siamo al paragrafo 2.5, a pag. 10 della dispensa 2
+
+Partiamo da una macchina T che è costruita su un alfabeto $\Sigma$ con tanti caratteri – un alfabeto ricco!
+
+Si vuole mostrare che esiste una macchina $T_{01}$, costruita sull’alfabeto $\{0,1\}$, che fa le stesse cose di T
+
+Visto che sappiamo che una macchina ad un nastro sa fare le stesse cose che sa fare una macchina a k nastri e viceversa, per semplificarci la vita prendiamo una macchina T con un nastro solo
+
+- Che, detto meglio, diventa “**senza perdita di generalità, possiamo assumere che T abbia un solo nastro**”
+
+Ancora una volta, utilizziamo la tecnica della simulazione: costruiamo una macchina $T_{01}$ che, passo passo, “simula” l’esecuzione delle quintuple di T
+
+- e, per semplificarci la vita, dotiamo di tanti nastri la macchina T01
+
+Partiamo dalla stessa codifica binaria b degli elementi di $\Sigma$ mostrata nel paragrafo 2.5: per ogni elemento $s\in\Sigma,b(s)$ è una parola costituita da $k=\lceil\log_2|\Sigma|\rceil$ caratteri "0" o "1"
+
+Poi, per ogni elemento s di Σ e per ogni h compreso fra 1 e $k=\lceil\log_2|\Sigma|\rceil$, indichiamo con $b_h(s)$ l’h-esimo bit di b(s): ossia, $b(s) = b_1(s) b_2(s)... b_k(s)$
+
+A questo punto, costruiamo $T_{01}$ come una macchina con k nastri e…
+
+- osservazione: poiché $|\Sigma|$ è costante, allora anche k è costante!
+
+Cominciamo con lo scrivere sui k nastri di $T_{01}$ la codifica binaria dell’input scritto sull’unico nastro di T
+
+- Sia $x_1x_2 ... x_h$ l’input di T
+- Nelle celle di indirizzo 1 dei nastri di $T_{01}$ scriviamo i simboli binari della codifica di $x_1$: se $b(x_1)=b_1(x_1) b_2(x_1)... b_k(x_1)$, allora scriviamo $b_1(x_1)$ nella cella 1 del primo nastro, $b_2(x_1)$ nella cella 1 del secondo nastro, e così via
+- Nelle celle di indirizzo 1 dei nastri di $T_{01}$ scriviamo i simboli binari della codifica di $x_2$, ... e nelle celle di indirizzo k scriviamo i simboli binari della codifica di $x_k$.
+
+**Esempio**
+
+![[appunti fi/mod ii/immagini/Pasted image 20230314170549.png|center|500]]
+
+A questo punto, una quintupla $\langle q_1 , a, c, q_2 , m\rangle$ di T diventa la quintupla$\langle q_1 , (b_1(a), b_2(a), ... b_k(a)), (b_1(c), b_2(c), ... b_k(c)), q_2 , m \rangle$ di $T_{01}$
+
+Abbiamo visto come si fa a costruire una macchina che “fa le stesse cose” di un’altra macchina
+
+Ma che vuol dire “fare le stesse cose”?
+
+Beh, intanto, formalmente, “una macchina fa le stesse cose di un’altra macchina” si dice “**l’esito della computazione di una macchina su un input coincide con l’esito della computazione dell’altra macchina sullo stesso input (eventualmente codificato)**”
+
