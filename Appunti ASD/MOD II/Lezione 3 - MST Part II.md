@@ -61,3 +61,17 @@ Proof (**exchange argument**)
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230315093858.png|center|400]]
 
+
+# Prim's algorithm
+
+## Implementation
+
+Use a priority queue ala Dijkstra
+Maintain set of **explored** nodes **S**
+For each _**unexplored**_ nove v, maintain _attachment cost_ $a[v]=\text{cost of cheapest edge v to a node in S}$
+
+**Pseudocode**
+
+![[appunti asd/mod ii/immagini/Pasted image 20230315094137.png|center|600]]
+
+
