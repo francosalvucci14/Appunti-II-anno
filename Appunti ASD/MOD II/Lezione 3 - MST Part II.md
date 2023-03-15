@@ -76,7 +76,7 @@ For each _**unexplored**_ nove v, maintain _attachment cost_ $a[v]=\text{cost of
 
 ## Proof of correctness
 
-`[Jarnik 1930,DIjkstra 1957, Prim 1959]`
+`[Jarnik 1930,Dijkstra 1957, Prim 1959]`
 
 Proof:
 

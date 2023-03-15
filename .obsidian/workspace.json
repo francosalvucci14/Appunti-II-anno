@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,9 +107,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md"
-              }
+              "state": {}
             }
           },
           {
@@ -126,7 +124,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +140,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,10 +177,11 @@
       "graph:Open graph view": false
     }
   },
-  "active": "b6f9a81435b2313d",
+  "active": "cc4c19d2c7ae0658",
   "lastOpenFiles": [
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
     "Appunti LMP/MOD II/Lezione 4 - Ancora su liste e operatori.md",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
@@ -201,7 +198,6 @@
     "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
     "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
-    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
     "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
