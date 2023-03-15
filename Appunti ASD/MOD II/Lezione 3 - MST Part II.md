@@ -43,3 +43,21 @@ Proof (**exchange argument**) :
 ![[appunti asd/mod ii/immagini/Pasted image 20230315092639.png|center|400]]
 
 
+## Cycle property : proof
+
+**Simplifying assumption** : All edge costs $c_e$ are distinct
+
+>[!definition]- Definition (Cycle prorperty)
+>Let C be any cycle in G, and let f be the **max cost edge** belonging to C. Then the **MST** $T^\star$ _does not_ contain f
+
+Proof (**exchange argument**)
+
+- Suppose f belongs to $T^\star$, and let's see what happens
+- Deleting f from $T^\star$ creates a **cut S** in $T^\star$
+- Edge f is both in the cycle C and in the cutset D corresponding to S $\implies$ there exists another edge, say **e**, that is in both C and D
+- $T'=T^\star\cup\{e\}-\{f\}$ is also a spanning tree
+- Since $c_e\lt c_f\implies cost(T')\lt cost(T^\star)$
+- This is a **contradiction**
+
+![[appunti asd/mod ii/immagini/Pasted image 20230315093858.png|center|400]]
+
