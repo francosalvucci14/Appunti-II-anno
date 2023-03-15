@@ -60,7 +60,7 @@ Dijkstra's Algorithm (Overall Scheme) :
 
 - Base case : $|S|=1$
 - Inductive hypothesis: Assume true for $|S|=k\geq1$
-	- Let v be next node added to S, a d let u-v be the chosen edge
+	- Let v be next node added to S, and let u-v be the chosen edge
 	- The shortest s-u path plus (u,v) is an s-v path of lenght $\pi(v)$
 	- Consider any s-v path P. We'll see tath it's no shorte than $\pi(v)$
 	- Let x-y be the **first edge** in $P$ that leaves S, and let $P'$ be the subpath to x
