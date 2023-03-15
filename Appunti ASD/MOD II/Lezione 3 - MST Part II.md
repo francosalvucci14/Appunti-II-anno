@@ -29,7 +29,7 @@ Proof. (by picture)
 **Simplifying assumption** : All edge costs $c_e$ are distinct
 
 >[!definition]- Definition (Cut property)
->Let S be anny subset of nodes, and let **e** be the min cost edge with exactly one ednpoint in **S**. THen the **MST** $T^\star$ _contains_ **e**
+>Let S be any subset of nodes, and let **e** be the **min cost edge** with exactly one endpoint in **S**. Then the **MST** $T^\star$ _contains_ **e**
 
 Proof (**exchange argument**) :
 
@@ -74,4 +74,46 @@ For each _**unexplored**_ nove v, maintain _attachment cost_ $a[v]=\text{cost of
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230315094137.png|center|600]]
 
+## Proof of correctness
+
+`[Jarnik 1930,DIjkstra 1957, Prim 1959]`
+
+Proof:
+
+- Initialize S = any node
+- Apply **cut property** to S
+- Add **min cost edge** in cutset $D(S)$ to $T$, and add one new explored node u to S
+
+![[appunti asd/mod ii/immagini/Pasted image 20230315095343.png|center|500]]
+
+### Key Facts of the Proof
+
+**What is S? How growes?**
+- At each round, a new unexplored node is inserted in S. So,at each round of the WHILE loop, $|S|$ increases by 1 : $S_0=\{u_1\},...,S_t=\{u_1,u_2,...,u_t\},...,S_{n-1}=V$
+**Connectivity of G**:
+- The algorithm **terminates**! AND whene it terminates, T **spans all nodes** of V (It is a Graph Search!)
+**Why T is an MST?**
+- At each WHILE loop, apply the **CUT property**! Where? On the (current) CUT : $(S_T=\{\text{explored nodes till round t}\},V-S_t),t=1,..,n-1$
+
+## Time complexity of Prim's algorithm
+
+The time complexity is 
+- $O(n^2)$ if is implemented by linear structure
+- $O(m\cdot log(n))$ if is implemented by Heap
+
+For any visited node $u\in V$, update $O(deg(u))$ keys in Q $\implies\sum_udeg(u)=O(m)$
+Each update costs $O(log n)$ (using Heap)
+Total : $O(m\cdot log(n))$
+
+
+# Kruskal's Algorithm
+
+## Proof of correctness
+
+**Kruskal's algorithm**:
+- Consider edges in ascending order of weight
+- Case 1 : If adding **e** to **T** creates a _**cycle**_, discard **e** according to cycle property
+- Case 2 : Otherwise, insert **e = (u,v)** into T according to cut property where S = set of nodes in **u's connected component**
+
+![[appunti asd/mod ii/immagini/Pasted image 20230315101226.png|center|500]]
 
