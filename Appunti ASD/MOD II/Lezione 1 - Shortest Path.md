@@ -21,7 +21,7 @@
 
 **Proof** : Easy consequence of the _**Principle of Sub-Optimal**_ of Shortest Paths in a graph with positive weights : 
 
->[!quote] Any sub-path of a shortest pats is a shortest path
+>[!quote] Any sub-path of a shortest path is a shortest path
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230308101859.png|center|600]]
 

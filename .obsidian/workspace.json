@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "076c755c97394bc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
+                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Ancora su liste e operatori.md"
+                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md"
               }
             }
           },
@@ -139,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Ancora su liste e operatori.md",
+                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Ancora su liste e operatori.md",
+                "file": "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,14 +181,14 @@
       "graph:Open graph view": false
     }
   },
-  "active": "49e2057880aa5b26",
+  "active": "b6f9a81435b2313d",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti LMP/MOD II/Indice delle lezioni LMP MOD 2.md",
-    "Appunti LMP/MOD II/Lezione 4 - Ancora su liste e operatori.md",
-    "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+    "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
+    "Appunti LMP/MOD II/Lezione 4 - Ancora su liste e operatori.md",
+    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+    "Appunti LMP/MOD II/Indice delle lezioni LMP MOD 2.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315101226.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315095343.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315094137.png",
