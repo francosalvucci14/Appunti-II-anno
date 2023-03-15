@@ -62,7 +62,7 @@ Dijkstra's Algorithm (Overall Scheme) :
 - Inductive hypothesis: Assume true for $|S|=k\geq1$
 	- Let v be next node added to S, and let u-v be the chosen edge
 	- The shortest s-u path plus (u,v) is an s-v path of lenght $\pi(v)$
-	- Consider any s-v path P. We'll see tath it's no shorte than $\pi(v)$
+	- Consider any s-v path P. We'll see that it's no shorte than $\pi(v)$
 	- Let x-y be the **first edge** in $P$ that leaves S, and let $P'$ be the subpath to x
 	- $P$ is already too long as soon as it leaves S
 	- $$l(P)\geq l(P')+l(x,y)\geq d(x)+l(x,y)\geq\pi(y)\geq\pi(v)$$
