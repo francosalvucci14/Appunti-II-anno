@@ -1,4 +1,6 @@
 
+Per un approfondimento su ST e MST in ITALIANO vedi qui --> [Approfondimenti ST e MST](http://www.mat.uniroma2.it/~guala/08_Kruskal_2015.pdf)
+
 # Cycles and Cuts
 
 **Cycle**:  Set of edges the form a-b,b-c,c-d,...,y-z,z-a
@@ -39,6 +41,5 @@ Proof (**exchange argument**) :
 - This is a **contradiction**
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230315092639.png|center|400]]
-
 
 

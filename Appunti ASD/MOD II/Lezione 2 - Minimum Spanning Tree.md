@@ -1,4 +1,6 @@
 
+Per un approfondimento su ST e MST in ITALIANO vedi qui --> [Approfondimenti ST e MST](http://www.mat.uniroma2.it/~guala/08_Kruskal_2015.pdf)
+
 # Minimum Spanning Tree
 
 >[!definition]- Definition
