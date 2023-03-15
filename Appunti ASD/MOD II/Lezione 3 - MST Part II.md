@@ -111,7 +111,7 @@ Total : $O(m\cdot log(n))$
 ## Proof of correctness
 
 **Kruskal's algorithm**:
-- Consider edges in ascending order of weight
+- Consider edges in ascending order of weight **(It sorts them from smallest to largest)**
 - Case 1 : If adding **e** to **T** creates a _**cycle**_, discard **e** according to cycle property
 - Case 2 : Otherwise, insert **e = (u,v)** into T according to cut property where S = set of nodes in **u's connected component**
 

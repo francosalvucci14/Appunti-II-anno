@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+                "file": "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Ancora su liste e operatori.md",
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,7 +108,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md"
+              }
             }
           },
           {
@@ -124,6 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,13 +144,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "f22977b99d54ade6",
@@ -177,13 +182,18 @@
       "graph:Open graph view": false
     }
   },
-  "active": "cc4c19d2c7ae0658",
+  "active": "49e2057880aa5b26",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
-    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
-    "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
     "Appunti LMP/MOD II/Lezione 4 - Ancora su liste e operatori.md",
+    "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
+    "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
+    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
+    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
+    "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
+    "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
+    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+    "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti LMP/MOD II/Indice delle lezioni LMP MOD 2.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315101226.png",
@@ -210,13 +220,8 @@
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
     "Appunti LRL/Lezione 1.md",
-    "Appunti BSD/Untitled.md",
     "Appunti BSD/MOD II",
     "Appunti ASD/Algoritmo_Es3.pdf",
-    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
-    "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
     "Appunti LMP/MOD II/Immagini",
     "Appunti ASD/MOD II/Immagini",
     "Appunti ASD/MOD II",
