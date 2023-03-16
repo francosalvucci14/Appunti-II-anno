@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "64d6ab0fcd7a137f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti BSD/MOD II/Lezione 9.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -109,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md"
+                "file": "Appunti BSD/MOD II/Lezione 9.md"
               }
             }
           },
@@ -127,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+                "file": "Appunti BSD/MOD II/Lezione 9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+                "file": "Appunti BSD/MOD II/Lezione 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,10 +195,11 @@
       "graph:Open graph view": false
     }
   },
-  "active": "22831006910f133b",
+  "active": "64d6ab0fcd7a137f",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+    "Appunti BSD/MOD II/Lezione 9.md",
+    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti FI/MOD II/Lezione 4.md",
     "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
