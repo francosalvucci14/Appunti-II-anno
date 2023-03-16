@@ -99,7 +99,7 @@ Proof:
 
 The time complexity is 
 - $O(n^2)$ if it is implemented with linear structures
-- $O(m\cdot log(n))$ if is implemented by Heap
+- $O(m\cdot log(n))$ if it is implemented with Heap
 
 For any visited node $u\in V$, update $O(deg(u))$ keys in Q $\implies\sum_udeg(u)=O(m)$
 Each update costs $O(log n)$ (using Heap)
