@@ -98,7 +98,7 @@ Proof:
 ## Time complexity of Prim's algorithm
 
 The time complexity is 
-- $O(n^2)$ if is implemented by linear structure
+- $O(n^2)$ if it is implemented with linear structures
 - $O(m\cdot log(n))$ if is implemented by Heap
 
 For any visited node $u\in V$, update $O(deg(u))$ keys in Q $\implies\sum_udeg(u)=O(m)$

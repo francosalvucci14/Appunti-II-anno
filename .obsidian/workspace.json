@@ -20,24 +20,12 @@
             }
           },
           {
-            "id": "9c4a24dca355ba0f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "22831006910f133b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md"
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md"
               }
             }
           },
@@ -139,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,9 +182,13 @@
       "graph:Open graph view": false
     }
   },
-  "active": "9c4a24dca355ba0f",
+  "active": "22831006910f133b",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+    "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti FI/MOD II/Lezione 4.md",
+    "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
+    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230316135050.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230316121345.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315101226.png",
@@ -205,10 +197,7 @@
     "Appunti FI/MOD II/Immagini/Pasted image 20230316134435.png",
     "Appunti FI/MOD II/Lezione 1.md",
     "Appunti FI/MOD II/Lezione 3.md",
-    "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
-    "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
     "Appunti LMP/MOD II/Lezione 4 - Ancora su liste e operatori.md",
     "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
     "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
@@ -227,7 +216,6 @@
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
     "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
-    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Lezione 2.md",
     "Appunti LRL/Lezione 2.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
