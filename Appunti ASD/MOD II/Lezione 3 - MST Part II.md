@@ -102,7 +102,7 @@ The time complexity is
 - $O(m\cdot log(n))$ if it is implemented with Heap
 
 For any visited node $u\in V$, update $O(deg(u))$ keys in Q $\implies\sum_udeg(u)=O(m)$
-Each update costs $O(log n)$ (using Heap)
+Each update costs $O(log (n))$ (using Heap)
 Total : $O(m\cdot log(n))$
 
 
