@@ -101,110 +101,110 @@ Quindi, una quintupla è un ordine
 
 E, quindi, da quello che abbiamo detto fino ad ora, non avrebbe senso avere due quintuple $\langle q_1 , a, b, q_2 , m\rangle$ e $\langle q_1 , a, b', q_2' , m\rangle$ : come dovremmo mai comportarci trovandoci nello stato $q_1$ e leggendo il carattere a?!
 
-´Possiamo anche vedere una quintupla come una indicazione precisa e non ambigua circa quale operazione eseguire per giungere alla soluzione
+Possiamo anche vedere una quintupla come una indicazione precisa e non ambigua circa quale operazione eseguire per giungere alla soluzione
 
-´Una indicazione che viene fornita da chi ha progettato la macchina di Turing
+Una indicazione che viene fornita da chi ha progettato la macchina di Turing
 
-´E se costui, il progettista, arrivato ad un certo punto non sapesse bene come continuare?
+E se costui, il progettista, arrivato ad un certo punto non sapesse bene come continuare?
 
-´Potrebbe dirci “se sei nello stato q e leggi il simbolo a, non so bene quale è la cosa giusta da fare ma, di certo, devi fare una di queste cose: {elenco di cose da fare fra cui scegliere}. Decidi un po’ tu…”
+Potrebbe dirci “se sei nello stato q e leggi il simbolo a, non so bene quale è la cosa giusta da fare ma, di certo, devi fare una di queste cose: {elenco di cose da fare fra cui scegliere}. Decidi un po’ tu…”
 
-´E come farebbe costui a comunicarci questa cosa? Ma con tante quintuple che iniziano con la stessa coppia stato interno – simbolo letto!
+E come farebbe costui a comunicarci questa cosa? Ma con tante quintuple che iniziano con la stessa coppia stato interno – simbolo letto!
 
 **Esempio** : $\langle q , a, b_1, q_1 , m_1\rangle,\dots,\langle q , a, b_k, q_k , m_k\rangle$ 
 
-´Cosa accade quando l’insieme delle quintuple di una macchina $T$ ha la multi-quintupla sopra e, durante una computazione $T(x)$, si trova nello stato interno q e legge il carattere a?
+Cosa accade quando l’insieme delle quintuple di una macchina $T$ ha la multi-quintupla sopra e, durante una computazione $T(x)$, si trova nello stato interno q e legge il carattere a?
 
-´Possiamo descrivere il comportamento di $T$ in due modi diversi:
+Possiamo descrivere il comportamento di $T$ in due modi diversi:
 
-- ´$T$ diventa una macchina parallela
-- ´$T$ chiede l’intervento di un "genio"
+- $T$ diventa una macchina parallela
+- $T$ chiede l’intervento di un "genio"
 
 i due modi diversi sono **equivalenti**
 
 ### Una macchina parallela
 
-´In questo caso, quando $T$ si trova nello stato q e legge il simbolo a, le k quintuple $\langle q , a, b_1, q_1 , m_1\rangle,\dots,\langle q , a, b_k, q_k , m_k\rangle$, $T$ le esegue tutte,in parallelo!
+In questo caso, quando $T$ si trova nello stato q e legge il simbolo a, le k quintuple $\langle q , a, b_1, q_1 , m_1\rangle,\dots,\langle q , a, b_k, q_k , m_k\rangle$, $T$ le esegue tutte,in parallelo!
 
-´Avviene la transizione dallo stato globale di partenza a k stati globali differenti
-- ´che proseguono la computazione, ognuno per conto suo
+Avviene la transizione dallo stato globale di partenza a k stati globali differenti
+- che proseguono la computazione, ognuno per conto suo
 
-´E se, successivamente, da uno di questi stati globali ci si troverà a dover eseguire un’altra multi-quintupla, il processo di moltiplicazione si ripeterà
-- ´diventerà una specie di albero
+E se, successivamente, da uno di questi stati globali ci si troverà a dover eseguire un’altra multi-quintupla, il processo di moltiplicazione si ripeterà
+- diventerà una specie di albero
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230316121345.png|center|500]]
 
-´Già, ma, allora, quale è l’esito di una computazione di una macchina capace di auto-replicarsi in innumerevoli copie parallele?
+Già, ma, allora, quale è l’esito di una computazione di una macchina capace di auto-replicarsi in innumerevoli copie parallele?
 
-´Come facciamo a dire quando una computazione di tale macchina accetta e quando rigetta? Come facciamo a sapere se la soluzione all’istanza x del nostro problema è 0 oppure 1? A quale delle copie parallele dobbiamo dar credito?
+Come facciamo a dire quando una computazione di tale macchina accetta e quando rigetta? Come facciamo a sapere se la soluzione all’istanza x del nostro problema è 0 oppure 1? A quale delle copie parallele dobbiamo dar credito?
 
-´Per rispondere, dobbiamo prima chiarire una questione: anche se stiamo parlando di funzioni a valori in {0,1}, c’è, in realtà, una certa asimmetria fra i due valori. O meglio, c’è una asimmetria fra gli stati $q_A$ e $q_R$
-- ´ad un riconoscitore è richiesto di _riconoscere_ le parole che **soddisfano** una certa proprietà - ad esempio, deve riconoscere le parole palindrome
-- ´non di riconoscere le parole che _**non**_ soddisfano quella proprietà – per questo insieme di parole, se ci interessa individuarle, potremmo progettare un altro riconoscitore!
+Per rispondere, dobbiamo prima chiarire una questione: anche se stiamo parlando di funzioni a valori in {0,1}, c’è, in realtà, una certa asimmetria fra i due valori. O meglio, c’è una asimmetria fra gli stati $q_A$ e $q_R$
+- ad un riconoscitore è richiesto di _riconoscere_ le parole che **soddisfano** una certa proprietà - ad esempio, deve riconoscere le parole palindrome
+- non di riconoscere le parole che _**non**_ soddisfano quella proprietà – per questo insieme di parole, se ci interessa individuarle, potremmo progettare un altro riconoscitore!
 
-´Quindi, in effetti, quel che ci interessa “di più” è lo stato $q_A$ – possiamo dire che arriviamo alla soluzione quando la macchina raggiunge lo stato $q_A$
+Quindi, in effetti, quel che ci interessa “di più” è lo stato $q_A$ – possiamo dire che arriviamo alla soluzione quando la macchina raggiunge lo stato $q_A$
 
-´Ragioniamo: l’idea delle multi-quintuple è che ci vengono mostrate tante strade possibili che potrebbero “portarci a destinazione” – ossia, allo stato qA
+Ragioniamo: l’idea delle multi-quintuple è che ci vengono mostrate tante strade possibili che potrebbero “portarci a destinazione” – ossia, allo stato qA
 
-´Naturalmente, non tutte le strade portano alla soluzione.
+Naturalmente, non tutte le strade portano alla soluzione.
 
-**´Ma basta che ce ne sia una, di strada che porta a destinazione!**
+**Ma basta che ce ne sia una, di strada che porta a destinazione!**
 
-´Quindi, diciamo che: la computazione di una macchina parallela:
-- ´**accetta** se esiste almeno un percorso nell’albero che porta la macchina nello stato $q_A$
-- ´**rigetta** se tutti i percorsi nell’albero portano nello stato $q_R$– ossia se il percorso che porta a destinazione proprio non esiste!
+Quindi, diciamo che: la computazione di una macchina parallela:
+- **accetta** se esiste almeno un percorso nell’albero che porta la macchina nello stato $q_A$
+- **rigetta** se tutti i percorsi nell’albero portano nello stato $q_R$– ossia se il percorso che porta a destinazione proprio non esiste!
 
 ### "Genio"
 
-´In questo caso, quando $T$ si trova nello stato q e legge il simbolo a, e $P$ contiene le k quintuple $\langle q , a, b_1, q_1 , m_1\rangle,\dots,\langle q , a, b_k, q_k , m_k\rangle$, $T$ chiama un "**genio**" e quello _**sceglie**_ quale di queste quintuple eseguire!
+In questo caso, quando $T$ si trova nello stato q e legge il simbolo a, e $P$ contiene le k quintuple $\langle q , a, b_1, q_1 , m_1\rangle,\dots,\langle q , a, b_k, q_k , m_k\rangle$, $T$ chiama un "**genio**" e quello _**sceglie**_ quale di queste quintuple eseguire!
 
-´Così, la computazione diventa una sequenza di scelte del genio
+Così, la computazione diventa una sequenza di scelte del genio
 
-´Per questo la computazione di $T$ prende il nome di _**non deterministica**_
-- ´perché il suo esito non è completamente determinato dal suo input
+Per questo la computazione di $T$ prende il nome di _**non deterministica**_
+- perché il suo esito non è completamente determinato dal suo input
 
-´Cioè: se una macchina di Turing non ha multi-quintuple, allora, per ogni input x, la computazione $T(x)$ avrà sempre lo stesso esito
+Cioè: se una macchina di Turing non ha multi-quintuple, allora, per ogni input x, la computazione $T(x)$ avrà sempre lo stesso esito
 
-- ´se eseguiamo $T(x)$ ed essa termina in $q_A$, e poi ripetiamo $T(x)$ un milione di volte, ogni ripetizione terminerà in $q_A$
-- ´e lo stesso vale se la prima esecuzione di $T(x)$ termina in $q_R$
-- ´per questo una macchina che **non** ha multi-quintuple è **_deterministica_**
+- se eseguiamo $T(x)$ ed essa termina in $q_A$, e poi ripetiamo $T(x)$ un milione di volte, ogni ripetizione terminerà in $q_A$
+- e lo stesso vale se la prima esecuzione di $T(x)$ termina in $q_R$
+- per questo una macchina che **non** ha multi-quintuple è **_deterministica_**
 
-´Se, invece, $T$ contiene multi-quintuple, $T$ è non deterministica, allora esecuzioni diverse di $T(x)$ possono avere esiti diversi!
+Se, invece, $T$ contiene multi-quintuple, $T$ è non deterministica, allora esecuzioni diverse di $T(x)$ possono avere esiti diversi!
 
-´Già, ma, allora, quale è l’esito di una computazione di una macchina non deterministica $T$ nel modello in cui interviene il genio?
-- ´Anzi, visto che la macchina è non deterministica, chiamiamola NT
+Già, ma, allora, quale è l’esito di una computazione di una macchina non deterministica $T$ nel modello in cui interviene il genio?
+- Anzi, visto che la macchina è non deterministica, chiamiamola NT
 
-´Come facciamo a dire quando $NT(x)$ accetta e quando rigetta? Come facciamo a sapere se la soluzione all’istanza x del nostro problema è 0 oppure 1?
+Come facciamo a dire quando $NT(x)$ accetta e quando rigetta? Come facciamo a sapere se la soluzione all’istanza x del nostro problema è 0 oppure 1?
 
-´La risposta è analoga al modello parallelo e, come in quel caso, è asimmetrica:
+La risposta è analoga al modello parallelo e, come in quel caso, è asimmetrica:
 
-- ´$NT(x)$ **accetta** se esiste almeno una scelta di multi-quintuple che porta la macchina nello stato $q_A$
-- ´$NT(x)$ **rigetta** se qualunque scelta di multi-quintuple porta la macchina nello stato $q_R$
+- $NT(x)$ **accetta** se esiste almeno una scelta di multi-quintuple che porta la macchina nello stato $q_A$
+- $NT(x)$ **rigetta** se qualunque scelta di multi-quintuple porta la macchina nello stato $q_R$
 
 ## Equivalenza tra i modelli
 
-´In definitiva
+In definitiva
 
-- ´una macchina parallela accetta se esiste un percorso nell’albero che la fa entrare nello stato $q_A$ e rigetta se tutti i percorsi la fanno entrare nello stato $q_R$
-- ´una macchina genio-dotata accetta se esiste una scelta di quintuple che la fa entrare nello stato $q_A$ e rigetta se tutte le scelte di quintuple la fanno entrare nello stato $q_R$
+- una macchina parallela accetta se esiste un percorso nell’albero che la fa entrare nello stato $q_A$ e rigetta se tutti i percorsi la fanno entrare nello stato $q_R$
+- una macchina genio-dotata accetta se esiste una scelta di quintuple che la fa entrare nello stato $q_A$ e rigetta se tutte le scelte di quintuple la fanno entrare nello stato $q_R$
 
-´I due modelli sono **equivalenti**!
+I due modelli sono **equivalenti**!
 
-´Sono due modelli, due modi, in cui possiamo descrivere una macchina di Turing non deterministica
+Sono due modelli, due modi, in cui possiamo descrivere una macchina di Turing non deterministica
 
 # Determinismo e non determinismo
 
-´Ricapitolando:
+Ricapitolando:
 
-- ´una macchina di Turing $T$ è deterministica se, per ogni stato q e per ogni carattere a, l’insieme P delle sue quintuple non contiene più di una quintupla che inizia con (q,a)
-- ´una macchina di Turing $NT$ è non deterministica se esistono uno stato q e un carattere a tali che l’insieme P delle sue quintuple contiene due o più quintuple che iniziano con (q,a)
-- ´consideriamo solo macchine non deterministiche di tipo riconoscitore
+- una macchina di Turing $T$ è deterministica se, per ogni stato q e per ogni carattere a, l’insieme P delle sue quintuple non contiene più di una quintupla che inizia con (q,a)
+- una macchina di Turing $NT$ è non deterministica se esistono uno stato q e un carattere a tali che l’insieme P delle sue quintuple contiene due o più quintuple che iniziano con (q,a)
+- consideriamo solo macchine non deterministiche di tipo riconoscitore
 
-´Una computazione non deterministica contiene tante computazioni deterministiche – una per ciascun ramo dell’albero
+Una computazione non deterministica contiene tante computazioni deterministiche – una per ciascun ramo dell’albero
 
 >[!definition]- Grado di non determinismo
->´Il **grado di non determinismo** di una macchina non deterministica $NT$ è il massimo numero di quintuple che iniziano con la stessa coppia stato-carattere, ossia, $$max_{q,a}|\{\langle q,a,b,q_1,m\rangle\in P\}|$$
+>Il **grado di non determinismo** di una macchina non deterministica $NT$ è il massimo numero di quintuple che iniziano con la stessa coppia stato-carattere, ossia, $$max_{q,a}|\{\langle q,a,b,q_1,m\rangle\in P\}|$$
 
-´Naturalmente, il grado di non determinismo di una macchina definita sull’alfabeto $\Sigma$  e sull’insieme degli stati Q può essere al massimo : 
+Naturalmente, il grado di non determinismo di una macchina definita sull’alfabeto $\Sigma$  e sull’insieme degli stati Q può essere al massimo : 
 $$|\Sigma|\times|Q|\times 3$$
 ed è, quindi, **costante**
