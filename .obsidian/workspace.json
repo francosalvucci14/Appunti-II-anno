@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -164,7 +163,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "f22977b99d54ade6",
@@ -195,11 +194,16 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230316121345.png",
-    "Appunti FI/MOD II/Lezione 1.md",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230316135050.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230316121345.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230315101226.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230316134228.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230316134337.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230316134435.png",
     "Appunti FI/MOD II/Lezione 4.md",
+    "Appunti FI/MOD II/Lezione 1.md",
     "Appunti FI/MOD II/Lezione 3.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
@@ -214,15 +218,11 @@
     "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti LMP/MOD II/Indice delle lezioni LMP MOD 2.md",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230315101226.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315095343.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315094137.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315093858.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315092639.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315092019.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230315091940.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230315091759.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230315091633.png",
     "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
     "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
@@ -230,7 +230,6 @@
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Lezione 2.md",
-    "Appunti FI/MOD II/Immagini/Pasted image 20230314170549.png",
     "Appunti LRL/Lezione 2.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti BSD/MOD II",

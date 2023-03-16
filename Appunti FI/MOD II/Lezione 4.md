@@ -132,7 +132,7 @@ Avviene la transizione dallo stato globale di partenza a k stati globali differe
 E se, successivamente, da uno di questi stati globali ci si troverà a dover eseguire un’altra multi-quintupla, il processo di moltiplicazione si ripeterà
 - diventerà una specie di albero
 
-![[appunti asd/mod ii/immagini/Pasted image 20230316121345.png|center|500]]
+![[appunti fi/mod ii/immagini/Pasted image 20230316121345.png|center|500]]
 
 Già, ma, allora, quale è l’esito di una computazione di una macchina capace di auto-replicarsi in innumerevoli copie parallele?
 
@@ -202,9 +202,70 @@ Ricapitolando:
 
 Una computazione non deterministica contiene tante computazioni deterministiche – una per ciascun ramo dell’albero
 
->[!definition]- Grado di non determinismo
+>[!definition]- Definizione (Grado di non determinismo)
 >Il **grado di non determinismo** di una macchina non deterministica $NT$ è il massimo numero di quintuple che iniziano con la stessa coppia stato-carattere, ossia, $$max_{q,a}|\{\langle q,a,b,q_1,m\rangle\in P\}|$$
 
 Naturalmente, il grado di non determinismo di una macchina definita sull’alfabeto $\Sigma$  e sull’insieme degli stati Q può essere al massimo : 
 $$|\Sigma|\times|Q|\times 3$$
 ed è, quindi, **costante**
+
+>[!important]- Teorema 2.1
+>Per ogni macchina di Turing $NT$ esiste una macchina di Turing $T$ tale che, per ogni possibile input x di $NT$, l'esito della computazione $NT(x)$ coincide con l'esito della computazione di $T(x)$
+>Ovvero $$\forall\:NT\:\exists T:\forall x\in\Sigma^\star[O_{NT}(x)=O_{T}(x)]$$
+
+Infatti possiamo sempre costruire una macchina deterministica $T$ che **simula** una macchina non deterministica $NT$
+- simula tutte le computazioni deterministiche di $NT(x)$ di un solo passo: se qualcuna accetta allora T accetta, se tutte rigettano allora T rigetta, altrimenti
+- simula tutte le computazioni deterministiche di $NT(x)$ di due passi: se qualcuna accetta allora T accetta, se tutte rigettano allora T rigetta, altrimenti
+- simula tutte le computazioni deterministiche di $NT(x)$ di tre passi, ecc. ecc. ecc.
+
+Vediamo con qualche esempio come funziona questa tecnica di simulazione
+- che prende il nome di **_coda di rondine con ripetizioni_**
+
+## Simulare una computazione accettante
+
+![[appunti fi/mod ii/immagini/Pasted image 20230316134228.png|center|500]]
+
+![[appunti fi/mod ii/immagini/Pasted image 20230316134337.png|center|500]]
+
+## Simulare una computazione che rigetta
+
+Questa volta lavoriamo al "buio" - ossia senza conoscere a priori la computazione non deterministica
+
+![[appunti fi/mod ii/immagini/Pasted image 20230316134435.png|center|500]]
+
+## Ritornando a determinismo e non
+
+Ma perché non possiamo far simulare a $T$ prima l’intero ramo più a sinistra dell’albero, poi quello accanto, e così via?
+
+### Computazioni che non terminano
+
+Perché alcune computazioni possono non terminare
+- ad esempio, se P contiene le due quintuple $\langle q_1 , a, a, q_2 , D\rangle$ e $\langle q_2 , b, b, q_1 , S\rangle$ ,  e la macchina si trova nello stato globale $xxxxq_1abxxx$ (xxx sono caratteri qualsiasi)
+- allora la computazione non termina (va in loop!)
+
+Allora, potrebbe accadere che la computazione deterministica più a sinistra di $NT(x)$ non termini, mentre quella più a destra termini in $q_A$
+- se simulassimo per prima la computazione non deterministica più a sinistra non termineremmo mai
+- e non riusciremmo mai a raggiungere lo stato $q_A$
+- quindi, mentre $NT(x)$ accetta, la nostra macchina deterministica non terminerebbe mai
+- Invece, simulando ogni volta computazioni di lunghezza fissata, prima o poi arriveremo a beccare lo stato di accettazione nella computazione più a destra!
+
+![[appunti fi/mod ii/immagini/Pasted image 20230316135050.png|center|500]]
+
+
+# Tanti modelli
+
+In conclusione, abbiamo visto tanti modelli di Macchine di Turing
+
+- dipendentemente dal numero di nastri di cui le dotiamo
+- e da come si muovono le testine
+- e da quanto è ricco l’alfabeto del quale dispongono
+- e dalla struttura dell’insieme delle quintuple (macchine deterministiche / non deterministiche)
+
+E abbiamo dimostrato che tutti questi modelli sono fra loro equivalenti
+- quello che sappiamo fare con una macchina “ricca” sappiamo farlo anche con una macchina ”povera”
+- ossia, una macchina deterministica dotata di un solo nastro e che utilizza un alfabeto binario
+
+In effetti, tanti modelli calcolo sono stati definiti
+
+- e ciascuno di essi è stato dimostrato essere **equivalente** alla Macchina deterministica dotata di un solo nastro e che utilizza un alfabeto binario
+
