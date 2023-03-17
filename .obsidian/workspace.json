@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -139,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "f9b24036377036e4",
@@ -170,22 +169,23 @@
       "graph:Open graph view": false
     }
   },
-  "active": "22831006910f133b",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Pasted image 20230317152850.png",
-    "Pasted image 20230317152832.png",
-    "Pasted image 20230317152802.png",
-    "Pasted image 20230317151536.png",
     "Pasted image 20230317151512.png",
     "Pasted image 20230317151509.png",
-    "Pasted image 20230317151410.png",
+    "Appunti BSD/MOD II/Lezione 9.md",
+    "Appunti BSD/MOD II/Immagini",
+    "Appunti BSD/MOD II/Immagini/Pasted image 20230317152850.png",
+    "Appunti BSD/MOD II/Immagini/Pasted image 20230317152832.png",
+    "Appunti BSD/MOD II/Immagini/Pasted image 20230317152802.png",
+    "Appunti BSD/MOD II/Immagini/Pasted image 20230317151536.png",
+    "Appunti BSD/MOD II/Immagini/Pasted image 20230317151410.png",
     "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
     "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
-    "Appunti BSD/MOD II/Lezione 9.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti FI/MOD II/Lezione 4.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
@@ -200,7 +200,6 @@
     "Appunti FI/MOD II/Immagini/Pasted image 20230316135050.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230316121345.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315101226.png",
-    "Appunti FI/MOD II/Immagini/Pasted image 20230316134228.png",
     "Appunti FI/MOD II/Lezione 1.md",
     "Appunti FI/MOD II/Lezione 3.md",
     "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",

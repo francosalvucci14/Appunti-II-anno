@@ -67,9 +67,9 @@ Le fomule con i quantificatori sono vere secondo le seguenti regole :
 
 **Esempi Vari**
 
-![[Pasted image 20230317151410.png|center|500]]
+![[appunti bsd/mod ii/immagini/Pasted image 20230317151410.png|center|500]]
 
-![[Pasted image 20230317151536.png|center|600]]
+![[appunti bsd/mod ii/immagini/Pasted image 20230317151536.png|center|600]]
 
 ## Problemi con il calcolo relazionale : Assunzione di mondo chiuso
 
@@ -112,11 +112,11 @@ $$\text{Espressione}:\{\text{Target List}|\text{Range List}|\text{Range List}\}$
 
 ### Interrogazioni
 
-![[Pasted image 20230317152802.png|center|500]]
+![[appunti bsd/mod ii/immagini/Pasted image 20230317152802.png|center|500]]
 
-![[Pasted image 20230317152832.png|center|500]]
+![[appunti bsd/mod ii/immagini/Pasted image 20230317152832.png|center|500]]
 
-![[Pasted image 20230317152850.png|center|500]]
+![[appunti bsd/mod ii/immagini/Pasted image 20230317152850.png|center|500]]
 
 # Equivalenza fra i linguaggi
 
