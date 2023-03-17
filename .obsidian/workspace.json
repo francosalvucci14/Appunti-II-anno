@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "64d6ab0fcd7a137f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
+                "file": "Appunti BSD/MOD II/Lezione 9.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -107,7 +96,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti BSD/MOD II/Lezione 9.md"
+              }
             }
           },
           {
@@ -124,6 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti BSD/MOD II/Lezione 9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,13 +132,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti BSD/MOD II/Lezione 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "f9b24036377036e4",
@@ -177,14 +170,24 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "22831006910f133b",
   "lastOpenFiles": [
+    "Pasted image 20230317152850.png",
+    "Pasted image 20230317152832.png",
+    "Pasted image 20230317152802.png",
+    "Pasted image 20230317151536.png",
+    "Pasted image 20230317151512.png",
+    "Pasted image 20230317151509.png",
+    "Pasted image 20230317151410.png",
+    "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
+    "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
+    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
+    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
     "Appunti BSD/MOD II/Lezione 9.md",
-    "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti FI/MOD II/Lezione 4.md",
-    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
@@ -198,24 +201,14 @@
     "Appunti FI/MOD II/Immagini/Pasted image 20230316121345.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315101226.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230316134228.png",
-    "Appunti FI/MOD II/Immagini/Pasted image 20230316134337.png",
-    "Appunti FI/MOD II/Immagini/Pasted image 20230316134435.png",
     "Appunti FI/MOD II/Lezione 1.md",
     "Appunti FI/MOD II/Lezione 3.md",
     "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
     "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
-    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
-    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti LMP/MOD II/Indice delle lezioni LMP MOD 2.md",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230315095343.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230315094137.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230315093858.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230315092639.png",
-    "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti BSD/MOD II",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti LMP/MOD II/Immagini",
