@@ -20,7 +20,7 @@ Assume all edge costs are distinct. Consider a <u>non-empty</u> cut $S\cup(V\set
 
 The minimum cost edge e crossing the cut is in **every** MST of G
 
-![[Pasted image 20230317162757.png|center|200]]
+![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317162757.png|center|200]]
 
 ### Cycle-property
 
@@ -28,7 +28,7 @@ Assume all edge costs are distinct. Let C be any cycle in G
 
 The maximum cost edge e in C does not belogn to **any** MST of G
 
-![[Pasted image 20230317162916.png|center|200]]
+![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317162916.png|center|200]]
 
 See animation on [VisualGo](https://visualgo.net/en6)
 
@@ -36,11 +36,11 @@ See animation on [VisualGo](https://visualgo.net/en6)
 
 **Question** : are MST and SPT the same thing? **...NO**
 
-![[Pasted image 20230317163034.png|center|500]]
+![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317163034.png|center|500]]
 
 What about all different edge costs?
 
-![[Pasted image 20230317163104.png|center|500]]
+![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317163104.png|center|500]]
 
 ### Problem 1
 
@@ -55,8 +55,8 @@ What about all different edge costs?
 
 #### Solution
 
-1. **Remove** all edges $e'$ from $E$ s.t. $c(e')\gt c(e)$, and remove also $e$. Set $G'=(V,E')$ this new graph ![[Pasted image 20230317163510.png|center|500]]
-2. Let u,v the two endpoints of $e$. **Start** from u a **BFS** (or **DFS**) search. ![[Pasted image 20230317163615.png|center|500]] Observed that $T_u$ is the connected component of $G'$ containing u
+1. **Remove** all edges $e'$ from $E$ s.t. $c(e')\gt c(e)$, and remove also $e$. Set $G'=(V,E')$ this new graph ![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317163510.png|center|500]]
+2. Let u,v the two endpoints of $e$. **Start** from u a **BFS** (or **DFS**) search. ![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317163615.png|center|500]] Observed that $T_u$ is the connected component of $G'$ containing u
 3. Check if u and v in the same connected component of $G'$
 	1. If $v\in T_u\implies e$ is NOT in a MST of $G'$ (return **False**)
 	2. IF $v\not\in T_u\implies e$ is in a MST of $G'$ (return **True**)
@@ -79,7 +79,7 @@ What means that $v\in T_u?$
 
 **cycle-property** $\implies e$ does not belong to any MST of G!
 
-![[Pasted image 20230317164323.png|center|300]]
+![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317164323.png|center|300]]
 
 
 ##### Analysis : case 2
@@ -93,7 +93,7 @@ What means that $v\not\in T_u?$
 
 **cut-property** $\implies e$ belongs to a MST of G!
 
-![[Pasted image 20230317164607.png|center|300]]
+![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317164607.png|center|300]]
 
 ## Removing unique-cost assumption
 
