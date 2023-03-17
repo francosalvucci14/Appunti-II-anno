@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+                "file": "Appunti FI/MOD II/Lezione 4.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,26 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/MOD II/Lezione 9.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f1150307ae40d87a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
+                "file": "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md"
+                "file": "Appunti FI/MOD II/Lezione 4.md"
               }
             }
           },
@@ -139,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
+                "file": "Appunti FI/MOD II/Lezione 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
+                "file": "Appunti FI/MOD II/Lezione 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,10 +181,15 @@
       "graph:Open graph view": false
     }
   },
-  "active": "f1150307ae40d87a",
+  "active": "22831006910f133b",
   "lastOpenFiles": [
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
+    "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
+    "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
+    "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
     "Appunti BSD/MOD II/Lezione 9.md",
+    "Appunti ASD/MOD I/Lezione 1 - Capitolo 1.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Esercitazioni",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
@@ -228,11 +220,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230315092639.png",
     "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti LMP/MOD II/Lezione 1 - Introduzione.md",
-    "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
-    "Appunti LRL/Indice delle lezioni LRL.md",
-    "Appunti FI/MOD II/Lezione 2.md",
-    "Appunti LRL/Lezione 2.md",
     "Appunti BSD/MOD II",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti LMP/MOD II/Immagini",

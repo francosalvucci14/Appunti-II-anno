@@ -81,8 +81,8 @@ Ma che succede se, invece, un utilizzatore poco accorto scrive sul nastro di $T$
 
 Allora, ci sono due possibilità:
 
-- Chi ha progettato $T$ ha considerato tutte le possibilità (stato,simbolo), anche quelle “**impossibili**” (quando l’utilizzatore non legge il libretto di istruzioni di T e scrive sul nastro un input non conforme alle specifiche): per ciascuna di queste coppie impossibili ha scritto una quintupla che porta $T$ in $q_R$, progettando una **funzione $P$ totale**
-- Chi ha progettato $T$ ha deciso che se un utilizzatore è stato poco accorto e non ha rispettato le specifiche… peggio per lui! E, semplicemente, chi ha progettato T ha scritto solo le quintuple per le coppie (stato,simbolo) significative. E, così, ha progettato una **funzione $P$ non totale**
+1. Chi ha progettato $T$ ha considerato tutte le possibilità (stato,simbolo), anche quelle “**impossibili**” (quando l’utilizzatore non legge il libretto di istruzioni di T e scrive sul nastro un input non conforme alle specifiche): per ciascuna di queste coppie impossibili ha scritto una quintupla che porta $T$ in $q_R$, progettando una **funzione $P$ totale**
+2. Chi ha progettato $T$ ha deciso che se un utilizzatore è stato poco accorto e non ha rispettato le specifiche… peggio per lui! E, semplicemente, chi ha progettato T ha scritto solo le quintuple per le coppie (stato,simbolo) significative. E, così, ha progettato una **funzione $P$ non totale**
 
 Possiamo ora rispondere alla domanda “ma se T è un riconoscitore e ad una coppia (q,s) non è associata alcuna quintupla in P?: in questo caso, possiamo assumere che, in tal caso, $T$ rigetti
 - è come se, implicitamente, aggiungessimo a P la quintupla $\langle q , s, s, q_R , F\rangle$ 
