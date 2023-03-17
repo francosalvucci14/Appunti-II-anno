@@ -156,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 288.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,6 +172,7 @@
   },
   "active": "22831006910f133b",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317174656.png",
     "Appunti ASD/MOD II/Esercitazioni/Untitled.md",
     "Appunti ASD/MOD II/Esercitazioni/Immagini",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",

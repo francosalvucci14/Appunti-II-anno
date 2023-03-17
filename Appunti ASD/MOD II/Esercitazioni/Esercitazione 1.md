@@ -42,7 +42,7 @@ What about all different edge costs?
 
 ![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317163104.png|center|500]]
 
-### Problem 1
+## Problem 1
 
 **Input** :
 - $G=(V,E)$
@@ -53,7 +53,7 @@ What about all different edge costs?
 - _False_ otherwise (if no MST of G contains $e$)
 **Constraints** : $O(m+n)$ running time
 
-#### Solution
+### Solution
 
 1. **Remove** all edges $e'$ from $E$ s.t. $c(e')\gt c(e)$, and remove also $e$. Set $G'=(V,E')$ this new graph ![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317163510.png|center|500]]
 2. Let u,v the two endpoints of $e$. **Start** from u a **BFS** (or **DFS**) search. ![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317163615.png|center|500]] Observed that $T_u$ is the connected component of $G'$ containing u
@@ -61,15 +61,15 @@ What about all different edge costs?
 	1. If $v\in T_u\implies e$ is NOT in a MST of $G'$ (return **False**)
 	2. IF $v\not\in T_u\implies e$ is in a MST of $G'$ (return **True**)
 
-#### Complexity
+### Complexity
 
 1. **Build** $G'\to O(m)$
 2. **Compute** $T_u\to\Theta(n+m)$
 3. **Check the condition** $\to O(1)\implies$ running time $O(n+m)$
 
-#### Analysis
+### Analysis
 
-##### Analysis : case 1
+#### Analysis : case 1
 
 What means that $v\in T_u?$
 
@@ -82,7 +82,7 @@ What means that $v\in T_u?$
 ![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317164323.png|center|300]]
 
 
-##### Analysis : case 2
+#### Analysis : case 2
 
 What means that $v\not\in T_u?$
 
@@ -125,4 +125,30 @@ $$\begin{align}cost(\tilde{T},I)&=\sum_{e\in\tilde{T}}c(e)\lt\sum_{e\in\tilde{T}
 ### Observation (IV)
 
 Combining **Obs (I)+Obs(II)**, we have
-$$$$
+$$\begin{align}cost(\tilde{T},\tilde{I})&\lt^{(I)}cost(T,I)+\frac{1}{n}\\&\leq^{(II)}cost(\tilde{T},I)-1+\frac{1}{n}\end{align}$$
+### Observation (V)
+
+Combining **Obs (III)+Obs(IV)**, we have
+$$\begin{align}cost(T,\tilde{I})&\lt^{(IV)}cost(\tilde{T},I)-1+\frac{1}{n}\\&\lt cost(\tilde{T},\tilde{I})+\underbrace{\frac{1}{n}-1+\frac{1}{n}}_{\lt0}\\&\implies cost(T,\tilde{I})\lt cost(\tilde{T},\tilde{I})\end{align}$$
+T is a better MST also for $\tilde{I}$ instance, which is a **contradiction** $\square$
+
+## Problem 2
+
+Decide which of the following statements are true or false,and justify your answer.
+
+### Statement 1
+
+Suppose $e^\star=(u^\star,v^\star)$ be the cheapest edge in the input graph G. Then there exists a MST $T$ such that $e^\star\in T$.
+
+**YES**: $e^\star$ is the first edge considered by Kruskal'salgorithm, and it is always added to the MST.
+
+**YES** By cut-property
+![[appunti asd/mod ii/esercitazioni/immagini/Pasted image 20230317174656.png|center|200]]
+
+### Statement 2
+
+Let the instances of MST $I=\langle G=(V,E),c:E\to\mathbb R^+\rangle$.Consider the new instance $I'$ where all costs are squared, i.e. $c'(e)=c(e)^2$ Then a MST for I is also a MST for the modified instance $I'$.
+
+**YES** : By monotonicity of the cost function, we have
+$$c'(e)\geq c'(e')\iff c(e)\geq c(e')$$
+for every $e\neq e'$
