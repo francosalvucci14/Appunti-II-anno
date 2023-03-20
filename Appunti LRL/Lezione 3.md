@@ -83,4 +83,12 @@ Osservate che $\mathcal F$ è una tautologia se e soltanto se $\neg\mathcal F$ �
 Diciamo che due formule sono _equivalenti_ se hanno la stessa tabella di verità.
 $\mathcal F,\mathcal G$ sono equivalenti se e soltanto se $\mathcal F\equiv\mathcal G$ è una tautologia
 
- 
+## Costanti
+
+Abbiamo usato le lettere proposizionali p, q, r, . . . per indicare delle variabili Booleane.
+è utile aggiungere due lettere proposizionali, t e f, per indicare le due _costanti_ Booleane T e F. Si osservi, per esempio, che 
+- $p\land f$ è equivalente a **f** mentre $p\land t$ è equivalente a **p** ;
+- $p\lor f$ è equivalente a **p** mentre $p\lor t$ è equivalente a **t** ; 
+- $f\land t$ è equivalente a **f** mentre $f\lor t$ è equivalente a **t**.
+
+è interessante osservare che ogni formula che contiene **t** e/o **f** è sempre o equivalente a una formula che non contiene ne t ne f oppure è equivalente o a t o a f.
