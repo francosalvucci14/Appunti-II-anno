@@ -104,3 +104,40 @@ calcola(5+8+2,X).
 	X = 15
 ```
 
+**Esempi/Esercizi**
+
+**Numero elementi**
+Scrivere un predicato che calcoli la lunghezza di una lista, o che restituisca True o False se il numero che gli viene passato è giusto o no
+
+```prolog
+num_elem([],0).
+num_elem([_|T],N):-
+    num_elem(T,N1),
+    N is N1+1.
+```
+
+Query : 
+```prolog
+num_elem([1,2,3],X). --> X=3
+num_elem([1,2,3],4). --> false
+num_elem([1,2,3],3). --> true
+```
+
+**Sommatoria**
+
+Scrivere un predicato che calcoli la somma di tutti gli elementi di una lista 
+
+```prolog
+sommatoria([],0).
+sommatoria([H|T],N):-
+    sommatoria(T,N1),
+    N is N1+H.
+```
+
+Query:
+
+```prolog
+sommatoria([1,2,3],X). --> X=6
+sommatoria([1,2,3],4). --> false
+sommatoria([1,2,3],6). --> true
+```
