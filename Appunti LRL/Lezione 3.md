@@ -91,4 +91,4 @@ Abbiamo usato le lettere proposizionali p, q, r, . . . per indicare delle variab
 - $p\lor f$ è equivalente a **p** mentre $p\lor t$ è equivalente a **t** ; 
 - $f\land t$ è equivalente a **f** mentre $f\lor t$ è equivalente a **t**.
 
-è interessante osservare che ogni formula che contiene **t** e/o **f** è sempre o equivalente a una formula che non contiene ne t ne f oppure è equivalente o a t o a f.
+è interessante osservare che ogni formula che contiene **t** e/o **f** è sempre o equivalente a una formula che non contiene ne t ne f oppure è equivalente o a **t** o a **f**.
