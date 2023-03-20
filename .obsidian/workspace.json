@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
+                "file": "Appunti BSD/MOD II/Lezione 9.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md"
+                "file": "Appunti BSD/MOD II/Lezione 9.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
+                "file": "Appunti BSD/MOD II/Lezione 9.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
+                "file": "Appunti BSD/MOD II/Lezione 9.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,8 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5,
-    "collapsed": true
+    "width": 288.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,12 +169,13 @@
       "graph:Open graph view": false
     }
   },
-  "active": "22831006910f133b",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti BSD/MOD II/Immagini/Pasted image 20230320091835.png",
+    "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317174656.png",
     "Appunti ASD/MOD II/Esercitazioni/Untitled.md",
     "Appunti ASD/MOD II/Esercitazioni/Immagini",
-    "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317164607.png",
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317164323.png",
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317163615.png",
@@ -186,7 +186,6 @@
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317162757.png",
     "Appunti BSD/MOD II/Lezione 9.md",
     "Pasted image 20230317151512.png",
-    "Pasted image 20230317151509.png",
     "Appunti BSD/MOD II/Immagini",
     "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
     "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",

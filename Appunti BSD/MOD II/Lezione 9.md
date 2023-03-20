@@ -125,3 +125,8 @@ $$\text{Espressione}:\{\text{Target List}|\text{Range List}|\text{Range List}\}$
 - Per ogni espressione dell'algebra relazionale esiste un'espressione del calcolo relazionale equivalente ad essa.
 
 Dim: In modo ricorsivo a partire dagli operatori di base
+
+# SQL
+
+![[appunti bsd/mod ii/immagini/Pasted image 20230320091835.png|center|500]]
+
