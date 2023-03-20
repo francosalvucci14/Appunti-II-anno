@@ -92,3 +92,60 @@ Abbiamo usato le lettere proposizionali p, q, r, . . . per indicare delle variab
 - $f\land t$ è equivalente a **f** mentre $f\lor t$ è equivalente a **t**.
 
 è interessante osservare che ogni formula che contiene **t** e/o **f** è sempre o equivalente a una formula che non contiene ne t ne f oppure è equivalente o a **t** o a **f**.
+
+**Esercizio 8 vedi pdf**
+
+## Interdipendenza dei connettivi
+
+Finora nelle nostre formule asbbiamo usato i connettivi $\neg,\land,\lor,\implies,\equiv$ 
+Si osservi he questi non sono tutti "necessari", perchè per esempio:
+
+- $p\implies q$ è equivalente a $\neg p\lor q$, possiamo dire che il connettivo $\implies$ può essere definito in termini dei connettivi $\neg,\lor$
+- $p\land q$ è equivalente a $\neg(\neg p\lor\neg q)$, possiamo dire che $\land$ può essere definito in termini di $\neg,\lor$
+- $p\equiv q$ è equivalente a $(p\implies q)\land(q\implies p)$ o anche $(p\land q)\lor(\neg p\land\neg q)$, e quindi anche $\equiv$ può essere definito in termini di $\neg,\lor$
+
+Quindi, potremmo riscrivere tutte le formule viste finora usando soltanto i due connettivi $\neg,\lor$
+
+**Esercizi 9,10 vedi pdf**
+
+Piccola domanda : 
+> Esiste un connettivo che, da solo, può essere usato per definire tutti gli altri?
+
+Consideriamo il connettivo seguente, che chiamiamo _joint denial_ (lo chiameremo NOR quando parleremo di circuiti)
+
+| p   | q   | $p\downarrow q$ |
+| --- | --- | --------------- |
+| T   | T   | F               |
+| T   | F   | F               |
+| F   | T   | F               |
+| F   | F   | T               |
+
+Si osservi che:
+
+1. $p\downarrow p$ è F quando p è T ed è T quando p è F. In altri termini, $p\downarrow p$ è equivalente a $\neg p$
+2. La tabella di verità di $\downarrow$ è la negazione di quella di $\lor$, ossia $p\downarrow q$ è equivalente a $\neg(p\lor q)$. Ma allora $p\lor q$ deve essere equivalente a $\neg(p\downarrow q)$, che a sua volta, per il punto precedente, deve essere equivalente a $(p\downarrow q)\downarrow(p\downarrow q)$ 
+
+**Esercizio 11 vedi pdf**
+
+Siccome possiamo definire i connettivi $\neg,\lor$ in termini del connettivo $\downarrow$ per quanti visto all'inizio di questa sezione, possiamo definire anche tutti gli altri connettivi in termini del connettivo $\downarrow$ 
+
+Oltre a $\downarrow$, c'è un'altro connettivo che, da solo, può essere usato per definire tutti gli altri : lo indichiamo con $|$ e lo chiamiamo _alternative denial_ (oppure NAND)
+
+![[appunti lrl/immagini/Pasted image 20230320182234.png|center]]
+
+**Esercizio 12 vedi pdf**
+
+## Notazione polacca
+
+Se scriviamo $[\implies pq]$ al posto di $[p\implies q]$, $[\land pq]$ al posto di $[p\land q]$, $[\lor pq]$ al posto di $[p\lor q]$ e $[\equiv pq]$ al posto di $[p\equiv q]$ e possibile scrivere ogni formula ben formata in modo non ambiguo senza l'utilizzo di parentesi. 
+Questo tipo di sintassi è detta _notazione polacca_.
+
+Ad esempio, la formula $\neg p\land(q\implies\neg r)$ diventa $\land\neg p\implies q\neg r$ 
+
+>[!definition]- Definizione (F.b.f in notazione polacca)
+>Ogni lettera proposizionale è una f.b.f. Inoltre,
+>1. Se $\mathcal F$ è una f.b.f allora anche $\neg\mathcal F$ è una f.b.f
+>2. Se $\mathcal F,\mathcal G$ sono f.b.f allora anche $\circ\mathcal F\mathcal G$ è una f.b.f, dove con il simbolo $\circ$ intendiamo qualunque connettivo
+>3. Nient'altro è una f.b.f
+
+**Esercizi 13,14 vedi pdf**
