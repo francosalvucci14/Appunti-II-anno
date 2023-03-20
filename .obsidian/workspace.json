@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
+                "file": "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "388d6443360df21b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md"
+                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md"
               }
             }
           },
@@ -114,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
+                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
+                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,11 +182,16 @@
       "graph:Open graph view": false
     }
   },
-  "active": "22831006910f133b",
+  "active": "388d6443360df21b",
   "lastOpenFiles": [
+    "Appunti LMP/MOD II/Immagini/Pasted image 20230320111828.png",
+    "Appunti LMP/MOD II/Immagini/Pasted image 20230320111706.png",
+    "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
+    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
+    "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
+    "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
     "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
-    "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "Appunti BSD/MOD II/Immagini/Pasted image 20230320091835.png",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317174656.png",
@@ -186,9 +204,7 @@
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317163104.png",
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317163034.png",
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317162916.png",
-    "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317162757.png",
     "Appunti BSD/MOD II/Immagini",
-    "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
     "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
@@ -208,14 +224,11 @@
     "Appunti FI/MOD II/Lezione 3.md",
     "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
     "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
-    "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
-    "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
     "Appunti BSD/MOD II",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti LMP/MOD II/Immagini",
     "Appunti ASD/MOD II/Immagini",
     "Appunti ASD/MOD II",
-    "Appunti RO",
-    "Appunti FI/MOD II/Immagini"
+    "Appunti RO"
   ]
 }
