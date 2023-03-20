@@ -142,3 +142,24 @@ sommatoria([1,2,3],4). --> false
 sommatoria([1,2,3],6). --> true
 ```
 
+**Media**
+
+Scrivere un predicato che calcoli la media all'interno di una lista di numeri
+
+```prolog
+media([],0).
+media([H],H).
+media([H|T],N):-
+    sommatoria([H|T],N1),
+    num_elem([_|T],N2),
+    N is N1/N2.
+```
+
+Query:
+```
+media([1,2,3],4). --> false
+media([1,2,3],X). --> X=2
+media([1,2,3],2). --> true
+```
+
+
