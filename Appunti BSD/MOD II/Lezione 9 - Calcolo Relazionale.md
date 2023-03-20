@@ -130,3 +130,4 @@ Dim: In modo ricorsivo a partire dagli operatori di base
 
 ![[appunti bsd/mod ii/immagini/Pasted image 20230320091835.png|center|500]]
 
+  
