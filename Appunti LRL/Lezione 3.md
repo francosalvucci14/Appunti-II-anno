@@ -137,7 +137,7 @@ Oltre a $\downarrow$, c'è un'altro connettivo che, da solo, può essere usato p
 
 ## Notazione polacca
 
-Se scriviamo $[\implies pq]$ al posto di $[p\implies q]$, $[\land pq]$ al posto di $[p\land q]$, $[\lor pq]$ al posto di $[p\lor q]$ e $[\equiv pq]$ al posto di $[p\equiv q]$ e possibile scrivere ogni formula ben formata in modo non ambiguo senza l'utilizzo di parentesi. 
+Se scriviamo $[\implies pq]$ al posto di $[p\implies q]$, $[\land pq]$ al posto di $[p\land q]$, $[\lor pq]$ al posto di $[p\lor q]$ e $[\equiv pq]$ al posto di $[p\equiv q]$ è possibile scrivere ogni formula ben formata in modo non ambiguo senza l'utilizzo di parentesi. 
 Questo tipo di sintassi è detta _notazione polacca_.
 
 Ad esempio, la formula $\neg p\land(q\implies\neg r)$ diventa $\land\neg p\implies q\neg r$ 
