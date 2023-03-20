@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -203,9 +202,10 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "83dcd8cc539dc72f",
   "lastOpenFiles": [
-    "Pasted image 20230320144011.png",
+    "Appunti LRL/Immagini",
+    "Appunti LRL/Immagini/Pasted image 20230320144011.png",
     "Appunti LRL/Lezione 2.md",
     "Appunti LRL/Lezione 3.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
@@ -226,7 +226,6 @@
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317163615.png",
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317163510.png",
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317163104.png",
-    "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317163034.png",
     "Appunti BSD/MOD II/Immagini",
     "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",

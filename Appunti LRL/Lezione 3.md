@@ -55,7 +55,8 @@ Osservate che tutte le formule dell’Esercizio 2 sono f.b.f. secondo la definiz
 **Esercizio 4**
 Per ognuna delle seguenti tabelle di verità, trovare una formula corrispondente
 
-![[Pasted image 20230320144011.png|center|300]]
+![[appunti lrl/immagini/Pasted image 20230320144011.png|center|300]]
+
 
 ## Tautologie, Contraddizioni, Contingenze
 
