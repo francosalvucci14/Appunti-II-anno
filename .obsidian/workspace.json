@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
+                "file": "Appunti LRL/Lezione 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "83dcd8cc539dc72f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti LRL/Lezione 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -109,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md"
+                "file": "Appunti LRL/Lezione 3.md"
               }
             }
           },
@@ -127,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
+                "file": "Appunti LRL/Lezione 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,10 +157,18 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
+                "file": "Appunti LRL/Lezione 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
+            }
+          },
+          {
+            "id": "fe82d76f5a9dd812",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ],
@@ -182,12 +203,15 @@
       "graph:Open graph view": false
     }
   },
-  "active": "388d6443360df21b",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Pasted image 20230320144011.png",
+    "Appunti LRL/Lezione 2.md",
+    "Appunti LRL/Lezione 3.md",
+    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti LMP/MOD II/Immagini/Pasted image 20230320111828.png",
     "Appunti LMP/MOD II/Immagini/Pasted image 20230320111706.png",
     "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
-    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
@@ -203,7 +227,6 @@
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317163510.png",
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317163104.png",
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317163034.png",
-    "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317162916.png",
     "Appunti BSD/MOD II/Immagini",
     "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
@@ -222,8 +245,6 @@
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Lezione 1.md",
     "Appunti FI/MOD II/Lezione 3.md",
-    "Appunti ASD/MOD II/Lezione 1 - Shortest Path.md",
-    "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
     "Appunti BSD/MOD II",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti LMP/MOD II/Immagini",
