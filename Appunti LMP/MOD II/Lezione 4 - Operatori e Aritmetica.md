@@ -141,3 +141,4 @@ sommatoria([1,2,3],X). --> X=6
 sommatoria([1,2,3],4). --> false
 sommatoria([1,2,3],6). --> true
 ```
+
