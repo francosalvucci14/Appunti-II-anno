@@ -57,7 +57,6 @@ Per ognuna delle seguenti tabelle di verità, trovare una formula corrispondente
 
 ![[appunti lrl/immagini/Pasted image 20230320144011.png|center|300]]
 
-
 ## Tautologie, Contraddizioni, Contingenze
 
 Sicuramente già si conoscono le formule di De Morgan. 
