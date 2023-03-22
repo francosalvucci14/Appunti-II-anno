@@ -102,4 +102,35 @@ Usiamo una foresta di alberi di altezza 1 per rappresentare gli insiemi disgiunt
 ![[appunti asd/mod ii/immagini/Pasted image 20230322103203.png|center|500]]
 
 
+#### Esempio
+
+![[appunti asd/mod ii/immagini/Pasted image 20230322153728.png|center|500]]
+
+Prima dell'esecuzione di union(2,3) : 
+
+![[appunti asd/mod ii/immagini/Pasted image 20230322154057.png|center|500]]
+
+Dopo l'esecuzione di union(2,3)
+
+![[appunti asd/mod ii/immagini/Pasted image 20230322154144.png|center|500]]
+
+![[appunti asd/mod ii/immagini/Pasted image 20230322154231.png|center|500]]
+
+Prima di union(4,2):
+
+![[appunti asd/mod ii/immagini/Pasted image 20230322154306.png|center|500]]
+
+Dopo union(4,2)
+
+![[appunti asd/mod ii/immagini/Pasted image 20230322154351.png|center|500]]
+
+Esecuzione di find(2) : 
+
+![[appunti asd/mod ii/immagini/Pasted image 20230322154430.png|center|500]]
+
+
+
+
+
+
 
