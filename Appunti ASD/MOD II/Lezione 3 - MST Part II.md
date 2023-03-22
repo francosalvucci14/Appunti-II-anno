@@ -105,6 +105,8 @@ For any visited node $u\in V$, update $O(deg(u))$ keys in Q $\implies\sum_udeg(u
 Each update costs $O(log (n))$ (using Heap)
 Total : $O(m\cdot log(n))$
 
+**Animation of operation**[^1]
+
 # Kruskal's Algorithm
 
 ## Proof of correctness
@@ -115,4 +117,21 @@ Total : $O(m\cdot log(n))$
 - Case 2 : Otherwise, insert **e = (u,v)** into T according to cut property where S = set of nodes in **u's connected component**
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230315101226.png|center|500]]
+
+## Implementation
+
+Use the **union-find** data structure (see [[Lezione 4 - Clustering et Union-Find]])
+- Build set T of edges in the MST
+- Maintain set for each connected component
+- $O(m\cdot\log(n))$ for sorting and $O(m\alpha(m,n))$ for $\underbrace{\text{union-find}}_{\text{essentially a constant}}$ 
+
+![[appunti asd/mod ii/immagini/Pasted image 20230322144319.png|center|500]]
+
+**Animation of operation**[^1]
+
+[^1]:Prim and Kruskal https://visualgo.net/en/mst (select the algorithm on website 😊 )
+
+
+
+
 
