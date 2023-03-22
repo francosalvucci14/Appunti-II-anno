@@ -61,3 +61,5 @@ Input del problema : Grafo connesso $G=(V=\{p_1,..,p_n\},E=V\times V\text{non or
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230322095427.png|center|300]]
 
+---
+# UnionFind
