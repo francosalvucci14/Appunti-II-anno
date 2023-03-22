@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "df555361acd01cd6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et UnionFind.md",
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et UnionFind.md"
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md"
               }
             }
           },
@@ -127,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et UnionFind.md",
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et UnionFind.md",
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,15 +149,17 @@
         "currentTab": 2
       },
       {
-        "id": "e22ab2b9568d9ff7",
+        "id": "0b6b055d9eef298d",
         "type": "tabs",
         "children": [
           {
-            "id": "ba16225b839127b5",
+            "id": "df555361acd01cd6",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "graph",
-              "state": {}
+              "state": {},
+              "pinned": true
             }
           }
         ]
@@ -190,10 +179,12 @@
       "graph:Open graph view": false
     }
   },
-  "active": "df555361acd01cd6",
+  "active": "388d6443360df21b",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
+    "Appunti RO/Lezione 1.md",
+    "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti ASD/MOD II/Lezione 4 - Clustering et UnionFind.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230322095427.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230322091519.png",
@@ -224,14 +215,12 @@
     "Appunti ASD/MOD II/Esercitazioni/Untitled.md",
     "Appunti ASD/MOD II/Esercitazioni/Immagini",
     "Appunti BSD/MOD II/Immagini",
-    "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
-    "Appunti ASD/MOD I/Lezione 1 - Capitolo 1.md",
     "Appunti ASD/MOD II/Esercitazioni",
     "Appunti BSD/MOD II",
     "Appunti ASD/Algoritmo_Es3.pdf",
