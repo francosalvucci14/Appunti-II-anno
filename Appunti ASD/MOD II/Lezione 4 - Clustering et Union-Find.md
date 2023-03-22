@@ -71,3 +71,12 @@ Mantenere una **_collezione di insiemi disgiunti_** contenenti elementi distinti
 - **union(A,B)** = unisce gli insiemi A e B in un univo insieme, di nome A, e distrugge i vecchi insiemi A e B (si suppone di accedere direttamente agli insiemi A,B)
 - **find(x)** = restituisce il nome dell'insieme contenente l'elemento x (si suppone di accedere **direttamente** all'elemento x) 
 
+**Esempio**
+
+![[appunti asd/mod ii/immagini/Pasted image 20230322101856.png|center|500]]
+
+n=6
+L'elemento in **grassetto** da il nome all'insieme
+
+D: Se ho n elementi, quante union posso fare al più?
+R : n-1
