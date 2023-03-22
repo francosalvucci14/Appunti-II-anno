@@ -68,7 +68,7 @@ Input del problema : Grafo connesso $G=(V=\{p_1,..,p_n\},E=V\times V\text{non or
 
 Mantenere una **_collezione di insiemi disgiunti_** contenenti elementi distinti di un insieme (universo) U permettendo sequenze di operazioni del seguente tipo : 
 - **makeSet(x)** = crea il nuovo insieme $x=\{x\}$
-- **union(A,B)** = unisce gli insiemi A e B in un univo insieme, di nome A, e distrugge i vecchi insiemi A e B (si suppone di accedere direttamente agli insiemi A,B)
+- **union(A,B)** = unisce gli insiemi A e B in un unico insieme, di nome A, e distrugge i vecchi insiemi A e B (si suppone di accedere direttamente agli insiemi A,B)
 - **find(x)** = restituisce il nome dell'insieme contenente l'elemento x (si suppone di accedere **direttamente** all'elemento x) 
 
 **Esempio**

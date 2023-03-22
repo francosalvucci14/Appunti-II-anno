@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md"
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,14 +179,15 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "388d6443360df21b",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230322144319.png",
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
-    "Appunti CPS/Lezione 1.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230322144319.png",
+    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
+    "Appunti CPS/Lezione 1.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230322103203.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230322103123.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230322101856.png",
@@ -210,7 +211,6 @@
     "Appunti LRL/Immagini/Pasted image 20230320182234.png",
     "Appunti LRL/Lezione 2.md",
     "Appunti LRL/Immagini",
-    "Appunti LRL/Immagini/Pasted image 20230320144011.png",
     "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
     "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
