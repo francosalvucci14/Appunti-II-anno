@@ -35,6 +35,8 @@
 
 soluzione ammissibile  : dati i cluster definire una k partizione di questi punti (una qualunque k partizione dei cluster iniziali)
 
+Input del problema : Grafo connesso $G=(V=\{p_1,..,p_n\},E=V\times V\text{non ordinati})$   
+
 ## Greedy Clustering Algorithm
 
 **Single-link k-Clustering algorithm**
