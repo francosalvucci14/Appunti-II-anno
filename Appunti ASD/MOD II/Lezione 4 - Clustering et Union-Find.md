@@ -44,7 +44,7 @@ Input del problema : Grafo connesso $G=(V=\{p_1,..,p_n\},E=V\times V\text{non or
 - Find the **closest** pair (edge) of objects $(p,p')$ such that $p\:\&\:p'$ <u>are not in the same cluster</u>, and add **an edge** between them: so merging 2 clusters
 - Repeat **n-k** times until there are exactly k clusters
 
-**Key Obs 1** : This procedure is precisely Kruskal's Algorithm (exceot we stop when there are k connceted components)
+**Key Obs 1** : This procedure is precisely Kruskal's Algorithm (except we stop when there are k connceted components)
 
 **Key Obs 2** : Equivalent to finding an MST T and deleting the k-1 most expensive edges from T (thus forming k connetcet components)
 
