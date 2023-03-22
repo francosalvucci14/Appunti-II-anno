@@ -41,7 +41,7 @@ Input del problema : Grafo connesso $G=(V=\{p_1,..,p_n\},E=V\times V\text{non or
 
 **Single-link k-Clustering algorithm**
 - Form a graph on the vertex set U, corresponding to n clusters
-- Find the **closest** pair (edge) of objects $(p,p')$ such that $p\:\&\:p'$ <u>are not in the same cluster</u>, and add **an edge** between them: spo merging 2 clusters
+- Find the **closest** pair (edge) of objects $(p,p')$ such that $p\:\&\:p'$ <u>are not in the same cluster</u>, and add **an edge** between them: so merging 2 clusters
 - Repeat **n-k** times until there are exactly k clusters
 
 **Key Obs 1** : This procedure is precisely Kruskal's Algorithm (exceot we stop when there are k connceted components)
