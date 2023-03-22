@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md"
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
+                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,10 +179,10 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "388d6443360df21b",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
+    "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230322103203.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230322103123.png",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
