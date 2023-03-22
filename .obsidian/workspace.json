@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "df555361acd01cd6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 5.md"
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering.md"
               }
             }
           },
@@ -114,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 5.md",
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 5.md",
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +159,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "e22ab2b9568d9ff7",
@@ -177,13 +190,17 @@
       "graph:Open graph view": false
     }
   },
-  "active": "388d6443360df21b",
+  "active": "df555361acd01cd6",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230322095427.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230322091519.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230322090332.png",
+    "Appunti FI/MOD II/Lezione 5.md",
+    "Appunti ASD/MOD II/Lezione 4 - Clustering.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230321134121.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230321134008.png",
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Lezione 3.md",
-    "Appunti FI/MOD II/Lezione 5.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Lezione 4.md",
     "Appunti LMP/MOD II/Indice delle lezioni LMP MOD 2.md",
@@ -205,9 +222,6 @@
     "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317174656.png",
     "Appunti ASD/MOD II/Esercitazioni/Untitled.md",
     "Appunti ASD/MOD II/Esercitazioni/Immagini",
-    "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317164607.png",
-    "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317164323.png",
-    "Appunti ASD/MOD II/Esercitazioni/Immagini/Pasted image 20230317163615.png",
     "Appunti BSD/MOD II/Immagini",
     "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
@@ -219,7 +233,6 @@
     "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
     "Appunti ASD/MOD I/Lezione 1 - Capitolo 1.md",
     "Appunti ASD/MOD II/Esercitazioni",
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti BSD/MOD II",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti LMP/MOD II/Immagini",
