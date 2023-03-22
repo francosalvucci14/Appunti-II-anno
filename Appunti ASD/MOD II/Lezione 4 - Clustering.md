@@ -18,7 +18,7 @@
 
 ## Clustering of Maximum Spacing
 
-**k-clustering** : Divide objects into k non-empty groups
+**k-Clustering** : Divide objects into k non-empty groups
 
 **Distance function**. Assume it satisfies several natural properties
 - $d(p_i,p_j)=0\iff p_i=p_j$ (identity of indiscernibles)
@@ -28,7 +28,7 @@
 >[!definition]- Definition (Spacing)
 >Min distance between any pair of points in different clusters
 
-**Clustering of maximum spacing** : Given an integer k, find a k-clustering of _**maximum spacing**_
+**Clustering of maximum spacing** : Given an integer k, find a k-Clustering of _**maximum spacing**_
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230322091519.png|center|500]]
 
