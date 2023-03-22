@@ -1,4 +1,5 @@
 - [[Lezione 1 - Shortest Path]]
 - [[Lezione 2 - Minimum Spanning Tree]]
 -  [[Lezione 3 - MST Part II]]
+- [[Lezione 4 - Clustering]]
 - 
