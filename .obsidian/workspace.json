@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md"
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+                "file": "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,8 +181,10 @@
   },
   "active": "388d6443360df21b",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
+    "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
+    "Appunti CPS/Lezione 1.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+    "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230322103203.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230322103123.png",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
@@ -219,7 +221,6 @@
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
-    "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/MOD II/Esercitazioni",
     "Appunti BSD/MOD II",
     "Appunti ASD/Algoritmo_Es3.pdf",

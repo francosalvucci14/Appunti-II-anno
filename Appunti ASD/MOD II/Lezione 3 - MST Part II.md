@@ -105,8 +105,6 @@ For any visited node $u\in V$, update $O(deg(u))$ keys in Q $\implies\sum_udeg(u
 Each update costs $O(log (n))$ (using Heap)
 Total : $O(m\cdot log(n))$
 
-[Prism Algorithm](C:\Users\franc\Videos\2023-03-22 11-20-33.mkv) 
-
 # Kruskal's Algorithm
 
 ## Proof of correctness
