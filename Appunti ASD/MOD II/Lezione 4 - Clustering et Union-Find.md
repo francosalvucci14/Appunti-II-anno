@@ -80,3 +80,26 @@ L'elemento in **grassetto** da il nome all'insieme
 
 D: Se ho n elementi, quante union posso fare al più?
 R : n-1
+
+**Idea generale** : Rappresentare gli insiemi disgiunti con una foresta
+
+Ogni insieme è un **albero radicato**
+
+La **radice** contiene il nome dell'**insieme** (elemento rappresentativo)
+
+### Alberi QuickFind
+
+Usiamo una foresta di alberi di altezza 1 per rappresentare gli insiemi disgiunti. In ogni albero : 
+- Radice = nome dell'insieme
+- Foglie = elementi (incluso l'elemento rappresentativo, il cui valore è nella radice e da il nome all'insieme)
+
+#### Realizzazione (1/2)
+
+![[appunti asd/mod ii/immagini/Pasted image 20230322103123.png|center|500]]
+
+#### Realizzazione (2/2)
+
+![[appunti asd/mod ii/immagini/Pasted image 20230322103203.png|center|500]]
+
+
+
