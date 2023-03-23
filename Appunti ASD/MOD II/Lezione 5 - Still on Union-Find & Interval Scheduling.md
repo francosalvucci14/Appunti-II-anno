@@ -70,3 +70,28 @@ Osserviamo ora che ogni nodo può cambiare al più $O(\log{n})$ padri, poichè o
 Il tempo speso per un singolo nodo sull'intera sequenza di n union è $O(\log{n})$
 L'intera sequenza di operazioni costa
 $$O(m+n+n\cdot\log{n})=O(m+n\cdot\log{n})$$
+---
+
+# Interval Scheduling
+
+**Interval Scheduling**. Istance $I=\{I_1,\dots I_n\}$
+- Job starts at time $s_j$ and finishes at time $f_j\implies I_j=(s_j,f_j)$
+- Two jobs are **compatible** if they don't _**overlap**_
+- **Goal** : find _**maximum**_ subset A of mutually compatible jobs
+
+![[appunti asd/mod ii/immagini/Pasted image 20230323151649.png|center|500]]
+
+## Interval Scheduling : Greedy Algorithms
+
+**Greedy template**
+1. Consider all jobs in some fixed _order_ : Set A $\coloneqq\emptyset$ 
+2. For each $j=1,\dots,n$, if $I_j$ is **compatible** with all jobs in A **THEN include** $I_j$ in A
+
+**Possible Ordering Criteria**
+
+- $[\text{Earliest start time}]$ Consider jobs in ascending order of $s_j$
+- $[\text{Earliest finish time}]$ Consider jobs in ascending order of $f_j$
+- $[\text{Shortest interval}]$ Consider jobs in ascending order of $f_j-s_j$
+- $[\text{Fewest conflicts}]$ For each job j, count the **number of conflicting jobs** $c_j$. Schedule in ascending order of $c_j$
+
+ 

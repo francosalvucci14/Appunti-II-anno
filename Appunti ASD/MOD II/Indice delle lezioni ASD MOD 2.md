@@ -2,5 +2,5 @@
 - [[Lezione 2 - Minimum Spanning Tree]]
 - [[Lezione 3 - MST Part II]]
 - [[Lezione 4 - Clustering et Union-Find]]
-- [[Lezione 5 - Still on Union-Find]]
+- [[Lezione 5 - Still on Union-Find & Interval Scheduling]]
 - 
