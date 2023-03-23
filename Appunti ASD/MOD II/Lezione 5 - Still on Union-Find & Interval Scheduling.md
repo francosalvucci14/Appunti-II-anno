@@ -81,6 +81,12 @@ $$O(m+n+n\cdot\log{n})=O(m+n\cdot\log{n})$$
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230323151649.png|center|500]]
 
+>[!definition]- In modo formale
+>- Istanza : $I=\{(s_1,f_1),\dots(s_i,f_i)\}\space s_i,f_i\in\mathbb N$
+>- Soluzione ammissibile : un qualunque sottoinsieme $J\subseteq I$
+>- Soluzione ottima : $J:\forall i\neq j\in J\implies (s_i,f_i)\space compatibile\space con (s_j,f_j)$
+>$(s_i,f_i)-(s_j,f_j)$ sono compatibili se $(s_i,f_i)\cap(s_j,f_j)=\emptyset$
+
 ## Interval Scheduling : Greedy Algorithms
 
 **Greedy template**
