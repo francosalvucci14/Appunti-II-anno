@@ -67,6 +67,6 @@ Osserviamo ora che ogni nodo può cambiare al più $O(\log{n})$ padri, poichè o
 - poi se cambia padre in un insieme di dimensione almeno 2,
 - all'i-esimo cambio è in un insieme di dimensione almeno $2^i$
 
-Il tempo speso per un singolo nodo sull'itenra sequenza di n union è $O(\log{n})$
+Il tempo speso per un singolo nodo sull'intera sequenza di n union è $O(\log{n})$
 L'intera sequenza di operazioni costa
 $$O(m+n+n\cdot\log{n})=O(m+n\cdot\log{n})$$
