@@ -130,7 +130,3 @@ Esecuzione di find(2) :
 
 
 
-
-
-
-
