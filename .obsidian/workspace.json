@@ -25,25 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "597612ee361e4b27",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/MOD II/Lezione 5.md",
+                "file": "Appunti FI/MOD II/Lezione 7.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -121,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 6.md"
+                "file": "Appunti FI/MOD II/Lezione 7.md"
               }
             }
           },
@@ -139,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 6.md",
+                "file": "Appunti FI/MOD II/Lezione 7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 6.md",
+                "file": "Appunti FI/MOD II/Lezione 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +159,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0b6b055d9eef298d",
@@ -204,11 +192,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "e1826d218388b5f1",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Immagini/Pasted image 20230328165541.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230328165502.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230328165336.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230328164932.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230328164905.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230328164835.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230328164147.png",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
-    "Appunti FI/MOD II/Lezione 6.md",
     "Appunti FI/MOD II/Lezione 5.md",
+    "Appunti FI/MOD II/Lezione 6.md",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
     "Appunti LRL/Lezione 4.md",
     "Appunti FI/MOD II/Lezione 7.md",
@@ -223,14 +218,8 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230323144810.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230323143957.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230323143926.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230323143901.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230323143743.png",
-    "Pasted image 20230323143622.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230323143648.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230323142952.png",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230322154430.png",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti CPS/Lezione 1.md",
     "Appunti RO/Lezione 1.md",
@@ -242,7 +231,6 @@
     "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
     "Appunti LRL/Lezione 2.md",
     "Appunti LRL/Immagini",
-    "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
     "Appunti ASD/MOD II/Esercitazioni/Immagini",
     "Appunti BSD/MOD II/Immagini",
