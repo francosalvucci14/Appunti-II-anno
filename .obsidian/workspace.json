@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 3.md",
+                "file": "Appunti FI/MOD II/Lezione 6.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4af9865a275b6232",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 4.md"
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md"
               }
             }
           },
@@ -139,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 4.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 4.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,10 +216,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "4af9865a275b6232",
   "lastOpenFiles": [
-    "test.md",
+    "Appunti FI/MOD II/Lezione 7.md",
+    "Appunti FI/MOD II/Lezione 6.md",
     "Appunti LRL/Lezione 3.md",
+    "test.md",
     "Appunti LRL/Lezione 4.md",
     "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
@@ -222,7 +236,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230323143648.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230323142952.png",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti FI/MOD II/Lezione 6.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230322154430.png",
@@ -242,7 +255,6 @@
     "Appunti LRL/Immagini",
     "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
     "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
-    "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
     "Appunti ASD/MOD II/Esercitazioni/Immagini",
     "Appunti BSD/MOD II/Immagini",
