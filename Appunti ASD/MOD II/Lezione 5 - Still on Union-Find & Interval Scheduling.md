@@ -138,3 +138,11 @@ Let $j_1, j_2, \dots j_m$ denote set of jobs in **any** solution (ordered w.r.t.
 >$$f(i_r)\leq f(j_r)$$
 >Proof. By induction on r. r =1 is trivial.
 
+### Analysis
+
+![[appunti asd/mod ii/immagini/Pasted image 20230329091418.png|center]]
+
+![[appunti asd/mod ii/immagini/Pasted image 20230329091444.png|center]]
+
+So, we have an **optimal** greedy algorithm for Interval Scheduling that run in time $O(n\log n)$ 
+
