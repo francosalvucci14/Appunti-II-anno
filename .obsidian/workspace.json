@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4af9865a275b6232",
+            "id": "dd762c285efb1fb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b03071e4138113ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
+                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md"
+                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md"
               }
             }
           },
@@ -127,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
+                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
+                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,12 +179,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b03071e4138113ad",
+  "active": "dd762c285efb1fb8",
   "lastOpenFiles": [
+    "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md",
+    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
+    "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
+    "Appunti LMP/MOD II/Esercitazioni",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329102814.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329100745.png",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
-    "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329095349.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329094927.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329093504.png",
@@ -207,7 +197,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329090857.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329090809.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329090727.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230329090642.png",
     "Appunti FI/MOD II/Lezione 6.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti FI/MOD II/Lezione 5.md",
@@ -229,7 +218,6 @@
     "Appunti LMP/MOD II/Indice delle lezioni LMP MOD 2.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
-    "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
     "Appunti ASD/MOD II/Esercitazioni/Immagini",
@@ -238,7 +226,6 @@
     "Appunti BSD/MOD II",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti LMP/MOD II/Immagini",
-    "Appunti ASD/MOD II/Immagini",
-    "Appunti ASD/MOD II"
+    "Appunti ASD/MOD II/Immagini"
   ]
 }
