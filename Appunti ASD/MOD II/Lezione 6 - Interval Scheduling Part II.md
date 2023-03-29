@@ -49,11 +49,21 @@ a, b, c all contain 9:30 (depth of 9.30 = 3)
 **Implementation**. 
 - Time = $O(n\log n)$
 - For each classroom k, maintain the finish time of the last job added.
-- Keep the classrooms in a _priority queue._
+- Keep the classrooms in a _priority queue._ (use Heap)
 
 ### Analysis
 
+**Observation**. Greedy algorithm **never** schedules two incompatible lectures in the same classroom.
 
+**Theorem.** Greedy algorithm is _**optimal.**_
+Pf.
+1. Let d = number of classrooms that the greedy algorithm allocates.
+2. Classroom d is opened because we needed to schedule a job, say _j_, that is **incompatible** with all d-1 other classrooms (i.e. d-1 jobs)
+3. These d jobs, **each must** end after $s_j$. (since they are incompatible with j)
+4. Since we sorted by start time, all these incompatibilities are caused by jobs that _start no later than $s_j$._
+5. Thus, we have d jobs overlapping at time $s_j+\varepsilon$.
+6. Key observation (Lower Bound) $\implies$ all schedules use $\geq d$ classrooms.
 
+![[appunti asd/mod ii/immagini/Pasted image 20230329102814.png|center|550]]
 
 
