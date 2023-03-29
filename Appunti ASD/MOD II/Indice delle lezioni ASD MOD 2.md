@@ -3,4 +3,5 @@
 - [[Lezione 3 - MST Part II]]
 - [[Lezione 4 - Clustering et Union-Find]]
 - [[Lezione 5 - Still on Union-Find & Interval Scheduling]]
+- [[Lezione 6 - Interval Scheduling Part II]]
 - 

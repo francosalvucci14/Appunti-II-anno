@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b03071e4138113ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md"
+                "file": "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md"
               }
             }
           },
@@ -114,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
+                "file": "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
+                "file": "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,8 +192,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4af9865a275b6232",
+  "active": "b03071e4138113ad",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230329095349.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230329094927.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230329093504.png",
+    "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
+    "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
+    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329091444.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329091418.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329090857.png",
@@ -190,12 +209,8 @@
     "Appunti FI/MOD II/Lezione 6.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230328165541.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230328165502.png",
-    "Appunti FI/MOD II/Immagini/Pasted image 20230328165336.png",
-    "Appunti FI/MOD II/Immagini/Pasted image 20230328164932.png",
-    "Appunti FI/MOD II/Immagini/Pasted image 20230328164905.png",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti FI/MOD II/Lezione 5.md",
-    "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
     "Appunti LRL/Lezione 4.md",
     "Appunti FI/MOD II/Lezione 7.md",
     "Appunti FI/MOD II/Lezione 3.md",
@@ -205,7 +220,6 @@
     "test.md",
     "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
-    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti CPS/Lezione 1.md",
@@ -216,7 +230,6 @@
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
-    "Appunti LRL/Lezione 2.md",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
     "Appunti ASD/MOD II/Esercitazioni/Immagini",
