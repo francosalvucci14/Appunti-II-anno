@@ -100,4 +100,41 @@ $$O(m+n+n\cdot\log{n})=O(m+n\cdot\log{n})$$
 - $[\text{Shortest interval}]$ Consider jobs in ascending order of $f_j-s_j$
 - $[\text{Fewest conflicts}]$ For each job j, count the **number of conflicting jobs** $c_j$. Schedule in ascending order of $c_j$
 
- 
+**Greedy template**: Consider jobs in some natural order. Take each job provided it's compatible with the ones already taken.
+
+Greedy 1: Earliest Start Time
+Does it work ?
+
+1st Step of Problem Solvers: Find bad situations for the Algorithm.
+
+![[appunti asd/mod ii/immagini/Pasted image 20230329090642.png|center]]
+
+Greedy 2: Shortest Interval
+Bad Situations ???
+
+![[appunti asd/mod ii/immagini/Pasted image 20230329090727.png|center]]
+
+Greedy 3: FEWEST CONFLICTS
+**IDEA**: Use GRAPH MODELLING;
+
+Which is the problem in terms of GRAPHS?
+
+![[appunti asd/mod ii/immagini/Pasted image 20230329090809.png|center]]
+
+**Greedy 4.** Consider jobs in increasing order of finish time. Take each job provided it's compatible with the ones already taken.
+
+![[appunti asd/mod ii/immagini/Pasted image 20230329090857.png|center|550]]
+
+**Implementation**. 
+- TIME= $O(n\log n)$.
+- Remember job $j^\star$ that was added last to A.
+- Job j is compatible with A $\iff$ $s_j\geq f_{j^\star}$.
+
+Let $i_1, i_2,\dots i_k$denote set A of jobs selected by _Greedy_.
+Let $j_1, j_2, \dots j_m$ denote set of jobs in **any** solution (ordered w.r.t. finish time).
+
+>[!definition]- Lemma 1 (Greedy Stays Ahead)
+>For any $r = 1,\dots, k$ it holds
+>$$f(i_r)\leq f(j_r)$$
+>Proof. By induction on r. r =1 is trivial.
+
