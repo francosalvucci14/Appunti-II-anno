@@ -66,4 +66,3 @@ Pf.
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230329102814.png|center|550]]
 
-

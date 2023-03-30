@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "407e4bf2f0ed4330",
+            "id": "11486def63fbd1a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md"
+                "file": "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
+                "file": "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
+                "file": "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0b6b055d9eef298d",
@@ -204,12 +204,22 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "dd762c285efb1fb8",
+  "active": "11486def63fbd1a1",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
-    "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230330154331.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230330153625.png",
+    "Pasted image 20230330153546.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230330153149.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230330152718.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230330152006.png",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230330143531.png",
+    "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230330150437.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230330150421.png",
+    "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230330150126.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230308092458.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230330145755.png",
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Lezione 4.md",
     "Appunti FI/MOD II/Lezione 8.md",
@@ -221,16 +231,7 @@
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md",
     "Appunti LMP/MOD II/Esercitazioni",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230329102814.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230329100745.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230329095349.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230329094927.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230329093504.png",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230329091444.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230329091418.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230329090857.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230329090809.png",
     "Appunti FI/MOD II/Lezione 6.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti FI/MOD II/Lezione 5.md",
