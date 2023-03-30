@@ -66,3 +66,13 @@ Pf.
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230329102814.png|center|550]]
 
+**Esercizio 1 pg 183**
+
+DON’T READ THE SOLUTION on THE BOOK !
+
+Follow this process:
+1. Read the text and give a rigorous model for the instance and the goal
+2. Describe a clear GREEDY APPROACH
+3. Use «GREEDY STAYS AHEAD’’ to prove optimality in a way similar to Interval Scheduling
+	1. Try to FORMALIZE A USEFUL LEMMA similar to LEMMA 1 there
+

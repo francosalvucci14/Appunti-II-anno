@@ -105,4 +105,12 @@ If $b \gt f'$ then for some consecutive c’, c’’ it must holds $c' \gt c''$
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230330154331.png]]
 
+**Esercizio 2 pg 185**
+
+BUYING ITEMS OF INCREASING COSTS
+DO AS HOMEWORK!
+HINTS: DON’T LOOK AT THE BOOK, TRY GREEDY SOLUTIONS,
+and PROVE :
+• INVERSIONS in the good greedy ORDERING imply CONTRADICTIONS
+• How prove CONTRADICTIONS? exchange argument
 
