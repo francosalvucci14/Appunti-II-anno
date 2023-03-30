@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 7.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 7.md"
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 7.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 7.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "0b6b055d9eef298d",
@@ -181,6 +181,7 @@
   },
   "active": "dd762c285efb1fb8",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 7.md",
     "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
     "Appunti FI/MOD II/Lezione 8.md",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
@@ -205,7 +206,6 @@
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti FI/MOD II/Lezione 5.md",
     "Appunti LRL/Lezione 4.md",
-    "Appunti FI/MOD II/Lezione 7.md",
     "Appunti FI/MOD II/Lezione 3.md",
     "Appunti FI/MOD II/Lezione 4.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
