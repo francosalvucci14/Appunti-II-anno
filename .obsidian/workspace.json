@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 8.md",
+                "file": "Appunti LRL/Indice delle lezioni LRL.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 8.md"
+                "file": "Appunti LRL/Indice delle lezioni LRL.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 8.md",
+                "file": "Appunti LRL/Indice delle lezioni LRL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 8.md",
+                "file": "Appunti LRL/Indice delle lezioni LRL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0b6b055d9eef298d",
@@ -179,12 +179,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "dd762c285efb1fb8",
   "lastOpenFiles": [
+    "Appunti LRL/Lezione 4.md",
+    "Appunti FI/MOD II/Lezione 8.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Lezione 7.md",
     "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
-    "Appunti FI/MOD II/Lezione 8.md",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
     "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
@@ -206,7 +207,6 @@
     "Appunti FI/MOD II/Lezione 6.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti FI/MOD II/Lezione 5.md",
-    "Appunti LRL/Lezione 4.md",
     "Appunti FI/MOD II/Lezione 3.md",
     "Appunti FI/MOD II/Lezione 4.md",
     "Appunti LRL/Lezione 3.md",
