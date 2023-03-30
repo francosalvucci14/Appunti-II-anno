@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
+                "file": "Appunti FI/MOD II/Lezione 7.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md"
+                "file": "Appunti FI/MOD II/Lezione 7.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
+                "file": "Appunti FI/MOD II/Lezione 7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
+                "file": "Appunti FI/MOD II/Lezione 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0b6b055d9eef298d",
@@ -181,13 +181,17 @@
   },
   "active": "dd762c285efb1fb8",
   "lastOpenFiles": [
-    "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md",
-    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
+    "Appunti FI/MOD II/Lezione 8.md",
+    "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
+    "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
+    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
+    "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
+    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
+    "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329102814.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329100745.png",
-    "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329095349.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329094927.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230329093504.png",
@@ -207,7 +211,6 @@
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LRL/Lezione 3.md",
     "test.md",
-    "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
@@ -215,9 +218,6 @@
     "Appunti RO/Lezione 1.md",
     "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti LRL/Indice delle lezioni LRL.md",
-    "Appunti LMP/MOD II/Indice delle lezioni LMP MOD 2.md",
-    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
-    "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
     "Appunti ASD/MOD II/Esercitazioni/Immagini",
