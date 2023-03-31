@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md"
+                "file": "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
+                "file": "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
+                "file": "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,11 +204,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "0a688dc274804b26",
+  "active": "a71ce7f07673fd79",
   "lastOpenFiles": [
+    "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
     "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
     "Appunti LRL/Lezione 2.md",
-    "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
     "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
     "Appunti LRL/Lezione 1.md",
     "Appunti LRL/Indice delle lezioni LRL.md",

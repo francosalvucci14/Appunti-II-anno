@@ -56,6 +56,8 @@ con due “rami”, uno con $\beta_1$ e l’altro con $\beta_2$
 ![[appunti lrl/immagini/Pasted image 20230331153931.png|center|300]]
 **Esercizi da 2 a 7**
 
+[^1]: Per esempio, qui trovate un prover pronto all’uso: https://www.umsu.de/trees/
+
 # Conclusioni
 
 In questo episodio abbiamo studiato un metodo automatico per costruire un albero (ta-  
