@@ -38,3 +38,29 @@ Quindi non esiste nessuna interpretazione che renda la (1) vera. Perciò tutte l
 
 ## Le regole del gioco
 
+Nell’ esempio visto in dettaglio nella sezione precedente, abbiamo costruito un “albero” (il  
+tableaux) in cui, scendendo dalla radice $\neg\mathcal F$ alle foglie troviamo via via formule con meno  
+simboli, fino ad arrivare a formule che sono o variabili o variabili negate. Ogni volta che  
+abbiamo “sviluppato” una formula in formule più semplici, l’abbiamo fatto preservandone  
+la soddisfacibilità (l’esistenza di interpretazioni che rendono vere le formule).
+
+Cerchiamo ora di derivare le regole che ci consentono di costruire “meccanicamente”  
+un tableaux come quello della sezione precedente per ogni formula $\mathcal F$, in modo da poter  
+eventualmente istruire un computer a farlo per noi.[^1]  
+Osserviamo che ogni formula ben formata $\mathcal F$ che non è una variabile o una variabile negata è sempre, tranne un paio di casi particolari, equivalente all’AND di due formule o all’OR di due formule. 
+
+Per esempio, $\mathcal F_1\implies\mathcal F_2$ è equivalente a $\neg\mathcal F_1\lor\mathcal F_2$ mentre $\neg(\mathcal F_1 \implies \mathcal F_2)$ è equivalente a $\mathcal F_1\land\neg\mathcal F_2$.  
+
+Nella costruzione del tableaux si procede come segue: se abbiamo una formula $\alpha$ equivalente all’AND di due formule $\alpha_1\land\alpha_2$, la sostituiamo con $\alpha_1$ e $\alpha_2$, messe una sotto l’altra,  
+mentre se abbiamo una formula $\beta$ equivalente all’OR di due formule $\beta_1\lor\beta_2$, la sostuiamo  
+con due “rami”, uno con $\beta_1$ e l’altro con $\beta_2$
+
+![[appunti lrl/immagini/Pasted image 20230331153931.png|center|300]]
+**Esercizi da 2 a 7**
+
+## Conclusioni
+
+In questo episodio abbiamo studiato un metodo automatico per costruire un albero (ta-  
+bleau) a partire da una formula $\neg\mathcal F$ della logica proposizionale. 
+
+Siccome ogni volta che applichiamo una regola otteniamo formule con meno simboli, il metodo termina sempre dopo un numero finito di applicazioni delle regole. Abbiamo definito una formula $\mathcal F$ dimostrabile con il metodo dei tableaux se, quando non ci sono più formule a cui appplicare le regole, il tableaux risultante a partire da $\mathcal F$ ha tutti i rami chiusi.
