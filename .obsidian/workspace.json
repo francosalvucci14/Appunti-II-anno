@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 4.md",
+                "file": "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md"
+                "file": "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md"
               }
             }
           },
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,8 +206,12 @@
   },
   "active": "0a688dc274804b26",
   "lastOpenFiles": [
-    "Appunti LRL/Lezione 5.md",
-    "Appunti LRL/Lezione 4.md",
+    "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
+    "Appunti LRL/Lezione 2.md",
+    "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
+    "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
+    "Appunti LRL/Lezione 1.md",
+    "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Immagini/Pasted image 20230331153931.png",
     "Appunti LRL/Immagini/Pasted image 20230331151140.png",
     "Appunti LRL/Immagini/Pasted image 20230331150946.png",
@@ -221,7 +225,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230330153625.png",
     "Pasted image 20230330153546.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230330153149.png",
-    "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti FI/MOD II/Lezione 8.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Lezione 7.md",
@@ -237,12 +240,9 @@
     "Appunti FI/MOD II/Lezione 5.md",
     "Appunti FI/MOD II/Lezione 3.md",
     "Appunti FI/MOD II/Lezione 4.md",
-    "Appunti LRL/Lezione 3.md",
     "test.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
-    "Appunti CPS/Lezione 1.md",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
     "Appunti ASD/MOD II/Esercitazioni/Immagini",

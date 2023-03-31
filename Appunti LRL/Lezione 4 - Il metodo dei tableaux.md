@@ -1,7 +1,5 @@
 
-# Il metodo dei tableaux
-
-## Antipasto
+# Antipasto
 
 Sia $\mathcal F$ la formula seguente
 $$((p\land q)\implies r)\implies(\neg p\lor(q\implies r))$$
@@ -36,7 +34,7 @@ Quindi non esiste nessuna interpretazione che renda la (1) vera. Perciò tutte l
 
 **Esercizio 1**
 
-## Le regole del gioco
+# Le regole del gioco
 
 Nell’ esempio visto in dettaglio nella sezione precedente, abbiamo costruito un “albero” (il  
 tableaux) in cui, scendendo dalla radice $\neg\mathcal F$ alle foglie troviamo via via formule con meno  
@@ -58,7 +56,7 @@ con due “rami”, uno con $\beta_1$ e l’altro con $\beta_2$
 ![[appunti lrl/immagini/Pasted image 20230331153931.png|center|300]]
 **Esercizi da 2 a 7**
 
-## Conclusioni
+# Conclusioni
 
 In questo episodio abbiamo studiato un metodo automatico per costruire un albero (ta-  
 bleau) a partire da una formula $\neg\mathcal F$ della logica proposizionale. 
