@@ -64,3 +64,5 @@ In questo episodio abbiamo studiato un metodo automatico per costruire un albero
 bleau) a partire da una formula $\neg\mathcal F$ della logica proposizionale. 
 
 Siccome ogni volta che applichiamo una regola otteniamo formule con meno simboli, il metodo termina sempre dopo un numero finito di applicazioni delle regole. Abbiamo definito una formula $\mathcal F$ dimostrabile con il metodo dei tableaux se, quando non ci sono più formule a cui appplicare le regole, il tableaux risultante a partire da $\mathcal F$ ha tutti i rami chiusi.
+
+
