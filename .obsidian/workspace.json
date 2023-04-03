@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "11486def63fbd1a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a71ce7f07673fd79",
             "type": "leaf",
             "state": {
@@ -37,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
+                "file": "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md"
+                "file": "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md"
               }
             }
           },
@@ -139,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
+                "file": "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,23 +138,15 @@
             }
           },
           {
-            "id": "ec7cfaa2fc176753",
+            "id": "53ac7922386be373",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
+                "file": "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
-            }
-          },
-          {
-            "id": "fe82d76f5a9dd812",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
             }
           }
         ],
@@ -204,16 +183,22 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "acd002c7f705cc3c",
+  "active": "a71ce7f07673fd79",
   "lastOpenFiles": [
-    "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
     "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
-    "Appunti LRL/Immagini/Pasted image 20230331160524.png",
-    "Appunti LRL/Immagini/Pasted image 20230331160114.png",
-    "Appunti LRL/Immagini/Pasted image 20230331155648.png",
+    "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
+    "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
+    "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
+    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
+    "Appunti FI/MOD II/Lezione 8.md",
+    "Appunti FI/MOD II/Lezione 7.md",
+    "Appunti FI/MOD II/Lezione 6.md",
     "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
     "Appunti LRL/Lezione 2.md",
     "Appunti LRL/Lezione 1.md",
+    "Appunti LRL/Immagini/Pasted image 20230331160524.png",
+    "Appunti LRL/Immagini/Pasted image 20230331160114.png",
+    "Appunti LRL/Immagini/Pasted image 20230331155648.png",
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Immagini/Pasted image 20230331153931.png",
     "Appunti LRL/Immagini/Pasted image 20230331151140.png",
@@ -225,23 +210,18 @@
     "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230330154331.png",
-    "Appunti FI/MOD II/Lezione 8.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
-    "Appunti FI/MOD II/Lezione 7.md",
     "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
-    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti LMP/MOD II/Lezione 2 - Il primo passo.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti FI/MOD II/Lezione 6.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Appunti FI/MOD II/Lezione 5.md",
     "Appunti FI/MOD II/Lezione 3.md",
     "Appunti FI/MOD II/Lezione 4.md",
     "test.md",
-    "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
     "Appunti ASD/MOD II/Esercitazioni/Immagini",

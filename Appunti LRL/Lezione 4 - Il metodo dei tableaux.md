@@ -56,6 +56,10 @@ con due “rami”, uno con $\beta_1$ e l’altro con $\beta_2$
 ![[appunti lrl/immagini/Pasted image 20230331153931.png|center|300]]
 **Esercizi da 2 a 7**
 
+Alla classificazione $\alpha-\beta$ sfuggono due casi: il primo è quello in cui la formula $\mathcal F$ è $\neg\mathcal F_1$ e a sua volta $\mathcal F_1$ è $\neg\mathcal F_2$, per qualche formula $\mathcal F_2$. In questo caso, siccome $\mathcal F$ è $\neg\neg\mathcal F_2$, nel tableau possiamo semplicemente sostituire $\mathcal F$ con $\mathcal F_2$. Il secondo caso è quello in cui la formula $\mathcal F$ è $\mathcal F_1\equiv\mathcal F_2$
+
+Diciamo che una formula $\mathcal F$ è _**dimostrabile**_ con il metodo dei tableaux se, partendo dalla formula $\neg\mathcal F$ e applicando le regole a tutte le formule che si ottengono fino ad arrivare alle variabili o alle variabili negate, tutti i rami del tableau risultano chiusi (ossia, in ogni ramo c‘è almeno una variabile con la sua negata).
+
 [^1]: Per esempio, qui trovate un prover pronto all’uso: https://www.umsu.de/trees/
 
 # Conclusioni
