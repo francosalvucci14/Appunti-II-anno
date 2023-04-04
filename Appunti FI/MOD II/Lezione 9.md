@@ -122,5 +122,30 @@ Quindi, se indichiamo con $M(n)$ il numero di spostamenti di dischi singoli nece
 Che ha come soluzione $M(n) = 2^n-1$
 E non possiamo far di meglio
 
+**E allora?**
 
+Lo sappiamo risolvere o no il problema della torre di Hanoi?
+
+Certo, che lo sappiamo risolvere!
+
+Tuttavia, se il tempo necessario a calcolare la soluzione di (un’istanza di) un problema è troppo elevato, _saper calcolare quella soluzione è equivalente a non saperla calcolare_
+
+## La Teoria della Complessità Computazionale
+
+Studia la “**quantità di risorse**” necessarie a risolvere un problema
+- meglio: a decidere un linguaggio
+E suddivide i problemi in “trattabili” e “intrattabili”
+- dipendentemente dal fatto che la “quantità di risorse” necessarie cresca come un polinomio o più di un polinomio
+
+Ma perché la crescita polinomiale è discriminante fra trattabilità e intrattabilità?
+- Beh, lo avete visto quanto è grande 264: un numero di 20 (venti!) cifre. Invece, 642 è il minuscolo 4096. Piccolo.
+
+Una funzione più che polinomiale cresce infinitamente più velocemente di una funzione polinomiale! 
+- e, se quella funzione rappresenta la “quantità di risorse” necessaria a risolvere un problema…
+- Stiamo nella merda
+
+Sì, ma qui stiamo parlando di funzioni che rappresentano la “quantità di risorse” necessaria a risolvere un problema
+Ma qual è l’argomento di queste funzioni?
+- Cioè: in funzione di cosa esprimiamo la complessità di un problema?
+E, poi, quali sono le “risorse” che prendiamo in considerazione?
 
