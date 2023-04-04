@@ -65,7 +65,7 @@ Infatti, sia $L_3\in\Sigma_3^\star\space e\space L_4\in\Sigma_4^\star$
 - L4 è _decidibile_ : allora esiste una macchina $T_4$ tale che, per ogni $x\in\Sigma_4^\star, T_4 (x)$ termina in $q_A$ se $x\in L_4$, $T_4 (x)$ termina in $q_R$ se $x\not\in L_4$
 - $L_3\preceq  L_4$ : allora esiste una un trasduttore $T_f$ tale che, per ogni $x\in\Sigma_3^\star, T_f (x)$ termina con una parola $y\in\Sigma_4^\star$ scritta sul nastro di output tale che $y\in L_4$ se $x\in L_3$, e $y\not\in L_4$ se $x\not\in L_3$
 
-Ora, costruiamo una macchina $T_3$ , a 2 nastri, che, con input $x\Sigma_3^\star$ :
+Ora, costruiamo una macchina $T_3$ , a 2 nastri, che, con input $x\in\Sigma_3^\star$ :
 - prima simula $T_f (x)$ scrivendo l’output y sul secondo nastro
 - poi simula $T_4 (y)$: se $T_4 (y)$ accetta allora anche $T_3$ accetta, se $T_4 (y)$ rigetta allora anche $T_3$ rigetta
 
