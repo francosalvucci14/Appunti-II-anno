@@ -45,7 +45,7 @@ E si dice che $L_{P12}$ è _**riducibile**_ a $L_{PPAL}$ e si scrive $L_{P12}\pr
 Quello che abbiamo detto sino ad ora può essere generalizzato
 Dati due linguaggi, $L_1\subseteq\Sigma_1^\star$  e $L_2\subseteq\Sigma_2^\star$,  diciamo che $L_1$ è riducibile a $L_2$ e scriviamo $L_1\preceq L_2$  se $\exists$ una funzione $f:\Sigma_1^\star\to\Sigma_2^\star$ tale che :
 1) f è totale e calcolabile
-2) $$\forall x\in\Sigma_1^\star [ x\in L_1\iff f(x)\in  L_2$$
+2) $$\forall x\in\Sigma_1^\star [ x\in L_1\iff f(x)\in  L_2]$$
 
 Siamo al paragrafo 5.5
 
