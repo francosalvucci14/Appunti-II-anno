@@ -156,7 +156,7 @@ media([H|T],N):-
 ```
 
 Query:
-```
+```prolog
 media([1,2,3],4). --> false
 media([1,2,3],X). --> X=2
 media([1,2,3],2). --> true
