@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "f6ffbed2571d18c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/MOD II/Lezione 10.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c6b0b81cf5497693",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "c70fbc2e94f9ea5f",
             "type": "leaf",
             "state": {
@@ -31,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md"
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md"
               }
             }
           },
@@ -126,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
+                "file": "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,8 +208,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5ede9c6dac9a286d",
+  "active": "c6b0b81cf5497693",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 10.md",
+    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti ASD/MOD II/Lezione 8 - Huffman Codes.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230405101119.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230405100933.png",
@@ -210,7 +237,6 @@
     "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
-    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
     "Appunti LRL/Lezione 2.md",
     "Appunti LRL/Lezione 1.md",

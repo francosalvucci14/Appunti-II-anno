@@ -6,4 +6,5 @@ Qui metterò tutti gli esami rifatti da me
 - [[Esame 3-2-2020]]
 - [[Esame 26-9-16]]
 - [[Esame 14-9-22]]
+- [[Esame 18-7-22]]
 - 
