@@ -150,7 +150,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "0b6b055d9eef298d",
@@ -185,9 +185,10 @@
   },
   "active": "f6ffbed2571d18c7",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Lezione 8 - Huffman Codes.md",
+    "Appunti FI/MOD II/Lezione 10.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230407103213.png",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
-    "Appunti FI/MOD II/Lezione 10.md",
     "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
     "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
@@ -197,7 +198,6 @@
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
-    "Appunti ASD/MOD II/Lezione 8 - Huffman Codes.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230405101119.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230405100933.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230405100854.png",
@@ -220,7 +220,6 @@
     "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "Appunti LRL/Immagini/Pasted image 20230331160524.png",
-    "Appunti LRL/Immagini/Pasted image 20230331160114.png",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",

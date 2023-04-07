@@ -104,15 +104,15 @@ Ma si consiglia la visione
 Sia $f : \mathbb N\to\mathbb N$  una funzione totale calcolabile.
 Sia $\Sigma$ un alfabeto finito e sia $x\in\Sigma^\star$: indichiamo con $|x|$ il numero di caratteri di x
 
-Un linguaggio $L\subseteq\Sigma^\star$ è **_deciso** in tempo (spazio) deterministico_ $f(n)$ se 
+Un linguaggio $L\subseteq\Sigma^\star$ è _**deciso** in tempo (spazio) deterministico_ $f(n)$ se 
 - esiste una macchina di Turing deterministica T che decide L e tale che, 
 - per ogni $x\in\Sigma^\star$, $dtime(T,x)\leq f(|x|)\space\space	( dspace(T,x) = f(|x|) )$.
 
-Un linguaggio $L\subseteq\Sigma^\star$  è **_accettato** in tempo (spazio) non deterministico_ $f(n)$ se
+Un linguaggio $L\subseteq\Sigma^\star$  è _**accettato** in tempo (spazio) non deterministico_ $f(n)$ se
 - esiste una macchina di Turing non deterministica NT che accetta L e tale che, 
 - per ogni $x\in L$, $ntime(NT,x)\leq f(|x|)$ 	$( nspace(NT,x) \leq f(|x|) )$
 
-Un linguaggio $L\subseteq\Sigma^\star$  è **_deciso** in tempo (spazio) non deterministico_ $f(n)$ se
+Un linguaggio $L\subseteq\Sigma^\star$  è _**deciso** in tempo (spazio) non deterministico_ $f(n)$ se
 - esiste una macchina di Turing non deterministica NT che decide L e tale che 
 - per ogni $x\in\Sigma^\star$, $ntime(NT,x) \leq f(|x|)$		$(nspace(NT,x)\leq f (|x|))$. 
 
