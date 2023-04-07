@@ -131,7 +131,7 @@ In effetti, non è così: il prossimo teorema mostra che, ogni qualvolta una fun
 
 >[!definition]- Teorema 6.2 (tempo)
 >Sia $f : \mathbb N\to\mathbb N$ una funzione totale calcolabile.
->Se $L\subseteq\Sigma^\star$  è accettato da una macchina di Turing non deterministica NT tale che, per ogni $x \in L, ntime(NT,x) \leq f (|x|)]$ allora L è decidibile.
+>Se $L\subseteq\Sigma^\star$  è accettato da una macchina di Turing non deterministica NT tale che, per ogni $x \in L, ntime(NT,x) \leq f (|x|)$ allora L è decidibile.
 
 **Dim**
 
@@ -158,7 +158,7 @@ _Per questo possiamo concludere che L è decidibile, ma non possiamo concludere 
 
 >[!definition]- Teorema 6.2 (spazio)
 >Sia $f : \mathbb N\to\mathbb N$  una funzione totale calcolabile.
->Se $L\subseteq\Sigma^\star$ è accettato da una macchina di di Turing non deterministica NT tale che, per ogni $x \in L$, $nspace(NT,x) \leq f (|x|)]$ allora L è decidibile. 
+>Se $L\subseteq\Sigma^\star$ è accettato da una macchina di di Turing non deterministica NT tale che, per ogni $x \in L$, $nspace(NT,x) \leq f (|x|)$ allora L è decidibile. 
 
 La dimostrazione è analoga al caso di ntime
 
