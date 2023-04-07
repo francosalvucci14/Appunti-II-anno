@@ -96,12 +96,9 @@ Anche con questa estensione, le funzioni ntime e nspace restano funzioni parzial
 >[!definition]- Teorema 6.1 (caso non deterministico)
 >Sia NT una macchina di Turing non deterministica, definita su un alfabeto $\Sigma$ (non contenente il simbolo $\square$ ) e un insieme degli stati $Q$, e sia $x\in\Sigma^\star$ tale che NT(x) accetta/termina. Allora $$nspace(NT,x)\leq ntime(NT,x)\leq nspace(NT,x)|Q|(|\Sigma|+1)^{nspace(NT,x)}$$
 
-
 Questa dimostrazione è sensibilmente più complessa di quella del caso deterministico, e non verrà studiata
 Ma si consiglia la visione
 
 ### Verso le classi di complessità
-
-
 
 
