@@ -101,4 +101,90 @@ Ma si consiglia la visione
 
 ### Verso le classi di complessità
 
+Sia $f : \mathbb N\to\mathbb N$  una funzione totale calcolabile.
+Sia $\Sigma$ un alfabeto finito e sia $x\in\Sigma^\star$: indichiamo con $|x|$ il numero di caratteri di x
+
+Un linguaggio $L\subseteq\Sigma^\star$ è **_deciso** in tempo (spazio) deterministico_ $f(n)$ se 
+- esiste una macchina di Turing deterministica T che decide L e tale che, 
+- per ogni $x\in\Sigma^\star$, $dtime(T,x)\leq f(|x|)\space\space	( dspace(T,x) = f(|x|) )$.
+
+Un linguaggio $L\subseteq\Sigma^\star$  è **_accettato** in tempo (spazio) non deterministico_ $f(n)$ se
+- esiste una macchina di Turing non deterministica NT che accetta L e tale che, 
+- per ogni $x\in L$, $ntime(NT,x)\leq f(|x|)$ 	$( nspace(NT,x) \leq f(|x|) )$
+
+Un linguaggio $L\subseteq\Sigma^\star$  è **_deciso** in tempo (spazio) non deterministico_ $f(n)$ se
+- esiste una macchina di Turing non deterministica NT che decide L e tale che 
+- per ogni $x\in\Sigma^\star$, $ntime(NT,x) \leq f(|x|)$		$(nspace(NT,x)\leq f (|x|))$. 
+
+### Dall'accettazione alla decisione
+
+Si osservi che 
+- nel caso deterministico definiamo soltanto i linguaggi decisi in un certo tempo o spazio 
+- nel caso non deterministico distinguiamo in linguaggi accettati in un certo tempo o spazio da quelli decisi nello stesso tempo o spazio
+
+Ma perché?
+
+Si potrebbe pensare che esistono linguaggi che sono accettabili in un certo tempo o spazio, ma che non sono decidibili – ossia, il loro complemento non è accettabile
+- ma, allora, verrebbe da chiedersi, perché questa cosa esce fuori solamente quando si utilizza una macchina non deterministica?!
+
+In effetti, non è così: il prossimo teorema mostra che, ogni qualvolta una funzione totale e calcolabile limita la quantità di risorse disponibili al fine di accettare le parole di un linguaggio, i concetti di accettabilità e di decidibilità coincidono. 
+
+>[!definition]- Teorema 6.2 (tempo)
+>Sia $f : \mathbb N\to\mathbb N$ una funzione totale calcolabile.
+>Se $L\subseteq\Sigma^\star$  è accettato da una macchina di Turing non deterministica NT tale che, per ogni $x \in L, ntime(NT,x) \leq f (|x|)]$ allora L è decidibile.
+
+**Dim**
+
+Poiché f è totale calcolabile, esiste una macchina $T_f$ di tipo trasduttore tale che, per ogni $n\in\mathbb N$, $T_f (n$) termina con il valore $f(n)$scritto sul nastro di output
+
+Costruiamo una nuova macchina non deterministica NT’, a tre nastri, che decide L: per ogni $x\in\Sigma^\star$ : 
+- FASE 1) NT’(x) scrive |x| sul secondo nastro e invoca $T_f(|x|)$: al termine della computazione sul terzo nastro si troverà scritto $f(|x|)$ in unario
+- FASE 2) NT’(x) _simula_ NT(x) e, per ogni quintupla eseguita da NT(x):
+	- NT’ “cancella” un ‘1’ dal terzo nastro e, inoltre,
+	- se NT(x) accetta allora anche NT’(x) accetta, se NT(x) rigetta allora anche NT’(x) rigetta;
+- se quando il terzo nastro di NT’ è vuoto NT(x) non ha ancora terminato, allora NT’(x) rigetta
+
+Si osservi che le computazioni di NT’ terminano sempre
+- se una computazione NT’(x) dura più di f(|x|) passi, la interrompiamo!
+
+Poi, NT’ decide L, infatti:
+- se $x \in L$, allora NT(x) accetta in al più $f(|x|)$ passi: e, quindi, NT’(x) accetta
+- se $x \not\in L$, allora o NT(x) rigetta in al più $f(|x|)$ passi e, quindi, NT’(x) rigetta, oppure NT(x) non termina entro $f(|x|)$ passi e, quindi, NT’(x), ugualmente, rigetta
+Ma quanto impiega NT’ a rigettare x  L?
+- Non possiamo sapere quanto tempo impiega $T_f$ a calcolare $f(|x|)$?
+- Sappiamo solo che $T_f (|x|)$ termina, ma non in quanto tempo!
+
+_Per questo possiamo concludere che L è decidibile, ma non possiamo concludere che è deciso in tempo non deterministico f(n)_
+
+>[!definition]- Teorema 6.2 (spazio)
+>Sia $f : \mathbb N\to\mathbb N$  una funzione totale calcolabile.
+>Se $L\subseteq\Sigma^\star$ è accettato da una macchina di di Turing non deterministica NT tale che, per ogni $x \in L$, $nspace(NT,x) \leq f (|x|)]$ allora L è decidibile. 
+
+La dimostrazione è analoga al caso di ntime
+
+## Complessità e modelli di calcolo
+
+Siamo al paragrafo 6.2 della dispensa 6
+Qui si dimostra che che tutti i modelli di calcolo deterministici sono fra loro _**polinomialmente correlati**_
+- Macchine di Turing ad un nastro
+- Macchine di Turing a quanti nastri ci pare
+- Macchine di Turing su alfabeto binario
+- Macchine di Turing su alfabeti grandi quanto ci pare
+
+Ma che vuol dire che questi modelli sono fra loro polinomialmente correlati?
+- che per ogni macchina di Turing T di uno di questi tipi esistono una macchina di Turing T’ di uno qualunque degli altri tipi ed un polinomio p tali che T’ risolve lo stesso problema risolto da T e, per ogni x, $dtime(T’,x) \leq p( dtime(T,x) )$ e $dspace(T’,x) \leq p( dspace(T,x) )$ 
+
+E anche che il modello Macchina di Turing è polinomialmente correlato con il PascalMinimo
+
+Ok, ma cosa significa tutto ciò?
+Che possiamo risolvere un problema utilizzando il modello che più ci aggrada
+- ad esempio, per risolvere un certo problema possiamo scrivere un algoritmo A in PascalMinimo (invece che stare lì a progettare quintuple di una macchina di Turing)
+- e se A trova la soluzione di una istanza x del problema eseguendo f(|x|) istruzioni allora esiste una macchina di Turing T ad un nastro che risolve lo stesso problema, ed esiste un polinomio p tale che $dtime(T,x) \leq  p( f(|x|)$
+
+Ma perché è così importante sapere che sono polinomialmente correlati?
+- Beh, perché se abbiamo un algoritmo in PascalMinimo che impiega un numero di istruzioni polinomiale nella lunghezza dell’input per risolvere il problema
+- sappiamo anche che esiste una macchina di Turing che risolve lo stesso problema eseguendo, anch’essa, un numero di istruzioni polinomiale nella lunghezza dell’input
+
+_**E un problema è trattabile se il tempo necessario a risolverlo è polinomiale (nella dimensione dell’input)**_
+- perciò, se un problema è trattabile rispetto ad un modello, è trattabile anche rispetto a tutti gli altri!
 
