@@ -88,7 +88,7 @@ Anche con questa estensione, le funzioni ntime e nspace restano funzioni parzial
 	5) Dunque: $k(T,x) = dspace(T,x)\cdot|Q|\cdot(|\Sigma|+1)^{dspace(T,x)}$ è il numero di stati globali possibili di T nel caso in cui non più di $dspace(T,x)$ celle del nastro vengano utilizzate dalla computazione $T(x)$
 	6) Ora, ricordiamo che una computazione (deterministica) è una successione di stati globali tali che si passa da uno stato globale al successivo eseguendo una quintupla
 	7) se $T(x)$ durasse più di $k(T,x)$ passi (senza uscire mai dalle $dspace(T,x)$ celle), allora sarebbe una successioni di stati globali contenente almeno due volte uno stesso stato globale – chiamiamolo $SG_H$ : ![[appunti fi/mod ii/immagini/Pasted image 20230407103213.png|center|350]]
-	8) ma T è deterministica; allora, a partire da  è possibile eseguire un’unica quintupla (quella che porta nello stato globale  ) ed essa viene eseguita tutte le volte in cui T(x) si trova in $SG_h$
+	8) ma T è deterministica; allora, a partire da  è possibile eseguire un’unica quintupla (quella che porta nello stato globale $SG_{h+1}$) ed essa viene eseguita tutte le volte in cui T(x) si trova in $SG_h$
 	9) quindi, entrambe le volte, avviene una transizione verso lo stesso stato globale $SG_{h+1}$
 	10) e così via, e così via: T(x) sarebbe in loop (contro l’ipotesi che termina)
 		1) studiatelo sulla dispensa (dove è descritto meglio!)
