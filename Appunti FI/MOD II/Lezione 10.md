@@ -3,7 +3,9 @@
 
 Siamo alla dispensa 6, paragrafo 6.1
 Una misura di complessità è una **funzione c** che associa un valore numerico ad una macchina di Turing T e ad un suo input x 
+
 - $c(T,x)$ intende rappresentare il “costo” della computazione T(x)
+
 Affinché c possa essere considerata una misura di complessità, essa deve soddisfare le due seguenti proprietà, note come _**assiomi di Blum**_: 
 1) <u>c è definita per tutte e sole le computazioni che terminano </u>
 	2) se una computazione T(x) non termina, non ha senso considerare che tale computazione abbia come costo un valore finito; 
