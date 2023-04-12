@@ -5,5 +5,5 @@
 - [[Lezione 5 - Still on Union-Find & Interval Scheduling]]
 - [[Lezione 6 - Interval Scheduling Part II]]
 - [[Lezione 7 - Interval Scheduling Part III]]
-- [[Lezione 8 - Huffman Codes]]
+- [[Lezione 8 - Data Compression]]
 - 
