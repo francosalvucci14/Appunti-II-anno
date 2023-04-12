@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 10.md",
+                "file": "Appunti ASD/MOD II/Lezione 8 - Huffman Codes.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 10.md"
+                "file": "Appunti ASD/MOD II/Lezione 8 - Huffman Codes.md"
               }
             }
           },
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 10.md",
+                "file": "Appunti ASD/MOD II/Lezione 8 - Huffman Codes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,14 +131,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 10.md",
+                "file": "Appunti ASD/MOD II/Lezione 8 - Huffman Codes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0b6b055d9eef298d",
@@ -173,12 +173,13 @@
   },
   "active": "f6ffbed2571d18c7",
   "lastOpenFiles": [
-    "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230412091701.png",
     "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
+    "Appunti FI/MOD II/Lezione 10.md",
+    "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
     "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
     "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
-    "Appunti FI/MOD II/Lezione 10.md",
     "Appunti ASD/MOD II/Lezione 8 - Huffman Codes.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230407103213.png",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
@@ -207,7 +208,6 @@
     "Appunti FI/MOD II/Lezione 2.md",
     "Appunti FI/MOD II/Lezione 1.md",
     "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
-    "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "Appunti LRL/Immagini/Pasted image 20230331160524.png",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",

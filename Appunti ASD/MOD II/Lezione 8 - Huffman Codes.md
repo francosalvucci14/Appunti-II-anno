@@ -65,3 +65,16 @@ We can model a code in a binary tree…
 - In both cases the number of bits needed to encode any leaf in the subtree of v is _**decreased**_. The rest of the tree T is not affected.
 - Clearly this new tree T’ has a smaller ABL than T. _**Contradiction**_.
 
+### Optimal Prefix Codes : False Start
+
+Q. Where in the tree of an optimal prefix code should letters be placed with a high frequency?
+A. Near the top! Use recursive structure of trees.
+
+**Greedy template.**
+Create tree _**top-down**_, split S into two sets $S_1$ and $S_2$ with **(almost) equal frequencies** Recursively build tree for $S_1$ and $S_2$.
+
+$[\text{Shannon-Fano,1949}]\to f_a=0.32, f_e=0.25, f_k=0.20, f_l=0.18, f_u=0.05$ 
+
+![[appunti asd/mod ii/immagini/Pasted image 20230412091701.png|center|500]]
+
+
