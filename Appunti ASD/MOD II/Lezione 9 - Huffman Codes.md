@@ -37,7 +37,7 @@ A. Use priority queue for S: $T(n) = T(n-1) + O(\log{n})\to O(n logn)$
 **Pf**. (by induction)
 
 _Base_: For $n=2$ there is no shorter code than root and two leaves.
-_Ind. Hypothesis_: Huffman tree T’ for S’ with $\omega$ instead of y and z is **optimal**:
+_Ind. Hypothesis_: Huffman tree T’ for S’ with $\omega$ instead of y and z is **optimal** (S' ha dimensione n-1):
 $$ABL( T' ) \leq ABL( Z' )$$for any feasible Z’ for S’
 
 Step: (by contradiction)
