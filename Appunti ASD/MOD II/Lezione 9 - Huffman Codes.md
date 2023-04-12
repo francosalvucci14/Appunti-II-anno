@@ -15,8 +15,8 @@ Greedy Template. `[Huffman, 1952]`
 Create the tree **bottom-up**.
 
 1) **_Make two leaves_** for two lowest-frequency letters **y** and **z**.
-2) **Recursively** build tree for the rest: replacing y and z with a _meta-letter_ for yz. with frequency $f_{yz} = f_y + f_z$
-3) **Consider** the new alphabet $S' = S - \{y,z\} + \{yz\}$
+2) **_Recursively_** build tree for the rest: replacing y and z with a _meta-letter_ for yz. with frequency $f_{yz} = f_y + f_z$
+3) **_Consider_** the new alphabet $S' = S - \{y,z\} + \{yz\}$
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230412093916.png|center|500]]
 
