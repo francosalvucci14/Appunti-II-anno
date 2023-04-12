@@ -78,3 +78,4 @@ $[\text{Shannon-Fano,1949}]\to f_a=0.32, f_e=0.25, f_k=0.20, f_l=0.18, f_u=0.05$
 ![[appunti asd/mod ii/immagini/Pasted image 20230412091701.png|center|500]]
 
 
+**End of part I (Data Compression)**
