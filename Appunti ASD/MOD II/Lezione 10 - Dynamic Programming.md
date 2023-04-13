@@ -151,7 +151,7 @@ Store results of each sub-problem in a cache; lookup as needed.
 
 ## Paradigm of Dynamic Programming (Informal Description)
 
-Partition of the initial problem$P(n)$ into a set ofsubproblems $P_1(n_1), P_2(n_2),\dots, P_k(n_k)$ such that
+Partition of the initial problem $P(n)$ into a set ofsubproblems $P_1(n_1), P_2(n_2),\dots, P_k(n_k)$ such that
 - $n_i \lt n$ for all $i=1,\dots,k$
 - $k = poly(n)$
 - P(n) can be computed from $P_1(n_1), P_2(n_2),\dots, P_k(n_k)$ in poly-time
