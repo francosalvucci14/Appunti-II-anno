@@ -76,4 +76,12 @@ L’esercizio precedente si può generalizzare un po’, ottenendo quello che si
 >Sia $\Gamma$ un insieme di formule e siano $\mathcal F$ e $\mathcal G$ due formule. Nel sistema $S_0$ se $\Gamma\cup\{\mathcal F\}\vdash\mathcal G$ allora $\Gamma\vdash\mathcal F\to\mathcal G$
 
 
+## Conclusioni
 
+In questo episodio abbiamo introdotto i sistemi assiomatici per la logica proposizionale.
+
+Osservate che dall’Esercizio 2 segue che in un qualunque sistema assiomatico in cui gli schemi di assiomi sono tautologie e la regola di inferenza è Modus Ponens, tutti i teoremi sono tautologie.
+Il nostro sistema $S_0$ quindi è corretto. Sarà anche completo? Così com’è adesso, no, non è completo. 
+Ma è sufficiente aggiungere uno schema di assioma per rendelo completo, per esempio questo$$A3 : (\neg X \to\neg Y ) \to ((\neg X \to Y ) \to X)$$
+Se chiamiamo $S_1$ il sistema assiomatico formato dagli assiomi $A_1, A_2, A_3$ e dalla regola di inferenza Modus Ponens, si può infatti dimostrare che ogni tautologia è un teorema nel sistema $S_1$. 
+Ma per il momento non ci addentriamo in questo discorso.
