@@ -84,4 +84,3 @@ Osservate che dall’Esercizio 2 segue che in un qualunque sistema assiomatico i
 Il nostro sistema $S_0$ quindi è corretto. Sarà anche completo? Così com’è adesso, no, non è completo. 
 Ma è sufficiente aggiungere uno schema di assioma per rendelo completo, per esempio questo$$A3 : (\neg X \to\neg Y ) \to ((\neg X \to Y ) \to X)$$
 Se chiamiamo $S_1$ il sistema assiomatico formato dagli assiomi $A_1, A_2, A_3$ e dalla regola di inferenza Modus Ponens, si può infatti dimostrare che ogni tautologia è un teorema nel sistema $S_1$. 
-Ma per il momento non ci addentriamo in questo discorso.
