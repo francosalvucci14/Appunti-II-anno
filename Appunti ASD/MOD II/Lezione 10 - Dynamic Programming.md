@@ -123,6 +123,7 @@ We can apply induction!
 ![[appunti asd/mod ii/immagini/Pasted image 20230413151337.png|center|550]]
 
 <u>Crucial Issue</u>: Find the correct order for computing the subproblems!
+**Cost** : $O(n)$
 
 ### Finding a Solution
 
