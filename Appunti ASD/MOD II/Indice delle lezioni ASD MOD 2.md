@@ -7,4 +7,5 @@
 - [[Lezione 7 - Interval Scheduling Part III]]
 - [[Lezione 8 - Data Compression]]
 - [[Lezione 9 - Huffman Codes]]
+- [[Lezione 10 - Dynamic Programming]]
 - 

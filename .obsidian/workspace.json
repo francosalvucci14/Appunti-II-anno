@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f6ffbed2571d18c7",
+            "id": "b148f64cff972cf1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
+                "file": "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5768e195877ae75d",
+            "id": "e11c7c28b29f6b22",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
+                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md"
+                "file": "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md"
               }
             }
           },
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
+                "file": "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,14 +143,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
+                "file": "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0b6b055d9eef298d",
@@ -183,26 +183,31 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f6ffbed2571d18c7",
+  "active": "b148f64cff972cf1",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230413152736.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230413152449.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230413151627.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230413151337.png",
+    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+    "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230413150329.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230413145847.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230413144959.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230413144534.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230413144239.png",
+    "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
+    "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
     "Appunti LRL/Immagini/Pasted image 20230413140151.png",
     "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
-    "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti LRL/Immagini/Pasted image 20230413121349.png",
-    "Appunti LRL/Immagini/Pasted image 20230413115413.png",
-    "Appunti LRL/Immagini/Pasted image 20230413114633.png",
     "Appunti ASD/MOD II/Lezione 9 - Huffman Codes.md",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230412100205.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230412093916.png",
-    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti ASD/MOD II/Lezione 8 - Data Compression.md",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230412091701.png",
     "Appunti FI/MOD II/Lezione 10.md",
     "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
     "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
     "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
-    "Appunti FI/MOD II/Immagini/Pasted image 20230407103213.png",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
@@ -210,17 +215,12 @@
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230405101119.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230405100933.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230405100854.png",
     "Appunti FI/MOD II/Lezione 9.md",
     "Appunti FI/MOD II/Lezione 6.md",
     "Appunti FI/MOD II/Lezione 5.md",
     "Appunti FI/MOD II/Lezione 4.md",
     "Appunti FI/MOD II/Lezione 3.md",
     "Appunti FI/MOD II/Lezione 8.md",
-    "Appunti FI/MOD II/Lezione 7.md",
-    "Appunti FI/MOD II/Lezione 2.md",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
