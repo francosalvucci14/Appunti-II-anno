@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3460d8049741af6b",
+        "id": "7868e508694b3823",
         "type": "tabs",
         "children": [
           {
-            "id": "b148f64cff972cf1",
+            "id": "d29c7f257d9c5e18",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e11c7c28b29f6b22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md"
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md"
               }
             }
           },
@@ -126,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,14 +131,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "0b6b055d9eef298d",
@@ -183,25 +171,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "acd002c7f705cc3c",
+  "active": "d29c7f257d9c5e18",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 11.md",
+    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+    "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
+    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
+    "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
+    "Appunti ASD/MOD II/Lezione 9 - Huffman Codes.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413152736.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413152449.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413151627.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413151337.png",
-    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413150329.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413145847.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413144959.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413144534.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413144239.png",
-    "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
     "Appunti LRL/Immagini/Pasted image 20230413140151.png",
     "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
-    "Appunti LRL/Immagini/Pasted image 20230413121349.png",
-    "Appunti ASD/MOD II/Lezione 9 - Huffman Codes.md",
     "Appunti ASD/MOD II/Lezione 8 - Data Compression.md",
     "Appunti FI/MOD II/Lezione 10.md",
     "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
@@ -214,7 +203,6 @@
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
-    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti FI/MOD II/Lezione 9.md",
     "Appunti FI/MOD II/Lezione 6.md",
     "Appunti FI/MOD II/Lezione 5.md",
