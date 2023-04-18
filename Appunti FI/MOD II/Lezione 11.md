@@ -72,7 +72,7 @@ $$\begin{align}DTIME[f(n)] = &\{ L \subseteq\{0,1\}^\star| \exists T (\text{dete
 >Nella Teoria della Complessità Computazionale si parla di classi invece che di insiemi
 >**ATTENZIONE**: $dtime$ (minuscolo) è la misura di complessità, ossia, una funzione;                   $DTIME$ (maiuscolo) è una classe di complessità, ossia, un insieme!
 >Si osservi che $DTIME[ f(n) ] = DTIME[ f(n)/2 ] = DTIME[2 f(n)+58 ] =\dots$
->come è giusto che sia a seguito del **Teorema di accelerazione lineare.** [[Lezione 11#^8409f2|Teorema 6.7]]
+>come è giusto che sia a seguito del **Teorema di accelerazione lineare.** [^2]
 
 Le classi che misurano “_**efficienza spaziale**_” nel caso deterministico si chiamano  DSPACE: data una _funzione totale e calcolabile f_, 																															$$\begin{align}DSPACE[f(n)] = &\{ L \subseteq\{0,1\}^\star | \exists T(\text{deterministica})\text{che DECIDE L e},\\& \forall x \in \{0,1\}^\star, dspace(T,x) \in O( f(|x|) ) \}\end{align}$$
 ## Classi di complessità non deterministiche
@@ -99,7 +99,7 @@ Le definizioni formali sono a pag. 10 della dispensa 6
 Innanzi tutto, perché ci limitiamo a considerare linguaggi definiti sull’alfabeto $\{0,1\}$?
 - In realtà, lo facciamo perché è più comodo
 - ma potremmo utilizzare un alfabeto qualsiasi (e, quando ci farà comodo, lo faremo)
-- tanto, sappiamo che se un linguaggio è deciso da una macchina definita su un alfabeto qualsiasi, allora esiste anche una macchina definita su {0,1} che lo decide (Lezione a distanza 2)
+- tanto, sappiamo che se un linguaggio è deciso da una macchina definita su un alfabeto qualsiasi, allora esiste anche una macchina definita su $\{0,1\}$ che lo decide 
 - E le due macchine, sappiamo, sono pure polinomialmente correlate!
 
 Poi, alla funzione f che che definisce una classe di complessità (ad esempio, $DTIME[f(n)]$ ) diamo il nome di _**funzione limite**_
@@ -121,7 +121,7 @@ Facile: una macchina di Turing deterministica è una particolare macchina di Tur
 >$$DTIME[ f (n)] \subseteq DSPACE[ f (n)]; NTIME[ f (n)] \subseteq NSPACE[ f (n)] $$
 
 _dim_ :
-- Segue direttamente dal Teorema 6.1[^1] Sia $L \subseteq \{0,1\}^\star$ tale che $L \in DTIME[ f (n)]$: 
+- Segue direttamente dal Teorema 6.1 [^1] Sia $L \subseteq \{0,1\}^\star$ tale che $L \in DTIME[ f (n)]$: 
 - allora, esiste una macchina di Turing deterministica T che decide L e tale che, 		         $$\forall x \in \{0,1\}^\star, dtime(T,x) \in O(f(|x|))$$
 - poiché $dspace(T,x) \leq dtime(T,x)$, allora $dspace(T,x) \leq dtime(T,x)in O(f(|x|))$
 - questo implica che $dspace(T,x) \in O(f(|x|))$ e che, dunque, $L \in DSPACE[f(n)].$
@@ -132,7 +132,7 @@ _dim_ :
 >$$DSPACE[ f (n)] \subseteq DTIME[2^{O(f(n))} ];NSPACE[ f (n)] \subseteq NTIME[2^{O(f(n))}].$$
 
 _dim_
-- Anche in questo caso, la prova segue direttamente dal Teorema 6.1. 
+- Anche in questo caso, la prova segue direttamente dal Teorema 6.1. [^1]
 - Sia $L \subseteq \{0,1\}^\star | L \in DSPACE[f(n)]$: allora, esiste una macchina di Turing deterministica T che decide L e tale che, per ogni $x \in \{0,1\}^\star$, $dspace(T,x) \in O(f(|x|))$. 
 - Poiché $$\begin{align}dtime(T,x) &\leq dspace(T,x)|Q| (|\Sigma|+1)^{dspace(T,x)} = dspace(T,x)|Q| 3^{dspace(T,x)}\\& = 2^{\log{( dspace(T,x))}} |Q| [2^{\log{3}}]^{dspace(T,x)} \\&=|Q| 2^{\log dspace(T,x) + dspace(T,x) \log3}\leq|Q| 2^{[1+\log{3} ] dspace(T,x)}\end{align} $$
 - allora $dtime(T,x) ∈ O(2^{O(f(|x|))} )$ 
@@ -160,3 +160,4 @@ _dim_
 
 La dimostrazione per DSPACE e coDSPACE è analoga. 
 
+[^2]: Vedi lezione 11 [[Lezione 11#^8409f2|Teorema 6.7]]
