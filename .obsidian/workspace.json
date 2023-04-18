@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+                "file": "Appunti FI/MOD II/Lezione 10.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "19a7ab58120ff224",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/MOD II/Lezione 11.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md"
+                "file": "Appunti FI/MOD II/Lezione 11.md"
               }
             }
           },
@@ -114,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+                "file": "Appunti FI/MOD II/Lezione 11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+                "file": "Appunti FI/MOD II/Lezione 11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,9 +184,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d29c7f257d9c5e18",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 10.md",
     "Appunti FI/MOD II/Lezione 11.md",
+    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
@@ -192,12 +207,10 @@
     "Appunti LRL/Immagini/Pasted image 20230413140151.png",
     "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
     "Appunti ASD/MOD II/Lezione 8 - Data Compression.md",
-    "Appunti FI/MOD II/Lezione 10.md",
     "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
     "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
     "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
-    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
