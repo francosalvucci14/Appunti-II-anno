@@ -170,10 +170,12 @@ Andiamo a chiarire
 Ricordiamo che, date $f : \mathbb N\to\mathbb N, g :\mathbb N\to\mathbb N$ due funzioni, $f(n) \in O(g(n))$ se
 - esistono $n_0 \in\mathbb N$ e $c \in\mathbb N$ tali che, per ogni $n\geq n_0, f(n)\leq  c\cdot g(n)$
  - $\exists n_0\in\mathbb N,\exists c \in\mathbb N  :\forall  n\geq n0 [ f(n)\leq c\cdot g(n) ]$
-Ossia, O(f(n)) ⊆ O(g(n))  e da questo segue il seguente teorema
-Teorema 6.12: Per ogni coppia di funzioni totali calcolabili f :  →  e g :  →  tali che
- n0 ∈  :  n    n0 [ f(n)  g(n) ] – ossia f(n)  g(n)  definitivamente
-  DTIME[ f (n)] ⊆ DTIME[g(n)] 			NTIME[ f (n)] ⊆ NTIME[g(n)], 					DSPACE[ f (n)] ⊆ DSPACE[g(n)] 		NSPACE[ f (n)] ⊆ NSPACE[g(n)]. 
-infatti, O(f(n)) ⊆ O(g(n))
+Ossia, $O(f(n)) \subseteq O(g(n))$ e da questo segue il seguente teorema
 
+>[!definition]- Teorema 6.12: 
+>Per ogni coppia di funzioni totali calcolabili $f :\mathbb N\to\mathbb N, g:\mathbb N\to\mathbb N$  tali che $n_0 \in \mathbb N : \forall  n\geq n_0 [ f(n)  g(n) ]$ – ossia $f(n) \leq g(n)$ definitivamente
+  $$\begin{align}&DTIME[ f (n)] \subseteq DTIME[g(n)]\\& 			NTIME[ f (n)] \subseteq NTIME[g(n)],\\& 					DSPACE[ f (n)] \subseteq DSPACE[g(n)]\\& 		NSPACE[ f (n)] \subseteq NSPACE[g(n)]. \end{align}$$ 
+  Infatti, O(f(n)) ⊆ O(g(n))
+  
 [^2]: Vedi lezione 11 [[Lezione 11#^8409f2|Teorema 6.7]]
+
