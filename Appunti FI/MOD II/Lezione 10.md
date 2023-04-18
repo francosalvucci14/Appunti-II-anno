@@ -71,6 +71,8 @@ Anche con questa estensione, le funzioni ntime e nspace restano funzioni parzial
 >[!definition]- Teorema 6.1 (caso deterministico)
 >Sia T una macchina di Turing deterministica, definita su un alfabeto $\Sigma$ (non contenente il simbolo $\square$ ) e un insieme degli stati $Q$, e sia $x\in\Sigma^\star$ tale che $T(x)$ termina. Allora $$dspace(T,x)\leq dtime(T,x)\leq dspace(T,x)\cdot|Q|\cdot(|\Sigma|+1)^{dspace(T,x)}$$
 
+^eaf160
+
 1) $dspace(T,x) ≤ dtime(T,x)$ 
 	1) Facile: se $T(x)$ utilizza $dspace(T,x)$ celle di memoria, quelle celle deve almeno leggerle
 	2) e, per leggere ciascuna cella impiega un’istruzione (ossia, esegue una quintupla)
