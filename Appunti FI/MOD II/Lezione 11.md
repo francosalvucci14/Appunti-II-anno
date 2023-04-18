@@ -13,8 +13,8 @@ Ma nella Teoria della Complessità Computazionale le cose non sono proprio così
 
 >[!definition]- Teorema 6.7 [Accellerazione lineare]
 >Sia $L\subseteq\Sigma^\star$ un linguaggio deciso da una macchina di Turing deterministica ad un nastro T tale che, per ogni $x\in\Sigma^\star$, $dtime(T,x) = t(|x|)$ e sia k > 0 una costante. Allora:
->- esiste una macchina di Turing _ad un nastro_ $T_1$ tale che $T_1$ decide L e, per ogni $x\in\Sigma^\star$, $dtime(T_1, x)\leq\frac{t(|x|)}{k}+  O(|x|^2)$
->- esiste una macchina di Turing _a due nastri_ $T_2$ tale che $T_2$ decide L e, per ogni $x\in\Sigma^\star$, $dtime(T_2, x)\leq\frac{t(|x|)}{k}   +  O(|x|)$
+>- esiste una macchina di Turing _ad un nastro_ $T_1$ tale che $T_1$ decide L e, per ogni $x\in\Sigma^\star$ $dtime(T_1, x)\leq\frac{t(|x|)}{k}+  O(|x|^2)$
+>- esiste una macchina di Turing _a due nastri_ $T_2$ tale che $T_2$ decide L e, per ogni $x\in\Sigma^\star$ $dtime(T_2, x)\leq\frac{t(|x|)}{k}   +  O(|x|)$
 
 Questo teorema ci dice che, dato un qualunque algoritmo, esiste sempre un algoritmo più veloce del primo di un fattore costante! 
 
@@ -30,7 +30,7 @@ Si può dimostrare qualcosa di analogo nel caso della funzione dspace
 
 >[!definition]- Teorema 6.6 [Compressione lineare]
 >Sia $L\subseteq\Sigma^\star$ un linguaggio deciso da una macchina di Turing deterministica ad un nastro T tale che, per ogni $x\in\Sigma^\star$, $dspace(T, x) = s(|x|)$ e sia k > 0 una costante. Allora:
->- esiste una macchina di Turing _ad un nastro_ $T_1$ tale che $T_1$ decide L e, per ogni $x\in\Sigma^\star$, $dspace(T_1, x)\leq\frac{s(|x|)}{k}   +  O(|x|)$
+>- esiste una macchina di Turing _ad un nastro_ $T_1$ tale che $T_1$ decide L e, per ogni $x\in\Sigma^\star$ $dspace(T_1, x)\leq\frac{s(|x|)}{k}   +  O(|x|)$
 
 Questo teorema ci dice che, dato un qualunque algoritmo, esiste sempre un algoritmo che usa una frazione costante della memoria del primo! 
 Resta da capire: perché l’addendo $O(|x|)$?
