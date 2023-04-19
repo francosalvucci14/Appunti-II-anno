@@ -104,6 +104,26 @@ $$\forall x[P (x) \land Q(y)] \to\exists yQ(y)$$
 
 # Formule valide vs tautologie
 
+>[!definition]- Definizione 4.1. (Formule valide)
+>Una formula $\mathcal F$ vera in ogni interpretazione si dice **valida**.
+
+Perchè non le chiamiamo tautologie, come nel caso della logica proposizionale? Perchè vogliamo riservare il termine tautologie per un sottoinsieme delle formule valide. Per esempio, considerate la formula seguente  
+$$\forall xP (x) \lor \neg(\forall xP (x))  $$
+Questa formula del tipo $\mathcal F \lor \neg\mathcal F$, quindi chiaramente deve essere vera in ogni interpretazione. Nella logica del primo ordine si chiamano tautologie le formule che sono istanze di tautologie della logica proposizionale. Per esempio, la formula  
+$$\forall xP (x) \to (\exists xQ(x) \to \forall xP (x)) (7)  $$
+Si ottiene dalla formula $X \to (Y \to X)$ sostituendo $\forall xP (x)$ a X e $\exists xQ(x)$. La  
+formule (7) pertanto è una tautologia mentre, per esempio la (3), pur essendo valida, non  
+è una tautologia.  
+Si noti che una tautologia è vera in ogni interpretazione _indipendentemente_ dal significato che hanno i quantificatori, mentre una formula valida che non è una tautologia è vera in ogni interpretazione per il significato che hanno i quantificatori.
+
+# Interdipendenza tra connettivi
+
+I due quantificatori $\forall$ e $\exists$ non sono indipendenti, nel senso che si può “definire” uno in funzione dell’altro. Per esempio, la formula $\neg\exists xP (x)$ è equivalente alla formula $\forall x\neg P (x).$
+
+Infatti, data una qualunque interpretazione, la prima sta dicendo che “non esiste un  
+elemento del dominio per cui vale la proprietà P ”, la seconda sta dicendo che “per ogni  
+elemento del dominio non vale la proprietà P ”
+
 
 
 [^1]: Vedi qui
