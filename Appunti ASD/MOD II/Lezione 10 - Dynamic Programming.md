@@ -145,7 +145,7 @@ Store results of each sub-problem in a cache; lookup as needed.
 ![[appunti asd/mod ii/immagini/Pasted image 20230413152449.png|center|550]]
 
 
-### Running Time
+#### Running Time
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230413152736.png|center|600]]
 
