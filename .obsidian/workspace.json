@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d29c7f257d9c5e18",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "54c7c89501c17507",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -151,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0b6b055d9eef298d",
@@ -184,18 +171,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "54c7c89501c17507",
+  "active": "acd002c7f705cc3c",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 11.md",
+    "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
+    "Appunti ASD/MOD II/Lezione 11 - Dynamic Programming Part II.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230419095626.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230419095420.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230419095105.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230419095038.png",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti ASD/MOD II/Lezione 11 - Dynamic Programming Part II.md",
-    "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
     "Appunti FI/MOD II/Lezione 10.md",
-    "Appunti FI/MOD II/Lezione 11.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
@@ -206,7 +193,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413151337.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413150329.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230413145847.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230413144959.png",
     "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
     "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
     "Appunti ASD/MOD II/Lezione 8 - Data Compression.md",
