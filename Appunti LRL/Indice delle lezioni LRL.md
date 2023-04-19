@@ -4,4 +4,7 @@
 - [[Lezione 3 - Introduzione alla Logica Proposizionale|Lezione 3]]
 - [[Lezione 4 - Il metodo dei tableaux|Lezione 4]]
 - [[Lezione 5 - Correttezza e completezza del metodo dei tableaux|Lezione 5]]
+- [[Lezione 6 - Sistemi assiomatici]]
+- [[Lezione 7 - Logica del Primo Ordine]]
+- [[Lezione  8 - Tableaux per la logica del Primo Ordine]]
 - 
