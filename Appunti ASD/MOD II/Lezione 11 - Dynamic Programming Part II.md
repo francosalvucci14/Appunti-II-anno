@@ -44,3 +44,14 @@ Given n points in the plane $I= \{(x_1, y_1), (x_2, y_2) ,\dots , (x_n, y_n)\}$ 
 So the problem is to find the ‘’optimal’’ **i**
 Try All and get the best = Dynamic Programming!
 
+**Dyn. Prog. Idea**: Assume an Oracle gives you the starting point $p_i$ of the **rightmost** segment for the optimal solution of the instance $I = \{p_1 ,\dots, p_j \}$. Then, you can split $$OPT(j) \coloneqq OPT(i-1) + c + e(i,j)$$
+How finding point i ? TRY ALL!!!
+
+![[appunti asd/mod ii/immagini/Pasted image 20230419100638.png|center|550]]
+
+To **compute** $OPT(j)$:
+- Last segment uses points $p_i, p_{i+1} , \dots , p_j$ for some i.
+- Cost = $e(i, j) + c + OPT(i-1)$
+
+$$OPT(j)=\begin{cases}0&\text{if j=0}\\min\{e(i,j)+c+OPT(j-1)\},1\leq i\leq j&\text{otherwise}\end{cases}$$
+
