@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md"
+                "file": "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md"
               }
             }
           },
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,8 +186,13 @@
   },
   "active": "74b8c98b890bd0f8",
   "lastOpenFiles": [
-    "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
+    "Appunti LRL/Immagini/Pasted image 20230419153120.png",
+    "Appunti LRL/Immagini/Pasted image 20230419152800.png",
+    "Appunti LRL/Immagini/Pasted image 20230419152206.png",
+    "Appunti LRL/Immagini/Pasted image 20230419152032.png",
+    "Appunti LRL/Immagini/Pasted image 20230419151935.png",
     "Appunti LRL/Indice delle lezioni LRL.md",
+    "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
     "Appunti LRL/Lezione 7 - Logica del Primo Ordine.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
@@ -207,10 +212,6 @@
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti ASD/MOD II/Lezione 9 - Huffman Codes.md",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230413152736.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230413152449.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230413151627.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230413151337.png",
     "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
     "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
     "Appunti ASD/MOD II/Lezione 8 - Data Compression.md",
@@ -222,7 +223,6 @@
     "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
     "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
     "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
-    "Appunti ASD/MOD I/Esami/Indice degli esami svolti ASD.md",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
