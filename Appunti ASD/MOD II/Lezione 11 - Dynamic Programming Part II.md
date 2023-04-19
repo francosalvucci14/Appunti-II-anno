@@ -55,3 +55,10 @@ To **compute** $OPT(j)$:
 
 $$OPT(j)=\begin{cases}0&\text{if j=0}\\min\{e(i,j)+c+OPT(j-1)\},1\leq i\leq j&\text{otherwise}\end{cases}$$
 
+## Segmented Least Squares : Algorithm
+
+![[Pasted image 20230419101358.png|center|550]]
+
+**Running time.** $O(n^3)$
+can be improved to $O(n^2)$ by pre-computing various statistics
+
