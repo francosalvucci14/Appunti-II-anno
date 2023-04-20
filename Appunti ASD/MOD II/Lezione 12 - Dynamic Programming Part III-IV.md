@@ -71,3 +71,5 @@ _**Knapsack approximation algorithm**_. There exists a poly-time algorithm
 that produces a feasible solution that has value within 0.01% of
 optimum. `[Section 11.8]`
 
+___
+# Sequence Alignment
