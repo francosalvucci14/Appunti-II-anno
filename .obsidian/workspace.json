@@ -95,7 +95,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III.md"
+              }
             }
           },
           {
@@ -112,6 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,6 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,8 +169,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "2da5617737f21ac3",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
     "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420145921.png",
@@ -190,7 +195,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230419100638.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230419095626.png",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
-    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti ASD/MOD II/Lezione 9 - Huffman Codes.md",
