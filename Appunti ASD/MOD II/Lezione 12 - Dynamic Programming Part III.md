@@ -54,3 +54,20 @@ The **good ordering** for sub-problems
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230420145921.png|center|650]]
 
+
+## Knapsack Algorithm
+
+![[appunti asd/mod ii/immagini/Pasted image 20230420150129.png|center]]
+
+
+### Running Time
+
+**Running time**. $\Theta(n\cdot W)$.
+- _**Not polynomial in input size!**_
+- "Pseudo-polynomial."
+- Decision version of Knapsack is NP-complete. `[Chapter 8]`
+
+_**Knapsack approximation algorithm**_. There exists a poly-time algorithm
+that produces a feasible solution that has value within 0.01% of
+optimum. `[Section 11.8]`
+
