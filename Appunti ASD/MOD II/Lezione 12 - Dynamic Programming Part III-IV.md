@@ -64,7 +64,7 @@ The **good ordering** for sub-problems
 
 **Running time**. $\Theta(n\cdot W)$.
 - _**Not polynomial in input size!**_
-- "Pseudo-polynomial."
+- "_**Pseudo-polynomial**_."
 - Decision version of Knapsack is NP-complete. `[Chapter 8]`
 
 _**Knapsack approximation algorithm**_. There exists a poly-time algorithm
@@ -73,3 +73,28 @@ optimum. `[Section 11.8]`
 
 ___
 # Sequence Alignment
+
+## String Similarity
+
+How similar are two strings?
+- ocurrance
+- occurrence
+
+![[appunti asd/mod ii/immagini/Pasted image 20230420151852.png|center|300]]
+
+## Edit Distance
+
+**Applications**.
+- Basis for Unix diff.
+- Speech recognition.
+- Computational biology.
+
+**Edit distance**. `[Levenshtein 1966, Needleman-Wunsch 1970]`
+- **Input Parameters** :
+	- Gap penalty: $\delta$
+	- Mismatch penalty $\alpha_{pq}$
+- **Cost** = _sum of gap and mismatch penalties_.
+
+![[appunti asd/mod ii/immagini/Pasted image 20230420152118.png|center|550]]
+
+
