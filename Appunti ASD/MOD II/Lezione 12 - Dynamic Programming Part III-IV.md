@@ -143,3 +143,4 @@ $$OPT(i,j)=\begin{cases}j*\delta&i=0\\min=\begin{cases}\alpha_{i,j}+OPT(i-1,j-1)
 ## Sequence Alignment : Algorithm
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230420155618.png|center|500]]
+
