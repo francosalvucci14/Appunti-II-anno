@@ -64,7 +64,7 @@ The **good ordering** for sub-problems
 
 **Running time**. $\Theta(n\cdot W)$.
 - _**Not polynomial in input size!**_
-- "_**Pseudo-polynomial**_."
+- "_**Pseudo-polynomial**_." (Input  = $\log_2w$, Dimensione matrice = w)
 - Decision version of Knapsack is NP-complete. `[Chapter 8]`
 
 _**Knapsack approximation algorithm**_. There exists a poly-time algorithm
@@ -97,4 +97,49 @@ How similar are two strings?
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230420152118.png|center|550]]
 
+## Feasible Solution: Sequence Alignment
 
+INPUT: parameter $\delta$; matrix $\alpha_{i,j}$;
+two strings $X = x_1 x_2 \dots x_m$ and $Y = y_1 y_2 \dots y_n$,
+GOAL: find an alignment of _**minimum cost.**_
+
+>[!definition]- Def. (Alignment)
+>An **alignment** M is a set of ordered pairs $x_i-y_j$ such that each item occurs in at most one pair and **no crossings**.
+
+>[!definition]- Def. 
+>The pair $x_i-y_j$ and $x_i'-y_j'$ **cross** if $i \lt i'$, but $j \gt j'$.
+
+
+$$Cost(M) = \underbrace{\sum\limits_{x_i-y_j \in M} \alpha_{i,j}}_{\text{Mismatches}} + \underbrace{\sum\limits_{x_i\not\in M}\delta+\sum\limits_{y_i \not\in M} \delta}_{\text{Gaps}}$$
+
+Ex: CTACCG vs. TACATG.
+Sol: $M = x_2-y_1, x_3-y_2, x_4-y_3, x_5-y_4, x_6-y_6.$
+
+![[appunti asd/mod ii/immagini/Pasted image 20230420154543.png|center|300]]
+
+## Design the Dynamic Programming
+
+_**FACT**_. Let M be any Alignment of X and Y.
+**IF** the pair ($X_m,Y_n$) is not in M **THEN** either $x_m$ is not matched in M or $y_n$ is not matched in M.
+
+_**Proof**_.
+Otherwise, a cross would occur!!!!
+
+## Sequence Alignment: Problem Structure
+
+>[!definition]- OPT(i, j)
+> **Min** cost of aligning strings $x_1 x_2 \dots x_i$ and $y_1 y_2 \dots y_j$.
+
+**Case 1**: OPTIMAL SOL matches $x_i-y_j.$ THEN:
+- pay for $x_i-y_j$ mismatch + **min cost** of aligning the two strings $x_1 x_2 \dots x_{i-1}$ and. $y_1 y_2 \dots y_{j-1}$
+
+**Case 2a**: OPTIMAL SOL leaves $x_i$ unmatched. THEN
+- pay gap for $x_i$ + **min cost** of aligning $x_1 x_2 \dots x_{i-1}$ and $y_1 y_2 \dots y_{j-1}$
+
+**Case 2b**: OPTIMAL SOL leaves $y_j$ unmatched.
+- pay gap for $y_j$ + **min cost** of aligning $x_1 x_2 \dots x_{i-1}$ and $y_1 y_2 \dots y_{j-1}$
+
+$$OPT(i,j)=\begin{cases}j*\delta&i=0\\min=\begin{cases}\alpha_{i,j}+OPT(i-1,j-1)\\\delta+OPT(i-1,j)\\\delta+OPT(i,j-1)\end{cases}&\text{otherwise}\\i*\delta & j=0\end{cases}$$
+## Sequence Alignment : Algorithm
+
+![[appunti asd/mod ii/immagini/Pasted image 20230420155618.png|center|500]]
