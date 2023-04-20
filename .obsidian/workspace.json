@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "54c7c89501c17507",
+            "id": "2da5617737f21ac3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "74b8c98b890bd0f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
+                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,9 +95,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md"
-              }
+              "state": {}
             }
           },
           {
@@ -127,7 +112,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +128,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,17 +137,15 @@
         "currentTab": 2
       },
       {
-        "id": "0b6b055d9eef298d",
+        "id": "1965156d1aa9bf11",
         "type": "tabs",
         "children": [
           {
-            "id": "df555361acd01cd6",
+            "id": "74b8c98b890bd0f8",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "graph",
-              "state": {},
-              "pinned": true
+              "state": {}
             }
           }
         ]
@@ -184,31 +165,32 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "74b8c98b890bd0f8",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
+    "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III.md",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230420145921.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230420143732.png",
+    "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
+    "Appunti ASD/MOD II/Lezione 11 - Dynamic Programming Part II.md",
+    "Appunti FI/MOD II/Lezione 10.md",
+    "Appunti FI/MOD II/Lezione 11.md",
+    "Appunti FI/MOD II/Lezione 8.md",
     "Appunti LRL/Immagini/Pasted image 20230419153120.png",
     "Appunti LRL/Immagini/Pasted image 20230419152800.png",
     "Appunti LRL/Immagini/Pasted image 20230419152206.png",
     "Appunti LRL/Immagini/Pasted image 20230419152032.png",
     "Appunti LRL/Immagini/Pasted image 20230419151935.png",
     "Appunti LRL/Indice delle lezioni LRL.md",
-    "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
     "Appunti LRL/Lezione 7 - Logica del Primo Ordine.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
     "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
-    "Appunti ASD/MOD II/Lezione 11 - Dynamic Programming Part II.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230419101358.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230419100638.png",
-    "Appunti FI/MOD II/Lezione 11.md",
-    "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230419095626.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230419095420.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230419095105.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230419095038.png",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti FI/MOD II/Lezione 10.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti ASD/MOD II/Lezione 9 - Huffman Codes.md",
@@ -221,8 +203,6 @@
     "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Lezione 4 - Clustering et Union-Find.md",
-    "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
