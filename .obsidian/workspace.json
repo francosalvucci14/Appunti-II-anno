@@ -18,17 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5ab48bfdbae4d170",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +95,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md"
+              }
             }
           },
           {
@@ -121,6 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,6 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +169,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5ab48bfdbae4d170",
+  "active": "2da5617737f21ac3",
   "lastOpenFiles": [
     "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420152118.png",
