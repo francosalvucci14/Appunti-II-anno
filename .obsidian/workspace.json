@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "41083b0b25277277",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md"
+                "file": "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md"
               }
             }
           },
@@ -114,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
+                "file": "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
+                "file": "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,14 +182,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2da5617737f21ac3",
+  "active": "41083b0b25277277",
   "lastOpenFiles": [
+    "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
+    "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
+    "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Immagini/Pasted image 20230421142534.png",
     "Appunti LRL/Immagini/Pasted image 20230421142235.png",
     "Appunti LRL/Immagini/Pasted image 20230421141940.png",
     "Appunti LRL/Immagini/Pasted image 20230421141726.png",
     "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
-    "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
     "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420155618.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420154543.png",
@@ -190,11 +205,9 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420150129.png",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420145921.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230420143732.png",
     "Appunti FI/MOD II/Lezione 10.md",
     "Appunti FI/MOD II/Lezione 11.md",
     "Appunti FI/MOD II/Lezione 8.md",
-    "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Lezione 7 - Logica del Primo Ordine.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
