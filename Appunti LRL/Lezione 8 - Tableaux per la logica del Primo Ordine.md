@@ -29,7 +29,51 @@ In analogia con quanto fatto per le formule della logica proposizionale, possiam
 
 ![[appunti lrl/immagini/Pasted image 20230419153120.png|center|500]]
 
+Come nel caso della logica proposizionale, diciamo che un ramo di un tableau è chiuso se sul ramo c’è sia una formula che la sua negata. Diciamo che un tableau è chiuso se tutti i suoi rami sono chiusi e diciamo che una formula $\mathcal F$ è dimostrabile col metodo dei tableaux se partendo da $\neg\mathcal F$ e applicando le regole per le $\alpha, \beta, \gamma, \delta$ formule riusciamo a ottenere un tableau chiuso.
 
+# Esempio
+
+**Esempio 1**
+
+Consideriamo la formula 
+$$\forall xP (x) \to \exists x P (x)$$
+Nell’episodio precedente, ragionando intuitivamente abbiamo osservato che è impossibile trovare una interpretazione che la rende falsa, quindi la formula è valida. Facciamo vedere che è dimostrabile col metodo dei tableaux
+
+![[appunti lrl/immagini/Pasted image 20230421141726.png|center|300]]
+
+Le formule (2) e (3) vengono dalla (1) applicando la regola $\alpha$, la (4) viene dalla (2) tramite la regola $\gamma$ e la (5) dalla (3) sempre tramite la regola $\gamma$. La (4) e la (5) sono in contraddizione quindi il tableau, che ha un unico ramo, è chiuso.
+
+**Esempio 2**
+
+Consideriamo la formula
+
+$$\exists x(P (x) \land Q(x)) \to \exists xP (x) \land \exists xQ(x)$$
+Vediamo che è dimostrabile col metodo dei tableaux
+
+![[appunti lrl/immagini/Pasted image 20230421141940.png|center|350]]
+
+Le formule (2) e (3) vengono da (1) (regola $\alpha$), la (4) dalla (2) (regola $\delta$), (5) e (6) da (4) (regola $\alpha$), (7) e (8) da (3) (regola $\beta$), infine (9) e (10) da (7) e (8) rispettivamente (entrambe regole $\gamma$). Le formule (9) e (5) sono in contraddizione, così come le formule (10) e (6). Quindi entrambi i rami sono chiusi. La formula è dimostrata
+
+**Esempio 3**
+
+Consideriamo la seguente formula
+$$\exists y[P (y) \to \forall xP (x)]$$
+Pensate che sia valida oppure no? Intanto vediamo che è dimostrabile
+
+![[appunti lrl/immagini/Pasted image 20230421142235.png|center|300]]
+
+La (2) viene dalla (1) (regola $\gamma$), (3) e (4) vengono dalla (2) (regola $\alpha$). La (5) viene dalla (4) (regola $\delta$), ma osservate che non ho potuto mettere $\neg P (a)$ e trovare una contraddizione con la (3), perchè la (4) è di tipo esistenziale, quindi devo usare un parametro che non ho già usato prima. Quindi? Il tableau non si chiude e la formula non è dimostrabile?
+
+La formula (1) è di tipo universale, quindi posso riusarla con un altro parametro!
+
+![[appunti lrl/immagini/Pasted image 20230421142534.png|center|300]]
+
+La (6) viene dalla (1), la (7) e la (8) vengono dalla (6) e non c’è bisogno di proseguire sviluppando la (8) perch è la (7) e la (5) sono in contraddizione e il tableau è chiuso.
+
+# Conclusioni
+
+In questo episodio abbiamo visto come si estende il metodo dei tableaux alla logica del  
+primo ordine. Sono sicuro che sapete già cosa ci aspetta nel prossimo episodio. . . Dobbiamo dimostrare che il metodo è corretto (ogni formula dimostrabile col metodo dei tableaux è valida) e completo (ogni formula valida è dimostrabile col metodo dei tableaux ).
 
 
 
