@@ -10,3 +10,5 @@
 - [[Lezione 9]]
 - [[Lezione 10]]
 - [[Lezione 11]]
+- [[Lezione 12]]
+- 

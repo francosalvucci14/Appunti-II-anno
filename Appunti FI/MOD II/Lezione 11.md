@@ -175,7 +175,27 @@ Ossia, $O(f(n)) \subseteq O(g(n))$ e da questo segue il seguente teorema
 >[!definition]- Teorema 6.12: 
 >Per ogni coppia di funzioni totali calcolabili $f :\mathbb N\to\mathbb N, g:\mathbb N\to\mathbb N$  tali che $n_0 \in \mathbb N : \forall  n\geq n_0 [ f(n)  g(n) ]$ – ossia $f(n) \leq g(n)$ definitivamente
   $$\begin{align}&DTIME[ f (n)] \subseteq DTIME[g(n)]\\& 			NTIME[ f (n)] \subseteq NTIME[g(n)],\\& 					DSPACE[ f (n)] \subseteq DSPACE[g(n)]\\& 		NSPACE[ f (n)] \subseteq NSPACE[g(n)]. \end{align}$$ 
-  Infatti, O(f(n)) ⊆ O(g(n))
+  Infatti, $O(f(n)) \subseteq O(g(n))$
+
+Ok, allora il Teorema 6.12 ci dice che, se collochiamo un linguaggio L, ad esempio, in $DTIME[f(n)]$, allora L appartiene anche a tutte le classi $DTIME[g(n)]$ tali che, definitivamente, $f(n)\leq g(n)$
+
+E questo, fate attenzione, significa che: se collochiamo un linguaggio L, ad esempio, in $DTIME[f(n)]$, questo non implica che L non possa appartenere anche a qualche classe $DTIME[r(n)]$ tali che, definitivamente, $r(n)\leq   f(n)!$
+
+Che, detto altrimenti, significa che qualcuno potrebbe progettare per decidere L un algoritmo più efficiente del nostro!
+
+Perciò, aver collocato un linguaggio L, ad esempio, in $DTIME[f(n)]$, è aver fatto solo metà del lavoro :
+- l’altra metà sarebbe dimostrare che L non appartiene a $DTIME[r(n)]$ per alcuna funzione r(n) tale che, definitivamente, $r(n)\leq   f(n)$!
+- e questo è un compito parecchio più complesso
+
+Di contro, nella definizione di una teoria della complessità in grado di classificare significativamente i linguaggi in classi di complessità crescente, 
+- perché, in definitiva, noi vorremmo poter dire; “questo problema **è più difficile** di quest’altro”
+sarebbe auspicabile che $DTIME[f(n)]$ non fosse contenuto in $DTIME[g(n)]$ quando f(n) è molto più grande di g(n) – ad esempio, quando $f (n) = 2^{g(n)}$ !
+Ma, invece:
+
+>[!definition]- Teorema 6.13 (Gap Theorem): 
+>Esiste una funzione totale calcolabile $f :\mathbb N  \to\mathbb N$ tale che	$$DTIME[ 2^{f(n)} ] \subseteq DTIME[f(n)]. $$
+
+E allora?!
   
 [^2]: Vedi lezione 11 [[Lezione 11#^8409f2|Teorema 6.7]]
 
