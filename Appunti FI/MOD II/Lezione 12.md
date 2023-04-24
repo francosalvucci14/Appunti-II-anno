@@ -116,3 +116,14 @@ Ma quanto impiega NT’ a decidere se $x\in L$ oppure no?
 - e altri $c f(|x|)$ passi per simulare $c f(|x|)$ passi di NT(x), ossia, $O(f(|x|))$ passi
 **Per questo possiamo concludere che L è decidibile, in tempo non deterministico** $O(f(n))$
 
+### La seconda questione aperta
+
+Le uniche relazioni che conosciamo (fino ad ora) fra classi deterministiche e classi non deterministiche sono quelle banali: 	$$DTIME[f(n)] \subseteq NTIME[f(n)],   DSPACE[ f (n)] \subseteq NSPACE[ f (n)].$$ 
+basate sull’osservazione che una macchina deterministica è una particolare macchina non deterministica
+
+A parte ciò, sappiamo che tutto ciò che è deciso da una macchina non deterministica può essere deciso anche da una macchina deterministica. 
+
+Tuttavia, un linguaggio che sappiamo appartenere a $NTIME[f(n)]$ non sappiamo in quale classe di complessità temporale deterministica collocarlo 
+- non sappiamo se esiste un funzione g(n) che magari cresce molto più velocemente di f(n) tale che possiamo affermare “se L appartiene a $NTIME[f(n)]$ allora L appartiene a $DTIME[g(n)]$”
+a meno che la funzione limite f della classe non sia una funzione time-constructible…
+

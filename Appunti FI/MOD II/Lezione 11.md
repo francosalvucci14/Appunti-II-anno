@@ -162,7 +162,7 @@ La dimostrazione per DSPACE e coDSPACE è analoga.
 
 ### Classi "poco precise"
 
-Attenzione: l’utilizzo di O nella definizione delle classi di complessità ha come conseguenza che esse non caratterizzino con precisione i linguaggi
+Attenzione: l’utilizzo di $O$ nella definizione delle classi di complessità ha come conseguenza che esse non caratterizzino con precisione i linguaggi
 - nel senso che, se dimostriamo che un certo linguaggio L è contenuto, ad esempio, in $DTIME[f(n)]$ (per qualche funzione totale e calcolabile f), allora… esiste una serie _infinita_ di classi DTIME nelle quali L è contenuto!
 
 Andiamo a chiarire
