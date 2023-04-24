@@ -171,5 +171,5 @@ Allora, $$dtime(T,x)\in  O( h f(|x|) + h f(|x|) k^{h f(|x|)} ) = O( h f(|x|) k^{
 Infine, in virtù del Teorema 6.3, esiste una macchina $T_1$ ad un nastro tale che 
 - per ogni input x, l’esito della computazione $T_1(x)$ coincide con l’esito della computazione T(x) 
 - ed esiste una costante c tale che $dtime(T:1, x)\leq dtime(T, x)^c \in O(2^{O( f(|x|) )} ).$
-Questo conclude la dimostrazione che $L\in  DTIME[2^{O( f (|x|))} ].$
+Questo conclude la dimostrazione che $L\in  DTIME[2^{O( f (|x|))} ].$ $\square$
 
