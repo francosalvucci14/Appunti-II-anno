@@ -127,3 +127,49 @@ Tuttavia, un linguaggio che sappiamo appartenere a $NTIME[f(n)]$ non sappiamo in
 - non sappiamo se esiste un funzione g(n) che magari cresce molto più velocemente di f(n) tale che possiamo affermare “se L appartiene a $NTIME[f(n)]$ allora L appartiene a $DTIME[g(n)]$”
 a meno che la funzione limite f della classe non sia una funzione time-constructible…
 
+>[!definition]- Teorema 6.17:
+> Per ogni funzione time-constructible $f :\mathbb N\to\mathbb N$,$$NTIME[ f (n)] \subseteq DTIME[ 2^{O( f (n))} ]$$
+
+_**Dim**_
+
+Sia $L \subseteq \{0,1\}^\star$ tale che $L \in NTIME[ f (n) ]$; allora esistono 
+- una macchina di Turing non deterministica NT che accetta L 
+- una costante h 
+tali che, per ogni $x \in L$, $ntime(NT,x) \leq hf(|x|)$.
+
+Poichè $h f$ è time-constructible, esiste $T_f$ che, con input $1^n$, calcola $1^{hf(n)}$ in tempo $O( f(n))$. 
+
+Indichiamo con k il grado di non determinismo di NT, e utilizziamo di nuovo la tecnica della simulazione per definire una macchina di Turing deterministica T, dotata di 3 nastri, che simuli il comportamento di NT: 
+- su input x, T simula in successione, una dopo l’altra, tutte le computazioni deterministiche di NT (x) di lunghezza $h f (|x|).$
+
+La macchina T con input x opera in due fasi, come di seguito descritto: 
+1) Simula la computazione $T_f(|x|)$: 
+	- per ogni carattere di x, scrive sul secondo nastro un carattere ‘1’
+	- in seguito, calcola $1^{f(|x|)}$ scrivendolo sul terzo nastro 
+	- infine, concatena h volte il contenuto del terzo nastro ottenendo il valore $1^{ h f (|x|)}$
+		- (stiamo dimostrando che: se f è time-constructible allora anche $h f$ è time constructible, cosa che nel teorema precedente avevamo solo enunciato). 
+2) Simula, una alla volta, tutte le computazioni deterministiche di NT(x) di lunghezza $h f(|x|)$ utilizzando, per ciascuna computazione, la posizione della testina sul terzo nastro come contatore:
+	- simula al più $h f(|x|)$ passi della computazione _**più a sinistra**_ di tutte nell’albero NT(x): se tale computazione accetta entro $h f(|x|)$ passi allora T termina in $q_A$, altrimenti
+	- simula al più $h f(|x|)$ passi della computazione _**immediatamente più a destra**_ di quella appena simulata: se tale computazione accetta entro $h f(|x|)$ passi allora T termina in $q_A$, altrimenti
+	- …
+	- simula al più $h f(|x|)$ passi della computazione _**più a destra di tutte**_ nell’albero NT(x): se tale computazione accetta entro $h f(|x|)$ passi allora T termina in $q_A$, altrimenti T termina in $q_R$
+
+T decide L: infatti, poiché in al più $h f(|x|)$ passi NT accetta le parole $x\in  L$, allora 
+- se $x\in L$, in $hf(|x|)$ passi una delle computazioni deterministiche di NT(x) termina nello stato di accettazione 
+	- durante la FASE 2), poiché T simula i primi $h f(|x|)$ passi di tutte le computazioni deterministiche di NT(x) fino a quando una di esse accetta oppure non le ha esaminate tutte, prima o poi T simulerà anche quella accettante: e questo porterà T nello stato $q_A$
+- se $x\not\in L$, in $hf(|x|)$ passi nessuna delle computazioni deterministiche di NT(x) termina nello stato di accettazione 
+	- durante la FASE 2), T dovrà simulare i primi $h f(|x|)$ passi di tutte le computazioni deterministiche di NT(x) (da quella più a sinistra nell’albero a quella più a destra, nessuna esclusa), perché nessuna di esse accetta: e questo porterà T nello stato $q_R$
+Questo prova che T decide L. 
+
+Ma quanto tempo impiega T a decidere L? 
+- Intanto, la FASE 1) richiede $O( h f(|x|)$ passi – perché f è time-constructible
+- Poi, riguardo la FASE 2):
+	- sia k il grado di non determinismo di NT,  k è costante!
+	- allora, il numero di computazioni deterministiche di NT(x) di lunghezza $h f(|x|)$ è  $k^{ h f(|x|)}$ 
+	- ciascuna di queste computazioni viene simulata da T in $O( h f(|x|))$ passi. 
+Allora, $$dtime(T,x)\in  O( h f(|x|) + h f(|x|) k^{h f(|x|)} ) = O( h f(|x|) k^{h f(|x|)} ) \subseteq O(2^{O(f(|x|)} ).$$
+Infine, in virtù del Teorema 6.3, esiste una macchina $T_1$ ad un nastro tale che 
+- per ogni input x, l’esito della computazione $T_1(x)$ coincide con l’esito della computazione T(x) 
+- ed esiste una costante c tale che $dtime(T:1, x)\leq dtime(T, x)^c \in O(2^{O( f(|x|) )} ).$
+Questo conclude la dimostrazione che $L\in  DTIME[2^{O( f (|x|))} ].$
+

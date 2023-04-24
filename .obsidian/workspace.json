@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 11.md"
+                "file": "Appunti FI/MOD II/Lezione 12.md"
               }
             }
           },
@@ -126,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 11.md",
+                "file": "Appunti FI/MOD II/Lezione 12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,14 +144,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 11.md",
+                "file": "Appunti FI/MOD II/Lezione 12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "1965156d1aa9bf11",
@@ -181,12 +182,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "41083b0b25277277",
+  "active": "f44be4c0ef4dfb2a",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 11.md",
     "Appunti FI/MOD II/Lezione 10.md",
     "Appunti FI/MOD II/Lezione 12.md",
     "Appunti FI/MOD II/Lezione 9.md",
-    "Appunti FI/MOD II/Lezione 11.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
