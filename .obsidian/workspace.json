@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "41083b0b25277277",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/MOD II/Lezione 11.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f44be4c0ef4dfb2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 12.md",
+                "file": "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 12.md"
+                "file": "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md"
               }
             }
           },
@@ -127,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 12.md",
+                "file": "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 12.md",
+                "file": "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,9 +171,9 @@
   },
   "active": "f44be4c0ef4dfb2a",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 12.md",
     "Appunti FI/MOD II/Lezione 11.md",
     "Appunti FI/MOD II/Lezione 10.md",
-    "Appunti FI/MOD II/Lezione 12.md",
     "Appunti FI/MOD II/Lezione 9.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
