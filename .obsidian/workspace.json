@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 11.md",
+                "file": "Appunti FI/MOD II/Lezione 10.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 11.md"
+                "file": "Appunti FI/MOD II/Lezione 12.md"
               }
             }
           },
@@ -126,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 11.md",
+                "file": "Appunti FI/MOD II/Lezione 12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 11.md",
+                "file": "Appunti FI/MOD II/Lezione 12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,11 +182,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "41083b0b25277277",
+  "active": "f44be4c0ef4dfb2a",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 10.md",
     "Appunti FI/MOD II/Lezione 12.md",
-    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+    "Appunti FI/MOD II/Lezione 9.md",
     "Appunti FI/MOD II/Lezione 11.md",
+    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
@@ -207,7 +210,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420150129.png",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420145921.png",
-    "Appunti FI/MOD II/Lezione 10.md",
     "Appunti FI/MOD II/Lezione 8.md",
     "Appunti LRL/Lezione 7 - Logica del Primo Ordine.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
@@ -219,7 +221,6 @@
     "Appunti ASD/MOD II/Lezione 8 - Data Compression.md",
     "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
     "Appunti ASD/MOD II/Lezione 5 - Still on Union-Find & Interval Scheduling.md",
-    "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",

@@ -192,9 +192,9 @@ Di contro, nella definizione di una teoria della complessità in grado di classi
 sarebbe auspicabile che $DTIME[f(n)]$ non fosse contenuto in $DTIME[g(n)]$ quando f(n) è molto più grande di g(n) – ad esempio, quando $f (n) = 2^{g(n)}$ !
 Ma, invece:
 
+
 >[!definition]- Teorema 6.13 (Gap Theorem): 
 >Esiste una funzione totale calcolabile $f :\mathbb N  \to\mathbb N$ tale che	$$DTIME[ 2^{f(n)} ] \subseteq DTIME[f(n)]. $$
-
 E allora?!
   
 [^2]: Vedi lezione 11 [[Lezione 11#^8409f2|Teorema 6.7]]
