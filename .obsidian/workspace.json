@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "29da922808587a1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -138,7 +150,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "1965156d1aa9bf11",
@@ -171,9 +183,10 @@
   },
   "active": "58edfe7c5dd5f0ee",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230426100807.png",
     "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
+    "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
+    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti FI/MOD II/Lezione 12.md",
     "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
     "Appunti FI/MOD II/Lezione 11.md",
@@ -207,7 +220,6 @@
     "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
     "Appunti ASD/MOD II/Lezione 8 - Data Compression.md",
-    "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
