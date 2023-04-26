@@ -146,3 +146,7 @@ $$OPT(i,j)=\begin{cases}j*\delta&i=0\\min=\begin{cases}\alpha_{i,j}+OPT(i-1,j-1)
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230420155618.png|center|500]]
 
+**Analysis**. $\Theta(mn)$ time and space.
+English words or sentences: $m, n \leq 10.$
+Computational biology: m = n = 100,000. 10 billions ops OK, but 10GB array?
+
