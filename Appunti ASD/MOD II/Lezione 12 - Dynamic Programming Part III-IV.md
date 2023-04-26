@@ -109,6 +109,8 @@ GOAL: find an alignment of _**minimum cost.**_
 >[!definition]- Def. 
 >The pair $x_i-y_j$ and $x_i'-y_j'$ **cross** if $i \lt i'$, but $j \gt j'$.
 
+> $M=\{(x_{i_1},y_{i_1}),\dots,(x_{i_k},y_{i_k})\}$
+
 
 $$Cost(M) = \underbrace{\sum\limits_{x_i-y_j \in M} \alpha_{i,j}}_{\text{Mismatches}} + \underbrace{\sum\limits_{x_i\not\in M}\delta+\sum\limits_{y_i \not\in M} \delta}_{\text{Gaps}}$$
 
