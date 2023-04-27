@@ -20,31 +20,19 @@
             }
           },
           {
-            "id": "29da922808587a1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d255fc72d22250ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 13.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 13.md"
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md"
               }
             }
           },
@@ -139,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 13.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 13.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -196,8 +184,8 @@
   },
   "active": "d255fc72d22250ad",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
     "Appunti FI/MOD II/Lezione 13.md",
+    "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230426100807.png",
     "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
