@@ -7,8 +7,8 @@ Input
 - Item **i** weighs $w_i \gt 0$ kilograms and has value $v_i \gt 0$.
 - **Knapsack** has capacity of **W** kilograms.
 End input
-- **Feasible Sol**: $S \subseteq I : \sum\limits_{j\in S} w_i$
-- **Goal**: fill knapsack so as to _**maximize**_ total SUM of values: $\sum\limits_{j\in S} v_i$ 
+- **Feasible Sol**: $S \subseteq I : \sum\limits_{j\in S} w_j\lt W$
+- **Goal**: fill knapsack so as to _**maximize**_ total SUM of values: $\sum\limits_{j\in S} v_j$ 
 Ex: $S=\{3,4\}=40$
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230420143732.png|center|500]]
