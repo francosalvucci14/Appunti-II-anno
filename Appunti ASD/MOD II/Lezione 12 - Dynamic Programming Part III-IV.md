@@ -23,6 +23,7 @@ Ex: { 5, 2, 1 } achieves only value = 35 $\to$ greedy not optimal.
 
 <u>Case 1</u>: OPT does not select item **i**.
 - OPT selects best of $\{ 1, 2, \dots, i-1 \}$
+
 <u>Case 2</u>: OPT selects item **i**. (Which sub-problems must recursively be invoked?)
 - accepting item i does not immediately imply that we will have to reject **other items** $k \lt i$.
 - without knowing what other items were selected before i,we don'teven know if we have enough room for i
