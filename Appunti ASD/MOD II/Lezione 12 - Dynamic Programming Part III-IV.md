@@ -66,7 +66,7 @@ The **good ordering** for sub-problems
 
 **Running time**. $\Theta(n\cdot W)$.
 - _**Not polynomial in input size!**_
-- "_**Pseudo-polynomial**_." (Input  = $\log_2w$, Dimensione matrice = w)
+- "_**Pseudo-polynomial**_." (Input  = $\log_2w$, Dimensione matrice = W)
 - Decision version of Knapsack is NP-complete. `[Chapter 8]`
 
 _**Knapsack approximation algorithm**_. There exists a poly-time algorithm
