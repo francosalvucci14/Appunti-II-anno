@@ -38,6 +38,7 @@ Conclusion: Need <u>more</u> sub-problems, i.e. more parameters than just index 
 
 <u>Case 1</u>: OPT does not select item i.
 - OPT selects best of sub-probl $\{ 1, 2, \dots, i-1 \}$ using **weight limit w**
+
 <u>Case 2</u>: OPT selects item i
 - new weight limit = $w - w_i$
 - OPT selects **best** of $\{ 1, 2, \dots, i-1 \}$ using this **new weight limit**
