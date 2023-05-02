@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 13.md",
+                "file": "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 13.md"
+                "file": "Appunti LRL/Lezione 6 - Sistemi assiomatici.md"
               }
             }
           },
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 13.md",
+                "file": "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,14 +143,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 13.md",
+                "file": "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "1965156d1aa9bf11",
@@ -183,24 +183,30 @@
   },
   "active": "d255fc72d22250ad",
   "lastOpenFiles": [
-    "Appunti FI/MOD II/Lezione 12.md",
+    "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
+    "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
+    "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
+    "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
+    "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
+    "Appunti LRL/Lezione 7 - Logica del Primo Ordine.md",
+    "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti FI/MOD II/Lezione 13.md",
+    "Appunti FI/MOD II/Lezione 9.md",
+    "Appunti FI/MOD II/Lezione 8.md",
+    "Appunti FI/MOD II/Lezione 7.md",
+    "Appunti FI/MOD II/Lezione 12.md",
     "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
     "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230426100807.png",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
     "Appunti FI/MOD II/Lezione 11.md",
     "Appunti FI/MOD II/Lezione 10.md",
-    "Appunti FI/MOD II/Lezione 9.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
-    "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
     "Appunti LRL/Immagini/Pasted image 20230421142534.png",
     "Appunti LRL/Immagini/Pasted image 20230421142235.png",
     "Appunti LRL/Immagini/Pasted image 20230421141940.png",
     "Appunti LRL/Immagini/Pasted image 20230421141726.png",
-    "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420155618.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420154543.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420152118.png",
@@ -211,15 +217,9 @@
     "Appunti ASD/MOD II/Lezione 7 - Interval Scheduling Part III.md",
     "Appunti ASD/MOD II/Lezione 6 - Interval Scheduling Part II.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230420150129.png",
-    "Appunti FI/MOD II/Lezione 8.md",
-    "Appunti LRL/Lezione 7 - Logica del Primo Ordine.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
-    "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
-    "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
-    "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
-    "Appunti ASD/MOD II/Lezione 8 - Data Compression.md",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",

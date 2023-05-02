@@ -35,7 +35,7 @@ regola di inferenza Modus Ponens.
 ![[appunti lrl/immagini/Pasted image 20230413115413.png|center|600]]
 
 La sequenza di formule (1), (2) e (3) qui sopra è una dimostrazione secondo la Definizione 2.1.
-Infatti, le formule (1) e (2) sono istanze di assiomi, e la formula (3) si ottiene dalle due formule precedenti usando la regola di inferenza Modus Ponens, dove abbiamo posto $$X = (p \to (q \to p))$ e $Y = (p \to q) \to (p \to p)$$
+Infatti, le formule (1) e (2) sono istanze di assiomi, e la formula (3) si ottiene dalle due formule precedenti usando la regola di inferenza Modus Ponens, dove abbiamo posto $$X = (p \to (q \to p))\space e \space Y = (p \to q) \to (p \to p)$$
 A questo punto possiamo anche dire cos’è un teorema in un sistema assiomatico.
 
 >[!definition]- Definizione 2.2 (Teorema)
