@@ -5,7 +5,7 @@ Una sistema formale consiste in _schemi di assiomi e regole di inferenza_, oltre
 sieme dei simboli che vengono usati e delle definizioni che stabiliscono quali sequenze di  
 simboli sono “formula”. 
 Nel caso della logica proposizionale gli schemi di assiomi sono un insieme di formule ben formate e le regole di inferenza sono relazioni di formule di questo tipo: 
-“Dalle formule $X_1, \dots , X_n$ segue la formula $Y$ ”. 
+“Dalle formule $X_1, \dots , X_n$ segue la formula $Y$ ”. asd
 Vediamo subito un esempio.  
 Consideriamo i due assiomi seguenti : 
 $$\begin{align}&A_{1} : X\to(Y\to X)\\&A_{2}: (X\to(Y\to Z))\to((X\to Y)\to(X\to Z))\end{align}$$
