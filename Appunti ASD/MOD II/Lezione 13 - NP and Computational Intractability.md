@@ -42,5 +42,64 @@ _**Certification algorithm**_: **Intuition.**
 >[!warning]- Remark
 >NP stands for **nondeterministic polynomial-time.**
 
+### Certifiers and Certificates: Composite
 
+**COMPOSITES**. Given an integer s, is s composite?
+
+**Certificate**. Any nontrivial factor t of s. Note that such a certificate exists iff s is composite. Moreover $|t| \leq |s|$.
+
+![[appunti asd/mod ii/immagini/Pasted image 20230505122653.png|center|500]]
+
+EX. Instance. s = 437669.
+Certificate. t = 541 or 809.
+
+### Certifiers and Certificates: 3-Satisfability
+
+
+**3-SAT.**
+- _Instance_: CNF formula $\phi$ _**in the Boolean variable**_ $x_1 , x_2, \dots, x_n$,
+- _Question_: is there a **satisfying** assignment $t \in \{0,1\}^n$ for $\phi(x_1 , x_2, \dots, x_n)$
+- _Certificate_. An assignment $t \in \{0,1\}^n$
+
+**Certifier**. Check that each clause in $\phi(x_1 , x_2, \dots, x_n)$ has at least one true literal.
+
+![[appunti asd/mod ii/immagini/Pasted image 20230505123145.png|center|550]]
+
+**THM**.
+3-SAT is in NP.
+
+### Certifiers and Certificates: Hamiltonian Cycle
+
+**HAM-CYCLE**.
+- _Instance_. an undirected graph $G = (V, E)$ where $V = \{1,2,\dots,n\}$
+- _Question_. does there exist a <u>simple</u> cycle C that visits <u>every</u> node of V?
+- _Certificate_: a **permutation** $\Pi$ of $V= \{1,2,\dots,n\}.$
+
+**Certifier** $C(G(V,E), \Pi)$. Check that:
+1. $\Pi$ is a permutation of V, i.e., it contains each $v \in V$ exactly once , and
+2. there is edge $(v,w) \in E$ between each pair of adjacent nodes $<u,w> \in \Pi$ 
+
+**Thm**. HAM-CYCLE is in NP.
+
+![[appunti asd/mod ii/immagini/Pasted image 20230505123758.png|center|500]]
+
+## P,EXP,NP
+
+- **P**. Decision problems for which there is a _**poly-time algorithm**_.
+- **EXP**. Decision problems for which there is an _**exponential-time algorithm**_.
+- **NP**. Decision problems for which there is a _**poly-time certifier**_.
+
+>[!definition]- Claim. $P \in NP$.
+
+Pf. Consider any problem X in P.
+- By hyp., there exists a poly-time algorithm A(s) that solves X.
+- Certificate: $t = \varepsilon$, certifier C(s, t) = A(s).
+
+>[!definition]- Claim. $NP \in EXP.$
+
+Pf. Consider any problem X in NP.
+- By definition, there exists a poly-time certifier C(s, t) for X.
+- To solve input s, run C(s, t) on all proofs, i.e., strings t with $|t| \in p(|s|)$.
+- How many strings t to check? if proof’s alphabet is binary, then number of t’s $= 2^{p(|s|)}$ which is ok since we are in EXP
+- Return yes, if C(s, t) returns yes forany of these t’s .
 
