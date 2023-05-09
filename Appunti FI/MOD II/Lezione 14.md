@@ -90,10 +90,9 @@ Ossia, $L_1\in  DTIME[ n^c + f( n^c ) ]$
 Allora, se $L_2\in P$ allora $L_1\in  P$
 - in questo caso, esiste una costante k tale che $L_2\in  DTIME[ n^k  ]$
 - allora, $L_1\in  DTIME[ n^c + ( n^c )^k ]\subseteq P$
-Se L2 EXPTIME allora L1  EXPTIME, 
+
+E quindi, se $L_2\in EXPTIME$ allora $L_1\in  EXPTIME$.
+
 Ma si può dimostrare la stessa cosa con le classi non deterministiche:
-Se L2 NP allora L1  NP, 
-Se L2 NEXPTIME allora L1  NEXPTIME, 
-Se avete voglia, provate a dimostrarlo per esercizio
 E anche per le classi spaziali
-Se L2 PSPACE allora L1  PSPACE, 
+
