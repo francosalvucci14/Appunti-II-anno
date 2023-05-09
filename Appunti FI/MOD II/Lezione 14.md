@@ -96,3 +96,4 @@ E quindi, se $L_2\in EXPTIME$ allora $L_1\in  EXPTIME$.
 Ma si può dimostrare la stessa cosa con le classi non deterministiche:
 E anche per le classi spaziali
 
+
