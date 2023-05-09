@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
+                "file": "Appunti FI/MOD II/Lezione 14.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md"
+                "file": "Appunti FI/MOD II/Lezione 14.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
+                "file": "Appunti FI/MOD II/Lezione 14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
+                "file": "Appunti FI/MOD II/Lezione 14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "1965156d1aa9bf11",
@@ -179,14 +179,16 @@
   },
   "active": "d255fc72d22250ad",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 13.md",
+    "Appunti FI/MOD II/Lezione 14.md",
+    "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
+    "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123758.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123630.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123145.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123715.png",
-    "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
     "Pasted image 20230505122750.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505122653.png",
-    "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
     "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti FI/MOD II/Lezione 12.md",
     "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
@@ -195,7 +197,6 @@
     "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
     "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
     "Appunti LRL/Lezione 7 - Logica del Primo Ordine.md",
-    "Appunti FI/MOD II/Lezione 13.md",
     "Appunti FI/MOD II/Lezione 9.md",
     "Appunti FI/MOD II/Lezione 8.md",
     "Appunti FI/MOD II/Lezione 7.md",
@@ -209,7 +210,6 @@
     "Appunti LRL/Immagini/Pasted image 20230421142534.png",
     "Appunti LRL/Immagini/Pasted image 20230421142235.png",
     "Appunti LRL/Immagini/Pasted image 20230421141940.png",
-    "Appunti LRL/Immagini/Pasted image 20230421141726.png",
     "Appunti ASD/MOD II/Lezione 11 - Dynamic Programming Part II.md",
     "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
     "Appunti ASD/MOD II/Lezione 9 - Huffman Codes.md",
