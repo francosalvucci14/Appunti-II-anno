@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
+                "file": "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 14 - NP part II.md"
+                "file": "Appunti ASD/MOD II/Lezione 15 - NP part III.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
+                "file": "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
+                "file": "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "1965156d1aa9bf11",
@@ -179,6 +179,9 @@
   },
   "active": "d255fc72d22250ad",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+    "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
+    "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510094951.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510094813.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510093413.png",
@@ -186,14 +189,12 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510091643.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510091307.png",
     "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
-    "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
     "Appunti FI/MOD II/Lezione 14.md",
     "Appunti FI/MOD II/Lezione 13.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123758.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123630.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123145.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123715.png",
-    "Pasted image 20230505122750.png",
     "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti FI/MOD II/Lezione 12.md",
     "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
@@ -207,7 +208,6 @@
     "Appunti FI/MOD II/Lezione 7.md",
     "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
-    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti FI/MOD II/Lezione 11.md",
     "Appunti FI/MOD II/Lezione 10.md",
     "Appunti LRL/Indice delle lezioni LRL.md",

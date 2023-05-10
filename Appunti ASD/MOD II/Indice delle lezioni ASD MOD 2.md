@@ -11,4 +11,6 @@
 - [[Lezione 11 - Dynamic Programming Part II]]
 - [[Lezione 12 - Dynamic Programming Part III-IV]]
 - [[Lezione 13 - NP and Computational Intractability]]
+- [[Lezione 14 - NP part II]]
+- [[Lezione 15 - NP part III]]
 - 
