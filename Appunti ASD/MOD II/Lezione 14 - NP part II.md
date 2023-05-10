@@ -1,3 +1,6 @@
+# The main question : P versus NP
+
+![[appunti asd/mod ii/immagini/Pasted image 20230510095258.png|center|600]]
 
 # NP-Completeness
 
