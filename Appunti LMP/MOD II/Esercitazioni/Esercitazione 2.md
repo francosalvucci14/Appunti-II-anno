@@ -121,4 +121,3 @@ catena_conoscenza_da_percorrere(P1,P2,Catena):-
 ```
 
 Testo esercizi su GitHub qui ->[Michele Cirillo](https://github.com/michelecirillo/tutoraggio-lmp-23)
-.
