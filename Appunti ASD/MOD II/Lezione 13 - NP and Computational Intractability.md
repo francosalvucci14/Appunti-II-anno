@@ -58,7 +58,7 @@ Certificate. t = 541 or 809.
 
 **3-SAT.**
 - _Instance_: CNF formula $\phi$ _**in the Boolean variable**_ $x_1 , x_2, \dots, x_n$,
-- _Question_: is there a **satisfying** assignment $t \in \{0,1\}^n$ for $\phi(x_1 , x_2, \dots, x_n)$
+- _Question_: is there a **satisfying** assignment $t \in \{0,1\}^n$ for $\phi(x_1 , x_2, \dots, x_n)$ (cioè che t rende vera la formula)
 - _Certificate_. An assignment $t \in \{0,1\}^n$
 
 **Certifier**. Check that each clause in $\phi(x_1 , x_2, \dots, x_n)$ has at least one true literal.

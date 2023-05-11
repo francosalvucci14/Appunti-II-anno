@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "37c8f218b65478c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+                "file": "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md"
+                "file": "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md"
               }
             }
           },
@@ -135,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+                "file": "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+                "file": "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "1965156d1aa9bf11",
@@ -190,11 +177,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "37c8f218b65478c0",
+  "active": "4aac8c1dbbe16531",
   "lastOpenFiles": [
-    "Appunti FI/MOD II/Lezione 14.md",
-    "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
     "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230511150521.png",
+    "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
+    "Appunti FI/MOD II/Lezione 14.md",
+    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
@@ -210,7 +199,6 @@
     "Appunti FI/MOD II/Lezione 13.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123758.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123630.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230505123145.png",
     "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti FI/MOD II/Lezione 12.md",
     "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
@@ -223,11 +211,9 @@
     "Appunti FI/MOD II/Lezione 8.md",
     "Appunti FI/MOD II/Lezione 7.md",
     "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
-    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Lezione 11.md",
     "Appunti FI/MOD II/Lezione 10.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
-    "Appunti ASD/MOD II/Lezione 11 - Dynamic Programming Part II.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",

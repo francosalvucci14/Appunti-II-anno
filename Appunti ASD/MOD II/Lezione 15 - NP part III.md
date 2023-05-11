@@ -55,3 +55,42 @@ But,how do we classify Co-SAT ? Is it in NP? can be in P?
 - In other words, $NP = co-NP.$
 - Contradiction!
 
+### Good characterizations
+
+**Good characterization**. $[\text{Edmonds 1965}]$
+What is $NP \cap co-NP$?
+If problem X is in both NP and co-NP, then:
+- for yes **instance**, there is a short certificate $t^{YES}$
+- for no **instance**, there is a short disqualifier $t^{NO}$
+
+Ex. Given a **bipartite graph G(V,E)**, is there a Perfect Matching.
+- If yes, can exhibit a perfect matching.
+- If no, can exhibit a set of nodes S such that $|N(S)| \lt |S|$.
+
+**Decision Problem PM**: Given a bipartite graph $G(V_1,V_2; E)$, is there a _**Perfect Matching M**_?
+- If yes, can exhibit a Perfect Matching $M \subseteq E$
+- If no, can exhibit a set of nodes S such that $|N(S)| \lt |S|$.
+
+![[appunti asd/mod ii/immagini/Pasted image 20230511150521.png|center|550]]
+
+
+Observation. $P \subseteq NP \cap co-NP$.
+
+Fundamental open question. Does $P = NP \cap co-NP$?
+- Mixed opinions.
+- Many examples where problem found to have a non-trivial good characterization, but only years later discovered to be in P.
+	- linear programming $[\text{Khachiyan, 1979}]$
+	- primality testing $[\text{Agrawal-Kayal-Saxena, 2002}]$
+
+>[!definition]- THM. 
+>Factoring is in $NP \cap co-NP$, but **not known** to be in P.
+
+#### PRIMES is in $NP \cap co-NP$
+
+PRIMES = Given an odd integer $s \gt 0$, s is PRIME ?
+
+>[!definition]- THM A. 
+>PRIMES is in $NP\cap co-NP.$
+
+Proof.
+We already know that PRIMES is in co-NP, so it suffices to prove that PRIMES is in NP.
