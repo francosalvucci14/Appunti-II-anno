@@ -100,5 +100,23 @@ We already know that PRIMES is in co-NP, so it suffices to prove that PRIMES is 
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230511154324.png|center|550]]
 
+#### FACTOR is in $NP \cap co-NP$
+
+**FACTORIZE (Search Problem).** Given an integer x, find its prime factorization.
+
+**FACTOR (Decision Problem)**. Given two integers x and y, does x have a **nontrivial factor** less than y?
+
+>[!definition]- Theorem. 
+>$FACTOR\equiv_p FACTORIZE$
+
+Proof: Omitted (Binary Search and More Number Theory)
+
+>[!definition]- Theorem. 
+>FACTOR is in $NP\cap co-NP.$
+
+Proof.
+- Certificate: a **factor p** of x that is less than y.
+- Disqualifier: The prime factorization of x (where each prime factor is larger than y), along with a certificate that **each factor is prime** (apply Pratt’s Theorem and THM A in the previous slide).
+
 
 
