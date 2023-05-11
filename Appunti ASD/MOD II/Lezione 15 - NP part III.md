@@ -94,3 +94,11 @@ PRIMES = Given an odd integer $s \gt 0$, s is PRIME ?
 
 Proof.
 We already know that PRIMES is in co-NP, so it suffices to prove that PRIMES is in NP.
+
+>[!definition]- Pratt's Theorem.
+>An odd integer s is **prime** $\iff$ _**there exists**_ an integer t s.t. $1 \lt t \lt s$ s.t. $$\begin{align}&t^{s-1}\equiv 1 (\text{mod s})(a)\\&t^{(s-1)/p}\neq 1(\text{mod s})(b)\end{align}$$ for all prime divisors p of s-1
+
+![[appunti asd/mod ii/immagini/Pasted image 20230511154324.png|center|550]]
+
+
+
