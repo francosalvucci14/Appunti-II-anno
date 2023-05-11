@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7868e508694b3823",
+        "id": "7f985d5c65b92a11",
         "type": "tabs",
         "children": [
           {
-            "id": "d255fc72d22250ad",
+            "id": "4aac8c1dbbe16531",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
+                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 15 - NP part III.md"
+                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
+                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
+                "file": "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,11 +177,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "4aac8c1dbbe16531",
   "lastOpenFiles": [
+    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
+    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
+    "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
+    "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
     "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510095258.png",
-    "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510094951.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510094813.png",
@@ -189,7 +192,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510092612.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510091643.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510091307.png",
-    "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
     "Appunti FI/MOD II/Lezione 14.md",
     "Appunti FI/MOD II/Lezione 13.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123758.png",
@@ -213,7 +215,6 @@
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti ASD/MOD II/Lezione 11 - Dynamic Programming Part II.md",
     "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
-    "Appunti ASD/MOD II/Lezione 9 - Huffman Codes.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
