@@ -141,7 +141,7 @@ Per prima cosa, scriviamo l’input di $T_3$ sull’unico nastro di T
 	- praticamente, le celle che hanno lo stesso “indirizzo” sono una ”colonna di celle”
 - se $(x_{1_1}, x_{1_2}, x_{1_3})$ sono i tre caratteri scritti sulle celle “di indirizzo 1” dei 3 nastri di $T_3$, noi scriviamo $x_{1_1}$ sulla cella 1, $x_{1_2}$ sulla cella 2 e $x_{1_3}$ sulla cella 3 di T
 
-e proseguiamo così per tutto l’input di $T_3$ (osservate che la tripla di caratteri che occupa le celle di indirizzo h in $T_3$ viene scritto nelle celle 3h-2, 3h-1, 3h di T )
+e proseguiamo così per tutto l’input di $T_3$ (osservate che la tripla di caratteri che occupa le celle di indirizzo h in $T_3$ viene scritto nelle celle $3_{h-2}, 3_{h-1}, 3_h$ di T )
 
 ![[appunti fi/mod ii/immagini/Pasted image 20230314163848.png|center|500]]
 
