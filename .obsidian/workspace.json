@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md",
+                "file": "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "37c8f218b65478c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md"
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md"
               }
             }
           },
@@ -122,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md",
+                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,13 +190,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4aac8c1dbbe16531",
+  "active": "37c8f218b65478c0",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 14.md",
+    "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
+    "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
+    "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
-    "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
-    "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510095258.png",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510094951.png",
@@ -192,7 +207,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510092612.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510091643.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510091307.png",
-    "Appunti FI/MOD II/Lezione 14.md",
     "Appunti FI/MOD II/Lezione 13.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123758.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230505123630.png",
@@ -214,7 +228,6 @@
     "Appunti FI/MOD II/Lezione 10.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti ASD/MOD II/Lezione 11 - Dynamic Programming Part II.md",
-    "Appunti ASD/MOD II/Lezione 10 - Dynamic Programming.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
