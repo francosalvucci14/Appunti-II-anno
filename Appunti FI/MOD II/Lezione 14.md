@@ -93,7 +93,49 @@ Allora, se $L_2\in P$ allora $L_1\in  P$
 
 E quindi, se $L_2\in EXPTIME$ allora $L_1\in  EXPTIME$.
 
-Ma si può dimostrare la stessa cosa con le classi non deterministiche:
+Ma si può dimostrare la stessa cosa con le classi non deterministiche
+
 E anche per le classi spaziali
 
+Il **Teorema 6.21** della dispensa 6 dimostra il solo caso “Se $L_1\preceq_p  L_2$ e $L_2\in P$ allora $L_1\in  P$”
+
+## Chiusura di una classe rispetto a $\preceq_{\pi}$
+
+>[!definition]- Definizione 6.4: 
+>Una classe di complessità **C è chiusa rispetto ad una generica** $\pi$-riduzione se, per ogni coppia di linguaggi $L_1$ ed $L_2$ tali che $L_1\preceq_{\pi}  L_2$ e $L_2\in  C$, si ha che $L_1\in  C$. 
+
+La chiusura di una classe C rispetto ad una $\pi$-riduzione può essere utilizzata per dimostrare l’appartenenza di un linguaggio L a C: 
+- segue direttamente dalla definizione che, se sappiamo che una classe di complessità C è chiusa rispetto ad una $\pi$-riduzione e che un certo linguaggio $L_0$ appartiene a C, allora, se dimostriamo che $L\preceq_{\pi}  L_0$, possiamo dedurre che anche L appartiene a C. 
+
+In questa lezione lo abbiamo dimostrato nel caso delle riduzioni polinomiali quando C = P
+- e abbiamo detto che quella dimostrazione valeva anche per NP, EXPTIME, NEXPTIME, PSPACE
+
+## Completezza di un linguaggio per una classe rispetto a $\preceq_{\pi}$
+
+>[!definition]- Definizione 6.3: 
+>Sia C una classe di complessità di linguaggi e sia $\preceq_{\pi}$ una generica $\pi$-riduzione. 																					  																	       Un linguaggio $L\subseteq\Sigma^\star$ è **C-completo rispetto alla** $\pi$-riducibilità se: 
+>1) $L\in C$ 
+>2) per ogni altro $L_0\in  C$, vale che $L_0\preceq_{\pi}  L$. 
+
+Le nozioni di 
+- completezza di un linguaggio per una classe rispetto ad una $\pi$-riduzione 
+- chiusura di una classe rispetto alla $\pi$-riduzione 
+sono gli strumenti che ci permettono di arrivare al concetto di “padre di tutti i linguaggi” per una classe
+
+## Il padre di tutti i linguaggi di una classe
+
+Abbiamo due classi di complessità $C_1$ e $C_2$ tali che $C_1\subseteq C_2$, e sappiamo che $C_1$ è chiusa rispetto ad una qualche $\pi$-riduzione:
+- allora, per ogni coppia di linguaggi $L_1$ ed $L_2$ tali che $L_1\preceq_{\pi}  L_2$ e $L_2\in  C_1$,  si ha che $L_1\in  C_1$. 
+
+Se per caso troviamo un linguaggio L $C_2$**–completo** rispetto a $\preceq_{\pi}$ 
+- ossia, $L\in  C_2$ e per ogni altro $L_0\in  C_2$, vale che $L_0\preceq_{\pi}  L$
+e se dimostriamo che $L\in  C_1$ , abbiamo che:
+- per ogni altro $L_0\in  C_2$, vale che $L_0\preceq_{\pi}  L$ e inoltre $L\in  C_1$
+
+Allora, in virtù della chiusura di $C_1$ rispetto alla $\pi$-riduzione, per ogni altro $L_0\in  C_2$, vale che $L_0\in  C_1$
+
+Ma possiamo vederla anche in un altro modo: se $C_1\subseteq C_2$ e L è $C_2$–completo e se qualcuno riuscisse a dimostrare che $C_1\neq  C_2$ , allora sapremmo automaticamente che $L\not\in  C_1$
+
+L sarebbe il padre di tutti i linguaggi in $C_2$: 
+- il linguaggio più difficile fra tutti i linguaggi che stanno in $C_2$
 

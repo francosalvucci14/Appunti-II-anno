@@ -118,5 +118,19 @@ Proof.
 - Certificate: a **factor p** of x that is less than y.
 - Disqualifier: The prime factorization of x (where each prime factor is larger than y), along with a certificate that **each factor is prime** (apply Pratt’s Theorem and THM A in the previous slide).
 
+### Primality Testing and Factoring
 
+We know: $PRIMES\preceq_p FACTOR.$
+
+Natural question: Does $FACTOR\preceq_p PRIMES$ ?
+Consensus opinion. No.
+
+State-of-the-art.
+- PRIMES is in P. (proved in 2001)
+- FACTOR _**not**_ believed to be in P.
+
+RSA cryptosystem.
+- Based on <u>dichotomy</u> between complexity of two problems.
+- To use **RSA**, must generate **large primes efficiently.**
+- To break **RSA**, suffices to find efficient **factoring** algorithm.
 
