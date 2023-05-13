@@ -139,3 +139,36 @@ Ma possiamo vederla anche in un altro modo: se $C_1\subseteq C_2$ e L è $C_2$�
 L sarebbe il padre di tutti i linguaggi in $C_2$: 
 - il linguaggio più difficile fra tutti i linguaggi che stanno in $C_2$
 
+E da questo otteniamo
+
+>[!definition]- Teorema 6.20: 
+>Siano C e $C_0$ due classi di complessità tali che $C_0\subseteq C$. Se $C_0$ è chiusa rispetto ad una $\pi$-riduzione allora, per ogni linguaggio L che sia C-completo rispetto a $\preceq_{\pi}$, $L\in  C_0$ se e solo se $C = C_0.$
+
+**Dim**
+- Se $C = C_0$ , poiché L è C-completo e, dunque $L\in C$, allora $L\in  C_0$.
+- Viceversa, supponiamo che $L\in  C_0$. Poiché L è C-completo rispetto a $\preceq_{\pi}$ , allora, per ogni $L’\in  C, L’\preceq_{\pi}   L$. Poiché $C_0$ è chiusa rispetto a $\preceq_{\pi}$ , questo implica che, per ogni $L’\in  C, L’\in  C_0$: quindi, $C = C_0.$
+
+## I linguaggi NP-Completi
+
+A questo punto, abbandoniamo le generiche $\pi$-riduzioni e torniamo definitivamente alle riduzioni polinomiali
+
+>[!definition]- Linguaggio NP-Completo
+>Un linguaggio $L\subseteq\Sigma^\star$ è **NP-completo (rispetto alla riducibilità polinomiale)** se
+>1) $L\in  NP$
+>2) per ogni altro $L_0 \in NP$, vale che $L_0\preceq_p  L$. 
+
+I linguaggi NP-completi sono particolarmente importanti per il loro ruolo di possibili linguaggi separatori fra le classi P e NP:
+
+**Corollario 6.4**: Se $P\neq  NP$ allora, per ogni linguaggio NP-completo L, $L\in  P$. 
+
+**Dim**
+- Supponiamo che L sia un linguaggio NP-completo e che $L\in  P$. 
+- Poiché L è NP-completo allora, per ogni linguaggio $L_0\in  NP$, $L_0\preceq_p L$; 
+- ma, se $L\in  P$, poiché P è chiusa rispetto a $\preceq_p$ , questo implica che, per ogni $L_0\in NP, L_0\in  P$. 
+- Ossia, $P = NP$, contraddicendo l’ipotesi. 
+
+Ma quale è il senso del Corollario 6.4?
+Intanto che **_è molto improbabile che un linguaggio NP-completo appartenga a P_**
+- Ebbene, si sospetta che sia $P\neq  NP$ – ma nessuno è mai riuscito a dimostrarlo, per questo è una congettura
+
+Quindi: se vogliamo dimostrare che, probabilmente, non esiste un algoritmo deterministico che decide in tempo polinomiale un linguaggio che è in NP, quel che dobbiamo fare è dimostrare che quel linguaggio è NP-completo
