@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 14.md",
+                "file": "Appunti FI/Lezione 15.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 14.md"
+                "file": "Appunti FI/Lezione 15.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 14.md",
+                "file": "Appunti FI/Lezione 15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 14.md",
+                "file": "Appunti FI/Lezione 15.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,8 +177,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "acd002c7f705cc3c",
+  "active": "4aac8c1dbbe16531",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Immagini/Pasted image 20230513111404.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230513111154.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230513110917.png",
+    "Appunti FI/Lezione 15.md",
     "Appunti FI/MOD II/Lezione 14.md",
     "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
@@ -201,9 +205,7 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510093413.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510092612.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510091643.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230510091307.png",
     "Appunti FI/MOD II/Lezione 13.md",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230505123758.png",
     "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
     "Appunti FI/MOD II/Lezione 12.md",
     "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
@@ -213,8 +215,6 @@
     "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
     "Appunti LRL/Lezione 7 - Logica del Primo Ordine.md",
     "Appunti FI/MOD II/Lezione 9.md",
-    "Appunti FI/MOD II/Lezione 8.md",
-    "Appunti FI/MOD II/Lezione 7.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
