@@ -187,3 +187,27 @@ $\leftarrow$ Sia $L^c$ un linguaggio coNP-completo, mostriamo che L è NP-comple
 	- Ma questo è equivalente a dire che, per ogni $x\in \{0,1\}^\star, x\not\in  L_1^c$ se e soltanto se $f_1(x)\not\in  L^c$, ossia, per ogni $x\in \{0,1\}^\star, x\in L_1$ se e soltanto se $f_1(x)\in  L$ .
 	- Poiché $L_1$ è un qualsiasi linguaggio in NP, questo dimostra che L è completo per NP. 
 
+>[!definition]- Teorema 6.26: 
+>Se esiste un linguaggio L NP-completo tale che $L \in coNP$, allora $NP = coNP$. 
+
+Dimostriamo il teorema mostrando prima che
+1) $coNP \subseteq NP$ e poi
+2) $NP \subseteq coNP$
+
+Sia L un qualunque linguaggio NP-completo tale che che $L\in  coNP$
+
+(1) Poiché $L\in  NP\cap  coNP$, allora $L\in  coNP$, e, allora, $L^c\in  NP.$
+- Poiché L è NP-completo allora, per il Teorema 6.25, $L^c$ è coNP-completo, 
+	- quindi, per ogni $L’\in  coNP$, si ha che $L’\preceq_p L^c$. 
+- Ma **NP è chiusa rispetto alla riducibilità polinomiale** (Teorema 6.22), allora, per ogni linguaggio $L’\in  coNP$, si ha che $L’\in  NP$. 
+- E questo dimostra che $coNP \subseteq NP$. 
+
+(2) Mostriamo ora l’inclusione opposta. 
+- Poiché L è NP-completo allora, per ogni $L’’\in  NP$ si ha che $L’’\preceq_p  L$ 
+- Poiché $L\in  NP\cap  coNP$, allora, in particolare, $L\in  coNP$. 
+- Ma **coNP è chiusa rispetto alla riducibilità polinomiale** (Teorema 6.24), allora per ogni $L’’\in  NP$ si ha che $L’’\in  coNP$
+- E questo dimostra che $NP \subseteq coNP$. 
+
+Infine, le due inclusioni $coNP \subseteq NP, NP \subseteq coNP$ dimostrano il teorema. 
+
+
