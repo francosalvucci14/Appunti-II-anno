@@ -139,3 +139,51 @@ Per questo le due congetture sono, fino ad ora, due <u>congetture distinte</u>
 
 ## Struttura della classe coNP
 
+>[!definition]- Teorema 6.24: 
+>La classe coNP è **chiusa rispetto alla riducibilità polinomiale**. 
+
+Come detto sulla dispensa, “La dimostrazione è analoga a quella del Teorema 6.21 ed è lasciata per esercizio. “
+
+Come per tutte le classi di complessità, anche per la classe coNP possiamo definire linguaggi completi rispetto alla riducibilità polinomiale
+
+>[!definition]- Definizione
+>Un linguaggio L è coNP-completo se
+>1) $L\in coNP$
+>2) per ogni linguaggio $L’\in coNP$, si ha che $L’\preceq_p L$
+
+Come abbiamo visto la scorsa lezione, i linguaggi NP-completi sono i possibili linguaggi separatori fra P e NP
+- ossia, nell’ipotesi $P\neq NP$, un linguaggio NP-completo non può essere contenuto in P
+- sono i linguaggi “più difficili” all’interno di NP
+
+La stessa cosa ci proponiamo di fare nella classe coNP
+
+Vogliamo mostrare che i linguaggi coNP-complet sono i candidati ad essere i linguaggi separatori fra NP e coNP 
+- ossia che, nell’ipotesi $coNP\neq NP$ , un linguaggio coNP-completo non può essere contenuto in NP
+- che i linguaggi coNP-completi sono i linguaggi “più difficili” all’interno di coNP
+
+Questo è l’obiettivo dei prossimi due teoremi.
+
+>[!definition]- Teorema 6.25: 
+>Un linguaggio L è NP-completo se e soltanto se il suo complemento $L^c$ è coNP-completo
+
+**Dim**
+$\to$ Sia L un linguaggio NP-completo, mostriamo che $L^c$ è coNP-completo
+1) $L\in  NP$ e, quindi, $L^c\in  coNP.$
+2) Dobbiamo mostrare che, per ogni $L_1\in  coNP$, vale che $L_1\preceq_p L_c$
+	- sia allora $L_1$ un _qualsiasi_ linguaggio in coNP (ossia, $\forall L_1\in  coNP$ ): allora, $L_1^c\in  NP$ 
+	- poiché L è completo per la classe NP, allora per ogni $L_0\in  NP$, $L_0\preceq_p L$: allora, in particolare, poiché $L_1^c\in  NP$, vale che $L_1^c\preceq_p L$
+	- Questo significa che esiste una funzione $f_1 : \{0,1\}^\star \to \{0,1\}^\star$ tale che $f_1\in FP$ e, per ogni $x\in \{0,1\}^\star, x\in L_1^c$ se e soltanto se $f_1(x)\in L.$
+	- Ma questo è equivalente a dire che, per ogni $x\in \{0,1\}^\star, x\not\in  L_1^c$ se e soltanto se $f_1(x)\not\in  L$, 
+	- quindi, per ogni $x\in \{0,1\}^\star, x\in L_1$ se e soltanto se $f_1(x)\in  L^c$
+	- ossia, $L_1\preceq_p L^c$
+	- **Poiché $L_1$ è un qualsiasi linguaggio in coNP**, questo dimostra che $L^c$ è completo per coNP. 
+
+$\leftarrow$ Sia $L^c$ un linguaggio coNP-completo, mostriamo che L è NP-completo
+1) $L^c\in  coNP$ e, quindi, $L\in  NP.$
+2) Dobbiamo mostrare che, per ogni $L_1\in  NP$, vale che $L_1\preceq_p L$
+	- sia allora $L_1$ un _qualsiasi_ linguaggio in NP (ossia, $\forall L_1\in  NP$ ): allora, $L_1^c\in  coNP$ 
+	- poiché $L^c$ è completo per la classe coNP, allora per ogni $L_0\in  coNP$, $L_0\preceq_p L^c$: allora, in particolare, poiché $L_1^c\in  coNP$, vale che $L_1^c\preceq_p L^c$ 
+	- Questo significa che esiste una funzione $f_1 : \{0,1\}^\star \to \{0,1\}^\star$ tale che $f_1\in FP$ e, per ogni $x\in \{0,1\}^\star, x\in L_1^c$ se e soltanto se $f_1(x)\in L^c.$
+	- Ma questo è equivalente a dire che, per ogni $x\in \{0,1\}^\star, x\not\in  L_1^c$ se e soltanto se $f_1(x)\not\in  L^c$, ossia, per ogni $x\in \{0,1\}^\star, x\in L_1$ se e soltanto se $f_1(x)\in  L$ .
+	- Poiché $L_1$ è un qualsiasi linguaggio in NP, questo dimostra che L è completo per NP. 
+
