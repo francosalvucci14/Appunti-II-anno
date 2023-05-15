@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Parser Top Down.md",
+                "file": "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Parser Top Down.md"
+                "file": "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Parser Top Down.md",
+                "file": "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Parser Top Down.md",
+                "file": "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,16 +179,16 @@
   },
   "active": "4aac8c1dbbe16531",
   "lastOpenFiles": [
-    "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Retract Assert.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Parser Top Down.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Operatori.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
     "Appunti LMP/MOD II/Esercizi Prolog/Esercizio Outlook.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Algoritmo BFS.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Cruciverba.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Algoritmo BFS.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
