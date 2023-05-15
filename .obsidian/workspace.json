@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+                "file": "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md"
+                "file": "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+                "file": "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+                "file": "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +179,19 @@
   },
   "active": "4aac8c1dbbe16531",
   "lastOpenFiles": [
+    "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Retract Assert.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Parser Top Down.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Operatori.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Esercizio Outlook.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Algoritmo BFS.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Cruciverba.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+    "Appunti LMP/MOD II/Esercizi Prolog",
+    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti FI/MOD II/Lezione 15.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230513111404.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230513111154.png",
@@ -199,21 +211,11 @@
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510095258.png",
-    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510094951.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510094813.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510093413.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510092612.png",
     "Appunti FI/MOD II/Lezione 13.md",
-    "Appunti LRL/Lezione 6 - Sistemi assiomatici.md",
-    "Appunti FI/MOD II/Lezione 12.md",
-    "Appunti LRL/Lezione 8 - Tableaux per la logica del Primo Ordine.md",
-    "Appunti LRL/Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I.md",
-    "Appunti LRL/Lezione 4 - Il metodo dei tableaux.md",
-    "Appunti LRL/Lezione 5 - Correttezza e completezza del metodo dei tableaux.md",
-    "Appunti LRL/Lezione 3 - Introduzione alla Logica Proposizionale.md",
-    "Appunti LRL/Lezione 7 - Logica del Primo Ordine.md",
-    "Appunti FI/MOD II/Lezione 9.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
@@ -222,7 +224,6 @@
     "Appunti BSD/MOD II/Immagini",
     "Appunti ASD/MOD II/Esercitazioni",
     "Appunti BSD/MOD II",
-    "Appunti ASD/Algoritmo_Es3.pdf",
-    "Appunti LMP/MOD II/Immagini"
+    "Appunti ASD/Algoritmo_Es3.pdf"
   ]
 }
