@@ -177,3 +177,48 @@ Construction.
 ![[appunti asd/mod ii/immagini/Pasted image 20230517102305.png|center|600]]
 
 
+>[!definition]- Claim. 
+>G contains <u>independent</u> set of size $k = |\Phi| \iff \Phi$ is <u>satisfiable</u>.
+
+
+Pf. 
+$\to$
+- Let S be independent set of size k.
+- S must contain exactly **one** vertex (= literal) in each triangle.
+- Set these literals (= vertices) to **true**.
+- No **adjacent** vertices in S $\to$ no contradictions
+- **Truth** assignment is <u>consistent</u> and **all** clauses are satisfied.
+$\leftarrow$
+- Given satisfying assignment, select one true literal from each triangle. No contradictions $\to$ This is an independent set of size k.
+
+![[appunti asd/mod ii/immagini/Pasted image 20230517102847.png|center|600]]
+
+
+## Review
+
+**Basic reduction strategies**.
+- _Simple equivalence_: INDEPENDENT-SET $\preceq_p$ VERTEX-COVER.
+- _Special case to general case_: VERTEX-COVER $\preceq_p$ SET-COVER.
+- _Encoding with gadgets_: 3-SAT $\preceq_p$ INDEPENDENT-SET.
+
+Transitivity. If $X \preceq_{p}Y$ and $Y \preceq_p Z$, then $X \preceq_p Z.$
+Pf idea. Compose the two algorithms.
+
+Ex: 3-SAT $\preceq_p$ INDEPENDENT-SET $\preceq_p$ VERTEX-COVER $\preceq_p$ SET-COVER.
+
+## Self-Reducibility
+
+**Decision problem**. Does there exist a vertex cover of size $\leq k$?
+**Search problem**. Find vertex cover of minimum cardinality.
+
+**Self-reducibility**. Search problem $\preceq_p$ decision version.
+- Applies to all (NP-complete) problems in this chapter.
+- Justifies our focus on decision problems.
+
+Ex: to find min cardinality vertex cover.
+- (Binary) search for cardinality $k^\star$ of min vertex cover.
+- Find a vertex v such that $G - \{ v \}$ has a vertex cover of size $\leq k^\star - 1$.
+	- any vertex in any min vertex cover will have this property
+- Include v in the vertex cover.
+- Recursively find a min vertex cover in $G - \{ v \}.$
+
