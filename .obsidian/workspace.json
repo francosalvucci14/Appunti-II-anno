@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
+                "file": "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md"
+                "file": "Appunti ASD/MOD II/Lezione 16 - NP part IV.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
+                "file": "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
+                "file": "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0a5121fbf85d7664",
@@ -179,8 +179,13 @@
   },
   "active": "113d9c3013e80d9a",
   "lastOpenFiles": [
-    "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230517095309.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230517094122.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230517093831.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230517093719.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230517092453.png",
     "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
     "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Parser Top Down.md",
@@ -210,12 +215,7 @@
     "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230511150521.png",
     "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
-    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230510095258.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230510094951.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230510094813.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230510093413.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230510092612.png",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
