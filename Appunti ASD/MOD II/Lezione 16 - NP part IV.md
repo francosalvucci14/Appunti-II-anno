@@ -103,7 +103,7 @@ $\leftarrow$
 
 
 Pr.
-- $VC \preceq_p P IS$; **Hypothesis: Poly-time Alg. A(--) for IS**
+- $VC \preceq_p IS$; **Hypothesis: Poly-time Alg. A(--) for IS**
 - Given instance $X = \langle G(V,E) ; k\gt0 \rangle$ of VC;
 - Transform it into instance $Y=\langle G(V,E) , k’=n-k\rangle$;
 - Apply **Algo A(Y)** (thanks to Claim 1)
