@@ -124,3 +124,56 @@ Sample application.
 ![[appunti asd/mod ii/immagini/Pasted image 20230517095309.png|center|500]]
 
 
+##### Vertex Cover Reduces to Set Cover
+
+**Claim**. **VERTEX-COVER** $\preceq_p$ **SET-COVER.**
+Pf. Given a VERTEX-COVER instance G = (V, E), k, we construct a set cover instance whose size equals the size of the vertex cover instance.
+
+**Construction**.
+
+- **GOAL of reductions:** _Programming with the language of the second problem_
+- _VC **Language**_: 
+	- Q. What means when we select a node v in V ? 
+	- A. We cover all its edges
+- _SC **Language**_: 1 edge $\to$ 1 element of the Universe U
+	- 1 vertex v $\to$ 1 subset of U = edges covered by v
+- Create SET-COVER instance: 
+	- $k = k, U = E, \forall v \in V: S_v = \{e \in E :\text{ e incident to v} \}$
+- Set Cover of size $\leq k \iff$ Vertex Cover of size $\leq k$.
+
+![[appunti asd/mod ii/immagini/Pasted image 20230517100055.png|center|600]]
+
+
+### Reductions via "Gadgets"
+
+#### Satisfiability
+
+**Literal**: A Boolean variable or its negation. $x_i$ or $\neg x_i$
+
+**Clause**: A disjunction of literals. $C_j = x_1 \lor \neg x_2 \lor x_3$
+
+**Conjunctive normal form**: A propositional formula $\Phi$ that is the conjunction of clauses.
+$\Phi=C_1 \land C_2\land C_3\land C_4$
+
+>[!definition]- Def. 
+>The size $| \Phi |$ is the number of clauses.
+
+**SAT**: Given CNF formula $\Phi$, does it have a satisfying truth assignment?
+**3-SAT**: SAT where each clause contains exactly 3 literals.
+
+![[appunti asd/mod ii/immagini/Pasted image 20230517101954.png|center|500]]
+
+#### 3 Satisfiability Reduces to Independent Set
+
+Claim. **3-SAT** $\preceq_p$ **INDEPENDENT-SET.**
+Pf. Given an instance $\Phi$ of 3-SAT, we construct an instance (G, k) of INDEPENDENT-SET that has an independent set of size $k \iff \Phi$ is **satisfiable**.
+
+Construction.
+- G contains 3 vertices for each clause, one for each literal.
+- Connect 3 literals in a clause in a triangle = _**GADGET**_
+- Connect **positive** literal to each of its **negations**.
+- set $k = | \Phi |$
+
+![[appunti asd/mod ii/immagini/Pasted image 20230517102305.png|center|600]]
+
+
