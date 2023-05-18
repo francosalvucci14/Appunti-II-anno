@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
+                "file": "Appunti ASD/MOD II/Lezione 17 - NP part V.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 16 - NP part IV.md"
+                "file": "Appunti ASD/MOD II/Lezione 17 - NP part V.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
+                "file": "Appunti ASD/MOD II/Lezione 17 - NP part V.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
+                "file": "Appunti ASD/MOD II/Lezione 17 - NP part V.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0a5121fbf85d7664",
@@ -179,10 +179,14 @@
   },
   "active": "113d9c3013e80d9a",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230518145250.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230518144000.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230518143728.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230518143408.png",
+    "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
     "Appunti ASD/MOD II/Lezione 17 - NP part V.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230518143231.png",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
-    "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
     "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
     "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
     "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
@@ -192,9 +196,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230517100055.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230517095309.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230517094122.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230517093831.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230517093719.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230517092453.png",
     "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
     "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
     "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
