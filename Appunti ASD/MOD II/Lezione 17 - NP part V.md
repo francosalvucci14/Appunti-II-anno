@@ -38,5 +38,8 @@ _Construction_. Given 3-SAT instance $\Phi$ with **n** variables $x_i$ and **k**
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230518145250.png|center|600]]
 
+For each clause $C_j$: add a gadget with 1 grey node and 6 edges.
+
+![[appunti asd/mod ii/immagini/Pasted image 20230518145636.png|center|600]]
 
 

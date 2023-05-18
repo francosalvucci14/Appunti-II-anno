@@ -222,3 +222,6 @@ Ex: to find min cardinality vertex cover.
 - Include v in the vertex cover.
 - Recursively find a min vertex cover in $G - \{ v \}.$
 
+>[!info]- Osservazione
+>Un problema è NP-Hard se la sua versione decisionale è NP-Completo
+
