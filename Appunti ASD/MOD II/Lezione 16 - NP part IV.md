@@ -186,7 +186,7 @@ $\to$
 - Let S be independent set of size k.
 - S must contain exactly **one** vertex (= literal) in each triangle.
 - Set these literals (= vertices) to **true**.
-- No **adjacent** vertices in S $\to$ no contradictions
+- No **adjacent** vertices in S
 - **Truth** assignment is <u>consistent</u> and **all** clauses are satisfied.
 $\leftarrow$
 - Given satisfying assignment, select one true literal from each triangle. No contradictions $\to$ This is an independent set of size k.
