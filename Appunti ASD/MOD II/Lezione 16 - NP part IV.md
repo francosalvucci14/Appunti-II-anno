@@ -225,3 +225,5 @@ Ex: to find min cardinality vertex cover.
 >[!info]- Osservazione
 >Un problema è NP-Hard se la sua versione decisionale è NP-Completo
 
+
+
