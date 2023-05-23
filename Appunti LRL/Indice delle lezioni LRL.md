@@ -8,4 +8,5 @@
 - [[Lezione 7 - Logica del Primo Ordine]]
 - [[Lezione 8 - Tableaux per la logica del Primo Ordine]]
 - [[Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I]]
+- [[Lezione 10 - Numeri e codifiche]]
 - 
