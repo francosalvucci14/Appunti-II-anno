@@ -140,7 +140,7 @@ _dim_
 
 La dimostrazione per il caso non deterministico è analoga. 
 
-[^1]: Vedi lezione 10 [[Lezione 10#^eaf160|Teorema 6.1]]
+[^1]: Vedi lezione 10 [[Appunti FI/MOD II/Lezione 10#^eaf160|Teorema 6.1]]
 
 >[!definition]- Teorema 6.11: 
 >Per ogni funzione totale calcolabile $f:\mathbb N\to\mathbb N$,

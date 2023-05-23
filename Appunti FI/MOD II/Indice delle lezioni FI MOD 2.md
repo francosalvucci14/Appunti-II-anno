@@ -8,7 +8,7 @@
 - [[Lezione 7]]
 - [[Appunti FI/MOD II/Lezione 8|Lezione 8]]
 - [[Lezione 9]]
-- [[Lezione 10]]
+- [[Appunti FI/MOD II/Lezione 10]]
 - [[Lezione 11]]
 - [[Lezione 12]]
 - [[Lezione 13]]
