@@ -197,5 +197,5 @@ Ma, invece:
 >Esiste una funzione totale calcolabile $f :\mathbb N  \to\mathbb N$ tale che	$$DTIME[ 2^{f(n)} ] \subseteq DTIME[f(n)]. $$
 E allora?!
   
-[^2]: Vedi lezione 11 [[Lezione 11#^8409f2|Teorema 6.7]]
+[^2]: Vedi lezione 11 [[Appunti FI/MOD II/Lezione 11#^8409f2|Teorema 6.7]]
 
