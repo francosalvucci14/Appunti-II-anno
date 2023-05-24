@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+                "file": "Appunti FI/MOD II/Lezione 16.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md"
+                "file": "Appunti FI/MOD II/Lezione 16.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+                "file": "Appunti FI/MOD II/Lezione 16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+                "file": "Appunti FI/MOD II/Lezione 16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,11 +177,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "113d9c3013e80d9a",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
-    "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
-    "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+    "Appunti FI/MOD II/Lezione 15.md",
+    "Appunti FI/MOD II/Lezione 16.md",
     "Appunti LRL/Lezione 12 - Formule in forma normale.md",
+    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+    "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+    "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
     "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Immagini/img74.png",
@@ -212,8 +215,6 @@
     "Appunti LMP/MOD II/Esercizi Prolog/Indice esercizi Prolog.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Retract Assert.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Operatori.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Esercizio Outlook.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Algoritmo BFS.md",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercitazioni",
