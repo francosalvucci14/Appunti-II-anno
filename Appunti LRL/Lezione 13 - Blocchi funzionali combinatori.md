@@ -1,5 +1,6 @@
 
 # Decoder
+
 Un DECODER $n:2^n$ è un circuito con $n$ input, diciamo $x_{0}, x_{1},...., x_{n-1},$ e $2^n$ output, diciamo $y_{0}, y_{1},....., y_{2^{n}-1}$ , tale che $\forall i = 0,1,.....,2^{n}-1$ 
 $$y_{i}=\begin{cases} 1 \ \ se \   (i)_{10}=(x_{n-1} \ ..... \ x_{1}x_{0}) \\ 0 \ \  altrimenti  & \end{cases}$$
 In altre parole il circuito decodifica la sequenza di bit in input ponendo a 1 l'output $y_{i}$ il cui indice $i \in {0,1,....., 2^{n}-1}$   è il numero intero rappresentato in binario dagli $n$ bit in input. Per esempio, se i due bit in input di un DECODER 2:4 sono $(x_{1},x_{0}) = (1, 0)$, i quattro bit in output devono essere $(y_{3}, y_{2}, y_{1}, y_{0})= (0, 1, 0, 0)$ .
