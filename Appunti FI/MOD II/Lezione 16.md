@@ -238,3 +238,18 @@ $$F:\mathbb N\to\mathbb N\text{    è “più che polinomiale” se}, \forall k\
 Ossia, informalmente, il rapporto fra $|\chi (x)|$ e $|\chi'(x)|$ è più grande di qualsiasi polinomio!
 - Quel che accadeva a $\chi_1$ e $\chi_2$ : perciò, $\chi_2$ è una codifica _**irragionevole**_ di 3SAT
 
+>[!definition]- Codifiche ragionevoli
+>E, quindi, una codifica $\chi$ per un problema $\Gamma$ è _**ragionevole**_ se, 
+>- comunque si scelga un’altra codifica $\chi'$ per $\Gamma$, 
+>- esistono tre interi k, $h_1$ e $h_2$ tali che, per ogni istanza x di $\Gamma$ ,
+>- $|\chi (x)|\leq   h_1|\chi'(x)|^k + h_2$
+
+## Complessità di problemi e codifica
+
+Alla luce di quanto abbiamo detto sino ad ora, dovrebbe essere chiaro che possiamo estendere ai problemi quello che abbiamo studiato relativamente alla complessità di linguaggi, **a patto però di utilizzare codifiche ragionevoli per codificare le istanze dei problemi** , perché quando si utilizzano codifiche irragionevoli non ha più senso parlare della complessità di un problema.
+- perché potremmo aver trasferito nella complessità della codifica la complessità di risoluzione del problema
+- esattamente come abbiamo discusso nel caso della codifica 2 del problema 3SAT
+Per questo, d’ora in poi, faremo riferimento sempre a codifiche ragionevoli
+
+E con questo abbiamo terminato il paragrafo 7.4
+
