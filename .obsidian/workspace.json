@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md"
+                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,6 +180,10 @@
   "active": "113d9c3013e80d9a",
   "lastOpenFiles": [
     "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
+    "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+    "Appunti LRL/Lezione 12 - Formule in forma normale.md",
+    "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
+    "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Immagini/img74.png",
     "Appunti LRL/Immagini/img73.png",
     "Appunti LRL/Immagini/img72.png",
@@ -190,10 +194,6 @@
     "Appunti LRL/Immagini/img67.png",
     "Appunti LRL/Immagini/img66.png",
     "Appunti LRL/Immagini/img65.png",
-    "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
-    "Appunti LRL/Lezione 12 - Formule in forma normale.md",
-    "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
-    "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti ASD/MOD II/Lezione 17 - NP part V.md",
     "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
     "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
