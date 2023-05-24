@@ -71,4 +71,23 @@ ESEMPIO 1: dato un numero intero n, elencare tutti i divisori di n
 ESEMPIO 2: dato un numero intero n, verificare se n è primo
 - è un _**problema di decisione (o decisionale)**_, in quanto ci viene richiesto di decidere se l’istanza possiede una certa proprietà
 
+Naturalmente, i due diversi tipi di macchine di Turing risolvono diversi tipi di problemi
+- Trasduttori per i problemi di ricerca, di enumerazione, e di ottimizzazione 
+- Riconoscitori per i problemi di decisione
+La Teoria della Complessità si occupa, per lo più, di decidere dell’appartenenza di parole ad insiemi di parole utilizzando riconoscitori
 
+Sembra naturale estendere quanto studiato nella dispensa 6 ai problemi decisionali
+
+## Problemi decisionali
+
+Abbiamo visto che un problema, in generale, può essere descritto da una quintupla $\langle \mathcal I, S,\eta ,\rho , R \rangle$ , dove
+ - $\eta$ è il sottoinsieme di S che specifica quali, fra le soluzioni possibili, sono le soluzioni effettive per una data istanza $x\in\mathcal I$
+- $\rho$ è la funzione che associa all’insieme delle soluzioni effettive $\eta(S(x))$ una risposta (elemento di R) all’istanza x del problema
+
+Nel caso di problemi decisionali, sappiamo che $R = \{ vero, falso\}$
+Questo significa che, in effetti, $\rho$ **è un predicato**
+- ossia, una funzione booleana
+- o, per dirla semplice, una proposizione logica il cui valore di verità dipende da qualche incognita
+
+Allora, possiamo riassumere , , R in un unico predicato : (x,S(x))=vero se e soltanto se l’insieme delle soluzioni possibili per x soddisfa i vincoli del problema
+E, quindi, un problema decisionale è descritto da una tripla  , S,  
