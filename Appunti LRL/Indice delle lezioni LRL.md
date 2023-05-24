@@ -10,4 +10,7 @@
 - [[Lezione 9 - Correttezza e Completezza dei tableaux per la F.O.I]]
 - [[Lezione 10 - Numeri e codifiche]]
 - [[Lezione 11 - Dalla logica ai circuiti]]
+- [[Lezione 12 - Formule in forma normale]]
+- [[Lezione 13 - Blocchi funzionali combinatori]]
+- [[Lezione 14 - Circuiti sequenziali]]
 - 
