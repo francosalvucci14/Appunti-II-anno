@@ -195,3 +195,46 @@ Bene, ma quanto è $dtime (T_2, \chi_2 (X,f))$?
 Questa volta è facilissimo: $T_2$ deve solo scandire una volta l’input
 E, quindi, $dtime (T_2, \chi_2 (X,f)) = |\chi_2 (X,f)|$
 
+Riassumiamo
+Se $\langle X,f \rangle$ è codificata secondo la CODIFICA $\chi_1$, implementiamo l’algoritmo mediante una macchina T1 tale che $dtime (T_1, \chi_1 (X,f)) \gt 2^{\beta(n)}$
+- con $\beta(n)\approx \frac{\sqrt[4]{|\chi_1(X,f)|}}{57}$  
+- ossia, l’algoritmo che decide 3SAT impiega _**tempo esponenziale**_ nella lunghezza della CODIFICA $\chi_1$ 
+Se $\langle X,f \rangle$ è codificata secondo la CODIFICA $\chi_2$, implementiamo l’algoritmo mediante una macchina $T_2$ tale che $dtime (T_2, \chi_2 (X,f)) = |\chi_2 (X,f)|$
+- ossia, lo stesso algoritmo che decide 3SAT impiega tempo lineare nella lunghezza della CODIFICA 2 
+
+Ora, ricordando che un linguaggio è nella classe P se esiste una macchina di Turing deterministica che lo decide in tempo polinomiale, possiamo concludere che il linguaggio associato a 3SAT appartiene a P?
+
+Osservate che $T_1$ e $T_2$ implementano lo stesso algoritmo
+- ma operano su due codifiche differenti
+
+Dunque, la caratteristica _essere un algoritmo polinomiale_ dipende dal modo in cui è codificato l’input?
+- Sì e no
+Perché la complessità di un algoritmo è espressa in termini di lunghezza dell’input
+
+E noi, la codifica dell’input possiamo renderla lunga quanto ci pare
+- ad esempio, aggiungendoci un sacco di caratteri privi di significato
+Possiamo prendere, ad esempio, la CODIFICA $\chi_1$ e aggiungervi, alla fine, $2^{|X|} ‘5’$ – e così otterremmo 
+- $\chi_3 (X,f)$ = 444 0 100 2 0 010 2 0 001 3 0 100 2 1 010 2 1 001 55555555  (adesso $|\chi_3 (X,f) |\gt 2^n$)
+da cui deriveremmo una macchina $T_3$ per 3SAT tale che $dtime (T_3,\chi_3(X,f))\in  O(|\chi_3(X,f)|)$ 
+
+“ma questa codifica è **irragionevolmente lunga**”
+
+Ripensiamo alle codifiche $\chi_1$ e $\chi_2$ : 
+- la codifica $\chi_1$ rappresenta di $\langle X,f \rangle$ solo l’informazione strettamente necessaria, ossia, la struttura di f 
+- la codifica $\chi_2$ rappresenta, invece, $\langle X,f \rangle$ in forma estesa  - in effetti, $\chi_2$ contiene la soluzione del problema così che per trovare la soluzione è sufficiente leggere la codifica
+- ma questo significa che calcolare la codifica $\chi_2$ ha richiesto un sacco di tempo!
+- Ossia, detto altrimenti, il tempo impiegato dalla computazione $T_1(\chi_1(X,f))$ lo dobbiamo impiegare noi per calcolare $\chi_2 (X,f)$ se vogliamo utilizzare quest’ultima codifica
+
+#### Codifiche irragionevoli
+
+Ripensiamo a $\chi_1$ e $\chi_2$ : la codifica $\chi_2$ è molto più lunga della codifica $\chi_1$
+in effetti, $\chi_2$ è <u>esponenzialmente più lunga</u> di $\chi_1$ 
+
+>[!definition]- COdifica irragionevole
+>Informalmente, una codifica $\chi$ per un problema $\Gamma$ è _**irragionevole**_ se <u>esiste</u> un’altra codifica $\chi'$ tale che le parole in cui $\chi$ codifica le istanze di $\Gamma$ sono “più che polinomialmente” più lunghe delle parole in cui $\chi'$ codifica le istanze di $\Gamma$
+
+Questo significa che esiste una funzione “più che polinomiale” F tale che , per qualche istanza x di $\Gamma$, $|\chi (x)| \geq  F(| \chi'(x)|)$
+$$F:\mathbb N\to\mathbb N\text{    è “più che polinomiale” se}, \forall k\in\mathbb N  , F(n)\in\Omega  (n^k)$$
+Ossia, informalmente, il rapporto fra $|\chi (x)|$ e $|\chi'(x)|$ è più grande di qualsiasi polinomio!
+- Quel che accadeva a $\chi_1$ e $\chi_2$ : perciò, $\chi_2$ è una codifica _**irragionevole**_ di 3SAT
+
