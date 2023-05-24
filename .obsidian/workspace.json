@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
+                "file": "Appunti LRL/Lezione 12 - Formule in forma normale.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md"
+                "file": "Appunti LRL/Lezione 12 - Formule in forma normale.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
+                "file": "Appunti LRL/Lezione 12 - Formule in forma normale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
+                "file": "Appunti LRL/Lezione 12 - Formule in forma normale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,27 +177,28 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "113d9c3013e80d9a",
   "lastOpenFiles": [
-    "Appunti LRL/Immagini/img31.png",
-    "Appunti LRL/Immagini/img32.png",
-    "Appunti LRL/Immagini/img33.png",
-    "Appunti LRL/Immagini/img34.png",
-    "Appunti LRL/Immagini/img35.png",
-    "Appunti LRL/Immagini/img36.png",
-    "Appunti LRL/Immagini/img37.png",
-    "Appunti LRL/Immagini/img38.png",
+    "Appunti LRL/Immagini/img39.png",
+    "Appunti LRL/Immagini/img40.png",
+    "Appunti LRL/Immagini/img41.png",
+    "Appunti LRL/Immagini/img42.png",
+    "Appunti LRL/Immagini/img43.png",
+    "Appunti LRL/Immagini/img44.png",
+    "Appunti LRL/Immagini/img45.png",
+    "Appunti LRL/Immagini/img46.png",
+    "Appunti LRL/Immagini/img47.png",
+    "Appunti LRL/Immagini/img48.png",
+    "Appunti LRL/Immagini/img49.png",
+    "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
+    "Appunti LRL/Lezione 12 - Formule in forma normale.md",
+    "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti ASD/MOD II/Lezione 17 - NP part V.md",
     "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
     "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
     "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
     "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
-    "Appunti LRL/Indice delle lezioni LRL.md",
-    "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
     "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
-    "Appunti LRL/Immagini/img27.png",
-    "Appunti LRL/Immagini/img28.png",
-    "Appunti LRL/Immagini/img29.png",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
     "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
@@ -215,7 +216,6 @@
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti FI/MOD II/Lezione 15.md",
-    "Appunti FI/MOD II/Lezione 14.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
