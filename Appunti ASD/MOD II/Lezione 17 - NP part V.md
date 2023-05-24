@@ -77,7 +77,7 @@ PROOF (of Lemma): Trivial, take: $G(V,E) \to \langle G(V,E), k=n-1\rangle$
 
 ## Traveling Salesperson Problem
 
-**TSP**. Given a set of n cities and a pairwise distance function d(u, v), is there a tour of length $\leq D$?
+**TSP**. Given a set of n cities and a pairwise distance function $d(u, v)$, is there a tour of length $\leq D$?
 
 ![[appunti asd/mod ii/immagini/Pasted image 20230518153109.png|center|600]]
 
