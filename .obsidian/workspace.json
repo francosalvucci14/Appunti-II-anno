@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+                "file": "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md"
+                "file": "Appunti LRL/Lezione 14 - Circuiti sequenziali.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+                "file": "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+                "file": "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,19 +179,20 @@
   },
   "active": "113d9c3013e80d9a",
   "lastOpenFiles": [
-    "Appunti LRL/Immagini/img50.png",
-    "Appunti LRL/Immagini/img51.png",
-    "Appunti LRL/Immagini/img52.png",
-    "Appunti LRL/Immagini/img53.png",
-    "Appunti LRL/Immagini/img54.png",
-    "Appunti LRL/Immagini/img55.png",
-    "Appunti LRL/Immagini/img56.png",
-    "Appunti LRL/Immagini/img57.png",
-    "Appunti LRL/Lezione 12 - Formule in forma normale.md",
+    "Appunti LRL/Immagini/img74.png",
+    "Appunti LRL/Immagini/img73.png",
+    "Appunti LRL/Immagini/img72.png",
+    "Appunti LRL/Immagini/img71.png",
+    "Appunti LRL/Immagini/img70.png",
+    "Appunti LRL/Immagini/img69.png",
+    "Appunti LRL/Immagini/img68.png",
+    "Appunti LRL/Immagini/img67.png",
+    "Appunti LRL/Immagini/img66.png",
+    "Appunti LRL/Immagini/img65.png",
+    "Appunti LRL/Immagini/img64.png",
     "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
-    "Appunti LRL/Immagini/img39.png",
-    "Appunti LRL/Immagini/img40.png",
-    "Appunti LRL/Immagini/img41.png",
+    "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
+    "Appunti LRL/Lezione 12 - Formule in forma normale.md",
     "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti ASD/MOD II/Lezione 17 - NP part V.md",
@@ -214,7 +215,6 @@
     "Appunti LMP/MOD II/Esercizi Prolog/Operatori.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Esercizio Outlook.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Algoritmo BFS.md",
-    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercitazioni",
