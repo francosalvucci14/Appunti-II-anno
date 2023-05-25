@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
+                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa3b47c8298bc950",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md"
+                "file": "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md"
               }
             }
           },
@@ -122,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
+                "file": "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
+                "file": "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,29 +190,32 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "113d9c3013e80d9a",
+  "active": "aa3b47c8298bc950",
   "lastOpenFiles": [
+    "Appunti LRL/Lezione 16 - Adder - Subtractor ad anticipo di riporto.md",
+    "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
+    "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
+    "Appunti LRL/Immagini/img98.png",
+    "Appunti LRL/Immagini/img97.png",
+    "Appunti LRL/Immagini/img96.png",
+    "Appunti LRL/Immagini/img95.png",
+    "Appunti LRL/Immagini/img94.png",
+    "Appunti LRL/Immagini/img93.png",
+    "Appunti LRL/Immagini/img92.png",
+    "Appunti LRL/Immagini/img91.png",
+    "Appunti LRL/Immagini/img90.png",
+    "Appunti LRL/Immagini/img89.png",
+    "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
+    "Appunti LRL/Lezione 12 - Formule in forma normale.md",
+    "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
     "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Lezione 16.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
-    "Appunti FI/MOD II/Immagini/Pasted image 20230524145558.png",
     "Appunti FI/MOD II/Lezione 15.md",
-    "Appunti LRL/Lezione 12 - Formule in forma normale.md",
     "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
-    "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
-    "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
-    "Appunti LRL/Immagini/img74.png",
-    "Appunti LRL/Immagini/img73.png",
-    "Appunti LRL/Immagini/img72.png",
-    "Appunti LRL/Immagini/img71.png",
-    "Appunti LRL/Immagini/img70.png",
-    "Appunti LRL/Immagini/img69.png",
-    "Appunti LRL/Immagini/img68.png",
-    "Appunti LRL/Immagini/img67.png",
-    "Appunti LRL/Immagini/img66.png",
     "Appunti ASD/MOD II/Lezione 17 - NP part V.md",
     "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
     "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
@@ -212,9 +228,6 @@
     "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Parser Top Down.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Cruciverba.md",
-    "Appunti LMP/MOD II/Esercitazioni/Indice delle esercitazioni LMP 2.md",
-    "README.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Indice esercizi Prolog.md",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
