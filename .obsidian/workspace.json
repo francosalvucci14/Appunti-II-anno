@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
+                "file": "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 15 - Macchine a stati finiti.md"
+                "file": "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md"
               }
             }
           },
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
+                "file": "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
+                "file": "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,12 +190,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "aa3b47c8298bc950",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230525144043.png",
+    "Appunti ASD/MOD II/Immagini/Pasted image 20230525144017.png",
+    "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
+    "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md",
     "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Lezione 16 - Adder - Subtractor ad anticipo di riporto.md",
-    "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
     "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
     "Appunti LRL/Immagini/img98.png",
     "Appunti LRL/Immagini/img97.png",
@@ -206,7 +209,6 @@
     "Appunti LRL/Immagini/img92.png",
     "Appunti LRL/Immagini/img91.png",
     "Appunti LRL/Immagini/img90.png",
-    "Appunti LRL/Immagini/img89.png",
     "Appunti LRL/Lezione 12 - Formule in forma normale.md",
     "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
     "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
@@ -227,7 +229,6 @@
     "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Parser Top Down.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Cruciverba.md",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
