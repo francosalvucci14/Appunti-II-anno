@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
+                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 10 - Numeri e codifiche.md"
+                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
+                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
+                "file": "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,6 +179,7 @@
   },
   "active": "113d9c3013e80d9a",
   "lastOpenFiles": [
+    "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Lezione 16.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
@@ -204,7 +205,6 @@
     "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
     "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
     "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
-    "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
     "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",

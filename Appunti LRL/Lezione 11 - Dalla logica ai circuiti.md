@@ -37,6 +37,24 @@ Ricordiamo come facciamo la somma di due numeri espressi in binario.
 
 # Forme normali e circuiti
 
+Una formula si dice in forma normale disgiuntiva (DNF) se è una disgiunzione di clausole  
+congiuntive $C_1 \lor C_2 \lor \dots\lor C_n$ dove ogni clausola è una congiunzione di letterali $C_i = l_{i,1} \land l_{i,2} \land\dots\land l_{i,k_i}$ e ogni letterale è una variabile oppure una variabile negata. 
+Per  esempio,  
+$$(p ∧ q ∧ ¬r) ∨ (¬p ∧ q ∧ ¬r) ∨ (p ∧ q ∧ r) (1)  $$
+è in forma normale disgiuntiva. Data una formula X esiste sempre una formula Y  
+equivalente a X in forma normale disgiuntiva.  
+Nel linguaggio che usiamo per i circuiti chiamiamo forma normale _**somma di prodotti**_ la forma normale disgiuntiva. Infatti osservate che se scriviamo la formula in (1) usando  
+la simbologia che abbiamo introdotto per i circuiti otteniamo  
+$$pq ̄r + ̄pq ̄r + pqr (2)  $$
+Una formula si dice in forma normale congiuntiva (CNF) se è una congiunzione di  
+clausole disgiuntive (dette anche semplicemente clausole) $D_1 \land D2_ \land\dots\land D_n$ dove ogni  
+clausola è una disgiunzione di letterali $D_i = l_{i,1} \lor l_{i,2} \lor\dots\lor l_{i,k_i}$ e ogni letterale è una  
+variabile oppure una variabile negata. Per esempio,  
+$$(p ∨ q ∨ ¬r) ∧ (¬p ∨ q ∨ ¬r)  $$
+è in forma normale congiuntiva. Data una formula X esiste sempre una formula Y  
+equivalente a X in forma normale congiuntiva.  
+Nel linguaggio che usiamo per i circuiti chiamiamo forma normale _**prodotto di somme**_ la forma normale congiuntiva
+
 Se si ha una formula in forma normale è immediato ricavare un circuito e disegnarlo in un modo "standard" . Per esempio, data la seguente tabella di verità
 
 ![[appunti lrl/immagini/img37.png|center|400]]
