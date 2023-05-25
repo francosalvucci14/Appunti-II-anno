@@ -37,7 +37,7 @@ $$101000101100$$
 
 # Codifica in complemento a due
 Nei paragrafi precedenti abbiamo visto come scrivere in binario i numeri naturali e abbiamo osservato che se abbiamo a disposizione $k$ bit possiamo codificare i numeri che vanno da $0$ a $2^{k}-1$. Per esempio con $k=4$ tutte le sequenze di 4 bit codificano in binario i numeri da 0 a 15. Come facciamo a codificare i numeri negativi?
-La prima idea potrebbe essere quella di usare un bit per il segno, quindi per esempio con 4 bit scriveremmo il numero $(2)_{10}=(0010)_{2}$ e il numero $(-2)_10=(1010)_{2}$. Questa codifica è legittima, ma presenta qualche caratteristica che la rende inefficace. Per esempio lo zero ha due codifiche differenti: 1000 e 0000, ma soprattutto la somma fra due numeri non si può più fare nel modo che abbiamo visto. Per esempio la somma di $(2)_{10}$ e $(-2)_{10}$ deve fare 0, ma se provo a farla in questa codifica ottengo
+La prima idea potrebbe essere quella di usare un bit per il segno, quindi per esempio con 4 bit scriveremmo il numero $(2)_{10}=(0010)_{2}$ e il numero $(-2)_{10}=(1010)_{2}$. Questa codifica è legittima, ma presenta qualche caratteristica che la rende inefficace. Per esempio lo zero ha due codifiche differenti: 1000 e 0000, ma soprattutto la somma fra due numeri non si può più fare nel modo che abbiamo visto. Per esempio la somma di $(2)_{10}$ e $(-2)_{10}$ deve fare 0, ma se provo a farla in questa codifica ottengo
 
 ![[appunti lrl/immagini/img29.png|center|100]]
 
