@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md",
+                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md"
+                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md"
               }
             }
           },
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md",
+                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,14 +152,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md",
+                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "0a5121fbf85d7664",
@@ -192,6 +192,7 @@
   },
   "active": "aa3b47c8298bc950",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525154526.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525154456.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525153132.png",
@@ -199,7 +200,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525144043.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525144017.png",
     "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
-    "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md",
     "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Lezione 16 - Adder - Subtractor ad anticipo di riporto.md",
@@ -208,7 +208,6 @@
     "Appunti LRL/Immagini/img97.png",
     "Appunti LRL/Immagini/img96.png",
     "Appunti LRL/Immagini/img95.png",
-    "Appunti LRL/Immagini/img94.png",
     "Appunti LRL/Lezione 12 - Formule in forma normale.md",
     "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
     "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
