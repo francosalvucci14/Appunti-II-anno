@@ -13,4 +13,6 @@
 - [[Lezione 12 - Formule in forma normale]]
 - [[Lezione 13 - Blocchi funzionali combinatori]]
 - [[Lezione 14 - Circuiti sequenziali]]
-- 
+- [[Lezione 15 - Macchine a stati finiti]]
+- [[Lezione 16 - Adder - Subtractor ad anticipo di riporto]]
+- [[Lezione 17 - Codifica di numeri frazionari e caratteri]]

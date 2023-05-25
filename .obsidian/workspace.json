@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
+                "file": "Appunti LRL/Indice delle lezioni LRL.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md"
+                "file": "Appunti LRL/Indice delle lezioni LRL.md"
               }
             }
           },
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
+                "file": "Appunti LRL/Indice delle lezioni LRL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
+                "file": "Appunti LRL/Indice delle lezioni LRL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,6 +192,7 @@
   },
   "active": "aa3b47c8298bc950",
   "lastOpenFiles": [
+    "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
     "Appunti LRL/Lezione 16 - Adder - Subtractor ad anticipo di riporto.md",
     "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
     "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
@@ -205,7 +206,6 @@
     "Appunti LRL/Immagini/img91.png",
     "Appunti LRL/Immagini/img90.png",
     "Appunti LRL/Immagini/img89.png",
-    "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
     "Appunti LRL/Lezione 12 - Formule in forma normale.md",
     "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
     "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
