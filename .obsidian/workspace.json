@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md"
+                "file": "Appunti LRL/Lezione 15 - Macchine a stati finiti.md"
               }
             }
           },
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LRL/Indice delle lezioni LRL.md",
+                "file": "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,6 +193,7 @@
   "active": "aa3b47c8298bc950",
   "lastOpenFiles": [
     "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
+    "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Lezione 16 - Adder - Subtractor ad anticipo di riporto.md",
     "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
     "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
@@ -215,7 +216,6 @@
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti FI/MOD II/Lezione 15.md",
     "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
-    "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti ASD/MOD II/Lezione 17 - NP part V.md",
     "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
     "Appunti ASD/MOD II/Lezione 15 - NP part III.md",

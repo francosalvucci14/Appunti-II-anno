@@ -16,3 +16,4 @@
 - [[Lezione 15 - Macchine a stati finiti]]
 - [[Lezione 16 - Adder - Subtractor ad anticipo di riporto]]
 - [[Lezione 17 - Codifica di numeri frazionari e caratteri]]
+- 
