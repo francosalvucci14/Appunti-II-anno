@@ -20,4 +20,3 @@
 - [[Lezione 19]]
 - [[Lezione 20]]
 - [[Lezione 21]]
-- 
