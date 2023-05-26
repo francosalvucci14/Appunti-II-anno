@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 17.md",
+                "file": "Appunti FI/MOD II/Lezione 18.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 17.md"
+                "file": "Appunti FI/MOD II/Lezione 18.md"
               }
             }
           },
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 17.md",
+                "file": "Appunti FI/MOD II/Lezione 18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,14 +151,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 17.md",
+                "file": "Appunti FI/MOD II/Lezione 18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0a5121fbf85d7664",
@@ -191,8 +191,14 @@
   },
   "active": "113d9c3013e80d9a",
   "lastOpenFiles": [
-    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230526131825.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230526131112.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230526130226.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230526124841.png",
+    "Appunti FI/MOD II/Immagini/Pasted image 20230526123600.png",
+    "Appunti FI/MOD II/Lezione 18.md",
     "Appunti FI/MOD II/Lezione 17.md",
+    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Lezione 16.md",
     "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
     "Appunti FI/MOD II/Lezione 14.md",
@@ -209,10 +215,6 @@
     "Appunti LRL/Indice delle lezioni LRL.md",
     "Appunti LRL/Lezione 16 - Adder - Subtractor ad anticipo di riporto.md",
     "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
-    "Appunti LRL/Immagini/img98.png",
-    "Appunti LRL/Immagini/img97.png",
-    "Appunti LRL/Immagini/img96.png",
-    "Appunti LRL/Immagini/img95.png",
     "Appunti LRL/Lezione 12 - Formule in forma normale.md",
     "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
     "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
@@ -226,8 +228,6 @@
     "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
     "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
