@@ -92,7 +92,7 @@ Allora, anche se, decidere se x soddisfa $\pi_{PHC}(G,u,v, S_{PHC}(G,u,v))$ ha c
 
 ### Da un problema al suo complemento
 
-Sia $\Sigma$ un qualunque alfabeto
+Sia $\Sigma^\star$ un qualunque alfabeto
 Una (qualunque) codifica $\chi$ delle istanze di un problema decisionale $\Gamma$ in parole di $\Sigma^\star$ induce una tri-partizione di $\Sigma^\star$, come abbiamo visto prima.
 Ora, ricordiamo, dato un qualunque linguaggio $L\subseteq\Sigma^\star$, il linguaggio complemento di L è : $L^c =\Sigma^\star - L$
 
@@ -140,3 +140,35 @@ Quindi parrebbe che <u>non</u> possiamo trasportare ai problemi decisionali la t
 E questo perché _**la complessità di un problema decisionale dipende anche dalla complessità di decidere il linguaggio delle istanze**_
 
 Ma <u>se la decisione del linguaggio delle istanze richiede “poche risorse”</u>,possiamo trasferire tutto ciò che abbiamo studiato relativamente alla complessità dei linguaggi alla complessità dei problemi decisionali,come mostra il prossimo teorema
+
+## Il ruolo del linguaggio delle istanze
+
+>[!definition]- Teorema 7.1: 
+>Sia $\Gamma=\langle \mathcal I_{\Gamma}, S_{\Gamma},\pi_{\Gamma} \rangle$ un problema decisionale e sia $\chi :\mathcal I_{\Gamma}\to\Sigma^\star$ una sua codifica ragionevole. Se $\chi(\mathcal I_{\Gamma} )\in P$ , allora valgono le seguenti implicazioni:
+>1) se $L_{\Gamma} (\chi )\in  NP$ allora $L_{\Gamma^c} (\chi )\in coNP$
+>2) se $L_{\Gamma} (\chi )\in  NEXPTIME$ allora $L_{\Gamma^c} (\chi )\in coNEXPTIME$
+
+Dimostriamo il Teorema 7.1 nel caso 1)
+
+Se $\chi(\mathcal I_{\Gamma} )\in P$, allora esistono una macchina deterministica T ed un intero h tali che, per ogni $x\in\Sigma^\star$ , T decide se $x\in\chi  (\mathcal I_{\Gamma} )$ e $dtime(T,x)\in  O(|x|^h ).$
+Se $L_{\Gamma} (\chi )\in  NP$, allora esistono una macchina non deterministica NT ed un intero k tali che, per ogni $x\in  L_{\Gamma} (\chi )$ , NT accetta x e $ntime(NT, x)\in  O(|x|^k).$
+
+Combinando T e NT, **costruiamo una nuova macchina non deterministica** $NT_0$ che accetta il linguaggio complemento di $L_{\Gamma^c}(\chi )$, ossia, che accetta $(L_{\Gamma^c}(\chi ))^c$
+
+Due domande sorgono spontanee:
+PRIMA DOMANDA: ma che ce ne importa di accettare $(L_{\Gamma^c}(\chi ))^c$ ?
+- Beh, se riusciamo a mostrare che possiamo accettare $(L_{\Gamma^c}(\chi ))^c$ in tempo non deterministico polinomiale, allora $(L_{\Gamma^c}(\chi ))^c$ è in NP e, dunque, $L_{\Gamma^c}(\chi )\in coNP$.
+SECONDA DOMANDA: quali parole troviamo in $(L_{\Gamma^c}(\chi ))^c$?
+- Poiché in $L_{\Gamma^c}(\chi )$ troviamo parole che codificano istanze no di $\Gamma$ , allora in $(L_{\Gamma^c}(\chi ))^c$ troviamo
+	1) parole che non codificano istanze di $\Gamma$
+	2) parole che codificano istanze sì di $\Gamma$, ossia, parole che appartengono a $L_{\Gamma}(\chi )$
+
+$NT_0$ opera in due fasi: con input $x\in\Sigma^\star$, 
+- Fase1. Simula la computazione $T(x)$: se $T(x)$ termina nello stato di rigetto, allora $NT_0$ termina nello stato di accettazione, altrimenti ha inizio la Fase 2. 
+- Fase 2. Simula la computazione $NT(x)$: se $NT(x)$ accetta allora $NT_0$ accetta
+
+$NT_0(x)$ accetta quando $x\not\in\chi  (\mathcal I_{\Gamma} )$ oppure $x\in  L_{\Gamma} (\chi )$, cioè $NT_0(x)$ **accetta se e soltanto se** x appartiene a $(L_{\Gamma^c}(\chi ))^c$
+
+Inoltre, è semplice verificare che $ntime(NT_0,x)\in  O(|x|^{max\{h,k\}} ).$ 
+Quindi: $(L_{\Gamma^c}(\chi ))^c$ è in NP, e dunque $L_{\Gamma^c}(\chi )\in coNP$
+
