@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+                "file": "Appunti FI/MOD II/Lezione 17.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+                "file": "Appunti FI/MOD II/Lezione 16.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md"
+                "file": "Appunti FI/MOD II/Lezione 17.md"
               }
             }
           },
@@ -135,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+                "file": "Appunti FI/MOD II/Lezione 17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,14 +151,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
+                "file": "Appunti FI/MOD II/Lezione 17.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0a5121fbf85d7664",
@@ -190,8 +189,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "aa3b47c8298bc950",
+  "active": "113d9c3013e80d9a",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 16.md",
+    "Appunti FI/MOD II/Lezione 17.md",
+    "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
+    "Appunti FI/MOD II/Lezione 14.md",
+    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti ASD/MOD II/Lezione 18 - Approximation Algorithms.md",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525154526.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525154456.png",
@@ -212,22 +216,18 @@
     "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
     "Appunti LRL/Lezione 10 - Numeri e codifiche.md",
     "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
-    "Appunti FI/MOD II/Lezione 16.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti FI/MOD II/Lezione 15.md",
-    "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
     "Appunti ASD/MOD II/Lezione 17 - NP part V.md",
     "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
     "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
     "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
     "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
-    "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
     "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
     "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Parser Top Down.md",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
