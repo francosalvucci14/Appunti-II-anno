@@ -213,5 +213,33 @@ Potremmo implementare la Fase 1 mediante il seguente ciclo
 
 ![[appunti fi/mod ii/immagini/Pasted image 20230526131825.png|center|500]]
 
+Siamo proprio sicuri?.
+
+Il numero di possibilità fra le quali scegliere ad ogni passo è pari a |V|, che non è costante!
+V è parte dell’input
+- <u>Non si tratta, perciò, di un algoritmo non deterministico!</u>
+In effetti, la fase non deterministica che accetta LONG PATH è sensibilmente più complessa
+
+In conclusione, quando progettate un algoritmo non deterministico, fate attenzione al fatto che il numero delle opzioni fra le quali scegliere sia _**costante**_! 
+
+## Ma...
+
+I tre problemi in NP che abbiamo visto, ovvero 3SAT, CLIQUE, LONG PATH hanno qualcosa in comune: la struttura del predicato $\pi$
+- in tutti e tre i problemi $\pi$ ha la forma seguente: esiste un elemento di S (ossia, una soluzione possibile) che soddisfa certe proprietà – che chiamiamo $\pi$
+- $\pi(x, S(x)) = \exists y\in  S(x) : \eta(x,y)$
+
+Non solo, ma anche gli algoritmi per la loro decisione che abbiamo analizzato seguivano tutti lo stesso schema: con input x,
+- Fase 1 (non deterministica): sceglie una soluzione possibile $y\in  S(x)$
+- Fase 2 (deterministica): verifica se y soddisfa il predicato $\eta(x, y)$
+
+E non basta: 
+- la Fase 1, ossia, sceglie una soluzione possibile y, richiede tempo polinomiale in |x|
+- la Fase 2, ossia, la verifica che x e y soddisfino il predicato , richiede tempo polinomiale in |x|
+
+E quindi possiamo dire che ogni problema
+- il cui predicato ha la forma $\pi(x, S(x)) = \exists y\in  S(x) : \eta(x,y)$
+- in cui la scelta di un elemento y di S(x) richiede tempo polinomiale in |x|
+- in cui la verifica che y soddisfi il predicato $\eta$, richiede tempo polinomiale in |x|
+appartiene ad NP 
 
 
