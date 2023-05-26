@@ -139,4 +139,4 @@ Quindi parrebbe che <u>non</u> possiamo trasportare ai problemi decisionali la t
 
 E questo perché _**la complessità di un problema decisionale dipende anche dalla complessità di decidere il linguaggio delle istanze**_
 
-Ma se la decisione del linguaggio delle istanze richiede “poche risorse”,possiamo trasferire tutto ciò che abbiamo studiato relativamente alla complessità dei linguaggi alla complessità dei problemi decisionali,come mostra il prossimo teorema
+Ma <u>se la decisione del linguaggio delle istanze richiede “poche risorse”</u>,possiamo trasferire tutto ciò che abbiamo studiato relativamente alla complessità dei linguaggi alla complessità dei problemi decisionali,come mostra il prossimo teorema
