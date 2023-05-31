@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 16.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 16.md"
+                "file": "README.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 16.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 16.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,12 +179,12 @@
   },
   "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
+    "Appunti FI/MOD II/Lezione 16.md",
     "Secondo Anno",
     "Appunti FI/MOD II/Lezione 18.md",
     "Appunti FI/MOD II/Lezione 19.md",
     "Appunti FI/MOD II/Lezione 20.md",
     "Appunti FI/MOD II/Lezione 21.md",
-    "Appunti FI/MOD II/Lezione 16.md",
     "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
     "Appunti LRL/Immagini/img86.png",
     "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
@@ -223,7 +223,6 @@
     "Appunti ASD/MOD II/Esercitazioni/Immagini",
     "Appunti BSD/MOD II/Immagini",
     "Appunti ASD/MOD II/Esercitazioni",
-    "Appunti BSD/MOD II",
-    "Appunti ASD/Algoritmo_Es3.pdf"
+    "Appunti BSD/MOD II"
   ]
 }
