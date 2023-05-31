@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "113d9c3013e80d9a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "aa3b47c8298bc950",
             "type": "leaf",
             "state": {
@@ -116,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md"
+                "file": "Appunti FI/MOD II/Lezione 16.md"
               }
             }
           },
@@ -134,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+                "file": "Appunti FI/MOD II/Lezione 16.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
+                "file": "Appunti FI/MOD II/Lezione 16.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,20 +177,25 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "113d9c3013e80d9a",
+  "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
-    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
-    "Appunti FI/MOD II/Lezione 21.md",
-    "Appunti FI/MOD II/Lezione 20.md",
-    "Appunti FI/MOD II/Lezione 19.md",
+    "Secondo Anno",
     "Appunti FI/MOD II/Lezione 18.md",
+    "Appunti FI/MOD II/Lezione 19.md",
+    "Appunti FI/MOD II/Lezione 20.md",
+    "Appunti FI/MOD II/Lezione 21.md",
+    "Appunti FI/MOD II/Lezione 16.md",
+    "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
+    "Appunti LRL/Immagini/img86.png",
+    "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
+    "Appunti LRL/Lezione 16 - Adder - Subtractor ad anticipo di riporto.md",
+    "Appunti FI/MOD II/Indice delle lezioni FI MOD 2.md",
     "Appunti FI/MOD II/Immagini/Pasted image 20230526131825.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230526131112.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230526130226.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230526124841.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230526123600.png",
     "Appunti FI/MOD II/Lezione 17.md",
-    "Appunti FI/MOD II/Lezione 16.md",
     "Appunti LRL/Lezione 13 - Blocchi funzionali combinatori.md",
     "Appunti FI/MOD II/Lezione 14.md",
     "Appunti ASD/MOD II/Indice delle lezioni ASD MOD 2.md",
@@ -211,11 +204,7 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525154456.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525153132.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525152135.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230525144043.png",
-    "Appunti LRL/Lezione 15 - Macchine a stati finiti.md",
-    "Appunti LRL/Lezione 17 - Codifica di numeri frazionari e caratteri.md",
     "Appunti LRL/Indice delle lezioni LRL.md",
-    "Appunti LRL/Lezione 16 - Adder - Subtractor ad anticipo di riporto.md",
     "Appunti LRL/Lezione 14 - Circuiti sequenziali.md",
     "Appunti LRL/Lezione 12 - Formule in forma normale.md",
     "Appunti LRL/Lezione 11 - Dalla logica ai circuiti.md",
@@ -227,7 +216,6 @@
     "Appunti ASD/MOD II/Lezione 16 - NP part IV.md",
     "Appunti ASD/MOD II/Lezione 15 - NP part III.md",
     "Appunti ASD/MOD II/Lezione 14 - NP part II.md",
-    "Appunti ASD/MOD II/Lezione 13 - NP and Computational Intractability.md",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
