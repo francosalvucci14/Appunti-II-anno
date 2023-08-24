@@ -104,7 +104,7 @@ Innanzi tutto, perché ci limitiamo a considerare linguaggi definiti sull’alfa
 
 Poi, alla funzione f che che definisce una classe di complessità (ad esempio, $DTIME[f(n)]$ ) diamo il nome di _**funzione limite**_
 Ma perché viene sempre richiesto che una funzione limite sia totale e calcolabile?
-- Si ricordino gli assiomi di Blum?
+- Si ricordino gli assiomi di Blum
 
 ## Relazioni fra classi di complessità
 
@@ -123,12 +123,12 @@ Facile: una macchina di Turing deterministica è una particolare macchina di Tur
 _dim_ :
 - Segue direttamente dal Teorema 6.1 [^1] Sia $L \subseteq \{0,1\}^\star$ tale che $L \in DTIME[ f (n)]$: 
 - allora, esiste una macchina di Turing deterministica T che decide L e tale che, 		         $$\forall x \in \{0,1\}^\star, dtime(T,x) \in O(f(|x|))$$
-- poiché $dspace(T,x) \leq dtime(T,x)$, allora $dspace(T,x) \leq dtime(T,x)in O(f(|x|))$
+- poiché $dspace(T,x) \leq dtime(T,x)$
 - questo implica che $dspace(T,x) \in O(f(|x|))$ e che, dunque, $L \in DSPACE[f(n)].$
 - Analogo il caso non deterministico
 
 >[!definition]- Teorema 6.10: 
->Per ogni funzione totale calcolabile f :  → ,					
+>Per ogni funzione totale calcolabile $f:\mathbb N\to\mathbb N$,					
 >$$DSPACE[ f (n)] \subseteq DTIME[2^{O(f(n))} ];NSPACE[ f (n)] \subseteq NTIME[2^{O(f(n))}].$$
 
 _dim_
