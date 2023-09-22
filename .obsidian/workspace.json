@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
+                "file": "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md"
+                "file": "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md"
               }
             }
           },
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
+                "file": "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,14 +152,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
+                "file": "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "0a5121fbf85d7664",
@@ -192,7 +192,9 @@
   },
   "active": "8d498c27e433d164",
   "lastOpenFiles": [
+    "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
+    "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "Appunti FI/MOD II/Lezione 11.md",
     "Appunti FI/MOD II/Lezione 18.md",
@@ -201,10 +203,8 @@
     "Appunti FI/MOD II/Lezione 21.md",
     "Appunti FI/MOD II/Lezione 12.md",
     "Appunti FI/MOD II/Lezione 13.md",
-    "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti BSD/MOD I/Lezione 2.md",
     "Appunti BSD/MOD I/Lezione 1.md",
-    "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti FI/MOD II/Lezione 10.md",
     "Appunti FI/MOD II/Lezione 7.md",
     "Appunti FI/MOD II/Lezione 5.md",
