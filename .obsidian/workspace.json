@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8d498c27e433d164",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 11.md"
+                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md"
               }
             }
           },
@@ -122,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 11.md",
+                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +152,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti FI/MOD II/Lezione 11.md",
+                "file": "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "0a5121fbf85d7664",
@@ -177,12 +190,22 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "8d498c27e433d164",
   "lastOpenFiles": [
-    "Appunti FI/MOD II/Lezione 13.md",
+    "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
+    "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "Appunti FI/MOD II/Lezione 11.md",
-    "Appunti FI/MOD II/Lezione 10.md",
+    "Appunti FI/MOD II/Lezione 18.md",
+    "Appunti FI/MOD II/Lezione 19.md",
+    "Appunti FI/MOD II/Lezione 20.md",
+    "Appunti FI/MOD II/Lezione 21.md",
     "Appunti FI/MOD II/Lezione 12.md",
+    "Appunti FI/MOD II/Lezione 13.md",
+    "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
+    "Appunti BSD/MOD I/Lezione 2.md",
+    "Appunti BSD/MOD I/Lezione 1.md",
+    "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
+    "Appunti FI/MOD II/Lezione 10.md",
     "Appunti FI/MOD II/Lezione 7.md",
     "Appunti FI/MOD II/Lezione 5.md",
     "Appunti FI/MOD II/Lezione 4.md",
@@ -195,17 +218,7 @@
     "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
     "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
-    "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
-    "Appunti ASD/MOD II/Lezione 11 - Dynamic Programming Part II.md",
-    "Appunti ASD/MOD II/Lezione 17 - NP part V.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
-    "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
-    "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 6 - HeapSort.md",
-    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Secondo Anno",
     "Appunti LRL/Immagini/img86.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230526131825.png",
