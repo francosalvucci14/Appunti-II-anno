@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 288.5026054382324
   },
   "right": {
     "id": "d3d786b3af0b6470",
@@ -117,7 +117,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "0a5121fbf85d7664",
@@ -150,6 +150,8 @@
   },
   "active": "8d498c27e433d164",
   "lastOpenFiles": [
+    "Appunti BSD/MOD II/Immagini/Pasted image 20231002145250.png",
+    "Appunti BSD/MOD II/Immagini/Pasted image 20231002145154.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002142331.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002130548.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002130435.png",
@@ -186,8 +188,6 @@
     "Appunti FI/MOD II/Immagini/Pasted image 20230526130226.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230526124841.png",
     "Appunti FI/MOD II/Immagini/Pasted image 20230526123600.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230525154526.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230525154456.png",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti LMP/MOD II/Esercitazioni",
