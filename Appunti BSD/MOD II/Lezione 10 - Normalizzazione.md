@@ -169,3 +169,40 @@ Tabella in 1NF: scomposizione in due tabelle
 
 ## Seconda Forma Normale (2NF)
 
+Uno **schema di relazione R(X) è in 2NF** se è in 1NF e se ogni _**attributo non primo (non facente parte della chiave) di R(X)**_ dipende funzionalmente e completamente da ogni chiave di R(X)
+
+- Esempio
+
+Tabella non in 2NF: tutte le colonne corrispondenti agli attributi no chiave non dipendono dall’intera chiave primaria
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231002154817.png|center]]
+
+Tabella in 2NF
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231002154837.png|center]]
+
+## Terza Forma Normale (3NF) 
+
+Uno **schema di relazione R(X) è in 3NF** se è in 1NF e se ogni attributo _**non primo**_ (non facente parte della chiave) di R(X) è dipendente in modo non transitivo da ogni chiave di R(X).
+
+- Esempio
+Tabella non in 3NF:
+- telefono del Reparto ripetuto per ogni Impiegato di quel Reparto (ridondanza)
+- se il telefono cambia, occorre modificare molte righe
+- con errori di aggiornamento, si avrebbero telefoni differenti
+- se un Reparto non ha impiegati, non si può conoscere il suo telefono
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231002155050.png|center]]
+
+Tabella non in 3NF, dipendenze funzionali:
+- CodImpiegato $\to$ Reparto
+- Reparto $\to$ TelefonoReparto
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231002155115.png|center]]
+
+Tabella in 3NF
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231002155418.png|center]]
+
+## Forma Normale di Boyce-Codd
+
