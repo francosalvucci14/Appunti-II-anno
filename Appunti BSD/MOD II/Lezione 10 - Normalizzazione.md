@@ -150,7 +150,7 @@ Se K è una chiave di R, allora K determina funzionalmente tutti gli attributi i
 
 # Forme Normali
 
-## Prima forma normale (1NF)
+## Prima Forma Normale (1NF)
 
 Uno schema di relazione R(X) con X insieme di attributi, è in 1NF **se ogni attributo appartenente ad X è un attributo semplice**.
 
@@ -166,4 +166,6 @@ Tabella in 1NF: scomposizione in due tabelle
 
 ![[appunti bsd/mod ii/immagini/Pasted image 20231002145250.png|center]]
 
+
+## Seconda Forma Normale (2NF)
 
