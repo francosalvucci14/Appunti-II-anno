@@ -115,35 +115,6 @@
               "type": "git-view",
               "state": {}
             }
-          },
-          {
-            "id": "aeb9c407e4ea7fa1",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "53ac7922386be373",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
           }
         ],
         "currentTab": 2
@@ -177,14 +148,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8d498c27e433d164",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti BSD/MOD II/Immagini/Pasted image 20231002130548.png",
+    "Appunti BSD/MOD II/Immagini/Pasted image 20231002130435.png",
+    "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
-    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
+    "README.md",
+    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
     "Appunti FI/MOD II/Lezione 11.md",
-    "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
     "Appunti BSD/MOD I/Lezione 4 - Vincoli d'integrità.md",
@@ -203,8 +177,6 @@
     "Appunti FI/MOD II/Lezione 5.md",
     "Appunti FI/MOD II/Lezione 4.md",
     "Appunti FI/MOD II/Lezione 3.md",
-    "Appunti FI/MOD II/Lezione 2.md",
-    "Appunti FI/MOD II/Lezione 1.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Secondo Anno",
     "Appunti LRL/Immagini/img86.png",
@@ -216,7 +188,6 @@
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525154526.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525154456.png",
     "Appunti ASD/MOD II/Immagini/Pasted image 20230525153132.png",
-    "Appunti ASD/MOD II/Immagini/Pasted image 20230525152135.png",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti LMP/MOD II/Esercitazioni",
