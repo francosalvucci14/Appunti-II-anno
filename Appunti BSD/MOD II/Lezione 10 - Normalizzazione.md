@@ -105,7 +105,7 @@ Si ha **dipendenza transitiva** quando A determina B e B determina C. Si dice al
 
 - Schema con anomalie
 
-![[appunti bsd/mod ii/immagini/Pasted image 20231002142331.png|center]]
+![[appunti bsd/mod ii/immagini/Pasted image 20231002142331.png|center|500]]
 
 - Proprietà : 
 	- Ogni impiegato ha un solo stipendio (anche se partecipa a più progetti)
@@ -240,5 +240,54 @@ Che facciamo se una relazione non soddisfa la BNCF?
 
 Come?
 - Decomponendo sulla base delle dipendenze funzionali, al fine di separare i concetti
+
+Esempio di decomposizione
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004144917.png|center]]
+
+## Procedura intuitiva di normalizzazione
+
+Non è valida in generale, ma solo nei casi "semplici"
+
+Per ogni dipendenza $X\to Y$ che viola la BNCF, definire una relazione su XY ed eliminare Y dalla relazione originaria
+
+Vediamo un esempio
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004145456.png|center|400]]
+
+Decomponiamo sulla base delle dipendenze
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004145604.png|center|500]]
+
+Proviamo a ricostruire
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004145713.png|center|400]]
+
+## Decomposizione senza perdita
+
+Una relazione r si **decompone senza perdita** su $X_1,X_2$ se il join delle proiezioni di r su $X_1$ e $X_2$ è uguale a r stessa (cioè non contiene ennuple spurie)
+
+La decomposizione senza perdita è garantite se gli attributi comuni contengono una **chiave** per almeno una delle relazioni decomposte
+
+Proviamo a decomporre senza perdita
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004150009.png|center|400]]
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004150038.png|center|300]]
+
+Un altro problema 
+Supponiamo di voler inserire una nuova ennupla che specifica la partecipazione dell'impiegato Neri, che opera a Milano, al progetto Marte
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004150224.png|center|500]]
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004150253.png|center|500]]
+
+
+
+
+
+
+
+
 
 
