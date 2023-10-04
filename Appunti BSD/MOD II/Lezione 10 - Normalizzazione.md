@@ -397,4 +397,17 @@ Un insieme di dipendenze F è:
 Esempio
 $$\begin{align}F_{1}= \{A\to B;AB\to C;A\to C\}&\space\text{ridondante e equivalente a }F_2\\F_2=\{A\to B;AB\to C\}&\space\text{non ridondante ma non ridotto}\\F_3=\{A\to B;A\to C\}&\space\text{RIDOTTO}\end{align}$$
 
+### Calcolo copertura ridotta
+
+1. Sostituiamo l’insieme dato con quello equivalente che ha tutti i secondi membri costituiti da singoli attributi;
+2. Eliminiamo le dipendenze ridondanti;
+3. Per ogni dipendenza verifichiamo se esistono attributi eliminabili dal primo membro
+
+In pratica, per ogni dipendenza $Y \to A \in F$, verifichiamo se esiste $Y \subseteq X$ tale che F è equivalente a $F − \{X \to A\} \cup \{Y \to A\}$
+
+### Progettazione e normalizzazione
+
+La teoria della normalizzazione può essere usata nella progettazione logica per verificare lo schema relazionionale finale
+
+**Si può usare anche durante la progettazione concettuale per verificare la qualità dello schema concenttuale**
 
