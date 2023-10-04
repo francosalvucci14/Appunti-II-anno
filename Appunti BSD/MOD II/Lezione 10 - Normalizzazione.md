@@ -295,6 +295,106 @@ Una decomposizione dovrebbe sempre soddisfare:
 - la decomposizione senza perdità, **che garantisce la ricostruzione delle informazioni originarie**
 - la conservazione delle dipendenze, **che garantisce il mantenimento dei vincoli di integrità**
 
+Esempio di relazione non normalizzata
 
+![[appunti bsd/mod ii/immagini/Pasted image 20231004152833.png|center|500]]
+
+In questo caso la decomposizione è problematica
+
+Progetto Sede $\to$ Dirigente coinvolge tutti gli attributi e quindi nessuna decomposizione può preservare tale dipendenza
+
+Quindi in alcuni casi la BCNF "non è raggiungibile"
+
+## BCNF e Terza Forma Normale (3NF)
+
+Una relazione r è in terza forma normale se, per ogni FD (non banale) $X\to Y$ definita su r, è verificata almeno una delle seguenti condizioni:
+- X contiene una chaive K di r
+- ogni attributo in Y è contenuto in almeno una chiave di r
+
+La 3NF è meno restrittiva della forma normale di Boyce-Codd ( e ammette relazioni con alcune anomalie)
+
+Ha il vantaggio di essere sempre "raggiungibile"
+
+Se una relazione ha una sola chiave, allora essa è in BCNF se e solo se è in 3NF
+
+### Decomposizione in terza forma normale
+
+Si crea una relazione per ogni gruppo di attributi coinvolti in una dipendenza funzionale
+
+SI verifica che alla fine una relazione contengauna chiave della relazione originaria
+
+**Dipende dalle dipendenze individuate**
+
+Una possibile strategia è :
+- se la relazione non è normalizzata si decompone in terza forma normale
+- alla fine si verifica se lo schema ottenuto è anche in BCNF
+
+Esempio di schema non decomponibile in BCNF
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004153729.png|center|400]]
+
+una possibile riorganizzazione è 
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004153820.png|center|400]]
+
+La decomposizione in BCNF è
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004153903.png|center|500]]
+
+## Teoria della normalizzazione
+
+I concetti visti possono essere formalizzati in maniera precisa
+**Problema**: data una relazione r e un insieme di dipendenze funzionali definite su r, generare una decomposizione di r che:
+- **Sia senza perdita e conservi le dipendenze**
+- **Contenga solo relazioni normalizzate**
+
+Faremo riferimento alla 3NF
+
+
+### Implicazione dipendenze funzionali
+
+Un insieme F di FD **implica** un'altra FD f se ogni relazione che soddisfa tutte le FD in F soddisfa anche f
+
+Esempio : 
+- R(Impiegato,Categoria,Stipendio)
+- Le FD Impiegato $\to$ Categoria e Categoria $\to$ Stipendio implicano la FD Impiegato $\to$ Stipendio
+
+### Chiusura di un insieme di attributi
+
+Dati uno schema di relazione R(U), un insieme F di FD definite su U e un insieme di attributi X contenuti in U (cioè $X\subseteq U$): la **chiusura** di X rispetto ad F, indicata con $X^+_F$ , è l’insieme degli attributi che dipendono funzionalmente da X:
+$$X^+_{F}= \{A|A\in U\land\text{F implica}\space X\to A\}$$
+Se A appartiene a $X^+_F$ allora $X\to A$ è implicata da F
+
+#### Calcolo di $X^+_F$
+
+**Input** : un insieme X di attributi e un insieme F di dipendenze funzionali
+**Output** : un insieme $X_p$ di attributi
+
+1) Inizializziamo $X_p$ con l'insieme di input X
+2) Se esiste una FD $Y\to A$ in F con $Y\subseteq X_p$ e $A\not\in X_p$ , allora aggiungiamo A a $X_p$
+3) Ripetiamo il passo 2 fino a quando non ci sono ulteriori attributi che possono essere aggiunti a $X_p$
+
+### Chiusura e Chiave
+
+Un insieme di attributi K è chiave per uno schema di relazione R(U) su cui è definito un insieme di dipendenze funzionali F se F implica $K \to U$.
+
+L’algoritmo appena mostrato può essere utilizzato per verificare se un insieme di attributi è chiave.
+
+### Coperture di dipendenze funzionali
+
+Due insiemi di dipendenze funzionali $F_1$ ed $F_2$ sono **equivalenti** se $F_1$ implica ciascuna dipendenza in $F_2$ e viceversa.
+
+Se due insiemi sono equivalenti diciamo anche che ognuno è una **copertura** dell’altro.
+
+Questa proprietà consente di utilizzare, dato un insieme di dipendenze, un altro, a esso equivalente, ma più semplice.
+
+#### Proprietà desiderabili di FD
+
+Un insieme di dipendenze F è:
+- **non ridondante** se non esiste dipendenza $f\in F$ tale che $F-\{f\}$ implica f
+- **ridotto** se (i) è non ridondante e (ii) non esiste un insieme F' equivalente a F ottenuto eliminando attributi dai primi membri di una o più dipendenze di F
+
+Esempio
+$$\begin{align}F_{1}= \{A\to B;AB\to C;A\to C\}&\space\text{ridondante e equivalente a }F_2\\F_2=\{A\to B;AB\to C\}&\space\text{non ridondante ma non ridotto}\\F_3=\{A\to B;A\to C\}&\space\text{RIDOTTO}\end{align}$$
 
 
