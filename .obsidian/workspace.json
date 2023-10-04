@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "65f315ae9aad31b2",
+        "id": "bd1b92b9c755260c",
         "type": "tabs",
         "children": [
           {
-            "id": "8d498c27e433d164",
+            "id": "ff16261c1eaa4c7c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -145,15 +145,17 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "graph:Open graph view": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-matrix:Obsidian Matrix": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004135516.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004135041.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002155115.png",
-    "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002155418.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002155050.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002154837.png",
@@ -161,7 +163,6 @@
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002145250.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002145154.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002142331.png",
-    "Appunti BSD/MOD II/Immagini/Pasted image 20231002130548.png",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "README.md",
