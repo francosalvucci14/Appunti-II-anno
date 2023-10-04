@@ -206,3 +206,33 @@ Tabella in 3NF
 
 ## Forma Normale di Boyce-Codd
 
+Una **relazione è in forma normale di Boyce-Codd (BNCF)** se è in 1NF se ogni volta che vale FD $X\to A$ in R, allora X è una superchiave di R
+
+Ogni forma normale è strettamente più forte della precedente:
+- Ogni relazione 2NF è in 1NF
+- Ogni relazione 3NF è in 2NF
+- Ogni relazione BCNF è in 3NF
+
+Esistono relazioni che sono in 3NF ma non in BNCF
+
+L'obiettivo è avere ogni relazione in BNCF (o 3NF)
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004135041.png|center]]
+
+## Quarta e Quinta forma normale
+
+La quarta e quinta forma normale risolvono i problemi che si possono creare quando nella relazione sono presenti attributi multivalore, cioè attributi che possono assumere più valori in corrispondenza dello stesso valore di un altro attributo
+
+## Quale forma normale?
+
+è sufficiente rappresentare le relazioni in 3NF che, come si può dimostrare, ha il pregio di essere sempre ottenibile senza **perdita di informazioni** e senza perdita di **dipendenze funzionali**
+
+Non è così invece per la forma normale di Boyce-Codd: ci sono relazioni che non possono essere normalizzate nella forma di Boyce-Codd senza perdita di dipendenze funzionali
+
+Relazione in 3NF ma non in BNCF
+
+![[appunti bsd/mod ii/immagini/Pasted image 20231004135516.png|center]]
+
+# Normalizzazione e decomposizione
+
+

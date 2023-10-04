@@ -117,7 +117,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "0a5121fbf85d7664",
@@ -148,8 +148,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8d498c27e433d164",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti BSD/MOD II/Immagini/Pasted image 20231004135516.png",
+    "Appunti BSD/MOD II/Immagini/Pasted image 20231004135041.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002155115.png",
     "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002155418.png",
@@ -160,7 +162,6 @@
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002145154.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002142331.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231002130548.png",
-    "Appunti BSD/MOD II/Immagini/Pasted image 20231002130435.png",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "README.md",
