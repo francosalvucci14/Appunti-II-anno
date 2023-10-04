@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "bd1b92b9c755260c",
+        "id": "1a2d00e32b0752ab",
         "type": "tabs",
         "children": [
           {
-            "id": "ff16261c1eaa4c7c",
+            "id": "40bf973d4c3b4b06",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -103,9 +99,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md"
-              }
+              "state": {}
             }
           },
           {
@@ -120,11 +114,11 @@
         "currentTab": 2
       },
       {
-        "id": "0a5121fbf85d7664",
+        "id": "ae60c7adc4ea8bcd",
         "type": "tabs",
         "children": [
           {
-            "id": "4aac8c1dbbe16531",
+            "id": "ff16261c1eaa4c7c",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -151,7 +145,9 @@
   },
   "active": "ff16261c1eaa4c7c",
   "lastOpenFiles": [
+    "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
     "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
+    "Pasted image 20231004160841.png",
     "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004153903.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004153820.png",
@@ -162,7 +158,6 @@
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004150038.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004150009.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004145713.png",
-    "Appunti BSD/MOD II/Immagini/Pasted image 20231004145604.png",
     "Untitled.canvas",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
@@ -176,7 +171,6 @@
     "Appunti BSD/MOD I/Lezione 2.md",
     "Appunti BSD/MOD I/Lezione 1.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
-    "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
     "Appunti FI/MOD II/Lezione 18.md",
     "Appunti FI/MOD II/Lezione 19.md",
     "Appunti FI/MOD II/Lezione 20.md",
@@ -187,7 +181,6 @@
     "Appunti FI/MOD II/Lezione 7.md",
     "Appunti FI/MOD II/Lezione 5.md",
     "Appunti FI/MOD II/Lezione 4.md",
-    "Appunti FI/MOD II/Lezione 3.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Secondo Anno",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
