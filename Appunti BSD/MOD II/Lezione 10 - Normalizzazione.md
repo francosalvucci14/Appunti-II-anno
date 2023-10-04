@@ -283,10 +283,17 @@ Supponiamo di voler inserire una nuova ennupla che specifica la partecipazione d
 ![[appunti bsd/mod ii/immagini/Pasted image 20231004150253.png|center|500]]
 
 
+## Composizione delle dipendenze
 
+Una **decomposizione conserva le dipendenze** se ciascuna delle dipendenze funzionali dello schema origianrio coinvolge attributi che compaiono tutti insieme in uno degli schema decomposti
 
+Progetto $\to$ Sede non è conservata
 
+## Qualità delle decomposizioni
 
+Una decomposizione dovrebbe sempre soddisfare:
+- la decomposizione senza perdità, **che garantisce la ricostruzione delle informazioni originarie**
+- la conservazione delle dipendenze, **che garantisce il mantenimento dei vincoli di integrità**
 
 
 
