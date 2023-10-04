@@ -235,4 +235,10 @@ Relazione in 3NF ma non in BNCF
 
 # Normalizzazione e decomposizione
 
+Che facciamo se una relazione non soddisfa la BNCF?
+- La rimpiazziamo con altre relazioni che soddisfano la BNCF
+
+Come?
+- Decomponendo sulla base delle dipendenze funzionali, al fine di separare i concetti
+
 
