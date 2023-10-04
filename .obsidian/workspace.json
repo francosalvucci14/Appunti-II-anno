@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
+                "file": "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md"
+                "file": "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md"
               }
             }
           },
@@ -117,7 +117,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "0a5121fbf85d7664",
@@ -151,6 +151,8 @@
   },
   "active": "ff16261c1eaa4c7c",
   "lastOpenFiles": [
+    "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
+    "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004153903.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004153820.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004153729.png",
@@ -161,9 +163,7 @@
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004150009.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004145713.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004145604.png",
-    "Appunti BSD/MOD II/Immagini/Pasted image 20231004145456.png",
     "Untitled.canvas",
-    "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "README.md",
