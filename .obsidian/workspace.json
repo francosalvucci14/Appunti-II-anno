@@ -11,8 +11,12 @@
             "id": "8f7e8839da064269",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Appunti SOR/MOD I Croce/Lezione 1.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -99,7 +103,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Appunti SOR/MOD I Croce/Lezione 1.md"
+              }
             }
           },
           {
@@ -108,6 +114,35 @@
             "state": {
               "type": "git-view",
               "state": {}
+            }
+          },
+          {
+            "id": "05958654ae271c71",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Appunti SOR/MOD I Croce/Lezione 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8b8a0421fa247aac",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Appunti SOR/MOD I Croce/Lezione 1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
             }
           }
         ],
@@ -129,8 +164,18 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
+    "Appunti SOR/MOD I Croce/img/img1.png",
+    "Appunti SOR/MOD I Croce/img/img2.png",
+    "Appunti SOR/MOD I Croce/img/img3.png",
+    "Appunti SOR/MOD I Croce/img",
+    "Appunti SOR/MOD I/Lezione 1 - Introduzione sui sistemi operativi.md",
+    "Appunti SOR/MOD I Croce/Lezione 1.md",
+    "Appunti SOR/MOD I Croce",
+    "Appunti SOR/MOD I/Lezione 2 - Tipologie di sistemi.md",
+    "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
+    "Appunti SOR/MOD I/Lezione 4 - Operazioni dei processi.md",
     "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
     "Pasted image 20231004160954.png",
     "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
@@ -142,8 +187,6 @@
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004152833.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004150253.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004150224.png",
-    "Appunti BSD/MOD II/Immagini/Pasted image 20231004150038.png",
-    "Appunti BSD/MOD II/Immagini/Pasted image 20231004150009.png",
     "Untitled.canvas",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
@@ -162,11 +205,6 @@
     "Appunti FI/MOD II/Lezione 20.md",
     "Appunti FI/MOD II/Lezione 21.md",
     "Appunti FI/MOD II/Lezione 12.md",
-    "Appunti FI/MOD II/Lezione 13.md",
-    "Appunti FI/MOD II/Lezione 10.md",
-    "Appunti FI/MOD II/Lezione 7.md",
-    "Appunti FI/MOD II/Lezione 5.md",
-    "Appunti FI/MOD II/Lezione 4.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Secondo Anno",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
@@ -174,8 +212,6 @@
     "Appunti LMP/MOD II/Esercitazioni",
     "Appunti LRL/Immagini",
     "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf",
-    "Appunti ASD/MOD II/Esercitazioni/Immagini",
-    "Appunti BSD/MOD II/Immagini",
-    "Appunti ASD/MOD II/Esercitazioni"
+    "Appunti ASD/MOD II/Esercitazioni/Immagini"
   ]
 }
