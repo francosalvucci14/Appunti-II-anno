@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase uno.md",
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase uno.md"
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase uno.md",
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase uno.md",
+                "file": "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,8 +166,9 @@
   },
   "active": "8f7e8839da064269",
   "lastOpenFiles": [
-    "Appunti SOR/MOD I Croce/Lezione 1.md",
+    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
     "Appunti BSD/Progetto DB/Fase uno.md",
+    "Appunti SOR/MOD I Croce/Lezione 1.md",
     "Appunti BSD/Progetto DB",
     "Appunti SOR/MOD I Croce/img/img1.png",
     "Appunti SOR/MOD I Croce/img/img2.png",
@@ -193,7 +194,6 @@
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "README.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
-    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
     "Appunti FI/MOD II/Lezione 11.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
