@@ -117,23 +117,6 @@
             }
           },
           {
-            "id": "05958654ae271c71",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
             "id": "8b8a0421fa247aac",
             "type": "leaf",
             "state": {
@@ -146,7 +129,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -166,8 +149,10 @@
   },
   "active": "8f7e8839da064269",
   "lastOpenFiles": [
+    "Appunti BSD/MOD II/Immagini/Pasted image 20231011163818.png",
     "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
+    "Appunti BSD/MOD II/Immagini/Pasted image 20231011163121.png",
     "Appunti CPS/Lezione 1.md",
     "Appunti CPS/Lezione 2.md",
     "Appunti BSD/Progetto DB/Fase uno.md",
@@ -192,7 +177,6 @@
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004153820.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004153729.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004152833.png",
-    "Appunti BSD/MOD II/Immagini/Pasted image 20231004150253.png",
     "Untitled.canvas",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
@@ -205,7 +189,6 @@
     "Appunti BSD/MOD I/Lezione 2.md",
     "Appunti BSD/MOD I/Lezione 1.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
-    "Appunti FI/MOD II/Lezione 18.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Secondo Anno",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
