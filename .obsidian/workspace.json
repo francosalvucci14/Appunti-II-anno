@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 1.md",
+                "file": "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 1.md"
+                "file": "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 1.md",
+                "file": "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 1.md",
+                "file": "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,11 +166,15 @@
   },
   "active": "8f7e8839da064269",
   "lastOpenFiles": [
+    "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
+    "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
+    "Appunti CPS/Lezione 1.md",
+    "Appunti CPS/Lezione 2.md",
     "Appunti BSD/Progetto DB/Fase uno.md",
+    "Appunti SOR/MOD I Croce/Lezione 1.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
     "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
-    "Appunti SOR/MOD I Croce/Lezione 1.md",
     "Appunti BSD/Progetto DB",
     "Appunti SOR/MOD I Croce/img/img1.png",
     "Appunti SOR/MOD I Croce/img/img2.png",
@@ -181,11 +185,9 @@
     "Appunti SOR/MOD I/Lezione 2 - Tipologie di sistemi.md",
     "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
     "Appunti SOR/MOD I/Lezione 4 - Operazioni dei processi.md",
-    "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
     "Pasted image 20231004160954.png",
     "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
     "Pasted image 20231004160841.png",
-    "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004153903.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004153820.png",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231004153729.png",
@@ -204,8 +206,6 @@
     "Appunti BSD/MOD I/Lezione 1.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti FI/MOD II/Lezione 18.md",
-    "Appunti FI/MOD II/Lezione 19.md",
-    "Appunti FI/MOD II/Lezione 20.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Secondo Anno",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
