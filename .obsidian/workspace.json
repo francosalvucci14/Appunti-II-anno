@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "721a84e295672958",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti SOR/MOD I Croce/Lezione 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md"
+                "file": "Appunti SOR/MOD I Croce/Lezione 2.md"
               }
             }
           },
@@ -122,8 +135,25 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 2.md",
                 "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f52778b625c87eb0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Appunti SOR/MOD I Croce/Lezione 2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
@@ -147,36 +177,38 @@
       "graph:Open graph view": false
     }
   },
-  "active": "8f7e8839da064269",
+  "active": "721a84e295672958",
   "lastOpenFiles": [
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231013121114.png",
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231013120833.png",
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231013120032.png",
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231013115002.png",
+    "Pasted image 20231013112930.png",
+    "Appunti SOR/MOD I Croce/Lezione 2.md",
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231013113841.png",
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231013112427.png",
+    "Appunti SOR/MOD I Croce/Lezione 1.md",
+    "Appunti SOR/MOD I Croce/Untitled",
+    "Appunti BSD/Progetto DB/Fase uno.md",
+    "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231011163818.png",
     "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
-    "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
     "Appunti BSD/MOD II/Immagini/Pasted image 20231011163121.png",
     "Appunti CPS/Lezione 1.md",
     "Appunti CPS/Lezione 2.md",
-    "Appunti BSD/Progetto DB/Fase uno.md",
-    "Appunti SOR/MOD I Croce/Lezione 1.md",
     "Appunti LMP/MOD I/Esercitazioni/LMP 4.md",
     "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
     "Appunti BSD/Progetto DB",
     "Appunti SOR/MOD I Croce/img/img1.png",
     "Appunti SOR/MOD I Croce/img/img2.png",
-    "Appunti SOR/MOD I Croce/img/img3.png",
     "Appunti SOR/MOD I Croce/img",
     "Appunti SOR/MOD I/Lezione 1 - Introduzione sui sistemi operativi.md",
     "Appunti SOR/MOD I Croce",
     "Appunti SOR/MOD I/Lezione 2 - Tipologie di sistemi.md",
     "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
     "Appunti SOR/MOD I/Lezione 4 - Operazioni dei processi.md",
-    "Pasted image 20231004160954.png",
     "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
-    "Pasted image 20231004160841.png",
-    "Appunti BSD/MOD II/Immagini/Pasted image 20231004153903.png",
-    "Appunti BSD/MOD II/Immagini/Pasted image 20231004153820.png",
-    "Appunti BSD/MOD II/Immagini/Pasted image 20231004153729.png",
-    "Appunti BSD/MOD II/Immagini/Pasted image 20231004152833.png",
     "Untitled.canvas",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
@@ -188,13 +220,11 @@
     "Appunti BSD/MOD I/Lezione 4 - Vincoli d'integrità.md",
     "Appunti BSD/MOD I/Lezione 2.md",
     "Appunti BSD/MOD I/Lezione 1.md",
-    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Secondo Anno",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
     "Appunti LMP/MOD II/Esercizi Prolog",
     "Appunti LMP/MOD II/Esercitazioni",
-    "Appunti LRL/Immagini",
-    "Appunti BSD/MOD I/DBMS e SQL[Compatibility Mode].pdf"
+    "Appunti LRL/Immagini"
   ]
 }
