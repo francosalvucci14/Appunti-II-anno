@@ -1,0 +1,1 @@
+# Struttura di un SO
