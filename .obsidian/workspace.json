@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Indice delle lezioni.md"
+                "file": "Appunti SOR/MOD I Croce/Lezione 2.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,11 +180,12 @@
   },
   "active": "721a84e295672958",
   "lastOpenFiles": [
-    "Appunti SOR/MOD I Croce/Lezione 2.md",
     "Appunti SOR/MOD I Croce/Lezione 3.md",
-    "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
-    "Appunti SOR/MOD I Croce/Lezione 1.md",
     "Appunti SOR/MOD I Croce/Lezione 4.md",
+    "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
+    "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
+    "Appunti SOR/MOD I Croce/Lezione 2.md",
+    "Appunti SOR/MOD I Croce/Lezione 1.md",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231014095842.png",
     "Pasted image 20231014093548.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231014093317.png",
@@ -197,7 +198,6 @@
     "Appunti SOR/MOD I Croce/img/Pasted image 20231013112427.png",
     "Appunti SOR/MOD I Croce/Untitled",
     "Appunti BSD/Progetto DB/Fase uno.md",
-    "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
     "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti CPS/Lezione 1.md",
     "Appunti CPS/Lezione 2.md",
