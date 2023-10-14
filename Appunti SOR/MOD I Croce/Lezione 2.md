@@ -58,7 +58,7 @@ Concetto chiave in tutti i sistemi operativi
 
 >[!definition]-  Programma in esecuzione
 >Il processo è associato : 
->- a uno spazio di indirizzi [^1]
+>- a uno spazio di indirizzi[^1]
 >- un insieme di risorse
 >	- registri
 >	- file aperti
@@ -179,6 +179,20 @@ Di seguito l'elenco dei comandi :
 - **chmod** : Permette di modificare i permessi del file hello.sh, nell'esempio specifico il file viene modificato in modo che sia un file eseguibile
 - Nell'ultima riga viene eseguito il file hello.sh, che stampa in output "Hello World"
 
+#### File e Pipe
+
+Una pipe e' vista come uno pseudofile che permette la connessione tra un processo A e un processo B.
+
+La comunicazione avviene tramite canale FIFO[^2]
+
+> _Ex_: Se due processi A e B vogliono comunicare tramite una pipe, devono prima configurarla. Se A vuole mandare dei file a B, scrive sulla pipe come se fosse un file di output. Infatti l'implementazione di una pipe e' molto simile a quella di un file. Il processo B puo' leggere i dati di una pipe come se fosse un file di input.
+
+Quindi in UNIX le comunicazioni tra processi sono molto simili alla normale scrittura e lettura di un file
+
+![[appunti sor/mod i croce/img/Pasted image 20231014093317.png|center|300]]
 
 
+
+[^2]: https://it.wikipedia.org/wiki/Pipe_(informatica)#FIFO_o_named_pipe
+[^1]: https://github.com/SwagSpaad/Swag-Appunti/blob/main/SOR1.5/Lezione%202.md#spazi-degli-indirizzi
 
