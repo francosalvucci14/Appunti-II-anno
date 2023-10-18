@@ -44,6 +44,27 @@ Il kernel è un blocco monolitico con:
 		- In Windows sono chiamate "DYnamic Link Libraries (DLL)"
 	- Contengono codice che può essere eseguito da più programmi contemporaneamente, riducendo la necessità di avere copie multiple del medesimo codice in memoria
 
+L'organizzazione stratificata dei sistemi operativi è una generalizzazione dell'approccio monolitico
+
+Il sistema THE fu uno dei primi a implementare questa idea, con sei livelli gerarchici:
+- Questi livelli gestivano l'allocazione del processore, la memoria, la comunicazione, l'I/O, i dispositivi, e gli utenti
+
+Il sistema MULTICS usava anelli concentrici per definire i privilegi, con livelli interni più privilegiati di quelli esterni
+
+Vantaggi :
+- Protezione delle risorse e dati critici
+- Separazione chiara dei compiti
+
+![[appunti sor/mod i croce/img/Pasted image 20231018122049.png|center|400]]
+
+- **Kernel Unificato** : Tutte le funzionalità centralizzate in un unico kernel
+- **Interconnesione** : Ogni componente ha la capacità di richiamare qualsiasi altro componente
+- **Scalabilità** : Questa struttura può diventare complessa e meno gestibile con l'evoluzione del sistema
+
+![[appunti sor/mod i croce/img/Pasted image 20231018122247.png|center|400]]
+
+
+
 
 
 
