@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
-                "mode": "preview",
+                "file": "Appunti SOR/MOD I Croce/Lezione 4.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md"
+                "file": "Appunti SOR/MOD I Croce/Lezione 4.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "16b7bd7a1760d354",
@@ -180,7 +180,12 @@
   },
   "active": "721a84e295672958",
   "lastOpenFiles": [
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231025115425.png",
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231025115043.png",
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231025114905.png",
+    "Appunti SOR/MOD I Croce/Lezione 3.md",
     "Appunti SOR/MOD I Croce/Lezione 4.md",
+    "README.md",
     "Appunti SOR/MOD I Croce/Code/Codici.md",
     "Appunti SOR/MOD I Croce/Code",
     "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
@@ -188,7 +193,6 @@
     "Appunti SOR/MOD I Croce/img/Pasted image 20231018122247.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231018122049.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231018120543.png",
-    "Appunti SOR/MOD I Croce/Lezione 3.md",
     "Appunti SOR/MOD I Croce/Lezione 2.md",
     "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
     "Appunti SOR/MOD I Croce/Lezione 1.md",
@@ -197,8 +201,6 @@
     "Appunti SOR/MOD I Croce/img/Pasted image 20231014093317.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231013121114.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231013120833.png",
-    "Appunti SOR/MOD I Croce/img/Pasted image 20231013120032.png",
-    "Appunti SOR/MOD I Croce/img/Pasted image 20231013115002.png",
     "Appunti BSD/Progetto DB/Fase uno.md",
     "Appunti CPS/Lezione 1.md",
     "Appunti CPS/Lezione 2.md",
@@ -216,11 +218,9 @@
     "Untitled.canvas",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
     "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
-    "README.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti FI/MOD II/Lezione 11.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
-    "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Secondo Anno",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
