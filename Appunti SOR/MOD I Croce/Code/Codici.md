@@ -17,8 +17,6 @@ Questo programma deve creare due processi P1 e P2, che eseguono le seguenti oper
 
 #define STDIN 0
 #define STDOUT 1
-#define PIPE_RD 0
-#define PIPE_WR 1
 
 int main(int argc,char** argv){
 
@@ -34,7 +32,7 @@ if (pipe(fd1) == -1 || pipe(fd2) == -1){
 p1 = fork();
 if(p1 == 0){
 	//sto nel figlio p1
-	close(fd1[0]); //chiudo stream di lettura
+	close(fd1[0]); //chiudo stream di lettura, va bene anche con close(fd1[STDOUT])
 	srand(getpid());
 	while(1){
 		int num = rand() % 101;
@@ -43,11 +41,11 @@ if(p1 == 0){
 			write(fd1[1],&num,sizeof(int));
 		}
 	}
-	close(fd1[1]);//chiudo pipe per scrittura
+	close(fd1[1]);//chiudo pipe per scrittura,close(fd1[STDIN])
 } else {
 	p2 = fork();
 	if (p2 == 0) { // Codice eseguito dal secondo figlio (p2)
-		close(fd2[0]); // Chiudi il lato di lettura
+		close(fd2[0]); // Chiudi il lato di lettura, stessa cosa di p1
 		srand(getpid());
 		while (1) {
 			int num = rand() % 101;
@@ -56,10 +54,10 @@ if(p1 == 0){
 				write(fd2[1], &num, sizeof(int)); // Invia il numero pari al padre
 			}
 		}
-		close(fd2[1]);
+		close(fd2[1]);//anche qui
 	}else{
-		close(fd1[1]);//chiudi stream scrittura del primo figlio
-		close(fd2[1]);//chiudi stream scrittura del secondo figlio
+		close(fd1[1]);//chiudi stream scrittura (STDIN) del primo figlio
+		close(fd2[1]);//chiudi stream scrittura (STDIN) del secondo figlio
 		int sum = 0;
 		while(1){
 			int num1,num2;
@@ -71,7 +69,7 @@ if(p1 == 0){
 				// Invia un segnale di terminazione ai figli
 				kill(p1, SIGTERM);
 				kill(p2, SIGTERM);
-				printf("Sono il padre, e ho ucciso i processi (figli) con PID : %d (p1),%d (p2)\n",p1,p2 );
+				printf("Sono il padre, e ho terminato i processi (figli) con PID : %d (p1),%d (p2)\n",p1,p2 );
 				break;
 			}
 		}
