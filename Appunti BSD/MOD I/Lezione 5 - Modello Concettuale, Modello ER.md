@@ -190,7 +190,7 @@ Un'associazione tra E1 e E2 si dice uno a molti (1:N) quando a ogni istanza di E
 
 
 #### Modello ER - Associazione N:N
-Un'associazione tra E1 e E2 si dice uno a molti (1:N) quando a ogni istanza di E1 corrispondono una o più istanze di E2 e a ogni istanza di E2 corrispondono una o più istanze di E1
+Un'associazione tra E1 e E2 si dice molti a molti (N:N) quando a ogni istanza di E1 corrispondono una o più istanze di E2 e a ogni istanza di E2 corrispondono una o più istanze di E1
 ![[appunti bsd/mod i/immagini/Pasted image 20221122153612.png|center|600]]
 
 **Esempio**
