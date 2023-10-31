@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 5.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 6.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 5.md"
+                "file": "Appunti SOR/MOD I Croce/Lezione 6.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 5.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 5.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,8 +180,9 @@
   },
   "active": "3e553890941974fa",
   "lastOpenFiles": [
-    "Appunti SOR/MOD I Croce/Lezione 4.1.md",
     "Appunti SOR/MOD I Croce/Lezione 5.md",
+    "Appunti SOR/MOD I Croce/Lezione 6.md",
+    "Appunti SOR/MOD I Croce/Lezione 4.1.md",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231024160726.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231023102143.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231022122904.png",
@@ -220,7 +221,6 @@
     "Appunti BSD/MOD II/Indice lezioni BSD MOD II.md",
     "Untitled.canvas",
     "Appunti BSD/MOD I/Lezione 8 - Algebra relazionale,query,visite.md",
-    "Appunti BSD/MOD II/Lezione 9 - Calcolo Relazionale.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Secondo Anno",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 2 - Soluzioni.pdf",
