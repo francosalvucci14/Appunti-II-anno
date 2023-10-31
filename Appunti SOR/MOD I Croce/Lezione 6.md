@@ -4,6 +4,7 @@ C è stato creato da Dennis Ritchie nel 1972 per sviluppare programmi UNIX. Alcu
 >[!note]- *Everything is a file*
 
 # UNIX: Everything is a file
+
 - Sockets
 - Devices
 - Hard drives
@@ -17,6 +18,7 @@ C è stato creato da Dennis Ritchie nel 1972 per sviluppare programmi UNIX. Alcu
 | Standard In      | stdin      | 0           | Input dalla tastiera |
 | Standard Out     | stdout     | 1           | Output dalla console |
 | Standard Error   | stderr     | 2           | Error output dalla console                     |
+
 Per impostazione predefinita ogni processo inizia con questi tre "file"..."aperti".
 ## Hello World (1)
 Cosa bisognerebbe fare per stampare "Hello World" sulla console ( output standard )?
