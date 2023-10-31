@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 6.md",
+                "file": "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 6.md"
+                "file": "Appunti SOR/MOD I Croce/Indice delle lezioni.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 6.md",
+                "file": "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 6.md",
+                "file": "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,8 +180,11 @@
   },
   "active": "3e553890941974fa",
   "lastOpenFiles": [
-    "Appunti SOR/MOD I Croce/Lezione 5.md",
     "Appunti SOR/MOD I Croce/Lezione 6.md",
+    "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
+    "Appunti SOR/MOD I Croce/Lezione 5.md",
+    "Appunti SOR/MOD I Croce/Lezione 4.md",
+    "Appunti SOR/MOD I Croce/Lezione 3.md",
     "Appunti SOR/MOD I Croce/Lezione 4.1.md",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231024160726.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231023102143.png",
@@ -193,18 +196,15 @@
     "Appunti SOR/MOD I Croce/img/Pasted image 20231022115218.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231020163253.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231020161723.png",
-    "Appunti SOR/MOD I Croce/Lezione 4.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
     "Appunti SOR/MOD I Croce/Code/Codici.md",
     "Appunti SOR/MOD I Croce/Lezione 1.md",
-    "Appunti SOR/MOD I Croce/Lezione 3.md",
     "README.md",
     "Appunti SOR/MOD I Croce/Code",
     "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
     "Appunti SOR/MOD I Croce/Lezione 2.md",
-    "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
     "Appunti BSD/Progetto DB/Fase uno.md",
     "Appunti CPS/Lezione 1.md",
     "Appunti CPS/Lezione 2.md",
