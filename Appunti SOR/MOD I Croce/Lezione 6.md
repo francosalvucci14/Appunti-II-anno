@@ -260,3 +260,4 @@ Un processo genera due processi figli P1 e P2. Il figlio P1 esegue un ciclo inde
 Il programma deve terminare quando la somma dei due numeri ricevuti supera il valore 190: il padre, allora, invia un segnale di terminazione a ciascuno dei figli.
 
 Fatto, vedi cartella `Code`
+
