@@ -68,5 +68,6 @@ Per gli utenti sono state pensate le seguenti operazioni:
 | Tratta   | Percorso standard contenente il punto di partenza e di arrivo che può essere prenotato dagli utenti | Corsa, Percorso     | Utenti e Veicoli                     |
 | Zona     | Area adibita al servizio degli autisti                                                              | Settore             | Officina e Veicoli                   |
 
+## Schema ER
 
-![[Diagramma_E-R.drawio.png]]
+![[Diagramma_E-R_Split.drawio.png]]
