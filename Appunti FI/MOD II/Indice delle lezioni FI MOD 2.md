@@ -5,7 +5,7 @@
 - [[Appunti FI/MOD II/Lezione 4|Lezione 4]]
 - [[Appunti FI/MOD II/Lezione 5|Lezione 5]]
 - [[Appunti FI/MOD II/Lezione 6|Lezione 6]]
-- [[Lezione 7]]
+- [[Appunti FI/MOD II/Lezione 7]]
 - [[Appunti FI/MOD II/Lezione 8|Lezione 8]]
 - [[Lezione 9]]
 - [[Appunti FI/MOD II/Lezione 10|Lezione 10]]

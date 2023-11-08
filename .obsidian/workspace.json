@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase due.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 7.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase due.md"
+                "file": "Appunti SOR/MOD I Croce/Lezione 7.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase due.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase due.md",
+                "file": "Appunti SOR/MOD I Croce/Lezione 7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "f78fead014af1ce4",
@@ -180,12 +180,18 @@
   },
   "active": "3e553890941974fa",
   "lastOpenFiles": [
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231108163334.png",
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231108163310.png",
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231108163227.png",
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231108162924.png",
+    "Appunti SOR/MOD I Croce/img/Pasted image 20231108162832.png",
+    "Appunti SOR/MOD I Croce/Lezione 6.md",
+    "Appunti SOR/MOD I Croce/Lezione 7.md",
+    "Appunti BSD/Progetto DB/Fase due.md",
     "Appunti BSD/Progetto DB/Diagramma_E-R_Split.drawio.png",
     "Appunti BSD/Progetto DB/Diagramma_E-R.drawio.png",
-    "Appunti BSD/Progetto DB/Fase due.md",
     "Appunti BSD/Progetto DB/Fase uno.md",
     "Appunti BSD/Progetto DB/Diagramma_E-R(2).drawio.pdf",
-    "Appunti SOR/MOD I Croce/Lezione 6.md",
     "Appunti SOR/MOD I Croce/Code/Codici.md",
     "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
     "Appunti SOR/MOD I Croce/Lezione 5.md",
@@ -196,11 +202,6 @@
     "Appunti SOR/MOD I Croce/img/Pasted image 20231023102143.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231022122904.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231022120326.png",
-    "Appunti SOR/MOD I Croce/img/Pasted image 20231022120150.png",
-    "Appunti SOR/MOD I Croce/img/Pasted image 20231022115411.png",
-    "Appunti SOR/MOD I Croce/img/Pasted image 20231022115305.png",
-    "Appunti SOR/MOD I Croce/img/Pasted image 20231022115218.png",
-    "Appunti SOR/MOD I Croce/img/Pasted image 20231020163253.png",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti BSD/MOD II/Lezione 10 - Normalizzazione.md",
@@ -220,7 +221,6 @@
     "Appunti SOR/MOD I Croce",
     "Appunti SOR/MOD I/Lezione 2 - Tipologie di sistemi.md",
     "Appunti SOR/MOD I/Lezione 3 - Operazioni del sistema operativo.md",
-    "Appunti SOR/MOD I/Lezione 4 - Operazioni dei processi.md",
     "Untitled.canvas",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Secondo Anno",
