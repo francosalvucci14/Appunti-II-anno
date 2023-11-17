@@ -153,7 +153,7 @@ Entrambe le istruzioni sono essenziali per garantire la sicurezza nelle operazio
 
 Le soluzioni finora adottate consentono a un processo di tenere occupata la CPU in attesa di poter entrare nella sua regione critica ( *spin lock* )$$\texttt{SPRECO DI RISORSE :(}$$
 *Soluzione*: Lasciare che un processo in attesa di entrare nella sua regione critica restituisca volontariamente la CPU allo scheduler.
-```
+```c
 void sleep(){
 	set own state to BLOCKED;
 	give CPU to scheduler;
