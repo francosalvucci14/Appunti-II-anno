@@ -7,6 +7,7 @@
 - [[Appunti SOR/MOD I Croce/Lezione 5|Lezione 5 - Processi]]
 - [[Appunti SOR/MOD I Croce/Lezione 6|Lezione 6 - Il linguaggio C]]
 - [[Appunti SOR/MOD I Croce/Lezione 7|Lezione 7 - Programmazione concorrente]]
-- [[Appunti SOR/MOD I Croce/Lezione 8|Lezione 8 - Scheduling]]
-- [[Appunti SOR/MOD I Croce/Lezione 9|Lezione 9 - Memorie]]
+- [[Appunti SOR/MOD I Croce/Lezione 8|Lezione 8 - Scheduling dei processi e thread]]
+- [[Appunti SOR/MOD I Croce/Lezione 9|Lezione 9 - Gestione delle memoria]]
+- [[Appunti SOR/MOD I Croce/Lezione 10|Lezione 10 - Virtual memory]]
 - 
