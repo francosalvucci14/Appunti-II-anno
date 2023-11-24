@@ -89,4 +89,6 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
 ## Schema E-R Fisico
 
+Le entità padre si distinguono dalle entità figlio perchè sono rappresentate con il doppio cerchio
+
 ![[Schema-Fisico.jpg|center]]
