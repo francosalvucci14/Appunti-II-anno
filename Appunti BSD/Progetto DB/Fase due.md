@@ -2,7 +2,8 @@
 # Indice degli argomenti
 
 - Nome progetto
-- 
+- Fase concettuale
+- Schemi
 
 # Nome progetto: VRoomA
 
@@ -36,7 +37,7 @@ Gli **addetti al marketing** possono inserire, previa autorizzazione da parte de
 Gli **autisti** potranno scegliere se accettare o rifiutare la corsa, specificando in questo caso la motivazione del rifiuto.
 Inoltre potranno lasciare un **feedback** all'utente riguardo il comportamento prima e durante la corsa.
 Ogni **autista** ha la propria macchina privata, e può contattare i manutentori aziendali in caso di guasto del veicolo.
-Ad ogni **autista** è assegnato un turno di lavoro di massimo 8 ore giornaliere.
+Ad ogni **autista** sono assegnati uno o più **turni** di lavoro, con il vincolo che il singolo autista non può essere assegnato a due turni lavorativi che hanno orario inizio e orario fine uguali.
 
 I **manutentori** possono ricevere richieste di assistenza da parte degli autisti e contattare le officine convenzionate per effettuare il lavoro di assistenza.
 Le **officine** non fanno parte della società.
@@ -62,7 +63,9 @@ Ogni **utente** deve aggiungere una **carta** con cui effettuare il pagamento re
 Ogni **utente** può aggiungere alla lista dei preferiti ua qualunque delle tratte effettuate da lui, scegliendo se aggiungere solo la tratta o anche l'autista.
 Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
-### Glossario dei termini
+### Glossario delle entità
+
+Da levare sinonimi e aggiungere attributi
 
 | Entità | Descrizione | Sinonimi | Collegamenti |
 | ---------------------- | ----------------------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------- |
@@ -83,6 +86,13 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | Addetti Marketing | Personale addetto al reparto marketing della società | Advertiser | Offerte, Personale |
 | Lista Preferiti | Lista delle tratte impostate dall'utente come preferite | Preferenze | Utenti, Tratte completate |
 
+### Glossario dei termini
+
+Entità, Descrizione, Sinonimo
+
+### Glossario delle relazioni
+
+Nome relazione, descrizione, entità (con molteplicità)
 ## Schemi
 ### Diagramma Entity-Relationship
 
