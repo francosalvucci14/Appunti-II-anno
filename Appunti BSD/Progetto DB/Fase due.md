@@ -1,3 +1,9 @@
+
+# Indice degli argomenti
+
+- Nome progetto
+- 
+
 # Nome progetto: VRoomA
 
 ## Componenti del gruppo  
@@ -15,7 +21,10 @@ Il database che stiamo realizzando è incentrato all'implementazione di un softw
 L'obiettivo principale di questo sistema è permettere agli utenti di organizzare gli spostamenti tramite taxi a seconda delle proprie esigenze, del tipo di veicolo scelto e del costo della tratta scelta.
 
 Da un punto di vista societario, gli obiettivi sono quelli di valutare la qualità del lavoro degli autisti tramite i feedback forniti dai clienti e migliorare dove possibile il servizio.
-## Analisi dei requisiti
+
+## Fase Concettuale
+
+### Analisi dei requisiti
 
 I **ruoli aziendali** sono i seguenti:
 - Addetti Marketing
@@ -53,7 +62,7 @@ Ogni **utente** deve aggiungere una **carta** con cui effettuare il pagamento re
 Ogni **utente** può aggiungere alla lista dei preferiti ua qualunque delle tratte effettuate da lui, scegliendo se aggiungere solo la tratta o anche l'autista.
 Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
-## Glossario
+### Glossario dei termini
 
 | Entità | Descrizione | Sinonimi | Collegamenti |
 | ---------------------- | ----------------------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------- |
@@ -74,11 +83,15 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | Addetti Marketing | Personale addetto al reparto marketing della società | Advertiser | Offerte, Personale |
 | Lista Preferiti | Lista delle tratte impostate dall'utente come preferite | Preferenze | Utenti, Tratte completate |
 
-# Schema E-R
-## Schema E-R Fisico
+## Schemi
+### Diagramma Entity-Relationship
 
 Le entità padre si distinguono dalle entità figlio perchè sono rappresentate con il doppio cerchio.
 
 Lo schema risulta già normalizzato in 3NF, e di conseguenza già in 2NF e 1NF.
 
 ![[Schema-Fisico-Restyle.jpg|center]]
+
+### Derivazione logica
+
+Mettere schema ER logico derivato dallo schema Fisico normalizzato
