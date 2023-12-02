@@ -260,7 +260,7 @@ Bit della Page Table Entry utili per gli algoritmi di sostituzione delle pagine:
 - **Referenced (R)**: Impostato quando la pagina viene acceduta ( conosciuto anche come "accessed" bit).
 ### Concetto e funzionamento di NRU 
 
->[!definition]- *Obiettivo* 
+>[!definition]- Obiettivo
 >Trovare le pagine non modificate che non sono state accedute "recentemente".
 
 Vengono usati i *Bit di Stato R e M*:
@@ -288,7 +288,7 @@ Le pagine di *classe 1* sembrano a prima vista *impossibili*, *ma* appaiono quan
 **Vantaggi di NRU**: Semplicità, efficienza implementativa e prestazioni accettabili.
 ### Algoritmo FIFO (First-In, First-Out)
 
->[!definition]- *Descrizione*
+>[!definition]- Descrizione
 >FIFO è un algoritmo di paginazione che elimina la pagina più vecchia in memoria.
 
 - *Implementazione*: Il SO rimuove la pagina in testa alla lista ( la più vecchia ) durante un page fault, aggiungendo la nuova pagina in coda.
@@ -296,7 +296,7 @@ Le pagine di *classe 1* sembrano a prima vista *impossibili*, *ma* appaiono quan
 - *Conclusione*: A causa di queste limitazioni, FIFO è raramente utilizzato nella sua forma più semplice.
 ### Seconda Chance : Miglioramento di FIFO
 
->[!definition]- *Principio* 
+>[!definition]- Principio 
 >Controllo del bit R (di lettura) della pagina più vecchia per decidere la rimozione.
 
 *Funzionamento*:
@@ -311,21 +311,31 @@ I numeri sopra le pagine sono i loro tempi di caricamento.
 ![[Screenshot from 2023-12-02 11-33-28.png|center|500]]
 
 #### Operatività e caso peggiore del miglioramento
+
 *Azioni*:
 - Se A ha R=0, viene rimossa ( scritta su memoria non volatile se modificata, altrimenti scartata ).
 - Se A ha R=1, viene messa in fondo alla lista e il suo timestamp di caricamento aggiornato.
+
 **Scenari possibili**:
 - Se trova una pagina non referenziata, la rimuove.
 - Se tutte le pagine sono state referenziate, il miglioramento opera come un FIFO puro, con un ciclo completo di reset dei bit R prima di rimuovere la pagina iniziale.
 ### Algoritmo di clock per la sostituzione delle pagine
-*Funzionamento*: Lista circolare dei frame di pagina con un puntatore simile a una lancetta di orologio per identificare la pagina più vecchia.
+
+>[!definition]- Funzionamento
+>Lista circolare dei frame di pagina con un puntatore simile a una lancetta di orologio per identificare la pagina più vecchia.
+
 *Page fault*:
 - Se il bit R della pagina puntata è 0, la pagina viene rimossa e sostituita con la nuova, poi il puntatore avanza.
 - Se R=1, il bit viene azzerato e il puntatore si sposta alla pagina successiva.
+
 *Concetto*: Ripete il processo finché non trova una pagina con R=0.
+
 *Vantaggio*: Elimina l'inefficienza della continua riallocazione delle pagine lungo la lista.
-> Efficiente e più performante rispetto a Seconda Chance e FIFO.
-![[Pasted image 20231124104402.png|center|400]]
+
+>Più efficiente e più performante rispetto a Second Chance e FIFO.
+
+![[Pasted image 20231202115258.png|center|300]]
+
 ### Least Recently Used ( LRU ) - Tra teoria e "pratica"
 **Teoria**:
 - *Fondamento LRU*: Pagine non usate di recente sono candidate alla sostituzione
