@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8a30c30e9329e745",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 10.md"
+                "file": "Appunti SOR/MOD I Croce/Code/Codici.md"
               }
             }
           },
@@ -122,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 10.md",
+                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Lezione 10.md",
+                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,8 +191,9 @@
       "obsidian-matrix:Obsidian Matrix": false
     }
   },
-  "active": "3e553890941974fa",
+  "active": "8a30c30e9329e745",
   "lastOpenFiles": [
+    "Appunti SOR/MOD I Croce/Lezione 10.md",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202115258.png",
     "Appunti SOR/MOD I Croce/img/Screenshot from 2023-12-02 11-33-28.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202112820.png",
@@ -190,9 +204,7 @@
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202110029.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202105959.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202105406.png",
-    "Appunti SOR/MOD I Croce/img/Pasted image 20231202104839.png",
     "Appunti SOR/MOD I Croce/Lezione 9.md",
-    "Appunti SOR/MOD I Croce/Lezione 10.md",
     "Appunti BSD/Progetto DB/Fase due.md",
     "Appunti BSD/Progetto DB/Schema-Fisico-Restyle.drawio",
     "Appunti BSD/Progetto DB/Schema-Fisico.drawio",
