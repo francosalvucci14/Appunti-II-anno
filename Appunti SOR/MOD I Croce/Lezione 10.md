@@ -260,40 +260,56 @@ Bit della Page Table Entry utili per gli algoritmi di sostituzione delle pagine:
 - **Referenced (R)**: Impostato quando la pagina viene acceduta ( conosciuto anche come "accessed" bit).
 ### Concetto e funzionamento di NRU 
 
-*Obiettivo*: Trovare le pagine non modificate che non sono state accedute "recentemente".
+>[!definition]- *Obiettivo* 
+>Trovare le pagine non modificate che non sono state accedute "recentemente".
+
 Vengono usati i *Bit di Stato R e M*:
 - R indica l'accesso della pagina,
 - M segnala le modifiche.
+
 *Aggiornamento Hardware*: I bit vengono impostati dall'hardware a ogni accesso.
 *Reset periodico*: Il bit R viene periodicamente ripulito per identificare pagine non recentemente usate ( per esempio a ogni interrupt del clock ).
 *Classificazione delle pagine* in base ai bit R e M ( Le pagine sono divise in 4 pagine da 0 a 3 in funzione dell'uso e delle modifiche ).
 #### Classificazione delle pagine e scelta di rimozione
+
 **Classi di pagine**:
 - *Classe 0*: Non referenziata, non modificata.
 - *Classe 1*: Non referenziata, modificata.
 - *Classe 2*: Referenziata, non modificata.
 - *Classe 3*: Referenziata, modificata.
+
 Le pagine di *classe 1* sembrano a prima vista *impossibili*, *ma* appaiono quando *un interrupt del clock azzera il bit R* di una pagina di classe 3.
 - Gli interrupt del clock non azzerano il bit M perché questa informazione è necessaria per sapere se la pagina deve essere riscritta su disco o meno.
->**Selezione per Rimozione**:
+
+**Selezione per Rimozione**:
 - NRU rimuove una pagina casuale dalla classe più bassa non vuota.
-- Azzerare R ma non M produce una pagina di classe 1: Una pagina di classe 1 è stata modificata molto tempo fa e da allora non è stata più toccata.
+- Azzerare R ma non M produce una pagina di classe 1: una pagina di classe 1 è stata modificata molto tempo fa e da allora non è stata più toccata.
+
 **Vantaggi di NRU**: Semplicità, efficienza implementativa e prestazioni accettabili.
 ### Algoritmo FIFO (First-In, First-Out)
-*Descrizione*: FIFO è un algoritmo di paginazione che elimina la pagina più vecchia in memoria.
-*Implementazione*: Il SO rimuove la pagina in testa alla lista ( la più vecchia ) durante un page fault, aggiungendo la nuova pagina in coda.
-*Problema di FIFO*: Nel contesto informatico, la pagina più vecchia potrebbe ancora essere frequentemente utilizzata, rendendo FIFO poco efficace.
-*Conclusione*: A causa di queste limitazioni, FIFO è raramente utilizzato nella sua forma più semplice.
+
+>[!definition]- *Descrizione*
+>FIFO è un algoritmo di paginazione che elimina la pagina più vecchia in memoria.
+
+- *Implementazione*: Il SO rimuove la pagina in testa alla lista ( la più vecchia ) durante un page fault, aggiungendo la nuova pagina in coda.
+- *Problema di FIFO*: Nel contesto informatico, la pagina più vecchia potrebbe ancora essere frequentemente utilizzata, rendendo FIFO poco efficace.
+- *Conclusione*: A causa di queste limitazioni, FIFO è raramente utilizzato nella sua forma più semplice.
 ### Seconda Chance : Miglioramento di FIFO
-*Principio*: Controllo del bit R (di lettura) della pagina più vecchia per decidere la rimozione.
+
+>[!definition]- *Principio* 
+>Controllo del bit R (di lettura) della pagina più vecchia per decidere la rimozione.
+
 *Funzionamento*:
 - Se R=0 la pagina è vecchia e non usata di recente, quindi viene sostituita.
 - Se R=1 il bit viene azzerato, la pagina è reinserita in fondo alla lista e considerata come appena caricata.
-![[Pasted image 20231124101847.png|center|500]]
-![[Pasted image 20231124101908.png|center|500]]
+
 a) Pagine ordinate in ordine FIFO
 b) Elenco delle pagine se si verifica un errore di pagina al tempo 20 e A ha il bit R impostato.
+
 I numeri sopra le pagine sono i loro tempi di caricamento.
+
+![[Screenshot from 2023-12-02 11-33-28.png|center|500]]
+
 #### Operatività e caso peggiore del miglioramento
 *Azioni*:
 - Se A ha R=0, viene rimossa ( scritta su memoria non volatile se modificata, altrimenti scartata ).
