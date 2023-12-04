@@ -193,3 +193,17 @@ Attualmente il codice non fa alcuna verifica sui permessi del file.
 La modifica che sarà da applicare è quella di verificare i permessi del file in input PRIMA dell'operazione open, in modo tale da avere la condizione:
 - se permessi_input_file = r (lettura) allora prosegui
 - altrimenti esci e dai errore
+
+Ecco il codice che controlla i permessi del file
+
+```c
+int check_permission(const char *filename) {
+	struct stat file;
+
+	if (stat(filename, &file) < 0) return -1;
+
+	int check = file.st_mode & S_IRUSR;
+
+	return check;
+}
+```
