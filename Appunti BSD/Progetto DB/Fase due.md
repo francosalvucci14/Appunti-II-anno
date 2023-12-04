@@ -68,8 +68,6 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
 ### Glossario delle entità
 
-Da levare sinonimi e aggiungere attributi
-
 Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono identificate tramite la _sottolineatura_
 
 | Entità | Descrizione | Attributi | Relazioni Coinvolte |
