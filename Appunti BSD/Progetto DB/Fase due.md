@@ -68,7 +68,6 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
 ### Glossario delle entità
 
-Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono identificate tramite la _sottolineatura_
 
 | Entità | Descrizione | Attributi | Relazioni Coinvolte |
 | ---------------------- | ----------------------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------- |
@@ -130,6 +129,11 @@ Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondar
 
 ## Schemi
 
+### Schemi di relazione
+
+Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono identificate tramite la _sottolineatura_
+
+Forse da aggiungere
 ### Schema Logico Normalizzato
 
 Mettere schema ER logico derivato dallo schema Fisico normalizzato
