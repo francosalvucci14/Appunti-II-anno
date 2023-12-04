@@ -88,7 +88,6 @@ Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondar
 | Assicurazione | Dati dell'assicurazione associata al singolo veicolo | **ID**, Data di scandenza, Tipo | Veicoli |
 | Addetti Marketing | Personale addetto al reparto marketing della società | **ID** | Offerte, Personale |
 
-
 ### Glossario dei termini
 
 | Entità | Descrizione | Sinonimi | 
@@ -112,7 +111,6 @@ Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondar
 
 ### Glossario delle relazioni
 
-
 | Relazione                    | Descrizione                                                                                                                                     | Entità                                      |
 | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | VeicoloPossiedeAssicurazione | Relazione che dice che ogni veicolo ha una propria assicurazione                                                                                | Veicoli (1,1), Assicurazione (1,1)          |
@@ -128,7 +126,7 @@ Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondar
 | UtenteLasciaFeedback         | Relazione che dice che ogni utente può lasciare uno o più feedback relativi alle corse da lui effettuate                                        | Utenti (1,N), Feedback (1,1)                |
 | CartaPagaTratta              | Relazione che dice che ogni utente, tramite la propria carta, deve pagare le tratte da lui effettuate                                           | Carta (1,N), Tratte Completate (1,1)        |
 | ListaPreferiti               | Relazione che dice che ogni utente può impostare la propria lista dei preferiti per quanto riguarda le tratte completate e gli autisti          | Utenti (1,N), Tratte Completate (1,N)       |
-| TrattaHaFeedback             | Relazione che dice che ogni tratta completata può avere (non necessariamente) un solo feedback, che viene lasciato dagli utenti e dagli autisti | Tratte Completate (0,1), Feedback (1,1)     |
+| TrattaAvereFeedback             | Relazione che dice che ogni tratta completata può avere (non necessariamente) un solo feedback, che viene lasciato dagli utenti e dagli autisti | Tratte Completate (0,1), Feedback (1,1)     |
 
 ## Schemi
 
