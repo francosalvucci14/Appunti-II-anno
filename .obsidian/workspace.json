@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
+                "file": "Appunti BSD/Progetto DB/Fase due.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md"
+                "file": "Appunti BSD/Progetto DB/Fase due.md"
               }
             }
           },
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
+                "file": "Appunti BSD/Progetto DB/Fase due.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
+                "file": "Appunti BSD/Progetto DB/Fase due.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,9 +190,11 @@
       "obsidian-matrix:Obsidian Matrix": false
     }
   },
-  "active": "3e553890941974fa",
+  "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
+    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "Appunti BSD/Progetto DB/Fase due.md",
+    "Appunti SOR/MOD I Croce/Code/Codici.md",
     "Appunti SOR/MOD I Croce/Lezione 10.md",
     "Appunti BSD/Progetto DB/Fase uno.md",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202153617.png",
@@ -200,7 +202,6 @@
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202153410.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202153008.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202151925.png",
-    "Appunti SOR/MOD I Croce/Code/Codici.md",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202115258.png",
     "Appunti SOR/MOD I Croce/img/Screenshot from 2023-12-02 11-33-28.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202112820.png",
@@ -224,7 +225,6 @@
     "Appunti SOR/MOD I Croce/Lezione 4.md",
     "Appunti SOR/MOD I Croce/Lezione 3.md",
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
-    "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
     "README.md",
     "Appunti SOR/MOD I Croce/Code",
     "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
