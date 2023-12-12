@@ -2,7 +2,10 @@
 # Indice degli argomenti
 
 - Nome progetto
-- Fase concettuale
+- Componenti
+- Motivazioni
+- Obiettivi
+- Raccolta dei dati
 - Schemi
 
 # Intro al progetto
@@ -106,7 +109,6 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | Carta | Carta di credito personale dell'utente | Metodo di pagamento |  |
 | Assicurazione | Dati dell'assicurazione associata al singolo veicolo | RCA, Polizza assicurativa |  |
 | Addetti Marketing | Personale addetto al reparto marketing della società | Advertiser |  |
-| Lista Preferiti | Lista delle tratte impostate dall'utente come preferite | Preferenze |  |
 
 ### Glossario delle relazioni
 
@@ -124,7 +126,6 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | EffettuaPrenotazione         | Relazione che dice che ogni utente effettua una o più prenotazioni                                                                              | Utenti (1,N), Richiesta Prenotazioni (1,1)  |
 | UtenteLasciaFeedback         | Relazione che dice che ogni utente può lasciare uno o più feedback relativi alle corse da lui effettuate                                        | Utenti (1,N), Feedback (1,1)                |
 | CartaPagaTratta              | Relazione che dice che ogni utente, tramite la propria carta, deve pagare le tratte da lui effettuate                                           | Carta (1,N), Tratte Completate (1,1)        |
-| ListaPreferiti               | Relazione che dice che ogni utente può impostare la propria lista dei preferiti per quanto riguarda le tratte completate e gli autisti          | Utenti (1,N), Tratte Completate (1,N)       |
 | TrattaAvereFeedback          | Relazione che dice che ogni tratta completata può avere (non necessariamente) un solo feedback, che viene lasciato dagli utenti e dagli autisti | Tratte Completate (0,1), Feedback (1,1)     |
 |  AutistaAvereTurni | Ogni autista ha un proprio turno lavorativo, ad ogni turno lavorativo vengono assegnati uno o più autisti | Autisti (1,1), Turni (1,N) |                                                                                                                                                                              |                                             |
 
@@ -135,15 +136,19 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono identificate tramite la _sottolineatura_
 
 Forse da aggiungere
-### Schema Logico Normalizzato
+### Schema Logico
 
-Mettere schema ER logico derivato dallo schema Fisico normalizzato
+![[Schema-Logico.jpg|center]]
 
+#### Normalizzazione
+
+Di seguito si discutono le forme normali dello schema logico:
+- **1NF**: tutti gli schemi di relazione nello schema logico sopra riportato sono in **1NF**, poiché tutti gli attributi sono semplici, ovvero contengono soltanto valori atomici indivisibili.
+- **2NF**: tutti gli schemi di relazione dello schema logico sono anche già in **2NF**, poiché sono già in **1NF** e nessun attributo presenta alcuna dipendenza parziale. Tutti gli attributi dipendono funzionalmente solo dalla chiave primaria della stessa tabella.
+- **3NF**: tutti gli schemi di relazione sono anche in **3NF** perché già in **2NF**, ed inoltre, tutti gli attributi delle tabelle dipendono funzionalmente e direttamente dalla chiave primaria, senza transitività.
 ### Diagramma Entity-Relationship (Schema Fisico)
 
-Le entità padre si distinguono dalle entità figlio perchè sono rappresentate con il doppio cerchio.
+Le entità padre si distinguono dalle entità figlio perchè sono rappresentate con il doppio rettangolo.
 
-Lo schema risulta già normalizzato in 3NF, e di conseguenza già in 2NF e 1NF.
 
-![[Schema-Fisico-Restyle.jpg|center]]
 
