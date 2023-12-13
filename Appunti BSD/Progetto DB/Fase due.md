@@ -150,5 +150,26 @@ Di seguito si discutono le forme normali dello schema logico:
 
 Le entità padre si distinguono dalle entità figlio perchè sono rappresentate con il doppio rettangolo.
 
+#### Generalizzazione
+
+Una generalizzazione rappresenta un legame logico tra un’entità genitore e una o più entità figlie, in questo caso le entità genitore sono “Personale” e "Richiesta Prenotazione", ognuna con le rispettive entità figlie, che sono:
+1) **Personale**
+	1) Autisti
+	2) Addetti Marketing
+	3) Manutentori
+2) **Richiesta prenotazione**
+	1) Tratte completate
+	2) Tratte rifiutate
+
+
+Abbiamo tre metodi per rappresentare una generalizzazione a livello fisico:
+- Accorpamento del padre nelle entità figlie
+- Accorpamento delle entità figlie nel padre
+- Sostituzione della generalizzazione con relazioni
+
+Tra questi metodi abbiamo scelto il terzo in quanto da noi considerato il più adeguato. Infatti, il primo metodo avrebbe portato ad una ridondanza di relazioni. 
+
+Il secondo metodo necessita dell’aggiunta di un attributo nelle entità "Personale" e "Richiesta Prenotazioni", con il compito di specificare il ruolo del lavoratore (Es. Autisti = 1, Manutentori = 2, etc..), e il tipo di prenotazione (Es. Completata = 1 e Rifiutata = 2), in più si sarebbe dovuto scegliere se perdere informazioni (attributi) dei figli o inserire le informazioni nel padre, quindi aggiungere attributi dei figli al padre. La seconda scelta avrebbe portato ad una quantità non indifferente di valori NULL. 
+
 
 
