@@ -116,7 +116,7 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | AutistaLasciaFeedback        | Relazione che dice che ogni autista può lasciare uno o più feedback relativio a tutti gli aspetti della corsa effettuata                        | Autisti (1,N), Feedback (1,1)               |
 | AssegantoA                   | Relazione che dice che ogni autista viene assegnato ad una richiesta di prenotazione, in base a determinate circostanze                         | Autisti (1,1), Richiesta Prenotazione (1,1) |
 | AggiungeOfferta              | Relazione che dice che un addetto marketing può aggiungere una o più offerte per gli utenti                                                     | Addetti Marketing (1,N), Offerte (1,1)      |
-| UtenteHaOfferta              | Relazione che dice che ogni utente può avere (non necessariamente) una o più offerte attive                                                     | Utenti (1,N), Offerte (0,1)                 |
+| UtenteHaOfferta              | Relazione che dice che ogni utente può avere (non necessariamente) una o più offerte attive                                                     | Utenti (1,1), Offerte (1,N)                 |
 | UtentePossiedeCarta          | Relazione che dice che ogni utente deve possedere almeno una carta con cui effettuare i pagamenti                                               | Utenti (1,N), Carta (1,1)                   |
 | EffettuaPrenotazione         | Relazione che dice che ogni utente effettua una o più prenotazioni                                                                              | Utenti (1,N), Richiesta Prenotazioni (1,1)  |
 | UtenteLasciaFeedback         | Relazione che dice che ogni utente può lasciare uno o più feedback relativi alle corse da lui effettuate                                        | Utenti (1,N), Feedback (1,1)                |
@@ -130,7 +130,22 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
 Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono identificate tramite la _sottolineatura_
 
-Forse da aggiungere
+- Personale (**ID_Personale**, Nome, Cognome, NumeroTelefono, Email)
+- Autisti (**ID_Autista**, Stipendio, _NumeroPatente_, _Targa_, _ID_Turno)
+- Manutentori (**ID_Manutentore**, Qualifica)
+- Addetti Marketing (**ID_Addetto**, Ruolo)
+- ContattaPerGuasto (_ID_Manutentore_, _ID_Autista_)
+- Patente (**NumeroPatente**, DDS, Categoria)
+- Turni (**ID_Turno**, OrarioInizio, OrarioFine)
+- Veicoli (**Targa**, Marca, Modello, PostiDisponibili, _ID_Assicurazione_)
+- Assicurazione (**ID_Assicurazione**, DataDiScadenza, Tipo)
+- Offerte (**ID_Offerta**, PromoCode, InfoOfferta, _ID_Addetto_)
+- Utenti (**ID_Utente**, Nome, Cognome, Email, Abbonamento, PSW, _ID_Offerta_)
+- Carta (**NumeroCarta**, DataScadenza, CVV, _ID_Utente_)
+- Richiesta Prenotazione (**ID_Richiesta**, OrarioRichiesta, NumeroPasseggeri, PuntoRaccolta, PuntoRilascio, _ID_Utente_, _ID_Autista_)
+- Tratte Complete (**ID_Tratta**, Costo, _NumeroCarta_)
+- Tratte Rifiutate (**ID_Tratta**, Motivazione)
+- Feedback (**ID_Feedback**, Stelle, Commento, Data, _ID_Tratta_)
 ### Schema Logico
 
 ![[Schema-Logico.jpg|center]]
@@ -138,15 +153,22 @@ Forse da aggiungere
 #### Normalizzazione
 
 Di seguito si discutono le forme normali dello schema logico:
+
 - **1NF**: tutti gli schemi di relazione nello schema logico sopra riportato sono in **1NF**, poiché tutti gli attributi sono semplici, ovvero contengono soltanto valori atomici indivisibili.
 - **2NF**: tutti gli schemi di relazione dello schema logico sono anche già in **2NF**, poiché sono già in **1NF** e nessun attributo presenta alcuna dipendenza parziale. Tutti gli attributi dipendono funzionalmente solo dalla chiave primaria della stessa tabella.
 - **3NF**: tutti gli schemi di relazione sono anche in **3NF** perché già in **2NF**, ed inoltre, tutti gli attributi delle tabelle dipendono funzionalmente e direttamente dalla chiave primaria, senza transitività.
 ### Schema Fisico
 
-Mettere schema fisico
+Abbiamo distinto le frecce che vanno dalle entità figlie a quelle padre mettendole in blu. 
+
+Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, mentre quelle primarie sono identificate con il pallino nero.
+
+![[Schema-Fisico.jpg|center]]
+
 #### Generalizzazione
 
 Una generalizzazione rappresenta un legame logico tra un’entità genitore e una o più entità figlie, in questo caso le entità genitore sono “Personale” e "Richiesta Prenotazione", ognuna con le rispettive entità figlie, che sono:
+
 1) **Personale**
 	1) Autisti
 	2) Addetti Marketing
@@ -157,6 +179,7 @@ Una generalizzazione rappresenta un legame logico tra un’entità genitore e un
 
 
 Abbiamo tre metodi per rappresentare una generalizzazione a livello fisico:
+
 - Accorpamento del padre nelle entità figlie
 - Accorpamento delle entità figlie nel padre
 - Sostituzione della generalizzazione con relazioni
@@ -164,6 +187,3 @@ Abbiamo tre metodi per rappresentare una generalizzazione a livello fisico:
 Tra questi metodi abbiamo scelto il terzo in quanto da noi considerato il più adeguato. Infatti, il primo metodo avrebbe portato ad una ridondanza di relazioni. 
 
 Il secondo metodo necessita dell’aggiunta di un attributo nelle entità "Personale" e "Richiesta Prenotazioni", con il compito di specificare il ruolo del lavoratore (Es. Autisti = 1, Manutentori = 2, etc..), e il tipo di prenotazione (Es. Completata = 1 e Rifiutata = 2), in più si sarebbe dovuto scegliere se perdere informazioni (attributi) dei figli o inserire le informazioni nel padre, quindi aggiungere attributi dei figli al padre. La seconda scelta avrebbe portato ad una quantità non indifferente di valori NULL. 
-
-
-
