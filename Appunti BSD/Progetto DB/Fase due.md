@@ -126,6 +126,10 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
 ## Schemi
 
+### Schema Scheletro
+
+Aggiungere schema scheletro
+
 ### Schemi di relazione
 
 Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono scritte in stile _Italic_
