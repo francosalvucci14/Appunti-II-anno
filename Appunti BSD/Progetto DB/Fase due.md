@@ -1,18 +1,13 @@
 
 # Indice degli argomenti
 
-- Nome progetto
 - Componenti
 - Motivazioni
 - Obiettivi
 - Raccolta dei dati
 - Schemi
 
-# Intro al progetto
-
-## Nome progetto
-
-La nostra socità si chiama **VRoomA**
+# Progetto VRoomA
 ## Componenti del gruppo  
 
 | Nome | Cognome | Matricola | Mail |
