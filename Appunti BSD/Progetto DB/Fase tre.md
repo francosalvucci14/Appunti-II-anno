@@ -292,7 +292,9 @@ CREATE TABLE Feedback (
 	Stelle int not null,
 	Commento varchar(255) not null,
 	Data date not null,
-	PRIMARY KEY (ID_Feedback)
+	ID_TrattaCompletata int not null,
+	PRIMARY KEY (ID_Feedback),
+	FOREIGN KEY (ID_TrattaCompletata) REFERENCES TratteCompletate (ID_TrattaC)
 );
 
 CREATE TABLE Carta (
