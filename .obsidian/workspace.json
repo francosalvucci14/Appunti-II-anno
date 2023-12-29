@@ -13,6 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Appunti SOR/MOD I Croce/Esami/Simulazione Esame 21-12-2023.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "afc1499ef47d25c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
                 "mode": "source",
                 "source": false
@@ -26,18 +38,6 @@
               "type": "markdown",
               "state": {
                 "file": "Appunti BSD/Progetto DB/Fase due.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8a30c30e9329e745",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
                 "mode": "source",
                 "source": false
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md"
+                "file": "Appunti SOR/MOD I Croce/Esami/Simulazione Esame 21-12-2023.md"
               }
             }
           },
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
+                "file": "Appunti SOR/MOD I Croce/Esami/Simulazione Esame 21-12-2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
+                "file": "Appunti SOR/MOD I Croce/Esami/Simulazione Esame 21-12-2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -205,6 +205,12 @@
   },
   "active": "3e553890941974fa",
   "lastOpenFiles": [
+    "Appunti SOR/MOD I Croce/Code/Codici.md",
+    "Appunti SOR/MOD I Croce/Esami/Simulazione Esame 21-12-2023.md",
+    "Appunti SOR/MOD I Croce/Lezione 1.md",
+    "Appunti SOR/MOD I Croce/Esami",
+    "Appunti SOR/MOD I Croce/E.md",
+    "Appunti SOR/MOD I Croce/Lezione 10.md",
     "Appunti BSD/Progetto DB/Fase tre.md",
     "Appunti BSD/Progetto DB/Fase due.md",
     "Appunti BSD/Progetto DB/Fase uno.md",
@@ -212,9 +218,7 @@
     "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
     "Appunti BSD/Progetto DB/Schema-Fisico.jpg",
     "Appunti BSD/Progetto DB/Schema-Logico.jpg",
-    "Appunti SOR/MOD I Croce/Lezione 10.md",
     "Appunti SOR/MOD I Croce/Lezione 9.md",
-    "Appunti SOR/MOD I Croce/Code/Codici.md",
     "Appunti BSD/Progetto DB/Schema-Fisico-Restyle.jpg",
     "Appunti SOR/MOD I Croce/Lezione 8.md",
     "Appunti BSD/MOD I/Lezione 6 - Progettazione logica.md",
@@ -229,7 +233,6 @@
     "Appunti BSD/Progetto DB/Schema-Fisico.drawio",
     "Appunti BSD/Progetto DB/Diagramma_E-R_Split(1).drawio",
     "Appunti SOR/MOD I Croce/Lezione 4.1.md",
-    "Appunti SOR/MOD I Croce/Lezione 1.md",
     "Appunti SOR/MOD I Croce/Indice delle lezioni.md",
     "Appunti SOR/MOD I Croce/Lezione 7.md",
     "Appunti SOR/MOD I Croce/Lezione 6.md",
@@ -244,13 +247,10 @@
     "README.md",
     "Appunti SOR/MOD I Croce/Code",
     "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
-    "Appunti CPS/Lezione 1.md",
-    "Appunti CPS/Lezione 2.md",
     "Appunti BSD/Progetto DB",
     "Appunti SOR/MOD I Croce/img",
     "Appunti SOR/MOD I Croce",
     "Untitled.canvas",
-    "Appunti ASD/Algoritmo_Es3.pdf",
-    "Secondo Anno"
+    "Appunti ASD/Algoritmo_Es3.pdf"
   ]
 }
