@@ -1252,6 +1252,15 @@ f.close()
 
 Di seguito verranno riportate e query
 
+```SQL
+select ID_Richiesta, PuntoDiRaccolta as Partenza, PuntoDiRilascio as Arrivo, Costo, c.NumeroCarta as Carta, u.Nome from `RichiestePrenotazioni` rp 
+JOIN `TratteCompletate` tc on rp.`ID_Richiesta` = tc.`ID_TrattaC` 
+JOIN `Carta` c on tc.`NumeroCarta` = c.`NumeroCarta` 
+JOIN `Utenti` u on c.`ID_Utente` = u.`ID_Utente` 
+WHERE u.Nome = 'Mario';
+```
+
+
 #### Ottimizzazione
 
 Di seguito mettere le query ottimizzate tramite index
