@@ -188,8 +188,8 @@ Tra questi metodi abbiamo scelto il terzo in quanto da noi considerato il più a
 
 Il secondo metodo necessita dell’aggiunta di un attributo nelle entità "Personale" e "Richiesta Prenotazioni", con il compito di specificare il ruolo del lavoratore (Es. Autisti = 1, Manutentori = 2, etc..), e il tipo di prenotazione (Es. Completata = 1 e Rifiutata = 2), in più si sarebbe dovuto scegliere se perdere informazioni (attributi) dei figli o inserire le informazioni nel padre, quindi aggiungere attributi dei figli al padre. La seconda scelta avrebbe portato ad una quantità non indifferente di valori NULL.
 
-### Implementazione Database - MySQL
-#### Creazione delle tabelle
+## Implementazione Database - MySQL
+### Creazione delle tabelle
 
 ```SQL
 CREATE TABLE Personale(
@@ -339,7 +339,7 @@ CREATE TABLE ContattaPerGuasto (
 
 ```
 
-#### Triggers
+### Triggers
 
 Abbiamo implementato dei triggers nel nostro sistema, per far rispettare i vincoli scritti sopra
 (i.e. Un utente **NON** può prenotare più di una corsa nello stesso momento,etc...)
@@ -385,7 +385,7 @@ CREATE TRIGGER `ControllaTurnoLavorativo` BEFORE INSERT ON `Autisti` FOR EACH RO
 
 END
 ```
-#### Inserimenti Manuali
+### Inserimenti Manuali
 
 **Personale**
 
@@ -1247,3 +1247,11 @@ print("--------------- Fine Inserimento TratteRifiutate\n")
 print("4.txt Done")
 f.close()
 ```
+
+### Query
+
+Di seguito verranno riportate e query
+
+#### Ottimizzazione
+
+Di seguito mettere le query ottimizzate tramite index
