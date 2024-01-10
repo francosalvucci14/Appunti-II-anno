@@ -1250,17 +1250,73 @@ f.close()
 
 ### Query
 
-Di seguito verranno riportate e query
+- Visualizza tutte le tratte completate, con annesso costo e carta usata per il pagamento, fatte da un determinato utente
 
 ```SQL
 select ID_Richiesta, PuntoDiRaccolta as Partenza, PuntoDiRilascio as Arrivo, Costo, c.NumeroCarta as Carta, u.Nome from `RichiestePrenotazioni` rp 
 JOIN `TratteCompletate` tc on rp.`ID_Richiesta` = tc.`ID_TrattaC` 
 JOIN `Carta` c on tc.`NumeroCarta` = c.`NumeroCarta` 
 JOIN `Utenti` u on c.`ID_Utente` = u.`ID_Utente` 
-WHERE u.Nome = 'Mario';
+WHERE u.Nome = 'Mario' AND u.Cognome = 'Sforza';
 ```
 
+- Visualizza tutti i veicoli la cui assicurazione scadrà entro il 2024
 
+```SQL
+SELECT Targa, Modello, Marca, a.DataScadenza AS DataScadenza FROM Veicoli v 
+JOIN Assicurazione a
+ON v.Assicurazione = a.ID_Assicurazione
+WHERE YEAR(a.DataScadenza) = "2024";
+```
+
+- Visualizza i turni di un dato autista
+
+```SQL
+SELECT p.Nome, p.Cognome, t.OrarioInizio, t.OrarioFine FROM Autisti a JOIN Personale p
+ON a.ID_Autista = p.ID
+JOIN Turni t ON a.Turno = t.ID_Turno
+WHERE p.Nome = "Raffaello" AND p.Cognome = "Costanzi";
+```
+
+- Visualizza tutti gli autisti hanno le stesso turno
+
+```SQL
+SELECT p.Nome, p.Cognome, a.Turno, a.ID_Autista FROM Autisti a JOIN Personale p
+ON a.ID_Autista = p.ID
+JOIN Turni t ON a.Turno = t.ID_Turno
+WHERE a.Turno = 2
+```
+
+- Visualizza la somma dei pagamenti effettuati dagli utenti in una data settimana
+
+```SQL
+SELECT SUM(tc.Costo) AS Totale FROM TratteCompletate tc
+JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
+WHERE MONTH (rp.DataRichiesta) = "06" AND DAY (rp.DataRichiesta) BETWEEN 1 AND 7
+```
+
+- Visualizza tutte le richieste di manutenzione relative ad uno specifico veicolo
+
+```SQL
+SELECT cpg.Motivo, v.* FROM ContattaPerGuasto cpg
+JOIN Autisti a ON cpg.ID_Autista = a.ID_Autista
+JOIN Veicoli v ON a.Targa = v.Targa
+WHERE v.Targa = "CO020CO";
+```
+
+- Visualizza 10 le tratte più gettonate
+
+```SQL
+SELECT PuntoDiRaccolta, PuntoDiRilascio, COUNT(*) AS NumeroRichieste
+FROM RichiestePrenotazioni rp
+GROUP BY PuntoDiRaccolta, PuntoDiRilascio
+ORDER BY NumeroRichieste DESC
+LIMIT 10;
+```
 #### Ottimizzazione
 
 Di seguito mettere le query ottimizzate tramite index
+
+
+>[!quote]- Cit
+>VroomA, in taxi sulla luna
