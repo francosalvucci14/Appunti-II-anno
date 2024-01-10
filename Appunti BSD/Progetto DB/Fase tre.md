@@ -385,6 +385,27 @@ CREATE TRIGGER `ControllaTurnoLavorativo` BEFORE INSERT ON `Autisti` FOR EACH RO
 
 END
 ```
+
+**Controlla Carta**
+
+```SQL
+CREATE TRIGGER `ControllaInserimentiCarta` BEFORE INSERT ON `Carta` FOR EACH ROW BEGIN
+
+-- Controlla se l'autista è stato già assegnato al turno richiesto
+	IF EXISTS (
+		SELECT 1
+		FROM Carta c
+		WHERE NumeroCarta = NEW.NumeroCarta AND ID_Utente = NEW.ID_Utente
+	) THEN
+
+	-- Se si, interrompi l'inserimento
+		SIGNAL SQLSTATE '45000'
+		SET MESSAGE_TEXT = '[ERRORE],LA CARTA CHE SI VUOLE AGGIUNGERE È GIÀ PRESENTE NEL DATABASE';
+
+	END IF;
+
+END
+```
 ### Inserimenti Manuali
 
 **Personale**
@@ -1313,10 +1334,12 @@ GROUP BY PuntoDiRaccolta, PuntoDiRilascio
 ORDER BY NumeroRichieste DESC
 LIMIT 10;
 ```
+
+- Visualizza tutti gli utenti che hanno l'abbonamento annuale
+
+```SQL
+SELECT * FROM Utenti u WHERE u.Abbonamento = 'Annuale';
+```
 #### Ottimizzazione
 
 Di seguito mettere le query ottimizzate tramite index
-
-
->[!quote]- Cit
->VroomA, in taxi sulla luna
