@@ -1489,6 +1489,19 @@ WHERE a.Tipo = 'Kasko';
 ```
 
 ![[query15.png|center|200]]
+
+- Visualizza tutti gli autisti che hanno una certa categoria di patente
+
+```SQL
+SELECT p.Nome, p.Cognome, pt.Categoria
+FROM Personale p JOIN Autisti a ON p.ID = a.ID_Autista
+JOIN Patente pt ON a.NumeroPatente = pt.NumeroPatente
+WHERE pt.Categoria = "B96"
+```
+
+![[query16.png|center|350]]
+
+
 #### Ottimizzazione
 
 Di seguito mettere le query ottimizzate tramite index
