@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3e553890941974fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti BSD/Progetto DB/Fase tre.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "afc1499ef47d25c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD I Croce/Code/Codici.md",
+                "file": "Appunti BSD/Progetto DB/Fase tre.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +158,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "f78fead014af1ce4",
@@ -203,15 +191,18 @@
       "obsidian-matrix:Obsidian Matrix": false
     }
   },
-  "active": "3e553890941974fa",
+  "active": "afc1499ef47d25c9",
   "lastOpenFiles": [
-    "Appunti SOR/MOD I Croce/Esami/Simulazione Esame 21-12-2023.md",
+    "Appunti BSD/Progetto DB/Risultati Query/query1.png",
     "Appunti SOR/MOD I Croce/Code/Codici.md",
+    "Pasted image 20240111125221.png",
+    "Appunti BSD/Progetto DB/Fase tre.md",
+    "Appunti BSD/Progetto DB/Risultati Query",
+    "Appunti SOR/MOD I Croce/Esami/Simulazione Esame 21-12-2023.md",
     "Appunti SOR/MOD I Croce/Lezione 1.md",
     "Appunti SOR/MOD I Croce/Esami",
     "Appunti SOR/MOD I Croce/E.md",
     "Appunti SOR/MOD I Croce/Lezione 10.md",
-    "Appunti BSD/Progetto DB/Fase tre.md",
     "Appunti BSD/Progetto DB/Fase due.md",
     "Appunti BSD/Progetto DB/Fase uno.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
@@ -228,7 +219,6 @@
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202153008.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202151925.png",
     "Appunti SOR/MOD I Croce/img/Pasted image 20231202115258.png",
-    "Appunti SOR/MOD I Croce/img/Screenshot from 2023-12-02 11-33-28.png",
     "Appunti BSD/Progetto DB/Schema-Fisico-Restyle.drawio",
     "Appunti BSD/Progetto DB/Schema-Fisico.drawio",
     "Appunti BSD/Progetto DB/Diagramma_E-R_Split(1).drawio",
@@ -246,11 +236,9 @@
     "Appunti BSD/MOD I/Lezione 5 - Modello Concettuale, Modello ER.md",
     "README.md",
     "Appunti SOR/MOD I Croce/Code",
-    "Appunti BSD/MOD II/Lezione 11 - Organizzazione fisica dei dati.md",
     "Appunti BSD/Progetto DB",
     "Appunti SOR/MOD I Croce/img",
     "Appunti SOR/MOD I Croce",
-    "Untitled.canvas",
-    "Appunti ASD/Algoritmo_Es3.pdf"
+    "Untitled.canvas"
   ]
 }

@@ -408,6 +408,7 @@ END
 ```
 ### Inserimenti Manuali
 
+da cambiare inserimenti
 **Personale**
 
 ```SQL
@@ -1274,20 +1275,24 @@ f.close()
 - Visualizza tutte le tratte completate, con annesso costo e carta usata per il pagamento, fatte da un determinato utente
 
 ```SQL
-select ID_Richiesta, PuntoDiRaccolta as Partenza, PuntoDiRilascio as Arrivo, Costo, c.NumeroCarta as Carta, u.Nome from `RichiestePrenotazioni` rp 
+SELECT ID_Richiesta, PuntoDiRaccolta as Partenza, PuntoDiRilascio as Arrivo, Costo, c.NumeroCarta as Carta from `RichiestePrenotazioni` rp 
 JOIN `TratteCompletate` tc on rp.`ID_Richiesta` = tc.`ID_TrattaC` 
 JOIN `Carta` c on tc.`NumeroCarta` = c.`NumeroCarta` 
 JOIN `Utenti` u on c.`ID_Utente` = u.`ID_Utente` 
-WHERE u.Nome = 'Mario' AND u.Cognome = 'Sforza';
+WHERE u.Nome = 'Carla' AND u.Cognome = 'Raimondi';
 ```
 
-- Visualizza tutti i veicoli la cui assicurazione scadrà entro il 2024
+da cambiare foto
+![[appunti bsd/Progetto db/Risultati Query/query1.png|center|500]]
+
+
+- Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024
 
 ```SQL
 SELECT Targa, Modello, Marca, a.DataScadenza AS DataScadenza FROM Veicoli v 
-JOIN Assicurazione a
-ON v.Assicurazione = a.ID_Assicurazione
-WHERE YEAR(a.DataScadenza) = "2024";
+JOIN Assicurazioni a
+ON v.ID_Assicurazione = a.ID_Assicurazione
+WHERE YEAR(a.DataScadenza) = "2024" AND MONTH(a.DataScadenza) = "02";
 ```
 
 - Visualizza i turni di un dato autista
