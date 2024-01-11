@@ -1515,6 +1515,15 @@ ORDER BY NumeroFeedback3Stelle DESC
 
 ![[query17.png|center|400]]
 
+- Visualizza l'ultima richiesta di prenotazione di un certo utente
+
+```SQL
+SELECT rp.* FROM RichiestePrenotazioni rp 
+JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
+WHERE rp.ID_Utente = '3430' AND rp.DataRichiesta IN (SELECT MAX(DataRichiesta) FROM RichiestePrenotazioni WHERE ID_Utente = '3430')
+LIMIT 1
+```
+
 #### Ottimizzazione
 
 Di seguito mettere le query ottimizzate tramite index
