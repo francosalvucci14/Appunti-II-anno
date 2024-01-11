@@ -1333,23 +1333,29 @@ ON v.ID_Assicurazione = a.ID_Assicurazione
 WHERE YEAR(a.DataScadenza) = "2024" AND MONTH(a.DataScadenza) = "02";
 ```
 
-- Visualizza i turni di un dato autista
+![[appunti bsd/Progetto db/Risultati Query/query2.png|center|300]]
+
+- Visualizza il/i turno/i di un dato autista
 
 ```SQL
 SELECT p.Nome, p.Cognome, t.OrarioInizio, t.OrarioFine FROM Autisti a JOIN Personale p
 ON a.ID_Autista = p.ID
 JOIN Turni t ON a.Turno = t.ID_Turno
-WHERE p.Nome = "Raffaello" AND p.Cognome = "Costanzi";
+WHERE p.Nome = "Patrizio" AND p.Cognome = "Mattarella";
 ```
 
-- Visualizza tutti gli autisti hanno le stesso turno
+![[appunti bsd/Progetto db/Risultati Query/query3.png|center|350]]
+
+- Visualizza tutti gli autisti che hanno lo stesso turno
 
 ```SQL
 SELECT p.Nome, p.Cognome, a.Turno, a.ID_Autista FROM Autisti a JOIN Personale p
 ON a.ID_Autista = p.ID
 JOIN Turni t ON a.Turno = t.ID_Turno
-WHERE a.Turno = 2
+WHERE a.Turno = 2;
 ```
+
+![[query4.png|center|350]]
 
 - Visualizza la somma dei pagamenti effettuati dagli utenti in una data settimana
 
@@ -1359,14 +1365,18 @@ JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
 WHERE MONTH (rp.DataRichiesta) = "06" AND DAY (rp.DataRichiesta) BETWEEN 1 AND 7
 ```
 
+![[query5.png|center|300]]
+
 - Visualizza tutte le richieste di manutenzione relative ad uno specifico veicolo
 
 ```SQL
 SELECT cpg.Motivo, v.* FROM ContattaPerGuasto cpg
 JOIN Autisti a ON cpg.ID_Autista = a.ID_Autista
 JOIN Veicoli v ON a.Targa = v.Targa
-WHERE v.Targa = "CO020CO";
+WHERE v.Targa = "QD795XT";
 ```
+
+![[query6.png|center]]
 
 - Visualizza le 10 tratte più gettonate
 
