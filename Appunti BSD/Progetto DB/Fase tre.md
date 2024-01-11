@@ -1524,6 +1524,8 @@ WHERE rp.ID_Utente = '3430' AND rp.DataRichiesta IN (SELECT MAX(DataRichiesta) F
 LIMIT 1
 ```
 
+![[query18.png|center]]
+
 #### Ottimizzazione
 
 Di seguito mettere le query ottimizzate tramite index
