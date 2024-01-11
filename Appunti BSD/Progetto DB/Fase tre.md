@@ -1501,6 +1501,19 @@ WHERE pt.Categoria = "B96"
 
 ![[query16.png|center|350]]
 
+- Visualizza il numero di feeback con alemno 3 stelle lasciati da ogni utente
+
+```SQL
+SELECT u.Nome,u.Cognome, COUNT(*) AS NumeroFeedback3Stelle
+FROM Feedback f JOIN TratteCompletate tc ON f.ID_TrattaCompletata = tc.ID_TrattaC
+JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
+JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
+WHERE f.StelleUtente >= 3
+GROUP BY u.Nome,u.Cognome
+ORDER BY NumeroFeedback3Stelle DESC
+```
+
+![[query17.png|center|400]]
 
 #### Ottimizzazione
 
