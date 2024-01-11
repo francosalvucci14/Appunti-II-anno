@@ -1515,10 +1515,12 @@ ORDER BY NumeroFeedback3Stelle DESC
 
 ![[query17.png|center|400]]
 
-- Visualizza l'ultima richiesta di prenotazione di un certo utente
+- Visualizza l'ultima richiesta di prenotazione di un certo utente, aggiungendo (**solo in output**) un campo che dice se la Richiesta fa parte di una tratta completata o no
 
 ```SQL
-SELECT rp.* FROM RichiestePrenotazioni rp 
+SELECT rp.*, 
+IF(rp.ID_Richiesta IN (SELECT ID_TrattaC FROM TratteCompletate tc),'SI','NO' ) AS Completata 
+FROM RichiestePrenotazioni rp 
 JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
 WHERE rp.ID_Utente = '3430' AND rp.DataRichiesta 
 IN 
