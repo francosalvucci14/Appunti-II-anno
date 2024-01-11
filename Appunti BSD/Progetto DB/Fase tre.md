@@ -1388,31 +1388,38 @@ ORDER BY NumeroRichieste DESC
 LIMIT 10;
 ```
 
+![[query7.png|center|500]]
+
 - Visualizza gli utenti che hanno effettuato almeno 10 richieste
 
 ```SQL
 
 SELECT u.ID_Utente, u.Nome, u.Cognome, COUNT(*) AS NumeroRichieste
 FROM RichiestePrenotazioni rp JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
-GROUP By u.ID_Utente, u.Nome, u.Cognome
+GROUP BY u.ID_Utente, u.Nome, u.Cognome
 HAVING NumeroRichieste >= 10
 ORDER BY NumeroRichieste DESC;
 ```
 
-- Di un dato range di utenti (ID compreso tra 2000 e 6000 e l'iniziale del nome "F"), visualizza le offerte associate e la sua descrizione
+![[query8.png|center|450]]
+
+- Di un dato range di utenti (ID compreso tra 2000 e 6000 e l'iniziale del nome "F"), visualizza le offerte associate agli utenti, con le relative descrizioni
 
 ```SQL
 SELECT u.ID_Utente, u.Nome, u.Cognome, o.ID_Offerta, o.InfoOfferta
 FROM Utenti u JOIN Offerte o ON u.ID_Offerta = o.ID_Offerta
 WHERE u.ID_Utente
-IN(
+IN
+(
 	SELECT ID_Utente 
 	FROM Utenti u2 
 	WHERE ID_Utente BETWEEN 2000 AND 6000 AND Nome LIKE "F%"
-  )
+)
 ```
 
-- Visualizza il motivo del rifiuto della richiesta di prenotazione più riccorrente
+![[query9.png|center|500]]
+
+- Visualizza il motivo di rifiuto delle richieste di prenotazione che occorre più spesso
 
 ```SQL
 SELECT tr.Motivazione, COUNT(*) AS NumeroOccorrenze
@@ -1420,6 +1427,8 @@ FROM TratteRifiutate tr GROUP BY tr.Motivazione
 ORDER BY NumeroOccorrenze DESC
 LIMIT 1;
 ```
+
+![[query10.png|center|400]]
 
 - Di tutti gli autisti che hanno un ID compreso tra 50 e 400, mostra il turno assegnato e i dati del veicolo che utilizzano
 
@@ -1431,15 +1440,19 @@ JOIN Turni t ON a.Turno = t.ID_Turno
 WHERE ID_Autista BETWEEN 50 AND 400;
 ```
 
+![[query11.png|center]]
+
 - Visualizza tutte le tratte completate che non hanno un feedback
 
 ```SQL
 SELECT tc.* FROM TratteCompletate tc
 WHERE tc.ID_TrattaC NOT IN 
 (
-	SELECT ID_TrattaCompletata from Feedback f
+	SELECT ID_TrattaCompletata FROM Feedback f
 );
 ```
+
+![[query12.png|center|350]]
 
 - Visualizza tutte le richieste di prenotazione effettuate da un determinato utente
 
@@ -1449,7 +1462,7 @@ JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
 WHERE u.Nome = 'Carla' AND u.Cognome = 'Raimondi'
 ```
 
-
+![[query13.png|center]]
 #### Ottimizzazione
 
 Di seguito mettere le query ottimizzate tramite index
