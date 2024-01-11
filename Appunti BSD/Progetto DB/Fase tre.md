@@ -1529,7 +1529,6 @@ IN
 	FROM RichiestePrenotazioni 
 	WHERE ID_Utente = '3430'
 )
-LIMIT 1
 ```
 
 ![[query18.png|center]]
