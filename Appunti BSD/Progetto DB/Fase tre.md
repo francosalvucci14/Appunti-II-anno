@@ -1463,6 +1463,32 @@ WHERE u.Nome = 'Carla' AND u.Cognome = 'Raimondi'
 ```
 
 ![[query13.png|center]]
+
+- Visualizza la media delle stelle ottenute da un singolo autista
+
+```SQL
+SELECT p.Nome, p.Cognome, AVG(f.StelleUtente) AS MediaStelle
+FROM Feedback f
+JOIN TratteCompletate tc ON f.ID_TrattaCompletata = tc.ID_TrattaC
+JOIN RichiestePrenotazioni rp ON rp.ID_Richiesta = tc.ID_TrattaC
+JOIN Autisti a ON rp.ID_Autista = a.ID_Autista
+JOIN Personale p ON a.ID_Autista = p.ID
+WHERE rp.ID_Autista = '500'
+GROUP BY p.Nome, p.Cognome
+ORDER BY MediaStelle DESC
+```
+
+![[query14.png|center|300]]
+
+- Visualizza il numero totale delle assicurazioni Kasko
+
+```SQL
+SELECT COUNT(a.Tipo) AS TotaleKasko
+FROM Assicurazioni a
+WHERE a.Tipo = 'Kasko';
+```
+
+![[query15.png|center|200]]
 #### Ottimizzazione
 
 Di seguito mettere le query ottimizzate tramite index
