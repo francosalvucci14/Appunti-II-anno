@@ -1325,7 +1325,7 @@ JOIN Veicoli v ON a.Targa = v.Targa
 WHERE v.Targa = "CO020CO";
 ```
 
-- Visualizza 10 le tratte più gettonate
+- Visualizza le 10 tratte più gettonate
 
 ```SQL
 SELECT PuntoDiRaccolta, PuntoDiRilascio, COUNT(*) AS NumeroRichieste
@@ -1340,6 +1340,69 @@ LIMIT 10;
 ```SQL
 SELECT * FROM Utenti u WHERE u.Abbonamento = 'Annuale';
 ```
+
+- Visualizza gli utenti che hanno effettuato almeno 10 richieste
+
+```SQL
+
+SELECT u.ID_Utente, u.Nome, u.Cognome, COUNT(*) AS NumeroRichieste
+FROM RichiestePrenotazioni rp JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
+GROUP By u.ID_Utente, u.Nome, u.Cognome
+HAVING NumeroRichieste >= 10
+ORDER BY NumeroRichieste DESC;
+```
+
+- Di un dato range di utenti (ID compreso tra 2000 e 6000 e l'iniziale del nome "F"), visualizza le offerte associate e la sua descrizione
+
+```SQL
+SELECT u.ID_Utente, u.Nome, u.Cognome, o.ID_Offerta, o.InfoOfferta
+FROM Utenti u JOIN Offerte o ON u.ID_Offerta = o.ID_Offerta
+WHERE u.ID_Utente
+IN(
+	SELECT ID_Utente 
+	FROM Utenti u2 
+	WHERE ID_Utente BETWEEN 2000 AND 6000 AND Nome LIKE "F%"
+  )
+```
+
+- Visualizza il motivo del rifiuto della richiesta di prenotazione più riccorrente
+
+```SQL
+SELECT tr.Motivazione, COUNT(*) AS NumeroOccorrenze
+FROM TratteRifiutate tr GROUP BY tr.Motivazione
+ORDER BY NumeroOccorrenze DESC
+LIMIT 1;
+```
+
+- Di tutti gli autisti che hanno un ID compreso tra 50 e 400, mostra il turno assegnato e i dati del veicolo che utilizzano
+
+```SQL
+SELECT a.ID_Autista, p.Nome, p.Cognome, t.*, v.*
+FROM Autisti a JOIN Personale p ON a.ID_Autista = p.ID
+JOIN Veicoli v ON a.Targa = v.Targa
+JOIN Turni t ON a.Turno = t.ID_Turno
+WHERE ID_Autista BETWEEN 50 AND 400;
+```
+
+- Visualizza tutte le tratte completate che non hanno un feedback
+
+```SQL
+SELECT tc.* FROM TratteCompletate tc
+WHERE tc.ID_TrattaC NOT IN 
+(
+	SELECT ID_TrattaCompletata from Feedback f
+);
+```
+
+- Visualizza tutte le richieste di prenotazione effettuate da un determinato utente
+
+```SQL
+SELECT rp.* FROM RichiestePrenotazioni rp 
+JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
+WHERE u.Nome = 'Carla' AND u.Cognome = 'Raimondi'
+```
+
+
 #### Ottimizzazione
 
 Di seguito mettere le query ottimizzate tramite index
