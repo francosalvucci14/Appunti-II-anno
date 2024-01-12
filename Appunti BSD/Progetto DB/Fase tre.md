@@ -1640,8 +1640,15 @@ Query da fare in algebra relazionale:
 
 In algebra relazionale la query diventa
 $$\pi_{COUNT(Tipo)}​(\sigma_{Tipo = 'Kasko'}​(Assicurazioni))$$
+Questa espressione rappresenta la proiezione $\pi$ sulla colonna COUNT(Tipo) della selezione $\sigma$ delle righe dove Tipo = 'Kasko' dalla tabella Assicurazioni
 
 _**Visualizza tutte le tratte completate che non hanno un feedback**_
 
 In algebra relazionale la query diventa
-$$\pi_{tc.*}​(TratteCompletate-(\rho_{ID\_TrattaC}​(\pi_{ID_TrattaCompletata}​(Feedback))))$$
+$$\pi_{tc.*}​(TratteCompletate-(\rho_{(ID\_TrattaC)}​(\pi_{(ID\_TrattaCompletata)}​(Feedback))))$$
+Dove:
+
+- $\pi_{(ID\_TrattaCompletata)}(Feedback)$ rappresenta la proiezione sulla colonna ID_TrattaCompletata della tabella Feedback
+- $\rho_{(ID\_TrattaC)}(\pi_{(ID\_TrattaCompletata)}(Feedback))$ rappresenta la rinomina della colonna ID_TrattaCompletata come ID_TrattaC
+- $(TratteCompletate-(\rho_{(ID\_TrattaC)}(\pi_{(ID\_TrattaCompletata)}(Feedback))))$ rappresenta la differenza tra tutte le tuple di TratteCompletate e le tuple corrispondenti nella sottoquery.
+
