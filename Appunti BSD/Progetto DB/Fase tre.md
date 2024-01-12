@@ -1560,6 +1560,67 @@ WHERE A.ID_Autista NOT IN
 
 ![[query20.png|center|300]]
 
+- Visualizza il totale dei pagamenti relativi ad un determinato giorno
+
+```SQL
+SELECT SUM(tc.Costo) AS TotalePagamenti FROM TratteCompletate tc
+JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
+WHERE rp.DataRichiesta = "2023-06-05"
+```
+
+![[query21.png|center|200]]
+
+- Visualizza gli autisti con lo stipendio più alto
+
+```SQL
+SELECT *
+FROM Autisti
+WHERE Stipendio =
+(
+	SELECT MAX(Stipendio)
+	FROM Autisti
+);
+```
+
+![[query22.png|center|300]]
+
+- Trova gli autisti che hanno completato il minor numero di corse in un determinato giorno
+
+```SQL
+SELECT a.ID_Autista,p.Nome,p.Cognome, COUNT(*) AS NumeroCorseEffettuate
+FROM TratteCompletate tc 
+JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
+JOIN Autisti a ON rp.ID_Autista = a.ID_Autista
+JOIN Personale p ON a.ID_Autista = p.ID
+WHERE rp.DataRichiesta = "2023-06-05"
+GROUP BY a.ID_Autista, p.Nome, p.Cognome
+ORDER BY NumeroCorseEffettuate
+```
+
+![[query23.png|center|450]]
+
+- Visualizza tutti i dati di un determinato utente, comprese le carte a lui associate
+
+```SQL
+SELECT u.*, c.NumeroCarta, c.DataScadenza, c.CVV
+FROM Utenti u JOIN Carta c ON c.ID_Utente = u.ID_Utente
+WHERE Nome = "Geronimo" AND Cognome = "Lucarelli"
+```
+
+![[query24.png|center]]
+
+-  Visualizza tutti gli utenti che hanno almeno 2 carte associate
+
+```SQL
+SELECT u.ID_Utente, u.Nome, u.Cognome, COUNT(*) AS NumeroCarteAssociate
+FROM Utenti u JOIN Carta c ON c.ID_Utente = u.ID_Utente
+GROUP BY u.ID_Utente, u.Nome, u.Cognome
+HAVING NumeroCarteAssociate > 2
+ORDER BY NumeroCarteAssociate DESC
+```
+
+![[query25.png|center|450]]
+
 
 #### Ottimizzazione
 
