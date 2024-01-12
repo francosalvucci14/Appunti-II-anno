@@ -1635,3 +1635,13 @@ Query da fare in algebra relazionale:
 - Visualizza il numero totale delle assicurazioni Kasko
 - Visualizza tutte le tratte completate che non hanno un feedback
 
+
+**_Visualizza il numero totale delle assicurazioni Kasko_**
+
+In algebra relazionale la query diventa
+$$\pi_{COUNT(Tipo)}​(\sigma_{Tipo = 'Kasko'}​(Assicurazioni))$$
+
+_**Visualizza tutte le tratte completate che non hanno un feedback**_
+
+In algebra relazionale la query diventa
+$$\pi_{tc.*}​(TratteCompletate-(\rho_{ID\_TrattaC}​(\pi_{ID_TrattaCompletata}​(Feedback))))$$
