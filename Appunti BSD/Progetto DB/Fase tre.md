@@ -1624,3 +1624,14 @@ ORDER BY NumeroCarteAssociate DESC
 #### Ottimizzazione
 
 Di seguito mettere le query ottimizzate tramite index
+
+### Algebra Relazionale
+
+Query da fare in algebra relazionale:
+- Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024
+- Visualizza tutti i dati di un determinato utente, comprese le carte a lui associate
+- Visualizza il totale dei pagamenti relativi ad un determinato giorno
+- Visualizza tutti gli autisti che hanno una certa categoria di patente
+- Visualizza il numero totale delle assicurazioni Kasko
+- Visualizza tutte le tratte completate che non hanno un feedback
+
