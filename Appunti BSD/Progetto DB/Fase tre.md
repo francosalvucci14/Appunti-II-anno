@@ -1501,7 +1501,7 @@ WHERE pt.Categoria = "B96"
 
 ![[query16.png|center|350]]
 
-- Visualizza il numero di feeback con alemno 3 stelle lasciati da ogni utente
+- Visualizza il numero di feeback con almeno 3 stelle lasciati da ogni utente
 
 ```SQL
 SELECT u.Nome,u.Cognome, COUNT(*) AS NumeroFeedback3Stelle
