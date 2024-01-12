@@ -392,7 +392,7 @@ CREATE TRIGGER `ControllaInserimentiCarta` BEFORE INSERT ON `Carta` FOR EACH ROW
 	IF EXISTS (
 		SELECT 1
 		FROM Carta c
-		WHERE NumeroCarta = NEW.NumeroCarta AND ID_Utente = NEW.ID_Utente
+		WHERE NumeroCarta = NEW.NumeroCarta
 	) THEN
 
 	-- Se si, interrompi l'inserimento
@@ -1620,7 +1620,6 @@ ORDER BY NumeroCarteAssociate DESC
 ```
 
 ![[query25.png|center|450]]
-
 
 #### Ottimizzazione
 
