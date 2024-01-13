@@ -11,12 +11,8 @@
             "id": "afc1499ef47d25c9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti BSD/Progetto DB/Fase tre.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -115,9 +111,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Appunti BSD/Progetto DB/Fase tre.md"
-              }
+              "state": {}
             }
           },
           {
@@ -134,7 +128,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase tre.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +144,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase tre.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,20 +151,6 @@
           }
         ],
         "currentTab": 2
-      },
-      {
-        "id": "f78fead014af1ce4",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "721a84e295672958",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
@@ -193,6 +171,9 @@
   },
   "active": "afc1499ef47d25c9",
   "lastOpenFiles": [
+    "Appunti BSD/Progetto DB/Fase due.md",
+    "Pasted image 20240113123603.png",
+    "Appunti BSD/Progetto DB/Fase tre.md",
     "Appunti BSD/Progetto DB/Risultati Query/query25.png",
     "Appunti BSD/Progetto DB/Risultati Query/query24.png",
     "Appunti BSD/Progetto DB/Risultati Query/query23.png",
@@ -202,9 +183,6 @@
     "Appunti BSD/Progetto DB/Risultati Query/query19.png",
     "Appunti BSD/Progetto DB/Risultati Query/query18.png",
     "Appunti BSD/Progetto DB/Risultati Query/query18.png",
-    "Appunti BSD/Progetto DB/Risultati Query/query17.png",
-    "Appunti BSD/Progetto DB/Risultati Query/query16.png",
-    "Appunti BSD/Progetto DB/Fase tre.md",
     "Appunti SOR/MOD I Croce/Code/Codici.md",
     "Appunti BSD/Progetto DB/Risultati Query",
     "Appunti SOR/MOD I Croce/Esami/Simulazione Esame 21-12-2023.md",
@@ -212,7 +190,6 @@
     "Appunti SOR/MOD I Croce/Esami",
     "Appunti SOR/MOD I Croce/E.md",
     "Appunti SOR/MOD I Croce/Lezione 10.md",
-    "Appunti BSD/Progetto DB/Fase due.md",
     "Appunti BSD/Progetto DB/Fase uno.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
