@@ -340,10 +340,12 @@ CREATE TABLE ContattaPerGuasto (
 
 ### Triggers
 
-Abbiamo implementato dei triggers nel nostro sistema, per far rispettare i vincoli scritti sopra
-(i.e. Un utente **NON** può prenotare più di una corsa nello stesso momento,etc...)
+I trigger fanno parte del DDL (Data Definition Language), essi seguono il principio ECA, ovvero Event-Condition-Action. Solitamente, un trigger si può attivare prima o dopo un inserimento e hanno 2 livelli di granularità:
+1. attivarsi per ogni tupla
+2. attivarsi per ogni istruzione DML
 
-I triggers sono i seguenti
+Nello specifico in MySQL i trigger operano a livello di riga e si ammette un solo trigger per tabella. Osserviamo inoltre che questi vengono usati per mantenere constraint di ogni tipo, in primis il vincolo di integrità referenziale. Quelli di seguito sono una serie di trigger di esempio necessari per mantenere una serie di vincoli nel nostro database
+
 
 **Controlla Orario Richiesta**
 
@@ -1653,3 +1655,9 @@ Dove:
 - $\pi_{(ID\_TrattaCompletata)}(Feedback)$ rappresenta la proiezione sulla colonna ID_TrattaCompletata della tabella Feedback
 - $\rho_{(ID\_TrattaC)}(\pi_{(ID\_TrattaCompletata)}(Feedback))$ rappresenta la rinomina della colonna ID_TrattaCompletata come ID_TrattaC
 - $(TratteCompletate-(\rho_{(ID\_TrattaC)}(\pi_{(ID\_TrattaCompletata)}(Feedback))))$ rappresenta la differenza tra tutte le tuple di TratteCompletate e le tuple corrispondenti nella sottoquery.
+
+#### Calcolo Relazionale
+
+### Views
+
+Le view sono tabelle che non memorizzano dati, esse condividono lo stesso spazio delle tabelle originali. Spesso vengono assegnate ad altri utenti con specifici campi oscurati anche se il loro utilizzo inappropriato può portare all’inconsistenza del database.
