@@ -1,32 +1,34 @@
 
 # Indice degli argomenti
 
+
+
 - Componenti
 - Motivazioni
 - Obiettivi
 - Raccolta dei dati
 - Schemi
 
-# Progetto VRoomA
-## Componenti del gruppo
+## Progetto VRoomA
+### Componenti del gruppo
 
 | Nome | Cognome | Matricola | Mail |
 | ---- | ---- | ---- | ---- |
 | Leonardo | Ascenzi | 0310858 | leonardo.ascenzi@students.uniroma2.eu |
 | Franco | Salvucci | 0306604 | franco.salvucci@students.uniroma2.eu |
 | Nicolò | Spadoni | 0311175 | nicolo.spadoni@students.uniroma2.eu |
-## Motivazioni
+### Motivazioni
 
 Il database che stiamo realizzando è incentrato all'implementazione di un software dedicato all'organizzazione di viaggi tramite taxi.
-## Obiettivi
+### Obiettivi
 
 L'obiettivo principale di questo sistema è permettere agli utenti di organizzare gli spostamenti tramite taxi a seconda delle proprie esigenze, del tipo di veicolo scelto e del costo della tratta scelta.
 
 Da un punto di vista societario, gli obiettivi sono quelli di valutare la qualità del lavoro degli autisti tramite i feedback forniti dai clienti e migliorare dove possibile il servizio.
 
-## Raccolta dei dati
+### Raccolta dei dati
 
-### Analisi dei requisiti
+#### Analisi dei requisiti
 
 I **ruoli aziendali** sono i seguenti:
 - Addetti Marketing
@@ -64,7 +66,7 @@ Ogni **utente** deve aggiungere una **carta** con cui effettuare il pagamento re
 Ogni **utente** può aggiungere alla lista dei preferiti ua qualunque delle tratte effettuate da lui, scegliendo se aggiungere solo la tratta o anche l'autista.
 Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
-### Glossario delle entità
+#### Glossario delle entità
 
 | Entità | Descrizione | Attributi | Relazioni Coinvolte |
 | ---------------------- | ----------------------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------- |
@@ -84,7 +86,7 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | Assicurazioni | Dati dell'assicurazione associata al singolo veicolo | **ID**, Data di scadenza, Tipo | Veicoli |
 | Addetti Marketing | Personale addetto al reparto marketing della società | **ID**, Ruolo | Offerte, Personale |
 
-### Glossario dei termini
+#### Glossario dei termini
 
 | Entità | Descrizione | Sinonimi |
 | ---- | ---- | ---- |
@@ -104,7 +106,7 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | Assicurazioni | Dati dell'assicurazione associata al singolo veicolo | RCA, Polizza assicurativa |
 | Addetti Marketing | Personale addetto al reparto marketing della società | Advertiser |
 
-### Glossario delle relazioni
+#### Glossario delle relazioni
 
 | Relazione | Descrizione | Entità |
 | ---- | ---- | ---- |
@@ -123,9 +125,9 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | TrattaAvereFeedback | Relazione che dice che ogni tratta completata può avere (non necessariamente) un solo feedback, che viene lasciato dagli utenti e dagli autisti | Tratte Completate (0,1), Feedback (1,1) |
 | AutistaAvereTurni | Ogni autista ha un proprio turno lavorativo, ad ogni turno lavorativo vengono assegnati uno o più autisti | Autisti (1,1), Turni (1,N) |
 
-## Schemi
+### Schemi
 
-### Schemi di relazione
+#### Schemi di relazione
 
 Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono scritte in stile _Italic_
 
@@ -145,18 +147,18 @@ Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondar
 - Tratte Complete (**ID_Tratta**, Costo, _NumeroCarta_)
 - Tratte Rifiutate (**ID_Tratta**, Motivazione)
 - Feedback (**ID_Feedback**, StelleUtente, CommentoUtente,StelleAutista, CommentoAutista, _ID_TrattaCompletata_)
-### Schema Logico
+#### Schema Logico
 
 ![[Schema-Logico.jpg|center]]
 
-#### Normalizzazione
+##### Normalizzazione
 
 Di seguito si discutono le forme normali dello schema logico:
 
 - **1NF**: tutti gli schemi di relazione nello schema logico sopra riportato sono in **1NF**, poiché tutti gli attributi sono semplici, ovvero contengono soltanto valori atomici indivisibili.
 - **2NF**: tutti gli schemi di relazione dello schema logico sono anche già in **2NF**, poiché sono già in **1NF** e nessun attributo presenta alcuna dipendenza parziale. Tutti gli attributi dipendono funzionalmente solo dalla chiave primaria della stessa tabella.
 - **3NF**: tutti gli schemi di relazione sono anche in **3NF** perché già in **2NF**, ed inoltre, tutti gli attributi delle tabelle dipendono funzionalmente e direttamente dalla chiave primaria, senza transitività.
-### Schema Fisico
+#### Schema Fisico
 
 Abbiamo distinto le frecce che vanno dalle entità figlie a quelle padre mettendole in blu.
 
@@ -164,7 +166,7 @@ Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, me
 
 ![[Schema-Fisico.jpg|center]]
 
-#### Generalizzazione
+##### Generalizzazione
 
 Una generalizzazione rappresenta un legame logico tra un’entità genitore e una o più entità figlie, in questo caso le entità genitore sono “Personale” e "Richiesta Prenotazione", ognuna con le rispettive entità figlie, che sono:
 
@@ -187,8 +189,8 @@ Tra questi metodi abbiamo scelto il terzo in quanto da noi considerato il più a
 
 Il secondo metodo necessita dell’aggiunta di un attributo nelle entità "Personale" e "Richiesta Prenotazioni", con il compito di specificare il ruolo del lavoratore (Es. Autisti = 1, Manutentori = 2, etc..), e il tipo di prenotazione (Es. Completata = 1 e Rifiutata = 2), in più si sarebbe dovuto scegliere se perdere informazioni (attributi) dei figli o inserire le informazioni nel padre, quindi aggiungere attributi dei figli al padre. La seconda scelta avrebbe portato ad una quantità non indifferente di valori NULL.
 
-## Implementazione Database - MySQL
-### Creazione delle tabelle
+### Implementazione Database - MySQL
+#### Creazione delle tabelle
 
 ```SQL
 CREATE TABLE Personale(
@@ -336,7 +338,7 @@ CREATE TABLE ContattaPerGuasto (
 
 ```
 
-### Triggers
+#### Triggers
 
 Abbiamo implementato dei triggers nel nostro sistema, per far rispettare i vincoli scritti sopra
 (i.e. Un utente **NON** può prenotare più di una corsa nello stesso momento,etc...)
@@ -403,7 +405,7 @@ CREATE TRIGGER `ControllaInserimentiCarta` BEFORE INSERT ON `Carta` FOR EACH ROW
 
 END
 ```
-### Inserimenti
+#### Inserimenti
 
 Di seguito vengono riportati alcuni estratti di query per l'inserimento, presi dallo script di creazione automatica delle query
 
@@ -824,7 +826,7 @@ INSERT INTO TratteRifiutate (ID_TrattaR,Motivazione) VALUES ('15000','Indisponib
 ('15020','Problema generale'),
 ```
 
-### Script di creazione automatica di query
+#### Script di creazione automatica di query
 
 Per rendere paragonabili i tempi di esecuzione delle query non ottimizzate con quelle ottimizzate, è stato necessario introdurre, nel database, un gran numero di record.
 Per velocizzare questo processo, è stato scritto uno script in Python che scrive tutti gli inserimenti generati casualmente, in un semplice file di testo.
@@ -1308,7 +1310,7 @@ print("4.txt Done")
 f.close()
 ```
 
-### Query
+#### Query
 
 - Visualizza tutte le tratte completate, con annesso costo e carta usata per il pagamento, fatte da un determinato utente
 
@@ -1621,11 +1623,11 @@ ORDER BY NumeroCarteAssociate DESC
 
 ![[query25.png|center|450]]
 
-#### Ottimizzazione
+##### Ottimizzazione
 
 Di seguito mettere le query ottimizzate tramite index
 
-### Algebra Relazionale
+#### Algebra Relazionale
 
 Query da fare in algebra relazionale:
 - Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024
