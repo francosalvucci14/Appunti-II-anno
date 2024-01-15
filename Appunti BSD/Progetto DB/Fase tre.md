@@ -1631,6 +1631,19 @@ Di seguito mettere le query ottimizzate tramite index
 
 ### Algebra Relazionale
 
+L’algebra relazionale è un linguaggio query _procedurale_ in notazione algebrica. In una query, si applicano sequenzialmente le operazioni alle relazioni. Ogni operazione (unaria o binaria) riceve in input una relazione e ne produce un’altra in output.
+
+Le operazioni _**primitive**_ sono:
+- Selezione ($\sigma$)
+- Proiezione ($\pi$)
+- Unione ($\bigcup$)
+- Differenza Insiemistica ($-$)
+- Prodotto Cartesiano ($X$)
+- Ridenominazione ($\rho$)
+
+Esistono altre operazioni da esse derivabili, tra cui l’intersezione insiemistica ($\bigcap$).
+Di seguito troviamo alcune query sul nostro database scritte in Algebra Relazionale:
+
 Query da fare in algebra relazionale:
 - Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024
 - Visualizza tutti i dati di un determinato utente, comprese le carte a lui associate
@@ -1648,8 +1661,16 @@ Questa espressione rappresenta la proiezione $\pi$ sulla colonna COUNT(Tipo) del
 
 _**Visualizza tutte le tratte completate che non hanno un feedback**_
 
+```SQL
+SELECT tc.* FROM TratteCompletate tc
+WHERE tc.ID_TrattaC NOT IN 
+(
+	SELECT ID_TrattaCompletata FROM Feedback f
+);
+```
+
 In algebra relazionale la query diventa
-$$\pi_{tc.*}​(TratteCompletate-(\rho_{(ID\_TrattaC)}​(\pi_{(ID\_TrattaCompletata)}​(Feedback))))$$
+$$\pi_{tc.*}​(\sigma_{({\text{ID\_TrattaC}})}(TratteCompletate)-(\rho_{(ID\_TrattaC)}​(\pi_{(ID\_TrattaCompletata)}​(Feedback))))$$
 Dove:
 
 - $\pi_{(ID\_TrattaCompletata)}(Feedback)$ rappresenta la proiezione sulla colonna ID_TrattaCompletata della tabella Feedback
@@ -1657,6 +1678,15 @@ Dove:
 - $(TratteCompletate-(\rho_{(ID\_TrattaC)}(\pi_{(ID\_TrattaCompletata)}(Feedback))))$ rappresenta la differenza tra tutte le tuple di TratteCompletate e le tuple corrispondenti nella sottoquery.
 
 #### Calcolo Relazionale
+
+Il calcolo relazionale è un linguaggio query non procedurale ma _dichiarativo_. Invece dell’algebra, utilizza il calcolo dei predicati matematici del primo ordine in notazione logica. L’output di una query è una relazione che contiene solo tuple che soddisfano le formule logiche espresse. Il potere espressivo del calcolo relazionale è dunque equivalente a quello
+dell’algebra relazionale.
+
+Versioni:
+1. Calcolo relazionale sui domini
+2. _Calcolo relazionale sulle tuple con dichiarazione di range_
+
+Di seguito sono alcune query espresse tramite il calcolo relazionale sulle tuple con dichiarazione di range:
 
 ### Views
 
