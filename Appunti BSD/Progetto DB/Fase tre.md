@@ -1644,10 +1644,6 @@ Le operazioni _**primitive**_ sono:
 Esistono altre operazioni da esse derivabili, tra cui l’intersezione insiemistica ($\bigcap$).
 Di seguito troviamo alcune query sul nostro database scritte in Algebra Relazionale:
 
-Query da fare in algebra relazionale:
-- Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024
-- Visualizza tutti gli autisti che hanno una certa categoria di patente
-
 
 **_Visualizza il numero totale delle assicurazioni Kasko_**
 
@@ -1658,7 +1654,7 @@ WHERE a.Tipo = 'Kasko';
 ```
 
 In algebra relazionale la query diventa
-$$\pi_{COUNT(Tipo)}​(\sigma_{Tipo='Kasko'}​(Assicurazioni))$$
+$$\pi_{COUNT(Tipo)}​(\rho_{TotaleKasko\leftarrow COUNT(Tipo)}(\sigma_{Tipo='Kasko'}​(Assicurazioni)))$$
 Questa espressione rappresenta la proiezione $\pi$ sulla colonna COUNT(Tipo) della selezione $\sigma$ delle righe dove Tipo = 'Kasko' dalla tabella Assicurazioni
 
 _**Visualizza tutte le tratte completate che non hanno un feedback**_
@@ -1688,7 +1684,7 @@ WHERE Nome = "Geronimo" AND Cognome = "Lucarelli"
 ```
 
 In algebra relazionale la query diventa:
-$$\begin{align}&(Utenti)\bowtie_{ID\_Utente=ID\_Utente}(Carta)=A\\&\pi_{u.*,c.NumeroCarta,c.DataScadenza,c.CVV}(\sigma_{Nome='Geronimo',Cognome='Lucarelli'}(A))\end{align}$$
+$$\begin{align}&Utenti\bowtie_{ID\_Utente=ID\_Utente}Carta=A\\&\pi_{NumeroCarta,DataScadenza,CVV}(\sigma_{Nome='Geronimo',Cognome='Lucarelli'}(A))\end{align}$$
 
 Dove:
 
@@ -1697,6 +1693,8 @@ Dove:
 - $\bowtie$ rappresenta l'operazione di join.
 
 L'operazione di join ($\bowtie$) viene eseguita sulla condizione ID_Utente=ID_Utente, e successivamente vengono selezionate le righe in cui Nome="Geronimo" e Cognome="Lucarelli", dopodiché viene applicata la proiezione sui campi specificati.
+
+Per questioni di semplicità, abbiamo denominato con A tutta la parte del join
 
 _**Visualizza il totale dei pagamenti relativi ad un determinato giorno**_
 
@@ -1707,8 +1705,36 @@ WHERE rp.DataRichiesta = "2023-06-05"
 ```
 
 In algebra relazionale la query diventa:
+$$\begin{align}&\sigma_{DataRichiesta='2023-06-05'}(TratteCompletate\bowtie_{ID\_TrattaC=ID\_Richiesta}RichiestePrenotazioni)= A\\&\pi_{SUM(Costo)}(\rho_{TotalePagamenti\leftarrow SUM(Costo)}(A))\end{align}$$
+Per questioni di semplicità, abbiamo denominato con A tutta la parte del join
 
-$$\begin{align}&TratteCompletate\bowtie_{ID\_TrattaC=ID\_Richiesta}(\sigma_{DataRichiesta='2023-06-05'}(RichiestePrenotazioni))= A\\&\pi_{SUM(Costo)}(\rho_{TotalePagamenti\leftarrow SUM(Costo)}(A))\end{align}$$
+***Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024***
+
+```SQL
+SELECT Targa, Modello, Marca, a.DataScadenza FROM Veicoli v 
+JOIN Assicurazioni a
+ON v.ID_Assicurazione = a.ID_Assicurazione
+WHERE YEAR(a.DataScadenza) = "2024" AND MONTH(a.DataScadenza) = "02";
+```
+
+In algebra relazionale la query diventa:
+$$\begin{align}&Veicoli\bowtie_{ID\_Assicurazione=ID\_Assicurazione}(Assicurazioni)= A\\&\pi_{Targa,Modello,Marca,DataScadenza}(\sigma_{YEAR(DataScadenza)='2024',MONTH(DataScadenza)='02'}(A))\end{align}$$
+
+***Visualizza tutti gli autisti che hanno una certa categoria di patente***
+
+```SQL
+SELECT p.Nome, p.Cognome, pt.Categoria
+FROM Personale p JOIN Autisti a ON p.ID = a.ID_Autista
+JOIN Patente pt ON a.NumeroPatente = pt.NumeroPatente
+WHERE pt.Categoria = "B96"
+```
+
+In algebra relazionale diventa:
+
+$$\begin{align}
+&Personale\bowtie_{ID=ID\_Autista}Autisti\bowtie_{NumeroPatente=NumeroPatente}Patente = A\\
+&\pi_{Nome,Cognome,Categoria}(\sigma_{pt.Categoria='B96'}(A))
+\end{align}$$
 #### Calcolo Relazionale
 
 Il calcolo relazionale è un linguaggio query non procedurale ma _dichiarativo_. Invece dell’algebra, utilizza il calcolo dei predicati matematici del primo ordine in notazione logica. L’output di una query è una relazione che contiene solo tuple che soddisfano le formule logiche espresse. Il potere espressivo del calcolo relazionale è dunque equivalente a quello
