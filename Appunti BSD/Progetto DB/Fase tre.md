@@ -1629,7 +1629,7 @@ ORDER BY NumeroCarteAssociate DESC
 
 Di seguito mettere le query ottimizzate tramite index
 
-### Algebra Relazionale
+#### Algebra Relazionale
 
 L’algebra relazionale è un linguaggio query _procedurale_ in notazione algebrica. In una query, si applicano sequenzialmente le operazioni alle relazioni. Ogni operazione (unaria o binaria) riceve in input una relazione e ne produce un’altra in output.
 
@@ -1646,14 +1646,16 @@ Di seguito troviamo alcune query sul nostro database scritte in Algebra Relazion
 
 Query da fare in algebra relazionale:
 - Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024
-- Visualizza tutti i dati di un determinato utente, comprese le carte a lui associate
-- Visualizza il totale dei pagamenti relativi ad un determinato giorno
 - Visualizza tutti gli autisti che hanno una certa categoria di patente
-- Visualizza il numero totale delle assicurazioni Kasko
-- Visualizza tutte le tratte completate che non hanno un feedback
 
 
 **_Visualizza il numero totale delle assicurazioni Kasko_**
+
+```SQL
+SELECT COUNT(a.Tipo) AS TotaleKasko
+FROM Assicurazioni a
+WHERE a.Tipo = 'Kasko';
+```
 
 In algebra relazionale la query diventa
 $$\pi_{COUNT(Tipo)}​(\sigma_{Tipo='Kasko'}​(Assicurazioni))$$
@@ -1670,13 +1672,43 @@ WHERE tc.ID_TrattaC NOT IN
 ```
 
 In algebra relazionale la query diventa
-$$\pi_{tc.*}​(\sigma_{({\text{ID\_TrattaC}})}(TratteCompletate)-(\rho_{(ID\_TrattaC)}​(\pi_{(ID\_TrattaCompletata)}​(Feedback))))$$
+$$\pi_{tc.*}​(\sigma_{({\text{ID\_TrattaC}})}(TratteCompletate)-(\rho_{ID\_TrattaC\leftarrow ID\_TrattaCompletata}​(\pi_{ID\_TrattaCompletata}​(Feedback))))$$
 Dove:
 
 - $\pi_{(ID\_TrattaCompletata)}(Feedback)$ rappresenta la proiezione sulla colonna ID_TrattaCompletata della tabella Feedback
-- $\rho_{(ID\_TrattaC)}(\pi_{(ID\_TrattaCompletata)}(Feedback))$ rappresenta la rinomina della colonna ID_TrattaCompletata come ID_TrattaC
+- $\rho_{ID\_TrattaC\leftarrow ID\_TrattaCompletata}(\pi_{(ID\_TrattaCompletata)}(Feedback))$ rappresenta la rinomina della colonna ID_TrattaCompletata come ID_TrattaC
 - $(TratteCompletate-(\rho_{(ID\_TrattaC)}(\pi_{(ID\_TrattaCompletata)}(Feedback))))$ rappresenta la differenza tra tutte le tuple di TratteCompletate e le tuple corrispondenti nella sottoquery.
 
+_**Visualizza tutti i dati di un determinato utente, comprese le carte a lui associate**_
+
+```SQL
+SELECT u.*, c.NumeroCarta, c.DataScadenza, c.CVV
+FROM Utenti u JOIN Carta c ON c.ID_Utente = u.ID_Utente
+WHERE Nome = "Geronimo" AND Cognome = "Lucarelli"
+```
+
+In algebra relazionale la query diventa:
+$$\begin{align}&(Utenti)\bowtie_{ID\_Utente=ID\_Utente}(Carta)=A\\&\pi_{u.*,c.NumeroCarta,c.DataScadenza,c.CVV}(\sigma_{Nome='Geronimo',Cognome='Lucarelli'}(A))\end{align}$$
+
+Dove:
+
+- $\pi$ rappresenta l'operazione di proiezione.
+- $\sigma$ rappresenta l'operazione di selezione.
+- $\bowtie$ rappresenta l'operazione di join.
+
+L'operazione di join ($\bowtie$) viene eseguita sulla condizione ID_Utente=ID_Utente, e successivamente vengono selezionate le righe in cui Nome="Geronimo" e Cognome="Lucarelli", dopodiché viene applicata la proiezione sui campi specificati.
+
+_**Visualizza il totale dei pagamenti relativi ad un determinato giorno**_
+
+```SQL
+SELECT SUM(tc.Costo) AS TotalePagamenti FROM TratteCompletate tc
+JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
+WHERE rp.DataRichiesta = "2023-06-05"
+```
+
+In algebra relazionale la query diventa:
+
+$$\begin{align}&TratteCompletate\bowtie_{ID\_TrattaC=ID\_Richiesta}(\sigma_{DataRichiesta='2023-06-05'}(RichiestePrenotazioni))= A\\&\pi_{SUM(Costo)}(\rho_{TotalePagamenti\leftarrow SUM(Costo)}(A))\end{align}$$
 #### Calcolo Relazionale
 
 Il calcolo relazionale è un linguaggio query non procedurale ma _dichiarativo_. Invece dell’algebra, utilizza il calcolo dei predicati matematici del primo ordine in notazione logica. L’output di una query è una relazione che contiene solo tuple che soddisfano le formule logiche espresse. Il potere espressivo del calcolo relazionale è dunque equivalente a quello
@@ -1686,8 +1718,23 @@ Versioni:
 1. Calcolo relazionale sui domini
 2. _Calcolo relazionale sulle tuple con dichiarazione di range_
 
-Di seguito sono alcune query espresse tramite il calcolo relazionale sulle tuple con dichiarazione di range:
+Di seguito sono alcune query espresse tramite il _calcolo relazionale sulle tuple con dichiarazione di range_:
 
-### Views
+### Sicurezza
+
+Ovviamente in un database aziendale devono essere presenti diverse tipologie di utenti con diversi diritti, nella nostra modellizzazione della realtà, infatti, abbiamo definito quattro classi di utenti:
+- un amministratore che ha tutti i diritti
+- gli autisti e gli addetti marketing che possono aggiungere righe e fare query
+- il manutentore che può solamente fare query.
+- l'utente che può solamente fare query
+
+Inoltre, si è definito un quinto utente che ha accesso solamente a delle view in modalità lettura, questo perché non gli si vuole dare accesso alle tabelle originali per questioni di sicurezza. Ovviamente la creazione di questo ultimo utente ha il solo fine dimostrativo e non sarebbe effettivamente inserito in un progetto reale.
 
 Le view sono tabelle che non memorizzano dati, esse condividono lo stesso spazio delle tabelle originali. Spesso vengono assegnate ad altri utenti con specifici campi oscurati anche se il loro utilizzo inappropriato può portare all’inconsistenza del database.
+
+#### Views
+
+qui ci vanno le viste
+#### Creazione Utenti
+
+qua ci va la creazione di utenti fittizzi
