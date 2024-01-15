@@ -1684,7 +1684,7 @@ WHERE Nome = "Geronimo" AND Cognome = "Lucarelli"
 ```
 
 In algebra relazionale la query diventa:
-$$\begin{align}&Utenti\bowtie_{ID\_Utente=ID\_Utente}Carta=A\\&\pi_{NumeroCarta,DataScadenza,CVV}(\sigma_{Nome='Geronimo',Cognome='Lucarelli'}(A))\end{align}$$
+$$\begin{align}&Utenti\bowtie_{ID\_Utente=ID\_Utente}Carta=A\\&\sigma_{Nome='Geronimo',Cognome='Lucarelli'}(A)\end{align}$$
 
 Dove:
 
@@ -1696,7 +1696,7 @@ L'operazione di join ($\bowtie$) viene eseguita sulla condizione ID_Utente=ID_Ut
 
 Per questioni di semplicità, abbiamo denominato con A tutta la parte del join
 
-_**Visualizza il totale dei pagamenti relativi ad un determinato giorno**_
+_**Per un determinato giorno, si vuole sapere la somma dei pagamenti effettuati**_
 
 ```SQL
 SELECT SUM(tc.Costo) AS TotalePagamenti FROM TratteCompletate tc
@@ -1706,6 +1706,7 @@ WHERE rp.DataRichiesta = "2023-06-05"
 
 In algebra relazionale la query diventa:
 $$\begin{align}&\sigma_{DataRichiesta='2023-06-05'}(TratteCompletate\bowtie_{ID\_TrattaC=ID\_Richiesta}RichiestePrenotazioni)= A\\&\pi_{SUM(Costo)}(\rho_{TotalePagamenti\leftarrow SUM(Costo)}(A))\end{align}$$
+
 Per questioni di semplicità, abbiamo denominato con A tutta la parte del join
 
 ***Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024***
