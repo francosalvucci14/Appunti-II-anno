@@ -1626,8 +1626,39 @@ ORDER BY NumeroCarteAssociate DESC
 
 #### Ottimizzazione
 
-Di seguito mettere le query ottimizzate tramite index
+Di seguito abbiamo selezionato degli attributi su cui creare indici secondari per velocizzare l’esecuzione delle query.
+Ovviamente, non abbiamo creato troppi indici per una questione di costi di memoria.
+Gli indici occupano memoria e quindi abbiamo trovato un compromesso, creando indici solo per gli attributi più richiesti.
 
+**Creazione di indici in MySQL**
+
+Minor corse effettuate
+```SQL
+CREATE INDEX idx_name 
+ON Personale(Nome);
+```
+
+Stipendio più alto
+```SQL
+CREATE INDEX idx_stip 
+ON Autisti(Stipendio);
+```
+
+Almeno 3 stelle
+```SQL
+CREATE INDEX idx_ut_star
+ON Feedback(StelleUtente);
+```
+
+Utenti con almeno 10 richieste
+```SQL
+CREATE INDEX idx_ut_name
+ON Utenti(Nome);
+```
+
+Utilizzando questi indici secondari, abbiamo la versione ottimizzata di alcune delle query descritte in precedenza, che vengono eseguite sui dati casuali generati dal programma Python. Riportiamo inoltre, la frazione di miglioramento temporale delle ottimizzazioni.
+
+<u>Formula di miglioramento : 100 * (originale-nuovo) / originale</u>
 #### Algebra Relazionale
 
 L’algebra relazionale è un linguaggio query _procedurale_ in notazione algebrica. In una query, si applicano sequenzialmente le operazioni alle relazioni. Ogni operazione (unaria o binaria) riceve in input una relazione e ne produce un’altra in output.
@@ -1761,18 +1792,14 @@ $$\begin{align*}
 \end{align*}$$
 ### Sicurezza
 
-Ovviamente in un database aziendale devono essere presenti diverse tipologie di utenti con diversi diritti, nella nostra modellizzazione della realtà, infatti, abbiamo definito quattro classi di utenti:
+Ovviamente in un database aziendale devono essere presenti diverse tipologie di utenti con diversi diritti, nella nostra modellizzazione della realtà, infatti, abbiamo definito 2 classi di utenti:
 - un amministratore che ha tutti i diritti
-- gli autisti,gli addetti marketing e gli utenti che possono aggiungere righe e fare query
-- il manutentore che può solamente fare query.
+- gli autisti,gli addetti marketing e i manutentori che possono aggiungere righe e fare query
 
-Inoltre, si è definito un quarto utente che ha accesso solamente a delle view in modalità lettura, questo perché non gli si vuole dare accesso alle tabelle originali per questioni di sicurezza. Ovviamente la creazione di questo ultimo utente ha il solo fine dimostrativo e non sarebbe effettivamente inserito in un progetto reale.
+Inoltre, si è definito un terzo utente che ha accesso solamente a delle view in modalità lettura, questo perché non gli si vuole dare accesso alle tabelle originali per questioni di sicurezza. Ovviamente la creazione di questo ultimo utente ha il solo fine dimostrativo e non sarebbe effettivamente inserito in un progetto reale.
 
 Le view sono tabelle che non memorizzano dati, esse condividono lo stesso spazio delle tabelle originali. Spesso vengono assegnate ad altri utenti con specifici campi oscurati anche se il loro utilizzo inappropriato può portare all’inconsistenza del database.
-
 #### Views
-
-qui ci vanno le viste
 
  ***Visualizza tutti gli utenti che hanno almeno 2 carte associate***
 
@@ -1813,4 +1840,26 @@ CREATE VIEW NumeroFeedbackTreStelle AS
 
 #### Creazione Utenti
 
-qua ci va la creazione di utenti fittizzi
+Poiché il progetto rappresenta una realtà aziendale di una società, abbiamo creato 3 classi di utenti in ordine decrescente di grado di privilegi. Un amministratore è colui che gestisce il database e quindi ha tutti i diritti. Il personale ha il diritto di inserire nuove tuple e di effettuare query ai fini lavorativi. Gli utenti sono autorizzati ad effettuare query e inserire nuove tuple, in quanto usufruiscono del database solo ai fini di prenotare le corse.
+Infine, abbiamo creato anche un generico utente autorizzato solo ad interrogare le view esistenti.
+
+1. **Amministratore**: ha tutti i diritti
+```SQL
+CREATE USER 'administrator'@'localhost' IDENTIFIED BY 'adminpassword';
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'administrator'@'localhost';
+GRANT ALL ON VroomA.* TO 'administrator'@'localhost';
+```
+2. **Personale**:  Può fare query e inserire tuple
+```SQL
+CREATE USER 'personale'@'localhost' IDENTIFIED BY 'perspassword';
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'personale'@'localhost';
+GRANT SELECT ON VroomA.* TO 'personale'@'localhost';
+GRANT INSERT ON VroomA.* TO 'personale'@'localhost';
+```
+3. Creazione di un utente che ha il solo diritto di eseguire le view sopra scritte
+```SQL
+CREATE USER 'lfn'@'localhost' IDENTIFIED BY 'lfnpassword';
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'lfn'@'localhost';
+GRANT SELECT ON CartePerUtente TO 'lfn'@'localhost';
+GRANT SELECT ON NumeroFeedbackTreStelle TO 'lfn'@'localhost';
+```
