@@ -131,11 +131,11 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
 Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono scritte in stile _Italic_
 
-- Personale (**ID_Personale**, Nome, Cognome, NumeroTelefono, Email)
+- Personale (**ID_Personale**, Nome, Cognome, NumeroTelefono, Email,DDN)
 - Autisti (**ID_Autista**, Stipendio, _NumeroPatente_, _Targa_, _ID_Turno_)
 - Manutentori (**ID_Manutentore**, Qualifica)
 - Addetti Marketing (**ID_Addetto**, Ruolo)
-- ContattaPerGuasto (_ID_Manutentore_, _ID_Autista_)
+- ContattaPerGuasto (_ID_Manutentore_, _ID_Autista_,Motivo)
 - Patente (**NumeroPatente**, DDS, Categoria)
 - Turni (**ID_Turno**, OrarioInizio, OrarioFine)
 - Veicoli (**Targa**, Marca, Modello, PostiDisponibili, _ID_Assicurazione_)
@@ -1773,6 +1773,44 @@ Le view sono tabelle che non memorizzano dati, esse condividono lo stesso spazio
 #### Views
 
 qui ci vanno le viste
+
+ ***Visualizza tutti gli utenti che hanno almeno 2 carte associate***
+
+```SQL
+CREATE VIEW CartePerUtente AS 
+(
+	SELECT u.ID_Utente, u.Nome, u.Cognome, COUNT(*) AS NumeroCarteAssociate
+	FROM Utenti u JOIN Carta c ON c.ID_Utente = u.ID_Utente
+	GROUP BY u.ID_Utente, u.Nome, u.Cognome
+	HAVING NumeroCarteAssociate > 2
+	ORDER BY NumeroCarteAssociate DESC
+)
+```
+
+![[view1.png|center]]
+
+![[risView1.png|center|450]]
+
+
+***Visualizza il numero di feeback con almeno 3 stelle lasciati da ogni utente***
+
+```SQL
+CREATE VIEW NumeroFeedbackTreStelle AS 
+(
+	SELECT u.Nome,u.Cognome, COUNT(*) AS NumeroFeedback3Stelle
+	FROM Feedback f JOIN TratteCompletate tc ON f.ID_TrattaCompletata = tc.ID_TrattaC
+	JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
+	JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
+	WHERE f.StelleUtente >= 3
+	GROUP BY u.Nome,u.Cognome
+	ORDER BY NumeroFeedback3Stelle DESC
+)
+```
+
+![[view2.png|center]]
+
+![[risView2.png|center|450]]
+
 #### Creazione Utenti
 
 qua ci va la creazione di utenti fittizzi
