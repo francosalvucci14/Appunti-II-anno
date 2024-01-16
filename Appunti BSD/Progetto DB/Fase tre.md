@@ -164,7 +164,7 @@ Abbiamo distinto le frecce che vanno dalle entità figlie a quelle padre mettend
 
 Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, mentre quelle primarie sono identificate con il pallino nero.
 
-![[Schema-Fisico.jpg|center]]
+![[Schema-Fisico.jpg]]
 
 #### Generalizzazione
 
