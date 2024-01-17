@@ -1631,7 +1631,6 @@ Gli indici occupano memoria e quindi abbiamo trovato un compromesso, creando ind
 
 **Creazione di indici in MySQL**
 
-Minor corse effettuate
 ```SQL
 CREATE INDEX idx_name 
 ON Personale(Nome);
@@ -1865,34 +1864,34 @@ Di seguito sono alcune query espresse tramite il _calcolo relazionale sulle tupl
 
 **_Visualizza tutte le tratte completate che non hanno un feedback_**
 
-$$\begin{align}&p = \text{tc.ID\_TrattaCompletata}\in{\text{tc}}\:\land\:\text{tc.ID\_TrattaCompletata}\not\in\text{f}\\&\{\text{tc.*}\:|\:\text{tc(TratteCompletate),f(Feedback)}\:|\:p \}\end{align}$$
+$$\begin{align}&\text{p} = \text{tc.ID\_TrattaCompletata}\in{\text{tc}}\:\land\:\text{tc.ID\_TrattaCompletata}\not\in\text{f}\\&\{\text{tc.*}\:|\:\text{tc(TratteCompletate),f(Feedback)}\:|\:\text{p} \}\end{align}$$
 
 _**Visualizza tutti i dati di un determinato utente, comprese le carte a lui associate**_
 
-$$\begin{align}&p=\{(\text{u.Nome='Geronimo'}\land\text{u.Cognome='Lucarelli')}\land(\text{c.ID\_Utente=u.ID\_Utente})\}\\&\{\text{u.*,c.(NumeroCarta,DataScadenza,CVV)}|\text{u(Utenti),c(Carta)}|\:p\}\end{align}$$
+$$\begin{align}&\text{p}=\{(\text{u.Nome='Geronimo'}\land\text{u.Cognome='Lucarelli')}\land(\text{c.ID\_Utente=u.ID\_Utente})\}\\&\{\text{u.*,c.(NumeroCarta,DataScadenza,CVV)}|\text{u(Utenti),c(Carta)}|\:\text{p}\}\end{align}$$
 
 ***Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024***
 
 $$\begin{align*}
-&p = \{\text{(a.DataScadenza} <\text{'2024-01-02')}\land(\text{v.ID\_Assicurazione=a.ID\_Assicurazione})\}\\
+&\text{p} = \{\text{(a.DataScadenza} <\text{'2024-01-02')}\land(\text{v.ID\_Assicurazione=a.ID\_Assicurazione})\}\\
 &\{\text{v.(Targa,Modello,Marca),a.(DataScadenza) | v(Veicoli),a(Assicurazione) | p} \}
 \end{align*}$$
 
 ***Visualizza tutti gli autisti che hanno una certa categoria di patente***
 
 $$\begin{align*}
-&p = \{\text{(pt.Categoria='B96'}\land(\text{p.ID=a.ID\_Autista})\land\text{a.NumeroPat = p.NumeroPat}\}\\
+&\text{p} = \{\text{(pt.Categoria='B96'}\land(\text{p.ID=a.ID\_Autista})\land\text{a.NumeroPat = p.NumeroPat}\}\\
 &\{\text{p.(Nome,Cognome),pt.(Categoria) | p(Personale), pt(Patenti), a(Autisiti) | p} \}
 \end{align*}$$
 
 ***Trova tutti gli autisti che non hanno mai effettuato una richiesta di manutenzione***
 
-$$\begin{align}&p = \{\text{a.ID\_Autista}\in{\text{a}}\:\land\:\text{a.ID\_Autista}\not\in\text{cpg}\}\\&\{\text{a.*}\:|\:\text{a(Autista), cpg(ContattaPerGuasto)}\:|\:p \}\end{align}$$
+$$\begin{align}&\text{p} = \{\text{a.ID\_Autista}\in{\text{a}}\:\land\:\text{a.ID\_Autista}\not\in\text{cpg}\}\\&\{\text{a.*}\:|\:\text{a(Autista), cpg(ContattaPerGuasto)}\:|\:\text{p} \}\end{align}$$
 
 ***Visualizza le tratte completate con un certo tipo di veicolo***
 
 $$\begin{align*}
-&p = \{(\text{tc.ID\_TrattaC=rp.ID\_Richiesta})\land(\text{a.Id\_Aut = rp.Id\_Aut})\land(\text{a.Targa = v.Targa})\\&\land\text{v.Marca = 'Seat'}\}\\
+&\text{p} = \{(\text{tc.ID\_TrattaC=rp.ID\_Richiesta})\land(\text{a.Id\_Aut = rp.Id\_Aut})\land(\text{a.Targa = v.Targa})\\&\land\text{v.Marca = 'Seat'}\}\\
 &\{\text{tc.*, v(Marca), a.(Id\_Aut) | tc.(TratCompl), v(Veicoli), a(Autisti), rp(RichPren) | p} \}
 \end{align*}$$
 ### Sicurezza
@@ -1945,7 +1944,7 @@ CREATE VIEW NumeroFeedbackTreStelle AS
 
 #### Creazione Utenti
 
-Poiché il progetto rappresenta una realtà aziendale di una società, abbiamo creato 3 classi di utenti in ordine decrescente di grado di privilegi. Un amministratore è colui che gestisce il database e quindi ha tutti i diritti. Il personale ha il diritto di inserire nuove tuple e di effettuare query ai fini lavorativi. Gli utenti sono autorizzati ad effettuare query e inserire nuove tuple, in quanto usufruiscono del database solo ai fini di prenotare le corse.
+Poiché il progetto rappresenta una realtà aziendale di una società, abbiamo creato 3 classi di utenti in ordine decrescente di grado di privilegi. Un amministratore è colui che gestisce il database e quindi ha tutti i diritti. Il personale ha il diritto di inserire nuove tuple e di effettuare query ai fini lavorativi.
 Infine, abbiamo creato anche un generico utente autorizzato solo ad interrogare le view esistenti.
 
 1. **Amministratore**: ha tutti i diritti
