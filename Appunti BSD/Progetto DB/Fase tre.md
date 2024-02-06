@@ -109,7 +109,7 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | UtentePossiedeCarta | Relazione che dice che ogni utente deve possedere almeno una carta con cui effettuare i pagamenti | Utenti (1,N), Carta (1,1) |
 | EffettuaPrenotazione | Relazione che dice che ogni utente effettua una o più prenotazioni | Utenti (1,N), Richiesta Prenotazioni (1,1) |
 | TrattaAvereFeedback | Relazione che dice che ogni tratta completata può avere (non necessariamente) un solo feedback, che viene lasciato dagli utenti e dagli autisti | Tratte Completate (0,1), Feedback (1,1) |
-| AutistaAvereTurni | Ogni autista ha un proprio turno lavorativo, ad ogni turno lavorativo vengono assegnati uno o più autisti | Autisti (1,N), Turni (1,N) |
+| TabellaOrarioLavorativo | Ogni autista ha un proprio turno lavorativo, ad ogni turno lavorativo vengono assegnati uno o più autisti | Autisti (1,N), Turni (1,N) |
 ## Schemi
 
 ### Schema Concettuale
