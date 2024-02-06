@@ -51,8 +51,8 @@ Le tipologie di **veicolo** disponibili sono le seguenti:
 Ogni **veicolo**, identificato in modo univoco dalla targa, per poter circolare, deve essere assicurato.
 
 Quando si prenota una **corsa** (**tratta**) si possono scegliere due punti:
-- Punto di Partenza, identificato come Punto di raccolta
-- Punto di Arrivo, identificato come Punto di rilascio
+- Partenza
+- Arrivo
 
 Ogni **prenotazione** può essere accettata o rifiutata in base a determinate esigenze dell'**utente** (Es: prenotazione effettuata per errore) e dell'**autista** (Es: indisponibilità al servizio).
 Ad ogni tratta completata è associato un feedback che può essere lasciato sia dall'**utente** che dall'**autista**.
@@ -72,12 +72,12 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | Autisti                | Personale che svolge il ruolo di autista delle auto nella società | **ID_Autista**, Stipendio                                                                                   | Patente, Manutentori, Veicoli,  Richiesta Prenotazione,  Feedback,Turni |
 | Veicoli                | Auto utilizzate per il servizio di taxi                           | **Targa**, Marca, Modello, Posti disponibili                                                                | Autisti, Assicurazione                                             |
 | Turni                  | Turni lavorativi che riguardano gli autisti                       | **ID_Turno**, Orario inizio, Orario fine                                                                    | Autisti                                                            |
-| Richiesta Prenotazione | Richieste di prenotazioni effettuate da parte dall'utente         | **ID_Richiesta**, Punto di raccolta, Punto di rilascio, Data richiesta, Orario richiesta, Numero Passeggeri | Autisti, Utenti, Tratte Complete, Tratte Rifiutate                 |
+| Richiesta Prenotazione | Richieste di prenotazioni effettuate da parte dall'utente         | **Partenza, Arrivo, Data richiesta, Orario richiesta**, Numero Passeggeri | Autisti, Utenti, Tratte Complete, Tratte Rifiutate                 |
 | Utenti                 | Utenti utilizzatori del servizio taxi                             | **ID_Utente**, Nome, Cognome, Email, Password                                                               | Carta, Richiesta Prenotazione, Feedback, Tratte completate         |
 | Feedback               | Recensioni lasciate dall'utente e dagli autisti                   | **ID_Feedback**, StelleUtente, CommentoUtente,StelleAutista, CommentoAutista                                | Tratte Completate, Utenti, Autisti                                 |
-| Tratte Completate      | Corse effettuate portate a termine con successo                   | **ID_TrattaC**, Costo                                                                                       | Richiesta Prenotazione, Feedback, Carta, Utenti                    |
-| Tratte Rifiutate       | Corse rifiutate da parte dell'autista per determinati motivi      | **ID_TrattaR**, Motivazione                                                                                 | Richiesta Prenotazione                                             |
-| Carta                  | Carta di credito personale dell'utente                            | **Numero Carta**, Data di Scadenza, CVV                                                                     | Utenti, Tratte completate                                          |
+| Tratte Completate      | Corse effettuate portate a termine con successo                   | Costo                                                                                       | Richiesta Prenotazione, Feedback, Carta, Utenti                    |
+| Tratte Rifiutate       | Corse rifiutate da parte dell'autista per determinati motivi      | Motivazione                                                                                 | Richiesta Prenotazione                                             |
+| Carta                  | Carta di credito personale dell'utente                            | **Numero Carta**                                                                     | Utenti, Tratte completate                                          |
 | Assicurazioni          | Dati dell'assicurazione associata al singolo veicolo              | **ID_Asscurazione**, Data di scadenza, Tipo                                                                 | Veicoli                                                            |
 
 ### Glossario dei termini
