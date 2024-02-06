@@ -119,14 +119,14 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
 #### Normalizzazione
 
-Di seguito si discutono le forme normali dello schema logico:
+Di seguito si discutono le forme normali dello schema concettuale:
 
 - **1NF**: tutti gli schemi di relazione nello schema logico sopra riportato sono in **1NF**, poiché tutti gli attributi sono semplici, ovvero contengono soltanto valori atomici indivisibili.
 - **2NF**: tutti gli schemi di relazione dello schema logico sono anche già in **2NF**, poiché sono già in **1NF** e nessun attributo presenta alcuna dipendenza parziale. Tutti gli attributi dipendono funzionalmente solo dalla chiave primaria della stessa tabella.
 - **3NF**: tutti gli schemi di relazione sono anche in **3NF** perché già in **2NF**, ed inoltre, tutti gli attributi delle tabelle dipendono funzionalmente e direttamente dalla chiave primaria, senza transitività.
 #### Generalizzazione
 
-Una generalizzazione rappresenta un legame logico tra un’entità genitore e una o più entità figlie, in questo caso l'entità genitore è "Richiesta Prenotazione", ognuna con le rispettive entità figlie, che sono:
+Una generalizzazione rappresenta un legame logico tra un’entità genitore e una o più entità figlie, in questo caso l'entità genitore è "Richiesta Prenotazione", e le entità figlie sono:
 
 1) **Richiesta prenotazione**
 	1) Tratte completate
