@@ -76,11 +76,10 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | Richiesta Prenotazione | Richieste di prenotazioni effettuate da parte dall'utente | **Partenza, Arrivo, Data richiesta, Orario richiesta**, Numero Passeggeri | Utenti, Tratte Complete, Tratte Rifiutate |
 | Utenti | Utenti utilizzatori del servizio taxi | **ID_Utente**, Nome, Cognome, Email, Password | Carta, Richiesta Prenotazione, Feedback, Tratte completate |
 | Feedback | Recensioni lasciate dall'utente e dagli autisti | **ID_Feedback**, StelleUtente, CommentoUtente,StelleAutista, CommentoAutista | Tratte Completate, Utenti, Autisti |
-| Tratte Completate | Corse effettuate portate a termine con successo | Costo | Richiesta Prenotazione, Feedback,Autisti |
+| Tratte Completate | Corse effettuate portate a termine con successo | Costo, MetodoDiPagamento | Richiesta Prenotazione, Feedback,Autisti |
 | Tratte Rifiutate | Corse rifiutate da parte dell'autista per determinati motivi | Motivazione | Richiesta Prenotazione, Autisti |
 | Carta | Carta di credito personale dell'utente | **Numero Carta** | Utenti |
 | Assicurazioni | Dati dell'assicurazione associata al singolo veicolo | **ID_Asscurazione**, Data di scadenza, Tipo | Veicoli |
-
 ### Glossario dei termini
 
 | Entità                 | Descrizione                                                       | Sinonimi                  |
@@ -147,7 +146,7 @@ Abbiamo distinto le frecce che vanno dalle entità figlie a quelle padre mettend
 
 Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, mentre quelle primarie sono identificate con il pallino nero.
 
-##### Schema Concettuale ristrutturato
+#### Schema Finale
 
 ![[Schema-Fisico.jpg]]
 
@@ -165,7 +164,7 @@ Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondar
 - Utenti (**ID_Utente**, Nome, Cognome, Email, Password)
 - Carta (**NumeroCarta**, _ID_Utente_)
 - Richiesta Prenotazione (**_ID_Utente_,Partenza,Arrivo,DataRichiesta,OrarioRichiesta**, NumeroPasseggeri,_ID_Autista_)
-- Tratte Complete (_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_, Costo)
+- Tratte Complete (_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_, Costo,MetodoDiPagamento)
 - Tratte Rifiutate (_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_, Motivazione)
 - Feedback (**ID_Feedback**, StelleUtente, CommentoUtente,StelleAutista, CommentoAutista, _ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_)
 ### Schema Fisico
