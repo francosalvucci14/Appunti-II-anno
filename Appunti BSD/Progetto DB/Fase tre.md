@@ -31,11 +31,9 @@ Da un punto di vista societario, gli obiettivi sono quelli di valutare la qualit
 ### Analisi dei requisiti
 
 I **ruoli aziendali** sono i seguenti:
-- Addetti Marketing
+
 - Autisti
 - Manutentori
-
-Gli **addetti al marketing** possono inserire, previa autorizzazione da parte degli amministratori della società, delle **promo** che prevedono sconti sulle corse per gli utenti del sistema.
 
 Gli **autisti** potranno scegliere se accettare o rifiutare la corsa, specificando in questo caso la motivazione del rifiuto.
 Inoltre potranno lasciare un **feedback** all'utente riguardo il comportamento prima e durante la corsa.
@@ -59,8 +57,7 @@ Quando si prenota una **corsa** (**tratta**) si possono scegliere due punti:
 Ogni **prenotazione** può essere accettata o rifiutata in base a determinate esigenze dell'**utente** (Es: prenotazione effettuata per errore) e dell'**autista** (Es: indisponibilità al servizio).
 Ad ogni tratta completata è associato un feedback che può essere lasciato sia dall'**utente** che dall'**autista**.
 
-Ogni **utente** ha diritto a ricevere **offerte** da poter usare al momento della prenotazione.
-Può effettuare illimitate richieste di **prenotazione**, in base alle necessità personali (numero di passeggeri, persone con disabilità, punto di ritiro, punto di rilascio), con il vincolo di una corsa per volta.
+Ogni **utente** può effettuare illimitate richieste di **prenotazione**, in base alle necessità personali (numero di passeggeri, persone con disabilità, punto di ritiro, punto di rilascio), con il vincolo di una corsa per volta.
 A corsa completata l'**utente** può lasciare un **feedback** con un numero di stelle (da 1 a 5) e un commento.
 Ogni **utente** deve aggiungere una **carta** con cui effettuare il pagamento relativo alla tratta effettuata, in un secondo momento potrà aggiungere altri metodi di pagamento secondo le proprie esigenze.
 Ogni **utente** può aggiungere alla lista dei preferiti ua qualunque delle tratte effettuate da lui, scegliendo se aggiungere solo la tratta o anche l'autista.
@@ -69,10 +66,8 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 ### Glossario delle entità
 
 | Entità | Descrizione | Attributi | Relazioni Coinvolte |
-| ---------------------- | ----------------------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------- |
-| Personale | Membri totali della società | **ID**, Nome, Cognome, DDN, Numero di Telefono, Email | Addetti Marketing, Manutentori, Autisti |
+| ---- | ---- | ---- | ---- |
 | Patente | Descrive tutte le info riguardanti la patente degli autisti | **Numero Patente**, DDS, Categoria | Autisti |
-| Offerte | Serie di offerte che vengono proposte al singolo utente | **ID_Offerta**, Promo Code, Info Offerta, | Utenti, Addetti Marketing |
 | Manutentori | Addetti alla manutenzione delle auto degli autisti | **ID_Manutentore**, Qualifica | Personale, Autisti |
 | Autisti | Personale che svolge il ruolo di autista delle auto nella società | **ID_Autista**, Stipendio | Patente, Manutentori, Veicoli, Turni, Richiesta Prenotazione, Personale, Feedback |
 | Veicoli | Auto utilizzate per il servizio di taxi | **Targa**, Marca, Modello, Posti disponibili | Autisti, Assicurazione |
@@ -84,15 +79,12 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | Tratte Rifiutate | Corse rifiutate da parte dell'autista per determinati motivi | **ID_TrattaR**, Motivazione | Richiesta Prenotazione |
 | Carta | Carta di credito personale dell'utente | **Numero Carta**, Data di Scadenza, CVV | Utenti, Tratte completate |
 | Assicurazioni | Dati dell'assicurazione associata al singolo veicolo | **ID_Asscurazione**, Data di scadenza, Tipo | Veicoli |
-| Addetti Marketing | Personale addetto al reparto marketing della società | **ID_Addetto**, Ruolo | Offerte, Personale |
 
 ### Glossario dei termini
 
 | Entità | Descrizione | Sinonimi |
 | ---- | ---- | ---- |
-| Personale | Membri totali della società | Organigramma |
 | Patente | Descrive tutte le info riguardanti la patente degli autisti | Licenza di Guida |
-| Offerte | Serie di offerte che vengono proposte al singolo utente | Promozioni |
 | Manutentori | Addetti alla manutenzione delle auto degli autisti | Meccanici, Operai |
 | Autisti | Personale che svolge il ruolo di autista delle auto nella società | Driver |
 | Veicoli | Auto utilizzate per il servizio di taxi | Automobili |
@@ -104,8 +96,6 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | Tratte Rifiutate | Corse rifiutate da parte dell'autista per determinati motivi | Corse Annullate |
 | Carta | Carta di credito personale dell'utente | Metodo di pagamento |
 | Assicurazioni | Dati dell'assicurazione associata al singolo veicolo | RCA, Polizza assicurativa |
-| Addetti Marketing | Personale addetto al reparto marketing della società | Advertiser |
-
 ### Glossario delle relazioni
 
 | Relazione | Descrizione | Entità |
@@ -114,40 +104,15 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 | AutistaGuidaVeicolo | Relazione che dice che ogni autista guida la propria autovettura | Autisti (1,1), Veicoli (1,1) |
 | AutistaPossiedePatente | Relazione che dice che ogni autista, per poter guidare, necessita di una patente | Autisti (1,1), Patente (1,1) |
 | ContattaPerGuasto | Relazione che dice che ogni autista può (non necessariamente) contattare un manutentore per un guasto al veicolo | Autisti (0,N), Manutentori (0,N) |
-| AutistaLasciaFeedback | Relazione che dice che ogni autista può lasciare uno o più feedback relativio a tutti gli aspetti della corsa effettuata | Autisti (1,N), Feedback (1,1) |
-| AssegantoA | Relazione che dice che ogni autista viene assegnato ad una richiesta di prenotazione, in base a determinate circostanze | Autisti (1,1), Richiesta Prenotazione (1,1) |
-| AggiungeOfferta | Relazione che dice che un addetto marketing può aggiungere una o più offerte per gli utenti | Addetti Marketing (1,N), Offerte (1,1) |
-| UtenteHaOfferta | Relazione che dice che ogni utente può avere (non necessariamente) una o più offerte attive | Utenti (1,1), Offerte (1,N) |
+| AutistaAccettaCorsa | Relazione che dice che ogni autista accetta la richiesta di prenotazione | Autisti (1,N), TratteCompletate (1,1) |
+| AutistaRifiutaCorsa | Relazione che dice che l'autista rifiuta la corsa, in base a determinate circostanze | Autisti (1,N), TratteRifiutate (1,1) |
 | UtentePossiedeCarta | Relazione che dice che ogni utente deve possedere almeno una carta con cui effettuare i pagamenti | Utenti (1,N), Carta (1,1) |
 | EffettuaPrenotazione | Relazione che dice che ogni utente effettua una o più prenotazioni | Utenti (1,N), Richiesta Prenotazioni (1,1) |
-| UtenteLasciaFeedback | Relazione che dice che ogni utente può lasciare uno o più feedback relativi alle corse da lui effettuate | Utenti (1,N), Feedback (1,1) |
-| CartaPagaTratta | Relazione che dice che ogni utente, tramite la propria carta, deve pagare le tratte da lui effettuate | Carta (1,N), Tratte Completate (1,1) |
 | TrattaAvereFeedback | Relazione che dice che ogni tratta completata può avere (non necessariamente) un solo feedback, che viene lasciato dagli utenti e dagli autisti | Tratte Completate (0,1), Feedback (1,1) |
-| AutistaAvereTurni | Ogni autista ha un proprio turno lavorativo, ad ogni turno lavorativo vengono assegnati uno o più autisti | Autisti (1,1), Turni (1,N) |
-
+| AutistaAvereTurni | Ogni autista ha un proprio turno lavorativo, ad ogni turno lavorativo vengono assegnati uno o più autisti | Autisti (1,N), Turni (1,N) |
 ## Schemi
 
-### Schemi di relazione
-
-Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono scritte in stile _Italic_
-
-- Personale (**ID_Personale**, Nome, Cognome, NumeroTelefono, Email,DDN)
-- Autisti (**ID_Autista**, Stipendio, _NumeroPatente_, _Targa_, _ID_Turno_)
-- Manutentori (**ID_Manutentore**, Qualifica)
-- Addetti Marketing (**ID_Addetto**, Ruolo)
-- ContattaPerGuasto (_ID_Manutentore_, _ID_Autista_,Motivo)
-- Patente (**NumeroPatente**, DDS, Categoria)
-- Turni (**ID_Turno**, OrarioInizio, OrarioFine)
-- Veicoli (**Targa**, Marca, Modello, PostiDisponibili, _ID_Assicurazione_)
-- Assicurazioni (**ID_Assicurazione**, DataDiScadenza, Tipo)
-- Offerte (**ID_Offerta**, PromoCode, InfoOfferta, _ID_Addetto_)
-- Utenti (**ID_Utente**, Nome, Cognome, Email, PSW, _ID_Offerta_)
-- Carta (**NumeroCarta**, DataScadenza, CVV, _ID_Utente_)
-- Richiesta Prenotazione (**ID_Richiesta**, DataRichiesta, OrarioRichiesta, NumeroPasseggeri, PuntoRaccolta, PuntoRilascio, _ID_Utente_, _ID_Autista_)
-- Tratte Complete (**ID_Tratta**, Costo, _NumeroCarta_)
-- Tratte Rifiutate (**ID_Tratta**, Motivazione)
-- Feedback (**ID_Feedback**, StelleUtente, CommentoUtente,StelleAutista, CommentoAutista, _ID_TrattaCompletata_)
-### Schema Logico
+### Schema Concettuale
 
 ![[Schema-Logico.jpg|center]]
 
@@ -158,26 +123,13 @@ Di seguito si discutono le forme normali dello schema logico:
 - **1NF**: tutti gli schemi di relazione nello schema logico sopra riportato sono in **1NF**, poiché tutti gli attributi sono semplici, ovvero contengono soltanto valori atomici indivisibili.
 - **2NF**: tutti gli schemi di relazione dello schema logico sono anche già in **2NF**, poiché sono già in **1NF** e nessun attributo presenta alcuna dipendenza parziale. Tutti gli attributi dipendono funzionalmente solo dalla chiave primaria della stessa tabella.
 - **3NF**: tutti gli schemi di relazione sono anche in **3NF** perché già in **2NF**, ed inoltre, tutti gli attributi delle tabelle dipendono funzionalmente e direttamente dalla chiave primaria, senza transitività.
-### Schema Fisico
-
-Abbiamo distinto le frecce che vanno dalle entità figlie a quelle padre mettendole in blu.
-
-Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, mentre quelle primarie sono identificate con il pallino nero.
-
-![[Schema-Fisico.jpg]]
-
 #### Generalizzazione
 
-Una generalizzazione rappresenta un legame logico tra un’entità genitore e una o più entità figlie, in questo caso le entità genitore sono “Personale” e "Richiesta Prenotazione", ognuna con le rispettive entità figlie, che sono:
+Una generalizzazione rappresenta un legame logico tra un’entità genitore e una o più entità figlie, in questo caso l'entità genitore è "Richiesta Prenotazione", ognuna con le rispettive entità figlie, che sono:
 
-1) **Personale**
-	1) Autisti
-	2) Addetti Marketing
-	3) Manutentori
-2) **Richiesta prenotazione**
+1) **Richiesta prenotazione**
 	1) Tratte completate
 	2) Tratte rifiutate
-
 
 Abbiamo tre metodi per rappresentare una generalizzazione a livello fisico:
 
@@ -187,8 +139,36 @@ Abbiamo tre metodi per rappresentare una generalizzazione a livello fisico:
 
 Tra questi metodi abbiamo scelto il terzo in quanto da noi considerato il più adeguato. Infatti, il primo metodo avrebbe portato ad una ridondanza di relazioni.
 
-Il secondo metodo necessita dell’aggiunta di un attributo nelle entità "Personale" e "Richiesta Prenotazioni", con il compito di specificare il ruolo del lavoratore (Es. Autisti = 1, Manutentori = 2, etc..), e il tipo di prenotazione (Es. Completata = 1 e Rifiutata = 2), in più si sarebbe dovuto scegliere se perdere informazioni (attributi) dei figli o inserire le informazioni nel padre, quindi aggiungere attributi dei figli al padre. La seconda scelta avrebbe portato ad una quantità non indifferente di valori NULL.
+Il secondo metodo necessita dell’aggiunta di un attributo nell' entità "Richiesta Prenotazioni", ovvero il tipo di prenotazione (Es. Completata = 1 e Rifiutata = 2), in più si sarebbe dovuto scegliere se perdere informazioni (attributi) dei figli o inserire le informazioni nel padre, quindi aggiungere attributi dei figli al padre. La seconda scelta avrebbe portato ad una quantità non indifferente di valori NULL.
 
+Abbiamo distinto le frecce che vanno dalle entità figlie a quelle padre mettendole in blu.
+
+Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, mentre quelle primarie sono identificate con il pallino nero.
+
+##### Schema Concettuale ristrutturato
+
+![[Schema-Fisico.jpg]]
+
+### Schema Logico
+
+Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono scritte in stile _Italic_
+
+- Autisti (**NumeroPatente**,Stipendio , _Targa_)
+- Manutentori (**ID_Manutentore**, Qualifica)
+- ContattaPerGuasto (**_ID_Manutentore_, _ID_Autista_**,Motivo)
+- Turni (**ID_Turno**, OrarioInizio, OrarioFine)
+- TabellaOrarioLavorativo (**_ID_Autista_,_ID_Turno_**,Data)
+- Veicoli (**Targa**, Marca, Modello, PostiDisponibili, _ID_Assicurazione_)
+- Assicurazioni (**ID_Assicurazione**, DataDiScadenza, Tipo)
+- Utenti (**ID_Utente**, Nome, Cognome, Email, Password)
+- Carta (**NumeroCarta**, _ID_Utente_)
+- Richiesta Prenotazione (**_ID_Utente_,Partenza,Arrivo,DataRichiesta,OrarioRichiesta**, NumeroPasseggeri,_ID_Autista_)
+- Tratte Complete (_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_, Costo)
+- Tratte Rifiutate (_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_, Motivazione)
+- Feedback (**ID_Feedback**, StelleUtente, CommentoUtente,StelleAutista, CommentoAutista, _ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_)
+### Schema Fisico
+
+Aggiungere schema fisico
 ## Implementazione Database - MySQL
 ### Creazione delle tabelle
 

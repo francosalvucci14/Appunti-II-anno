@@ -18,16 +18,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "fd907649407a700e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Appunti BSD/Progetto DB/Risultati Query/tempoEsecQueryConIndex3.png"
-              }
-            }
           }
         ]
       }
@@ -175,7 +165,7 @@
       "obsidian-matrix:Obsidian Matrix": false
     }
   },
-  "active": "195b83bf8ca7a0a9",
+  "active": "fba2f3ac94d912f1",
   "lastOpenFiles": [
     "Appunti BSD/Progetto DB/Risultati Query/tempoEsecQUeryConIndex4.png",
     "Appunti BSD/Progetto DB/Fase tre.md",
