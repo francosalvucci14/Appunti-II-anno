@@ -65,37 +65,39 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
 ### Glossario delle entità
 
-| Entità                 | Descrizione                                                       | Attributi                                                                                                   | Relazioni Coinvolte                                                |
-| ---------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Patente                | Descrive tutte le info riguardanti la patente degli autisti       | **Numero Patente**, DDS, Categoria                                                                          | Autisti                                                            |
-| Manutentori            | Addetti alla manutenzione delle auto degli autisti                | **ID_Manutentore**, Qualifica                                                                               | Autisti                                                 |
-| Autisti                | Personale che svolge il ruolo di autista delle auto nella società | **ID_Autista**, Stipendio                                                                                   | Patente, Manutentori, Veicoli,  Richiesta Prenotazione,  Feedback,Turni |
-| Veicoli                | Auto utilizzate per il servizio di taxi                           | **Targa**, Marca, Modello, Posti disponibili                                                                | Autisti, Assicurazione                                             |
-| Turni                  | Turni lavorativi che riguardano gli autisti                       | **ID_Turno**, Orario inizio, Orario fine                                                                    | Autisti                                                            |
-| Richiesta Prenotazione | Richieste di prenotazioni effettuate da parte dall'utente         | **Partenza, Arrivo, Data richiesta, Orario richiesta**, Numero Passeggeri | Autisti, Utenti, Tratte Complete, Tratte Rifiutate                 |
-| Utenti                 | Utenti utilizzatori del servizio taxi                             | **ID_Utente**, Nome, Cognome, Email, Password                                                               | Carta, Richiesta Prenotazione, Feedback, Tratte completate         |
-| Feedback               | Recensioni lasciate dall'utente e dagli autisti                   | **ID_Feedback**, StelleUtente, CommentoUtente,StelleAutista, CommentoAutista                                | Tratte Completate, Utenti, Autisti                                 |
-| Tratte Completate      | Corse effettuate portate a termine con successo                   | Costo                                                                                       | Richiesta Prenotazione, Feedback, Carta, Utenti                    |
-| Tratte Rifiutate       | Corse rifiutate da parte dell'autista per determinati motivi      | Motivazione                                                                                 | Richiesta Prenotazione                                             |
-| Carta                  | Carta di credito personale dell'utente                            | **Numero Carta**                                                                     | Utenti, Tratte completate                                          |
-| Assicurazioni          | Dati dell'assicurazione associata al singolo veicolo              | **ID_Asscurazione**, Data di scadenza, Tipo                                                                 | Veicoli                                                            |
+| Entità | Descrizione | Attributi | Relazioni Coinvolte |
+| ---- | ---- | ---- | ---- |
+| Patente | Descrive tutte le info riguardanti la patente degli autisti | **Numero Patente**, DDS, Categoria | Autisti |
+| Manutentori | Addetti alla manutenzione delle auto degli autisti | **ID_Manutentore**, Qualifica | Autisti |
+| Autisti | Personale che svolge il ruolo di autista delle auto nella società | **ID_Autista**, Stipendio | Patente, Manutentori, Veicoli,  Richiesta Prenotazione,  Feedback,Turni |
+| Veicoli | Auto utilizzate per il servizio di taxi | **Targa**, Marca, Modello, Posti disponibili | Autisti, Assicurazione |
+| Turni | Turni lavorativi che riguardano gli autisti | **ID_Turno**, Orario inizio, Orario fine | Autisti |
+| ElencoPunti | Elenco di tutti i punti disponibili che l'utente può scegliere | **Nome**, Latitudine, Longitudine | Utente |
+| Richiesta Prenotazione | Richieste di prenotazioni effettuate da parte dall'utente | **Partenza, Arrivo, Data richiesta, Orario richiesta**, Numero Passeggeri | Utenti, Tratte Complete, Tratte Rifiutate |
+| Utenti | Utenti utilizzatori del servizio taxi | **ID_Utente**, Nome, Cognome, Email, Password | Carta, Richiesta Prenotazione, Feedback, Tratte completate |
+| Feedback | Recensioni lasciate dall'utente e dagli autisti | **ID_Feedback**, StelleUtente, CommentoUtente,StelleAutista, CommentoAutista | Tratte Completate, Utenti, Autisti |
+| Tratte Completate | Corse effettuate portate a termine con successo | Costo | Richiesta Prenotazione, Feedback,Autisti |
+| Tratte Rifiutate | Corse rifiutate da parte dell'autista per determinati motivi | Motivazione | Richiesta Prenotazione, Autisti |
+| Carta | Carta di credito personale dell'utente | **Numero Carta** | Utenti |
+| Assicurazioni | Dati dell'assicurazione associata al singolo veicolo | **ID_Asscurazione**, Data di scadenza, Tipo | Veicoli |
 
 ### Glossario dei termini
 
-| Entità | Descrizione | Sinonimi |
-| ---- | ---- | ---- |
-| Patente | Descrive tutte le info riguardanti la patente degli autisti | Licenza di Guida |
-| Manutentori | Addetti alla manutenzione delle auto degli autisti | Meccanici, Operai |
-| Autisti | Personale che svolge il ruolo di autista delle auto nella società | Driver |
-| Veicoli | Auto utilizzate per il servizio di taxi | Automobili |
-| Turni | Turni lavorativi che riguardano gli autisti | Orario Lavorativo |
-| Richiesta Prenotazione | Richieste di prenotazioni effettuate da parte dall'utente | Prenotazioni |
-| Utenti | Utenti utilizzatori del servizio taxi | Persone |
-| Feedback | Recensioni lasciate dall'utente e dagli autisti | Recensioni |
-| Tratte Completate | Corse effettuate portate a termine con successo | Corse |
-| Tratte Rifiutate | Corse rifiutate da parte dell'autista per determinati motivi | Corse Annullate |
-| Carta | Carta di credito personale dell'utente | Metodo di pagamento |
-| Assicurazioni | Dati dell'assicurazione associata al singolo veicolo | RCA, Polizza assicurativa |
+| Entità                 | Descrizione                                                       | Sinonimi                  |
+| ---------------------- | ----------------------------------------------------------------- | ------------------------- |
+| Patente                | Descrive tutte le info riguardanti la patente degli autisti       | Licenza di Guida          |
+| Manutentori            | Addetti alla manutenzione delle auto degli autisti                | Meccanici, Operai         |
+| Autisti                | Personale che svolge il ruolo di autista delle auto nella società | Driver                    |
+| Veicoli                | Auto utilizzate per il servizio di taxi                           | Automobili                |
+| Turni                  | Turni lavorativi che riguardano gli autisti                       | Orario Lavorativo         |
+| Richiesta Prenotazione | Richieste di prenotazioni effettuate da parte dall'utente         | Prenotazioni              |
+| Utenti                 | Utenti utilizzatori del servizio taxi                             | Persone                   |
+| Feedback               | Recensioni lasciate dall'utente e dagli autisti                   | Recensioni                |
+| Tratte Completate      | Corse effettuate portate a termine con successo                   | Corse                     |
+| Tratte Rifiutate       | Corse rifiutate da parte dell'autista per determinati motivi      | Corse Annullate           |
+| Carta                  | Carta di credito personale dell'utente                            | Metodo di pagamento       |
+| Assicurazioni          | Dati dell'assicurazione associata al singolo veicolo              | RCA, Polizza assicurativa |
+| ElencoPunti            | Elenco dei punti disponibili per la scelta della tratta           | Lista                          |
 ### Glossario delle relazioni
 
 | Relazione | Descrizione | Entità |
