@@ -130,7 +130,8 @@ Descrizione 4
 
 ### Schema Concettuale
 
-![[Schema-Logico.jpg|center]]
+![[SchemaConcettuale.jpg]]
+
 
 #### Normalizzazione
 
