@@ -8,7 +8,7 @@
 - Schemi
 
 # Progetto VRoomA
-## Componenti del gruppo  
+## Componenti del gruppo
 
 | Nome | Cognome | Matricola | Mail |
 | -------- | -------- | --------- | ------------------------------------- |
@@ -87,9 +87,9 @@ Ogni **utente** può accedere alla cronologia delle prenotazioni effettuate.
 
 ### Glossario dei termini
 
-| Entità | Descrizione | Sinonimi | 
-| ---------------------- | ----------------------------------------------------------------- | ------------------------- | 
-| Personale | Membri totali della società | Organigramma |  
+| Entità | Descrizione | Sinonimi |
+| ---------------------- | ----------------------------------------------------------------- | ------------------------- |
+| Personale | Membri totali della società | Organigramma |
 | Patente | Descrive tutte le info riguardanti la patente degli autisti | Licenza di Guida |  |
 | Offerte | Serie di offerte che vengono proposte al singolo utente | Promozioni |  |
 | Manutentori | Addetti alla manutenzione delle auto degli autisti | Meccanici, Operai |  |
@@ -159,7 +159,7 @@ Di seguito si discutono le forme normali dello schema logico:
 - **3NF**: tutti gli schemi di relazione sono anche in **3NF** perché già in **2NF**, ed inoltre, tutti gli attributi delle tabelle dipendono funzionalmente e direttamente dalla chiave primaria, senza transitività.
 ### Schema Fisico
 
-Abbiamo distinto le frecce che vanno dalle entità figlie a quelle padre mettendole in blu. 
+Abbiamo distinto le frecce che vanno dalle entità figlie a quelle padre mettendole in blu.
 
 Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, mentre quelle primarie sono identificate con il pallino nero.
 
@@ -184,7 +184,22 @@ Abbiamo tre metodi per rappresentare una generalizzazione a livello fisico:
 - Accorpamento delle entità figlie nel padre
 - Sostituzione della generalizzazione con relazioni
 
-Tra questi metodi abbiamo scelto il terzo in quanto da noi considerato il più adeguato. Infatti, il primo metodo avrebbe portato ad una ridondanza di relazioni. 
+Tra questi metodi abbiamo scelto il terzo in quanto da noi considerato il più adeguato. Infatti, il primo metodo avrebbe portato ad una ridondanza di relazioni.
 
-Il secondo metodo necessita dell’aggiunta di un attributo nelle entità "Personale" e "Richiesta Prenotazioni", con il compito di specificare il ruolo del lavoratore (Es. Autisti = 1, Manutentori = 2, etc..), e il tipo di prenotazione (Es. Completata = 1 e Rifiutata = 2), in più si sarebbe dovuto scegliere se perdere informazioni (attributi) dei figli o inserire le informazioni nel padre, quindi aggiungere attributi dei figli al padre. La seconda scelta avrebbe portato ad una quantità non indifferente di valori NULL. 
+Il secondo metodo necessita dell’aggiunta di un attributo nelle entità "Personale" e "Richiesta Prenotazioni", con il compito di specificare il ruolo del lavoratore (Es. Autisti = 1, Manutentori = 2, etc..), e il tipo di prenotazione (Es. Completata = 1 e Rifiutata = 2), in più si sarebbe dovuto scegliere se perdere informazioni (attributi) dei figli o inserire le informazioni nel padre, quindi aggiungere attributi dei figli al padre. La seconda scelta avrebbe portato ad una quantità non indifferente di valori NULL.
 
+
+
+- Autisti (**Matricola**,Nome,Cognome,Email,DDN,_NumeroPatente_,_Targa_,Stipendio)
+- Manutentori (**ID_Manutentore**,Nome,Cognome,Email,DDN,NumeroTelefono,Qualifica)
+- ContattaPerGuasto (**_ID_Manutentore_, _ID_Autista_**,Motivo,Data)
+- Turni (**OrarioInizio, OrarioFine**)
+- TabellaOrarioLavorativo (**_Matricola_,_OrarioInizio_,_OrarioFine_**,Data)
+- Veicoli (**Targa**, Marca, Modello, NumPosti)
+- Assicurazione (**Numero**, DataDiScadenza, Tipo,Stato,_Targa_)
+- Utenti (**ID_Utente**, Nome, Cognome, Email, DDN, Password)
+- Carta (**NumeroCarta**,DDS,CVV, _ID_Utente_)
+- Richiesta Prenotazione (**_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_**, NumeroPasseggeri)
+- Tratte Completate (**_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_**, Costo,MetodoDiPagamento,DataPagamento,OraPagamento,_Matricola_)
+- Tratte Rifiutate (**_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_**, Motivazione,_Matricola_)
+- Feedback (**ID_Feedback**, StelleUtente, CommentoUtente,StelleAutista, CommentoAutista,**_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_**)
