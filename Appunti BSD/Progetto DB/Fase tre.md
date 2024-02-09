@@ -126,7 +126,7 @@ Le entità principali del sistema sono le seguenti:
 
 La relazione che intercorre tra queste entità ci permette di affermare che l'*Utente* può effettuare una *Prenotazione* che verrà poi assegnata ad un singolo *Autista*.
 
-![[Scheletro.png |center|700]]
+![[Scheletro.png |center|600]]
 
 #### Raffinazione
 
@@ -136,7 +136,7 @@ In questo caso stiamo raffinando l'entità *Utenti*.
 
 I dati della *Carta* non sono salvati nel database per questioni di privacy, bensì, verranno prelevati tramite interrogazioni al database della banca (che non fa parte del nostro sistema)
 
-![[RaffinazioneUtent.png|center| 700]]
+![[RaffinazioneUtent.png|center|600]]
 
 In questo caso stiamo raffinando l'entità *Autisti*.
 
@@ -150,7 +150,7 @@ In questo caso stiamo raffinando l'entità *Autisti*.
 
 - L'ultima relazione descrive il comportamento tra *Veicoli* e *Assicurazioni*, ovvero, ad ogni *Veicolo* è associata una sola *Assicurazione*. Viceversa per le *Assicurazioni*.
 
-![[RaffinazioneAutisti.png |center| 700]]
+![[RaffinazioneAutisti.png |center|600]]
 
 In questo caso stiamo raffinando l'entità *RichiestaPrenotazione*.
 
@@ -162,11 +162,11 @@ Successivamente si evidenzia il fatto che la *RichiestaPrenotazione* ha 2 entit�
 
 - Infine troviamo l'ultima relazione che descrive il comportamento tra le *Tratte completate* e *Feedback*. Una *Tratta Completata* può avere uno ed un solo *Feedback*. Un *Feedback* appartiene ad una sola *Tratta Completata*.
 
-![[RaffinazionePrenotazioni 1.png|center|700]]
+![[RaffinazionePrenotazioni 1.png|center|600]]
 
 ### Schema Concettuale
 
-![[SchemaConcettuale.png|center| 700]]
+![[SchemaConcettuale.png|center|600]]
 
 #### Normalizzazione
 
@@ -199,11 +199,11 @@ Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, me
 
 #### Schema Finale
 
-![[SchemaFinale.jpg|Center|700]]
+![[SchemaFinale.jpg|center|600]]
 
 ### Schema Logico
 
-![[SchemaLogico.jpg|center|700]]
+![[SchemaLogico.jpg|center|600]]
 
 Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono scritte in stile _Italic_
 
