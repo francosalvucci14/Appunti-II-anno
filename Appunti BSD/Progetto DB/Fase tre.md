@@ -196,28 +196,34 @@ Il secondo metodo necessita dell’aggiunta di un attributo nell' entità "Richi
 Abbiamo distinto le frecce che vanno dalle entità figlie a quelle padre mettendole in blu.
 
 Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, mentre quelle primarie sono identificate con il pallino nero.
-
 #### Schema Finale
 
-![[Schema-Fisico.jpg]]
+Lo schema finale risulta essere il seguente
+
+![[SchemaFinale.jpg|center|700]]
 
 ### Schema Logico
 
 Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono scritte in stile _Italic_
 
-- Autisti (**NumeroPatente**,Stipendio , _Targa_)
-- Manutentori (**ID_Manutentore**, Qualifica)
-- ContattaPerGuasto (**_ID_Manutentore_, _ID_Autista_**,Motivo)
-- Turni (**ID_Turno**, OrarioInizio, OrarioFine)
-- TabellaOrarioLavorativo (**_ID_Autista_,_ID_Turno_**,Data)
-- Veicoli (**Targa**, Marca, Modello, PostiDisponibili, _ID_Assicurazione_)
-- Assicurazioni (**ID_Assicurazione**, DataDiScadenza, Tipo)
-- Utenti (**ID_Utente**, Nome, Cognome, Email, Password)
-- Carta (**NumeroCarta**, _ID_Utente_)
-- Richiesta Prenotazione (**_ID_Utente_,Partenza,Arrivo,DataRichiesta,OrarioRichiesta**, NumeroPasseggeri,_ID_Autista_)
-- Tratte Complete (_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_, Costo,MetodoDiPagamento)
-- Tratte Rifiutate (_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_, Motivazione)
-- Feedback (**ID_Feedback**, StelleUtente, CommentoUtente,StelleAutista, CommentoAutista, _ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_)
+- Autisti (**Matricola**,Nome,Cognome,Email,DDN,_NumeroPatente_,_Targa_,Stipendio)
+- Manutentori (**ID_Manutentore**,Nome,Cognome,Email,DDN,NumeroTelefono,Qualifica)
+- ContattaPerGuasto (**_ID_Manutentore_, _ID_Autista_**,Motivo,Data)
+- Turni (**OrarioInizio, OrarioFine**)
+- TabellaOrarioLavorativo (**_Matricola_,_OrarioInizio_,_OrarioFine_**,Data)
+- Veicoli (**Targa**, Marca, Modello, NumPosti)
+- Assicurazione (**Numero**, DataDiScadenza, Tipo,Stato,_Targa_)
+- Utenti (**ID_Utente**, Nome, Cognome, Email, DDN, Password)
+- Carta (**NumeroCarta**,DDS,CVV, _ID_Utente_)
+- Richiesta Prenotazione (**_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_**, NumeroPasseggeri)
+- Tratte Completate (**_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_**, Costo,MetodoDiPagamento,DataPagamento,OraPagamento,_Matricola_)
+- Tratte Rifiutate (**_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_**, Motivazione,_Matricola_)
+- Feedback (**ID_Feedback**, StelleUtente, CommentoUtente,StelleAutista, CommentoAutista,**_ID_Utente,Partenza,Arrivo,DataRichiesta,OrarioRichiesta_**)
+
+Lo schema logico è questo
+
+![[SchemaLogico.jpg|center|700]]
+
 ### Schema Fisico
 
 Aggiungere schema fisico
