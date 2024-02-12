@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase uno.md",
+                "file": "Appunti BSD/Progetto DB/Fase tre.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase uno.md"
+                "file": "Appunti BSD/Progetto DB/Fase tre.md"
               }
             }
           },
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase uno.md",
+                "file": "Appunti BSD/Progetto DB/Fase tre.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase uno.md",
+                "file": "Appunti BSD/Progetto DB/Fase tre.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,6 +179,7 @@
   },
   "active": "fba2f3ac94d912f1",
   "lastOpenFiles": [
+    "Appunti BSD/Progetto DB/Fase uno.md",
     "Appunti BSD/Progetto DB/Fase tre.md",
     "Appunti BSD/Progetto DB/Fase due.md",
     "Appunti BSD/Progetto DB/Schemi/RaffinazionePrenotazioni 1.png",
@@ -202,7 +203,6 @@
     "Appunti SOR/MOD I Croce/Esami",
     "Appunti SOR/MOD I Croce/E.md",
     "Appunti SOR/MOD I Croce/Lezione 10.md",
-    "Appunti BSD/Progetto DB/Fase uno.md",
     "Appunti BSD/MOD I/Lezione 7 - Metodologie di progettazione della base di dati.md",
     "Appunti BSD/MOD I/Lezione 3 - Modello Relazionale.md",
     "Appunti SOR/MOD I Croce/Lezione 9.md",
