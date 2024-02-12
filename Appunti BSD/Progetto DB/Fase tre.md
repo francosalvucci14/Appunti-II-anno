@@ -205,12 +205,12 @@ Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, me
 
 Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondarie (o esterne) sono scritte in stile _Italic_
 
-- Autisti (**Matricola**,Nome,Cognome,Email,DDN,_NumeroPatente_,_Targa_,Stipendio)
+- Autisti (**Matricola**,Nome,Cognome,Email,DDN,_NumeroPatente_,Stipendio)
 - Manutentori (**ID_Manutentore**,Nome,Cognome,Email,DDN,NumeroTelefono,Qualifica)
 - ContattaPerGuasto (**_ID_Manutentore_, _ID_Autista_**,Motivo,Data)
 - Turni (**OrarioInizio, OrarioFine**)
 - TabellaOrarioLavorativo (**_Matricola_,_OrarioInizio_,_OrarioFine_**,Data)
-- Veicoli (**Targa**, Marca, Modello, NumPosti)
+- Veicoli (**Targa**, Marca, Modello, NumPosti,_Matricola_)
 - Assicurazione (**Numero**, DataDiScadenza, Tipo,Stato,_Targa_)
 - Utenti (**ID_Utente**, Nome, Cognome, Email, DDN, Password)
 - Carta (**NumeroCarta**,DDS,CVV, _ID_Utente_)
