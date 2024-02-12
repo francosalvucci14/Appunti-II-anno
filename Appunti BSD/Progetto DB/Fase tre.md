@@ -2034,3 +2034,5 @@ REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'lfn'@'localhost';
 GRANT SELECT ON CartePerUtente TO 'lfn'@'localhost';
 GRANT SELECT ON NumeroFeedbackTreStelle TO 'lfn'@'localhost';
 ```
+
+#### Crittografia dei dati
