@@ -193,8 +193,6 @@ Tra questi metodi abbiamo scelto il terzo in quanto da noi considerato il più a
 
 Il secondo metodo necessita dell’aggiunta di un attributo nell' entità "Richiesta Prenotazioni", ovvero il tipo di prenotazione (Es. Completata = 1 e Rifiutata = 2), in più si sarebbe dovuto scegliere se perdere informazioni (attributi) dei figli o inserire le informazioni nel padre, quindi aggiungere attributi dei figli al padre. La seconda scelta avrebbe portato ad una quantità non indifferente di valori NULL.
 
-Abbiamo distinto le frecce che vanno dalle entità figlie a quelle padre mettendole in blu.
-
 Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, mentre quelle primarie sono identificate con il pallino nero.
 
 #### Schema Finale
@@ -230,7 +228,7 @@ Aggiungere schema fisico
 use VroomA;
 
 CREATE TABLE Patente (
-	NumeroPatente int not null,
+	NumeroPatente varchar(50) not null,
 	DDS date not null,
 	Categoria varchar(50),
 	PRIMARY KEY (NumeroPatente)
@@ -249,8 +247,7 @@ CREATE TABLE Veicoli (
 	Targa varchar(50) not null,
 	Marca varchar(50) not null,
 	Modello varchar(50) not null,
-	PostiDisponibili int not null,
-	Matricola int not null,
+	NumPosti int not null,
 	PRIMARY KEY (Targa)
 );
 CREATE TABLE Autisti (
@@ -260,7 +257,7 @@ CREATE TABLE Autisti (
 	Email varchar(50) not null,
 	DDN date not null,
 	NumeroTelefono varchar(25) not null,
-	NumeroPatente int not null,
+	NumeroPatente varchar(50) not null,
 	Targa varchar(50) not null,
 	Stipendio int not null,
 	PRIMARY KEY (Matricola),
