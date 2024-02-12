@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase tre.md",
+                "file": "Appunti BSD/Progetto DB/Fase uno.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase tre.md"
+                "file": "Appunti BSD/Progetto DB/Fase uno.md"
               }
             }
           },
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase tre.md",
+                "file": "Appunti BSD/Progetto DB/Fase uno.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,14 +151,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti BSD/Progetto DB/Fase tre.md",
+                "file": "Appunti BSD/Progetto DB/Fase uno.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -179,8 +179,8 @@
   },
   "active": "fba2f3ac94d912f1",
   "lastOpenFiles": [
-    "Appunti BSD/Progetto DB/Fase due.md",
     "Appunti BSD/Progetto DB/Fase tre.md",
+    "Appunti BSD/Progetto DB/Fase due.md",
     "Appunti BSD/Progetto DB/Schemi/RaffinazionePrenotazioni 1.png",
     "Appunti BSD/Progetto DB/Schemi/SchemaLogico.jpg",
     "Appunti BSD/Progetto DB/Schemi/SchemaLogico.png",

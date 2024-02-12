@@ -10,5 +10,6 @@
 ### Dominio applicativo
 Mobile app per l'organizzazione di spostamenti, rivolto ai cittadini di Roma tramite l'uso di Taxi privati.
 
-### Obiettivi del progetto 
+### Obiettivi del progetto
 Permettere all'azienda di studiare e analizzare i percorsi più frequenti per poi poterne ottimizzare le tempistiche e i prezzi. Ricevere report da parte degli utenti per migliorare la qualità del servizio. Permettere agli utenti di organizzare spostamenti in base alle loro esigenze (tempistiche, costi, ecc...)
+
