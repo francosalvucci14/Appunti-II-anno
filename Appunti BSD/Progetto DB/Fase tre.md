@@ -1331,12 +1331,11 @@ f.close()
 SELECT tc.*
 from TratteCompletate tc
 JOIN Utenti u on tc.ID_Utente = u.ID_Utente
-WHERE u.Nome = 'Benvenuto' AND u.Cognome = 'Crespi';
+WHERE u.Nome = 'Patrizio' AND u.Cognome = 'Altera';
 ```
 
 
-![[query1.png|center|700]]
-
+![[query1.png|center]]
 
 - Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024
 
@@ -1350,6 +1349,7 @@ WHERE YEAR(a.DDS) = "2024" AND MONTH(a.DDS) = "02";
 
 ![[query2.png|center|600]]
 
+
 - Visualizza gli autisti che hanno lavorato in una data specifica
 
 ```SQL
@@ -1359,7 +1359,7 @@ JOIN TabellaOrarioLavorativo tol ON a.Matricola = tol.Matricola
 WHERE tol.`Data` = "2020-01-02";
 ```
 
-![[query3.png|center|400]]
+![[query3.png|center|300]]
 
 - Visualizza tutti gli autisti che hanno avuto lo stesso turno in una data specifica
 
@@ -1390,7 +1390,7 @@ WHERE MONTH (tc.DataRichiesta) = "06" AND YEAR(tc.DataRichiesta) = "2023"
 ORDER BY MediaCosti
 ```
 
-![[query6.png|center|300]]
+![[query6.png|center]]
 
 
 - Visualizza tutte le richieste di manutenzione relative ad uno specifico veicolo
@@ -1399,10 +1399,11 @@ ORDER BY MediaCosti
 SELECT cpg.Motivo, v.* FROM ContattaPerGuasto cpg
 JOIN Autisti a ON cpg.Matricola = a.Matricola
 JOIN Veicoli v ON a.Matricola = v.Matricola
-WHERE v.Targa = "CR614EE";
+WHERE v.Targa = "GM903CE";
 ```
 
 ![[query7.png|center|600]]
+
 
 - Visualizza le 10 tratte più gettonate
 
@@ -1416,6 +1417,7 @@ LIMIT 10;
 
 ![[query8.png|center|500]]
 
+
 - Visualizza gli utenti che hanno effettuato almeno 5 richieste
 
 ```SQL
@@ -1426,7 +1428,7 @@ HAVING NumeroRichieste >= 10
 ORDER BY NumeroRichieste DESC;
 ```
 
-![[query9.png|center|500]]
+![[query9.png|center|350]]
 
 
 - Visualizza il motivo di rifiuto delle richieste di prenotazione che occorre più spesso
@@ -1451,20 +1453,22 @@ WHERE a.Matricola = "714"
 ORDER BY tol.`Data`;
 ```
 
-![[query11.png|center|500]]
+![[query10.png|center|400]]
 
 
 - Visualizza tutte le tratte completate che non hanno un feedback
 
 ```SQL
-SELECT tc.* FROM TratteCompletate tc
-WHERE tc.ID_TrattaC NOT IN 
+SELECT tc.* 
+FROM TratteCompletate tc
+WHERE (tc.ID_Utente,tc.Partenza,tc.Arrivo,tc.DataRichiesta,tc.OrarioRichiesta) NOT IN
 (
-	SELECT ID_TrattaCompletata FROM Feedback f
+	SELECT f.ID_Utente,f.Partenza,f.Arrivo,f.DataRichiesta,f.OrarioRichiesta FROM Feedback f
 );
 ```
 
-![[query12.png|center|350]]
+![[query11.png|center|600]]
+
 
 - Visualizza tutte le richieste di prenotazione effettuate da un determinato utente
 
