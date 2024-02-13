@@ -18,18 +18,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "192af4fa719fbf27",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti BSD/Progetto DB/Fase due.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       }
@@ -177,11 +165,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fba2f3ac94d912f1",
+  "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
+    "Appunti BSD/Progetto DB/Risultati Query/query2.png",
+    "Appunti BSD/Progetto DB/Risultati Query/query1.png",
+    "Appunti BSD/Progetto DB/Risultati Query/tempoEsecQuery2.png",
+    "Appunti BSD/Progetto DB/Risultati Query/view2.png",
+    "Appunti BSD/Progetto DB/Fase tre.md",
     "Appunti BSD/Progetto DB/Schemi/SchemaFisico.jpg",
     "Appunti BSD/Progetto DB/Schemi/SchemaLogico.jpg",
-    "Appunti BSD/Progetto DB/Fase tre.md",
     "Appunti BSD/Progetto DB/Fase uno.md",
     "Appunti BSD/Progetto DB/Fase due.md",
     "Appunti BSD/Progetto DB/Schemi/RaffinazionePrenotazioni 1.png",
@@ -189,10 +181,6 @@
     "Appunti BSD/Progetto DB/SchemaFinale.jpg",
     "Appunti BSD/Progetto DB/Schemi/SchemaConcettuale.png",
     "Appunti BSD/Progetto DB/Schemi/Scheletro.png",
-    "Appunti BSD/Progetto DB/Schemi/RaffinazioneUtent.png",
-    "Appunti BSD/Progetto DB/Schemi/RaffinazionePrenotazioni.png",
-    "Appunti BSD/Progetto DB/Schemi/RaffinazioneAutisti.png",
-    "Appunti BSD/Progetto DB/SchemaScheletro/SchemaConcettuale.jpg",
     "Appunti BSD/Progetto DB/Schemi",
     "ProgettoFaseTre.md",
     "Progetto SO.md",
