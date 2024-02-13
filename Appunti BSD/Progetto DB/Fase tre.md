@@ -1536,38 +1536,24 @@ ORDER BY NumeroFeedback3Stelle DESC
 - Visualizza l'ultima richiesta di prenotazione di un certo utente, aggiungendo (**solo in output**) un campo che dice se la Richiesta fa parte di una tratta completata o no
 
 ```SQL
-SELECT rp.*, 
-IF(rp.ID_Richiesta IN (SELECT ID_TrattaC FROM TratteCompletate tc),'SI','NO' ) AS Completata 
-FROM RichiestePrenotazioni rp 
-JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
-WHERE rp.ID_Utente = '3430' AND rp.DataRichiesta 
-IN 
+SELECT rp.*,
+IF((rp.ID_Utente,rp.Partenza,rp.Arrivo,rp.DataRichiesta,rp.OrarioRichiesta) IN (SELECT tc.ID_Utente,tc.Partenza,tc.Arrivo,tc.DataRichiesta,tc.OrarioRichiesta FROM TratteCompletate tc),'SI','NO' ) AS Completata
+FROM RichiestePrenotazioni rp
+WHERE rp.ID_Utente = '738' AND rp.DataRichiesta
+IN
 (
-	SELECT MAX(DataRichiesta) 
-	FROM RichiestePrenotazioni 
-	WHERE ID_Utente = '3430'
+	SELECT MAX(DataRichiesta)
+	FROM RichiestePrenotazioni
+	WHERE ID_Utente = '738'
 )
 ```
 
-![[query18.png|center]]
-
-- Visualizza le tratte completate con un certo tipo di veicolo
-
-```SQL
-SELECT TC.*,v.Marca,a.ID_Autista
-FROM TratteCompletate TC
-JOIN RichiestePrenotazioni rp ON TC.ID_TrattaC = rp.ID_Richiesta
-JOIN Autisti a ON rp.ID_Autista = a.ID_Autista
-JOIN Veicoli v ON a.Targa = v.Targa
-WHERE v.Marca = 'Seat';
-```
-
-![[query19.png|center|400]]
+![[query18.png|center|600]]
 
 - Trova tutti gli autisti che non hanno mai effettuato una richiesta di manutenzione
 
 ```SQL
-SELECT A.*
+SELECT Matricola,Nome,Cognome,Email,NumeroTelefono,Stipendio
 FROM Autisti A
 WHERE A.ID_Autista NOT IN 
 (
@@ -1575,17 +1561,31 @@ WHERE A.ID_Autista NOT IN
 );
 ```
 
-![[query20.png|center|300]]
+![[query19.png|center]]
+
 
 - Visualizza il totale dei pagamenti relativi ad un determinato giorno
 
 ```SQL
-SELECT SUM(tc.Costo) AS TotalePagamenti FROM TratteCompletate tc
-JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
-WHERE rp.DataRichiesta = "2023-06-05"
+SELECT SUM(tc.Costo) AS TotalePagamenti
+FROM TratteCompletate tc
+WHERE tc.DataRichiesta = "2023-06-05"
 ```
 
-![[query21.png|center|200]]
+![[query20.png|center|200]]
+
+- Visualizza l'estratto conto generale dei 5 utenti che speso di più
+
+```SQL
+SELECT sum(tc.Costo) as SommaTotale, tc.ID_Utente
+FROM TratteCompletate tc
+GROUP BY tc.ID_Utente
+ORDER BY SommaTotale DESC
+LIMIT 5
+```
+
+![[query21.png|center|300]]
+
 
 - Visualizza gli autisti con lo stipendio più alto
 
@@ -1599,22 +1599,22 @@ WHERE Stipendio =
 );
 ```
 
-![[query22.png|center|300]]
+![[query22.png|center]]
+
 
 - Trova gli autisti che hanno completato il minor numero di corse in un determinato giorno
 
 ```SQL
-SELECT a.ID_Autista,p.Nome,p.Cognome, COUNT(*) AS NumeroCorseEffettuate
-FROM TratteCompletate tc 
-JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
-JOIN Autisti a ON rp.ID_Autista = a.ID_Autista
-JOIN Personale p ON a.ID_Autista = p.ID
-WHERE rp.DataRichiesta = "2023-06-05"
-GROUP BY a.ID_Autista, p.Nome, p.Cognome
+SELECT a.Matricola ,a.Nome,a.Cognome, COUNT(*) AS NumeroCorseEffettuate
+FROM TratteCompletate tc
+JOIN Autisti a ON tc.Autista = a.Matricola
+WHERE tc.DataRichiesta = "2023-06-05"
+GROUP BY Matricola ,Nome ,Cognome
 ORDER BY NumeroCorseEffettuate
 ```
 
-![[query23.png|center|450]]
+![[query23.png|center|500]]
+
 
 - Visualizza tutti i dati di un determinato utente, comprese le carte a lui associate
 
