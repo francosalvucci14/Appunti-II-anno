@@ -1390,19 +1390,21 @@ ORDER BY NumeroOccorrenze DESC
 LIMIT 1;
 ```
 
-![[query10.png|center|400]]
+![[query10.png|center|300]]
 
-- Di tutti gli autisti che hanno un ID compreso tra 50 e 400, mostra il turno assegnato e i dati del veicolo che utilizzano
+
+- Visualizza lo storico dei turni che un dato autista ha effettuato nel corso del tempo
 
 ```SQL
-SELECT a.ID_Autista, p.Nome, p.Cognome, t.*, v.*
-FROM Autisti a JOIN Personale p ON a.ID_Autista = p.ID
-JOIN Veicoli v ON a.Targa = v.Targa
-JOIN Turni t ON a.Turno = t.ID_Turno
-WHERE ID_Autista BETWEEN 50 AND 400;
+SELECT a.Nome,a.Cognome,tol.*
+FROM TabellaOrarioLavorativo tol
+JOIN Autisti a ON tol.Matricola = a.Matricola
+WHERE a.Matricola = "714"
+ORDER BY tol.`Data`;
 ```
 
-![[query11.png|center]]
+![[query11.png|center|500]]
+
 
 - Visualizza tutte le tratte completate che non hanno un feedback
 
