@@ -1293,14 +1293,14 @@ WHERE u.Nome = 'Benvenuto' AND u.Cognome = 'Crespi';
 - Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024
 
 ```SQL
-SELECT v.Targa, Modello, Marca, a.DDS AS DataScadenza, a.Stato 
-FROM Veicoli v
-JOIN Assicurazioni a ON v.Targa = a.Targa
-WHERE YEAR(a.DDS) = "2024" AND MONTH(a.DDS) = "02" AND Stato = "Valida";
+SELECT a.Targa, a.DDS AS DataScadenza, a.Stato, a2.Nome,a2.Cognome,a2.Email
+FROM Assicurazioni a
+JOIN Veicoli v ON v.Targa = a.Targa
+JOIN Autisti a2 on v.Matricola = a2.Matricola
+WHERE YEAR(a.DDS) = "2024" AND MONTH(a.DDS) = "02";
 ```
 
-![[query2.png|center|500]]
-
+![[query2.png|center|600]]
 
 - Visualizza gli autisti che hanno lavorato in una data specifica
 
@@ -1311,7 +1311,7 @@ JOIN TabellaOrarioLavorativo tol ON a.Matricola = tol.Matricola
 WHERE tol.`Data` = "2020-01-02";
 ```
 
-![[appunti bsd/Progetto db/Risultati Query/query3.png|center|350]]
+![[query3.png|center|400]]
 
 - Visualizza tutti gli autisti che hanno avuto lo stesso turno in una data specifica
 
@@ -1322,42 +1322,53 @@ JOIN TabellaOrarioLavorativo tol ON a.Matricola = tol.Matricola
 WHERE tol.`Data` = "2020-01-02" AND tol.OraInizio = "9" AND tol.OraFine = "17"
 ```
 
-![[query4.png|center|350]]
+![[query4.png|center|300]]
 
 - Visualizza la somma dei pagamenti effettuati dagli utenti in una data settimana
 
 ```SQL
 SELECT SUM(tc.Costo) AS Totale FROM TratteCompletate tc
-JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
-WHERE MONTH (rp.DataRichiesta) = "06" AND DAY (rp.DataRichiesta) BETWEEN 1 AND 7
+WHERE MONTH (tc.DataRichiesta) = "06" AND DAY (tc.DataRichiesta) BETWEEN 1 AND 7
 ```
 
-![[query5.png|center|300]]
+![[query5.png|center]]
+
+- Visualizza la media dei costi delle tratte che sono state completate a giugno 2023
+
+```SQL
+SELECT AVG(tc.Costo) AS MediaCosti, COUNT(*) as NumeroCorse
+FROM TratteCompletate tc
+WHERE MONTH (tc.DataRichiesta) = "06" AND YEAR(tc.DataRichiesta) = "2023"
+ORDER BY MediaCosti
+```
+
+![[query6.png|center|300]]
+
 
 - Visualizza tutte le richieste di manutenzione relative ad uno specifico veicolo
 
 ```SQL
 SELECT cpg.Motivo, v.* FROM ContattaPerGuasto cpg
-JOIN Autisti a ON cpg.ID_Autista = a.ID_Autista
-JOIN Veicoli v ON a.Targa = v.Targa
-WHERE v.Targa = "QD795XT";
+JOIN Autisti a ON cpg.Matricola = a.Matricola
+JOIN Veicoli v ON a.Matricola = v.Matricola
+WHERE v.Targa = "CR614EE";
 ```
 
-![[query6.png|center]]
+![[query7.png|center|600]]
 
 - Visualizza le 10 tratte più gettonate
 
 ```SQL
-SELECT PuntoDiRaccolta, PuntoDiRilascio, COUNT(*) AS NumeroRichieste
+SELECT Partenza, Arrivo, COUNT(*) AS NumeroRichieste
 FROM RichiestePrenotazioni rp
-GROUP BY PuntoDiRaccolta, PuntoDiRilascio
+GROUP BY Partenza, Arrivo
 ORDER BY NumeroRichieste DESC
 LIMIT 10;
 ```
 
-![[query7.png|center|500]]
+![[query8.png|center|500]]
 
-- Visualizza gli utenti che hanno effettuato almeno 10 richieste
+- Visualizza gli utenti che hanno effettuato almeno 5 richieste
 
 ```SQL
 SELECT u.ID_Utente, u.Nome, u.Cognome, COUNT(*) AS NumeroRichieste
@@ -1367,23 +1378,8 @@ HAVING NumeroRichieste >= 10
 ORDER BY NumeroRichieste DESC;
 ```
 
-![[query8.png|center|450]]
-
-- Di un dato range di utenti (ID compreso tra 2000 e 6000 e l'iniziale del nome "F"), visualizza le offerte associate agli utenti, con le relative descrizioni
-
-```SQL
-SELECT u.ID_Utente, u.Nome, u.Cognome, o.ID_Offerta, o.InfoOfferta
-FROM Utenti u JOIN Offerte o ON u.ID_Offerta = o.ID_Offerta
-WHERE u.ID_Utente
-IN
-(
-	SELECT ID_Utente 
-	FROM Utenti u2 
-	WHERE ID_Utente BETWEEN 2000 AND 6000 AND Nome LIKE "F%"
-)
-```
-
 ![[query9.png|center|500]]
+
 
 - Visualizza il motivo di rifiuto delle richieste di prenotazione che occorre più spesso
 
