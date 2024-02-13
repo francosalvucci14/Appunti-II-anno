@@ -1621,7 +1621,7 @@ ORDER BY NumeroCorseEffettuate
 ```SQL
 SELECT u.*, c.NumeroCarta, c.DataScadenza, c.CVV
 FROM Utenti u JOIN Carta c ON c.ID_Utente = u.ID_Utente
-WHERE Nome = "Geronimo" AND Cognome = "Lucarelli"
+WHERE Nome = "Rosa" AND Cognome = "Lussu"
 ```
 
 ![[query24.png|center]]
@@ -1636,7 +1636,7 @@ HAVING NumeroCarteAssociate > 2
 ORDER BY NumeroCarteAssociate DESC
 ```
 
-![[query25.png|center|450]]
+![[query25.png|center|400]]
 
 #### Ottimizzazione
 
