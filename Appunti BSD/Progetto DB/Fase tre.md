@@ -194,7 +194,6 @@ Tra questi metodi abbiamo scelto il terzo in quanto da noi considerato il più a
 Il secondo metodo necessita dell’aggiunta di un attributo nell' entità "Richiesta Prenotazioni", ovvero il tipo di prenotazione (Es. Completata = 1 e Rifiutata = 2), in più si sarebbe dovuto scegliere se perdere informazioni (attributi) dei figli o inserire le informazioni nel padre, quindi aggiungere attributi dei figli al padre. La seconda scelta avrebbe portato ad una quantità non indifferente di valori NULL.
 
 Nelle entità, le chiavi secondarie sono indentificate con il pallino grigio, mentre quelle primarie sono identificate con il pallino nero.
-
 #### Schema Finale
 
 ![[SchemaFinale.jpg|center|600]]
