@@ -1449,11 +1449,11 @@ LIMIT 1;
 SELECT a.Nome,a.Cognome,tol.*
 FROM TabellaOrarioLavorativo tol
 JOIN Autisti a ON tol.Matricola = a.Matricola
-WHERE a.Matricola = "714"
+WHERE a.Matricola = "569"
 ORDER BY tol.`Data`;
 ```
 
-![[query10.png|center|400]]
+![[query11.png|center|500]]
 
 
 - Visualizza tutte le tratte completate che non hanno un feedback
@@ -1467,34 +1467,34 @@ WHERE (tc.ID_Utente,tc.Partenza,tc.Arrivo,tc.DataRichiesta,tc.OrarioRichiesta) N
 );
 ```
 
-![[query11.png|center|600]]
+![[query12.png|center|600]]
 
 
 - Visualizza tutte le richieste di prenotazione effettuate da un determinato utente
 
 ```SQL
-SELECT rp.* FROM RichiestePrenotazioni rp 
+SELECT rp.* FROM RichiestePrenotazioni rp
 JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
-WHERE u.Nome = 'Carla' AND u.Cognome = 'Raimondi'
+WHERE u.Nome = 'Serafina' AND u.Cognome = 'Canali'
 ```
 
-![[query13.png|center]]
+![[query13.png|center|500]]
+
 
 - Visualizza la media delle stelle ottenute da un singolo autista
 
 ```SQL
-SELECT p.Nome, p.Cognome, AVG(f.StelleUtente) AS MediaStelle
+SELECT a.Nome, a.Cognome, AVG(f.StelleUtente) AS MediaStelle
 FROM Feedback f
-JOIN TratteCompletate tc ON f.ID_TrattaCompletata = tc.ID_TrattaC
-JOIN RichiestePrenotazioni rp ON rp.ID_Richiesta = tc.ID_TrattaC
-JOIN Autisti a ON rp.ID_Autista = a.ID_Autista
-JOIN Personale p ON a.ID_Autista = p.ID
-WHERE rp.ID_Autista = '500'
-GROUP BY p.Nome, p.Cognome
+JOIN TratteCompletate tc ON (f.ID_Utente,f.Partenza,f.Arrivo,f.DataRichiesta,f.OrarioRichiesta) = (tc.ID_Utente,tc.Partenza,tc.Arrivo,tc.DataRichiesta,tc.OrarioRichiesta)
+JOIN Autisti a ON tc.Autista = a.Matricola
+WHERE tc.Autista = '569'
+GROUP BY a.Nome, a.Cognome
 ORDER BY MediaStelle DESC
 ```
 
 ![[query14.png|center|300]]
+
 
 - Visualizza il numero totale delle assicurazioni Kasko
 
@@ -1506,30 +1506,32 @@ WHERE a.Tipo = 'Kasko';
 
 ![[query15.png|center|200]]
 
+
 - Visualizza tutti gli autisti che hanno una certa categoria di patente
 
 ```SQL
-SELECT p.Nome, p.Cognome, pt.Categoria
-FROM Personale p JOIN Autisti a ON p.ID = a.ID_Autista
-JOIN Patente pt ON a.NumeroPatente = pt.NumeroPatente
+SELECT a.Nome, a.Cognome, pt.Categoria
+FROM Autisti a
+JOIN Patenti pt ON a.NumeroPatente = pt.NumeroPatente
 WHERE pt.Categoria = "B96"
 ```
 
-![[query16.png|center|350]]
+![[query16.png|center|400]]
+
 
 - Visualizza il numero di feeback con almeno 3 stelle lasciati da ogni utente
 
 ```SQL
 SELECT u.Nome,u.Cognome, COUNT(*) AS NumeroFeedback3Stelle
-FROM Feedback f JOIN TratteCompletate tc ON f.ID_TrattaCompletata = tc.ID_TrattaC
-JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
-JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
+FROM Feedback f JOIN TratteCompletate tc ON (f.ID_Utente,f.Partenza,f.Arrivo,f.DataRichiesta,f.OrarioRichiesta) = (tc.ID_Utente,tc.Partenza,tc.Arrivo,tc.DataRichiesta,tc.OrarioRichiesta)
+JOIN Utenti u ON tc.ID_Utente = u.ID_Utente
 WHERE f.StelleUtente >= 3
 GROUP BY u.Nome,u.Cognome
 ORDER BY NumeroFeedback3Stelle DESC
 ```
 
 ![[query17.png|center|400]]
+
 
 - Visualizza l'ultima richiesta di prenotazione di un certo utente, aggiungendo (**solo in output**) un campo che dice se la Richiesta fa parte di una tratta completata o no
 
