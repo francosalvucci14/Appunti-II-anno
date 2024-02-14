@@ -428,6 +428,15 @@ DELIMITER
 
 ### Stored Procedures
 
+Le stored procedures sono un insieme di istruzioni SQL precompilate e memorizzate nellla base di dati.
+
+I vantaggi sono:
+- **Efficienza**: Minimizzano il traffico di rete eseguendo le operazioni direttamente sul server
+- **Sicurezza**: Limitano l'accesso diretto alle tabelle, controllando le operazioni consentite
+- **Riutilizzabilità**: Possono essere richiamate da più punti dell'applicazione
+
+Di seguito sono riportate alcune stored procedures che abbiamo creato per eseguire operazioni specifiche su due tabelle, ovvero **Utenti** e **Carte**
+
 **Maschera CVV**
 
 ```SQL
@@ -1424,7 +1433,7 @@ LIMIT 10;
 SELECT u.ID_Utente, u.Nome, u.Cognome, COUNT(*) AS NumeroRichieste
 FROM RichiestePrenotazioni rp JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
 GROUP BY u.ID_Utente, u.Nome, u.Cognome
-HAVING NumeroRichieste >= 10
+HAVING NumeroRichieste >= 5
 ORDER BY NumeroRichieste DESC;
 ```
 
@@ -1648,22 +1657,22 @@ Gli indici occupano memoria e quindi abbiamo trovato un compromesso, creando ind
 
 ```SQL
 CREATE INDEX idx_name 
-ON Personale(Nome);
+ON Autisti(Nome);
 ```
 
 ```SQL
-CREATE INDEX idx_stip 
-ON Autisti(Stipendio);
-```
-
-```SQL
-CREATE INDEX idx_ut_star
-ON Feedback(StelleUtente);
+CREATE INDEX idx_part
+ON Feedback(Partenza);
 ```
 
 ```SQL
 CREATE INDEX idx_ut_name
 ON Utenti(Nome);
+```
+
+```SQL
+CREATE INDEX idx_data
+ON TratteCompletate(DataRichiesta);
 ```
 
 Utilizzando questi indici secondari, abbiamo la versione ottimizzata di alcune delle query descritte in precedenza, che vengono eseguite sui dati casuali generati dal programma Python. Riportiamo inoltre, la frazione di miglioramento temporale delle ottimizzazioni.
@@ -1682,84 +1691,90 @@ WHERE Stipendio =
 );
 ```
 
-Prima della creazione dell'index sul campo "Stipendio",  il tempo di esecuzione della query è il seguente
+Prima della creazione dell'index sul campo "Nome" di Autisti, il tempo di esecuzione della query è il seguente
+
 ![[tempoEsecQuery1.png|center]]
+
 
 Dopo aver creato l'index, il tempo di esecuzione è il seguente:
 
-![[tempoEsecQueryConIndex1.png|center]]
+![[tempoEsecQueryIndex1.png|center]]
 
 La formula di miglioramento risulta essere la seguente
-$$100*\frac{(0.063-0.060)}{0.063}\sim 4.7\:\%$$
-Quindi, volendo arrotondare, abbiamo un miglioramento di circa il 5%
+$$100*\frac{(0.167-0.105)}{0.167}\sim 37,12\:\%$$
+Quindi, volendo arrotondare, abbiamo un miglioramento di circa il $38\%$
 
 **Visualizza il numero di feeback con almeno 3 stelle lasciati da ogni utente**
 
 ```SQL
 SELECT u.Nome,u.Cognome, COUNT(*) AS NumeroFeedback3Stelle
-FROM Feedback f JOIN TratteCompletate tc ON f.ID_TrattaCompletata = tc.ID_TrattaC
-JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
-JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
+FROM Feedback f JOIN TratteCompletate tc ON (f.ID_Utente,f.Partenza,f.Arrivo,f.DataRichiesta,f.OrarioRichiesta) = (tc.ID_Utente,tc.Partenza,tc.Arrivo,tc.DataRichiesta,tc.OrarioRichiesta)
+JOIN Utenti u ON tc.ID_Utente = u.ID_Utente
 WHERE f.StelleUtente >= 3
 GROUP BY u.Nome,u.Cognome
 ORDER BY NumeroFeedback3Stelle DESC
 ```
 
-Prima di aver creato l'index sul campo "StelleUtente", il tempo di esecuzione della query è il seguente
+Prima di aver creato l'index sul campo "Parteza" della tabella Feedback, il tempo di esecuzione della query è il seguente
 
 ![[tempoEsecQuery2.png|center]]
 
+
 Dopo aver creato l'index, il tempo di esecuzione risulta essere:
 
-![[tempoEsecQueryConIndex2.png|center]]
+![[tempoEsecQueryIndex2.png|center]]
 
 La formula di miglioramento risulta essere la seguente
-$$100*\frac{(0.632-0.342)}{0.632}\sim 45.9\:\%$$
+$$100*\frac{(0.388-0.334)}{0.388}\sim 13,91\:\%$$
 
-**Visualizza gli utenti che hanno effettuato almeno 10 richieste**
+Quindi, volendo arrotondare, avremmo un miglioramento del $20\%$
+
+**Visualizza gli utenti che hanno effettuato almeno 5 richieste**
 
 ```SQL
 SELECT u.ID_Utente, u.Nome, u.Cognome, COUNT(*) AS NumeroRichieste
 FROM RichiestePrenotazioni rp JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
 GROUP BY u.ID_Utente, u.Nome, u.Cognome
-HAVING NumeroRichieste >= 10
+HAVING NumeroRichieste >= 5
 ORDER BY NumeroRichieste DESC;
 ```
 
-Prima di aver creato l'index sul campo "Nome", il tempo di esecuzione della query è il seguente
+Prima di aver creato l'index sul campo "Nome" sulla tabella Utenti, il tempo di esecuzione della query è il seguente
 
 ![[tempoEsecQuery3.png|center]]
 
 Dopo aver creato l'index, il tempo di esecuzione risulta essere:
 
-![[tempoEsecQueryConIndex3.png|center]]
+![[tempoEsecQueryIndex3.png|center]]
 
 La formula di miglioramento risulta essere la seguente
-$$100*\frac{(0.161-0.115)}{0.161}\sim28.6\:\%$$
+$$100*\frac{(0.161-0.124)}{0.161}\sim22.98\:\%$$
+
+Quindi, volendo arrotondare, avremmo un miglioramento del $23\%$
+
 **Trova gli autisti che hanno completato il minor numero di corse in un determinato giorno**
 
 ```SQL
-SELECT a.ID_Autista,p.Nome,p.Cognome, COUNT(*) AS NumeroCorseEffettuate
-FROM TratteCompletate tc 
-JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
-JOIN Autisti a ON rp.ID_Autista = a.ID_Autista
-JOIN Personale p ON a.ID_Autista = p.ID
-WHERE rp.DataRichiesta = "2023-06-05"
-GROUP BY a.ID_Autista, p.Nome, p.Cognome
+SELECT a.Matricola ,a.Nome,a.Cognome, COUNT(*) AS NumeroCorseEffettuate
+FROM TratteCompletate tc
+JOIN Autisti a ON tc.Autista = a.Matricola
+WHERE tc.DataRichiesta = "2023-06-05"
+GROUP BY Matricola ,Nome ,Cognome
 ORDER BY NumeroCorseEffettuate
 ```
 
-Prima di aver creato l'index sul campo "Nome", dell'entità Personale, il tempo di esecuzione della query è il seguente
+Prima di aver creato l'index sul campo "DatdRichiesta", dell'entità TratteCompletate, il tempo di esecuzione della query è il seguente
 
 ![[tempoEsecQuery4.png|center]]
 
 Dopo aver creato l'index, il tempo di esecuzione risulta essere:
 
-![[tempoEsecQUeryConIndex4.png|center]]
+![[tempoEsecQueryIndex4.png|center]]
 
 La formula di miglioramento risulta essere la seguente
-$$100*\frac{0.035-0.015}{0.035}\sim 57.15\:\%$$
+$$100*\frac{0.019-0.010}{0.019}\sim 47.36\:\%$$
 
+Quindi, volendo arrotondare, avremmo un miglioramento del $48\%$
 #### Algebra Relazionale
 
 L’algebra relazionale è un linguaggio query _procedurale_ in notazione algebrica. In una query, si applicano sequenzialmente le operazioni alle relazioni. Ogni operazione (unaria o binaria) riceve in input una relazione e ne produce un’altra in output.
@@ -1982,5 +1997,3 @@ REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'lfn'@'localhost';
 GRANT SELECT ON CartePerUtente TO 'lfn'@'localhost';
 GRANT SELECT ON NumeroFeedbackTreStelle TO 'lfn'@'localhost';
 ```
-
-#### Crittografia dei dati
