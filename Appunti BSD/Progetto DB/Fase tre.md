@@ -1790,7 +1790,6 @@ Le operazioni _**primitive**_ sono:
 Esistono altre operazioni da esse derivabili, tra cui l’intersezione insiemistica ($\bigcap$).
 Di seguito troviamo alcune query sul nostro database scritte in Algebra Relazionale:
 
-
 _**Visualizza tutte le tratte completate che non hanno un feedback**_
 
 ```SQL
@@ -1802,17 +1801,7 @@ WHERE tc.ID_TrattaC NOT IN
 ```
 
 In algebra relazionale la query diventa
-$$\pi_{tc.*}(\text{TratteCompletate}\bowtie(\pi_\text{ID\_TrattaC}(\text{TratteCompletate})-\pi_\text{ID\_TrattaCompletata}(\text{Feedback})))$$
-_**Visualizza tutti i dati di un determinato utente, comprese le carte a lui associate**_
-
-```SQL
-SELECT u.*, c.NumeroCarta, c.DataScadenza, c.CVV
-FROM Utenti u JOIN Carta c ON c.ID_Utente = u.ID_Utente
-WHERE Nome = "Geronimo" AND Cognome = "Lucarelli"
-```
-
-In algebra relazionale la query diventa:
-$$\begin{align}&\text{Utenti}\bowtie_{\text{ID\_Utente=ID\_Utente}}\text{Carta}=A\\&\sigma_{\text{Nome='Geronimo',Cognome='Lucarelli'}}(A)\end{align}$$
+$$\begin{align}&\text{pk = tc.ID\_Utente,tc.Partenza,tc.Arrivo,tc.DataRichiesta,tc.OraRichiesta}\\&\pi_{\text{tc.pk}}(\text{TratteCompletate}\bowtie(\pi_\text{tc.pk}(\text{TratteCompletate})-\pi_\text{tc.pk}(\text{Feedback})))\end{align}$$
 
 Dove:
 
@@ -1820,35 +1809,55 @@ Dove:
 - $\sigma$ rappresenta l'operazione di selezione.
 - $\bowtie$ rappresenta l'operazione di join.
 
-L'operazione di join ($\bowtie$) viene eseguita sulla condizione ID_Utente=ID_Utente, e successivamente vengono selezionate le righe in cui Nome="Geronimo" e Cognome="Lucarelli", dopodiché viene applicata la proiezione sui campi specificati.
+Per questioni di semplicità, abbiamo denominato con `pk` tutta la chiave primaria dell'entità TratteCompletate, ovvero la composizione dei campi ID_Utente, Partenza,Arrivo,DataRichiesta,OraRichiesta
+
+_**Visualizza tutti i dati di un determinato utente, comprese le carte a lui associate**_
+
+```SQL
+SELECT u.*, c.NumeroCarta, c.DataScadenza, c.CVV
+FROM Utenti u JOIN Carta c ON c.ID_Utente = u.ID_Utente
+WHERE Nome = "Rosa" AND Cognome = "Lussu"
+```
+
+In algebra relazionale la query diventa:
+$$\begin{align}&\text{Utenti}\bowtie_{\text{ID\_Utente=ID\_Utente}}\text{Carta}=A\\&\sigma_{\text{Nome='Rosa',Cognome='Lussu'}}(A)\end{align}$$
+
+Dove:
+
+- $\pi$ rappresenta l'operazione di proiezione.
+- $\sigma$ rappresenta l'operazione di selezione.
+- $\bowtie$ rappresenta l'operazione di join.
+
+L'operazione di join ($\bowtie$) viene eseguita sulla condizione ID_Utente=ID_Utente, e successivamente vengono selezionate le righe in cui Nome="Rosa" e Cognome="Lussu", dopodiché viene applicata la proiezione sui campi specificati.
 
 Per questioni di semplicità, abbiamo denominato con A tutta la parte del join
 
 ***Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024***
 
 ```SQL
-SELECT Targa, Modello, Marca, a.DataScadenza FROM Veicoli v 
-JOIN Assicurazioni a
-ON v.ID_Assicurazione = a.ID_Assicurazione
-WHERE YEAR(a.DataScadenza) = "2024" AND MONTH(a.DataScadenza) = "02";
+SELECT a.Targa, a.DDS AS DataScadenza, a.Stato, a2.Nome,a2.Cognome,a2.Email
+FROM Assicurazioni a
+JOIN Veicoli v ON v.Targa = a.Targa
+JOIN Autisti a2 on v.Matricola = a2.Matricola
+WHERE YEAR(a.DDS) = "2024" AND MONTH(a.DDS) = "02";
 ```
 
 In algebra relazionale la query diventa:
-$$\begin{align}&\text{Veicoli}\bowtie_{\text{ID\_Assicurazione=ID\_Assicurazione}}\text{Assicurazioni}= A\\&\pi_{\text{Targa,Modello,Marca,DataScadenza}}(\sigma_{\text{DataScadenza}<\text{'2024-02-01'}}(A))\end{align}$$
+$$\begin{align}&\text{Assicurazioni a}\bowtie_{\text{v.Targa=a.Targa}}\text{Veicoli v}\bowtie_{\text{v.Matricola=a2.Matricola}}\text{Autisti a2}= A\\&\pi_{\text{a.Targa,a.DataScadenza,a.Stato,a2.Nome,a2.Cognome,a2.Email}}(\sigma_{\text{DataScadenza}<\text{'2024-02-01'}}(A))\end{align}$$
 
 ***Visualizza tutti gli autisti che hanno una certa categoria di patente***
 
 ```SQL
-SELECT p.Nome, p.Cognome, pt.Categoria
-FROM Personale p JOIN Autisti a ON p.ID = a.ID_Autista
-JOIN Patente pt ON a.NumeroPatente = pt.NumeroPatente
+SELECT a.Nome, a.Cognome, pt.Categoria
+FROM Autisti a
+JOIN Patenti pt ON a.NumeroPatente = pt.NumeroPatente
 WHERE pt.Categoria = "B96"
 ```
 
 In algebra relazionale diventa:
 
 $$\begin{align}
-&\text{Personale}\bowtie_\text{ID=ID\_Autista}(\text{Autisti}\bowtie_\text{NumeroPatente=NumeroPatente}\text{Patente}) = A\\
+&\text{Autisti}\bowtie_\text{NumeroPatente=NumeroPatente}\text{Patenti}= A\\
 &\pi_\text{Nome,Cognome,Categoria}(\sigma_\text{Categoria='B96'}(A))
 \end{align}$$
 
@@ -1857,30 +1866,16 @@ $$\begin{align}
 ```SQL
 SELECT A.*
 FROM Autisti A
-WHERE A.ID_Autista NOT IN 
+WHERE A.Matricola NOT IN 
 (
-	SELECT cpg.ID_Autista FROM ContattaPerGuasto cpg
+	SELECT cpg.Matricola FROM ContattaPerGuasto cpg
 );
 ```
 
 In algebra relazionale la query diventa
 
-$$\pi_{A.*}(\text{Autisti}\bowtie(\pi_\text{ID\_Autista}(\text{Autisti})-\pi_\text{ID\_Autista}(\text{ContattaPerGuasto})))$$
-***Visualizza le tratte completate con un certo tipo di veicolo***
+$$\pi_{A.*}(\text{Autisti}\bowtie(\pi_\text{Matricola}(\text{Autisti})-\pi_\text{Matricola}(\text{ContattaPerGuasto})))$$
 
-```SQL
-SELECT TC.*,v.Marca,a.ID_Autista
-FROM TratteCompletate TC
-JOIN RichiestePrenotazioni rp ON TC.ID_TrattaC = rp.ID_Richiesta
-JOIN Autisti a ON rp.ID_Autista = a.ID_Autista
-JOIN Veicoli v ON a.Targa = v.Targa
-WHERE v.Marca = 'Seat';
-```
-
-In algebra relazionale diventa
-
-$$\begin{align}&\text{TratteCompletate}\bowtie_{\text{ID\_TrattaC=ID\_Richiesta}}\text{RichiestePrenotazioni}\bowtie_{\text{ID\_Autista=ID\_Autista}}\text{Autisti}=A\\&\pi_{\text{TC.*,v.Marca,a.ID\_Autista}}(\sigma_{\text{Marca='Seat'}}(A\bowtie_{\text{Targa=Targa}}\text{Veicoli}))\end{align}$$
-Per comodità abbiamo raggruppato tutti i join nella variabile A, per poi effettuare l'ultimo join partendo da A
 #### Calcolo Relazionale
 
 Il calcolo relazionale è un linguaggio query non procedurale ma _dichiarativo_. Invece dell’algebra, utilizza il calcolo dei predicati matematici del primo ordine in notazione logica. L’output di una query è una relazione che contiene solo tuple che soddisfano le formule logiche espresse. Il potere espressivo del calcolo relazionale è dunque equivalente a quello
@@ -1894,36 +1889,32 @@ Di seguito sono alcune query espresse tramite il _calcolo relazionale sulle tupl
 
 **_Visualizza tutte le tratte completate che non hanno un feedback_**
 
-$$\begin{align}&\text{p} = \text{tc.ID\_TrattaCompletata}\in{\text{tc}}\:\land\:\text{tc.ID\_TrattaCompletata}\not\in\text{f}\\&\{\text{tc.*}\:|\:\text{tc(TratteCompletate),f(Feedback)}\:|\:\text{p} \}\end{align}$$
+$$\begin{align}&\text{pk = tc.ID\_Utente,tc.Partenza,tc.Arrivo,tc.DataRichiesta,tc.OraRichiesta}\\&\text{p} = \text{tc.pk}\in{\text{tc}}\:\land\:\text{tc.pk}\not\in\text{f}\\&\{\text{tc.*}\:|\:\text{tc(TratteCompletate),f(Feedback)}\:|\:\text{p} \}\end{align}$$
+
+Per questioni di semplicità, abbiamo denominato con `pk` tutta la chiave primaria dell'entità TratteCompletate, ovvero la composizione dei campi ID_Utente, Partenza,Arrivo,DataRichiesta,OraRichiesta
 
 _**Visualizza tutti i dati di un determinato utente, comprese le carte a lui associate**_
 
-$$\begin{align}&\text{p}=\{(\text{u.Nome='Geronimo'}\land\text{u.Cognome='Lucarelli')}\land(\text{c.ID\_Utente=u.ID\_Utente})\}\\&\{\text{u.*,c.(NumeroCarta,DataScadenza,CVV)}|\text{u(Utenti),c(Carta)}|\:\text{p}\}\end{align}$$
+$$\begin{align}&\text{p}=\{(\text{u.Nome='Rosa'}\land\text{u.Cognome='Lussu')}\land(\text{c.ID\_Utente=u.ID\_Utente})\}\\&\{\text{u.*,c.(NumeroCarta,DataScadenza,CVV)}|\text{u(Utenti),c(Carta)}|\:\text{p}\}\end{align}$$
 
 ***Visualizza tutti i veicoli la cui assicurazione scadrà entro febbraio 2024***
 
 $$\begin{align*}
-&\text{p} = \{\text{(a.DataScadenza} <\text{'2024-01-02')}\land(\text{v.ID\_Assicurazione=a.ID\_Assicurazione})\}\\
-&\{\text{v.(Targa,Modello,Marca),a.(DataScadenza) | v(Veicoli),a(Assicurazione) | p} \}
+&\text{p} = \{\text{(a.DataScadenza} <\text{'2024-01-02')}\land(\text{v.Targa=a.Targa})\land(\text{a2.Matricola=v.Matricola})\}\\
+&\{\text{a.(Targa,DataScadenza,Stato),a2.(Nome,Cognome,Email) | a(Assicurazione),a2(Autisti) | p} \}
 \end{align*}$$
 
 ***Visualizza tutti gli autisti che hanno una certa categoria di patente***
 
 $$\begin{align*}
-&\text{p} = \{\text{(pt.Categoria='B96'}\land(\text{p.ID=a.ID\_Autista})\land\text{a.NumeroPat = p.NumeroPat}\}\\
-&\{\text{p.(Nome,Cognome),pt.(Categoria) | p(Personale), pt(Patenti), a(Autisiti) | p} \}
+&\text{p} = \{\text{(pt.Categoria='B96'}\land\text{a.NumeroPatente = pt.NumeroPatente}\}\\
+&\{\text{a.(Nome,Cognome),pt.(Categoria) | pt(Patenti), a(Autisiti) | p} \}
 \end{align*}$$
 
 ***Trova tutti gli autisti che non hanno mai effettuato una richiesta di manutenzione***
 
-$$\begin{align}&\text{p} = \{\text{a.ID\_Autista}\in{\text{a}}\:\land\:\text{a.ID\_Autista}\not\in\text{cpg}\}\\&\{\text{a.*}\:|\:\text{a(Autista), cpg(ContattaPerGuasto)}\:|\:\text{p} \}\end{align}$$
+$$\begin{align}&\text{p} = \{\text{a.Matrixola}\in{\text{a}}\:\land\:\text{a.Matricola}\not\in\text{cpg}\}\\&\{\text{a.*}\:|\:\text{a(Autista), cpg(ContattaPerGuasto)}\:|\:\text{p} \}\end{align}$$
 
-***Visualizza le tratte completate con un certo tipo di veicolo***
-
-$$\begin{align*}
-&\text{p} = \{(\text{tc.ID\_TrattaC=rp.ID\_Richiesta})\land(\text{a.Id\_Aut = rp.Id\_Aut})\land(\text{a.Targa = v.Targa})\\&\land\text{v.Marca = 'Seat'}\}\\
-&\{\text{tc.*, v(Marca), a.(Id\_Aut) | tc.(TratCompl), v(Veicoli), a(Autisti), rp(RichPren) | p} \}
-\end{align*}$$
 ### Sicurezza
 
 Ovviamente in un database aziendale devono essere presenti diverse tipologie di utenti con diversi diritti, nella nostra modellizzazione della realtà, infatti, abbiamo definito 2 classi di utenti:
@@ -1950,7 +1941,9 @@ CREATE VIEW CartePerUtente AS
 
 ![[view1.png|center]]
 
-![[risView1.png|center|450]]
+L'esecuzione della view darà il seguente risultato
+
+![[risView1.png|center|400]]
 
 
 ***Visualizza il numero di feeback con almeno 3 stelle lasciati da ogni utente***
@@ -1959,9 +1952,8 @@ CREATE VIEW CartePerUtente AS
 CREATE VIEW NumeroFeedbackTreStelle AS 
 (
 	SELECT u.Nome,u.Cognome, COUNT(*) AS NumeroFeedback3Stelle
-	FROM Feedback f JOIN TratteCompletate tc ON f.ID_TrattaCompletata = tc.ID_TrattaC
-	JOIN RichiestePrenotazioni rp ON tc.ID_TrattaC = rp.ID_Richiesta
-	JOIN Utenti u ON rp.ID_Utente = u.ID_Utente
+	FROM Feedback f JOIN TratteCompletate tc ON (f.ID_Utente,f.Partenza,f.Arrivo,f.DataRichiesta,f.OrarioRichiesta) = (tc.ID_Utente,tc.Partenza,tc.Arrivo,tc.DataRichiesta,tc.OrarioRichiesta)
+	JOIN Utenti u ON tc.ID_Utente = u.ID_Utente
 	WHERE f.StelleUtente >= 3
 	GROUP BY u.Nome,u.Cognome
 	ORDER BY NumeroFeedback3Stelle DESC
@@ -1970,7 +1962,9 @@ CREATE VIEW NumeroFeedbackTreStelle AS
 
 ![[view2.png|center]]
 
-![[risView2.png|center|450]]
+L'esecuzione della view darà il seguente risultato
+
+![[risView2.png|center|400]]
 
 #### Creazione Utenti
 
