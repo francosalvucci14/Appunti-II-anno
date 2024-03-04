@@ -165,8 +165,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "195b83bf8ca7a0a9",
+  "active": "fba2f3ac94d912f1",
   "lastOpenFiles": [
+    "Appunti SOR/MOD II/img/Pasted image 20240304151225.png",
+    "Appunti SOR/MOD II/img/Pasted image 20240304145650.png",
+    "Appunti SOR/MOD II/img/Pasted image 20240304144744.png",
+    "Appunti SOR/MOD II/img/Pasted image 20240304144706.png",
+    "Appunti SOR/MOD II/img/Pasted image 20240304144639.png",
+    "Appunti SOR/MOD II/img",
     "Appunti SOR/MOD II/Indice delle lezioni.md",
     "Appunti SOR/MOD II/Lezione 1.md",
     "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
@@ -193,17 +199,12 @@
     "Appunti ASD/MOD I/Esercizi/Esercizio lezione 7 (Oracolo e query).md",
     "Appunti BSD/Progetto DB/Fase tre.md",
     "Appunti BSD/Progetto DB/Fase Tre Modificata.md",
-    "Appunti BSD/Progetto DB/Fase uno.md",
     "Appunti BSD/Progetto DB/Risultati Query/risView2.png",
     "Appunti BSD/Progetto DB/Risultati Query/view2.png",
     "Appunti BSD/Progetto DB/Risultati Query/risView1.png",
     "Appunti BSD/Progetto DB/Risultati Query/view1.png",
     "Appunti BSD/Progetto DB/Risultati Query/tempoEsecQueryIndex4.png",
     "Appunti BSD/Progetto DB/Risultati Query/tempoEsecQuery4.png",
-    "Appunti BSD/Progetto DB/Risultati Query/query9.png",
-    "Appunti BSD/Progetto DB/Risultati Query/tempoEsecQuery3.png",
-    "Appunti BSD/Progetto DB/Risultati Query/tempoEsecQueryIndex3.png",
-    "Appunti BSD/Progetto DB/Risultati Query/tempoEsecQueryIndex2.png",
     "Appunti BSD/Progetto DB/Schemi",
     "Untitled",
     "Appunti BSD/Progetto DB/Risultati Query",
@@ -212,7 +213,6 @@
     "Appunti BSD/Progetto DB/Schema-Fisico.drawio",
     "Appunti BSD/Progetto DB/Diagramma_E-R_Split(1).drawio",
     "Appunti BSD/Progetto DB/Diagramma_E-R(2).drawio.pdf",
-    "Appunti SOR/MOD I/Code",
     "Untitled.canvas"
   ]
 }
