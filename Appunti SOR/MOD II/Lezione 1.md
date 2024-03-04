@@ -3,7 +3,7 @@ Prof Manuel Fiorelli
 
 ## Panoramica
 
-- Cos'è Interne?
+- Cos'è Internet?
 - Cos'è un protocollo?
 - Host, reti di accesso, etc...
 - Nucleo di rete: commutazione di un pacchetto e commutazione di circuito,struttura di internet
@@ -128,7 +128,7 @@ I sistemi periferici vengono detti **host**, e si dividono in due categorie :
 - **Client** : Host che richiedono servizi, quali PC, smartphone, laptop, etc..
 - **Server** : Host che erogano servizi, e sono solitamente macchine più potenti dei normali PC, che sono collocati in grandi **data center**
 
-### Reti di accesso e mezzi trasmissivi
+### Reti di accesso
 
 >[!definition]- Reti di accesso (access network)
 >Rete che **connette fisicamente** un sistema al suo **edge router**, che è il primo router sul percorso dal sistema d'origine a un qualsiasi altro sistema di destinazione collocato al di fuori della rete di accesso
@@ -187,5 +187,22 @@ Due architetture che usano questa suddivisione sono :
 
 Ogni casa ha un ONT, connesso a un separatore ottico (Splitter) di quartiere tramite fibra ottica dedicata
 Lo splitter combina più abitazioni in una sola fibra ottica condivisa, che si connette al OLT
-L'OLT, che fornisce la conversione tra segnali ottici e digitali, si connette ad Internet tramite un router 
+L'OLT, che fornisce la conversione tra segnali ottici e digitali, si connette ad Internet tramite un router
+
+### Mezzi trasmissivi
+
+I mezzi trasmissivi sono quei mezzi che trasmettono fisicamente il messaggio (*pacchetto*) da un mittente ad un destinatario
+
+Tra i mezzi più usati troviamo :
+- Cavi coassiali
+- Doppino intrecciato
+- Fibra ottica multimodale
+- Spettro radio-terrestre
+- Spettro radio-satellitare
+
+I mezzi fisici vengono suddivisi in due categorie :
+- **Mezzi vincolatri** (*guided media*) : Le onde vengono contenute in un mezzo fisico, quale cavo di fibra ottica, filo di rame etc...
+- **Mezzi non vincolati** (*unguided media*) : Le onde si propagano nell'atmosfera e nello spazio esterno, come nelle LAN wireless o nei canali satellitari
+
+#### Aggiungere speigazione mezzi trasmissivi
 
