@@ -24,7 +24,6 @@
 
 Per una spiegazione più dettagliata di qeusti algoritmi si rimanda a questo link [Algoritmi](http://people.disim.univaq.it/guido.proietti/lezioni_algo2021.html)
 
-
 # Algoritmi basati su confronto
 
 ## BubbleSort
@@ -109,8 +108,8 @@ La complessità termporale del MergeSort è descritto dalla seguente relazione d
 $$T(n)=2T(n/2)+O(n)$$
 Usando il Teorema Master abbiamo che:
 $$T(n)=O(nlog(n))$$
- 
-## SelectionSort 
+
+## SelectionSort
 
 Spiegazione qui -> [[Lezione 5 - Capitolo 4#Selection Sort|SelectionSort]]
 ### Pseudo-codice
@@ -539,4 +538,3 @@ Speigazione qua -> [[Lezione 14 - Capitolo 11#Visita in ampiezza|Lezione 14 - BF
 Il tempo di esecuzione dipende dalla sruttura dati usata per rappresentare il grafo (e dalla connettività o meno del grafo rispetto ad s):
 - Liste di adiacenza: $O(m+n)$
 - Matrice di adiacenza: $O(n^2)$
-

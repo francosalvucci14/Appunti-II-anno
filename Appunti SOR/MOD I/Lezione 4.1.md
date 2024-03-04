@@ -167,13 +167,13 @@ Si possono modificare i permessi di accesso di un file con il comando `chmod`, c
 - r = 'read'
 - w = 'write'
 - x = 'execute' :
-![[appunti sor/mod i croce/img/Pasted image 20231018093528.png|center]]
+![[Pasted image 20231018093528.png|center]]
 
 Il comando `chmod` funziona anche con il seguente mappaggio, *read* = 4,*write* = 2,*execute* = 1:
-![[appunti sor/mod i croce/img/Pasted image 20231018093827.png|center]]
+![[Pasted image 20231018093827.png|center]]
 
 Tabella : 
-![[appunti sor/mod i croce/img/Pasted image 20231018093936.png|center]]
+![[Pasted image 20231018093936.png|center]]
 
 ## File di avvio di Bash - dot files
 

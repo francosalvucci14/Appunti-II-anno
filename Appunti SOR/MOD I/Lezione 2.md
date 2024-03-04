@@ -81,7 +81,7 @@ Very basic layout :
 - Data : Program variables
 - Text: Program code
 
-![[appunti sor/mod i croce/img/Pasted image 20231013112427.png|center|200]]
+![[Pasted image 20231013112427.png|center|200]]
 
 #### Il ciclo di vita di un processo
 
@@ -108,7 +108,7 @@ Un processo può creare un'altro processo, conosciuto come "processo figlio". Qu
 
 **Esempio di albero dei processi**
 
-![[appunti sor/mod i croce/img/Pasted image 20231013113841.png|center|300]]
+![[Pasted image 20231013113841.png|center|300]]
 
 Come possiamo vedere, il processo A ha creato due figli, B e C. Il processo B ha creato altri tre figli, i processi D,E,F
 
@@ -123,7 +123,7 @@ Un processo (lanciato da superuser/root/administrator) è speciale, perchè ha p
 
 **Esempio di processo**
 
-![[appunti sor/mod i croce/img/Pasted image 20231013115002.png|center]]
+![[Pasted image 20231013115002.png|center]]
 
 Possiamo notare dall'immagine che il processo che esegue il comando "gnome-shell", ha come **PID** (Process ID) il numero 2968, ed è associato all'utente "acronimo"
 
@@ -153,7 +153,7 @@ Le tuple contengono un bit (r)ead, (w)rite e un bit e(x)ecute (ma sono disponibi
 
 **Esempio**
 
-![[appunti sor/mod i croce/img/Pasted image 20231013120032.png|center]]
+![[Pasted image 20231013120032.png|center]]
 
 - Il proprietario del file (in rosso), è abilitato alla scrittura,lettura ed esecuzione del file
 - Il gruppo (in verde) è abilitato alla scrittura e alla lettura, ma non all'esecuzione
@@ -161,13 +161,13 @@ Le tuple contengono un bit (r)ead, (w)rite e un bit e(x)ecute (ma sono disponibi
 
 **Esempio di organizzazione di un file system**
 
-![[appunti sor/mod i croce/img/Pasted image 20231013120833.png|center|500]]
+![[Pasted image 20231013120833.png|center|500]]
 
 #### Accesso ai file
 
 Di seguito viene riportata una sequenza di comandi per l'accesso ai file.
 
-![[appunti sor/mod i croce/img/Pasted image 20231013121114.png|center|400]]
+![[Pasted image 20231013121114.png|center|400]]
 
 Di seguito l'elenco dei comandi : 
 - **pwd** : Stampa a video l'absolute path della directory corrente
@@ -189,7 +189,7 @@ La comunicazione avviene tramite canale FIFO[^2]
 
 Quindi in UNIX le comunicazioni tra processi sono molto simili alla normale scrittura e lettura di un file
 
-![[appunti sor/mod i croce/img/Pasted image 20231014093317.png|center|300]]
+![[Pasted image 20231014093317.png|center|300]]
 
 
 

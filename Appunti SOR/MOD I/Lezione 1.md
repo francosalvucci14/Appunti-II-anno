@@ -22,7 +22,7 @@ Doppia modalità supportate dall'hardware:
 - Modelità kernel
 - Modalità utente
 
-![[Appunti SOR/MOD I Croce/img/img1.png|center|400]]
+![[img1.png|center|400]]
 # The operating system as an extended machine
 Idea di **astrazione**
 - Il sistema operativo si pone tra l'hardware e le applicazioni
@@ -31,7 +31,7 @@ Visione **Top-Down**
 Vista **Botton-Up**
 - Il SO gestisce parti di un sistema operativo e fornisce un'allocazione ordinata e controllata dalle risorse
 
-![[Appunti SOR/MOD I Croce/img/img2.png|center|600]]
+![[img2.png|center|600]]
 
 # Il sistema operativo come gestore di risorse
 Da un moderno sistema operativo ci aspettiamo che gestisca:
@@ -75,7 +75,7 @@ Multithreading:
 
 ## La memoria
 
-![[Appunti SOR/MOD I Croce/img/img3.png|center]]
+![[img3.png|center]]
 
 Problemi del sistema cache:
 - Quando inserire un nuovo elemento nella cache?

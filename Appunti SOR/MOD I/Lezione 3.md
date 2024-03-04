@@ -28,7 +28,7 @@ Per vedere i passagi vedi figura
 - **Ripresa dopo il blocco** : Quando l'input o le condizioni desiderate sono disponibili, il processo bloccato viene ripreso :
 	- Tornando alla procedura di libreria utente e procedento all'istruzione successiva (passaggio 10)
 
-![[appunti sor/mod i croce/img/Pasted image 20231014095842.png|center|500]]
+![[Pasted image 20231014095842.png|center|500]]
 
 ## Chiamate di sistema per la gestione dei processi
 

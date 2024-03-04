@@ -8,7 +8,7 @@ Il kernel è un blocco monolitico con:
 - Procedure di servizio che eseguono le chiamate di sistema
 - Procedure di utilità che aiutano a implementare le procedure di servizio
 
-![[appunti sor/mod i croce/img/Pasted image 20231018120543.png|center|500]]
+![[Pasted image 20231018120543.png|center|500]]
 
 ### Alcune considerazioni
 
@@ -55,19 +55,19 @@ Vantaggi :
 - Protezione delle risorse e dati critici
 - Separazione chiara dei compiti
 
-![[appunti sor/mod i croce/img/Pasted image 20231018122049.png|center|400]]
+![[Pasted image 20231018122049.png|center|400]]
 
 - **Kernel Unificato** : Tutte le funzionalità centralizzate in un unico kernel
 - **Interconnesione** : Ogni componente ha la capacità di richiamare qualsiasi altro componente
 - **Scalabilità** : Questa struttura può diventare complessa e meno gestibile con l'evoluzione del sistema
 
-![[appunti sor/mod i croce/img/Pasted image 20231018122247.png|center|400]]
+![[Pasted image 20231018122247.png|center|400]]
 
 ## Struttura di un sistema operativo: Virtualizzazione
 
 Inventato negli anni '70 per separare la multiprogrammazione della macchina estesa. Oggi di nuovo interesse in diversi ambiti. N interfacce di chiamata di sistema indipendenti dal sistema operativo. 
 
-![[appunti sor/mod i croce/img/Pasted image 20231025114905.png|center|450]]
+![[Pasted image 20231025114905.png|center|450]]
 
 Virtual Machine Monitor (_VMM_) o Hypervisor emula l'hardware.
 
@@ -75,7 +75,7 @@ Virtual Machine Monitor (_VMM_) o Hypervisor emula l'hardware.
 - _Type 2_ : VMM ospitato nel sistema operativo ( esempio: QEMU);
 - _Hybrid_ : VMM all'interno del sistema operativo ( esempio: KVM). 
 
-![[appunti sor/mod i croce/img/Pasted image 20231025115043.png|center|500]]
+![[Pasted image 20231025115043.png|center|500]]
 ## Container
 
 I container possono eseguire più istanze di un sistema operativo su una singola macchina. Ogni container divide il kernel del sistema operativo host e i file binari e le librerie ( il container non contiene il sistema operativo completo e può quindi essere leggero ). Gli svantaggi dei container:
@@ -101,7 +101,7 @@ Organizza le _service procedure_ che vengono eseguiti in modo separato. processe
 
 _Microkernel_. 
 
-![[appunti sor/mod i croce/img/Pasted image 20231025115425.png|center|500]]
+![[Pasted image 20231025115425.png|center|500]]
 
 _Pro_: è più facile aderire al Principle of Least Authority (POLA):
 - Trusted Computing Base ( TCB ) relativamente "piccolo";

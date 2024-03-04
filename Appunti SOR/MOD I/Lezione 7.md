@@ -25,7 +25,7 @@ I processi hanno un modo per *sincronizzarsi*:
 - *A* scrive il suo file nella posizione `7`.
 **Problema**: La lettura/aggiornamento di un file dovrebbe essere un'azione atomica. Se non lo è, i processi possono "gareggiare" tra loro e giungere a conclusioni errate.
 
-![[appunti sor/mod i croce/img/Pasted image 20231108162832.png|center|450]]
+![[Pasted image 20231108162832.png|center|450]]
 
 ## Critical region 
 Requisiti per evitare "race conditions":
@@ -39,7 +39,7 @@ Requisiti per evitare "race conditions":
 # La mutua esclusione
 ## Critical region
 
-![[appunti sor/mod i croce/img/Pasted image 20231108162924.png|center|550]]
+![[Pasted image 20231108162924.png|center|550]]
 
 ## Esclusione reciproca con *busy waiting*: Alternanza rigorosa
 
@@ -551,7 +551,7 @@ Es. In calcoli paralleli sulle matrici, i processi non possono avanzare a un'ite
 ### Barriere
 Le *barriere* sono utilizzate per *sincronizzaee processi in fasi diverse*. Quando un processo raggiunge una barriera, attende fino a quando tutti gli altri processi la raggiungono.
 
-![[appunti sor/mod i croce/img/Pasted image 20231108163227.png|center|550]]
+![[Pasted image 20231108163227.png|center|550]]
 
 # Inversione delle priorità: Read-Copy-Update
 ## Problema del Mars Pathfinder
@@ -598,13 +598,13 @@ I migliori lock sono quelli che non si usano.
 - Nodo X preparato e reso visibile in modo atomico.
 - Nessuna versione non coerente letta.
 
-![[appunti sor/mod i croce/img/Pasted image 20231108163310.png|center|550]]
+![[Pasted image 20231108163310.png|center|550]]
 
 *Rimozione*:
 - Nodo B o D eliminati senza bisogno di lock.
 - Lettori vedono o la nuova o la vecchia struttura, mai entrambe.
 
-![[appunti sor/mod i croce/img/Pasted image 20231108163334.png|center|550]]
+![[Pasted image 20231108163334.png|center|550]]
 
 ### Read-Copy-Update
 
