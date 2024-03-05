@@ -161,7 +161,7 @@ Le linee telefoniche residenziali trasportano contemporaneamente dati e segnali 
 
 ![[Pasted image 20240304145650.png|center|500]]
 
-#### Reti di accesso : FFTTx
+#### Reti di accesso : FTTx
 
 Si parla di Fibra Ottica
 
