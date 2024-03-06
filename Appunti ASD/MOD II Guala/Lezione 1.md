@@ -91,3 +91,21 @@ Tale job però risulta compatabile con tutti gli altri job della soluzione greed
 
 # Interval Partitioning
 
+Il problema è molto simile al problema dell'Interval Scheduling, l'unica differenza è che i job, qui chiamati `partizioni`, devono essere schedulati in delle classi, e dobbiamo trovare il minimo numero di classi necessarie per schedulare tutte le n partizioni
+
+Vediamolo
+
+La partizione $j$ inizia al tempo $s_j$ e finisce al tempo $f_j$
+Goal : Trovare il minimo numero di classi che servono per schedulare tutte le partizioni in modo tale da avere che due partizioni non occorrono nella stessa classe contemporaneamente
+
+**Esempio**
+
+Questa schedule usa 4 classi per schedulare 10 partizioni
+
+![[Pasted image 20240306111544.png|center|600]]
+
+Vediamo un'altro esempio, questo usa 3 classi per schedulare 10 partizioni
+
+![[Pasted image 20240306111647.png|center|600]]
+
+è facile notare che questa soluzione è la soluzione ottima 
