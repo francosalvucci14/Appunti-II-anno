@@ -17,7 +17,7 @@ Goal : Trovare il massimo sottoinsieme (numero) di job mutualmente compatibili
 >**Misura (da massimizzare)**
 >- Numero di intervalli schedulati, ovvero la cardinalità di $S$
 
-## Algoritmi Greedy per IS
+## Algoritmo Greedy per IS
 
 **Template Greedy** : Considerare i job in un certo ordine naturale
 Prendo ogni job che risulta essere compatibile con il job preso in precedenza
@@ -46,7 +46,8 @@ Per vedere la demo di come funziona l'algoritmo, si veda questa pagina
 
 Diamo prima di tutto una proposizione, che ci dice in quanto tempo viene eseguito questo algoritmo
 
-**Proposizione** : L'algoritmo EFTF viene eseguito in tempo $O(nlog(n))$
+>[!info]- **Proposizione**
+>L'algoritmo EFTF può essere implementato in tempo $O(nlog(n))$
 
 Come?
 
@@ -108,4 +109,89 @@ Vediamo un'altro esempio, questo usa 3 classi per schedulare 10 partizioni
 
 ![[Pasted image 20240306111647.png|center|600]]
 
-è facile notare che questa soluzione è la soluzione ottima 
+è facile notare che questa soluzione è la soluzione ottima
+
+Diamo ora la definizione formale di questo problema
+
+>[!definition]- Definizione formale
+>**Input** :
+>- Insieme di n intervalli $I_1,\dots,I_n$
+>- L'intervallo $I_i$ inizia al tempo $s_i$ e finisce al tempo $f_i$
+>
+>**Soluzione Ammissibile** :
+>- Una partizione degli intervalli in sottoinsiemi, chiamati $C_1,\dots,C_d$ tale che ogni $C_i$ contiene intervalli mutualmente compatibili
+>
+>**Misura (da minimizzare)** :
+>- Numero di classi usate, ovvero il numero $d$
+
+## Algoritmo greedy per IP
+
+**Template Greedy** Considerare gli intervalli in un certo ordine naturale. Assegnamo ognuno di loro ad una classe disponibile (quale?). Creaiamo una nuova classe se nessuna è disponibile
+
+Anche qui ci sono 4 tipi di ordinamento naturale degli intervalli, che sono gli stessi del problema IS
+
+- **Earliest Start Time** : Consideriamo i job ordinati tramite $s_j$
+- **Earliest Finish Time** : Consideriamo i job ordinati tramite $f_j$
+- **Shortest Interval** : Consideriamo i job ordinati tramite il valore $f_j-s_j$
+- **Fewest Conflicts** : Per ogni job $j$, consideriamo il numero di job che vanno in conflitto con lui, detti $c_j$. Ordiamo i job in base al valore $c_j$
+
+Possiamo dimostrare che il primo metodo genera la soluzione ottima, mentre gli altri 3 no
+
+Diamo un controesempio per i 3 tipi di ordinamento che non portano alla soluzione ottima
+
+![[Pasted image 20240306112603.png|center|400]]
+
+Vediamo il codice dell'algoritmo che permette di risolvere il problema dell'Interval Partitioning
+
+![[Pasted image 20240306112715.png|center|500]]
+
+Per vedere la demo dell'algoritmo, rimando alla seguente pagina web
+[Demo algoritmo ESTF](https://www.mat.uniroma2.it/~guala/01_Interval_scheduling_2023.pdf#36)
+
+### Analisi algoritmo  greedy $[ESTF]$
+
+>[!info]- Proposizione
+>L'algoritmo greedy ESTF può essere implementato in tempo $O(nlog(n))$
+
+**Dimostrazione**
+
+- Ordinamento tramite starting time può essere fatto in tempo $O(nlog(n))$ tramite MergeSort
+- Salviamo le classi in una **coda con priorità** (chiave = finish time dell'ultimo intervallo)
+	- Per creare una nuova classe, eseguiamo l'operazione di Insert della coda
+	- Per schedulare l'intervallo $j$ nella classe $k$, eseguiamo l'operazione di Increase-Key della classe $k$ in $f_j$
+	- Per vedere se l'intervallo $j$ è compatibile con una qualunque classe, eseguiamo prima l'operazione Find-Min, poi confrontiamo il valore $s_j$ con il valore di Find-Min
+- Il numero totale di operazioni è $O(n)$, ognuna di costo $O(log(n))$
+
+#### Lower Bound della soluzione ottima
+
+Diamo prima la definizione di **depth (profondità)**
+
+>[!definition]- Depth (profondità)
+>La **depth** di un insieme di intervalli aperti è il massimo numero di intervalli che contengono un determinato punto
+
+**Osservazione Chiave** : Numero di classi necessarie $\geq$ depth
+
+Q. Il numero minimo di classi necessarie equivale sempre alla profondità?
+A. Sì! Inoltre, l'algoritmo ESTF trova una pianificazione il cui numero di classi è pari alla profondità.
+
+**Esempio di depth**
+
+![[Pasted image 20240306115451.png|center|600]]
+
+### Ritornando all'analisi dell'algoritmo $[ESTF]$
+
+**Osservazione** : L'algoritmo ESTF non schedula mai due intervalli incompatibili nella stessa classe
+
+Diamo ora l'enunciato del teorema
+
+>[!definition]- Teorema
+>L'algoritmo ESTF è ottimo
+
+**Dimostrazione**
+- Sia $d$ il numero di classi che l'algoritmo alloca
+- La classe $d$ è aperta perchè abbiamo bisogno di schedulare l'intervallo, detto $j$, che è incompatibile con gli altri intervalli nelle restanti $d-1$ classi
+- Quindi, questi $d$ intervalli devono finire dopo $s_j$
+- Dato che abbiamo ordinato tramite starting time, ognuno di questi intervalli incompatibili iniziano non più tardi di $s_j$
+- Quindi, abbiamo $d$ intervalli che si sovrappongono al tempo $s_j+\epsilon$
+- Dall'osservazione chiave $\to$ tutte le schedule usano $\geq d$ classi 
+
