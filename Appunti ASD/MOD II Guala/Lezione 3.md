@@ -15,6 +15,35 @@
 - **Soluzione ammissibile** : Un albero ricoprente $T$ di $G$
 - **Misura (da minimizzare)** : Il costo di $T$, ovvero $c(T)=\sum_{e\in T}c_e$
 
+## Unicità del MST
+
+L'MST _non_ è unico in generale
+
+![[Pasted image 20240312152443.png|center|500]]
+
+**Proprietà** : Se $G$ ha pesi distinti allora l'MST è unico
+
+## Cicli e Tagli
+
+**Ciclo** : Insieme di archi della forma $a-b,b-c,c-d,\dots,y-z,z-a$
+
+![[Pasted image 20240312152856.png|center|500]]
+
+**Taglio** : Un taglio è un sottoinsieme di nodi, detto S
+
+**CutSet** : Il corrispondente cutset $D$ di $S$ è un sottoinsieme di archi con esattamente un endpoint in $S$
+
+![[Pasted image 20240312153013.png|center|500]]
+
+### Intersezione Ciclo-Taglio
+
+**Claim** : Un ciclo e un cutset si intersecano in un numero pari di archi
+
+![[Pasted image 20240312153117.png|center|500]]
+
+**Dim** Tramite foto
+
+![[Pasted image 20240312153146.png|center|500]]
 
 
 
