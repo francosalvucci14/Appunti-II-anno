@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0f73b8daa5e2d5b4",
+        "id": "10afc379849da40e",
         "type": "tabs",
         "children": [
           {
-            "id": "216f492dfede4fd9",
+            "id": "75c6f5f590156973",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 3.md",
-                "mode": "source",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 3.md"
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 3.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 3.md",
+                "file": "Appunti ASD/Algoritmi/Algoritmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "5a46b8e248aedf1e",
@@ -179,8 +179,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "195b83bf8ca7a0a9",
+  "active": "75c6f5f590156973",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/Lezione 3.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240312153146.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240312153117.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240312153013.png",
@@ -188,12 +189,10 @@
     "Appunti ASD/MOD II Guala/img/Pasted image 20240312152443.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240312150759.png",
     "Appunti ASD/MOD II Guala/Lezione 2.md",
-    "Appunti ASD/MOD II Guala/Lezione 3.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240312145715.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240312145003.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240312144748.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240312144528.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240312143902.png",
     "Appunti ASD/MOD II Guala/Lezione 1.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
     "Appunti SOR/MOD II (Reti)/Lezione 1.md",
