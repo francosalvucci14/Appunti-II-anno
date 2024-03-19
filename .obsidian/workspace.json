@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md"
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 2.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "5a46b8e248aedf1e",
@@ -181,31 +181,34 @@
   },
   "active": "1eb1ee48f1c30655",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II Guala/Lezione 1.md",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240319154925.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240319154902.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240319154841.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240319154148.png",
+    "Appunti ASD/Algoritmo_Es3.pdf",
+    "Appunti SOR/MOD II (Reti)/Lezione 2.md",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240319152108.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240319152053.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240319151649.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240319151347.png",
+    "Appunti SOR/MOD II (Reti)/Lezione 1.md",
     "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 1.md",
+    "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
+    "Appunti ASD/MOD II Guala/Lezione 1.md",
     "Minimum.md",
     "Appunti ASD/MOD II Guala/Esercitazioni/img/Pasted image 20240319144449.png",
     "Appunti ASD/MOD II Guala/Esercitazioni/img",
     "Appunti ASD/MOD II Guala/Lezione 4.md",
     "Appunti ASD/MOD I/Indice degli appunti ASD.md",
-    "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
     "Appunti ASD/MOD II Guala/Esercitazioni",
     "Appunti BSD/Progetto DB/Fase tre.md",
     "Appunti BSD/Progetto DB/Fase Tre Modificata.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240315110930.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240315105733.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240315104733.png",
     "Appunti ASD/MOD II Guala/Lezione 3.md",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240315103439.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240315102402.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240315101942.png",
     "Appunti ASD/Algoritmi/Algoritmi.md",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240312153146.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240312153117.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240312153013.png",
     "Appunti ASD/MOD II Guala/Lezione 2.md",
     "Appunti ASD/MOD II/Esercitazioni/Esercitazione 1.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 1.md",
     "Appunti ASD/MOD II Guala/img",
     "Appunti ASD/MOD II Guala",
     "Appunti SOR/MOD II (Reti)/img",
@@ -221,12 +224,9 @@
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
-    "Appunti ASD/MOD I/Lezione 15 - Capitolo 11.md",
-    "Appunti ASD/MOD I/Lezione 14 - Capitolo 11.md",
     "Appunti BSD/Progetto DB/Schemi",
     "Untitled",
     "Appunti BSD/Progetto DB/Risultati Query",
-    "Appunti SOR/MOD I (S.O.)/Esami",
     "Untitled.canvas"
   ]
 }

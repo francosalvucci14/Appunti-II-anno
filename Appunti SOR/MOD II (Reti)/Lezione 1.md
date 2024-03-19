@@ -251,3 +251,4 @@ Possono essere classificati in vari gruppi :
 	- 4G Plus fino a 300 Mbps
 - **Bluetooth** : sostituzione dei cavi
 - etc...
+
