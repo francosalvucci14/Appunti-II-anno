@@ -205,7 +205,46 @@ Per ogni i:
 
 **Esempio di traceroute**
 
-![[Pasted image 20240320134149.png|center|600]]
+![[Pasted image 20240320134149.png|center]]
+
+## Perdita di pacchetti
+
+La coda (anche detta buffer) che precede un collegamento ha capacità **finita**
+
+Quando un pacchetto trova la coda piena, viene scartato (e quindi va perso)
+
+Il pacchetto perso può essere ritrasmesso dal nodo precedente, dal sistema terminale che lo ha generato, o non essere ristrasmesso affatto
+
+![[Pasted image 20240320140648.png|center|500]]
+
+## Throughput
+
+>[!definition]- Throughput
+>Frequenza (bit/unità di tempo) alla quale i bit sono trasferiti tra mittente e ricevente
+>- **Istantaneo** : in un determinato istante
+>- **Medio** : In un periodo di tempo lungo
+
+![[Pasted image 20240320140815.png|center|500]]
+
+![[Pasted image 20240320141905.png|center|500]]
+
+>[!warning]- Collo di bottiglia
+>Colelgamento su un percorso punto-punto che vincola un throughput end-to-end
+
+### Scenario Internet
+
+- Throughput end-to-end per ciascuna connessione :  $min(R_c,R_s,\frac{R}{10})$
+- In pratica : $R_c$ o $R_s$ è spesso il collo di bottiglia
+
+![[Pasted image 20240320142117.png|center|300]]
+
+### Osservazioni
+
+Il throughput end-to-end dipende dalla velocità di trasmissione dei collegamenti attraversati dal flusso di dati
+- Se il percorso non è interessato da altro traffico $$\text{throughput}\simeq \min\{R_i\}$$ Dove $R_i$ è la velocità di trasmissione  dell'i-esimo collegamento
+- Altrimenti, come fatto prima, occorre suddividere la velocità di trasmissione di un collegamento tra i vari flussi che lo attraversano
+
+Il throughput effettivo può essere inferiore a causa di altri fattori (es. protocolli usati)
 
 
 [^1]: 0.0004 si ottiene dalla formula $$1-\sum\limits_{i=0}^{10}P(\text{utenti attivi}=i)=1-\sum\limits_{i=0}^{10}{35\choose i}0.1^i(1-0.1)^{35-i}=1-\sum\limits_{i=0}^{10}\frac{35!}{i!(35-i)!}0.1^i(1-0.1)^{35-i}\leq0.0004$$
