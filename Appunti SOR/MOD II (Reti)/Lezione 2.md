@@ -230,7 +230,7 @@ Il pacchetto perso può essere ritrasmesso dal nodo precedente, dal sistema term
 ![[Pasted image 20240320141905.png|center|500]]
 
 >[!warning]- Collo di bottiglia
->Colelgamento su un percorso punto-punto che vincola un throughput end-to-end
+>Collegamento su un percorso punto-punto che vincola un throughput end-to-end
 
 ### Scenario Internet
 
