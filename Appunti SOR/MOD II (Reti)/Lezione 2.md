@@ -146,5 +146,33 @@ La **perdita** di pacchetti di verifica quando la memoria che contiene la coda d
 
 ![[Pasted image 20240320113510.png|center|500]]
 
+### Ritardo per i pacchetti : quattro cause
+
+![[Pasted image 20240320113644.png|center|500]]
+
+$$d_{\text{nodo}}=d_{\text{elab}}+d_{\text{acc}}+d_{\text{trasm}}+d_{\text{prop}}$$
+
+$d_{\text{elab}}$ = **elaborazione di nodo**
+- Controllo errori sui bit
+- Determinazione del canale in uscita
+- Tipicamente $\lt$ microsecondi
+
+$d_{\text{acc}}$ = **ritardo di accodamento**
+- Attesa di trasmissione
+- Dipende dal livello di congestione del router
+
+$d_{\text{trasm}}$ = **ritardo di trasmissione**
+- $L$ : Lunghezza del pacchetto (in bit)
+- $R$ : Tasso di trasmissione del collegamento (in bps)
+- $d_{\text{trasm}} = \frac{L}{R}$
+
+$d_{\text{prop}}$ = **ritardo di propagazione**
+- $d$ : lunghezza del collegamento fisico
+- $v$ :  velocità di propagazione ($\simeq 2\times 10^8\frac{m}{s}$ )
+- $d_{\text{prop}} = \frac{d}{v}$
+
+In genere $d_{\text{elab}},d_{\text{prop}}$ sono molto diversi
+
+
 
 [^1]: 0.0004 si ottiene dalla formula $$1-\sum\limits_{i=0}^{10}P(\text{utenti attivi}=i)=1-\sum\limits_{i=0}^{10}{35\choose i}0.1^i(1-0.1)^{35-i}=1-\sum\limits_{i=0}^{10}\frac{35!}{i!(35-i)!}0.1^i(1-0.1)^{35-i}\leq0.0004$$
