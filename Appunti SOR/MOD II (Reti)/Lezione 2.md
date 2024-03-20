@@ -135,6 +135,7 @@ Al "centro" : un piccolo numero di grandi reti ben connesse
 - **ISP commerciali "tier-1"** : Copertura nazionale & internazionale
 - **Rete di fornitori di contenuti** : reti private che connetono i suoi data center a Internet, spesso aggirando ISP tier-1 e regionali
 
+---
 # Prestazioni
 
 ## Come si verificano ritardi e perdite?

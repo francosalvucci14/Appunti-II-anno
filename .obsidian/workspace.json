@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md"
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 3.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "5a46b8e248aedf1e",
@@ -181,18 +181,19 @@
   },
   "active": "1943b5a29d53f9cb",
   "lastOpenFiles": [
-    "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
     "Appunti SOR/MOD II (Reti)/Lezione 2.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 3.md",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320144148.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320144023.png",
+    "Pasted image 20240320143429.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320143305.png",
+    "Pasted image 20240320143253.png",
+    "Pasted image 20240320143253 1.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320143040.png",
+    "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
     "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320142117.png",
     "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320141905.png",
     "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320140815.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320140648.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320134149.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320134036.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320121228.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320113644.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320113510.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240320112910.png",
     "Appunti ASD/MOD I/Indice degli appunti ASD.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti SOR/MOD II (Reti)/Lezione 1.md",
@@ -222,7 +223,6 @@
     "Appunti ASD/MOD I/Lezione 9 - Capitolo 5.md",
     "Appunti ASD/MOD I/Lezione 7 - Capitolo 4.md",
     "Appunti ASD/MOD I/Lezione 5 - Capitolo 4.md",
-    "Appunti ASD/MOD I/Lezione 16 - Capitolo 13.md",
     "Appunti BSD/Progetto DB/Schemi",
     "Untitled",
     "Appunti BSD/Progetto DB/Risultati Query",
