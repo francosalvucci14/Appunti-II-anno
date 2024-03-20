@@ -99,4 +99,52 @@ La commutazione di pacchetto è una "vincitrice assoluta" ?
 - **Ritardi end-to-end variabili e imprevedibili** : A causa della variabilità e imprevedibilità dei ritardi di accodamento
 	- Servizi in tempo reale
 
+## Struttura di internet : "rete di reti"
+
+I sistemi periferici accedono a Internet tramite i cosidetti **Internet Service Provider (ISP)** di accesso
+
+Gli ISP di accesso devono essere interconnessi a loro volta, in modo che due host qualsiasi possano inviare pacchetti l'uno all'altro
+
+La rete di reti risultatno è molto complessa
+
+![[Pasted image 20240320111943.png|center|500]]
+
+**Domanda** : Dati milioni di ISP di accesso, come collegarli tra loro?
+
+![[Pasted image 20240320112105.png|center|500]]
+
+![[Pasted image 20240320112546.png|center|500]]
+
+**Opzione** : Collegare ogni ISP di accesso a un ISP globale di transito
+
+![[Pasted image 20240320112558.png|center|500]]
+
+Ma se un ISP globale è un attività vantaggiosa, ci saranno concorrenti
+
+![[Pasted image 20240320112716.png|center|500]]
+
+![[Pasted image 20240320112738.png|center|500]]
+
+![[Pasted image 20240320112805.png|center|500]]
+
+![[Pasted image 20240320112850.png|center|500]]
+
+![[Pasted image 20240320112910.png|center|500]]
+
+Al "centro" : un piccolo numero di grandi reti ben connesse
+- **ISP commerciali "tier-1"** : Copertura nazionale & internazionale
+- **Rete di fornitori di contenuti** : reti private che connetono i suoi data center a Internet, spesso aggirando ISP tier-1 e regionali
+
+# Prestazioni
+
+## Come si verificano ritardi e perdite?
+
+I pacchetti si **accodano** nei bufferi dei router, aspettando il proprio turno per la trasmissione
+- La lunghezza della cosa cresce quando il tasso di arrivo dei pacchetti sul collegamento eccede (temporaneamente) la capacità del collegamento di evaderli
+
+La **perdita** di pacchetti di verifica quando la memoria che contiene la coda dei pacchetti si riempie
+
+![[Pasted image 20240320113510.png|center|500]]
+
+
 [^1]: 0.0004 si ottiene dalla formula $$1-\sum\limits_{i=0}^{10}P(\text{utenti attivi}=i)=1-\sum\limits_{i=0}^{10}{35\choose i}0.1^i(1-0.1)^{35-i}=1-\sum\limits_{i=0}^{10}\frac{35!}{i!(35-i)!}0.1^i(1-0.1)^{35-i}\leq0.0004$$
