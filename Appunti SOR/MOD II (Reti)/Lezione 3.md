@@ -76,3 +76,21 @@ Le reti sono complesse, con molti "pezzi"
 
 C'è una qualche speranza di organizzare l'architettura delle reti
 
+## Stratificazione
+
+Approccio alla progettazione/discussione di sistemi complessi
+
+- Una struttura esplicita consente l'identificazione dei vari componenti dei vari componenti di un sistema
+	- Analisi del **modello di riferimento a strati**
+- La modularizzazione facilita la manutenzione e l'aggiornamento di un sistema
+	- Modifica dell'implementazione del servizio del livello : trasparente al resto del sistema
+	- Es. le modifiche alla procedura di gate non influiscono sul resto del sistema
+
+### Potenziali svantaggi
+
+Un livello può duplicare funzionalità del livello inferiore
+
+Necessità di violare la separazione tra livelli, perchè un livello ha bisogno di una informazione disponibile solo all'interno del livello inferiore
+
+## Pila di protocolli (protocol stack) di Internet
+
