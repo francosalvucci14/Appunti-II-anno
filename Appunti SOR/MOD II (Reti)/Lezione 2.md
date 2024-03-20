@@ -173,6 +173,39 @@ $d_{\text{prop}}$ = **ritardo di propagazione**
 
 In genere $d_{\text{elab}},d_{\text{prop}}$ sono molto diversi
 
+## Commutazione di pacchetto : ritardo end-to-end
+
+I ritardi totali di nodo cui è in corso un pacchetto lungo il suo percorso, dalla sorgente alla destinazione si accumulano, determinando un ritardo end-to-end pari a
+$$d_{\text{end-to-end}}=\sum\limits_i(d_{\text{elab}_i}+d_{\text{acc}_i}+d_{\text{trasm}_i}+d_{\text{prop}_i})$$
+## Ritardo dei pacchetti (rivisitato)
+
+- $a$ velocità media di arrivo dei pacchetti
+- $L$ : lunghezza del pacchetto (in bit)
+- $R$ : velocità di trasmissione (in bit/s)
+
+**Intensità di traffico** : $\frac{La}{R}=\frac{\text{velocità di arrivo dei bit}}{\text{velocità di servizio dei bit}}$
+
+![[Pasted image 20240320121228.png|center|300]]
+
+- $\frac{La}{R}\sim0$ : Ritardo medio di accodamento piccolo
+- $\frac{La}{R}\sim1$ : Ritardo medio di accodamento grande
+- $\frac{La}{R}\gt1$ : Più "lavoro" in arrivo di quanto possa essere servito - ritardo tende all'infinito
+
+### Ritardi e percorsi in Internet
+
+Ma cosa significano effettivamente ritardi e perdite nella "vera" Internet?
+
+**Traceroute** : Programma diagnostico che fornisce una misura del ritardo dalla sorgente al router lungo i percorsi Internet punto-punto verso la destinazione
+Per ogni i:
+- Invia tra pacchetti che raggiungeranno il router i sul percorso verso la destinazione (con il campo time-to-live uguale i)
+- Il router i restituirà i pacchetti al mittente
+- Il mittente calcola l'intervallo tra trasmissione e risposta
+
+![[Pasted image 20240320134036.png|center|500]]
+
+**Esempio di traceroute**
+
+![[Pasted image 20240320134149.png|center|600]]
 
 
 [^1]: 0.0004 si ottiene dalla formula $$1-\sum\limits_{i=0}^{10}P(\text{utenti attivi}=i)=1-\sum\limits_{i=0}^{10}{35\choose i}0.1^i(1-0.1)^{35-i}=1-\sum\limits_{i=0}^{10}\frac{35!}{i!(35-i)!}0.1^i(1-0.1)^{35-i}\leq0.0004$$
