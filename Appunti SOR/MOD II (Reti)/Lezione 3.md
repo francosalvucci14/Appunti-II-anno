@@ -94,3 +94,65 @@ Necessità di violare la separazione tra livelli, perchè un livello ha bisogno 
 
 ## Pila di protocolli (protocol stack) di Internet
 
+- **Applicazione (application layer)** : Supporto alle applicazioni di rete
+	- HTTP,IMAP,SMTP,DNS
+- **Trasporto (transport layer)** : Trasferimento di dati tra processi (in esecuzione su host differenti)
+	- TCP,UDP
+- **Rete (network layer)** : Trasferimento di paccheti di rete, deti datagrammi, da un host all'altro
+	- IP, Protocolli di instradamento
+- **Collegamento (link layer)** : Trasferimento di dati tra elementi di rete vicini
+	- Ethernet, 802.11 (WiFi), PPP
+- **Fisico (physical layer)** : Bit "sul filo"
+
+![[Pasted image 20240321095113.png|center|150]]
+
+### Servizi, Stratificazione e Incapsulamento
+
+![[Pasted image 20240321095231.png|center|600]]
+
+![[Pasted image 20240321095251.png|center|600]]
+
+![[Pasted image 20240321095314.png|center|600]]
+
+![[Pasted image 20240321095331.png|center|600]]
+
+### Modello di servizio (service model)
+
+Insieme di servizi offerti da un livello a quello superiore
+
+I diversi servizi possono essere implementati da protocolli diversi
+
+Il livello di collegamento può offire servizi diversi in base al protocollo impiegato sul link
+
+Inoltre, un protocollo a livello di collegamento può prevedere protocolli diversi, a livello fisico, dipendentemente dalla tecnologia di trasmissione e dal mezzo trasmissivo del link. Ethernet, ad esempio, ha molti protocolli dello strato fisico : es. uno per il doppino intrecciato, uno per la fibra, etc...
+
+### Incapsulamento
+
+L'idea è quella di usare l'effetto matrioska
+
+![[Pasted image 20240321095758.png|center|500]]
+
+![[Pasted image 20240321095824.png|center|500]]
+
+![[Pasted image 20240321100011.png|center|500]]
+
+### n-PDU : implementazione dei livelli
+
+>[!definition]- n-PDU (Protocol Data Unit)
+>è la singola unità di informazione scambiata tra pari attraverso un protocollo di livello n
+>- Specifiche informazioni di controllo per il protocollo
+>- Carico Utile (payload) . in genere una (n+1)-PDU
+
+
+![[Pasted image 20240321100123.png|center|300]]
+
+## Modello di riferimento ISO/OSI
+
+Nel modello ISO/OSI ci sono due strati che nella pila di protocolli non esistono, essi sono:
+- **Presentazione** : Consente alle applicazioni di interpretare il significato dei dati, ad esempio crittografia, compressione, convenzioni specifiche della macchina, etc...
+- **Sessione** : Sincronizzazione, checkpointing, ripristino dello scambio dati
+
+Dato che nella pila di protocolli questi due strati mancano, *se necessari* devono essere implementati nelle applicazioni
+
+![[Pasted image 20240321100723.png|center|200]]
+
