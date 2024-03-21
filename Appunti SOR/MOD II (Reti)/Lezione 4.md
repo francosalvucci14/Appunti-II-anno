@@ -117,7 +117,8 @@ Un protocollo a livello applicativo definisce :
 - **Controllo di flusso** : il mittente non vuole sovraccaricare il destinatario
 - **Controllo della congestione** : "strozza" il processo d'invio quando la rete è sovraccarica
 - **Orientato alla connessione** : è richiesto un setup fra i processi client e server
-- non offre : temporizzazione, garanzie su un'ampiezza di banda minima, sicurezza
+- **Non offre** : temporizzazione, garanzie su un'ampiezza di banda minima, sicurezza
 
 *Servizio UDP* :
-- 
+- **Trasferimento dati inaffidabile** fra i processi di invio e ricezione
+- **Non offre** : affidabilità, controllo di flusso, controllo della congestione, temporizzazione, ampiezza di banda minima, sicurezza, setup alla connessione
