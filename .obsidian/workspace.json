@@ -103,9 +103,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 5.md"
-              }
+              "state": {}
             }
           },
           {
@@ -122,7 +120,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +136,13 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "5a46b8e248aedf1e",
@@ -179,8 +175,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1943b5a29d53f9cb",
+  "active": "47697e81bcad0f64",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/Lezione 5.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240325101518.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240325100739.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240325100502.png",
@@ -189,7 +186,6 @@
     "Appunti ASD/MOD II Guala/Lezione 2.md",
     "Appunti ASD/MOD II Guala/Lezione 3.md",
     "Appunti ASD/MOD II Guala/Lezione 4.md",
-    "Appunti ASD/MOD II Guala/Lezione 5.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240325094757.png",
     "Appunti SOR/MOD II (Reti)/Lezione 4.md",
     "Appunti SOR/MOD II (Reti)/img/Pasted image 20240321103737.png",
@@ -198,7 +194,6 @@
     "Appunti SOR/MOD II (Reti)/img/Pasted image 20240321101420.png",
     "Appunti SOR/MOD II (Reti)/Lezione 2.md",
     "Appunti SOR/MOD II (Reti)/Lezione 3.md",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240321100723.png",
     "Appunti SOR/MOD II (Reti)/Lezione 1.md",
     "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
     "Appunti ASD/MOD I/Indice degli appunti ASD.md",
