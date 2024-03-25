@@ -146,3 +146,5 @@ Il tempo di esecuzione è $T(n) = \Theta(n)$
 
 ### Ricostruzione della soluzione (in tempo lineare)
 
+**Idea semplice** : Mentre calcoliamo i valori $OPT[j]$ possiamo mantenere esplicitamente anche la soluzione
+- Corretta ma non ideale : spreco di tempo e spazio
