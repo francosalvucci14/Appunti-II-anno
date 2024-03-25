@@ -88,7 +88,7 @@ Lo pseudocodice di Kruskal è il seguente
 
 ![[Pasted image 20240315103439.png|center|400]]
 
-[Esempio Funzionamento Algoritmo di Kruskal](https://www.mat.uniroma2.it/~guala/03_mst_2023.pdf#16)
+[Esempio Funzionamento Algoritmo di Kruskal](https://www.mat.uniroma2.it/~guala/03_mst_2023.pdf?16)
 
 ## Running Time
 

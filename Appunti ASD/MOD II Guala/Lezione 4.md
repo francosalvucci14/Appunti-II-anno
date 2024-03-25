@@ -5,7 +5,7 @@
 
 **Correttezza** : Conseguenza diretta della cut property, usata esattamente n-1 volte
 
-[Esempio Algoritmo di Prim](https://www.mat.uniroma2.it/~guala/03_mst_2023.pdf#35)
+[Esempio Algoritmo di Prim](https://www.mat.uniroma2.it/~guala/03_mst_2023.pdf?35)
 
 ## Running Time
 
@@ -92,4 +92,3 @@ Sia $C$ un'altro clustering, formato dai cluster $C_1,\dots,C_k$
 - Quindi, $C^\star$ è un k-clustering di spacing massimo $\square$
 
 ![[Pasted image 20240315110930.png|center|400]]
-

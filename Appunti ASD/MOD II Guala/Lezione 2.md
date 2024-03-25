@@ -41,7 +41,7 @@ In ogni albero :
 
 ![[Pasted image 20240312142209.png|center|500]]
 
-**Esempio di una sequenza di operazioni** : [Esempio](https://www.mat.uniroma2.it/~guala/02_Union_find_2023.pdf#11)
+**Esempio di una sequenza di operazioni** : [Esempio](https://www.mat.uniroma2.it/~guala/02_Union_find_2023.pdf?11)
 
 Quanto costano le operazioni?
 - makeSet(x) costa $O(1)$
@@ -64,7 +64,7 @@ Ogni insieme mantiene esplicitamente anche la propria size (numero di elementi)
 
 ![[Pasted image 20240312143151.png|center|400]]
 
-**Vedi esempio :** [Esempio](https://www.mat.uniroma2.it/~guala/02_Union_find_2023.pdf#25)
+**Vedi esempio :** [Esempio](https://www.mat.uniroma2.it/~guala/02_Union_find_2023.pdf?25)
 
 **Realizzazione**
 
@@ -118,7 +118,7 @@ In ogni albero:
 ![[Pasted image 20240312144528.png|center|500]]
 
 
-**Esempio sequenza di operazioni** : [Esempio](https://www.mat.uniroma2.it/~guala/02_Union_find_2023.pdf#45)
+**Esempio sequenza di operazioni** : [Esempio](https://www.mat.uniroma2.it/~guala/02_Union_find_2023.pdf?45)
 
 Quanto costano le operazioni?
 - makeSet(x) costa $O(1)$
@@ -141,7 +141,7 @@ L'idea è fare in modo che per ogni insieme l'albero corrispondente abbia altezz
 
 ![[Pasted image 20240312145003.png|center|500]]
 
-**Esempio sequenza di operazioni** : [Esempio](https://www.mat.uniroma2.it/~guala/02_Union_find_2023.pdf#56)
+**Esempio sequenza di operazioni** : [Esempio](https://www.mat.uniroma2.it/~guala/02_Union_find_2023.pdf?56)
 
 >[!definition]- Lemma
 >Con la union by size, dato un albero QuickUnion con size (numero di nodi) s e altezza h vale che $s\geq2^h$
