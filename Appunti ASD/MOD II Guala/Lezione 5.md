@@ -216,6 +216,3 @@ Se la definizione dei sottoproblemi è un punto di arrivo, come ci arrivo?
 - **Ragionando sulla struttura della soluzione (ottima) cercata**
 
 La struttura della soluzione può suggerire i sottoproblemi e l'ordine in cui considerarli
-
-
-
