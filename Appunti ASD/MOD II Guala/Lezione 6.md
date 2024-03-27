@@ -81,5 +81,40 @@ $$T(n)=\begin{cases}\Theta(1)&n=1\\2T(n-1)+\Theta(1)&n\gt1\end{cases}\implies T(
 
 ### Top-down Dynamic Programming (Memoization)
 
+**Memoization** :
+- Salva il risultato del sottoproblema $j$ in $M[j]$
+- Usa $M[j]$ per evitare di risolvere il sottoproblema $j$ più di una volta
 
+![[Pasted image 20240327102354.png|center|500]]
 
+**Claim** : La versione "Memoizzata" dell'algoritmo richiede tempo $O(n\log(n))$
+
+**Pf.**
+- Ordinare tramite finish time : $O(n\log(n))$ usando il MergeSort
+- Calcolare $p[j]$ per ogni $j$ : $O(n\log(n))$ usando il binary search
+- `M-ComputeOPT(j)` : Ogni invocazione richiede tempo $O(1)$ e inoltre :
+	1) Ritorna un valore inizializzato $M[j]$
+	2) Inizializza $M[j]$ ed esegue due chiamate ricorsive
+- Misura di progresso $\phi$ = # voci inizializzate in $M[1\dots n]$
+	- Inizialmente $\phi=0$; Totale $\phi\leq n$
+	- Incrementa $\phi$ di 1 $\implies\leq 2n$ chiamate ricorsive
+- Tempo totale di esecuzione di `M-Compute-OPT(n)` è $O(n)$
+
+**Q** : L'algoritmo di DP calcola il valore della soluzione ottima. Come troviamo la soluzione ottima?
+**A** : Eseguiamo una seconda passata chiamando l'algoritmo `Find-Solution(n)`
+
+![[Pasted image 20240327103431.png|center|500]]
+
+Numero di chiamate ricorsive $\leq n\implies O(n)$
+
+## Memoization (top-down) vs Table-base (bottom-up)
+
+| Memoization                                                           | Table-base                                                                 |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| ApproccioTop-Down                                                     | **Più difficile da "afferrare"**                                           |
+| Più facile indicizzare i sottoproblemi da altri oggetti (es. insieme) | **Bisogna indicizzare i sottoproblemi con gli interi**                     |
+| Calcola solo i sottoproblemi necessari                                | **Calcola sempre tutti i sottoproblemi**                                   |
+| **Chiamate delle funzioni sopraelevate**                              | Nessuna ricorsione. Più efficiente                                         |
+| **La complessità temporale è più difficile da analizzare**            | La complessità temporale è più facile da analizzare, codice corto e pulito |
+
+----
