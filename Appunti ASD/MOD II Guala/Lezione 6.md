@@ -118,6 +118,52 @@ Numero di chiamate ricorsive $\leq n\implies O(n)$
 | **La complessità temporale è più difficile da analizzare**            | La complessità temporale è più facile da analizzare, codice corto e pulito |
 
 ----
-
 # Longest Increasing Subsequence
+
+Una piccola analogia
+
+Robert vuole bere il più possibile
+
+- Robert cammina lungo una via e incontra $n$ taverne $t_1,t_2,\dots t_n$ in ordine
+- Quando Robert incontra una taverna $t_i$, lui si può fermare a bere o no
+- Il vino servito nella taverna $t_i$ ha gradazione $s_i$
+- La gradazione dei drinks di Robert deve incrementarsi ogni volta
+- **Goal** : Calcola il massimo numero di fermate di Robert
+
+**Esempio**
+
+![[Pasted image 20240327112742.png|center|500]]
+![[Pasted image 20240327112801.png|center|500]]
+
+Soluzione ottima : 6
+
+Questo problema è conosciuto col nome di **Longest Increasing Subsequence**
+
+## Algoritmo DP : Prima prova
+
+- **Definizioni dei sottoproblemi** : $OPT[i]$ : Lunghezza del LIS di $S[1],\dots S[i]$
+- **Caso base** $$OPT[1]=1$$
+- **Soluzione** $$OPT[n]$$
+- Formula ricorsiva ???
+
+## Algoritmo DP : Seconda prova
+
+**Tip** : Molte volte aggiungere costanti al problema può aiutare!
+
+$OPT[i]$ : Lunghezza del LIS di $S[1],\dots S[i]$ che finisce con $S[i]$
+
+Vedi esempio qui -> [Esempio](https://www.mat.uniroma2.it/~guala/05_DP_II_2023.pdf#page=22)
+
+- **Definizione di sottoproblemi** : $OPT[i]$ : Lunghezza del LIS di $S[1],\dots S[i]$ che finisce con $S[i]$
+- **Caso base** : $$OPT[1]=1$$
+- **Soluzione** : $$\max_{i=1,2,\dots,n}OPT[i]$$
+- **Ordine dei sottoproblemi** $$OPT[1],OPT[2],\dots OPT[n]$$
+- **Formula ricorsiva** $$OPT[i]=1+\max\{0,\max_{j=1,2,\dots,i-1}OPT[j]\}$$
+Ora vediamo lo pseudocodice dell'algoritmo
+
+![[Pasted image 20240327113940.png|center|500]]
+
+**Tempo di esecuzione**
+- Ogni $OPT[i]$ viene calcolare in tempo $O(i)=O(n)$
+- tempo totale $O(n^2)$
 
