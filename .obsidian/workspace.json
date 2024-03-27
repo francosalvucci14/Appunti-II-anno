@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizio DP 1.md",
+                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizio DP 1.md"
+                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizio DP 1.md",
+                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizio DP 1.md",
+                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "5a46b8e248aedf1e",
@@ -179,9 +179,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1943b5a29d53f9cb",
+  "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
     "Appunti ASD/MOD II Guala/Lezione 6.md",
+    "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240327113940.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240327112801.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240327112742.png",
@@ -194,7 +195,6 @@
     "Appunti ASD/MOD II Guala/img/Pasted image 20240327100516.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240327100033.png",
     "Appunti ASD/MOD II Guala/Lezione 5.md",
-    "Appunti ASD/MOD II Guala/Esercizi/Esercizio DP 1.md",
     "Appunti ASD/MOD II Guala/Esercizi/img",
     "Appunti ASD/MOD II Guala/Esercizi",
     "Appunti ASD/MOD II Guala/Lezione 2.md",

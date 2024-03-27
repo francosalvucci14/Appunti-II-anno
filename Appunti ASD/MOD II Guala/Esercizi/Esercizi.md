@@ -1,3 +1,5 @@
+# Esercizio 1
+
 Algoritmo di DP per II di peso massimo su un'albero (non perforza binario e completo)
 
 **Esempio istanza**
@@ -7,8 +9,6 @@ Algoritmo di DP per II di peso massimo su un'albero (non perforza binario e comp
 **Soluzione ottima**
 
 ![[Pasted image 20240326100517.png|center|300]]
-
-# Versione 1
 
 **Pseudocodice**
 
@@ -183,4 +183,12 @@ def printTree(root, level=0):
     dx = printTree(root.right,level + 1)
     cx = printTree(root.center,level + 1)
 ```
+
+----
+
+# Esercizio 2
+
+Algoritmo
+
+pseudocodice
 
