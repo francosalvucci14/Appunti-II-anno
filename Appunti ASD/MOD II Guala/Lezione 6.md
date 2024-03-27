@@ -118,3 +118,6 @@ Numero di chiamate ricorsive $\leq n\implies O(n)$
 | **La complessità temporale è più difficile da analizzare**            | La complessità temporale è più facile da analizzare, codice corto e pulito |
 
 ----
+
+# Longest Increasing Subsequence
+
