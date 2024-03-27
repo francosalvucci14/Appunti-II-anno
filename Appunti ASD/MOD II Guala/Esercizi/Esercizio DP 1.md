@@ -102,6 +102,7 @@ def MaxIS_Tree(nodo):
 def Ric(nodo):
     max = Algoritmo(nodo)
     if nodo.root == max:
+	    print(f"Nodo che fa parte della soluzione : {nodo.val}")
         Ricostruzione(nodo.left, True)
         Ricostruzione(nodo.right, True)
         Ricostruzione(nodo.center,True)
