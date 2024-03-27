@@ -147,14 +147,6 @@ r1.left = r1_l1
 r1.center = r1_l2
 r1.right = r1_l3
 
-# Prove Albero
-# root = TreeNode(5)
-# l1 = TreeNode(1)
-# r1 = TreeNode(8)
-
-# root.left = l1
-# root.right = r1
-
 print(f"Soluzione ottima del problema : {Algoritmo(root)}")
 Ric(root)
 ```
@@ -190,4 +182,3 @@ def printTree(root, level=0):
     dx = printTree(root.right,level + 1)
     cx = printTree(root.center,level + 1)
 ```
-
