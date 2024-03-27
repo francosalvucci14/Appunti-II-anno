@@ -162,3 +162,32 @@ Ric(root)
 L'algoritmo produrrà la seguente soluzione :
 - Valore soluzione ottima : 15
 - Nodi che fanno parte della soluzione : 7 (nodo interno),2 (foglia),3 (foglia),3(foglia)
+
+## Funzione stampa albero
+
+In aggiunta, metto qui per chi vuole una utility scritta in python, che dato il nodo root di un'albero lo stampa a schermo secondo il seguente ordine :
+
+- Radice
+	- Figlio1 (nodo interno)
+		- Figlio1.2 (foglia)
+	- Figlio2 (foglia)
+
+Il codice è il seguente
+
+```python
+def printTree(root, level=0):
+    if root == None:
+        return None
+    if level == 0:
+        label="Radice"
+    elif root.left != None and root.right != None:
+        label = "Nodo interno"
+    else:
+        label = "Foglia"
+    
+    print('|_\t' * level + str(root.val)+" "+label)
+    sx = printTree(root.left,level + 1)
+    dx = printTree(root.right,level + 1)
+    cx = printTree(root.center,level + 1)
+```
+
