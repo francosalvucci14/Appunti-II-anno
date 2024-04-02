@@ -300,9 +300,6 @@ def Algoritmo(r,b,g):
         red[i] = r[i]+min(blue[i-1],green[i-1])
         blue[i] = b[i]+min(red[i-1],green[i-1])
         green[i] = g[i]+min(red[i-1],blue[i-1])
-    # print(f"Red:\t{red}")
-    # print(f"Blue:\t{blue}")
-    # print(f"Green:\t{green}")
     OPT = min{red[n-1],green[n-1],blue[n-1]}
     return OPT
 ```
