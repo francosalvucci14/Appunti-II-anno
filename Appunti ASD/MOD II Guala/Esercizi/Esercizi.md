@@ -282,7 +282,7 @@ Quindi, glia rray in input $red,green,blue$ saranno cosi formati
 - $green=[3,8,9,22,12,8]$
 - $blue=[16,10,4,2,5,7]$
 
-Il valore della soluzione ottima sarà $OPT=40$
+Il valore della soluzione ottima sarà $OPT=34$
 
 **Implementazione in python**
 
