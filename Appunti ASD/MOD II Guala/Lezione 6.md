@@ -166,4 +166,3 @@ Ora vediamo lo pseudocodice dell'algoritmo
 **Tempo di esecuzione**
 - Ogni $OPT[i]$ viene calcolare in tempo $O(i)=O(n)$
 - tempo totale $O(n^2)$
-
