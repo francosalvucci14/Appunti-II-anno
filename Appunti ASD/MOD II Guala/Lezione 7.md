@@ -135,7 +135,7 @@ Ma la domanda fondamentale è la seguente
 **A** : NO!!, perchè $\Theta(nW)$ non è una funzione polinomiale nella dimensione dell'input, ma si dice `pseudo-polinomiale`
 
 >[!definition]- Algoritmo pseudo-polinomiale
->Un algoritmo il cui tempo di esecuzione risulta essere polinomiale nel valore dell'input (es: il più grande intero presente nell'input) : 
+>Un algoritmo il cui tempo di esecuzione risulta essere polinomiale nel valore dell'input (es: il più grande intero presente nell'input) :
 >- Efficiente quando i numeri nell'input sono ragionevolmente piccoli
 >- Non necessariamente polinomiale nella dimensione dell'input (numeor di bits richiesti per rappresentare l'input)
 
