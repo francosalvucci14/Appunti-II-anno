@@ -303,3 +303,4 @@ def Algoritmo(r,b,g):
     OPT = min{red[n-1],green[n-1],blue[n-1]}
     return OPT
 ```
+
