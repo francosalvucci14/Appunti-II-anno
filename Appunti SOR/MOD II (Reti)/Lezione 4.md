@@ -144,7 +144,7 @@ Una pagina web è costituita de *oggetti*, ciascuno dei quali può essere memori
 Un oggetto può essere un file HTML, un'immagine, uno script JavaScript e cosi via
 Una pagina web è formata da un **file HTML di base** che include *diversi oggetti referenziati*, ciascuno referenziato da un URL, ad esempio,
 $$\underbrace{\text{www.someschool.edu}}_{\text{nome dell'host (hostname)}}/\underbrace{\text{someDept/pic.gif}}_{\text{percorso (path name)}}$$
-## Panoramica su HTTP
+### Panoramica su HTTP
 
 HTTP : HyperText Transfer Protocol
 - Protocollo a livello applicazione del Web
@@ -162,4 +162,13 @@ HTTP : HyperText Transfer Protocol
 
 **HTTP è un protocollo "senza stato" (stateless)**
 - Il server non mantiene informazioni sulle richieste fatte dal client
+
+#### Connessioni HTTP : Due tipi
+
+| **Connessioni non persistenti**                          | **Connessioni persistenti**                                                             |
+| -------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Connessione TCP aperta                                   | Connessione TCP al server aperta                                                        |
+| Almeno un oggetto viene trasmesso su una connessione TCP | Più oggetti possono essere trasmessi su una singola connessione TCP tra client e server |
+
+##### Connessioni non persistenti
 
