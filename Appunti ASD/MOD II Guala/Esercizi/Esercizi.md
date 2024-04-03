@@ -235,14 +235,14 @@ def print_tree(node, indent="", last=True, parent=None):
 Per definire i sottoproblemi, definiamo 3 array di appoggio che serviranno a costruire la soluzione ottima
 
 I sottoproblemi sono i seguenti :
-- $R[i]$ = Minimo costo che server per colorare le case da $1,\dots,i$ con il colore Rosso
-- $G[i]$ = Minimo costo che server per colorare le case da $1,\dots,i$ con il colore Verde
-- $B[i]$ = Minimo costo che server per colorare le case da $1,\dots,i$ con il colore Blue
+- $R[i]$ = Minimo costo che serve per colorare le case da $1,\dots,i$ con il colore Rosso
+- $G[i]$ = Minimo costo che serve per colorare le case da $1,\dots,i$ con il colore Verde
+- $B[i]$ = Minimo costo che serve per colorare le case da $1,\dots,i$ con il colore Blue
 
 Dopo aver definito i sottoproblemi che ci servono, diamo l'equazione di programmazione dinamica che ci darà il valore della soluzione ottima
 
 **DP equation**
-$$\begin{cases}R[i]=cost(i,red)+\min\{B[i-1],G[i-1]\}\\G[i]=cost(i,green)+\min\{R[i-1],B[i-1]\}\\B[i]=cost(i,blue)+\min\{R[i-1],G[i-1]\end{cases}$$
+$$\begin{cases}R[i]=cost(i,red)+\min\{B[i-1],G[i-1]\}\\G[i]=cost(i,green)+\min\{R[i-1],B[i-1]\}\\B[i]=cost(i,blue)+\min\{R[i-1],G[i-1]\}\end{cases}$$
 Il valore della soluzione ottima sarà $$\min\{R[n],G[n],B[n]\}$$
 Ora vediamo lo pseudocodice
 
