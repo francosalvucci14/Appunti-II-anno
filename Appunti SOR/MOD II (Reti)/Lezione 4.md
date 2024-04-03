@@ -1,23 +1,11 @@
-- [[#Creare un'applicazione di rete|Creare un'applicazione di rete]]
-	- [[#Creare un'applicazione di rete#Paradigma Client-Server|Paradigma Client-Server]]
-	- [[#Creare un'applicazione di rete#Architettura peer-to-peer|Architettura peer-to-peer]]
-- [[#Processi comunicanti|Processi comunicanti]]
-	- [[#Processi comunicanti#Socket|Socket]]
-	- [[#Processi comunicanti#Indirizzamento|Indirizzamento]]
-- [[#Protocollo a livello applicativo|Protocollo a livello applicativo]]
-- [[#Quale servizio di trasporto richiede un'applicazione|Quale servizio di trasporto richiede un'applicazione]]
-- [[#Servizi dei protocolli di trasporto di Internet|Servizi dei protocolli di trasporto di Internet]]
-	- [[#Servizi dei protocolli di trasporto di Internet#Rendere sicuro TCP|Rendere sicuro TCP]]
-- [[#Web e HTTP|Web e HTTP]]
-	- [[#Web e HTTP#Panoramica su HTTP|Panoramica su HTTP]]
-		- [[#Panoramica su HTTP#Connessioni HTTP : Due tipi|Connessioni HTTP : Due tipi]]
-			- [[#Connessioni HTTP : Due tipi#Connessioni non persistenti|Connessioni non persistenti]]
-			- [[#Connessioni HTTP : Due tipi#Connessioni persistenti (HTTP 1.1)|Connessioni persistenti (HTTP 1.1)]]
-	- [[#Web e HTTP#Messaggio di richiesta HTTP|Messaggio di richiesta HTTP]]
-		- [[#Messaggio di richiesta HTTP#Formato generale|Formato generale]]
-		- [[#Messaggio di richiesta HTTP#Altri messaggi di richiesta HTTP|Altri messaggi di richiesta HTTP]]
-	- [[#Web e HTTP#Codici di stato della risposta HTTP|Codici di stato della risposta HTTP]]
-
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
 # Livello di applicazione
 
 ## Creare un'applicazione di rete
