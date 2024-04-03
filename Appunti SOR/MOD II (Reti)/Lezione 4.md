@@ -213,3 +213,87 @@ Due tipi di messaggi HTTP : **richiesta**, **risposta**
 
 ![[Pasted image 20240403121254.png|center|600]]
 
+Alcuni campi di intestazione nei messaggi di richiesta
+
+**Host**
+- Hostname o numero di porta (se assente, si assume 80 per HTTP e 443 per HTTPS) del server al quale sarà inviata la richiesta. Obbligatorio in HTTP/1.1; se assente, il server può rispondere con un 400 Bad Request (vedi codici qui -> [[#^7ce98c|Codici]])
+**User-Agent**
+- Identifica l'applicazione, il sistema operativo, il vendor e/o la versione dello user agent che sta effettuando la richiesta
+**Accept**
+- Tipi di contento, espressi come media type, compresi dal client
+**Accept-Language**
+- Linguaggi naturali o *locali* preferiti dal client
+**Accept-Encoing**
+- Algoritmi di codifica compresi dal client
+**Connection**
+- Controlla se la connessione rimarrà aperta al termine dello scambio richiesta/risposta. Il valore *close* indica che la connessione sarà chiusa (default in HTTP/1.0); altrimenti, una lista non vuota di nomi di header (in genere solo keep-alive), che saranno rimossi dal primo proxy non trasparente o cache, indica che la connessione rimarrà aperta (default in HTTP/1.1)
+#### Formato generale
+
+![[Pasted image 20240403141050.png|center|500]]
+
+#### Altri messaggi di richiesta HTTP
+
+**Metodo POST**
+- La pagina web spesso include un form per l'input dell'utente
+- L'input dell'utente viene inviato dal client al server nel corpo dell'entità di un messaggio di richiesta HTTP POST
+
+**Metodo GET** (per inviare dati al server)
+- L'input arriva al server nel campo URL della riga di richiesta (dopo un `?`)
+
+**Metodo HEAD**
+- Richiede le intestazioni (solo) che verebbero restituiste se l'URL specificato fosse richiesto con il metodo HTTP GET
+
+**Metodo PUT**
+- Carica un nuovo file (oggetto) sul server
+- Sosituisce completamente il file esistente all'URL specificato con il contenuto del corpo dell'entità del messaggio di richiesta HTTP PUT
+
+![[Pasted image 20240403141447.png|center|600]]
+
+Altri campi di intestazione nei messaggi di richiesta
+
+**Date**
+- Data e ora in cui il messaggio è stato originato
+**Server**
+- Descrive il software usato dal server di origine per gestire la richiesta
+**Last modified**
+- Data e ora in cui il server di origine crede che l'oggetto sia stato modificato per l'ultima volta
+**Accept-Ranges**
+- Indica il supporto del server ai download parziali : il valore, se diverso da `none`, indica l'unità che si può usare per esprimere l'intervallo richiesto
+**Content-Lenght**
+- Lunghezza in byte del corpo dell'entità inviato al ricevente (o che sarebbe stato inviato nel caso di una richiesta HEAD)
+**Content-Type**
+- *Media type* (che indica un formato) del corpo dell'entità inviato al ricevente (o che sarebbe stato inviato nel caso di una richiesta HEAD)
+
+### Codici di stato della risposta HTTP
+
+^7ce98c
+
+Si trovano nella prima riga nel messaggio di risposta dal server al client
+Definiti da RFC 9110
+Sono raggruppati in cinque categorie, discriminate dalla prima cifra
+
+**1xx Informational**
+- Una risposta intermedia per comunicare lo stato di connessione o l'avanzamento della richiesta prima di completare l'azione richeista e inviare una risposta finale
+**2xx Successful**
+- La richiesta è stata ricevuta con successo, compresa e accettata
+**3xx Redirect**
+- Il client deve eseguire ulteriori azioni per soddisfare la richiesta
+**4xx Client Error**
+- La richiesta è sintatticamente scorretta o non può essere soddisfatta (es. 404 Not Found)
+**5xx Server Error**
+- Il server ha fallito nel soddisfare una richiesta apparentemente valida
+
+Vediamo quelli più noti
+
+**200 OK**
+- la richiesta ha avuto successo; l'oggetto richiesto viene inviato nella risposta
+**301 Moved Permanetly**
+- L'oggetto richiesto è stato trasferito; la nuova posizione è specificata nell'intesatzione `Location` della risposta
+**400 Bad Request**
+- Il messaggio di richiesta non è stato compreso dal server
+**404 Not Found**
+- Il documento richiesto non si trova sul server
+**406 Not Acceptable**
+- L'oggetto richiesto non esiste in una forma che soddisfa i vari `Accept-*`
+**505 HTTP Version Not Supported**
+- Il server non ha la versione di protocollo HTTP
