@@ -122,3 +122,44 @@ Un protocollo a livello applicativo definisce :
 *Servizio UDP* :
 - **Trasferimento dati inaffidabile** fra i processi di invio e ricezione
 - **Non offre** : affidabilità, controllo di flusso, controllo della congestione, temporizzazione, ampiezza di banda minima, sicurezza, setup alla connessione
+
+### Rendere sicuro TCP
+
+**Socket TCP e UDP**
+- Nessuna cifratura
+- Password inviate in chiaro, cioè senza cifratura, attraverso socket
+
+**Transport Layer Security (TLS)**
+- Offre connessioni TCP cifrate
+- Controllo di integrità dei dati
+- Autenticazione end-to-end
+
+**TLS implementato a livello applicazione**
+- Le applicazioni usato librerie TLS, cje usano a propria volta TCP
+- Testo in chiaro (cleartext) inviato nella "socket"
+
+## Web e HTTP
+
+Una pagina web è costituita de *oggetti*, ciascuno dei quali può essere memorizzato su un server Web differente
+Un oggetto può essere un file HTML, un'immagine, uno script JavaScript e cosi via
+Una pagina web è formata da un **file HTML di base** che include *diversi oggetti referenziati*, ciascuno referenziato da un URL, ad esempio,
+$$\underbrace{\text{www.someschool.edu}}_{\text{nome dell'host (hostname)}}/\underbrace{\text{someDept/pic.gif}}_{\text{percorso (path name)}}$$
+## Panoramica su HTTP
+
+HTTP : HyperText Transfer Protocol
+- Protocollo a livello applicazione del Web
+- Modello client/server:
+	- Client : Browser che richiede, riceve (usando il protocollo HTTP) e "visualizza" gli oggetti del Web
+	- Server : Il server Web che invia (usando il protocollo HTTP) oggetti in risposta alle richieste dei client
+
+![[Pasted image 20240403114505.png|center|500]]
+
+**HTTP usa TCP** :
+- Il client inizializza la connessione TCP (crea una socket) con il server sulla porta 80
+- Il server accetta la connessione TCP del client
+- messaggi HTTP (messaggi di un protocollo di applicazione) scambiati tra browser (client HTTP) e server Web (server HTTP)
+- Connessione chiusa TCP
+
+**HTTP è un protocollo "senza stato" (stateless)**
+- Il server non mantiene informazioni sulle richieste fatte dal client
+
