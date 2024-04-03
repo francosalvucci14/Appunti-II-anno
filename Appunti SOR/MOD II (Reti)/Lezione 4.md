@@ -149,8 +149,8 @@ $$\underbrace{\text{www.someschool.edu}}_{\text{nome dell'host (hostname)}}/\und
 HTTP : HyperText Transfer Protocol
 - Protocollo a livello applicazione del Web
 - Modello client/server:
-	- Client : Browser che richiede, riceve (usando il protocollo HTTP) e "visualizza" gli oggetti del Web
-	- Server : Il server Web che invia (usando il protocollo HTTP) oggetti in risposta alle richieste dei client
+	- **Client** : Browser che richiede, riceve (usando il protocollo HTTP) e "visualizza" gli oggetti del Web
+	- **Server** : Il server Web che invia (usando il protocollo HTTP) oggetti in risposta alle richieste dei client
 
 ![[Pasted image 20240403114505.png|center|500]]
 
@@ -190,4 +190,19 @@ L'utente immette l'URL : http://www.someSchool.edu/someDepartment/home.html
 Tempo di risposta con connessioni non persistenti = $2RTT$+tempo di trasmissione del file
 
 ![[Pasted image 20240403120220.png|center|500]]
+
+##### Connessioni persistenti (HTTP 1.1)
+
+**Svantaggi delle connessioni non persistenti** :
+- Richiedono 2RTT per oggetto
+- Overhead del sistema operativo per *ogni* connessione TCP
+- I browser spesso aprono connessioni TCP parallele per caricare gli oggetti referenziati
+
+**Connessioni persistenti (HTTP 1.1)**
+- Il server lascia la connessione TCP aperta dopo l'invio di una risposta
+- I successivi messaggi tra gli stessi client/server vengono trasmessi sulla connessione aperta
+- Il client invia le richieste non appena incontra un oggetto referenziato
+- un solo RTT per tutti gli oggetti referenziati
+
+### Messaggio di richiesta HTTP
 
