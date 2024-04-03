@@ -160,7 +160,7 @@ HTTP : HyperText Transfer Protocol
 	- **Client** : Browser che richiede, riceve (usando il protocollo HTTP) e "visualizza" gli oggetti del Web
 	- **Server** : Il server Web che invia (usando il protocollo HTTP) oggetti in risposta alle richieste dei client
 
-![[Pasted image 20240403114505.png|center|500]]
+![[Pasted image 20240403114505.png|center|250]]
 
 **HTTP usa TCP** :
 - Il client inizializza la connessione TCP (crea una socket) con il server sulla porta 80
