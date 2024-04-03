@@ -172,3 +172,22 @@ HTTP : HyperText Transfer Protocol
 
 ##### Connessioni non persistenti
 
+L'utente immette l'URL : http://www.someSchool.edu/someDepartment/home.html
+
+![[Pasted image 20240403115850.png|center|600]]
+![[Pasted image 20240403115924.png|center|600]]
+
+**Tempo di risposta**
+
+>[!definition]- RTT
+>Tempo impiegato da un piccolo pacchetto per andare dal client al server e ritornare al client (include ritardi di elaborazione,accodamento,propagazione)
+
+**Tempo di risposta (per oggetto)**
+- un RTT per inizializzare la connessione TCP
+- un RTT perchè ritornino la richiesta HTTP e i primi byte della risposta HTTP
+- tempo di trasmissione del file/oggetto
+
+Tempo di risposta con connessioni non persistenti = $2RTT$+tempo di trasmissione del file
+
+![[Pasted image 20240403120220.png|center|500]]
+
