@@ -206,3 +206,10 @@ Tempo di risposta con connessioni non persistenti = $2RTT$+tempo di trasmissione
 
 ### Messaggio di richiesta HTTP
 
+Due tipi di messaggi HTTP : **richiesta**, **risposta**
+
+**Messaggio di richiesta HTTP** :
+- ASCII (formato leggibile dall'utente)
+
+![[Pasted image 20240403121254.png|center|600]]
+
