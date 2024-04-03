@@ -1,4 +1,3 @@
-
 - [[#Creare un'applicazione di rete|Creare un'applicazione di rete]]
 	- [[#Creare un'applicazione di rete#Paradigma Client-Server|Paradigma Client-Server]]
 	- [[#Creare un'applicazione di rete#Architettura peer-to-peer|Architettura peer-to-peer]]
@@ -18,7 +17,6 @@
 		- [[#Messaggio di richiesta HTTP#Formato generale|Formato generale]]
 		- [[#Messaggio di richiesta HTTP#Altri messaggi di richiesta HTTP|Altri messaggi di richiesta HTTP]]
 	- [[#Web e HTTP#Codici di stato della risposta HTTP|Codici di stato della risposta HTTP]]
-
 
 # Livello di applicazione
 

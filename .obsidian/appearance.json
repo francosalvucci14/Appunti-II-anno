@@ -2,8 +2,7 @@
   "enabledCssSnippets": [
     "center",
     "callouts",
-    "iFrame",
-    "toc"
+    "iFrame"
   ],
   "accentColor": "",
   "baseFontSize": 16,
