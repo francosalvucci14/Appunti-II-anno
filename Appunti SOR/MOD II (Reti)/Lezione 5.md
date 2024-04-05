@@ -149,3 +149,27 @@ Supponiamo una percentuale di successo (hit rate) pari a $0.4$ :
 **Ritardo medio end-end inferiore che con un collegamento a 154 Mbps**
 
 ### GET condizionale
+
+^db726c
+
+**Obiettivo** : Non inviare un oggetto se la cache ha una copia aggiornata dell'oggetto
+- Nessun ritardo di trasmissione dell'oggetto( o suo delle risorse di rete )
+
+***Client*** : Specifica la data della copia dell'oggetto nella richiesta HTTP
+`if-modified-since: <data>`
+
+***Server***: La risposta non contiene l'oggetto se la copia nella cache è aggiornata
+`HTTP/1.0 304 Not Modified`
+
+![[Pasted image 20240405115437.png|center|300]]
+
+## Nota sul caching
+
+Il caching può essere effettuato da:
+- Una erb cache, ossia uno speciale tipo di proxy, cui il browser invia le richieste invece che indirizzarle all'origin server
+- Oppure, dal browser stesso, che conserva una copia degli oggetti richiesti in precedenza
+
+In entrambi i casi, occorre prestare attenzione al problema dell'aggiornamento delgi oggetti: vedi riga di intestazione [[Appunti SOR/MOD II (Reti)/Lezione 5#Web cache (server proxy)|Cache-Control]] e [[Appunti SOR/MOD II (Reti)/Lezione 5#^db726c|GET condizionale]]
+
+# HTTP/2
+
