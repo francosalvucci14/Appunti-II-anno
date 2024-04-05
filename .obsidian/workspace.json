@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 4.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 5.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 4.md"
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 5.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 4.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 4.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,9 +181,11 @@
   },
   "active": "1943b5a29d53f9cb",
   "lastOpenFiles": [
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240405104159.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240405103141.png",
+    "Appunti SOR/MOD II (Reti)/Lezione 4.md",
     "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
     "Appunti SOR/MOD II (Reti)/Lezione 5.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 4.md",
     "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
     "Appunti BSD/Progetto DB/Fase Tre Modificata.md",
     "Appunti BSD/Progetto DB/Fase tre.md",
@@ -201,7 +203,6 @@
     "Appunti ASD/MOD II Guala/Esercizi/img/Pasted image 20240402123540.png",
     "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240402103401.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240402103330.png",
     "Appunti ASD/MOD II Guala/Lezione 6.md",
     "Appunti ASD/MOD II Guala/Lezione 5.md",
     "Appunti ASD/MOD II Guala/Esercizi/img",
@@ -226,7 +227,6 @@
     "Appunti SOR/MOD II (Reti)/img",
     "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
     "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
-    "Appunti ASD/MOD I/Lezione 2 - Capitolo 2.md",
     "Untitled.canvas"
   ]
 }
