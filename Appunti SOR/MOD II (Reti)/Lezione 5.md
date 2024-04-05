@@ -1,3 +1,13 @@
+
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
+
 # Mantenere lo stato utente/server : i cookie
 
 Ricorda : l'interazione HTTP GET/risposta è **senza stato (stateless)**
@@ -172,4 +182,3 @@ Il caching può essere effettuato da:
 In entrambi i casi, occorre prestare attenzione al problema dell'aggiornamento delgi oggetti: vedi riga di intestazione [[Appunti SOR/MOD II (Reti)/Lezione 5#Web cache (server proxy)|Cache-Control]] e [[Appunti SOR/MOD II (Reti)/Lezione 5#^db726c|GET condizionale]]
 
 # HTTP/2
-
