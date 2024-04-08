@@ -182,3 +182,4 @@ Il caching può essere effettuato da:
 In entrambi i casi, occorre prestare attenzione al problema dell'aggiornamento delgi oggetti: vedi riga di intestazione [[Appunti SOR/MOD II (Reti)/Lezione 5#Web cache (server proxy)|Cache-Control]] e [[Appunti SOR/MOD II (Reti)/Lezione 5#^db726c|GET condizionale]]
 
 # HTTP/2
+
