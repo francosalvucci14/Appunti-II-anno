@@ -1,3 +1,13 @@
+
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
+
 # Segmented Least Square & Knapsack
 
 ## Least Square
@@ -138,4 +148,3 @@ Ma la domanda fondamentale è la seguente
 >Un algoritmo il cui tempo di esecuzione risulta essere polinomiale nel valore dell'input (es: il più grande intero presente nell'input) :
 >- Efficiente quando i numeri nell'input sono ragionevolmente piccoli
 >- Non necessariamente polinomiale nella dimensione dell'input (numeor di bits richiesti per rappresentare l'input)
-
