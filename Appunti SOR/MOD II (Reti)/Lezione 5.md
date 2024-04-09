@@ -176,9 +176,139 @@ Supponiamo una percentuale di successo (hit rate) pari a $0.4$ :
 ## Nota sul caching
 
 Il caching può essere effettuato da:
-- Una erb cache, ossia uno speciale tipo di proxy, cui il browser invia le richieste invece che indirizzarle all'origin server
+- Una web cache, ossia uno speciale tipo di proxy, cui il browser invia le richieste invece che indirizzarle all'origin server
 - Oppure, dal browser stesso, che conserva una copia degli oggetti richiesti in precedenza
 
 In entrambi i casi, occorre prestare attenzione al problema dell'aggiornamento delgi oggetti: vedi riga di intestazione [[Appunti SOR/MOD II (Reti)/Lezione 5#Web cache (server proxy)|Cache-Control]] e [[Appunti SOR/MOD II (Reti)/Lezione 5#^db726c|GET condizionale]]
 
 # HTTP/2
+
+**Obiettivo principale** : Diminuzione del ritardo nelle richieste HTTP a più oggetti
+
+HTTP1.1 : ha introdotto _**GET multiple in pipeline**_ su una singola connessione TCP
+- Il server risponde alle richieste in ordine (usando l'algoritmo di scheduling [FCFS](https://it.wikipedia.org/wiki/Scheduler#FCFS))
+- Con FCFS, oggetti piccoli possono dover aspettare per la trasmissione (**head-of-line(HOL)**) dietro a uno o più oggetti granfi
+- Il recupero delle perdite (ritrasmissione dei segmenti TCP persi) blocca la trasmissione degli oggetti
+
+HTTP/2: Maggiore flessibilità del server nell'invio di oggetti al client
+- Metodi, codici di stato, maggior parte dei campi di intestazione inalterati rispetto a HTTP 1.1
+- Ordine di trasmissione degli oggetti richiesti basata su una priorità degli oggetti specificata dal client (non necessariamente FCFS)
+- Invio ***push*** al client di oggetti aggiuntivi, senza che il client li abbia richiesti
+- Dividere gli oggetti in frame, intervallare i frame per mitigare il blocco HOL
+
+## HTTP/2 : Mitigazione del blocco HOL
+
+HTTP 1.1 : il client richiede 1 oggetto grande (es. file video) e 3 oggetti più piccoli
+
+![[Pasted image 20240409154154.png|center|500]]
+
+Oggeti consegnati nell'ordine in cui sono stati richiesti: $O_2,O_3,O_4$ aspettano dietro a $O_1$
+
+**Mitigazione**
+
+HTTP/2: oggetti divisi in frame, trasmissione del frame interlacciata
+
+![[Pasted image 20240409154255.png|center|500]]
+
+$O_2,O_3,O_4$ vengono consegnati rapidamente, $O_1$ leggermente in ritardo
+
+## Da HTTP/2 a HTTP/3
+
+HTTP/2 su una singola connessione TCP significa:
+- Il recupero della perdita di pacchetti blocca comunque tutte le trasmissioni di oggetti
+	- Come in HTTP 1.1, i browser sono incentivati ad aprire più connessioni TCP parallele per ridurre lo stallo e aumentare il throughput complessivo
+- Nessuna sicurezza su una connessione TCP semplice
+- HTTP/3 aggiunge:
+	- Sicurezza
+	- Controllo di errore e congestione per oggetto (più pipeling) su UDP
+
+----
+
+# E-mail
+
+Ci sono 3 componenti principali :
+- **User-Agents** (o agenti utenti)
+- **Mail Servers**
+- Simple Mail Transfer Protocol (**SMTP**)
+
+![[Pasted image 20240409154908.png|center|300]]
+
+## User-Agents
+
+Viene detto anche "mail reader"
+
+Si occupa di :
+- Composizione
+- editing
+- lettura dei messaggi
+
+I messaggi in uscita o in arrivo sono memorizzati sul server
+
+## Mail servers
+
+Il mail server è composto da :
+- **Mailbox** (casella di posta) contiene i messaggi in arrivo per l'utente
+- **Coda di messaggi** da trasmettere
+
+_Protocollo SMTP_ tra mail server per inviare messaggi email :
+- Client: mail server trasmittente
+- "Server" : mail server ricevente
+
+## SMTP RFC
+
+Usa TCP per trasferire in modo affidabile i messaggi di posta elettronica dal client (mail server che avvia la connessione) al server, porta 25
+- Trasferimento diretto
+
+Ci sono 3 fasi del trasferimento, che sono :
+- Handshaking
+- Trasferimento dei messaggi
+- Chiusura
+
+Interazione comando/risposta (come HTTP)
+- _Comandi_: testo ASCII a 7 bit
+- _Risposa_ : codice di stato e espressione
+
+![[Pasted image 20240409155346.png|center|300]]
+
+### Scenario : Alice invia una e-mail a Bob
+
+1) Alice usa il suo user-agent per comporre il messaggio da inviare "a" ("to") `bob@someschool.edu`
+2) Lo user-agent di Alice invia un messaggio al server di posta di Alice, il messaggio è posto nella coda dei messaggi
+3) Il lato client di SMTP apre una connessione TCP con il mail server di Bob
+
+4) Il client SMTP invia il messaggio di Alice sulla connessione TCP
+5) Il mail server di Bob pone il messaggio nella casella di posta di Bob
+6) Bob invoca il suo user-agent per leggere il messaggio
+
+![[Pasted image 20240409155638.png|center|500]]
+
+
+## SMTP : Note finale
+
+Confronto con HTTP
+
+
+| HTTP                                                                     | SMTP                                                                                |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| Client pull                                                              | Client push                                                                         |
+| Entrambi hanno un'iterazione comando/risposta in ASCII e codici di stato | Entrambi hanno un'iterazione comando/risposta in ASCII e codici di stato            |
+| Ciascun oggetto è incapsulato nel suo messaggio di risposta              | Più oggetti vengono trasmessi in un unico messaggio                                 |
+|                                                                          | SMTP usa connessioni persistenti                                                    |
+|                                                                          | SMTP richiede che il messaggio (intestazione e corpo) sia nel formato ASCII a 7 bit |
+|                                                                          | Il server SMTP usa `CRLF` per determinare la fine del messaggio                     |
+
+### Formato dei messaggi
+
+SMTP : Protocollo per scambiare messaggi di posta elettronica, definito nell'RCF 5321
+
+RFC 2822 definisce la _sintassi_ dei messaggi di posta elettronica
+
+Righe di intestazione, per esempio :
+- To/A
+- From/Da
+- Subject/Oggetto
+- **Differenti** dai comandi SMTP MAIL FROM,RCPT TO, etc...
+Corpo : Il "messaggio", scritto usando solo caratteri ASCII
+
+![[Pasted image 20240409160141.png|center|300]]
+

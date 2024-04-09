@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 5.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md"
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 5.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "5a46b8e248aedf1e",
@@ -181,7 +181,14 @@
   },
   "active": "1943b5a29d53f9cb",
   "lastOpenFiles": [
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240409160141.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240409155638.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240409155346.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240409154908.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240409154255.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240409154154.png",
     "Appunti ASD/MOD II Guala/Lezione 7.md",
+    "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
     "Appunti ASD/MOD II Guala/Lezione 1.md",
     "Appunti ASD/MOD II Guala/Lezione 2.md",
     "Appunti ASD/MOD II Guala/Lezione 3.md",
@@ -194,9 +201,6 @@
     "Appunti SOR/MOD II (Reti)/img/Pasted image 20240405114256.png",
     "Appunti SOR/MOD II (Reti)/img/Pasted image 20240405114205.png",
     "Appunti SOR/MOD II (Reti)/img/Pasted image 20240405112941.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240405111842.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240405104159.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240405103141.png",
     "Appunti SOR/MOD II (Reti)/Lezione 4.md",
     "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
     "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
@@ -205,8 +209,6 @@
     "^Appunti SOR/MOD II (Reti)/Lezione 4.md",
     "^Appunti SOR/MOD II (Reti)",
     "^Appunti SOR",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240403141447.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240403141050.png",
     "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
     "Appunti ASD/MOD II Guala/Esercizi/img",
     "Appunti ASD/MOD II Guala/Esercizi",
@@ -225,7 +227,6 @@
     "Appunti ASD/MOD II Guala",
     "Appunti SOR/MOD II (Reti)/img",
     "Appunti ASD/MOD I/Lezione 4 - Capitolo 2.md",
-    "Appunti ASD/MOD I/Lezione 3 - Capitolo 2.md",
     "Untitled.canvas"
   ]
 }
