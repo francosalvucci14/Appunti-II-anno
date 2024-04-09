@@ -1,3 +1,13 @@
+
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
+
 # Interval Scheduling
 
 Job $j$ inizia al tempo $s_j$ e finisce al tempo $f_j$
@@ -193,5 +203,4 @@ Diamo ora l'enunciato del teorema
 - Quindi, questi $d$ intervalli devono finire dopo $s_j$
 - Dato che abbiamo ordinato tramite starting time, ognuno di questi intervalli incompatibili iniziano non più tardi di $s_j$
 - Quindi, abbiamo $d$ intervalli che si sovrappongono al tempo $s_j+\epsilon$
-- Dall'osservazione chiave $\to$ tutte le schedule usano $\geq d$ classi 
-
+- Dall'osservazione chiave $\to$ tutte le schedule usano $\geq d$ classi

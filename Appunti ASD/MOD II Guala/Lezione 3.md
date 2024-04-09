@@ -1,3 +1,13 @@
+
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
+
 # Minimum Spanning Tree
 
 **Minimum spanning tree**. Grafo connesso $G=(V,E)$ con gli archi pesati con valori reali, detti $c_e$, un MST è un sottoinsieme $T\subseteq E$ tale che $T$ è un albero ricoprente[^1] dove la somma dei pesi degli archi è minimizzata
