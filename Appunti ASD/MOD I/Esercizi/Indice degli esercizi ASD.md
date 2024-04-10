@@ -1,4 +1,4 @@
-- [[Esercizio 1]]
+- [[Appunti ASD/MOD I/Esercizi/Esercizio 1]]
 - [[Esercizio 2]]
 - [[Esercizi sul metodo della ricorsione]]
 - [[Esercizi Pseudo-codice e complessità temporale]]
