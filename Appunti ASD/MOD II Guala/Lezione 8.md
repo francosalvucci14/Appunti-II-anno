@@ -108,3 +108,12 @@ Possiamo migliorare lo spazio usato dall'algoritmo usando l'algoritmo di Hirschb
 >Esiste un'algoritmo che trova l'allineamento ottimale i tempo $O(mn)$ e spazio $O(m+n)$
 >- Combinazione del divide-et-impera e programmazione dinamica
 
+### Migliorare lo spazio : primo approccio
+
+![[Pasted image 20240411151552.png|center|400]]
+
+Per calcolare la prossiamo colonna/riga della matrice abbiamo bisogno soltanto della colonna/riga precedente $\implies$ Manteniamo solo 2 colonne/righe a volta $\implies$ spazio usato $O(m+n)$
+
+>[!info]- Osservazione
+>Questo permette di calcolare l'edit distance ma non l'allineamento
+
