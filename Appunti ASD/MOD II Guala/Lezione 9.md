@@ -49,7 +49,7 @@ Come si può vedere da questo esempio, l'algoritmo di Dijkstra va a prendere i n
 
 ![[Pasted image 20240415113524.png|center|300]]
 
-**Lemma 2** : Se $G$ non ha cicli negativi, allroa esiste uno shortest path $v\to t$ che è semplice (ovvero che usa $\leq n-1$ archi)
+**Lemma 2** : Se $G$ non ha cicli negativi, allroa esiste uno shortest path $v\to t$ che è semplice (ovvero che usa $\leq n-1$ archi) ^ddb5fe
 
 **Dimostrazione**
 - Di tutti gli SP $v\to t$, considera quello che usa meno archi
@@ -115,3 +115,80 @@ Possiamo ottimizzare lo spazio
 **Ottimizzazione dello spazio** : Manteniamo due array `unidimensionali` (al posto di un solo array bidimensionale)
 - $d[v]$ = lunghezza dello SP $v\to t$ che abbiamo trovato prima
 - $successor[v]$ = prossimo nodo del percorso $v\to t$
+
+**Ottimizzazione delle permormance** : Se $d[v]$ non è stato aggiornato nell'iterazione $i-1$, allora non ce motivo di considerare gli archi entranti in $w$ nell'iterazione $i$
+
+Diamo ora l'algoritmo ottimizzato, che saraà quello di Bellman-Ford-Moore
+## Algoritmo di Bellman-Ford-Moore : Implementazione efficiente
+
+![[Pasted image 20240415131338.png|center|500]]
+
+### Analisi dell'algoritmo
+
+**Lemma 3** : Per ogni nodo $v:d[v]$ è lunghezza di un qualche percorso $v\to t$
+**Lemma 4** : Per ogni nodo $v:d[v]$ è monotona non crescente
+
+**Lemma 5** : Dopo l'i-esima passata, $d[v]\leq$ lunghezza dello SP $v\to t$ che usa $\leq i$ archi ^8f65ab
+
+**Dimostrazione lemma 5** (induzione su i)
+- Caso base $i=0$
+- Assumi vero dopo l'i-esima passata
+- Sia $P$ un qualunque percorso $v\to t$ con $\leq i+1$ archi
+- Sia $(v,w)$ il primo arco in $P$ e sia $P'$ un sottopercorso $w\to t$
+- Per ipotesi induttiva, alla fine dell'i-esima passata, $d[w]\leq l(P')$ (e per il Lemma4 $d[w]$ non aumenta) perchè $P'$ è il percorso $w\to t$ con $\leq i$ archi
+- Dopo aver considerato l'arco $(v,w)$ nella passata $i+1$ : $$\begin{align}\overbrace{d[v]}^{\text{Per il lemma 4, d[v] non aumenta}}&\leq l_{vw}+d[w]\\&\leq l_{vw}+l(P')\\&=l(P)\end{align}$$
+>[!definition]- Teorema 2
+>Assumi che non ci siano cicli negativi, l'algoritmo BFM calcola la lunghezza dello SP $v\to t$ in tempo $O(mn)$ e spazio $\Theta(n)$
+
+**Dimostrazione** : Usando il [[Appunti ASD/MOD II Guala/Lezione 9#^ddb5fe|lemma 2]]+ il lemma 5 [[Appunti ASD/MOD II Guala/Lezione 9#^8f65ab|lemma 5]]
+
+>[!info]- Remark
+>BFM è tipicamente veloce nella pratica
+>- Arco $(v,w)$ viene considerato nel passaggio $i+1\iff d[w]$ viene aggiornata nel passaggio $i$
+>- Se lo SP ha $k$ archi, allora l'algoritmo lo trova dopo $\leq k$ passate
+
+Cosa possiamo dire sugli SPS
+
+**Claim** : In tutto BFM, seguire i puntatori $successor[v]$ genera un percorso diretto da $v$ a $t$ di lunghezza $d[v]$
+
+**Controesempio** : Il claim è falso
+- La lunghezza del successore nel percorso $v\to t$ potrebbe essere strettamente più corto di $d[v]$
+
+![[Pasted image 20240415133858.png|center|500]]
+![[Pasted image 20240415133915.png|center|500]]
+
+- Se il ciclo è negativo, il grafo dei successori potrebbe avere cicli diretti
+
+![[Pasted image 20240415134055.png|center|500]]
+![[Pasted image 20240415134121.png|center|500]]
+
+### Trovare lo SP
+
+**Lemma 6** : Ogni ciclo diretto $W$ nel grafo dei successori è un ciclo negativo ^a0a77b
+
+**Dimostrazione** :
+- Se la variabile $successor[v]=w$, dobbiamo avere che $d[v]\geq d[w]+l_{vw}$ (la parte sinistra e destra dell'equazione sono uguali quando $successor[v]$ viene impostato; $d[w]$ può solo decrementare; $d[v]$ decrementa solo quando $successor[v]$ viene resettatto)
+- Sia $v_1\to v_2\to\dots v_k\to v_1$ una sequenza di nodi in un ciclo diretto $W$
+- Assumi che $(v_k,v_1)$ sia l'ultimo arco in $W$ aggiunto al grafo dei successori
+- Poco prima : $$\begin{align}&d[v_1]\geq d[v_2]+l(v_1,v_2)\\&d[v_2]\geq d[v_3]+l(v_2,v_3)\\&\vdots\\&d[v_{k-1}]\geq d[v_k]+l(v_{k-1},v_k)\\&d[v_k]\gt d[v_1]+l(v_k,v_1)\end{align}$$
+- L'aggiunta di disuguaglianze produce $\underbrace{l(v_1,v_2)+l(v_2,v_3)+\dots+l(v_{k-1},v_k)+l(v_k,v_1)\lt0}_{\text{W è un ciclo negativo}}$
+
+>[!definition]- Teorema 3
+>Assumiamo che non ci siano cicli negativi, allora BFM trova lo Sp $v\to t,\forall v$ in tempo $O(mn)$ e spazio $\Theta(n)$
+
+**Dimostrazione** :
+- Il grafo dei successori non può avere cicli diretti, per il [[Appunti ASD/MOD II Guala/Lezione 9#^a0a77b|lemma 6]]
+- Quindi, seguendo i puntatori successivi da $v$, si ottiene un percorso diretto fino a $t$
+- Siano $v=v_1\to v_2\to\dots v_k=t$ i nodi in questo percorso $P$
+- Alla fine, se $successor[v]=w$, dobbiamo avere che $d[v]=d[w]+l_{vw}$ (la parte sinistra e destra dell'equazione risulta essere uguale quando $successor[v]$ viene impostato; $d[.]$ non cambia `(dato che l'algoritmo è terminato)`)
+- Quindi : $$\begin{align}&d[v_1]= d[v_2]+l(v_1,v_2)\\&d[v_2]= d[v_3]+l(v_2,v_3)\\&\vdots\\&d[v_{k-1}]= d[v_k]+l(v_{k-1},v_k)\end{align}$$
+- L'aggiunta di queste equazioni produce $\underbrace{d[v]}_{\text{lunghezza minima del percorso da v a t, per il teorema 2}}=\underbrace{d[t]}_{0}+\underbrace{l(v_1,v_2)+l(v_2,v_3)+\dots+l(v_{k-1}),v_k}_{\text{lunghezza del percorso P}}$
+
+L'algoritmo di BFM modificato, per vedere se esiste un ciclo negativo sarà il seguente
+
+![[Pasted image 20240415140108.png|center|500]]
+
+**Lemma 6.1** : Se esiste un ciclo negativo (che può essere raggiunto), allora l'algoritmo (modificato) lo notifica
+
+**Dimostrazione**
+- 
