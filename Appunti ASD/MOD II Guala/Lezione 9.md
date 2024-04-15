@@ -137,10 +137,11 @@ Diamo ora l'algoritmo ottimizzato, che saraà quello di Bellman-Ford-Moore
 - Sia $(v,w)$ il primo arco in $P$ e sia $P'$ un sottopercorso $w\to t$
 - Per ipotesi induttiva, alla fine dell'i-esima passata, $d[w]\leq l(P')$ (e per il Lemma4 $d[w]$ non aumenta) perchè $P'$ è il percorso $w\to t$ con $\leq i$ archi
 - Dopo aver considerato l'arco $(v,w)$ nella passata $i+1$ : $$\begin{align}\overbrace{d[v]}^{\text{Per il lemma 4, d[v] non aumenta}}&\leq l_{vw}+d[w]\\&\leq l_{vw}+l(P')\\&=l(P)\end{align}$$
+
 >[!definition]- Teorema 2
 >Assumi che non ci siano cicli negativi, l'algoritmo BFM calcola la lunghezza dello SP $v\to t$ in tempo $O(mn)$ e spazio $\Theta(n)$
 
-**Dimostrazione** : Usando il [[Appunti ASD/MOD II Guala/Lezione 9#^ddb5fe|lemma 2]]+ il lemma 5 [[Appunti ASD/MOD II Guala/Lezione 9#^8f65ab|lemma 5]]
+**Dimostrazione** : Usando il [[Appunti ASD/MOD II Guala/Lezione 9#^ddb5fe|lemma 2]] + il [[Appunti ASD/MOD II Guala/Lezione 9#^8f65ab|lemma 5]]
 
 >[!info]- Remark
 >BFM è tipicamente veloce nella pratica
