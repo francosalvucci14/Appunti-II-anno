@@ -7,10 +7,6 @@ includeLinks: true # Make headings clickable
 debugInConsole: false # Print debug info in Obsidian console
 ```
 
-```dataviewjs
-dv.view('toc')
-```
-
 # Algoritmo di Bellman-Ford-Moore
 
 ## Shortest path con pesi negativi
