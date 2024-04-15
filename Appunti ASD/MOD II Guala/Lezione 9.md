@@ -100,3 +100,18 @@ L'algoritmo sarà il seguente
 >[!definition]- Teorema 1
 >Dato un grafo diretto $G=(V,E)$ che non contiene cicli negativi, l'algoritmo di DP calcola la lunghezza dello SP $v\to t$,per ogni nodo $v$, in tempo $\Theta(mn)$ e spazio $\Theta(n^2)$
 
+**Dimostrazione**
+- La tabella $M$ richiede spazio $\Theta(n^2)$
+- Ogni iterazione $i$ impiega tempo $\Theta(m)$ dato che dobbiamo esaminare ogni arco una volta
+
+**Trovare lo SP**:
+- Approccio 1 : Mantenere una variabile $successor[i,v]$, che punta al prossimo nodo nello SP $v\to t$ che usa $\leq i$ archi
+- Approccio 2 : Calcoliamo la lunghezza ottimale $M[i,v]$ e consideriamo solo gli archi con $M[i,v]=M[i-1,v]+l_{vw}$. Ogni percorso diretto in questo sottografo è uno SP
+
+#### Miglioramenti pratici
+
+Possiamo ottimizzare lo spazio
+
+**Ottimizzazione dello spazio** : Manteniamo due array `unidimensionali` (al posto di un solo array bidimensionale)
+- $d[v]$ = lunghezza dello SP $v\to t$ che abbiamo trovato prima
+- $successor[v]$ = prossimo nodo del percorso $v\to t$
