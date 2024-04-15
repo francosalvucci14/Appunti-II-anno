@@ -1,17 +1,11 @@
-- [[Appunti ASD/MOD II Guala/Lezione 9#Algoritmo di Bellman-Ford-Moore|Algoritmo di Bellman-Ford-Moore]]
-	- [[#Shortest path con pesi negativi|Shortest path con pesi negativi]]
-		- [[#Shortest path con pesi negativi#Tentativi falliti|Tentativi falliti]]
-		- [[#Shortest path con pesi negativi#Cicli negativi|Cicli negativi]]
-		- [[#Shortest path con pesi negativi#SP e Cicli negativi|SP e Cicli negativi]]
-		- [[#Shortest path con pesi negativi#Problemi SP e Cicli negativi|Problemi SP e Cicli negativi]]
-		- [[#Shortest path con pesi negativi#SP con pesi negativi : Programmazione dinamica|SP con pesi negativi : Programmazione dinamica]]
-			- [[#SP con pesi negativi : Programmazione dinamica#Implementazione|Implementazione]]
-			- [[#SP con pesi negativi : Programmazione dinamica#Miglioramenti pratici|Miglioramenti pratici]]
-	- [[#Algoritmo di Bellman-Ford-Moore : Implementazione efficiente|Algoritmo di Bellman-Ford-Moore : Implementazione efficiente]]
-		- [[#Algoritmo di Bellman-Ford-Moore : Implementazione efficiente#Analisi dell'algoritmo|Analisi dell'algoritmo]]
-		- [[#Algoritmo di Bellman-Ford-Moore : Implementazione efficiente#Trovare lo SP|Trovare lo SP]]
-
-
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
 # Algoritmo di Bellman-Ford-Moore
 
 ## Shortest path con pesi negativi
@@ -145,7 +139,7 @@ Diamo ora l'algoritmo ottimizzato, che saraà quello di Bellman-Ford-Moore
 >[!definition]- Teorema 2
 >Assumi che non ci siano cicli negativi, l'algoritmo BFM calcola la lunghezza dello SP $v\to t$ in tempo $O(mn)$ e spazio $\Theta(n)$
 
-**Dimostrazione** : Usando il [[Appunti ASD/MOD II Guala/Lezione 9#^ddb5fe|lemma 2]] + il [[Appunti ASD/MOD II Guala/Lezione 9#^8f65ab|lemma 5]]
+**Dimostrazione** : Usando il [lemma 2](#^ddb5fe) + il  [lemma 5](#^8f65ab)
 
 >[!info]- Remark
 >BFM è tipicamente veloce nella pratica
@@ -182,7 +176,7 @@ Cosa possiamo dire sugli SPS
 >Assumiamo che non ci siano cicli negativi, allora BFM trova lo Sp $v\to t,\forall v$ in tempo $O(mn)$ e spazio $\Theta(n)$
 
 **Dimostrazione** :
-- Il grafo dei successori non può avere cicli diretti, per il [[Appunti ASD/MOD II Guala/Lezione 9#^a0a77b|lemma 6]]
+- Il grafo dei successori non può avere cicli diretti, per il [lemma 6](#^a0a77b)
 - Quindi, seguendo i puntatori successivi da $v$, si ottiene un percorso diretto fino a $t$
 - Siano $v=v_1\to v_2\to\dots v_k=t$ i nodi in questo percorso $P$
 - Alla fine, se $successor[v]=w$, dobbiamo avere che $d[v]=d[w]+l_{vw}$ (la parte sinistra e destra dell'equazione risulta essere uguale quando $successor[v]$ viene impostato; $d[.]$ non cambia `(dato che l'algoritmo è terminato)`)
