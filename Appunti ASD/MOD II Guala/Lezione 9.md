@@ -191,4 +191,9 @@ L'algoritmo di BFM modificato, per vedere se esiste un ciclo negativo sarà il s
 **Lemma 6.1** : Se esiste un ciclo negativo (che può essere raggiunto), allora l'algoritmo (modificato) lo notifica
 
 **Dimostrazione**
-- 
+- Se non esistono cicli negativi, la passata n-esima non fa nulla
+- Sia $v_1\to v_2\to\dots v_k\to v_1$ un ciclo negativo diretto chiamato $W$
+- Assumiamo per contraddizione che l'algoritmo non lo notifica
+- Allora : La condizione dell'ultimo `IF` sarà sempre false
+- Allora : $$\begin{align}&d[v_1]\leq d[v_2]+l(v_1,v_2)\\&d[v_2]\leq d[v_3]+l(v_2,v_3)\\&\vdots\\&d[v_{k-1}]\leq d[v_k]+l(v_{k-1},v_k)\\&d[v_k]\leq d[v_1]+l(v_k,v_1)\end{align}$$
+- L'aggiunta di queste equazioni produce $\underbrace{l(v_1,v_2)+l(v_2,v_3)+\dots+l(v_{k-1},v_k)+l(v_k,v_1)\geq0}_{\text{W non può essere un ciclo negativo : contraddizione}}$
