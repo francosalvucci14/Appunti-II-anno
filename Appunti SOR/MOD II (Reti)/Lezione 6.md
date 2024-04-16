@@ -20,7 +20,7 @@ Le **persone** hanno molti identificatori :
 
 **Domanda** : Come possiamo mappare indirizzi Ip e nomi?
 
-Un primo approccio è il file `hosts (/etc/hosts) in POSIX`, che associa un indirizzo IP a uno o più hostname
+Un primo approccio è il file **hosts (/etc/hosts) in POSIX**, che associa un indirizzo IP a uno o più hostname
 
 ```
 185.300.10.1 host1
@@ -28,4 +28,3 @@ Un primo approccio è il file `hosts (/etc/hosts) in POSIX`, che associa un indi
 ```
 
 Il file è locale a un nodo, il suo contenuto non deve necessariamente coincidere con quelli di altri nodi
-
