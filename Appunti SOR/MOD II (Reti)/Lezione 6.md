@@ -76,3 +76,61 @@ Il client vuole l'indirizzo IP di `www.amazon.com`
 - Il client interroga il TLD server .com per ottenere il server autoritativo per `amazon.com`
 - Il client interroga il server autoritativo per `amazon.com` per ottenere l'indirizzo IP di `www.amazon.com`
 
+## Root name server
+
+![[Pasted image 20240416152900.png|center|500]]
+
+Ufficiale, contatto di ultima istanza da parte dei name server che non sono in grando di risolvere il nome
+- Fornisce gli indirizzi IP dei TLD server
+
+Questa è una funzione incredibilmente importante di Internet
+- Internet non potrebbe funzionare senza
+- DNSSRC - offre sicurezza (autenticazione, integrità dei messaggi)
+
+l'ICANN (Internet Corporation for Assigned Names and Numbers) gestisce il root DNS domain
+
+## TLD e Server Autoritativi
+
+>[!definition]- Top-Level Domain (TLD) server
+>- Si occupano dei domini .com, .org, .net, .edu, .aero, .jobs, etc..., e di tutti i domain locali di alto livello
+>- Network Solutions : gestisce i server TLD per i domini .com e .net
+>- Educause : Gestisce quelli per .edu
+
+>[!definition]- DNS server autoritativo
+>- Sono server DNS propri di ciascuna organizzazione, che forniscono i mapping ufficiali da hostname a IP per gli host dell'organizzazione
+>- Possono essere mantenuti dall'organizzazione o dal service provider
+
+## DNS locali
+
+Quando l'host effettua una richiesta DNS, la query viene inviata al suo server DNS *locale* (con funzione di default name server)
+
+Il sever DNS locale restituisce una risposta, rispondendo :
+- Dalla sua cache locale di coppie nome->indirizzo (possibilmente non aggiornate)
+- Inoltrando la richiesta alla gerarchia DNS per la risoluzione
+Ciascun ISP ha un proprio server DNS locale, per trovare il vostro lanciare il comando :
+- `ipconfig /all`
+
+Il server DNS locale non appartiene strettamente alla gerarchia dei server
+
+## DNS : Interrogazioni
+### DNS : Interrogazione Iterativa
+
+**Esempio** : l'host `engineering.nyu,edu` vuole l'indirizzo IP di `gaia.cs.umass.edu`
+
+**Query iterativa**
+- Il server contattato risponde con il nome del server da contattare
+
+![[Pasted image 20240416154948.png|center|500]]
+
+Il TLD DNS potrebbe conoscere in realtà un DNS server itermedio, ad esempio nel caso di domini di terzo livello, aventi ciascuno il proprio DNS server autoritativo
+
+### DNS : Interrogazione Ricorsiva
+
+**Esempio** : l'host `engineering.nyu,edu` vuole l'indirizzo IP di `gaia.cs.umass.edu`
+
+**Interrogazione ricorsiva**
+- Affida il compito di tradurre il nome al server contattato
+- C'è un carico pesante ai livelli superiori di gerarchia?
+
+![[Pasted image 20240416160225.png|center|500]]
+
