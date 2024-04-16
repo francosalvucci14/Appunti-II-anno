@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
+                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Liste.md"
+                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
+                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
+                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,8 +179,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7931714fcd03803f",
+  "active": "df7858a2757dad77",
   "lastOpenFiles": [
+    "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Operatori.md",
     "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 1.md",
     "Appunti ASD/MOD II Guala/Lezione 9.md",
@@ -221,7 +222,6 @@
     "Appunti SOR/MOD II (Reti)/Lezione 2.md",
     "Appunti SOR/MOD II (Reti)/Lezione 3.md",
     "Appunti SOR/MOD II (Reti)/Lezione 1.md",
-    "Appunti ASD/MOD I/Indice degli appunti ASD.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti ASD/MOD II Guala/Esercitazioni/img",
     "Appunti ASD/MOD II Guala/Esercitazioni",

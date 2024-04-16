@@ -53,7 +53,7 @@ L'algoritmo è il seguente, scritto in Python
 - La chiamata `Ric(nodo.center,bool)` e la chiamata `Ricostruzione(nodo.center,bool)` vengono usate $\iff$ l'albero in input non è binario completo (tipo quello dell'esempio sopra)
 - Se l'albero è binario queste chiamate non verrano mai usate, perchè il campo `center` del nodo sarà impostato a `None`
 
-```python
+```python title:esercizio1.py
 class TreeNode:
     def __init__(
         self,
@@ -303,4 +303,3 @@ def Algoritmo(r,b,g):
     OPT = min{red[n-1],green[n-1],blue[n-1]}
     return OPT
 ```
-
