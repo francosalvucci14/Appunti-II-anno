@@ -1,6 +1,6 @@
 Codice Liste
 
-```prolog
+```prolog title:liste.pl
 appartiene(X,[X|_]).
 appartiene(X,[_|T]):-
     appartiene(X,T).
