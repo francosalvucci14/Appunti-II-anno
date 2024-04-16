@@ -8,5 +8,6 @@
   "obsidian-trim-whitespace",
   "automatic-table-of-contents",
   "pseudocode-in-obs",
-  "better-export-pdf"
+  "better-export-pdf",
+  "code-styler"
 ]
