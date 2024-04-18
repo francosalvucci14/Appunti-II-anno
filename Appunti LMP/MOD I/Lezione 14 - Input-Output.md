@@ -1,4 +1,11 @@
-
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
 # Basic I/O
 
 ## I/O Streams
@@ -374,7 +381,7 @@ Gli elementi devono apparire nell'ordine indicato. Partendo da destra, gli eleme
 - **Precisione**. Per i valori in virgola mobile, questa è la precisione matematica del valore formattato. Per se altre conversioni generali, questa è la larghezza massima del valore formattato; il valore viene troncato a destra se necessario.
 - **Larghezza**. La larghezza minima del valore formattato; il valore viene riempito se necessario. Per impostazione predefinita, il valore viene riempito a sinistra con spazi vuoti.
 - **I contrassegni (flags)** specificano opzioni di formattazione aggiuntive. Nell'esempio Format, il flag + specifica che il numero deve essere sempre formattato con un segno e il flag 0 specifica che 0 è il carattere di riempimento. Altri flag includono - (pad a destra) e , (numero di formato con separatori delle migliaia specifici della locale). Si noti che alcuni flag non possono essere utilizzati con determinati altri flag o con determinate conversioni.
-- **L'indice degli argomenti (argument index)** consente di abbinare in modo esplicito un argomento designato. È inoltre possibile specificare < per trovare la corrispondenza con lo stesso argomento dell'identificatore precedente. Quindi l'esempio avrebbe potuto dire: 
+- **L'indice degli argomenti (argument index)** consente di abbinare in modo esplicito un argomento designato. È inoltre possibile specificare < per trovare la corrispondenza con lo stesso argomento dell'identificatore precedente. Quindi l'esempio avrebbe potuto dire:
 ```java 
 System.out.format("%f, %<+020.10f %n", Math.PI);
 ```
@@ -579,4 +586,3 @@ System.out.format("subpath(0,2): %s%n", path.subpath(0,2));
 System.out.format("getParent: %s%n", path.getParent());
 System.out.format("getRoot: %s%n", path.getRoot());
 ```
-
