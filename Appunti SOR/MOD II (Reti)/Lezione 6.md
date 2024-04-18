@@ -133,4 +133,3 @@ Il TLD DNS potrebbe conoscere in realtà un DNS server itermedio, ad esempio nel
 - C'è un carico pesante ai livelli superiori di gerarchia?
 
 ![[Pasted image 20240416160225.png|center|500]]
-
