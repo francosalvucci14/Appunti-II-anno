@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
+                "file": "Appunti ASD/MOD II Guala/ProblemSet.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 14 - Input-Output.md"
+                "file": "Appunti ASD/MOD II Guala/ProblemSet.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
+                "file": "Appunti ASD/MOD II Guala/ProblemSet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
+                "file": "Appunti ASD/MOD II Guala/ProblemSet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "5a46b8e248aedf1e",
@@ -181,12 +181,15 @@
   },
   "active": "df7858a2757dad77",
   "lastOpenFiles": [
-    "Appunti LMP/MOD I/Lezione 13 - Collections.md",
+    "Appunti ASD/MOD II Guala/Lezione 10.md",
+    "Appunti ASD/MOD II Guala/ProblemSet.md",
+    "Appunti ASD/MOD II Guala/Untitled",
+    "Appunti SOR/MOD II (Reti)/Lezione 5.md",
     "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
+    "Appunti LMP/MOD I/Lezione 13 - Collections.md",
     "Appunti ASD/MOD II Guala/Lezione 7.md",
     "Appunti ASD/MOD II Guala/Lezione 9.md",
     "Appunti SOR/MOD I (S.O.)/Lezione 10.md",
-    "Appunti ASD/MOD II Guala/Lezione 10.md",
     "Appunti SOR/MOD II (Reti)/Lezione 6.md",
     "Appunti SOR/MOD II (Reti)/img/Pasted image 20240416160225.png",
     "Appunti SOR/MOD II (Reti)/img/Pasted image 20240416154948.png",
@@ -205,7 +208,6 @@
     "Appunti ASD/MOD II Guala/img/Pasted image 20240415133915.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240415133858.png",
     "Appunti SOR/MOD II (Reti)/Esercizi",
-    "Appunti SOR/MOD II (Reti)/Lezione 5.md",
     "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
     "Appunti ASD/MOD II Guala/Lezione 1.md",
     "Appunti ASD/MOD II Guala/Lezione 2.md",
@@ -217,7 +219,6 @@
     "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
     "Appunti BSD/Progetto DB/Fase Tre Modificata.md",
     "Appunti BSD/Progetto DB/Fase tre.md",
-    "^Appunti SOR/MOD II (Reti)/Lezione 4.md",
     "^Appunti SOR/MOD II (Reti)",
     "^Appunti SOR",
     "Appunti ASD/MOD II Guala/Esercizi/img",
@@ -226,7 +227,6 @@
     "Appunti ASD/MOD II Guala/Esercitazioni/img",
     "Appunti ASD/MOD II Guala/Esercitazioni",
     "Appunti ASD/MOD II Guala/img",
-    "Appunti ASD/MOD II Guala",
     "Untitled.canvas"
   ]
 }

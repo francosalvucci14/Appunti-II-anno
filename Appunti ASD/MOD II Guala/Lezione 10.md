@@ -1,1 +1,3 @@
 Numero di stcut $\leq2^{n-2}$ (forza bruta)
+
+
