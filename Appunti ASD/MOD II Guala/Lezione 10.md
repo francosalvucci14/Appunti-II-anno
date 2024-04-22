@@ -93,3 +93,9 @@ Come possiamo vedere dagli esempi, l'algoritmo greedy dice che il valore finale 
 
 **Linea di fondo** : Abbiamo bisogno di un meccanismo per "disfare" le decisioni sbagliate
 
+#### Residual network
+
+**Arco originale** : $e=(u,v)\in E$
+
+![[Pasted image 20240422111326.png|center|300]]
+
