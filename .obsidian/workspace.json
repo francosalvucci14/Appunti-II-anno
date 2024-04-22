@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/ProblemSet.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 10.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/ProblemSet.md"
+                "file": "Appunti ASD/MOD II Guala/Lezione 10.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/ProblemSet.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/ProblemSet.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,8 +181,11 @@
   },
   "active": "df7858a2757dad77",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240422102614.png",
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240422102556.png",
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240422102222.png",
+    "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
     "Appunti ASD/MOD II Guala/Lezione 10.md",
-    "Appunti ASD/MOD II Guala/ProblemSet.md",
     "Appunti ASD/MOD II Guala/Untitled",
     "Appunti SOR/MOD II (Reti)/Lezione 5.md",
     "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
@@ -205,8 +208,6 @@
     "Appunti ASD/MOD II Guala/img/Pasted image 20240415140108.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240415134121.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240415134055.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240415133915.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240415133858.png",
     "Appunti SOR/MOD II (Reti)/Esercizi",
     "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
     "Appunti ASD/MOD II Guala/Lezione 1.md",
@@ -218,7 +219,6 @@
     "Appunti SOR/MOD II (Reti)/Lezione 4.md",
     "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
     "Appunti BSD/Progetto DB/Fase Tre Modificata.md",
-    "Appunti BSD/Progetto DB/Fase tre.md",
     "^Appunti SOR/MOD II (Reti)",
     "^Appunti SOR",
     "Appunti ASD/MOD II Guala/Esercizi/img",
