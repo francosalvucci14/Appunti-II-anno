@@ -95,6 +95,8 @@ Come possiamo vedere dagli esempi, l'algoritmo greedy dice che il valore finale 
 
 #### Residual network
 
+^89e245
+
 **Arco originale** : $e=(u,v)\in E$
 
 ![[Pasted image 20240422111326.png|center|300]]
@@ -117,9 +119,33 @@ $$c_f(e)=\begin{cases}c(e)-f(e)&\iff e\in E\\f(e^\text{reverse})&\iff e^\text{re
 
 #### Percorso aumentante
 
+^ca9035
+
 >[!definition]- Percorso aumentante
 >Un **percorso aumentante** è un percorso semplice $s\to t$ nel residual network $G_f$
 
 >[!definition]- Bottleneck capacity
 >La **bottleneck capacity** di un percorso aumentante $P$ è la capacità residua minima di ogni arco in $P$
+
+**Proprietà chiave**
+- Sia $f$ un flusso e sia $P$ un percorso aumentate in $G_f$
+- Allora, dopo aver chiamato la funzione $f'\gets Augment(f,c,P)$, il risultato $f'$ sarà un flusso e $val(f')=val(f)+bottleneck(G_f,P)$
+
+![[Pasted image 20240422112819.png|center|400]]
+
+Ora, dopo tutte le definizioni di [Residual Network](#^89e245) e [Percorso Aumentate](#^ca9035), possiamo definire l'algoritmo di Ford-Fulkerson, per il calcolo del max-flow in un network $G$
+
+### Algoritmo
+
+**Algoritmo dei cammini aumentanti di Ford-Fulkerson** :
+- Inizia con $f(e)=0,\forall e\in E$
+- Trova un percorso $s\to t$, chiamato $P$, nel residual network $G_f$
+- Aumenta il valore del flusso lungo il percorso $P$
+- Continua finchè non ti blocchi
+
+L'algoritmo è il seguente
+
+![[Pasted image 20240422113322.png|center|400]]
+
+Vedi la demo dell'algoritmo qui -> [Demo](https://www.mat.uniroma2.it/~guala/07_Network_Flow_I_2023.pdf#page=23)
 
