@@ -19,7 +19,7 @@ debugInConsole: false # Print debug info in Obsidian console
 
 ![[Pasted image 20240422102222.png|center|500]]
 
-## Minimum-Cut Problem
+### Minimum-Cut Problem
 
 Diamo alcune definizioni prima di parlare del problema del `Taglio Minimo`
 
@@ -47,7 +47,7 @@ A questo punto, possiamo parlare del problema del `Taglio Minimo`
 
 Diamo ora la definizione del problema Maximum-Flow
 
-## Maximum-Flow Problem
+### Maximum-Flow Problem
 
 >[!definition]- st-flow (flow)
 >Un $st-$flow $f$ è una funzione che soddisfa le seguenti condizioni:
@@ -60,3 +60,36 @@ Diamo ora la definizione del problema Maximum-Flow
 >Il **valore** del flusso $f$ è $$val(f)=\sum\limits_{\text{archi e uscenti da s}}f(e)-\sum\limits_{\text{archi e entranti in s}}f(e)$$
 
 ![[Pasted image 20240422105827.png|center|500]]
+
+Il problema del Max-Flow è quindi il seguente
+
+**Max-Flow Problem** : Trovare un flusso di valore `massimo`
+
+![[Pasted image 20240422105921.png|center|500]]
+
+## Algoritmo di Ford-Fulkerson
+
+### Verso l'algoritmo per il max-flow
+
+Prima di definire l'algoritmo di FF, vediamo prima l'approccio greedy (dimostreremo che il greedy non va bene)
+
+**Algoritmo greedy** :
+- Inizia con $f(e)=0,\forall e\in E$ ![[Pasted image 20240422110228.png|center|500]]
+- Trova un percorso $s\to t$, chiamato $P$, dove per ogni arco vale $f(e)\lt c(e)$ ![[Pasted image 20240422110322.png|center|500]]
+- Aumenta il flusso lungo il percorso $P$ ![[Pasted image 20240422110424.png|center|500]]
+- Ripeti finchè non ti blocchi ![[Pasted image 20240422110510.png|center|500]] ![[Pasted image 20240422110529.png|center|500]] ![[Pasted image 20240422110546.png|center|500]]
+Come possiamo vedere dagli esempi, l'algoritmo greedy dice che il valore finale del flusso è 16, ma il valore del flusso massimo è 19
+
+#### Perchè il greedy fallisce?
+
+**D** : Perchè l'algoritmo greedy fallisce?
+**R** : Una volta che il greedy incrementa il valore del flusso su un'arco, non lo decrementa mai
+
+**Esempio** : Consideriamo il network flow $G$
+- L'unico max flow $f^\star$ ha $f^\star(v,w)=0$
+- L'algoritmo greedy sceglie il percorso $s\to v\to w\to t$ come primo percorso
+
+![[Pasted image 20240422110900.png|center|300]]
+
+**Linea di fondo** : Abbiamo bisogno di un meccanismo per "disfare" le decisioni sbagliate
+
