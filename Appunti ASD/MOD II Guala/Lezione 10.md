@@ -99,3 +99,27 @@ Come possiamo vedere dagli esempi, l'algoritmo greedy dice che il valore finale 
 
 ![[Pasted image 20240422111326.png|center|300]]
 
+**Arco invertito** : $e^\text{reverse}=(v,u)$
+- "Annullare" l'invio del flusso
+
+**Capacità residua**
+$$c_f(e)=\begin{cases}c(e)-f(e)&\iff e\in E\\f(e^\text{reverse})&\iff e^\text{reverse}\in E\end{cases}$$
+
+![[Pasted image 20240422111643.png|center|300]]
+
+**Residual Network** : $G_f=(V,E_f,s,t,c_f)$
+- $E_f=\{e|f(e)\lt c(e)\}\cup\{e|f(e^\text{reverse})\gt0\}$ (archin con capacità residua positiva)
+- Proprietà chiave : $f'$ è un flusso in $G_f\iff f+f'$ è un flusso in $G$ (dove il flusso su un arco inverso nega il flusso sul corrispondente arco anteriore)
+
+**Esempio**
+
+![[Pasted image 20240422112342.png|center|500]]
+
+#### Percorso aumentante
+
+>[!definition]- Percorso aumentante
+>Un **percorso aumentante** è un percorso semplice $s\to t$ nel residual network $G_f$
+
+>[!definition]- Bottleneck capacity
+>La **bottleneck capacity** di un percorso aumentante $P$ è la capacità residua minima di ogni arco in $P$
+
