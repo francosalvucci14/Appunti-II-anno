@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 10.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 10.md"
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 10.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 10.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,27 +181,32 @@
   },
   "active": "df7858a2757dad77",
   "lastOpenFiles": [
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240427112347.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240427112054.png",
+    "Appunti SOR/MOD II (Reti)/Lezione 6.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 5.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 4.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 3.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 2.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 1.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 7.md",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240427110848.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240427105551.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240427105325.png",
+    "Pasted image 20240427105317.png",
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240427104526.png",
+    "Appunti ASD/MOD II Guala/Lezione 10.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240422113322.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240422112819.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240422112342.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240422111643.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240422111326.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240422110900.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240422110546.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240422110529.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240422110510.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240422110424.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240422110322.png",
     "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
-    "Appunti ASD/MOD II Guala/Lezione 10.md",
     "Appunti ASD/MOD II Guala/Untitled",
-    "Appunti SOR/MOD II (Reti)/Lezione 5.md",
     "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
     "Appunti LMP/MOD I/Lezione 13 - Collections.md",
     "Appunti ASD/MOD II Guala/Lezione 7.md",
     "Appunti ASD/MOD II Guala/Lezione 9.md",
     "Appunti SOR/MOD I (S.O.)/Lezione 10.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 6.md",
     "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Operatori.md",
@@ -214,11 +219,6 @@
     "Appunti ASD/MOD II Guala/Lezione 2.md",
     "Appunti ASD/MOD II Guala/Lezione 3.md",
     "Appunti ASD/MOD II Guala/Lezione 4.md",
-    "Appunti ASD/MOD II Guala/Lezione 5.md",
-    "Appunti ASD/MOD II Guala/Lezione 6.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 4.md",
-    "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
-    "Appunti BSD/Progetto DB/Fase Tre Modificata.md",
     "^Appunti SOR/MOD II (Reti)",
     "^Appunti SOR",
     "Appunti ASD/MOD II Guala/Esercizi/img",

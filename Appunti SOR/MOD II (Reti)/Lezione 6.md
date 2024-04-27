@@ -133,3 +133,120 @@ Il TLD DNS potrebbe conoscere in realtà un DNS server itermedio, ad esempio nel
 - C'è un carico pesante ai livelli superiori di gerarchia?
 
 ![[Pasted image 20240416160225.png|center|500]]
+
+## DNS : caching e aggiornamento dei record
+
+Una volta che un (qualsiasi) name server impara la mappatura, la mette nella *cache*, e restituisce *immediatamente* il mapping nella cache di risposta a una query:
+- Il caching migliora i tempi di risposta
+- Le voci della cache vanno in timeout (scompaiono) dopo un certo tempo (**TTL**)
+- I server TLD sono in genere memorizzati nella cache dei server dei nomi locali
+
+Le voci nella cache potrebbero essere *obsolete*
+- Se l'host con nome cambia il suo indirizzo IP, potrebbe non essere conosciuto su internet fino alla scadenza di tutti i TTL
+
+## Record, Messaggi e Sicurezza DNS
+### Record DNS
+
+>[!definition]- Record RR
+>DNS : database distribuito che memorizza 7 record di risorsa (**RR**)
+>Formato RR : `(name, value, type, ttl)`
+
+Ci sono 4 tipi per i RR
+
+- `Type=A`
+	- name è l'hostname
+	- value è l'indirizzo IP
+- `Type=CNAME`
+	- name è il nome alias di qualche nome "canonico" (esempio `www.ibm.com`, in realtà diventa `servereast.backup2.ibm.com`)
+	- value è il nome canonico
+- `Type=NS`
+	- name è il dominio
+	- value è l'hostname dell'authoritative name server per questo dominio
+- `Type=MX`
+	- value è il nome del server di posta associato a name
+
+### Messaggi DNS
+
+**Domande** (query) e messaggi di **risposta** (reply), entrambi con lo stesso formato
+
+Intestazione del messaggio :
+- **Identificazione** : Numero di 16 bit per la domanda; la risposta alla domanda usa lo stesso numero
+- **Flag** :
+	- domanda o risposta
+	- richiesta di ricorsione
+	- ricorsione disponibile
+	- DNS server autoritativo
+
+![[Pasted image 20240427104526.png|center|400]]
+
+- Sezione delle domande : campi per il nome richiesto e il tipo di domanda
+- Sezione delle risposte : RR nella risposta alla domanda
+- Sezione autoritativa : Record per server autoritativi
+- Sezione aggiuntiva : Informazioni extra che possono esse usate
+
+### Sicurezza del DNS
+
+Vediamo 2 attacchi molto famosi e diffusi
+
+**Attacchi DDoS (Distribuited Denial of Service)**
+- Bombardare di traffico il root server
+	- Finora senza successo
+	- FIltraggio del traffico
+	- I server DNS locali mantengono in cache gli indirizzi IP dei server TLD. consentendo di aggirare i roiot server
+- Bombdardare i server TLD
+	- Potenzialmente più pericoloso
+
+**Attacchi di spoofing**
+- Intercettare le query DNS, restituendo risposte fasulle
+	- DNS cache poisoning
+
+----
+# Architettura Peer-to-Peer (P2P)
+
+Descriviamo sinteticamente la struttura dell'architettura P2P
+
+Struttura :
+- Nessun server è sempre attivo
+- Sistemi periferici arbitrari comunicano direttamente
+- I peer richiedono un servizio ad altri peer e forniscono un servizio in cambio di altri peer
+	- **scalabilità intrinseca** - Nuovi peer portano nuove capacità di servizio e nuove richieste di servizio
+- I peer sono connessi a intermittenza e cambiano indirizzo IP
+	- Gestione complessa
+
+![[Pasted image 20240427105325.png|center|350]]
+
+## Distribuzione di file : Client-Server vs P2P
+
+**D** : Quanto tempo ci vuole per distribuire un file (di dimensione $F$) da un server a $N$ peer?
+- La capacità di upload/download dei peer è una risorsa illimitata
+
+![[Pasted image 20240427105551.png|center|500]]
+
+### File distribution time : client-server
+
+- **Trasmissione via server** : Deve inviare (caricare) in sequenza $N$ copie di file :
+	- Tempo per inviare una copia $\frac{F}{u_s}$
+	- Tempo per inviare $N$ copie : $N\frac{F}{u_s}$
+- **Client** : ogni client deve scaricare una copia del file
+	- $d_{\text{min}}$ = banda di download più bassa
+	- Tempo di download per il client con banda minima è almeno $\frac{F}{d_{\text{min}}}$
+
+Quindi, il tempo necessario per distribuire $F$ a $N$ client usando l'approccio client-server è $$D_{\text{c-s}}\geq\max\{\underbrace{N\frac{F}{u_s}}_{\text{Aumenta lineramente in N}},\frac{F}{u_s}\}$$
+### File distribution time : P2P
+
+- **Trasmissione via server** : Deve trasmettere almeno una copia del file :
+	- Tempo per inviare una copia $\frac{F}{u_s}$
+- **Client** : ogni client deve scaricare una copia del file
+	- $d_{\text{min}}$ = banda di download più bassa
+	- Tempo di download per il client con banda minima è almeno $\frac{F}{d_{\text{min}}}$
+
+I client devono scaricare $NF$ bit
+- Capacità totale di upload (che limita la massima velocità di download) è $u_s+\sum\limits u_i$
+
+Quindi, il tempo necessario per distribuire $F$ a $N$ client usando l'approccio P2P è $$D_{\text{P2P}}\geq\max\{\frac{F}{u_s},\frac{F}{d_{\text{min}}},\frac{\overbrace{NF}^{\text{Aumenta lineramente in N}}}{\underbrace{u_s+\sum\limits u_i}_{\text{Ma anche questo, dato che ogni peer porta con sè la capacità di servizio}}}\}$$
+### Client-Server vs P2P : Esempio
+
+Banda di upload del client = $u,\frac{F}{u}$ = 1 ora, $u_s=10u,d_{\text{min}}\geq u_s$
+
+![[Pasted image 20240427110848.png|center|500]]
+

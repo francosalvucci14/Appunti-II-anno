@@ -148,4 +148,3 @@ L'algoritmo è il seguente
 ![[Pasted image 20240422113322.png|center|400]]
 
 Vedi la demo dell'algoritmo qui -> [Demo](https://www.mat.uniroma2.it/~guala/07_Network_Flow_I_2023.pdf#page=23)
-
