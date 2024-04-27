@@ -18,7 +18,7 @@ Traffico video in streaming :
 
 **Soluzione** : Infrastruttura distribuita a livello di applicazione
 
-### Contenuti multimediali : Video
+## Contenuti multimediali : Video
 
 >[!definition]- Video
 >Un video è una sequenza di immagini visualizzate a tasso costante (**frame rate**)
@@ -43,7 +43,7 @@ Diamo ancora un paio di definizioni
 >[!definition]- VBR (Variable Bit Rate)
 >Bit rate che cambia con la quantità di codifica spaziale e temporale
 
-### Streaming video di contenuti registrati
+## Streaming video di contenuti registrati
 
 Scenario semplice
 
@@ -52,4 +52,13 @@ Scenario semplice
 Sfide principali :
 - La larghezza di banda da server a client varia nel tempo, con il variare dei livelli di congestione della rete
 - La perdità di pacchetti, i ritardi dovuti alla congestione ritardano la riproduzione o comportano una scarsa qualità video
+
+![[Pasted image 20240427112624.png|center|500]]
+
+**Vincolo di riproduzione continua** : quando la riproduzione inizia, dovrebbe procedere secondo i tempi di registrazione origianali
+- Ma i ritardi di rete sono variaibli (**jitter**), quindi avrà bisogno di un buffer lato client per soddisfare i vincoli di riproduzione continua
+
+Altre sfide : 
+- Interattività del client : Pausa, avanzamento veloce, riavvolgimento, salti attraverso il video
+- I pacchetti video possono essere persi, ritrasmessi
 
