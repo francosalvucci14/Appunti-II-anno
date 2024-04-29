@@ -176,3 +176,23 @@ Quindi, il numero totale di aumenti è : $O(m\log C)$
 >[!definition]- Teorema
 >L'algoritmo capacity-scaling impiega tempo $O(m^2\log C)$
 
+
+## Percorso aumentante più corto
+
+**D** : Come si sceglie il prossimo percorso aumentante in Ford-Fulkerson?
+
+**R** : Prendiamo quello che usa meno archi (si può trovare tramite la BFS)
+
+L'algoritmo è il seguente :
+
+![[Pasted image 20240429120449.png|center|500]]
+
+### Analisi dell'algoritmo
+
+Si può dimostrare la seguente condizione
+
+**Lemma 1** : Il numero totale di aumenti è al più $mn$
+
+>[!definition]- Teorema
+>L'algoritmo per lo shortest-augmenting-path impiega tempo $O(m^2n)$
+
