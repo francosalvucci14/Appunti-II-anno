@@ -117,3 +117,62 @@ Per tutta l'esecuzione di Ford-Fulkerson, i valori $f(e)(\text{valore del flusso
 **Dimostrazione** :
 
 Dato che Ford-Fulkerson termina, il teorema segue dall'invariante di integralità (e dal teorema sui percrosi aumentanti)
+
+### Ford-Fulkerson : Esempio esponenziale
+
+**D** : L'algoritmo di Ford-Fulkerson è polinomiale nella dimensione dell'input?
+
+**R** :
+- No, l'algoritmo è pseudo-polinomiale
+- Se la capacità massima è $C$, l'algoritmo impiega $\geq C$ iterazioni
+
+![[Pasted image 20240429115146.png|center|500]]
+
+
+**Cattive notizie** : Il numero di percorsi aumentanti può essere esponenziale nella dimensione dell'input
+
+Vedi esempio qui -> [Esempio](https://www.mat.uniroma2.it/~guala/07_Network_Flow_I_2023.pdf#page=45)
+
+----
+
+# Scegliere dei buoni percorsi aumentanti
+
+**Prestare attenzione quando si scelgono i percorsi aumentanti**
+- Alcune scelte portano ad algoritmi esponenziali
+- Scelte intelligenti portano ad algoritmi polinomiali
+
+**Patologia** : Quando le capacità degli archi sono irrazionali, non c'è alcuna garanzia che Ford-Fulkerson termini (o che converga al flusso massimo)
+
+**Goal** : Scegliere i percorsi aumentanti in modo tale che
+- Possiamo trovare i percorsi aumentanti in modo efficiente
+- Ci sono poche iterazioni
+
+**Scegliere i percorsi aumentanti con** :
+- Capacità del bottleneck sufficientemente grande
+- Pochi archi
+
+## Algoritmo Capacity-scaling
+
+**Overview** : Scegliere i percorsi aumentanti con capacità di bottleneck "grande" (non necessariamente la più grande)
+- Mantenere un parametro di scalign $\Delta$
+- Sia $G_f(\Delta)$ una parte del residual network che contiene solo gli archi con capacità $\geq\Delta$
+- Ogni percorso aumentante in $G_f(\Delta)$ ha una capacità di bottleneck $\geq\Delta$
+
+![[Pasted image 20240429120019.png|center|500]]
+
+L'algoritmo è il seguente
+
+![[Pasted image 20240429120044.png|center|500]]
+
+### Analisi dell'algoritmo (sketch)
+
+Si possono dimostrare le seguenti condizioni
+
+**Lemma 1** : Ci sono $1+\lfloor\log_2C\rfloor$ fasi di scaling
+**Lemma 2** : Ci sono $\leq2m$ aumenti per ogni fase di scaling
+
+Quindi, il numero totale di aumenti è : $O(m\log C)$
+
+>[!definition]- Teorema
+>L'algoritmo capacity-scaling impiega tempo $O(m^2\log C)$
+

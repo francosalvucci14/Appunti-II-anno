@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8193497ecf96aeb6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/MOD II Guala/Lezione 11.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -179,8 +192,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "df7858a2757dad77",
+  "active": "8193497ecf96aeb6",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240429120044.png",
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240429120019.png",
+    "Appunti ASD/MOD II Guala/Lezione 10.md",
+    "Appunti ASD/MOD II Guala/Lezione 11.md",
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240429115146.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240429112332.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240429112105.png",
     "Pasted image 20240429111944.png",
@@ -189,12 +207,7 @@
     "Appunti ASD/MOD II Guala/img/Pasted image 20240429105526.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240429105516.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240429105436.png",
-    "Appunti ASD/MOD II Guala/Lezione 10.md",
-    "Appunti ASD/MOD II Guala/Lezione 11.md",
     "Appunti SOR/MOD II (Reti)/Lezione 7.md",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240427112624.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240427112347.png",
-    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240427112054.png",
     "Appunti SOR/MOD II (Reti)/Lezione 6.md",
     "Appunti SOR/MOD II (Reti)/Lezione 5.md",
     "Appunti SOR/MOD II (Reti)/Lezione 4.md",
