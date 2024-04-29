@@ -58,7 +58,7 @@ Sfide principali :
 **Vincolo di riproduzione continua** : quando la riproduzione inizia, dovrebbe procedere secondo i tempi di registrazione origianali
 - Ma i ritardi di rete sono variaibli (**jitter**), quindi avrà bisogno di un buffer lato client per soddisfare i vincoli di riproduzione continua
 
-Altre sfide : 
+Altre sfide :
 - Interattività del client : Pausa, avanzamento veloce, riavvolgimento, salti attraverso il video
 - I pacchetti video possono essere persi, ritrasmessi
 
