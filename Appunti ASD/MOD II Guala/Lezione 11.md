@@ -65,3 +65,55 @@ Le seguenti 3 condizioni sono equivalenti per ogni flusso $f$:
 2) $f$ è un max-flow
 3) Non esiste un percorso aumentante rispetto a $\overbrace{f}^{\text{Se Ford-Fulkerson termina, allora f è un max-flow}}$
 
+- $1\implies2$
+	- Corollario di dualità debole
+
+- $2\implies3$ (**Dimostriamo il contropositivo** $\lnot3\implies\lnot2$)
+	- Supponiamo che esiste un percorso aumentante rispetto a $f$
+	- Possiamo migliorare $f$ inviando il flusso lungo questo percorso
+	- Quindi, $f$ non è un flusso massimo
+
+- $1\implies3$
+	- Sia $f$ un flusso senza percorsi aumentanti
+	- Sia $A=$ insieme di nodi raggiungibili da $s$ nel residual network $G_f$
+	- Per definizione di $A:s\in A$
+	- Per definizione del flusso $f:t\not\in A$ ![[Pasted image 20240429112105.png|center|500]]
+
+### Calcolare un taglio minimo partendo da un flusso massimo
+
+>[!definition]- Teorema
+>Dato un qualunque flusso massimo $f$, possiamo calcolare il taglio minimo $(A,B)$ in tempo $O(m)$
+
+**Dimostrazione**
+
+Sia $A=$ insieme di nodi raggiungibili da $s$ nel residual network $G_f$ (?)
+
+![[Pasted image 20240429112332.png|center|500]]
+
+## Analisi dell'algoritmo di Ford-Fulkerson (per capacità intere)
+
+**Assunzione** : Ogni capacità $c(e)$ è un intero compreso tra $1$ e $C$
+
+**Invariante di integralità** :
+Per tutta l'esecuzione di Ford-Fulkerson, i valori $f(e)(\text{valore del flusso dell'arco})$ e $c_f(e)(\text{capacità residua})$, sono interi
+
+**Dimostrazione** :
+- Per induzione sul numero di percorsi aumentanti
+
+>[!definition]- Teorema
+>L'algoritmo di Ford-Fulkerson termina al più dopo $val(f^\star)\leq nC$ percorsi aumentanti, con $f^\star=$ flusso massimo
+
+**Dimostrazione** : Ogni aumento incrementa il valore del flusso di almeno 1
+
+>[!warning]- Corollario
+>Il tempo di esecuzione dell'algoritmo Ford-Fulkerson è $O(m*val(f^\star))=O(mnC)$
+
+**Dimostrazione** : Possiamo usare la BFS o la DFS per trovare il percorso aumentante in tempo $O(m)$
+
+>[!definition]- Teorema di Intergralità
+>Esiste un flusso massimo integrale $f^\star$
+>$f(e)$ è un intero per ogni arco $e$
+
+**Dimostrazione** :
+
+Dato che Ford-Fulkerson termina, il teorema segue dall'invariante di integralità (e dal teorema sui percrosi aumentanti)
