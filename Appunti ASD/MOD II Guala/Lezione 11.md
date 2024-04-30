@@ -195,4 +195,3 @@ Si può dimostrare la seguente condizione
 
 >[!definition]- Teorema
 >L'algoritmo per lo shortest-augmenting-path impiega tempo $O(m^2n)$
-
