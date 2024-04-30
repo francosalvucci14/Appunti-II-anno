@@ -73,6 +73,22 @@ Detto questo, il problema del Matching Perfetto è il seguente
 
 ![[Pasted image 20240430120603.png|center|500]]
 
+**Dim** $\impliedby$
+- Sia $f$ un flusso integrale in $G'$ di valore $k$
+- Considera $M=$ insieme di archi da $L$ a $R$ con $f(e)=1$
+	- Ogni nodo in $L$ e $R$ partecipa in appare in al più un arco in $M$
+	- $|M|=k$ : Applichiamo il lemma sul valore del flusso, al taglio $(L\cup\{s\},R\cup\{t\})$
+
+![[Pasted image 20240430120955.png|center|500]]
+
+**Corollario** : SI può risolvere il problema del matching bipartito tramite la formulazione max-flow
+
+**Dim**
+- Dal teorema di integralità $\implies$ Esiste un max flow $f^\star$ in $G'$ che è intero
+- Corrispondenza $1-1\implies f^\star$ corrispoinde al matching di cardinalità massima
+
+
+
 ## Percorsi Disgiunti
 
 ## Segmentazione dell'immagine
