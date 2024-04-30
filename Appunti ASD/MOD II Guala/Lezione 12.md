@@ -87,9 +87,14 @@ Detto questo, il problema del Matching Perfetto è il seguente
 - Dal teorema di integralità $\implies$ Esiste un max flow $f^\star$ in $G'$ che è intero
 - Corrispondenza $1-1\implies f^\star$ corrispoinde al matching di cardinalità massima
 
+![[Pasted image 20240430120955.png|center|500]]
 
+#### Tempo di esecuzione
 
+Se usiamo Ford-Fulkerson, abbiamo $\leq n$ aumenti $\implies$Tempo $O(mn)$
 ## Percorsi Disgiunti
+
+
 
 ## Segmentazione dell'immagine
 
