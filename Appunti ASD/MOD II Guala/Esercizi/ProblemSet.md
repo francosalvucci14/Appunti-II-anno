@@ -8,9 +8,19 @@ includeLinks: true # Make headings clickable
 debugInConsole: false # Print debug info in Obsidian console
 ```
 
-# Es1
-# Es2
-# Es3
+# Esercizio 1
+
+# Esercizio 2
+
+## Struttura
+
+## Esempio
+
+## Pseudocodice
+
+# Esercizio 3
+
+## Struttura
 
 **Definizione dei sottoproblemi**
 
@@ -33,9 +43,10 @@ $$OPT(i, j)=\begin{cases}0&\text{se i=j}\\c(i)*c(j)&\text{se |j-i|=1}\\\min_{k=i
 
 Il valore che vogliamo ottenere è
  $$OPT[1,n]$$
-
-
+## Esempio di esecuzione
 
 **Esempio** : $c=[5,7,6,8]$
 
-L'algoritmo parte con $i=1\land j=n$, e va a "indovinare" l'indice $k$, ricorsivamente, che minimizza il costo dell'albero completo
+*Mettere matrici da codice Python*
+
+## Pseudocodice
