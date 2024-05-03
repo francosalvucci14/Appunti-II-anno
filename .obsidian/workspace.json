@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 12.md",
+                "file": "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 12.md"
+                "file": "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 12.md",
+                "file": "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 12.md",
+                "file": "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,6 +181,20 @@
   },
   "active": "8193497ecf96aeb6",
   "lastOpenFiles": [
+    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
+    "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
+    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Esercizio Outlook.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Operatori.md",
+    "Appunti LMP/MOD I/Lezione 11 - Eccezioni.md",
+    "Appunti LMP/MOD I/Lezione 7 - Classi Nidificate.md",
+    "Appunti LMP/MOD I/Lezione 5 - Espressioni,Blocchi e Statement.md",
+    "Appunti LMP/MOD I/Lezione 3 - Concetti dell'OOP.md",
+    "Appunti LMP/MOD I/Lezione 2 - Il linguaggio Java.md",
+    "Appunti LMP/MOD I/Introduzione.md",
+    "Appunti ASD/MOD II Guala/Lezione 12.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240430120955.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240430120603.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240430120150.png",
@@ -189,13 +203,11 @@
     "Appunti ASD/MOD II Guala/img/Pasted image 20240430115219.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240430115001.png",
     "Appunti ASD/MOD II Guala/Lezione 11.md",
-    "Appunti ASD/MOD II Guala/Lezione 12.md",
     "README.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240429120449.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240429120044.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240429120019.png",
     "Appunti ASD/MOD II Guala/Lezione 10.md",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240429115146.png",
     "Appunti SOR/MOD II (Reti)/Lezione 7.md",
     "Appunti SOR/MOD II (Reti)/Lezione 6.md",
     "Appunti SOR/MOD II (Reti)/Lezione 5.md",
@@ -206,19 +218,7 @@
     "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
     "Appunti ASD/MOD II Guala/Untitled",
     "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
-    "Appunti LMP/MOD I/Lezione 13 - Collections.md",
-    "Appunti ASD/MOD II Guala/Lezione 7.md",
-    "Appunti ASD/MOD II Guala/Lezione 9.md",
-    "Appunti SOR/MOD I (S.O.)/Lezione 10.md",
-    "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Operatori.md",
-    "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 1.md",
-    "Appunti SOR/MOD II (Reti)/Esercizi/Esercizio 1.md",
-    "Appunti ASD/MOD II Guala/Lezione 8.md",
     "Appunti SOR/MOD II (Reti)/Esercizi",
-    "Appunti ASD/MOD II/Lezione 12 - Dynamic Programming Part III-IV.md",
-    "Appunti ASD/MOD II Guala/Lezione 1.md",
     "^Appunti SOR/MOD II (Reti)",
     "^Appunti SOR",
     "Appunti ASD/MOD II Guala/Esercizi/img",
