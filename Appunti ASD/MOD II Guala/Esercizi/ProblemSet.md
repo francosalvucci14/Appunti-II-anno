@@ -49,4 +49,6 @@ Il valore che vogliamo ottenere è
 
 *Mettere matrici da codice Python*
 
+![[Pasted image 20240506110916.png|center|500]]
+
 ## Pseudocodice
