@@ -26,7 +26,7 @@ debugInConsole: false # Print debug info in Obsidian console
 
 Prima di risolvere l'esercizio, definiamo prima i sottoproblemi, e dopo averli definiti, andiamo a dimostrarne la correttezza
 
-I sottoproblemi sono i seguenti : 
+I sottoproblemi sono i seguenti :
 
 $\forall i,j$ abbiamo che :
 $$OPT(i,j)=\text{Minimo costo dell'albero composto dalle foglie che vanno dalla posizione i a j}$$
@@ -101,7 +101,8 @@ Con l'input di esempio, vediamo che la matrice OPT sarà così generata
  [ -1  -1  -1   0]
 ```
 
-Il costo totale dell'albero lo troviamo nella posizione $OPT[1,n]$, infatti l'albero che viene generato è questo :
+Il costo totale dell'albero lo troviamo nella posizione $OPT[1,n]$.
+L'albero che viene generato è il seguente :
 
 ![[Pasted image 20240506111111.png|center|350]]
 
