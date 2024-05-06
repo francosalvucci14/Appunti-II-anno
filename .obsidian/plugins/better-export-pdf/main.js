@@ -4247,330 +4247,20 @@ var import_obsidian5 = require("obsidian");
 // src/modal.ts
 var import_obsidian3 = require("obsidian");
 
-// src/render.ts
-var import_obsidian2 = require("obsidian");
-
-// src/utils.ts
-var import_obsidian = require("obsidian");
-var TreeNode = class {
-  constructor(key, title, level) {
-    this.children = [];
-    this.key = key;
-    this.title = title;
-    this.level = level;
-    this.children = [];
-  }
+// src/constant.ts
+var PageSize = {
+  A0: [841, 1189],
+  A1: [594, 841],
+  A2: [420, 594],
+  A3: [297, 420],
+  A4: [210, 297],
+  A5: [148, 210],
+  A6: [105, 148],
+  Legal: [216, 356],
+  Letter: [216, 279],
+  Tabloid: [279, 432],
+  Ledger: [432, 279]
 };
-function getHeadingTree(doc = document) {
-  const headings = doc.querySelectorAll("h1, h2, h3, h4, h5, h6");
-  const root = new TreeNode("", "Root", 0);
-  let prev = root;
-  headings.forEach((heading) => {
-    var _a;
-    const level = parseInt(heading.tagName.slice(1));
-    const link = heading.querySelector("a.md-print-anchor");
-    const regexMatch = /^af:\/\/(.+)$/.exec((_a = link == null ? void 0 : link.href) != null ? _a : "");
-    if (!regexMatch) {
-      return;
-    }
-    const newNode = new TreeNode(regexMatch[1], heading.innerText, level);
-    while (prev.level >= level) {
-      prev = prev.parent;
-    }
-    prev.children.push(newNode);
-    newNode.parent = prev;
-    prev = newNode;
-  });
-  return root;
-}
-function modifyDest(doc) {
-  const data = /* @__PURE__ */ new Map();
-  doc.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach((heading, i) => {
-    const link = document.createElement("a");
-    const flag3 = `${heading.tagName.toLowerCase()}-${i}`;
-    link.href = `af://${flag3}`;
-    link.className = "md-print-anchor";
-    heading.appendChild(link);
-    data.set(heading.dataset.heading, flag3);
-  });
-  return data;
-}
-function fixAnchors(doc, dest, basename) {
-  doc.querySelectorAll("a.internal-link").forEach((el, i) => {
-    var _a, _b;
-    const [title, anchor] = (_b = (_a = el.dataset.href) == null ? void 0 : _a.split("#")) != null ? _b : [];
-    if ((anchor == null ? void 0 : anchor.length) > 0) {
-      if ((title == null ? void 0 : title.length) > 0 && title != basename) {
-        return;
-      }
-      const flag3 = dest.get(anchor);
-      if (flag3 && !anchor.startsWith("^")) {
-        el.href = `an://${flag3}`;
-      }
-    }
-  });
-}
-function waitFor(cond, timeout = 0) {
-  return new Promise((resolve, reject) => {
-    const startTime = Date.now();
-    const poll = () => {
-      if (cond()) {
-        resolve(true);
-      } else if (timeout > 0 && Date.now() - startTime >= timeout) {
-        reject(new Error("Timeout exceeded"));
-      } else {
-        setTimeout(poll, 500);
-      }
-    };
-    poll();
-  });
-}
-var px2mm = (px2) => {
-  return Math.round(px2 * 0.26458333333719);
-};
-var mm2px = (mm) => {
-  return Math.round(mm * 3.779527559);
-};
-function traverseFolder(path) {
-  if (path instanceof import_obsidian.TFile) {
-    if (path.extension == "md") {
-      return [path];
-    } else {
-      return [];
-    }
-  }
-  const arr = [];
-  for (const item of path.children) {
-    arr.push(...traverseFolder(item));
-  }
-  return arr;
-}
-function copyAttributes(node, attributes) {
-  Array.from(attributes).forEach((attr) => {
-    node.setAttribute(attr.name, attr.value);
-  });
-}
-
-// src/render.ts
-function getAllStyles() {
-  const cssTexts = [];
-  Array.from(document.styleSheets).forEach((sheet) => {
-    var _a, _b, _c;
-    const id = (_a = sheet.ownerNode) == null ? void 0 : _a.id;
-    if (id == null ? void 0 : id.startsWith("svelte-")) {
-      return;
-    }
-    const href = (_b = sheet.ownerNode) == null ? void 0 : _b.href;
-    const division = `/* ----------${id ? `id:${id}` : href ? `href:${href}` : ""}---------- */`;
-    cssTexts.push(division);
-    try {
-      Array.from((_c = sheet == null ? void 0 : sheet.cssRules) != null ? _c : []).forEach((rule) => {
-        cssTexts.push(rule.cssText);
-      });
-    } catch (error2) {
-      console.error(error2);
-    }
-  });
-  cssTexts.push(...getPatchStyle());
-  return cssTexts;
-}
-var CSS_PATCH = `
-/* ---------- css patch ---------- */
-
-body {
-  overflow: auto !important;
-}
-@media print {
-  .print .markdown-preview-view {
-    height: auto !important;
-  }
-  .md-print-anchor, .blockid {
-    white-space: pre !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-top: none !important;
-    border-bottom: none !important;
-    display: inline-block !important;
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    right: 0 !important;
-    outline: 0 !important;
-    background: 0 0 !important;
-    text-decoration: initial !important;
-    text-shadow: initial !important;
-  }
-}
-@media print {
-  table {
-    break-inside: auto;
-  }
-  tr {
-    break-inside: avoid;
-    break-after: auto;
-  }
-}
-`;
-function getPatchStyle() {
-  return [CSS_PATCH, ...getPrintStyle()];
-}
-function getPrintStyle() {
-  const cssTexts = [];
-  Array.from(document.styleSheets).forEach((sheet) => {
-    var _a;
-    try {
-      const cssRules = (_a = sheet == null ? void 0 : sheet.cssRules) != null ? _a : [];
-      Array.from(cssRules).forEach((rule) => {
-        if (rule.constructor.name == "CSSMediaRule") {
-          if (rule.conditionText === "print") {
-            const res = rule.cssText.replace(/@media print\s*\{(.+)\}/gms, "$1");
-            cssTexts.push(res);
-          }
-        }
-      });
-    } catch (error2) {
-      console.error(error2);
-    }
-  });
-  return cssTexts;
-}
-function generateDocId(n) {
-  return Array.from({ length: n }, () => (16 * Math.random() | 0).toString(16)).join("");
-}
-function getFrontMatter(app, file) {
-  var _a;
-  const cache = app.metadataCache.getFileCache(file);
-  return (_a = cache == null ? void 0 : cache.frontmatter) != null ? _a : {};
-}
-async function renderMarkdown(app, file, config, extra) {
-  var _a, _b, _c, _d, _e, _f, _g, _h, _i;
-  const startTime = (/* @__PURE__ */ new Date()).getTime();
-  const ws = app.workspace;
-  if (((_a = ws.getActiveFile()) == null ? void 0 : _a.path) != file.path) {
-    const leaf = ws.getLeaf();
-    await leaf.openFile(file);
-  }
-  const view = ws.getActiveViewOfType(import_obsidian2.MarkdownView);
-  const data = (_e = (_c = view == null ? void 0 : view.data) != null ? _c : (_b = ws == null ? void 0 : ws.getActiveFileView()) == null ? void 0 : _b.data) != null ? _e : (_d = ws.activeEditor) == null ? void 0 : _d.data;
-  if (!data) {
-    new import_obsidian2.Notice("data is empty!");
-  }
-  const frontMatter = getFrontMatter(app, file);
-  const cssclasses = [];
-  for (const [key, val] of Object.entries(frontMatter)) {
-    if (key.toLowerCase() == "cssclass" || key.toLowerCase() == "cssclasses") {
-      if (Array.isArray(val)) {
-        cssclasses.push(...val);
-      } else {
-        cssclasses.push(val);
-      }
-    }
-  }
-  const comp = new import_obsidian2.Component();
-  comp.load();
-  const printEl = document.body.createDiv("print");
-  const viewEl = printEl.createDiv({
-    cls: "markdown-preview-view markdown-rendered " + cssclasses.join(" ")
-  });
-  app.vault.cachedRead(file);
-  viewEl.toggleClass("rtl", app.vault.getConfig("rightToLeft"));
-  viewEl.toggleClass("show-properties", "hidden" !== app.vault.getConfig("propertiesInDocument"));
-  if (config.showTitle) {
-    const h = viewEl.createEl("h1", {
-      text: (_f = extra == null ? void 0 : extra.title) != null ? _f : file.basename
-    });
-    h.id = (_g = extra == null ? void 0 : extra.id) != null ? _g : "";
-  }
-  const cache = app.metadataCache.getFileCache(file);
-  const lines = (_h = data == null ? void 0 : data.split("\n")) != null ? _h : [];
-  Object.entries((_i = cache == null ? void 0 : cache.blocks) != null ? _i : {}).forEach(([key, c]) => {
-    const idx = c.position.end.line;
-    lines[idx] = `<span id="^${key}" class="blockid"></span>
-` + lines[idx];
-  });
-  const promises = [];
-  await import_obsidian2.MarkdownRenderer.render(app, lines.join("\n"), viewEl, file.path, comp);
-  await import_obsidian2.MarkdownRenderer.postProcess(app, {
-    docId: generateDocId(16),
-    sourcePath: file.path,
-    frontmatter: {},
-    promises,
-    addChild: function(e) {
-      return comp.addChild(e);
-    },
-    getSectionInfo: function() {
-      return null;
-    },
-    containerEl: viewEl,
-    el: viewEl,
-    displayMode: true
-  });
-  await Promise.all(promises);
-  printEl.findAll("a.internal-link").forEach((el) => {
-    var _a2, _b2;
-    const [title, anchor] = (_b2 = (_a2 = el.dataset.href) == null ? void 0 : _a2.split("#")) != null ? _b2 : [];
-    if ((!title || (title == null ? void 0 : title.length) == 0 || title == file.basename) && (anchor == null ? void 0 : anchor.startsWith("^"))) {
-      return;
-    }
-    el.removeAttribute("href");
-  });
-  if (data.includes("```dataview") || data.includes("```gEvent") || data.includes("![[")) {
-    try {
-      await waitFor(() => false, 2e3);
-    } catch (error2) {
-      console.warn("wait 2s");
-    }
-  }
-  fixCanvasToImage(viewEl);
-  const doc = document.implementation.createHTMLDocument("document");
-  doc.body.appendChild(printEl.cloneNode(true));
-  printEl.detach();
-  comp.unload();
-  printEl.remove();
-  const endTime = (/* @__PURE__ */ new Date()).getTime();
-  console.log(`render time:${endTime - startTime}ms`);
-  return doc;
-}
-function fixDoc(doc, title) {
-  const dest = modifyDest(doc);
-  fixAnchors(doc, dest, title);
-  fixEmbedSpan(doc);
-}
-function fixEmbedSpan(doc) {
-  const spans = doc.querySelectorAll("span.markdown-embed");
-  spans.forEach((span) => {
-    var _a;
-    const newDiv = document.createElement("div");
-    copyAttributes(newDiv, span.attributes);
-    newDiv.innerHTML = span.innerHTML;
-    (_a = span.parentNode) == null ? void 0 : _a.replaceChild(newDiv, span);
-  });
-}
-function fixCanvasToImage(el) {
-  for (const canvas of Array.from(el.querySelectorAll("canvas"))) {
-    const data = canvas.toDataURL();
-    const img = document.createElement("img");
-    img.src = data;
-    copyAttributes(img, canvas.attributes);
-    img.className = "__canvas__";
-    canvas.replaceWith(img);
-  }
-}
-function createWebview() {
-  const webview = document.createElement("webview");
-  webview.src = `app://obsidian.md/help.html`;
-  webview.setAttribute(
-    "style",
-    `height:calc(1/0.75 * 100%);
-     width: calc(1/0.75 * 100%);
-     transform: scale(0.75, 0.75);
-     transform-origin: top left;
-     border: 1px solid #f2f2f2;
-    `
-  );
-  webview.nodeintegration = true;
-  return webview;
-}
 
 // src/pdf.ts
 var fs = __toESM(require("fs/promises"));
@@ -20174,6 +19864,92 @@ var PDFButton = (
 );
 var PDFButton_default = PDFButton;
 
+// src/utils.ts
+var import_obsidian = require("obsidian");
+var TreeNode = class {
+  constructor(key, title, level) {
+    this.children = [];
+    this.key = key;
+    this.title = title;
+    this.level = level;
+    this.children = [];
+  }
+};
+function getHeadingTree(doc = document) {
+  const headings = doc.querySelectorAll("h1, h2, h3, h4, h5, h6");
+  const root = new TreeNode("", "Root", 0);
+  let prev = root;
+  headings.forEach((heading) => {
+    var _a;
+    const level = parseInt(heading.tagName.slice(1));
+    const link = heading.querySelector("a.md-print-anchor");
+    const regexMatch = /^af:\/\/(.+)$/.exec((_a = link == null ? void 0 : link.href) != null ? _a : "");
+    if (!regexMatch) {
+      return;
+    }
+    const newNode = new TreeNode(regexMatch[1], heading.innerText, level);
+    while (prev.level >= level) {
+      prev = prev.parent;
+    }
+    prev.children.push(newNode);
+    newNode.parent = prev;
+    prev = newNode;
+  });
+  return root;
+}
+function modifyDest(doc) {
+  const data = /* @__PURE__ */ new Map();
+  doc.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach((heading, i) => {
+    const link = document.createElement("a");
+    const flag3 = `${heading.tagName.toLowerCase()}-${i}`;
+    link.href = `af://${flag3}`;
+    link.className = "md-print-anchor";
+    heading.appendChild(link);
+    data.set(heading.dataset.heading, flag3);
+  });
+  return data;
+}
+function fixAnchors(doc, dest, basename) {
+  doc.querySelectorAll("a.internal-link").forEach((el, i) => {
+    var _a, _b;
+    const [title, anchor] = (_b = (_a = el.dataset.href) == null ? void 0 : _a.split("#")) != null ? _b : [];
+    if ((anchor == null ? void 0 : anchor.length) > 0) {
+      if ((title == null ? void 0 : title.length) > 0 && title != basename) {
+        return;
+      }
+      const flag3 = dest.get(anchor);
+      if (flag3 && !anchor.startsWith("^")) {
+        el.href = `an://${flag3}`;
+      }
+    }
+  });
+}
+var px2mm = (px2) => {
+  return Math.round(px2 * 0.26458333333719);
+};
+var mm2px = (mm) => {
+  return Math.round(mm * 3.779527559);
+};
+function traverseFolder(path) {
+  if (path instanceof import_obsidian.TFile) {
+    if (path.extension == "md") {
+      return [path];
+    } else {
+      return [];
+    }
+  }
+  const arr = [];
+  for (const item of path.children) {
+    arr.push(...traverseFolder(item));
+  }
+  return arr;
+}
+function copyAttributes(node, attributes) {
+  Array.from(attributes).forEach((attr) => {
+    node.setAttribute(attr.name, attr.value);
+  });
+}
+
 // src/pdf.ts
 async function getDestPosition(pdfDoc) {
   const pages = pdfDoc.getPages();
@@ -20397,8 +20173,8 @@ function setMetadata(pdfDoc, { title, author, keywords, subject, creator, create
 }
 async function exportToPDF(outputFile, config, w, doc, frontMatter) {
   var _a, _b, _c, _d, _e, _f, _g, _h, _i;
-  let pageSize = config["pageSise"];
-  if (config["pageSise"] == "Custom" && config["pageWidth"] && config["pageHeight"]) {
+  let pageSize = config["pageSize"];
+  if (config["pageSize"] == "Custom" && config["pageWidth"] && config["pageHeight"]) {
     pageSize = {
       width: parseFloat((_a = config["pageWidth"]) != null ? _a : "0") / 25.4,
       height: parseFloat((_b = config["pageHeight"]) != null ? _b : "0") / 25.4
@@ -20462,10 +20238,10 @@ async function exportToPDF(outputFile, config, w, doc, frontMatter) {
     console.error(error2);
   }
 }
-async function getOutputFile(filename) {
+async function getOutputFile(filename, isTimestamp) {
   const result = await import_electron.default.remote.dialog.showSaveDialog({
     title: "Export to PDF",
-    defaultPath: filename + ".pdf",
+    defaultPath: filename + (isTimestamp ? "-" + Date.now() : "") + ".pdf",
     filters: [
       { name: "All Files", extensions: ["*"] },
       { name: "PDF", extensions: ["pdf"] }
@@ -20478,20 +20254,251 @@ async function getOutputFile(filename) {
   return result.filePath;
 }
 
-// src/constant.ts
-var PageSize = {
-  A0: [841, 1189],
-  A1: [594, 841],
-  A2: [420, 594],
-  A3: [297, 420],
-  A4: [210, 297],
-  A5: [148, 210],
-  A6: [105, 148],
-  Legal: [216, 356],
-  Letter: [216, 279],
-  Tabloid: [279, 432],
-  Ledger: [432, 279]
-};
+// src/render.ts
+var import_obsidian2 = require("obsidian");
+function getAllStyles() {
+  const cssTexts = [];
+  Array.from(document.styleSheets).forEach((sheet) => {
+    var _a, _b, _c;
+    const id = (_a = sheet.ownerNode) == null ? void 0 : _a.id;
+    if (id == null ? void 0 : id.startsWith("svelte-")) {
+      return;
+    }
+    const href = (_b = sheet.ownerNode) == null ? void 0 : _b.href;
+    const division = `/* ----------${id ? `id:${id}` : href ? `href:${href}` : ""}---------- */`;
+    cssTexts.push(division);
+    try {
+      Array.from((_c = sheet == null ? void 0 : sheet.cssRules) != null ? _c : []).forEach((rule) => {
+        cssTexts.push(rule.cssText);
+      });
+    } catch (error2) {
+      console.error(error2);
+    }
+  });
+  cssTexts.push(...getPatchStyle());
+  return cssTexts;
+}
+var CSS_PATCH = `
+/* ---------- css patch ---------- */
+
+body {
+  overflow: auto !important;
+}
+@media print {
+  .print .markdown-preview-view {
+    height: auto !important;
+  }
+  .md-print-anchor, .blockid {
+    white-space: pre !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    display: inline-block !important;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    right: 0 !important;
+    outline: 0 !important;
+    background: 0 0 !important;
+    text-decoration: initial !important;
+    text-shadow: initial !important;
+  }
+}
+@media print {
+  table {
+    break-inside: auto;
+  }
+  tr {
+    break-inside: avoid;
+    break-after: auto;
+  }
+}
+`;
+function getPatchStyle() {
+  return [CSS_PATCH, ...getPrintStyle()];
+}
+function getPrintStyle() {
+  const cssTexts = [];
+  Array.from(document.styleSheets).forEach((sheet) => {
+    var _a;
+    try {
+      const cssRules = (_a = sheet == null ? void 0 : sheet.cssRules) != null ? _a : [];
+      Array.from(cssRules).forEach((rule) => {
+        if (rule.constructor.name == "CSSMediaRule") {
+          if (rule.conditionText === "print") {
+            const res = rule.cssText.replace(/@media print\s*\{(.+)\}/gms, "$1");
+            cssTexts.push(res);
+          }
+        }
+      });
+    } catch (error2) {
+      console.error(error2);
+    }
+  });
+  return cssTexts;
+}
+function generateDocId(n) {
+  return Array.from({ length: n }, () => (16 * Math.random() | 0).toString(16)).join("");
+}
+function getFrontMatter(app, file) {
+  var _a;
+  const cache = app.metadataCache.getFileCache(file);
+  return (_a = cache == null ? void 0 : cache.frontmatter) != null ? _a : {};
+}
+async function renderMarkdown(app, file, config, extra) {
+  var _a, _b, _c, _d, _e, _f, _g, _h, _i;
+  const startTime = (/* @__PURE__ */ new Date()).getTime();
+  const ws = app.workspace;
+  if (((_a = ws.getActiveFile()) == null ? void 0 : _a.path) != file.path) {
+    const leaf = ws.getLeaf();
+    await leaf.openFile(file);
+  }
+  const view = ws.getActiveViewOfType(import_obsidian2.MarkdownView);
+  const data = (_e = (_c = view == null ? void 0 : view.data) != null ? _c : (_b = ws == null ? void 0 : ws.getActiveFileView()) == null ? void 0 : _b.data) != null ? _e : (_d = ws.activeEditor) == null ? void 0 : _d.data;
+  if (!data) {
+    new import_obsidian2.Notice("data is empty!");
+  }
+  const frontMatter = getFrontMatter(app, file);
+  const cssclasses = [];
+  for (const [key, val] of Object.entries(frontMatter)) {
+    if (key.toLowerCase() == "cssclass" || key.toLowerCase() == "cssclasses") {
+      if (Array.isArray(val)) {
+        cssclasses.push(...val);
+      } else {
+        cssclasses.push(val);
+      }
+    }
+  }
+  const comp = new import_obsidian2.Component();
+  comp.load();
+  const printEl = document.body.createDiv("print");
+  const viewEl = printEl.createDiv({
+    cls: "markdown-preview-view markdown-rendered " + cssclasses.join(" ")
+  });
+  app.vault.cachedRead(file);
+  viewEl.toggleClass("rtl", app.vault.getConfig("rightToLeft"));
+  viewEl.toggleClass("show-properties", "hidden" !== app.vault.getConfig("propertiesInDocument"));
+  if (config.showTitle) {
+    const h = viewEl.createEl("h1", {
+      text: (_f = extra == null ? void 0 : extra.title) != null ? _f : file.basename
+    });
+    h.id = (_g = extra == null ? void 0 : extra.id) != null ? _g : "";
+  }
+  const cache = app.metadataCache.getFileCache(file);
+  const lines = (_h = data == null ? void 0 : data.split("\n")) != null ? _h : [];
+  Object.entries((_i = cache == null ? void 0 : cache.blocks) != null ? _i : {}).forEach(([key, c]) => {
+    const idx = c.position.end.line;
+    lines[idx] = `<span id="^${key}" class="blockid"></span>
+` + lines[idx];
+  });
+  const promises = [];
+  await import_obsidian2.MarkdownRenderer.render(app, lines.join("\n"), viewEl, file.path, comp);
+  await import_obsidian2.MarkdownRenderer.postProcess(app, {
+    docId: generateDocId(16),
+    sourcePath: file.path,
+    frontmatter: {},
+    promises,
+    addChild: function(e) {
+      return comp.addChild(e);
+    },
+    getSectionInfo: function() {
+      return null;
+    },
+    containerEl: viewEl,
+    el: viewEl,
+    displayMode: true
+  });
+  await Promise.all(promises);
+  printEl.findAll("a.internal-link").forEach((el) => {
+    var _a2, _b2;
+    const [title, anchor] = (_b2 = (_a2 = el.dataset.href) == null ? void 0 : _a2.split("#")) != null ? _b2 : [];
+    if ((!title || (title == null ? void 0 : title.length) == 0 || title == file.basename) && (anchor == null ? void 0 : anchor.startsWith("^"))) {
+      return;
+    }
+    el.removeAttribute("href");
+  });
+  try {
+    await fixWaitRender(data, viewEl);
+  } catch (error2) {
+    console.warn("wait timeout");
+  }
+  fixCanvasToImage(viewEl);
+  const doc = document.implementation.createHTMLDocument("document");
+  doc.body.appendChild(printEl.cloneNode(true));
+  printEl.detach();
+  comp.unload();
+  printEl.remove();
+  const endTime = (/* @__PURE__ */ new Date()).getTime();
+  console.log(`render time:${endTime - startTime}ms`);
+  return doc;
+}
+function fixDoc(doc, title) {
+  const dest = modifyDest(doc);
+  fixAnchors(doc, dest, title);
+  encodeEmbeds(doc);
+}
+function encodeEmbeds(doc) {
+  const spans = Array.from(doc.querySelectorAll("span.markdown-embed")).reverse();
+  spans.forEach((span) => span.innerHTML = encodeURIComponent(span.innerHTML));
+}
+async function fixWaitRender(data, viewEl) {
+  if (data.includes("```dataview") || data.includes("```gEvent") || data.includes("![[")) {
+    await sleep(2e3);
+  }
+  try {
+    await waitForDomChange(viewEl);
+  } catch (error2) {
+    await sleep(1e3);
+  }
+}
+function fixCanvasToImage(el) {
+  for (const canvas of Array.from(el.querySelectorAll("canvas"))) {
+    const data = canvas.toDataURL();
+    const img = document.createElement("img");
+    img.src = data;
+    copyAttributes(img, canvas.attributes);
+    img.className = "__canvas__";
+    canvas.replaceWith(img);
+  }
+}
+function createWebview() {
+  const webview = document.createElement("webview");
+  webview.src = `app://obsidian.md/help.html`;
+  webview.setAttribute(
+    "style",
+    `height:calc(1/0.75 * 100%);
+     width: calc(1/0.75 * 100%);
+     transform: scale(0.75, 0.75);
+     transform-origin: top left;
+     border: 1px solid #f2f2f2;
+    `
+  );
+  webview.nodeintegration = true;
+  return webview;
+}
+function waitForDomChange(target, timeout = 2e3, interval = 200) {
+  return new Promise((resolve, reject) => {
+    let timer;
+    const observer = new MutationObserver((m) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        observer.disconnect();
+        resolve(true);
+      }, interval);
+    });
+    observer.observe(target, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      characterData: true
+    });
+    setTimeout(() => {
+      observer.disconnect();
+      reject(new Error(`timeout ${timeout}ms`));
+    }, timeout);
+  });
+}
 
 // src/modal.ts
 function fullWidthButton(button) {
@@ -20509,7 +20516,7 @@ var ExportConfigModal = class extends import_obsidian3.Modal {
     this.file = file;
     this.completed = false;
     this.config = {
-      pageSise: "A4",
+      pageSize: "A4",
       marginType: "1",
       showTitle: (_a = plugin.settings.showTitle) != null ? _a : true,
       open: true,
@@ -20592,7 +20599,7 @@ var ExportConfigModal = class extends import_obsidian3.Modal {
     var _a, _b, _c, _d;
     const conf = config != null ? config : this.config;
     const el = element != null ? element : this.previewDiv;
-    const width = (_d = (_b = (_a = PageSize) == null ? void 0 : _a[conf["pageSise"]]) == null ? void 0 : _b[0]) != null ? _d : parseFloat((_c = conf["pageWidth"]) != null ? _c : "210");
+    const width = (_d = (_b = (_a = PageSize) == null ? void 0 : _a[conf["pageSize"]]) == null ? void 0 : _b[0]) != null ? _d : parseFloat((_c = conf["pageWidth"]) != null ? _c : "210");
     const scale2 = Math.floor(mm2px(width) / el.offsetWidth * 100) / 100;
     if (this.preview) {
       this.preview.style.transform = `scale(${1 / scale2},${1 / scale2})`;
@@ -20614,7 +20621,7 @@ ${px2mm(width)}\xD7${px2mm(height)}mm`;
   async togglePrintSize() {
     const sizeEl = document.querySelector("#print-size");
     if (sizeEl) {
-      if (this.config["pageSise"] == "Custom") {
+      if (this.config["pageSize"] == "Custom") {
         sizeEl.style.visibility = "visible";
       } else {
         sizeEl.style.visibility = "hidden";
@@ -20643,7 +20650,19 @@ ${px2mm(width)}\xD7${px2mm(height)}mm`;
         await this.preview.executeJavaScript(`
         document.body.innerHTML = decodeURIComponent(\`${encodeURIComponent(this.doc.body.innerHTML)}\`);
         document.head.innerHTML = decodeURIComponent(\`${encodeURIComponent(document.head.innerHTML)}\`);
-				
+
+        // Function to recursively decode and replace innerHTML of span.markdown-embed elements
+        function decodeAndReplaceEmbed(element) {
+          // Replace the innerHTML with the decoded content
+          element.innerHTML = decodeURIComponent(element.innerHTML);
+          // Check if the new content contains further span.markdown-embed elements
+          const newEmbeds = element.querySelectorAll("span.markdown-embed");
+          newEmbeds.forEach(decodeAndReplaceEmbed);
+        }
+        
+        // Start the process with all span.markdown-embed elements in the document
+        document.querySelectorAll("span.markdown-embed").forEach(decodeAndReplaceEmbed);
+
         document.body.setAttribute("class", \`${document.body.getAttribute("class")}\`)
         document.body.setAttribute("style", \`${document.body.getAttribute("style")}\`)
         document.body.addClass("theme-light");
@@ -20684,7 +20703,7 @@ ${px2mm(width)}\xD7${px2mm(height)}mm`;
       this.plugin.settings.prevConfig = this.config;
       await this.plugin.saveSettings();
       if (this.completed) {
-        const outputFile = await getOutputFile(title);
+        const outputFile = await getOutputFile(title, this.plugin.settings.isTimestamp);
         if (outputFile) {
           await exportToPDF(
             outputFile,
@@ -20748,8 +20767,8 @@ ${px2mm(width)}\xD7${px2mm(height)}mm`;
       "Custom"
     ];
     new import_obsidian3.Setting(contentEl).setName("Page size").addDropdown((dropdown) => {
-      dropdown.addOptions(Object.fromEntries(pageSizes.map((size) => [size, size]))).setValue(this.config.pageSise).onChange(async (value) => {
-        this.config["pageSise"] = value;
+      dropdown.addOptions(Object.fromEntries(pageSizes.map((size) => [size, size]))).setValue(this.config.pageSize).onChange(async (value) => {
+        this.config["pageSize"] = value;
         if (value == "Custom") {
           sizeEl.settingEl.hidden = false;
         } else {
@@ -20779,7 +20798,7 @@ ${px2mm(width)}\xD7${px2mm(height)}mm`;
         this.config["pageHeight"] = value;
       });
     });
-    if (this.config["pageSise"] != "Custom") {
+    if (this.config["pageSize"] != "Custom") {
       sizeEl.settingEl.hidden = true;
     }
     new import_obsidian3.Setting(contentEl).setName("Margin").setDesc("The unit is millimeters.").addDropdown((dropdown) => {
@@ -20818,7 +20837,7 @@ ${px2mm(width)}\xD7${px2mm(height)}mm`;
       });
     });
     btmEl.settingEl.hidden = this.config["marginType"] != "3";
-    new import_obsidian3.Setting(contentEl).setName("Downscale precent").addSlider((slider) => {
+    new import_obsidian3.Setting(contentEl).setName("Downscale percent").addSlider((slider) => {
       slider.setLimits(0, 100, 1).setValue(this.config["scale"]).onChange(async (value) => {
         this.config["scale"] = value;
         slider.showTooltip();
@@ -20948,6 +20967,12 @@ var ConfigSettingTab = class extends import_obsidian4.PluginSettingTab {
       this.plugin.settings.footerTemplate = value;
       this.plugin.saveSettings();
     });
+    new import_obsidian4.Setting(containerEl).setName("Add timestamp").setDesc("Add timestamp to output file name").addToggle((cb) => {
+      cb.setValue(this.plugin.settings.isTimestamp).onChange(async (value) => {
+        this.plugin.settings.isTimestamp = value;
+        await this.plugin.saveSettings();
+      });
+    });
     new import_obsidian4.Setting(containerEl).setName("Debug").setHeading();
     new import_obsidian4.Setting(containerEl).setName("Debug mode").setDesc("This is useful for troubleshooting.").addToggle((cb) => {
       cb.setValue(this.plugin.settings.debug).onChange(async (value) => {
@@ -20970,7 +20995,8 @@ var DEFAULT_SETTINGS = {
   printBackground: false,
   generateTaggedPDF: false,
   displayMetadata: false,
-  debug: false
+  debug: false,
+  isTimestamp: false
 };
 var BetterExportPdfPlugin = class extends import_obsidian5.Plugin {
   async onload() {

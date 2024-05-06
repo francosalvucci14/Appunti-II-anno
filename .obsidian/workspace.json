@@ -8,22 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8193497ecf96aeb6",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/img/AlberoEs3.png"
-              }
-            }
-          },
-          {
             "id": "37a4167ed573c36c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 7.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/img/AlberoEs3.png"
+                "file": "Appunti ASD/MOD II Guala/Lezione 7.md"
               }
             }
           },
@@ -132,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/img/AlberoEs3.png",
+                "file": "Appunti ASD/MOD II Guala/Lezione 7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/img/AlberoEs3.png",
+                "file": "Appunti ASD/MOD II Guala/Lezione 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 325.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,57 +176,58 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-matrix:Obsidian Matrix": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
   "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
+    "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402103401.png",
+    "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402103330.png",
+    "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402102313.png",
+    "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402101239.png",
+    "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402100619.png",
+    "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402095736.png",
+    "export/Lezione 7/Appunti ASD/MOD II Guala/img",
+    "export/Lezione 7/Appunti ASD/MOD II Guala",
+    "export/Lezione 7/Appunti ASD",
+    "export/Lezione 7/plugin/chalkboard/README.md",
+    "export/Lezione 7/plugin/chalkboard/_style.css",
+    "export/Lezione 7/plugin/chalkboard/img/blackboard.png",
+    "export/Lezione 7/plugin/chalkboard/img/boardmarker-black.png",
+    "export/Lezione 7/plugin/chalkboard/img/boardmarker-blue.png",
+    "export/Lezione 7/plugin/chalkboard/img/boardmarker-green.png",
+    "export/Lezione 7/plugin/chalkboard/img/boardmarker-orange.png",
+    "export/Lezione 7/plugin/chalkboard/img",
+    "export/Lezione 7/plugin/chalkboard/style.css",
+    "export/Lezione 7/plugin/chalkboard/plugin.js",
+    "export/Lezione 7/plugin/chalkboard/plugin (copy).js",
+    "export/Lezione 7/plugin/chalkboard",
+    "export/Lezione 7/plugin/chart/README.md",
+    "export/Lezione 7/plugin/chart/plugin.js",
+    "export/Lezione 7/plugin/customcontrols/README.md",
+    "export/Lezione 7/plugin/menu/CONTRIBUTING.md",
+    "export/Lezione 7/plugin/menu/README.md",
     "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
+    "Appunti ASD/MOD II Guala/Lezione 12.md",
+    "Appunti ASD/MOD II Guala/Lezione 1.md",
+    "export/Lezione 12/plugin/chalkboard/README.md",
+    "export/Lezione 12/plugin/chart/README.md",
+    "export/Lezione 12/plugin/customcontrols/README.md",
+    "export/Lezione 12/plugin/menu/CONTRIBUTING.md",
+    "export/Lezione 12/plugin/menu/README.md",
+    "TestSlide.md",
+    "export/TestSlide/plugin/chalkboard/README.md",
+    "export/TestSlide/plugin/chart/README.md",
+    "export/TestSlide/plugin/customcontrols/README.md",
+    "export/TestSlide/plugin/menu/CONTRIBUTING.md",
+    "export/TestSlide/plugin/menu/README.md",
     "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
-    "Appunti ASD/MOD II Guala/Esercizi/img/AlberoEs3.png",
-    "Pasted image 20240506110916.png",
-    "Pasted image 20240506105837.png",
-    "Appunti ASD/MOD II Guala/Esercizi/img/Figure_1.png",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
     "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
     "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Esercizio Outlook.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Fail Cut Not.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Operatori.md",
-    "Appunti LMP/MOD I/Lezione 11 - Eccezioni.md",
-    "Appunti LMP/MOD I/Lezione 7 - Classi Nidificate.md",
-    "Appunti LMP/MOD I/Lezione 5 - Espressioni,Blocchi e Statement.md",
-    "Appunti LMP/MOD I/Lezione 3 - Concetti dell'OOP.md",
-    "Appunti LMP/MOD I/Lezione 2 - Il linguaggio Java.md",
-    "Appunti LMP/MOD I/Introduzione.md",
-    "Appunti ASD/MOD II Guala/Lezione 12.md",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240430120955.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240430120603.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240430120150.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240430115705.png",
-    "Pasted image 20240430115500.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240430115219.png",
-    "Appunti ASD/MOD II Guala/Lezione 11.md",
-    "README.md",
-    "Appunti ASD/MOD II Guala/Lezione 10.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 7.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 6.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 5.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 4.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 3.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 2.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 1.md",
-    "Appunti ASD/MOD II Guala/Untitled",
-    "Appunti SOR/MOD II (Reti)/Esercizi",
-    "^Appunti SOR/MOD II (Reti)",
-    "^Appunti SOR",
-    "Appunti ASD/MOD II Guala/Esercizi/img",
-    "Appunti ASD/MOD II Guala/Esercizi",
-    "Appunti ASD/Algoritmo_Es3.pdf",
-    "Appunti ASD/MOD II Guala/Esercitazioni/img",
-    "Appunti ASD/MOD II Guala/Esercitazioni",
-    "Appunti ASD/MOD II Guala/img",
     "Untitled.canvas"
   ]
 }
