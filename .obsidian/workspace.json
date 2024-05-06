@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "37a4167ed573c36c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -181,6 +193,8 @@
   },
   "active": "8193497ecf96aeb6",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
+    "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
     "Pasted image 20240506111111.png",
     "Pasted image 20240506110916.png",
     "Pasted image 20240506105837.png",
@@ -205,7 +219,6 @@
     "Appunti ASD/MOD II Guala/img/Pasted image 20240430115705.png",
     "Pasted image 20240430115500.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240430115219.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240430115001.png",
     "Appunti ASD/MOD II Guala/Lezione 11.md",
     "README.md",
     "Appunti ASD/MOD II Guala/Lezione 10.md",
@@ -216,7 +229,6 @@
     "Appunti SOR/MOD II (Reti)/Lezione 3.md",
     "Appunti SOR/MOD II (Reti)/Lezione 2.md",
     "Appunti SOR/MOD II (Reti)/Lezione 1.md",
-    "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
     "Appunti ASD/MOD II Guala/Untitled",
     "Appunti SOR/MOD II (Reti)/Esercizi",
     "^Appunti SOR/MOD II (Reti)",

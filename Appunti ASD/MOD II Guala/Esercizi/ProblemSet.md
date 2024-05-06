@@ -107,3 +107,33 @@ L'albero che viene generato è il seguente :
 ![[Pasted image 20240506111111.png|center|350]]
 
 E da qui vediamo che il costo dell'albero (la somma dei nodi in blu) è proprio $133$
+
+## Pseudocodice
+
+```pseudo
+\begin{algorithm}
+\caption{Algoritmo}
+\begin{algorithmic}
+\Procedure{Soluzione}{lista $c$,int $n$, int $i$, int $j$,list $OPT$}
+	
+    \If{$OPT(i,j)\neq -1$}
+	    \State return $OPT(i,j)$
+    \EndIf
+    \If{$i==j$}
+		\State $OPT(i,j)\gets 0$
+	\Else
+	 \State $min_{cost}\gets\infty$
+		\For{$k=i$ to $j$}
+			\State $\text{left-cost}\gets \text{Soluzione}(c,n,i,k,OPT)$
+			\State $\text{right-cost}\gets \text{Soluzione}(c,n,k+1,j,OPT)$
+			\State $\text{internal-cost}\gets \max\{c[i:k]\}*\max\{c[k+1:j]\}$
+			\State $\text{total-cost}\gets \text{left-cost}+\text{right-cost}+\text{internal-cost}$
+			\State $min_{cost}=\min\{min_{cost},\text{internal-cost}\}$
+		\EndFor	
+		\State $OPT(i,j)\gets min_{cost}$
+    \EndIf
+    \State return $OPT(i,j)$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+```
