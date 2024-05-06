@@ -104,7 +104,7 @@ Con l'input di esempio, vediamo che la matrice OPT sarà così generata
 Il costo totale dell'albero lo troviamo nella posizione $OPT[1,n]$.
 L'albero che viene generato è il seguente :
 
-![[Pasted image 20240506111111.png|center|350]]
+![[AlberoEs3.png|center|350]]
 
 E da qui vediamo che il costo dell'albero (la somma dei nodi in blu) è proprio $133$
 

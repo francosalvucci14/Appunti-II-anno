@@ -11,11 +11,9 @@
             "id": "8193497ecf96aeb6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
-                "mode": "source",
-                "source": false
+                "file": "Appunti ASD/MOD II Guala/Esercizi/img/AlberoEs3.png"
               }
             }
           },
@@ -116,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md"
+                "file": "Appunti ASD/MOD II Guala/Esercizi/img/AlberoEs3.png"
               }
             }
           },
@@ -134,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
+                "file": "Appunti ASD/MOD II Guala/Esercizi/img/AlberoEs3.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
+                "file": "Appunti ASD/MOD II Guala/Esercizi/img/AlberoEs3.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,11 +189,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8193497ecf96aeb6",
+  "active": "195b83bf8ca7a0a9",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
     "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
-    "Pasted image 20240506111111.png",
+    "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
+    "Appunti ASD/MOD II Guala/Esercizi/img/AlberoEs3.png",
     "Pasted image 20240506110916.png",
     "Pasted image 20240506105837.png",
     "Appunti ASD/MOD II Guala/Esercizi/img/Figure_1.png",
