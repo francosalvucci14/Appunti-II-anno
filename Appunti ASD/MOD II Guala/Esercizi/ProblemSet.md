@@ -22,7 +22,11 @@ debugInConsole: false # Print debug info in Obsidian console
 
 ## Struttura
 
-**Definizione dei sottoproblemi**
+### Definizione dei sottoproblemi
+
+Prima di risolvere l'esercizio, definiamo prima i sottoproblemi, e dopo averli definiti, andiamo a dimostrarne la correttezza
+
+I sottoproblemi sono i seguenti : 
 
 $\forall i,j$ abbiamo che :
 $$OPT(i,j)=\text{Minimo costo dell'albero composto dalle foglie che vanno dalla posizione i a j}$$
@@ -30,12 +34,14 @@ $$OPT(i,j)=\text{Minimo costo dell'albero composto dalle foglie che vanno dalla 
 
 Adesso, per capire se i sottoproblemi vanno bene, dobbiamo rispondere alle seguenti domande
 
-1) I sottoproblemi sono pochi? Dobbiamo calcolare l'ottimo per tutte le possibili coppie di elementi tali che $i\leq j$. In questo modo abbiamo che il numero di sottoproblemi è pari a $O(n^2/2)$ perchè una volta che abbiamo calcolato la coppia $(i,j)$, la coppia $(j,i)$ non verrà calcolata in quanto è equivalente alla sua controparte.
-2) È possibile definire la soluzione del sottoproblema generico in funzione dei sottoproblemi più piccoli? Si, perchè il valore dell'$OPT(i,j)$ è dato dall'$OPT(i,k)+OPT(k+1,j)+$ prodotto tra massima foglia sx e massima foglia dx.
-3) In che ordine è possibile risolvere i sottoproblemi? L'ordine di risoluzione è partire dal problema iniziale, e calcolare l'ottimo dei sottoproblemi più piccoli andando a "indovinare" l'indice $k$ che minimizza il costo dell'albero composto dalle foglie che vanno da $i\to j$, per poi ricombinare tutte le soluzioni dei sottoproblemi, in modo da ottenere il valore finale, ovvero $OPT(1,n)$
-4) Quali sono i casi base? Abbiamo 2 casi base
+1) **I sottoproblemi sono pochi?** Dobbiamo calcolare l'ottimo per tutte le possibili coppie di elementi tali che $i\leq j$. In questo modo abbiamo che il numero di sottoproblemi è pari a $O(n^2/2)$ perchè una volta che abbiamo calcolato la coppia $(i,j)$, la coppia $(j,i)$ non verrà calcolata in quanto è equivalente alla sua controparte.
+2) **È possibile definire la soluzione del sottoproblema generico in funzione dei sottoproblemi più piccoli?** Si, perchè il valore dell'$OPT(i,j)$ è dato dall'$OPT(i,k)+OPT(k+1,j)+$ prodotto tra massima foglia sx e massima foglia dx.
+3) **In che ordine è possibile risolvere i sottoproblemi?** L'ordine di risoluzione è partire dal problema iniziale, e calcolare l'ottimo dei sottoproblemi più piccoli andando a "indovinare" l'indice $k$ che minimizza il costo dell'albero composto dalle foglie che vanno da $i\to j$, per poi ricombinare tutte le soluzioni dei sottoproblemi, in modo da ottenere il valore finale, ovvero $OPT(1,n)$
+4) **Quali sono i casi base?** Abbiamo 2 casi base
 	1) $i=j$, significa che stiamo vedendo una sola foglia, e di conseguenza non possiamo generare nessun nodo interno, quindi l'albero avrà costo $0$
-	2) $j-i=1$, significa che abbimao 2 foglie, di conseguenza il costo dell'albero sarà il prodotto tra $c(i)$ e $c(j)$
+	2) $j-i=1$, significa che abbiamo 2 foglie, di conseguenza il costo dell'albero sarà il prodotto tra $c(i)$ e $c(j)$
+
+### Equazione di Bellman
 
 A questo punto, possiamo definire la **formula di Bellman**, che sarà
 
