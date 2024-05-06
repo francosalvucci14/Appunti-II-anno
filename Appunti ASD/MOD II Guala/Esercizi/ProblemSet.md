@@ -43,12 +43,60 @@ $$OPT(i, j)=\begin{cases}0&\text{se i=j}\\c(i)*c(j)&\text{se |j-i|=1}\\\min_{k=i
 
 Il valore che vogliamo ottenere è
  $$OPT[1,n]$$
+ >[!info]- Osservazione
+ >$\text{max-leaf(i,k)}$ prende il valore massimo che si trova nella porzione di array $c[i:k]$, $\forall k=i,\dots,j$
+ >In modo analogo vale la stessa osservazione per $\text{max-leaf(k+1,j)}$
 ## Esempio di esecuzione
 
 **Esempio** : $c=[5,7,6,8]$
 
-*Mettere matrici da codice Python*
+Con l'input di esempio, vediamo che la matrice OPT sarà così generata
 
-![[Pasted image 20240506110916.png|center|500]]
+```python
+1)
+ [-1 -1 -1 -1]
+ [-1 -1 -1 -1]
+ [-1 -1 -1 -1]
+ [-1 -1 -1 -1]
+2)
+ [ 0 -1 -1 -1]
+ [-1  0 -1 -1]
+ [-1 -1  0 -1]
+ [-1 -1 -1  0]
+3)
+[[ 0 -1 -1 -1]
+ [-1  0 -1 -1]
+ [-1 -1  0 48]
+ [-1 -1 -1  0]]
+4)
+ [ 0 -1 -1 -1]
+ [-1  0 42 -1]
+ [-1 -1  0 48]
+ [-1 -1 -1  0]
+5)
+ [ 0 -1 -1 -1]
+ [-1  0 42 98]
+ [-1 -1  0 48]
+ [-1 -1 -1  0]
+6)
+ [ 0 35 -1 -1]
+ [-1  0 42 98]
+ [-1 -1  0 48]
+ [-1 -1 -1  0]
+7)
+ [ 0 35 77 -1]
+ [-1  0 42 98]
+ [-1 -1  0 48]
+ [-1 -1 -1  0]
+8)
+ [  0  35  77 133]
+ [ -1   0  42  98]
+ [ -1  -1   0  48]
+ [ -1  -1  -1   0]
+```
 
-## Pseudocodice
+Il costo totale dell'albero lo troviamo nella posizione $OPT[1,n]$, infatti l'albero che viene generato è questo :
+
+![[Pasted image 20240506111111.png|center|350]]
+
+E da qui vediamo che il costo dell'albero (la somma dei nodi in blu) è proprio $133$
