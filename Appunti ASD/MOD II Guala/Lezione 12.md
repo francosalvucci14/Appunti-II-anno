@@ -94,7 +94,61 @@ Detto questo, il problema del Matching Perfetto è il seguente
 Se usiamo Ford-Fulkerson, abbiamo $\leq n$ aumenti $\implies$Tempo $O(mn)$
 ## Percorsi Disgiunti
 
+>[!definition]- Definizione
+>Due percorsi sono **disgiunti** se non hanno archi in comune
 
+>[!definition]- Problema dei percorsi disgiunti
+>Dato un grafo diretto $G=(V,E)$ e due nodi $s,t$, trova il massimo numero di percorsi disgiunti $s\to t$
+
+
+**Esempio** : Le reti di comunicazione
+
+![[Pasted image 20240508103731.png|center|500]]
+
+![[Pasted image 20240508103752.png|center|500]]
+
+### Formulazione max-flow
+
+**Formulazione max-flow** : Assegnare una capacità di $1$ ad ogni arco
+
+>[!definition]- Teorema
+>C'è una corrispondenza $1-1$ tra i $k$ percorsi disgiunti $s\to t$ in $G$ e il valore $k$ del flusso in $G'$
+
+
+**Dimostrazione** $\implies$
+- Siano $P_1,\dots,P_k$ i $k$ percorsi disgiunti $s\to t$ in $G$
+- Sia $$f(e)=\begin{cases}1&\text{arco e "partecipa" in qualche percorso }P_j\\0&\text{altrimenti}\end{cases}$$
+- Dato che i percorsi sono disgiunti, $f$ è un flusso di valore $k$
+
+![[Pasted image 20240508104219.png|center|500]]
+
+**Dimostrazione** $\impliedby$
+- Sia $f$ un flusso in $G'$ di valore $k$
+- Consideriamo l'arco $(s,u)$ con $f(s,u)=1$
+	- Per la conservazione del flusso, esiste un arco $(u,v)$ con $f(u,v)=1$
+	- Continua finchè non raggiungi $t$, scegliendo sempre un nuovo arco
+- Produce $k$ percorsi disgiunti (non necessariamente semplice) (si possono eliminare i cicli per ottenere percorsi semplici in tempo $O(mn)$ se si desidera)
+
+![[Pasted image 20240508104219.png|center|500]]
+
+**Corollario** : Si può risolvere il problema dei percorsi disgiunti usando la formulazione max-flow
+
+**Dim** :
+- Teorema di integralità $\implies$ Esiste un max-flow $f^\star$ in $G'$ che è intero
+- Corrispondenza $1-1\implies f^\star$ corrisponde al massimo numero di percorsi disgiunti $s\to t$ in $G$
+#### Tempo di esecuzione
+
+Il tempo di esecuzione dell'algoritmo è il seguente
+- Usando Ford-Fulkerson si hanno $\leq n$ aumenti $\implies$ tempo $O(mn)$
+### Percorsi disgiunti su grafi non diretti
+
+Il problema è identico al problema precedente, solo che il grafo in questione non è diretto
+
+![[Pasted image 20240508105314.png|center|500]]
+
+![[Pasted image 20240508105328.png|center|500]]
+
+![[Pasted image 20240508105343.png|center|500]]
 
 ## Segmentazione dell'immagine
 

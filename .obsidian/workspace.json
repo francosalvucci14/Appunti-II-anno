@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 12.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md"
+                "file": "Appunti ASD/MOD II Guala/Lezione 12.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,15 +180,24 @@
       "marp-slides:Show Slide Preview": false
     }
   },
-  "active": "65c5132689711012",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240508105343.png",
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240508105328.png",
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240508105314.png",
+    "Appunti ASD/MOD II Guala/Lezione 8.md",
+    "Appunti ASD/MOD II Guala/Lezione 9.md",
+    "Appunti ASD/MOD II Guala/Lezione 10.md",
+    "Appunti ASD/MOD II Guala/Lezione 11.md",
+    "Appunti ASD/MOD II Guala/Lezione 12.md",
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240508104219.png",
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240508103752.png",
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240508103731.png",
+    "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
     "Appunti ASD/MOD II Guala/Esercitazioni/img/Pasted image 20240508102957.png",
     "Appunti SOR/MOD II (Reti)/Lezione 7.md",
     "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
-    "Appunti ASD/MOD II Guala/Lezione 11.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240306103318.png",
-    "Appunti ASD/MOD II Guala/Lezione 12.md",
-    "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
     "Appunti ASD/MOD II Guala/Esercitazioni/img/Pasted image 20240508102555.png",
     "Appunti ASD/MOD II Guala/Esercitazioni/img/Pasted image 20240508102055.png",
     "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 1.md",
@@ -196,11 +205,6 @@
     "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
     "Appunti ASD/MOD II Guala/Lezione 7.md",
     "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402103401.png",
-    "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402103330.png",
-    "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402102313.png",
-    "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402101239.png",
-    "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402100619.png",
-    "export/Lezione 7/Appunti ASD/MOD II Guala/img/Pasted image 20240402095736.png",
     "export/Lezione 7/Appunti ASD/MOD II Guala/img",
     "export/Lezione 7/Appunti ASD/MOD II Guala",
     "export/Lezione 7/Appunti ASD",
@@ -224,9 +228,6 @@
     "export/Lezione 12/plugin/menu/README.md",
     "TestSlide.md",
     "export/TestSlide/plugin/chalkboard/README.md",
-    "export/TestSlide/plugin/chart/README.md",
-    "export/TestSlide/plugin/customcontrols/README.md",
-    "export/TestSlide/plugin/menu/CONTRIBUTING.md",
     "Untitled.canvas"
   ]
 }
