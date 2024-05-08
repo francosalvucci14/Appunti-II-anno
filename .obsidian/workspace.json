@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5b50b80ce6492b79",
+        "id": "d49b84b7a051058c",
         "type": "tabs",
         "children": [
           {
-            "id": "37a4167ed573c36c",
+            "id": "67d6e4e4631a19c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
+                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md"
+                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
+                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,21 +139,21 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
+                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
-        "id": "5a46b8e248aedf1e",
+        "id": "7af87cca1b60e2e0",
         "type": "tabs",
         "children": [
           {
-            "id": "47697e81bcad0f64",
+            "id": "37a4167ed573c36c",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -168,8 +168,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-trim-whitespace:Trim whitespace": false,
       "graph:Open graph view": false,
+      "obsidian-trim-whitespace:Trim whitespace": false,
       "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
@@ -180,15 +180,18 @@
       "marp-slides:Show Slide Preview": false
     }
   },
-  "active": "37a4167ed573c36c",
+  "active": "67d6e4e4631a19c4",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
+    "Appunti ASD/MOD II Guala/Lezione 11.md",
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240306103318.png",
+    "Appunti ASD/MOD II Guala/Lezione 12.md",
+    "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
     "Pasted image 20240508102957.png",
     "Appunti ASD/MOD II Guala/Esercitazioni/img/Pasted image 20240508102555.png",
     "Appunti ASD/MOD II Guala/Esercitazioni/img/Pasted image 20240508102055.png",
     "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 1.md",
-    "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
     "Appunti SOR/MOD II (Reti)/Lezione 7.md",
-    "Appunti ASD/MOD II Guala/Lezione 12.md",
     "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
     "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
     "Appunti ASD/MOD II Guala/Lezione 7.md",
@@ -203,8 +206,6 @@
     "export/Lezione 7/Appunti ASD",
     "export/Lezione 7/plugin/chalkboard/README.md",
     "export/Lezione 7/plugin/chalkboard/_style.css",
-    "export/Lezione 7/plugin/chalkboard/img/blackboard.png",
-    "export/Lezione 7/plugin/chalkboard/img/boardmarker-black.png",
     "export/Lezione 7/plugin/chalkboard/img",
     "export/Lezione 7/plugin/chalkboard/style.css",
     "export/Lezione 7/plugin/chalkboard/plugin.js",
@@ -227,7 +228,6 @@
     "export/TestSlide/plugin/customcontrols/README.md",
     "export/TestSlide/plugin/menu/CONTRIBUTING.md",
     "export/TestSlide/plugin/menu/README.md",
-    "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
     "Untitled.canvas"
   ]
 }

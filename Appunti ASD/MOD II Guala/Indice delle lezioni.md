@@ -5,4 +5,9 @@
 - [[Appunti ASD/MOD II Guala/Lezione 5|Lezione 5]]
 - [[Appunti ASD/MOD II Guala/Lezione 6|Lezione 6]]
 - [[Appunti ASD/MOD II Guala/Lezione 7|Lezione 7]]
+- [[Appunti ASD/MOD II Guala/Lezione 8|Lezione 8]]
+- [[Appunti ASD/MOD II Guala/Lezione 9|Lezione 9]]
+- [[Appunti ASD/MOD II Guala/Lezione 10|Lezione 10]]
+- [[Appunti ASD/MOD II Guala/Lezione 11|Lezione 11]]
+- [[Appunti ASD/MOD II Guala/Lezione 12|Lezione 12]]
 - 
