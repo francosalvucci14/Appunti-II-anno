@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md",
+                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md"
+                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md",
+                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md",
+                "file": "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "5a46b8e248aedf1e",
@@ -182,8 +182,13 @@
   },
   "active": "37a4167ed573c36c",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II Guala/Lezione 12.md",
+    "Pasted image 20240508102957.png",
+    "Appunti ASD/MOD II Guala/Esercitazioni/img/Pasted image 20240508102555.png",
+    "Appunti ASD/MOD II Guala/Esercitazioni/img/Pasted image 20240508102055.png",
     "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 1.md",
+    "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 7.md",
+    "Appunti ASD/MOD II Guala/Lezione 12.md",
     "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
     "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
     "Appunti ASD/MOD II Guala/Lezione 7.md",
@@ -200,8 +205,6 @@
     "export/Lezione 7/plugin/chalkboard/_style.css",
     "export/Lezione 7/plugin/chalkboard/img/blackboard.png",
     "export/Lezione 7/plugin/chalkboard/img/boardmarker-black.png",
-    "export/Lezione 7/plugin/chalkboard/img/boardmarker-blue.png",
-    "export/Lezione 7/plugin/chalkboard/img/boardmarker-green.png",
     "export/Lezione 7/plugin/chalkboard/img",
     "export/Lezione 7/plugin/chalkboard/style.css",
     "export/Lezione 7/plugin/chalkboard/plugin.js",
@@ -225,9 +228,6 @@
     "export/TestSlide/plugin/menu/CONTRIBUTING.md",
     "export/TestSlide/plugin/menu/README.md",
     "Appunti LMP/MOD II/Esercitazioni/Esercitazione 2.md",
-    "Appunti LMP/MOD II/Lezione 3 - Liste e operatori aritmetici.md",
-    "Appunti LMP/MOD II/Lezione 4 - Operatori e Aritmetica.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
     "Untitled.canvas"
   ]
 }
