@@ -198,6 +198,6 @@ Per essere precisi
 	- $$cap(A,B)=\sum\limits_{j\in B}a_j+\sum\limits_{i\in A}b_i-\sum\limits_{(i,j)\in E\atop i\in A, j\in B}p_{ij}$$
 - Precisamente la quantità che vogliamo minimizzare
 
-
+![[Pasted image 20240508134251.png|center|500]]
 
 ## Baseball Elimination
