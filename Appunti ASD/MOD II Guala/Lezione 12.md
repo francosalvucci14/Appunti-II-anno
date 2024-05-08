@@ -152,4 +152,52 @@ Il problema è identico al problema precedente, solo che il grafo in questione n
 
 ## Segmentazione dell'immagine
 
+**Segmentazione dell'immagine** :
+- Dividere l'immagine in regioni coerenti
+- Problema centrale nel processing dell'immagine
+
+**Esempio** : Separare l'umano e il robot dalla scena in background
+
+![[Pasted image 20240508112900.png|center|500]]
+
+**Segmentazione foreground/background**
+- Un Label che dice se l'immagine appartiene al background o no
+- $V=$ insieme di pixel, $E=$ coppie di pixel vicine
+- $a_i\geq0$ è la probabilità che il pixel $i$ sia in foreground
+- $b_i\geq0$ è la probabilità che il pixel $i$ sia in background
+- $p_{ij}\geq0$ è la penalità di separazione per aver etichettato uno tra $i$ e $j$ come freground, e l'altro come backround
+
+![[Pasted image 20240508113255.png|center|200]]
+
+**Goal** :
+- **Accuratezza** : se $a_i\gt b_i$, preferiamo etichettare $i$ come foreground
+- **Smoothness** : se molti vicini di $i$ sono etichettati in primo piano, dovremmo essere propensi a etichettare $i$ come foreground
+- Trovare una partizione $(\underbracket{A}_{\text{foreground}},\underbracket{B}_{\text{background}})$ che massimizza : $$\sum_{i\in A}a_i+\sum_{j\in B}b_j-\sum\limits_{(i,j)\in E\atop\vert A\cap\{i,j\}\vert=1}p_{ij}$$
+SI può formulare come un problema di min-cut
+
+Facciamolo diventare un **problema di minimizzazione**  :
+- Massimizzare $\sum\limits_{i\in A}a_i+\sum\limits_{j\in B}b_j-\sum\limits_{(i,j)\in E\atop\vert A\cap\{i,j\}\vert=1}p_{ij}$
+- È equivalente a minimizzare $$\underbracket{(\sum\limits_{i\in V}a_i+\sum\limits_{j\in V}b_j)}_{\text{una costante}}-\sum_{i\in A}a_i-\sum_{j\in B}b_j+\sum\limits_{(i,j)\in E\atop\vert A\cap\{i,j\}\vert=1}p_{ij}$$
+Quindi, formulato come un problema di min-cut abbiamo :
+- $G'=(V',E')$
+- Per ogni pixel si crea un nodo
+- Usiamo due archi antiparalleli al posto di un arco non diretto
+- Aggiungiamo la sorgete $s$ che corrisponde al foreground
+- Aggiungiamo il pozzo $t$ che corrisponde al background
+
+Il grafo $G'$ sarà cosi fatto
+
+![[Pasted image 20240508115145.png|center|200]]
+
+![[Pasted image 20240508115202.png|center|500]]
+
+Per essere precisi
+
+**Consideriamo il min-cut** $(A,B)\in G'$
+- $A=$ foreground
+	- $$cap(A,B)=\sum\limits_{j\in B}a_j+\sum\limits_{i\in A}b_i-\sum\limits_{(i,j)\in E\atop i\in A, j\in B}p_{ij}$$
+- Precisamente la quantità che vogliamo minimizzare
+
+
+
 ## Baseball Elimination
