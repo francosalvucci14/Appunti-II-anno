@@ -61,4 +61,3 @@ Sfide principali :
 Altre sfide :
 - Interattività del client : Pausa, avanzamento veloce, riavvolgimento, salti attraverso il video
 - I pacchetti video possono essere persi, ritrasmessi
-

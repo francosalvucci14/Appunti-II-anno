@@ -3,3 +3,6 @@
 - [[Appunti SOR/MOD II (Reti)/Lezione 3|Lezione 3]]
 - [[Appunti SOR/MOD II (Reti)/Lezione 4|Lezione 4]]
 - [[Appunti SOR/MOD II (Reti)/Lezione 5|Lezione 5]]
+- [[Appunti SOR/MOD II (Reti)/Lezione 6|Lezione 6]]
+- [[Appunti SOR/MOD II (Reti)/Lezione 7|Lezione 7]]
+- 
