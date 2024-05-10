@@ -87,7 +87,7 @@ Dimostreremo anche che questi problemi sono **NP-Completi** mediante riduzione d
 
 ![[Pasted image 20240510151242.png|center|500]]
 
-### Vertex Cover e Indipendent Set si riducono l'uno all'altro
+#### Vertex Cover e Indipendent Set si riducono l'uno all'altro
 
 >[!definition]- Teorema
 >Indipendent Set $\equiv_p$ Vertex Cover
@@ -106,4 +106,6 @@ $\implies$
 - Quindi, $V-S$ copre $(u,v)$
 
 $\impliedby$
-- 
+
+
+### Set Cover
