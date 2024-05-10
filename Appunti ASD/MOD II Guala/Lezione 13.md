@@ -52,3 +52,5 @@ Esempi che richiedono tempo esponenziale.
 >[!info]- Osservazione
 >L'oracolo è un **modello computazionale** creato con speciali pezzi hardware che risolve le istanze di $Y$ in tempo costante (Prettamente teorico)
 
+![[Pasted image 20240510111523.png|center|500]]
+
