@@ -94,3 +94,16 @@ Dimostreremo anche che questi problemi sono **NP-Completi** mediante riduzione d
 
 **Dimostrazione** : Dimostriamo che $S$ è un Indipendent Set di dimensione $k\iff V-S$ è un Vertex Cover di dimensione $n-k$
 
+![[Pasted image 20240510151242.png|center|500]]
+
+$\implies$
+- Sia $S$ un IS di dimensione $k$
+- $V-S$ ha dimensione $n-k$
+- Consideriamo un arco arbitrario $(u,v)\in E$
+- $S$ indipendente significa $\implies$
+	- o $u\not\in S,v\not\in S$, o entrambi
+	- o $u\in V-S,v\in V-S$, o entrambi
+- Quindi, $V-S$ copre $(u,v)$
+
+$\impliedby$
+- 
