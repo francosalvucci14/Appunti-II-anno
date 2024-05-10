@@ -54,3 +54,15 @@ Esempi che richiedono tempo esponenziale.
 
 ![[Pasted image 20240510111523.png|center|500]]
 
+Per le riduzioni polinomiali si usa la **notazione** $$X\leq_pY$$
+Occhio a non fare l'errore di confondere $X\leq_pY$ con $Y\leq_pX$
+
+- **Progettazione di algoritmi** : Se $X\leq_pY$ e $Y$ si può risolvere in tempo polinomiale, allora anche $X$ si può risolvere in tempo polinomiale
+- **Stabilire l'intrattabilità** : Se $X\leq_pY$ e $X$ non può essere risolto in tempo polinomiale, allora neanche $Y$ si potrà risolvere in tempo polinomiale
+- **Stabilire l'equivalenza** : Se sia $X\leq_p Y$ che $Y\leq_p X$, si usa la notazione $X\equiv_p Y$. In questo caso, $X$ può essere risolto in tempo polinomiale $\iff$ $Y$ può esserlo
+
+## Problemi di covering e packing
+
+Diamo ora la definizione di un paio di problemi fondamentali nella teoria della complessità.
+
+Dimostreremo anche che questi problemi sono **NP-Completi** mediante riduzione dal problema **SAT**
