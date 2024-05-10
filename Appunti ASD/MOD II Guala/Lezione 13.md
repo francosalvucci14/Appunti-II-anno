@@ -66,3 +66,31 @@ Occhio a non fare l'errore di confondere $X\leq_pY$ con $Y\leq_pX$
 Diamo ora la definizione di un paio di problemi fondamentali nella teoria della complessità.
 
 Dimostreremo anche che questi problemi sono **NP-Completi** mediante riduzione dal problema **SAT**
+
+### Indipendent Set
+
+>[!definition]- Definizione
+>Dato un grafo $G=(V,E)$ e un itero $k$, esiste un sottoinsieme di $k$ (o più) vertici tale che due vertici non sono adiacenti?
+
+**Esempio** : Esiste un'indipendet set di dimensione $\geq6$?
+**Esempio** : Esiste un'indipendet set di dimensione $\geq7$?
+
+![[Pasted image 20240510151046.png|center|500]]
+
+### Vertex Cover
+
+>[!definition]- Definizione
+>Dato un grafo $G=(V,E)$ e un itero $k$, esiste un sottoinsieme di $k$ (o meno) vertici tale che ogni arco è incidente ad almeno un vertice nel sottoinsieme?
+
+**Esempio** : Esiste un vertex cover di dimensione $\leq4$?
+**Esempio** : Esiste un vertex cover di dimensione $\leq3$?
+
+![[Pasted image 20240510151242.png|center|500]]
+
+### Vertex Cover e Indipendent Set si riducono l'uno all'altro
+
+>[!definition]- Teorema
+>Indipendent Set $\equiv_p$ Vertex Cover
+
+**Dimostrazione** : Dimostriamo che $S$ è un Indipendent Set di dimensione $k\iff V-S$ è un Vertex Cover di dimensione $n-k$
+
