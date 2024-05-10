@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 13.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md"
+                "file": "Appunti ASD/MOD II Guala/Lezione 13.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 13.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "7af87cca1b60e2e0",
@@ -182,6 +182,25 @@
   },
   "active": "65c5132689711012",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240510110811.png",
+    "Appunti FI/MOD II/Lezione 13.md",
+    "Appunti FI/MOD II/Lezione 14.md",
+    "Appunti FI/MOD II/Lezione 15.md",
+    "Appunti FI/MOD II/Lezione 16.md",
+    "Appunti FI/MOD II/Lezione 17.md",
+    "Appunti FI/MOD II/Lezione 18.md",
+    "Appunti FI/MOD II/Lezione 20.md",
+    "Appunti SOR/MOD I (S.O.)/Lezione 10.md",
+    "Appunti LMP/MOD II/Lezione 3.1- Soluzione Esercizio Lez 3.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Liste.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Operatori.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Indice esercizi Prolog.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Cruciverba.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Retract Assert.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
+    "Appunti LMP/MOD II/Esercizi Prolog/Esercizio Outlook.md",
+    "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
     "Appunti ASD/MOD II Guala/Lezione 13.md",
     "Appunti ASD/MOD II Guala/Lezione 12.md",
     "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
@@ -198,36 +217,17 @@
     "Appunti ASD/MOD II Guala/img/Pasted image 20240508105328.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240508105314.png",
     "Appunti ASD/MOD II Guala/Lezione 8.md",
-    "Appunti ASD/MOD II Guala/Lezione 9.md",
-    "Appunti ASD/MOD II Guala/Lezione 10.md",
-    "Appunti ASD/MOD II Guala/Lezione 11.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240508104219.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240508103752.png",
-    "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 4.md",
-    "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
-    "Appunti ASD/MOD II Guala/Esercitazioni/Esercitazione 1.md",
-    "Appunti ASD/MOD II Guala/Lezione 7.md",
     "export/Lezione 7/Appunti ASD/MOD II Guala/img",
     "export/Lezione 7/Appunti ASD/MOD II Guala",
     "export/Lezione 7/Appunti ASD",
-    "export/Lezione 7/plugin/chalkboard/README.md",
     "export/Lezione 7/plugin/chalkboard/_style.css",
     "export/Lezione 7/plugin/chalkboard/img",
     "export/Lezione 7/plugin/chalkboard/style.css",
     "export/Lezione 7/plugin/chalkboard/plugin.js",
     "export/Lezione 7/plugin/chalkboard/plugin (copy).js",
     "export/Lezione 7/plugin/chalkboard",
-    "export/Lezione 7/plugin/chart/README.md",
-    "export/Lezione 7/plugin/customcontrols/README.md",
-    "export/Lezione 7/plugin/menu/CONTRIBUTING.md",
-    "export/Lezione 7/plugin/menu/README.md",
-    "Appunti ASD/MOD II Guala/Lezione 1.md",
-    "export/Lezione 12/plugin/chalkboard/README.md",
-    "export/Lezione 12/plugin/chart/README.md",
-    "export/Lezione 12/plugin/customcontrols/README.md",
-    "export/Lezione 12/plugin/menu/CONTRIBUTING.md",
-    "export/Lezione 12/plugin/menu/README.md",
-    "TestSlide.md",
     "Untitled.canvas"
   ]
 }
