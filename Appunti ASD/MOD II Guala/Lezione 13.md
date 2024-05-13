@@ -226,4 +226,3 @@ $\impliedby$
 - Tutte le clausole in $\Phi$ sono soddisfatte
 
 *L'istanza "no" di 3-SAT è stata risolta correttamente*
-
