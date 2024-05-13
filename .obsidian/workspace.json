@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "7af87cca1b60e2e0",
@@ -182,6 +182,9 @@
   },
   "active": "65c5132689711012",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/Lezione 12.md",
+    "Appunti ASD/MOD II Guala/Lezione 13.md",
+    "Appunti ASD/MOD II Guala/Lezione 13.html",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240513141352.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240513120341.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240513120032.png",
@@ -190,7 +193,6 @@
     "Appunti ASD/MOD II Guala/img/Pasted image 20240510151046.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240510111523.png",
     "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
-    "Appunti ASD/MOD II Guala/Lezione 13.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240510110811.png",
     "Appunti FI/MOD II/Lezione 13.md",
     "Appunti FI/MOD II/Lezione 14.md",
@@ -209,7 +211,6 @@
     "Appunti LMP/MOD II/Esercizi Prolog/Retract Assert.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Esercizio Outlook.md",
-    "Appunti ASD/MOD II Guala/Lezione 12.md",
     "Appunti ASD/MOD II Guala/Esercizi/Esercizi.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
@@ -217,7 +218,6 @@
     "Appunti ASD/MOD II Guala/Esercizi/ProblemSet.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240508134251.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240508115202.png",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240508115145.png",
     "Appunti ASD/MOD II Guala/Lezione 8.md",
     "export/Lezione 7/Appunti ASD/MOD II Guala/img",
     "export/Lezione 7/Appunti ASD/MOD II Guala",
@@ -227,7 +227,6 @@
     "export/Lezione 7/plugin/chalkboard/style.css",
     "export/Lezione 7/plugin/chalkboard/plugin.js",
     "export/Lezione 7/plugin/chalkboard/plugin (copy).js",
-    "export/Lezione 7/plugin/chalkboard",
     "Untitled.canvas"
   ]
 }

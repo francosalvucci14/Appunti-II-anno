@@ -213,4 +213,17 @@ Data un'istanza $\Phi$ di 3-SAT, costruiamo un istanza $(G,k)$ di Indipendet Set
 **Lemma** : $\Phi$ è soddisfacibile $\iff G$ contiene un insieme indipendente di dimensione $k=\vert\Phi\vert$
 
 **Dimostrazione** $\implies$
-- 
+- Consideriamo ogni assegnamento soddisfacente per $\Phi$
+- Selezionamo un letterale vero da ogni clausola/triangolo
+- Questo è un indipendent set di dimensione $k=\vert\Phi\vert$
+
+*L'istanza "si" di 3-SAT è stata risolta correttamente*
+
+$\impliedby$
+- Sia $S$ un indipendent set di dimensione $k$
+- $S$ deve contenere esattamente un nodo da ogni triangolo
+- Impostiamo questi letterali a `true`
+- Tutte le clausole in $\Phi$ sono soddisfatte
+
+*L'istanza "no" di 3-SAT è stata risolta correttamente*
+
