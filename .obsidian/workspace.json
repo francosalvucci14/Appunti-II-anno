@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "7af87cca1b60e2e0",
@@ -176,7 +176,8 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-matrix:Obsidian Matrix": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
   "active": "65c5132689711012",

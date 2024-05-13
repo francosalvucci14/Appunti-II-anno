@@ -230,4 +230,3 @@ $\impliedby$
 # Riduzioni Polinomiali
 
 ![[Pasted image 20240513143549.png|center|500]]
-
