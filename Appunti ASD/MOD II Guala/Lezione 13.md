@@ -226,3 +226,8 @@ $\impliedby$
 - Tutte le clausole in $\Phi$ sono soddisfatte
 
 *L'istanza "no" di 3-SAT è stata risolta correttamente*
+
+# Riduzioni Polinomiali
+
+![[Pasted image 20240513143549.png|center|500]]
+

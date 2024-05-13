@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Appunti ASD/MOD II Guala/Lezione 13.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -146,7 +146,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "7af87cca1b60e2e0",
@@ -176,12 +176,12 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-matrix:Obsidian Matrix": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "65c5132689711012",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240513143549.png",
     "Appunti ASD/MOD II Guala/Lezione 12.md",
     "Appunti ASD/MOD II Guala/Lezione 13.md",
     "Appunti ASD/MOD II Guala/Lezione 13.html",
