@@ -190,3 +190,27 @@ L'istanza "si" per l'esempio sopra è
 
 #### Il problema SAT è NP-Hard
 
+**Ipotesi scientifica** : Non esiste un algoritmo polinomiale per 3-SAT
+
+>[!error]- $P$ vs $NP$
+>Questa ipotesi è equivalente alla congettura $P\neq NP$
+
+### 3-SAT si riduce a Indipendent Set
+
+>[!definition]- Teorema
+>3-SAT $\leq_p$ Indipendent Set
+
+**Dim**
+Data un'istanza $\Phi$ di 3-SAT, costruiamo un istanza $(G,k)$ di Indipendet Set che ha un indipendent set di dimensione $k=\vert\Phi\vert\iff\Phi$ è ***soddisfacibile***
+
+**Costruzione**
+- $G$ contiene 3 nodi per ogni clausola, uno per ogni letterale
+- Connetti i 3 letterali nella clausola in un triangolo
+- Connetti ogni letterale con la sua negazione
+
+![[Pasted image 20240513141352.png|center|500]]
+
+**Lemma** : $\Phi$ è soddisfacibile $\iff G$ contiene un insieme indipendente di dimensione $k=\vert\Phi\vert$
+
+**Dimostrazione** $\implies$
+- 
