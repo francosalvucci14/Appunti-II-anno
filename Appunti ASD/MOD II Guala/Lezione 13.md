@@ -107,5 +107,86 @@ $\implies$
 
 $\impliedby$
 
-
+- Sia $V-S$ un qualunque Vertex Cover di dimensione $n-k$
+- $S$ ha dimensione $k$
+- Consideriamo un arco arbitrario $(u,v)\in E$
+- $V-S$ vertex cover significa $\implies$
+	- $u\in V-S$, o $v\in V-S$, o entrambi
+	- $u \not\in S$, o $v\not\in S$, o entrambi
+- Quindi, $S$ è un insieme indipendente
 ### Set Cover
+
+>[!definition]- Set Cover
+>Dato un insieme $U$ di elementi, una collezzione $S$ di sottoinsiemi di $U$, e un intero $k$, esistono $\leq k$ di questi sottoinsiemi la cui unione è uguale a $U$?
+
+**Esempio**
+- $m$ pezzi di software disponibili
+- Insieme $U$ di $n$ servizi che vorremmo nel nostro sistema
+- L'i-esimo pezzo di software fornisce l'insieme $S_i\subseteq U$ di servizi
+- Goal : ottenere tutte le $n$ funzionalità utilizzando il minor numero di pezzi di software.
+
+![[Pasted image 20240513115626.png|center|400]]
+
+#### Vertex Cover si riduce a Set Cover
+
+>[!definition]- Teorema
+>Vertex Cover $\leq_p$ Set Cover
+
+**Dimostrazione** : Data un'istanza di Vertex Cover $G=(V,E)$ e $k$, costruiamo un'istanza di Set Cover $(U,S,k)$ che ha un set cover di dimensione $k\iff G$ ha un vertex cover di dimensione $k$
+
+**Costruzione**
+- Universo $U=E$
+- Includiamo un sottoinsieme per ogni nodo $$v\in V:S_v=\{e\in E:\text{e incidente a v}\}$$
+![[Pasted image 20240513120032.png|center|500]]
+
+>[!definition]- Lemma
+>$G=(V,E)$ contiene un vertex cover di dimensione $k\iff(U,S,k)$ contiene un set cover di dimensione $k$
+
+
+**Dimostrazione** $\implies$
+- Sia $X\subseteq V$ un vertex cover di dimensione $k$ in $G$
+	- Allora $Y=\{S_v:v\in X\}$ è un vertex cover di dimensione $k$
+
+![[Pasted image 20240513120341.png|center|500]]
+
+*L'istanza "si" di Vertex Cover è stata risolta correttamente*
+
+$\impliedby$
+- Sia $Y\subseteq S$ un set cover di dimensione $k$ in $(U,S,k)$
+	- Allora $X=\{v:S_v\in Y\}$ è un vertex cover di dimensione $k$
+
+![[Pasted image 20240513120341.png|center|500]]
+
+*L'istanza "no" di Vertex Cover è stata risolta correttamente*
+
+## Problemi di soddisfazione dei vincoli
+
+### Soddisfabilità
+
+Prima di parlare del problema **SAT**, diamo la definizione di **Letterale, Clausola e Forma Normale Congiuntiva**
+
+>[!definition]- Letterale
+>Una variaible booleana o la sua negazione $$x_i\lor\lnot x_i$$
+
+>[!definition]- Clausola
+>Una disgiunzione di clausole $$C_j=x_1\lor\lnot x_2\lor x_3$$
+
+>[!definition]- Forma Normale Congiuntiva (CNF)
+>Una formula proposizionale $\Phi$ che è una congiunzione di clausole $$\Phi=C_1\land C_2\land C_3\land\dots$$
+
+Possiamo ora parlare del problema **SAT**
+
+>[!definition]- SAT
+>Data una formula $\Phi$ in CNF, essa ha un assegnamento di verità?
+>Ovvero, esiste un modo di assegnare le variabili in modo tale da avere che la formula $\Phi$ risulti vera?
+
+>[!definition]- 3-SAT
+>Generalizzazione del problema SET, dove ogni clausola ha esattamente 3 letterali
+>Per esempio $$\Phi=(\lnot x_1\lor x_2\lor x_3)\land(x_1\lor\lnot x_2\lor x_3)\land(\lnot x_1\lor x_2\lor x_4)$$
+
+L'istanza "si" per l'esempio sopra è
+- $x_1=x_2=true$
+- $x_3=x_4=false$
+
+#### Il problema SAT è NP-Hard
+
