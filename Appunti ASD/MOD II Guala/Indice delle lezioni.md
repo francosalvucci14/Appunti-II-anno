@@ -11,4 +11,5 @@
 - [[Appunti ASD/MOD II Guala/Lezione 11|Lezione 11]]
 - [[Appunti ASD/MOD II Guala/Lezione 12|Lezione 12]]
 - [[Appunti ASD/MOD II Guala/Lezione 13|Lezione 13]]
+- [[Appunti ASD/MOD II Guala/Lezione 14|Lezione 14]]
 - 
