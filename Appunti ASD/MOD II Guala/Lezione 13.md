@@ -181,7 +181,7 @@ Possiamo ora parlare del problema **SAT**
 >Ovvero, esiste un modo di assegnare le variabili in modo tale da avere che la formula $\Phi$ risulti vera?
 
 >[!definition]- 3-SAT
->Generalizzazione del problema SET, dove ogni clausola ha esattamente 3 letterali
+>Generalizzazione del problema SAT, dove ogni clausola ha esattamente 3 letterali
 >Per esempio $$\Phi=(\lnot x_1\lor x_2\lor x_3)\land(x_1\lor\lnot x_2\lor x_3)\land(\lnot x_1\lor x_2\lor x_4)$$
 
 L'istanza "si" per l'esempio sopra è

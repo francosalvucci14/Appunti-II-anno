@@ -10,6 +10,7 @@
   "displayMetadata": false,
   "debug": false,
   "isTimestamp": false,
+  "enabledCss": false,
   "prevConfig": {
     "pageSize": "A4",
     "marginType": "1",
@@ -23,6 +24,7 @@
     "marginRight": "10",
     "displayHeader": false,
     "displayFooter": true,
+    "cssSnippet": "0",
     "pageSise": "A4"
   }
 }
