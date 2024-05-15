@@ -12,9 +12,9 @@ debugInConsole: false # Print debug info in Obsidian console
 
 ![[Pasted image 20240515111420.png|center|500]]
 
-## P vs NP
+# P vs NP
 
-### Classe P
+## Classe P
 
 **Problemi Decisionali**
 - Problema $X$ è un insieme di stringhe
@@ -29,11 +29,11 @@ debugInConsole: false # Print debug info in Obsidian console
 
 ![[Pasted image 20240515112705.png|center|500]]
 
-#### Alcuni problemi in P
+### Alcuni problemi in P
 
 ![[Pasted image 20240515112749.png|center|500]]
 
-### La classe NP
+## La classe NP
 
 >[!definition]- Certificato
 >L'algoritmo $C(s,t)$ è un **certificato** per il problema $X\iff$ per ogni stringa $s:s\in X\iff$ esiste una stringa $t$ tale che $C(s,t)=si$
@@ -46,3 +46,40 @@ debugInConsole: false # Print debug info in Obsidian console
 **Esempio**
 
 ![[Pasted image 20240515113613.png|center|500]]
+
+### Certificati e Certificatori : Soddisfacibilità
+
+**SAT** : Data una formula $\Phi$ in CNF, esiste un assegnamento di verità?
+**3-SAT** : SAT con le clausole che hanno esattamente 3 letterali
+
+**Certificato** : Un' assegnazione di verità alle variabili booleane
+
+**Certificatore** : Controlla che ogni clausola in $\Phi$ ha almeno un letterale vero
+
+![[Pasted image 20240515113932.png|center|500]]
+
+In conclusione : $SAT\in NP$ , $3-SAT\in NP$
+
+### Certificati e Certificatori : Percorso Hamiltoniano
+
+>[!definition]- Percorso Hamiltoniamo
+>Dato un grafo non diretto $G=(V,E)$, esiste un percorso semplice $P$ che visita tutti i nodi?
+
+**Certificato** : Una permutazione $\pi$ degli $n$ nodi
+
+**Certificatore** : Controlla che $\pi$ contiene ogni nodo di $V$ esattamente una volta, e che $G$ contiene un arco tra ogni coppia di nodi adiacenti
+
+![[Pasted image 20240515114321.png|center|500]]
+
+In conclusione : $HP\in NP$
+
+### Alcuni problemi in NP
+
+![[Pasted image 20240515114510.png|center|500]]
+
+## P, NP e EXP
+
+- $P=$ insieme dei problemi decisionali per i quali esiste un algoritmo **polinomiale**
+- $NP=$ insieme dei problemi decisionali per i quali esiste un **certificatore polinomiale**
+- $EXP=$ Insieme dei problemi decisionali per i quali esiste un algoritmo **esponenziale**
+
