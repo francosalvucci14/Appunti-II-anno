@@ -108,3 +108,14 @@ In conclusione : $HP\in NP$
 **Congettura** : Non esiste un **algoritmo polinomiale** per 3-SAT
 
 ![[Pasted image 20240515121725.png|center|300]]
+
+Vale che $P=NP?$ `[Cook 1971, Edmonds, Levin, Yablonski, Godel]`
+Il problema decisionale è facile quanto il problema della certificazione?
+
+![[Pasted image 20240515121937.png|center|500]]
+
+**Se la risposta è si...** Esiste un algoritmo efficiente per 3-SAT, TSP, VertexCover,$\dots$
+**Se la risposta è no...** Non esitono algoritmi possibili per 3-SAT, TSP, VertexCover,$\dots$
+
+# NP-Completezza
+
