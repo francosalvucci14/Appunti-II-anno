@@ -119,3 +119,14 @@ Il problema decisionale è facile quanto il problema della certificazione?
 
 # NP-Completezza
 
+>[!definition]- NP-Completezza
+>Un problema $Y\in NP$ si dice NP-Completo se per ogni altro problema $X\in NP$, si ha che $X\leq_pY$
+
+**Proposizione** : Supponiamo che $Y\in NPC$. Allora $Y\in P\iff P=NP$
+
+**Dim** $\impliedby$ Se $P=NP$, allora $Y\in P$ perchè $Y\in NP$
+**Dim** $\implies$ Supponiamo $Y\in P$
+- Considera ogni altro problema $X\in NP$ Dato che $X\leq_pY$, abbiamo che $X\in P$
+- Questo implica che $NP\subseteq P$
+- Ma noi già sappiamo che $P\subseteq NP$.
+- Quindi $P=NP$
