@@ -83,3 +83,28 @@ In conclusione : $HP\in NP$
 - $NP=$ insieme dei problemi decisionali per i quali esiste un **certificatore polinomiale**
 - $EXP=$ Insieme dei problemi decisionali per i quali esiste un algoritmo **esponenziale**
 
+**Proposizione** : $P\subseteq NP$
+
+**Dimostrazione** : Considera un qualunque problema $X\in P$
+- Per definizione, esiste un algoritmo polinomiale $A(s)$ che risolve $X$
+- Certificato $t=\epsilon$, certificatore $C(s,t)=A(s)$
+
+**Proposizione** : $NP\subseteq EXP$
+
+**Dimostrazione** : Considera un qualunque problema $X\in NP$
+- Per definizione, esiste un certificatore polinomiale $C(s,t)$ per $X$, dove il certificato $t$ soddisfa $\vert t\vert\leq p(\vert s \vert)$ per un qualche polinomio $p(.)$
+- Per risolvere l'istanza $s$, esegui $C(s,t)$ su tutte le stringhe $t$, con $\vert t\vert\leq p(\vert s \vert)$
+- Ritorna `si` $\iff C(s,t)$ ritorna `si` per ognuno di questi potenziali certificati
+
+**Fatto** : $P\neq EXP\implies$ o $P\neq NP$, o $NP\neq EXP$, o entrambi
+
+# La questione principale : P vs NP
+
+**D** : Come si risolve un'istanza di 3-SAT con $n$ variabili?
+**R** : Ricerca esaustiva : provare tutti i $2^n$ assegnamenti di verità
+
+**D** : Possiamo fare qualcosa di sostanzialmente più intelligente?
+
+**Congettura** : Non esiste un **algoritmo polinomiale** per 3-SAT
+
+![[Pasted image 20240515121725.png|center|300]]
