@@ -117,6 +117,7 @@ Il problema decisionale è facile quanto il problema della certificazione?
 **Se la risposta è si...** Esiste un algoritmo efficiente per 3-SAT, TSP, VertexCover,$\dots$
 **Se la risposta è no...** Non esitono algoritmi possibili per 3-SAT, TSP, VertexCover,$\dots$
 
+---
 # NP-Completezza
 
 ## Trasformazioni polinomiali
@@ -162,4 +163,30 @@ La trasformazione polinomiale è una riduzione polinomiale con una sola chiamata
 ## Implicazioni di Karp+Cook-Levin
 
 ![[Pasted image 20240518151255.png|center|500]]
+
+---
+
+# Co-NP
+
+## Asimmetria di NP
+
+**Asimmetria** : Noi abbiamo bisogno di certificati "corti" solo per le istanze *si*
+
+**Esempio 1** SAT vs. Co-SAT
+- Possiamo provare che una formula in CNF è soddisfacibile specificando un assegnamento
+- Come possiamo provare che la formula non è soddisfacibile
+
+**Esempio 2** Hamiltonian Cycle vs. Co-Hamiltonian Cycle
+- Possiamo provare che un grafo sia Hamiltoniano specificando una permutazione
+- Come possiamo provare che un grafo non è Hamiltoniano?
+
+**Q** : Come classifichiamo Co-SAT e Co-Hamiltonian Cycle?
+- SAT è NPC e SAT$\equiv_p$Co-SAT
+- HamiltonianCycle è NPC e HamiltonianCycle$\equiv_p$Co-HamiltonianCycle
+- Ma né Co-SAT né Co-HamiltonianCycle sono noti essere in **NP**
+
+## NP e Co-NP
+
+>[!definition]- Complemento
+>Dato un problema decisionale $X$, il suo **complemento** $\overline{X}$ è lo stesso problema con le istanze `si` e `no` invertite
 
