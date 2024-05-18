@@ -119,6 +119,21 @@ Il problema decisionale è facile quanto il problema della certificazione?
 
 # NP-Completezza
 
+## Trasformazioni polinomiali
+
+>[!definition]- Riduzioni di Cook
+>Il problema $X$ si **riduce polinomialmente (Cook)** al problema $Y$ se arbitrarie istanze del problema $X$ possono essere risolte utilizzando:
+>- Numero polinomiale di passi computazionali standard, più
+>- Numero polinomiale di chiamate all'**oracolo** che risolve il problema $Y$.
+
+>[!definition]- Riduzioni di Karp
+>Il problema $X$ **si trasforma polinomialmente (Karp)** in un problema $Y$ se, data una qualsiasi istanza $x\in X$, si può costruire un'istanza $y\in Y$ tale che $x$ è un'istanza *si* di $X\iff y$ è un'istanza *si* di $Y$
+
+**Nota** :
+La trasformazione polinomiale è una riduzione polinomiale con una sola chiamata all'oracolo per Y, esattamente alla fine dell'algoritmo per X. Quasi tutte le riduzioni precedenti erano di questa forma
+
+## NP-Completo
+
 >[!definition]- NP-Completezza
 >Un problema $Y\in NP$ si dice NP-Completo se per ogni altro problema $X\in NP$, si ha che $X\leq_pY$
 
@@ -130,3 +145,21 @@ Il problema decisionale è facile quanto il problema della certificazione?
 - Questo implica che $NP\subseteq P$
 - Ma noi già sappiamo che $P\subseteq NP$.
 - Quindi $P=NP$
+
+### Il "primo" problema NP-Completo
+
+>[!definition]- Teorema di Cook-Levin
+>SAT è NP-Completo
+
+## Implicazioni di Karp
+
+![[Pasted image 20240518151204.png|center|500]]
+
+## Implicazioni di Cook-Levin
+
+![[Pasted image 20240518151232.png|center|500]]
+
+## Implicazioni di Karp+Cook-Levin
+
+![[Pasted image 20240518151255.png|center|500]]
+
