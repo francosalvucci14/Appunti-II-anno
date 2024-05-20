@@ -142,6 +142,17 @@ Servizio di consegna "best effort" (massimo sforzo), i segmenti UDP possono esse
 >	- UDP può sparare dati a raffica
 >- Controllo più preciso a livello di applicazione su quali dati sono inviati e quando
 
+Utilizzo di UDP:
+- Applicazioni per lo streaming multimediale (tolleranti alle perdite, sensibili alla frequenza)
+- DNS
+- SNMP
+- HTTP/3
+
+Trasferimento affidabile con UDP (ad esempio, HTTP/3):
+- Aggiungere affidabilità a livello di applicazione
+- Aggiungere controllo della congestione a livello di applicazione
+
+
 ### UDP: azioni del livello di trasporto
 
 
