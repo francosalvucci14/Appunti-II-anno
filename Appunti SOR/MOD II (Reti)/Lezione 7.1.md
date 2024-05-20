@@ -87,8 +87,40 @@ L'host usa gli **indirizzi IP e i numeri porta** per inviare il segmento alla so
 
 #### Demultiplexing senza connessione
 
+Quando si crea una socket, si deve specificare il numero di porta:
+```C
+mySocket=socket(AF_INET,SOCK_DGRAM)
+mySocket.bind(('',9157))
+```
 
+Quando si crea il datagramma da inviare al socket UDP, si deve specificare :
+- Indirizzo IP di destinazione
+- Numero di paoorta di destinazione
 
+Il segmento viene passato al livello di rete
+
+Quando l'host riceve il segmento UDP:
+- Controlla il numero della porta di destinazione nel segmento
+- Invia il segmento UDP alla socket con quel numero di porta
+
+Datagrammi IP/UDP con lo ***stesso indirizzo IP e numero di porta di destinazione***, ma indirizzi IP e/o numeri di porta di origine differenti vengono inviati alla ***stessa socket*** sull'host ricevente
+
+![[Pasted image 20240520134414.png|center|500]]
 #### Demultiplexing orientato alla connessione
 
+La socket TCP è identificata da **quattro parametri** :
+- Indirizzo IP di origine
+- Numero di porta di origine
+- Indirizzo IP di destinazione
+- Numero di porta di destinazione
+
+**Demux** : Il lato ricevente usa i ***quattro valori*** (quadrupla) per inviare il segmento alla socket appropriata
+
+Un host serverr crea una socket passiva specificando un numero di porta
+
+La *socket passiva* viene usata per accettare le richieste di connessione, per ciascuna delle quali verrà creata una nuova *socket connessa* (con la medesima porta e indirizzo IP locale, ma diversa porta e indirizzo remoto, discriminando pertanto le socket connese di client diversi)
+
+![[Pasted image 20240520134752.png|center|500]]
+
 ## Trasporto senza connessione : UDP
+
