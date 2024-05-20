@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 6.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 6.md"
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md"
               }
             }
           },
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 6.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Lezione 6.md",
+                "file": "Appunti SOR/MOD II (Reti)/Lezione 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,6 +181,8 @@
   },
   "active": "65c5132689711012",
   "lastOpenFiles": [
+    "Appunti SOR/MOD II (Reti)/img/Pasted image 20240520120200.png",
+    "Appunti SOR/MOD II (Reti)/Lezione 6.md",
     "Appunti SOR/MOD II (Reti)/Lezione 5.md",
     "Appunti SOR/MOD II (Reti)/Lezione 4.md",
     "Appunti SOR/MOD II (Reti)/Lezione 1.md",
@@ -217,8 +219,6 @@
     "Appunti LMP/MOD II/Esercizi Prolog/HanoiTower (Algoritmo DFS).md",
     "Appunti LMP/MOD II/Esercizi Prolog/Indice esercizi Prolog.md",
     "Appunti LMP/MOD II/Esercizi Prolog/Cruciverba.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Retract Assert.md",
-    "Appunti LMP/MOD II/Esercizi Prolog/Tutte le soluzioni.md",
     "export/Lezione 7/Appunti ASD/MOD II Guala/img",
     "export/Lezione 7/Appunti ASD/MOD II Guala",
     "export/Lezione 7/Appunti ASD",
