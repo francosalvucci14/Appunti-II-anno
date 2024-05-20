@@ -249,4 +249,3 @@ Quindi, il tempo necessario per distribuire $F$ a $N$ client usando l'approccio 
 Banda di upload del client = $u,\frac{F}{u}$ = 1 ora, $u_s=10u,d_{\text{min}}\geq u_s$
 
 ![[Pasted image 20240427110848.png|center|500]]
-
