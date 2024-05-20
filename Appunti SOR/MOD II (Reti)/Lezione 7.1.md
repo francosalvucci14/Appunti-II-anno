@@ -124,3 +124,30 @@ La *socket passiva* viene usata per accettare le richieste di connessione, per c
 
 ## Trasporto senza connessione : UDP
 
+UDP = Protocollo di trasporto di Internet "senza fronzoli"
+
+Servizio di consegna "best effort" (massimo sforzo), i segmenti UDP possono essere :
+- Perduti
+- Consegnati fuori sequenza all'applicazione
+
+**Senza connessione** :
+- No handshaking tra mittente e destinatario UDP
+- Ogni segmento UDP è gestito indipendentemente
+
+>[!error]- Perchè esisite UDP?
+>- Nessuna connessione stabilita (che potrebbe aggiungere ritardo)
+>- Semplice : nessuno stato di connessione nel mittente e nel destinatario (perciò un server può gestire più client)
+>- Intestazioni di segmento corte
+>- Senza controllo della congestione
+>	- UDP può sparare dati a raffica
+>- Controllo più preciso a livello di applicazione su quali dati sono inviati e quando
+
+### UDP: azioni del livello di trasporto
+
+
+
+### Struttura dei segmenti UDP
+
+#### Checksum UDP
+
+#### Checksum Internet
