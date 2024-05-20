@@ -152,13 +152,34 @@ Trasferimento affidabile con UDP (ad esempio, HTTP/3):
 - Aggiungere affidabilità a livello di applicazione
 - Aggiungere controllo della congestione a livello di applicazione
 
-
 ### UDP: azioni del livello di trasporto
 
+![[Pasted image 20240520141900.png|center|500]]
 
+![[Pasted image 20240520141923.png|center|500]]
+
+![[Pasted image 20240520141942.png|center|500]]
 
 ### Struttura dei segmenti UDP
 
+![[Pasted image 20240520142003.png|center|500]]
+
 #### Checksum UDP
 
+**Obiettivo** : Rilevare gli "errori" (bit alternati) nel segmento trasmesso
+
+![[Pasted image 20240520142052.png|center|500]]
 #### Checksum Internet
+
+**Obiettivo** : Rilevare gli "errori" (bit alternati) nel segmento trasmesso
+
+**Mittente** :
+- Tratta il contenuto del segmento come una sequenza di interi da 16 bit
+- *checksum* : complemento a 1 della somma della sequenza di interi a 16 bit
+- pone il valore della cheksum nel campo checksum del segmento UDP
+
+**Ricevente** :
+- Calcola la cheksum allo stesso modo del mittente
+- Il risultato è costituito da tutti bit 1
+- Altre implementazioni verificano la checksum calcolandola e confrontandola col valore restituito
+
