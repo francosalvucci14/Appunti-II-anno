@@ -182,4 +182,3 @@ Trasferimento affidabile con UDP (ad esempio, HTTP/3):
 - Calcola la cheksum allo stesso modo del mittente
 - Il risultato è costituito da tutti bit 1
 - Altre implementazioni verificano la checksum calcolandola e confrontandola col valore restituito
-
