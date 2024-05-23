@@ -13,7 +13,7 @@
 - [[Appunti FI/MOD II/Lezione 12|Lezione 12]]
 - [[Appunti FI/MOD II/Lezione 13|Lezione 13]]
 - [[Appunti FI/MOD II/Lezione 14]]
-- [[Lezione 15]]
+- [[Appunti FI/MOD II/Lezione 15]]
 - [[Lezione 16]]
 - [[Lezione 17]]
 - [[Lezione 18]]
