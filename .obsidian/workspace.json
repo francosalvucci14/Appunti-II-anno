@@ -18,45 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "feb513f17231feb0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b971a4c154346a68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 4.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5f56eeafe233cc79",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 7.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -141,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 7.md"
+                "file": "Appunti ASD/MOD II Guala/Lezione 15.md"
               }
             }
           },
@@ -159,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 7.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 15.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 7.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 15.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,8 +179,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5f56eeafe233cc79",
+  "active": "65c5132689711012",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240523123538.png",
+    "Appunti ASD/MOD II Guala/Lezione 9.md",
+    "Appunti ASD/MOD II Guala/Lezione 8.md",
+    "Appunti ASD/MOD II Guala/Lezione 7.md",
     "Appunti ASD/MOD II Guala/Lezione 4.md",
     "Appunti ASD/MOD II Guala/Lezione 3.md",
     "Appunti ASD/MOD II Guala/Lezione 6.md",
@@ -233,8 +200,6 @@
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523115533.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523114956.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523114011.png",
-    "Appunti ASD/MOD II Guala/Lezione 9.md",
-    "Appunti ASD/MOD II Guala/Lezione 7.md",
     "Appunti ASD/MOD II Guala/Lezione 14.md",
     "Appunti SOR/MOD II (Reti)/Lezione 7.1.md",
     "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
@@ -254,8 +219,6 @@
     "Appunti FI/MOD II/Lezione 13.md",
     "Appunti FI/MOD II/Lezione 14.md",
     "Appunti FI/MOD II/Lezione 15.md",
-    "Appunti FI/MOD II/Lezione 16.md",
-    "Appunti FI/MOD II/Lezione 17.md",
     "export/Lezione 7/Appunti ASD/MOD II Guala/img",
     "export/Lezione 7/Appunti ASD/MOD II Guala",
     "export/Lezione 7/Appunti ASD",
