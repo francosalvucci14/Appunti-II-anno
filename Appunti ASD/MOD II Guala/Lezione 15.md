@@ -129,4 +129,55 @@ Vedi esempio qui -> [Esempio](https://www.mat.uniroma2.it/~guala/09_Apx_Algorith
 
 **Dimostrazione (simile al list-scheduling)**
 - Consideriamo il carico $L[i]$ della macchina bottleneck $i$
-- Sia $j$ l'ultimo job schedulato sulla macchina $i$ (assumendo che la macchina $i$ ha almeno 2 job, abbiamo che $j\geq m+1$)
+- Sia $j$ l'ultimo job schedulato sulla macchina $i$ (assumendo che la macchina $i$ ha almeno 2 job, abbiamo che $j\geq m+1$) $$L=L[i]=\underbrace{(L[i]-t_j)}_{\leq L^\star}+\underbrace{t_j}_{\leq \frac{1}{2}L^\star}\leq \frac{3}{2}L^\star$$
+**D** : La nostra analisi è corretta?
+**R** : No
+
+>[!definition]- Teorema `[Graham 1969]`
+>La regola LPT è $\frac{4}{3}-$approssimante
+
+**Dim** Analisi più sofisticata dello stesso algoritmo
+
+---
+
+# Algoritmi di Approssimazione II
+
+## Problema k-Center
+
+**Input** : Insieme di $n$ siti $s_1,\dots,s_n$ e un intero $k\gt0$
+
+**Problema Center Selection** : Selezionare $k$ centri $C$ tale che la distanza massima da un sito al centro più vicino è minimizzata
+
+![[Pasted image 20240523121858.png|center|500]]
+
+![[Pasted image 20240523121919.png|center|500]]
+
+**Variante del problema** : I centri devono essere in uno dei siti
+
+![[Pasted image 20240523122131.png|center|500]]
+
+**Notazione** :
+- $dist(x,y)$ = distanza tra $x$ e $y$
+- $dist(s_i,C)=\min_{c\in C}dist(s_i,c)$ = distanza da $s_i$ al centro più vicino
+- $r(C)=\max_idist(s_i,C)$ = raggio di copertura minimo
+
+**Goal** : Trovare un insieme di centri $C$ che minimizza $r(C)$, soggetto a $\vert C\vert=k$
+
+**Proprietà della funzione distanza**
+- $dist(x,x)=0$ `(identità)`
+- $dist(x,y)=dist(y,x)$ `(simmetria)`
+- $dist(x,y)\leq dist(x,z)+dist(z,y)$ `(disuguaglianza triangolare)`
+
+**Esempio** : Ogni sito è un vertice in un grafo pesato non diretto, un sito può essere un nodo, $dist(x,y)$ = distanza (pesata) in $G$ tra $x$ e $y$
+
+![[Pasted image 20240523122651.png|center|500]]
+
+### Algoritmo Greedy
+
+**Algoritmo** : Scegliere ripetutamente il centro successivo come sito **più lontano** da qualsiasi centro esistente
+
+![[Pasted image 20240523122759.png|center|500]]
+
+**Osservazione** : Al termine, tutti i centri in $C$ sono a coppie almeno $r(C)$ distanti tra loro.
+
+Vedi esempio qui -> [Esempio](https://www.mat.uniroma2.it/~guala/09_Apx_Algorithms_II_2023.pdf#page=20)
