@@ -6,7 +6,7 @@ maxLevel: 0 # Include headings up to the specified level
 includeLinks: true # Make headings clickable
 debugInConsole: false # Print debug info in Obsidian console
 ```
-# Algoritmi di Approssimazione
+# Algoritmi di Approssimazione I
 
 ## Affrontare la NP-Completezza
 
@@ -89,3 +89,44 @@ Vedi esempio qui -> [Esempio](https://www.mat.uniroma2.it/~guala/09_Apx_Algorith
 - Il tempo totale di processamento è $\sum\limits_kt_k$
 - Una delle $m$ macchine deve fare almeno una frazione $\frac{1}{m}$ del lavoro totale
 
+**Dimostrazione del teorema** : Consideriamo il carico $L[i]$ della macchina bottleneck $i$ (macchina che finisce con il carico più grande)
+- Sia $j$ l'ultimo job schedulato per la macchina $i$
+- Quando assegnamo il job $j$ alla macchina $i$, $i$ ha il carico più piccolo. Il suo carico prima dell'assegnamento è $L[i]-t_j$, quindi $L[i]-t_j\leq L[k],\forall 1\leq k\leq m$ ![[Pasted image 20240523114956.png|center|500]]
+- Sommiamo le disuguaglianze su tutti i $k$ e divido per $m$ : $$\begin{align}L[i]-t_j&\leq\frac{1}{m}\sum\limits_kL[k]\\&=\frac{1}{m}\sum\limits_ktk\\&\underbracket{\leq}_{\text{Lemma 2}} L^\star\end{align}$$
+- Ora, $L=L[i]=\underbrace{(L[i]-t_j)}_{\leq L^\star}+\underbrace{t_j}_{\leq L^\star}\leq 2L^\star$
+
+> Quindi l'algoritmo ritorna circa **due volte il valore ottimo**
+
+**D** : La nostra analisi è giusta?
+
+**R** : Essenzialmente si
+
+**Esempio** : $m$ macchine, i primi $m(m-1)$ job hanno lunghezza $1$, l'ultimo job ha lunghezza $m$
+
+![[Pasted image 20240523115533.png|center|500]]
+
+![[Pasted image 20240523115553.png|center|500]]
+
+### Load Balancing : Regola LPT
+
+**Longest Processing Time (LPT)** : Ordiniamo $n$ job in ordine decrescente in base al tempo di processamento; poi lanciamo l'algoritmo list-scheduling
+
+![[Pasted image 20240523115753.png|center|500]]
+
+#### Load Balancing : Analisi della Regola LPT
+
+**Osservazione** : Se la macchina bottleneck $i$ ha un solo job, allora LPT è ottimale
+**Dim** : Ogni soluzione deve schedulare quel job
+
+**Lemma 3** : Se ci sono più di $m$ job, $L^\star\geq2t_{m+1}$
+**Dim** :
+- Consideriamo i tempi di processamento dei primi $m+1$ jobs $t_1\geq t_2\geq\dots\geq t_{m+1}$
+- Ognuno richiede tempo almeno $t_{m+1}$
+- Ci sono $m+1$ job e $m$ macchine, per il principio della piccionaia. almeno una macchina deve ottenere due job
+
+>[!definition]- Teorema
+>La regola LPT è un algoritmo $\frac{3}{2}-$approssimante
+
+**Dimostrazione (simile al list-scheduling)**
+- Consideriamo il carico $L[i]$ della macchina bottleneck $i$
+- Sia $j$ l'ultimo job schedulato sulla macchina $i$ (assumendo che la macchina $i$ ha almeno 2 job, abbiamo che $j\geq m+1$)
