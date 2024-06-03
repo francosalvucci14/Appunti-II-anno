@@ -100,7 +100,7 @@ Lo pseudocodice di Kruskal è il seguente
 
 [Esempio Funzionamento Algoritmo di Kruskal](https://www.mat.uniroma2.it/~guala/03_mst_2023.pdf?16)
 
-## Running Time
+### Running Time
 
 - Ordinare gli archi -> $O(m\log(m))=O(m\log(n))$
 - Operazioni sulla UF
