@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 1.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8e7bbdd734db4294",
+            "id": "4309aa009de62b93",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 2.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,26 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "16daac0c22d36568",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 4.md",
+                "file": "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 3.md"
+                "file": "Appunti ASD/MOD II Guala/Lezione 1.md"
               }
             }
           },
@@ -159,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 3.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,14 +164,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 3.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "7af87cca1b60e2e0",
@@ -216,15 +204,19 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b4560b8da8c1094d",
+  "active": "4309aa009de62b93",
   "lastOpenFiles": [
-    "Appunti ASD/MOD II Guala/Lezione 2.md",
-    "Appunti ASD/MOD II Guala/Lezione 1.md",
-    "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
-    "Appunti ASD/MOD II Guala/Lezione 3.md",
     "Appunti ASD/MOD II Guala/Lezione 4.md",
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/MOD II Guala/Lezione 5.md",
+    "Appunti ASD/MOD II Guala/Lezione 2.md",
+    "Appunti ASD/MOD II Guala/Lezione 3.md",
+    "Appunti ASD/MOD II Guala/Lezione 1.md",
+    "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
+    "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
+    "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
+    "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
+    "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
+    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
     "Appunti ASD/MOD II Guala/Lezione 15.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523123538.png",
     "Appunti ASD/MOD II Guala/Lezione 9.md",
@@ -250,11 +242,7 @@
     "Appunti SOR/MOD II (Reti)/Lezione 1.md",
     "Appunti SOR/MOD II (Reti)/Lezione 6.md",
     "Appunti SOR/MOD II (Reti)/Lezione 7.md",
-    "Appunti SOR/MOD II (Reti)/Esercizi/Esercizio 1.md",
-    "Appunti ASD/MOD II Guala/Lezione 13.md",
-    "Appunti ASD/MOD II Guala/Indice delle lezioni.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
-    "Appunti ASD/MOD II Guala/Lezione 12.md",
     "Appunti ASD/MOD II Guala/Lezione 13.html",
     "export/Lezione 7/Appunti ASD/MOD II Guala/img",
     "export/Lezione 7/Appunti ASD/MOD II Guala",

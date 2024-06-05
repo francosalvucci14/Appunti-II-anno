@@ -36,7 +36,7 @@ Ci sono 4 tipi di ordinamento naturale, e sono :
 
 - **Earliest Start Time** : Consideriamo i job ordinati tramite $s_j$
 - **Earliest Finish Time** : Consideriamo i job ordinati tramite $f_j$
-- **Shortest Interval** : Consideriamo i job ordinati traAmite il valore $f_j-s_j$
+- **Shortest Interval** : Consideriamo i job ordinati tramite il valore $f_j-s_j$
 - **Fewest Conflicts** : Per ogni job $j$, consideriamo il numero di job che vanno in conflitto con lui, detti $c_j$. Ordiamo i job in base al valore $c_j$
 
 Possiamo dimostrare che il secondo metodo porta alla soluzione ottima, mentre gli altri 3 no
