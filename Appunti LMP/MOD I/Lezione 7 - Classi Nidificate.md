@@ -319,6 +319,7 @@ Una classe locale ha accesso ai membri della sua classe di inclusione. Nell'esem
 Inoltre, una classe locale ha accesso alle variabili locali. Tuttavia, una classe locale può accedere solo a variabili locali dichiarate final. Quando una classe locale accede a una variabile locale oa un parametro del blocco che lo contiene, acquisisce tale variabile o parametro. Ad esempio, il costruttore PhoneNumber può accedere alla variabile locale numberLength perché è dichiarata final; numberLength è una variabile acquisita.
 
 Tuttavia, a partire da Java SE 8, una classe locale può accedere a variabili e parametri locali del blocco che lo racchiude che sono final o effettivamente final. Una variabile o un parametro il cui valore non viene mai modificato dopo l'inizializzazione è effettivamente definitivo. Ad esempio, supponiamo che la variabile numberLength non sia dichiarata final e aggiungi l'istruzione di assegnazione evidenziata nel costruttore PhoneNumber per modificare la lunghezza di un numero di telefono valido a 7 cifre:
+
 ```java
 PhoneNumber(String phoneNumber) {
     **numberLength = 7;**

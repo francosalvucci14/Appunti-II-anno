@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "65c5132689711012",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4309aa009de62b93",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b4560b8da8c1094d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
-                "mode": "source",
+                "file": "Appunti LMP/MOD I/Lezione 7 - Classi Nidificate.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -129,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 1.md"
+                "file": "Appunti LMP/MOD I/Lezione 7 - Classi Nidificate.md"
               }
             }
           },
@@ -147,14 +122,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 1.md",
+                "file": "Appunti LMP/MOD I/Lezione 7 - Classi Nidificate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -164,14 +139,14 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti ASD/MOD II Guala/Lezione 1.md",
+                "file": "Appunti LMP/MOD I/Lezione 7 - Classi Nidificate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "7af87cca1b60e2e0",
@@ -204,25 +179,35 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4309aa009de62b93",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti LMP/MOD I/Lezione 6 - Classi.md",
+    "Appunti LMP/MOD I/Lezione 5 - Espressioni,Blocchi e Statement.md",
+    "Appunti LMP/MOD I/Lezione 7 - Classi Nidificate.md",
+    "Appunti LMP/MOD I/Lezione 4 - Basi del linguaggio.md",
+    "Appunti LMP/MOD I/Lezione 3 - Concetti dell'OOP.md",
+    "Appunti LMP/MOD I/Lezione 12 - Interfacce parte 2, Generics.md",
+    "Appunti LMP/MOD I/Lezione 13 - Collections.md",
+    "Appunti LMP/MOD I/Lezione 2 - Il linguaggio Java.md",
+    "Appunti LMP/MOD I/Introduzione.md",
+    "Appunti LMP/MOD I/Esercizi/Esercizio 1 - CardReader.md",
+    "Appunti LMP/MOD I/Lezione 11 - Eccezioni.md",
+    "Appunti LMP/MOD I/Lezione 9 - Metaprogrammazione.md",
+    "Appunti LMP/MOD I/Lezione 10 - Interfacce Parte 1.md",
+    "Appunti LMP/MOD I/Lezione 8 - Classi Anonime, Enum.md",
+    "Appunti LMP/MOD I/Lezione 14 - Input-Output.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 7.1.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 7.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 6.md",
+    "Appunti SOR/MOD II (Reti)/Esercizi/Esercizio 1.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 5.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 4.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 3.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 2.md",
+    "Appunti SOR/MOD II (Reti)/Lezione 1.md",
     "Appunti ASD/MOD II Guala/Lezione 4.md",
-    "Appunti ASD/MOD II Guala/Lezione 5.md",
-    "Appunti ASD/MOD II Guala/Lezione 2.md",
-    "Appunti ASD/MOD II Guala/Lezione 3.md",
-    "Appunti ASD/MOD II Guala/Lezione 1.md",
-    "Appunti ASD/MOD I/Lezione 10 - Capitolo 6.md",
-    "Appunti ASD/MOD I/Lezione 11 - Capitolo 6.md",
-    "Appunti ASD/MOD I/Lezione 12 - Capitolo 8.md",
-    "Appunti ASD/MOD I/Lezione 8 - Capitolo 4.md",
-    "Appunti ASD/MOD II/Lezione 3 - MST Part II.md",
-    "Appunti ASD/MOD II/Lezione 2 - Minimum Spanning Tree.md",
-    "Appunti ASD/MOD II Guala/Lezione 15.md",
-    "Appunti ASD/MOD II Guala/img/Pasted image 20240523123538.png",
     "Appunti ASD/MOD II Guala/Lezione 9.md",
-    "Appunti ASD/MOD II Guala/Lezione 8.md",
-    "Appunti ASD/MOD II Guala/Lezione 7.md",
-    "Appunti ASD/MOD II Guala/Lezione 6.md",
+    "Appunti ASD/MOD II Guala/img/Pasted image 20240523123538.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523122759.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523122651.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523122131.png",
@@ -232,16 +217,6 @@
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523115553.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523115533.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523114956.png",
-    "Appunti ASD/MOD II Guala/Lezione 14.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 7.1.md",
-    "Appunti SOR/MOD II (Reti)/Indice delle lezioni.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 5.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 4.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 3.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 2.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 1.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 6.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 7.md",
     "Appunti ASD/Algoritmo_Es3.pdf",
     "Appunti ASD/MOD II Guala/Lezione 13.html",
     "export/Lezione 7/Appunti ASD/MOD II Guala/img",
