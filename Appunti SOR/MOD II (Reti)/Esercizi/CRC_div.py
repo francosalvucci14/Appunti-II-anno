@@ -32,10 +32,10 @@ parser.add_argument("-da", type=int, nargs="?", help="Divisore")
 args = parser.parse_args()
 
 # Eseguiamo il calcolo per trovare quoziente e resto
-
 data_bits = str(args.d)
 generator_bits = str(args.da)
 quotient, remainder = crc_division(data_bits, generator_bits)
+
 print(
     "Dividendo:{}, Divisore:{}, Quoziente:{}, Resto:{}".format(
         data_bits, generator_bits, quotient, remainder
