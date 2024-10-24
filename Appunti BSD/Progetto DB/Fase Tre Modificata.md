@@ -257,7 +257,7 @@ Le chiave primarie sono identificate in **grassetto**, mentre le chiavi secondar
 | Manutentori | (4 + 25 + 25 + 50 + 3 + 25 + 50) bytes | 1160 bytes |
 | Fermate | (50+25+25) bytes | 1600 bytes |
 ##### Tabella delle operazioni
-1. Visualizza tutte le tratte completate, con annesso costo e carta usata per il pagamento, fatte da un determinato utente 
+1. Visualizza tutte le tratte completate, con annesso costo e carta usata per il pagamento, fatte da un determinato utente
 
 | Concetto | Costrutto | Accessi | Tipo | Frequenza |
 | ---- | ---- | ---- | ---- | ---- |

@@ -11,8 +11,14 @@
             "id": "bab6283d10704c21",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Appunti BSD/Progetto DB/Fase Tre Modificata.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fase Tre Modificata"
             }
           }
         ]
@@ -35,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -50,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -58,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -66,7 +78,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -91,7 +105,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -100,8 +116,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Esercizi/Esercizio 1.md"
-              }
+                "file": "Appunti ASD/MOD II Guala/Lezione 10.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Lezione 10"
             }
           },
           {
@@ -109,7 +127,9 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           },
           {
@@ -118,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Esercizi/Esercizio 1.md",
+                "file": "Appunti ASD/MOD II Guala/Lezione 10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +146,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": true,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Lezione 10"
             }
           },
           {
@@ -135,10 +157,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Appunti SOR/MOD II (Reti)/Esercizi/Esercizio 1.md",
+                "file": "Appunti BSD/Progetto DB/Fase Tre Modificata.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Fase Tre Modificata"
             }
           }
         ],
@@ -153,7 +177,9 @@
             "type": "leaf",
             "state": {
               "type": "graph",
-              "state": {}
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -175,8 +201,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "195b83bf8ca7a0a9",
+  "active": "7931714fcd03803f",
   "lastOpenFiles": [
+    "Appunti ASD/MOD II Guala/Lezione 10.md",
+    "Appunti ASD/MOD II Guala/Lezione 11.md",
+    "Appunti ASD/MOD II Guala/Lezione 8.md",
     "Appunti LMP/MOD I/Lezione 7 - Classi Nidificate.md",
     "Appunti LMP/MOD I/Lezione 6 - Classi.md",
     "Appunti LMP/MOD I/Lezione 5 - Espressioni,Blocchi e Statement.md",
@@ -200,9 +229,6 @@
     "Appunti SOR/MOD II (Reti)/Lezione 4.md",
     "Appunti SOR/MOD II (Reti)/Lezione 3.md",
     "Appunti SOR/MOD II (Reti)/Lezione 2.md",
-    "Appunti SOR/MOD II (Reti)/Lezione 1.md",
-    "Appunti ASD/MOD II Guala/Lezione 4.md",
-    "Appunti ASD/MOD II Guala/Lezione 9.md",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523123538.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523122759.png",
     "Appunti ASD/MOD II Guala/img/Pasted image 20240523122651.png",
